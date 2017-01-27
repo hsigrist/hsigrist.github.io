@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 2016-07-10 Sun 10:34 -->
+<meta  charset="utf-8">
+<meta  name="viewport" content="width=device-width, initial-scale=1">
+<title>RP 2-2016: Resolución de Problemas</title>
+<meta  name="generator" content="Org-mode">
+<meta  name="author" content="Hans Sigrist">
+<meta  name="description" content="Página de la asignatura Resolución de Problemas, parte de la Línea Sello Institucional UAC."
+>
+<meta  name="keywords" content="resolución, problemas">
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" href="Grump.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="http://hsigrist.github.io/docencia/"> UP </a>
+ |
+ <a accesskey="H" href="http://hsigrist.github.io"> HOME </a>
+</div><div id="wrapper">
+<header>
+<h1 class="title">RP 2-2016: Resolución de Problemas</h1>
+<p class="subtitle">Derecho + Terapia Ocupacional. Primavera 2016, jornada vespertina · UAC-SF · Prof. Hans Sigrist</p>
+</header><div class="ABSTRACT">
+<p>
+Hay dos razones por las cuales la mayoría de nosotros no somos muy buenos en la solución creativa de problemas. En primer lugar, muy pocas personas reciben capacitación sobre cómo ser creativos en su educación. En segundo lugar, pocas personas entienden la dinámica del grupo lo suficientemente bien como para aprovechar su poder para ayudar a los grupos a maximizar su creatividad. <a href="https://hbr.org/search?term=art+markman">Art Markman</a> en <a href="https://hbr.org/">hbr.org</a>.
+</p>
+
+</div>
+
+
+<figure id="orgparagraph1">
+<p><img src="hbr-rp.jpg" alt="hbr-rp.jpg">
+</p>
+<figcaption><span class="figure-number">Figura 1:</span> Los síntomas del &laquo;pensamiento de grupo&raquo; son evitables usando técnicas de <b>Resolución de Problemas</b>.</figcaption>
+</figure>
+
+<nav id="table-of-contents">
+<h2>&Iacute;ndice</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgheadline1"><span class="todo TODO">TODO</span> Novedades</a></li>
+<li><a href="#orgheadline2"><span class="todo STARTED">STARTED</span> Audiencia</a>
+<ul>
+<li><a href="#orgheadline3">Contacto</a></li>
+</ul>
+</li>
+<li><a href="#orgheadline4"><span class="todo STARTED">STARTED</span> Habilidades Blandas (HB)</a>
+<ul>
+<li><a href="#orgheadline5"><span class="todo STARTED">STARTED</span> Reflexión</a></li>
+</ul>
+</li>
+<li><a href="#orgheadline6"><span class="todo STARTED">STARTED</span> Programa</a>
+<ul>
+<li><a href="#orgheadline7">Descripción</a></li>
+<li><a href="#orgheadline8">Objetivo general</a></li>
+<li><a href="#orgheadline9">Objetivos específicos</a></li>
+<li><a href="#orgheadline10">Habilidades Sello</a></li>
+</ul>
+</li>
+<li><a href="#orgheadline11">PROJECT Recursos</a>
+<ul>
+<li><a href="#orgheadline12">Manual RP</a></li>
+<li><a href="#orgheadline13"><span class="done MLP">MLP</span> Método de lectura previa</a></li>
+</ul>
+</li>
+<li><a href="#orgheadline14">PROJECT Portafolio Transversal</a>
+<ul>
+<li><a href="#orgheadline15"><span class="todo STARTED">STARTED</span> Agenda Portafolio</a></li>
+<li><a href="#orgheadline16">SENT Portafolio Carga Transversal</a></li>
+<li><a href="#orgheadline17"><span class="todo STARTED">STARTED</span> Anexos Todo</a></li>
+<li><a href="#orgheadline18">PROJECT Pauta Evaluación Portafolio Transversal</a></li>
+<li><a href="#orgheadline19"><span class="todo STARTED">STARTED</span> ¿Qué se espera de Usted?</a></li>
+<li><a href="#orgheadline20"><span class="todo STARTED">STARTED</span> ¿Qué es?</a></li>
+<li><a href="#orgheadline21"><span class="todo STARTED">STARTED</span> Presentación</a></li>
+</ul>
+</li>
+<li><a href="#orgheadline22">SENT Glosario</a></li>
+</ul>
+</div>
+</nav>
+
+<div id="outline-container-orgheadline1" class="outline-2">
+<h2 id="orgheadline1"><span class="todo TODO">TODO</span> Novedades</h2>
+<div class="outline-text-2" id="text-orgheadline1">
+</div><ul class="org-ul"><li><a id="orgheadline23"></a><span class="timestamp-wrapper"><span class="timestamp">&lt;2016-08-19 Fri&gt;</span></span>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="bienvenida">bienvenida</span>&#xa0;<span class="presentaciones">presentaciones</span></span><br ><div class="outline-text-7" id="text-orgheadline23">
+<p>
+Non eram nescius, Brute, cum, quae summis ingeniis exquisitaque doctrina philosophi Graeco sermone tractavissent, ea Latinis litteris mandaremus, fore ut hic noster labor in varias reprehensiones incurreret. nam quibusdam, et iis quidem non admodum indoctis, totum hoc displicet philosophari. quidam autem non tam id reprehendunt, si remissius agatur, sed tantum studium tamque multam operam ponendam in eo non arbitrantur. erunt etiam, et ii quidem eruditi Graecis litteris, contemnentes Latinas, qui se dicant in Graecis legendis operam malle consumere. postremo aliquos futuros suspicor, qui me ad alias litteras vocent, genus hoc scribendi, etsi sit elegans, personae tamen et dignitatis esse negent.
+</p>
+</div></li></ul>
+</div>
+<div id="outline-container-orgheadline2" class="outline-2">
+<h2 id="orgheadline2"><span class="todo STARTED">STARTED</span> Audiencia</h2>
+<div class="outline-text-2" id="text-orgheadline2">
+<p>
+Estimadas y estimados estudiantes, reciban la bienvenida a este espacio académico y de desarrollo personal. En esta oportunidad, la asignatura <b>Resolución de Problemas</b>, está dirigida a diferentes audiencias provenientes de carreras profesionales, todas ubicadas en su respectivo 4to. semestre lectivo. Como es costumbre al compartir espacios, se hace primordial la práctica de la convivencia, es decir, el <i>saber vivir y convivir</i> con otros y otras. Además, de velar por la <b>puntualidad</b> y la <b>asistencia</b>, es necesario que se plantee <b>un compromiso</b> con la asignatura, con la consecución de sus propias <b>metas</b>, y no sólo con ésta, sino con todo acto o proceso que inicie.
+</p>
+
+<p>
+En este espacio se proveerá de los recursos y medios necesarios para cursar el primer ramo de nuestra <i>Línea Sello Institucional</i>, que promueve la infusión de las <b>Habilidades Blandas</b> (HB) en nuestra comunidad. Como miembro del <i>Equipo Sello UAC</i> reciban una cordial bienvenida primero a nuestra Institución, y por cierto a las actividades que desarrollamos en nuestra línea. Nuestro principal propósito, es diseminar, promover y generar las HB en nuestros estudiantes, de modo que se tratará de una enseñanza interactiva: <i>experimentaremos</i>, <i>practicaremos</i>, <i>reforzaremos</i> y <i>reflexionaremos</i>, en torno a las oportunidades de aprendizaje de las HB. Mis mejores deseos en este nuevo desafío que juntos iniciamos, Hans.
+</p>
+
+
+<blockquote>
+<p>
+En adelante me referiré a las mencionadas carreras que constituyen la audiencia, como &laquo;<b>comunidad</b>&raquo;, con ello favorecemos el sentido de equipo y de convivencia.
+</p>
+</blockquote>
+
+<p>
+Las distintas audiencias se distribuyen de la manera siguiente:
+</p>
+</div>
+
+<ul class="org-ul"><li><a id="orgheadline24"></a>sábado 08:30AM-11:20AM. <b>Derecho</b> + <b>Terapia Ocupacional</b><br ></li>
+
+<div id="outline-container-orgheadline3" class="outline-3">
+<h3 id="orgheadline3">Contacto</h3>
+<div class="outline-text-3" id="text-orgheadline3">
+<blockquote>
+<ul class="org-ul">
+<li>Email: <a href="mailto:hans.sigrist@uac.cl">hans.sigrist@uac.cl</a></li>
+<li>Twitter: <a href="http:twitter.com/hsigrist">@hsigrist</a></li>
+<li>Web: <a href="http://hsigrist.github.io/">hsigrist.github.io</a></li>
+</ul>
+</blockquote>
+</div>
+</div>
+</div>
+<div id="outline-container-orgheadline4" class="outline-2">
+<h2 id="orgheadline4"><span class="todo STARTED">STARTED</span> Habilidades Blandas (HB)</h2>
+<div class="outline-text-2" id="text-orgheadline4">
+</div><div id="outline-container-orgheadline5" class="outline-3">
+<h3 id="orgheadline5"><span class="todo STARTED">STARTED</span> Reflexión</h3>
+<div class="outline-text-3" id="text-orgheadline5">
+<p>
+Antes de iniciar con los contenidos de la primera unidad, es conveniente introducir el concepto de <b>Habilidades Blandas</b>, de modo familiarizarnos con las nuevas necesidades de la industria y los nuevos desafíos que en plena <i>Sociedad del Conocimiento</i> deben relevar los futuros empleadas y empleados de la industria nacional.
+</p>
+
+<blockquote>
+<ul class="org-ul">
+<li><a href="file:///Users/HS/repo/hsigrist-hugo/static/HB/habilidades-blandas.html">Habilidades Blandas (online)</a></li>
+<li><a href="file:///Users/HS/repo/hsigrist-hugo/static/HB/habilidades-blandas.pdf">Habilidades Blandas (pdf)</a></li>
+</ul>
+</blockquote>
+</div>
+</div>
+</div>
+<div id="outline-container-orgheadline6" class="outline-2">
+<h2 id="orgheadline6"><span class="todo STARTED">STARTED</span> Programa</h2>
+<div class="outline-text-2" id="text-orgheadline6">
+</div><div id="outline-container-orgheadline7" class="outline-3">
+<h3 id="orgheadline7">Descripción</h3>
+<div class="outline-text-3" id="text-orgheadline7">
+<p>
+Curso teórico-práctico orientado a desarrollar la capacidad para identificar un problema y buscar su solución de manera creativa, reflexiva y colaborativa. Esta búsqueda implica reconocer el error, los fallos y los fracasos como oportunidades para la reflexión y el aprendizaje colaborativo. A través de este curso, se busca eliminar las barreras que existen actualmente en el afrontamiento de problemas, tanto del ámbito personal como profesional. En este sentido, se da mucho valor e importancia a la metacognición y el pensamiento creativo y se espera que este curso pueda tener una gran repercusión en las vidas de nuestros estudiantes, quienes normalmente se verán enfrentados a diversos tipos de problemas, tanto cotidianos como profesionales.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgheadline8" class="outline-3">
+<h3 id="orgheadline8">Objetivo general</h3>
+<div class="outline-text-3" id="text-orgheadline8">
+<p>
+Desarrollar la capacidad para identificar un problema y buscar su solución de manera creativa, reflexiva y colaborativa.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgheadline9" class="outline-3">
+<h3 id="orgheadline9">Objetivos específicos</h3>
+<div class="outline-text-3" id="text-orgheadline9">
+<ol class="org-ol">
+<li>Distinguir entre problema percibido y problema real (en qué queremos ser creativos).</li>
+<li>Desarrollar el pensamiento crítico como proceso cognitivo para analizar o evaluar opiniones o afirmaciones de los demás.</li>
+<li>Aplicar técnicas de creatividad en la toma de decisiones y solución de problemas de la vida cotidiana y laboral.</li>
+<li>Identificar los problemas de manera analítica, reconociendo que se debe tomar una decisión para llegar a la solución de éste.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgheadline10" class="outline-3">
+<h3 id="orgheadline10">Habilidades Sello</h3>
+<div class="outline-text-3" id="text-orgheadline10">
+<ul class="org-ul">
+<li>Capacidad para identificar un problema y buscar su solución de manera creativa, reflexiva y colaborativa.</li>
+<li>Capacidad para identificar los aspectos relevantes de un problema para la toma de decisiones.</li>
+<li>Capacidad para aplicar distintas técnicas y métodos creativos para enfrentar problemas desde perspectivas múltiples.</li>
+<li>Capacidad para utilizar la creatividad para la resolución de problemas o desafíos personales y profesionales.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgheadline11" class="outline-2">
+<h2 id="orgheadline11">PROJECT Recursos</h2>
+<div class="outline-text-2" id="text-orgheadline11">
+</div><div id="outline-container-orgheadline12" class="outline-3">
+<h3 id="orgheadline12">Manual RP</h3>
+<div class="outline-text-3" id="text-orgheadline12">
+<p>
+A continuación comparto con la comunidad el <b>manual oficial de la asignatura</b>, es primordial que lo descargue y utilice como guía de estudio. Recuerde que en ningún caso, este manual pretende ser una completa visión del panorama comunicativo en organizaciones, ni menos aún, la última palabra en comunicación efectiva. Como siempre, nuestros <i>manuales Sello</i>, son un acercamiento a las principales tendencias actuales en torno a la temática que cubran. Un aprendiz profundo, reconoce como propio el deber &laquo;ir más allá&raquo; y ser un &laquo;consumidor eficiente de información&raquo;. Recuerde que, en plena <b>Sociedad del Conocimiento</b>, la información <b>prolifera</b> en todas partes.
+</p>
+
+<blockquote>
+<p>
+
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-orgheadline13" class="outline-3">
+<h3 id="orgheadline13"><span class="done MLP">MLP</span> Método de lectura previa</h3>
+<div class="outline-text-3" id="text-orgheadline13">
+<p>
+En la actual asignatura utilizaremos el denominado <b>Método de la Lectura Previa</b> (MLP), que permitirá a la audiencia llegar a clases mejor equipados con insumos previamente asignados/propuestos. La idea es simple, con ello favorecemos la clase en una experiencia <b>dialógica</b> y podremos de esta forma intercambiar puntos de vista respecto de algún tema de interés.
+</p>
+
+<p>
+Este método resulta muy interesante y al mismo tiempo es una excelente oportunidad de <b>crecimiento personal</b>, en tanto promueve la <b>relación de conceptos</b>, para ello es necesario que dada la ocasión de una MLP, puedan establecer <b>relaciones causales</b> o <b>comparaciones</b>, <b>clasificaciones</b>. Aquí la <b>memoria</b> juega un rol importante, existe una crítica respecto a que los métodos de enseñanza relacionados con construir conocimiento &laquo;limpian&raquo; la memoria, en tanto solo promueven el aprendizaje experiencial y no la memoria. Pues bien, con este método podrán infundir una práctica que apunte a remediar este problema: la memoria almacenará cierto stock de conceptos y datos a partir de los cuales podrán recrear y pensar.
+</p>
+
+<p>
+La invitación es a dar una lectura <b>comprensiva</b>, aquí verán que ahora la memoria ya no basta, debemos incorporar a su vez una comprensión léxica para ir avanzando hacia temáticas más avanzadas o complejas.
+</p>
+
+<p>
+Lo anterior, lo evidenciarán en la medida que sean capaces de responder a diversas preguntas que estableceré con el único objetivo de ir &laquo;subiendo&raquo; en lo niveles de <b>comprensión lectora</b>.
+</p>
+
+<p>
+En adelante, cuando se utilicemos el MLP, debe velar por dar justo cumplimiento a lo solicitado, no <b>procrastine</b>, no aplaze, tómese un tiempo y ubique la acción en un lugar que no propicie las interrupciones. 
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgheadline14" class="outline-2">
+<h2 id="orgheadline14">PROJECT Portafolio Transversal</h2>
+<div class="outline-text-2" id="text-orgheadline14">
+</div><div id="outline-container-orgheadline15" class="outline-3">
+<h3 id="orgheadline15"><span class="todo STARTED">STARTED</span> Agenda Portafolio</h3>
+<div class="outline-text-3" id="text-orgheadline15">
+<p>
+A continuación, comparto el <b>Calendario de Avances Portafolio</b>, sugiero ceñirse a esta agenda ya que favorece la <i>autogestión</i> y con ello se evita la <i>procrastinación</i>.
+</p>
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Avance</th>
+<th scope="col" class="org-left">Producto</th>
+<th scope="col" class="org-left">Fecha</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">Biodata, guión personal</td>
+<td class="org-left">22-27 agosto</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">Matriz de fortalezas/debilidades personales</td>
+<td class="org-left">05-10 septiembre</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">Principales subhabilidades, historia motivacional breve</td>
+<td class="org-left">19-24 septiembre</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">Currículum vítae</td>
+<td class="org-left">17-22 octubre</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-left">Reflexión Final</td>
+<td class="org-left">24-29 octubre</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgheadline16" class="outline-3">
+<h3 id="orgheadline16">SENT Portafolio Carga Transversal</h3>
+<div class="outline-text-3" id="text-orgheadline16">
+<p>
+Una vez finalizado su Portafolio, cautele relevar todos los <b>Criterios</b> parametrizados en la <i>Pauta de evaluación Portafolio Transversal</i>, no olvide adjuntar <b>Carta de presentación</b> (ver pauta, criterio 10). El enlace para cargar su Portafolio se encuentra en el enlace siguiente:
+</p>
+
+<blockquote>
+<p>
+<a href="https://www.dropbox.com/request/Fb3eWQzBmG8CSC8aSfc4">Carga Portafolio</a>
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-orgheadline17" class="outline-3">
+<h3 id="orgheadline17"><span class="todo STARTED">STARTED</span> Anexos Todo</h3>
+<div class="outline-text-3" id="text-orgheadline17">
+<p>
+(<i>Principales ejercicios de libre elección, rescatados de las clases, máximo 4 ejercicios desarrollados correctamente</i>). La libre elección de los ejercicios busca evaluar los criterios de selección del estudiante en cuanto al desafío de la actividad y su relación con la deconstrucción de la macro habilidad presentada como tercer avance.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgheadline18" class="outline-3">
+<h3 id="orgheadline18">PROJECT Pauta Evaluación Portafolio Transversal</h3>
+<div class="outline-text-3" id="text-orgheadline18">
+<p>
+Este producto será evaluado según la rúbrica que podrá encontrar en el enlace siguiente:
+</p>
+
+<blockquote>
+<p>
+<a href="file:///Users/HS/repo/hsigrist-hugo/static/PT/Pauta_de_evaluacion_Portafolio_transversal.pdf">Pauta Evaluación Portafolio Transversal (pdf)</a>
+</p>
+</blockquote>
+
+<ul class="org-ul">
+<li>El único documento utilizable para la entrega de su Portafolio es el dispuesto en el enlace:</li>
+</ul>
+
+<blockquote>
+<p>
+<a href="file:///Users/HS/repo/hsigrist-hugo/static/PT/Portafolio_RP_2_2106_Carrera_Apellido_Nombre.docx">Portafolio RP 2-2016 (docx)</a>
+</p>
+</blockquote>
+
+<ul class="org-ul">
+<li>Si Usted estudia <i>Derecho</i> y su nombre es <i>Catalina Ibaceta</i>, entonces debe nombrar su documento de la manera siguiente:</li>
+</ul>
+<p>
+<code>Portafolio_RP_2_2016_Derecho_Ibaceta_Catalina.docx</code>
+</p>
+<ul class="org-ul">
+<li>Si Usted estudia <i>Terapia Ocupacional</i> y su nombre es <i>Juan Pablo Gutiérrez</i>, entonces debe nombrar su documento de la manera siguiente:</li>
+</ul>
+<p>
+<code>Portafolio_RP_2_2016_Terapia_Ocupacional_Gutierrez_Juan_Pablo.docx</code>
+</p>
+<ul class="org-ul">
+<li>Note, que <b>no debe usar tilde</b> al nombrar documentos, ni dejar espacios en blanco, esto favorece la búsqueda por nombre y facilita su carga en repositorios online.</li>
+<li><b>No cambie la estructura del documento plantilla dispuesto</b>, sólo cambie el contenido del <b>corpus</b> y mantenga la estructura de los títulos intacta. Así como tampoco, haga cambios en los aspectos de forma del mismo.</li>
+<li>Su entrega puede ser presentado en copia dura (impreso) o en formato digital (portafolio electrónico).</li>
+<li><b>Se podrían solicitar avances y/o retroalimentación, conforme el calendario de avances anterior</b>.</li>
+<li><i>Esta plantilla, su desarrollo, evolución como el calendario de avances sugerido podría ser modificado</i>.</li>
+</ul>
+
+<blockquote>
+<p>
+<b>Advertencia</b>. Esta sección será periódicamente puesta al día, disponiendo nuevos recursos e información para la confección de su <b>Portafolio</b>.
+</p>
+</blockquote>
+
+<p>
+La elaboración de su Portafolio es una actividad por principio <b>personal</b>, en él debe relevar las propiedades o requisitos de toda manifestación verbal. Recuerde que las <b>propiedades textuales</b> son:
+</p>
+
+<dl class="org-dl">
+<dt>Adecuación</dt><dd>está relacionada con las variaciones del escrito según el grupo social, la situación de comunicación, la interrelación entre los hablantes, etc. Recuerda que ser adecuado significa saber escoger de entre todos los elementos que nos ofrece el lenguaje, el más apropiado para cada situación de comunicación.</dd>
+<dt>Coherencia</dt><dd>establece cuál es la información más pertinente para comunicar y cómo se ha de hacer (en qué orden, con qué grado de detalle, con qué estructura, etc.). Para que un texto sea estructuralmente coherente se deben considerar las siguientes reglas:
+<dl class="org-dl">
+<dt>Regla de Repetición</dt><dd>es necesario que la mayor parte de las proposiciones se encadenen tomando como base la repetición o alusión a algunos elementos considerados como centrales.</dd>
+<dt>Regla de Progresión</dt><dd>es necesario que el desarrollo se produzca con una aportación constante de información nueva.</dd>
+<dt>Regla de no contradicción</dt><dd>es necesario que no se introduzca ningún elemento semántico que contradiga un contenido establecido previamente (de forma implícita o explícita).</dd>
+<dt>Regla de relación</dt><dd>es necesario que los hechos referidos estén relacionados en el mundo representado.</dd>
+</dl></dd>
+<dt>Cohesión</dt><dd>las relaciones que se establecen entre los diversos elementos de una oración están vinculadas o conectadas con medios gramaticales diversos, tales como puntuación, conjunciones, artículos, pronombres, sinónimos, etc.</dd>
+</dl>
+
+<p>
+Al respecto, se comparte con la comunidad, dos extractos con las principales características de las propiedades textuales, cuyo uso es vital en la redacción (expresión escrita), los documento se encuentran en los enlaces siguientes:
+</p>
+
+<blockquote>
+<ul class="org-ul">
+<li><a href="file:///Users/HS/repo/hsigrist-hugo/static/PT/Conectores_textuales_logicos.pdf">Conectores textuales logicos.pdf</a></li>
+<li><a href="file:///Users/HS/repo/hsigrist-hugo/static/PT/Guia_conectores_logicos.pdf">Guia conectores logicos.pdf</a></li>
+</ul>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-orgheadline19" class="outline-3">
+<h3 id="orgheadline19"><span class="todo STARTED">STARTED</span> ¿Qué se espera de Usted?</h3>
+<div class="outline-text-3" id="text-orgheadline19">
+<p>
+Demostrar capacidad para escribir, seleccionar, coleccionar, analizar y reflexionar. Por tanto, es necesario que conozca los temas a incluir y la forma en que será evaluado.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgheadline20" class="outline-3">
+<h3 id="orgheadline20"><span class="todo STARTED">STARTED</span> ¿Qué es?</h3>
+<div class="outline-text-3" id="text-orgheadline20">
+<p>
+Es un recurso de evaluación que representa su desempeño a lo largo de un proceso formativo. Puede contener diversas producciones personales que evidencian su avance en una determinada área.
+</p>
+
+<p>
+Es un recurso útil para enfatizar el rol y compromiso suyo en su proceso de aprendizaje. Puede ser utilizado con fines auto-evaluativos, hetero-evaluativos y co-evaluativos. Debe diseñarse en formato <b>Word</b> (.docx).
+</p>
+</div>
+</div>
+<div id="outline-container-orgheadline21" class="outline-3">
+<h3 id="orgheadline21"><span class="todo STARTED">STARTED</span> Presentación</h3>
+<div class="outline-text-3" id="text-orgheadline21">
+<p>
+¿Sigues usando un currículum para presentarte? ¿Has pensado en usar un <b>Portafolio</b>? En esta asignatura diseñaran un <b>Portafolio</b>, una buena práctica sería entender el mismo como una representación de quién soy, qué hago, cómo lo hago, es decir, como <b>me visibilizo</b> y cómo <b>me visibilizan</b>; en este sentido, el Portafolio puede ser utilizado como una herramienta de consecución laboral.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgheadline22" class="outline-2">
+<h2 id="orgheadline22">SENT Glosario</h2>
+<div class="outline-text-2" id="text-orgheadline22">
+<p>
+Como una forma de fomentar su acervo, les propongo la creación de un <b>Glosario</b>, de modo recopilen conceptos e ideas que permitan su uso pertinente en diversos ámbitos de la Resolución de Problemas. Pueden incorporar los conceptos que desees, como mínimo debieran manejarse los propuestos.
+</p>
+
+<p>
+Utilice para estos efectos, el documento Word que puede descargar en el enlace siguiente:
+</p>
+
+<blockquote>
+<p>
+<a href="Glosario_RP_2-2016_Carrera.docx">Glosario_RP_2-2016_Carrera.docx</a>
+</p>
+</blockquote>
+
+<p>
+Los <i>términos sugeridos</i>, han sido extraídos del <b>Manual de Resolución de Problemas</b>, socializado más abajo en la sección <b>Recursos</b>:
+</p>
+
+<blockquote>
+<p>
+gestión · problema · creatividad · estrategia · resolución · situación deseada · situación ideal · identificación · alcance · meta · barrera · cognición · procedimiento · algoritmo · heurística · toma de decisiones · evaluar · composición · complejidad · innovación · adaptativo · reflexivo · versátil · implicado · implementación · monitoreo · retroalimentación · pensamiento convergente · pensamiento divergente · brain-storming · explorar · indagar · discusión · eficacia · eficiencia
+</p>
+</blockquote>
+
+<p>
+Una vez finalice su Glosario, debe cargarlo en el enlace siguiente:
+</p>
+
+<blockquote>
+<p>
+<a href="https://www.dropbox.com/request/rposJLTC0c2OrZXwNrDc">Carga Glosario</a>
+</p>
+</blockquote>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Hans Sigrist (<a href="mailto:hans.sigrist@uac.cl">hans.sigrist@uac.cl</a>)</p>
+<p class="date">Date: Sat Jul 09 18:35:08 2016</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.3.4)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

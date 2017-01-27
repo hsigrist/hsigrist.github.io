@@ -1,0 +1,57 @@
+#+TITLE: Lenguaje R-help - SageMath Cell
+#+AUTHOR: Hans Sigrist
+#+EMAIL: hans.sigrist@uac.cl
+#+DATE: Sat Apri 24 17:12:36 2016
+#+OPTIONS: html-link-use-abs-url:nil html-postamble:t
+#+OPTIONS: html-preamble:t html-scripts:t html-style:t
+#+OPTIONS: html5-fancy:t tex:t
+#+OPTIONS: toc:t num:nil
+#+HTML_DOCTYPE: html5
+#+HTML_CONTAINER: div
+#+DESCRIPTION: Página de ayuda en el uso del lenguaje R, a traves de SageMath Cell.
+#+KEYWORDS: R-language, SageMath, SageMath Cell, help
+#+HTML_LINK_HOME: http://hsigrist.github.io
+#+HTML_LINK_UP: http://hsigrist.github.io/docencia/
+#+HTML_MATHJAX: path:"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+#+HTML_HEAD: <link rel="stylesheet" href="Grump.css" />
+#+HTML_HEAD: <meta charset="utf-8">
+#+HTML_HEAD: <meta name="viewport" content="width=device-width">  
+#+HTML_HEAD: <script src="https://sagecell.sagemath.org/static/jquery.min.js"></script>
+#+HTML_HEAD: <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+#+HTML_HEAD: <script>sagecell.makeSagecell({"inputLocation": ".sage"});</script>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://sagecell.sagemath.org/static/sagecell_embed.css">
+#+SUBTITLE: Lenguaje R-help - UAC-SF · Prof. Hans Sigrist
+#+LATEX_HEADER:
+#+LANGUAGE: es
+
+#+BEGIN_HTML
+<script>
+$(function () {
+    sagecell.makeSagecell({inputLocation: 'div.compute-r',
+                           evalButtonText: 'Evaluar',
+                           defaultLanguage: "r", 
+                           languages: sagecell.allLanguages});
+});
+</script>
+#+END_HTML
+
+
+* ¿Qué es?
+[[https://github.com/sagemath/sagecell][SageMath Cell]], es un código abierto ([[https://github.com/sagemath/sagecell/blob/master/LICENSE.txt][open source]]), escalable, y una fácil de usar interfaz web para [[http://www.sagemath.org][SageMath]], un sistema integral de software matemático de código abierto. Además, SageMath Cell es un servicio que se puede utilizar para incrustar cálculos Sage en cualquier página web.
+
+* ¿De dónde es?
+Puede dar lectura a [[https://sagecell.sagemath.org/static/about.html#history][A short history]], para obtener antecedentes y orígenes. Por lo pronto, entre los autores se encuentra [[http://wstein.org][William Stein]], profesor de la Universidad de Washington con quien he tenido oportunidad de dialogar y sostener interacciones en torno a Sage y su implementación.
+
+* ¿Cómo se usa?
+Existen diversos tutoriales disponibles, algunos de ellos en español, e.g. [[http://www.sagemath.org/es/Introduccion_a_SAGE.pdf][Introduccion: Matemáticas Elementales con SageMath (PDF, Español)]], sin embargo, en esta oportunidad, debemos concentrarnos en [[https://www.r-project.org/about.html][R]], un lenguaje y un ambiente de trabajo diseñado para estadística computacional y gráfica.
+
+Su uso en estas páginas estará limitado a ciertas acciones básicas y algunas más avanzadas, en ningún caso es necesario dominar el lenguaje R por completo, ni tampoco dominar de manera avanzada el uso de SageMath.
+
+Inicialmente, veremos una pequeña ventana rectangular como la siguiente:
+
+#+BEGIN_HTML
+<div class="compute-r"><script type="text/x-sage">
+</script></div>
+#+END_HTML
+
+En ella podemos insertar operaciones matemáticas básicas como por ejemplo, $15/5*3$, (será $1$, todo indica que si), luego debemos presionar el botón Evaluar, o bien teclear Shift+Enter (i.e. ambas, las teclas Shift y la tecla Enter simultáneamente), intentelo ahora, en la ventana anterior.

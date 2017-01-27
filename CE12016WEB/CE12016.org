@@ -1,0 +1,290 @@
+#+TITLE: CE 1-2016: Comunicación Efectiva (Formato inverso)
+#+AUTHOR: Hans Sigrist
+#+EMAIL: hans.sigrist@uac.cl
+#+DATE: Thu Feb 25 15:18:08 2016 
+#+OPTIONS: html-link-use-abs-url:nil html-postamble:t
+#+OPTIONS: html-preamble:t html-scripts:t html-style:t
+#+OPTIONS: html5-fancy:t tex:t
+#+OPTIONS: toc:nil num:nil
+#+HTML_DOCTYPE: html5
+#+HTML_CONTAINER: div
+#+DESCRIPTION: Página de la asignatura Comunicación Efectiva, parte de la Línea Sello Institucional UAC.
+#+KEYWORDS: comunicación efectiva
+#+HTML_LINK_HOME: http://hsigrist.github.io
+#+HTML_LINK_UP: http://hsigrist.github.io/docencia/
+#+HTML_MATHJAX: path:"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+#+HTML_HEAD: <link rel="stylesheet" href="Grump.css" />
+#+SUBTITLE: Psicología · TNS en Agronomía (Sección 2) · Derecho + Kinesiología. Otoño 2016, jornada vespertina · UAC-SF · Prof. Hans Sigrist
+#+LATEX_HEADER:
+#+LANGUAGE: es
+
+#+TOC: headlines 2
+
+
+* NOVEDADES REGISTRO CALIFICACIONES :agronomía:derecho:kinesiología:psicología:
+
+Estimados y estimadas estudiantes, ya se encuentra habilitada la primera fase del "Portal del Alumno", en el cual podrán acceder a la revisión de su carga académica, mensajería proveniente de sus respectivos docentes y posibilidad de descargar documentos y/o recursos que sus profesores les carguen. En este sentido, es que los invito a que revisen el portal y puedan acceder con sus credenciales de modo conozcan sus registros académicos, en particular, aquellos de nuestra asignatura *Comunicación Efectiva*. Actualmente me encuentro en proceso de levantar los registros que ya poseo y migrarlos hacia el nuevo sistema. Quedan entonces invitados a revisar sus registros, *cualquier inquietud, solicito encarecidamente, referir correo a [[mailto:hans.sigrist@uac.cl][hans.sigrist@uac.cl]] bajo el asunto "Situación Académica CE", de este modo podré atender a las consultas de manera más eficiente. Les comparto el enlace, que de todas formas es accesible desde nuestra página institucional en [[http://www.uac.cl][www.uac.cl]] en la sección "Estudiantes".
+
+#+BEGIN_QUOTE
+[[http://www.uac.cl/portaldealumnos][Acceso a Portal de Alumnos]]
+#+END_QUOTE
+
+* NOVEDADES REFLEXIÓN FINAL
+
+#+BEGIN_QUOTE
+Estimados y estimadas estudiantes, al finalizar la asignatura refiero una reflexión que aúne sentimientos de satisfacción y que elevan mi convicción respecto de lo esencial que resultan este tipo de oportunidades de aprendizaje. Me inclino a pensar que iniciado este tránsito con quien escribe, logran conciliar un nivel de compromiso y responsabilidad más allá del simple hecho de "recibir" contenidos, entonces me sentiré confortado y al mismo tiempo certero de que fue un inicio auspiciante. No todo es ni debe ser autocomplacencia, la autoevaluación (o evaluación reflexiva) debe ser una praxis diaria y permanente a lo largo de toda la vida, en este sentido, me inclino a pensar que la asignatura puede ser mucho más provechosa e enriquecedora. Sólo me queda recordar la máxima de la asignatura -y que según he observado- ha dejado una huella en muchos y muchas: "No emita juicios valóricos, éstos sólo aportan sesgo". Saludos cordiales, /Hans/.
+#+END_QUOTE
+
+* FINISHED PROJECT Portafolio Transversal 
+** FINISHED Agenda Portafolio
+A continuación, comparto el *Calendario de Avances Portafolio*, sugiero ceñirse a esta agenda ya que favorece la /autogestión/ y con ello se evita la /procrastinación/.
+|--------+---------------------------------------------------------+-------------|
+| Avance | Producto                                                | Fecha       |
+|--------+---------------------------------------------------------+-------------|
+|      1 | Biodata, guión personal                                 | 11-16 abril |
+|      2 | Matriz de fortalezas/debilidades personales             | 25-30 abril |
+|      3 | Principales subhabilidades, historia motivacional breve | 9-14 mayo   |
+|      4 | Currículum vítae                                        | 13-18 junio |
+|      5 | Reflexión Final                                         | 20-25 junio |
+|--------+---------------------------------------------------------+-------------|
+
+Los siguientes, son los avances que verificaremos en las fechas propuestas (Semana). *No debe cargar avances, no se harán retroalimentaciones. Más bien, se orientarán inquietudes en clase en torno a los avances propuestos*.
+
+****** Avance 1: Semana 3
+DEADLINE: <2016-04-16 Sat> SCHEDULED: <2016-04-11 Mon>
+- Biodata :: Elabore una descripción personal en la que se destaquen sus principales aspectos profesionales, debe incluir una foto personal.
+- Guión personal :: Responde asertivamente a la pregunta: ¿Podría contarme algo acerca de usted?/Cuénteme algo acerca de usted. Mín. 60 y máx. 90 palabras.
+
+** FINISHED Temas mínimos a incluir en el Portafolio (*Tercera Evaluación Parcial 40%*):
+DEADLINE: <2016-07-02 Sat> SCHEDULED: <2016-03-28 Mon>
+
+Entre los *elementos mínimos* que debe incluir su portafolio se encuentran:
+
+****** Biodata (resumen profesional, máximo 4 líneas)
+Se declara en tercera persona preferentemente. Debe relevar su presencia desde un enfoque académico. En el caso de no existir antecedentes académicos, utilice su condición de estudiante en formación profesional. Si posee algún oficio y habilidad que pueda destacar, puede incluirla entre sus competencias. En general, una biodata nos presenta profesional, académica, disciplinarmente.  
+****** Guión personal (forma de venderse profesionalmente, mínimo 60, máximo 90 palabras)
+En el guión nos presentamos en primera persona, destacando nuestras habilidades blandas, posibles reconocimientos, capacitaciones en el ámbito interpersonal, validación de aptitudes, etc. Es una forma de vendernos profesionalmente, nos destaca, nos posiciona, desde una perspectiva positiva, corresponde a la forma en que nos visualizamos y la relevamos desde la evidencia, con total honestidad.
+****** Matriz de fortalezas/debilidades personales
+Ambas se deben declarar desde un enfoque de mejora/reconocimiento, por un lado, enunciamos aquella debilidad que nos 
+****** Principales subhabilidades a trabajar (deconstrucción propia de una macro habilidad)
+
+****** Una historia motivacional breve (relato motivacional que evidencia el desarrollo de una habilidad laboral, mínimo 80, máximo 150 palabras)
+
+****** Currículum vítae (preferentemente mixto, máximo 2 páginas)
+
+****** Reflexión final (mínimo 80, máximo 100 palabras)
+
+
+*** Sobre foto personal
+
+Sugiero una foto de frente, ofreciendo una sonrisa natural y empática. Existen herramientas (software de escritorio) para editar imágenes como también aplicaciones online, entre ellas destaco [[http://www125.lunapic.com/editor/][Lunapic]], que por su simpleza le permitirá rápidamente obtener resultados adecuados. Dos herramientas de Lunapic, fueron utilizadas con la imagen Biodata del Portafolio: /Simple Crop Tool/, ubicado en el menu /Edit/ con la variante (shape) circle; por otra parte se utilizó desde el menu /Filters/ el primero llamado /Black and White/. Una vez terminado se presiona /Save Image/ en el menu /File/ y la imagen se guarda en nuestro computador. A modo de ejemplo se puede pasar de [[file:man-in-suit2.jpg][esto]] a [[file:imageedit_7_2595109213.gif][esto]]; o bien de [[file:bigstock-Successful-Mature-Business-Man-7408934.jpg][esto]] a [[file:imageedit_10_7072456166.gif][esto]]. 
+
+** FINISHED SENT Portafolio Carga Transversal
+
+Una vez finalizado su Portafolio, cautele relevar todos los *Criterios* parametrizados en la /Pauta de evaluación Portafolio Transversal/, no olvide adjuntar *Carta de presentación* (ver pauta, criterio 10). El enlace para cargar su Portafolio se encuentra en el enlace siguiente:
+
+#+BEGIN_QUOTE
+[[https://www.dropbox.com/request/Fb3eWQzBmG8CSC8aSfc4][Carga Portafolio]]
+#+END_QUOTE
+** FINISHED Anexos Todo
+(/Principales ejercicios de libre elección, rescatados de las clases, máximo 4 ejercicios desarrollados correctamente/). La libre elección de los ejercicios busca evaluar los criterios de selección del estudiante en cuanto al desafío de la actividad y su relación con la deconstrucción de la macro habilidad presentada como tercer avance.
+
+** FINISHED PROJECT Pauta Evaluación Portafolio Transversal
+ 
+Este producto será evaluado según la rúbrica que podrá encontrar en el enlace siguiente:
+
+#+BEGIN_QUOTE
+[[file:Pauta_de_evaluacion_Portafolio_transversal.pdf]]
+#+END_QUOTE
+
+
+- El único documento utilizable para la entrega de su Portafolio es el dispuesto en el enlace: 
+#+BEGIN_QUOTE
+[[file:Portafolio_CE_Carrera_Apellido_Nombre.docx]]
+#+END_QUOTE
+- Si Usted estudia /Derecho/ y su nombre es /Catalina Ibaceta/, entonces debe nombrar su documento de la manera siguiente:
+~Portafolio_CE_Derecho_Ibaceta_Catalina.docx~
+- Si Usted estudia /TNS en Agronomía/ y su nombre es /Juan Pablo Gutiérrez/, entonces debe nombrar su documento de la manera siguiente:
+~Portafolio_CE_TNS_Agronomia_Gutierrez_Juan_Pablo.docx~
+- Note, que no debe usar tilde al nombrar documentos, ni dejar espacios en blanco, esto favorece la búsqueda por nombre y facilita su carga en repositorios online.
+- No cambie la estructura del documento plantilla dispuesto, sólo cambie el contenido del *corpus* y mantenga la estructura de los títulos intacta. Así como tampoco, haga cambios en los aspectos de forma del mismo.
+- Su entrega puede ser presentado en copia dura (impreso) o en formato digital (portafolio electrónico).
+- *Se solicitarán avances y/o retroalimentación, conforme el calendario de avances anterior*.
+       
+#+BEGIN_QUOTE
+*Advertencia*. Esta sección será periódicamente puesta al día, disponiendo nuevos recursos e información para la confección de su *Portafolio*.
+#+END_QUOTE
+
+La elaboración de su Portafolio es una actividad por principio *personal*, en él debe relevar las propiedades o requisitos de toda manifestación verbal. Recuerde que las *propiedades textuales* son:
+
+- Adecuación :: está relacionada con las variaciones del escrito según el grupo social, la situación de comunicación, la interrelación entre los hablantes, etc. Recuerda que ser adecuado significa saber escoger de entre todos los elementos que nos ofrece el lenguaje, el más apropiado para cada situación de comunicación.
+- Coherencia :: establece cuál es la información más pertinente para comunicar y cómo se ha de hacer (en qué orden, con qué grado de detalle, con qué estructura, etc.). Para que un texto sea estructuralmente coherente se deben considerar las siguientes reglas:
+  - Regla de Repetición :: es necesario que la mayor parte de las proposiciones se encadenen tomando como base la repetición o alusión a algunos elementos considerados como centrales.
+  - Regla de Progresión :: es necesario que el desarrollo se produzca con una aportación constante de información nueva.
+  - Regla de no contradicción :: es necesario que no se introduzca ningún elemento semántico que contradiga un contenido establecido previamente (de forma implícita o explícita).
+  - Regla de relación :: es necesario que los hechos referidos estén relacionados en el mundo representado.
+- Cohesión :: las relaciones que se establecen entre los diversos elementos de una oración están vinculadas o conectadas con medios gramaticales diversos, tales como puntuación, conjunciones, artículos, pronombres, sinónimos, etc.
+
+Al respecto, se comparte con la comunidad, dos extractos con las principales características de las propiedades textuales, cuyo uso es vital en la redacción (expresión escrita), los documento se encuentran en los enlaces siguientes:
+
+#+BEGIN_QUOTE
+- [[file:Conectores_textuales_logicos.pdf]]
+- [[file:Guia_conectores_logicos.pdf]]
+#+END_QUOTE
+
+** FINISHED ¿Qué se espera de Usted?
+Demostrar capacidad para escribir, seleccionar, coleccionar, analizar y reflexionar. Por tanto, es necesario que conozca los temas a incluir y la forma en que será evaluado.
+
+** FINISHED ¿Qué es?
+Es un recurso de evaluación que representa su desempeño a lo largo de un proceso formativo. Puede contener diversas producciones personales que evidencian su avance en una determinada área.
+
+Es un recurso útil para enfatizar el rol y compromiso suyo en su proceso de aprendizaje. Puede ser utilizado con fines auto-evaluativos, hetero-evaluativos y co-evaluativos. Debe diseñarse en formato *Word* (.docx).
+** FINISHED Presentación
+¿Sigues usando un currículum para presentarte? ¿Has pensado en usar un *Portafolio*? En esta asignatura diseñaran un *Portafolio*, una buena práctica sería entender el mismo como una representación de quién soy, qué hago, cómo lo hago, es decir, como *me visibilizo* y cómo *me visibilizan*; en este sentido, el Portafolio puede ser utilizado como una herramienta de consecución laboral.
+* FINISHED SENT Glosario
+Como una forma de fomentar su acervo, les propongo la creación de un *Glosario*, de modo recopilen conceptos e ideas que permitan su uso pertinente en diversos ámbitos de la comunicación. Pueden incorporar los conceptos que desees, como mínimo debieran manejarse los siguientes:
+
+Utilice para estos efectos, el documento Word que puede descargar en el enlace siguiente:
+
+#+BEGIN_QUOTE
+[[file:Glosario_CE_1-2016_Carrera_Apellido_Nombre.docx]]
+#+END_QUOTE
+
+Los /términos sugeridos/, han sido extraídos del *Manual de Comunicación Efectiva*, socializado más abajo en la sección *Recursos*:
+
+#+BEGIN_QUOTE
+comunicación · comunicación humana · información · comunicación efectiva · convivencia personal · convivencia laboral · modelo transaccional de comunicación · niveles de comunicación · lenguaje formal · lenguaje informal · barreras de la comunicación · cognición · signos verbales · signos no verbales · frustración · empatía · actitud · enfoque · atención · generalizaciones · acusaciones · crítica · diálogo · escucha activa · manejo del estrés · conciencia emocional · turnos del habla · parafrasear · retroalimentación · percepción · persuasión · imagen · adecuación · coherencia · cohesión
+#+END_QUOTE
+
+Una vez finalice su Glosario, puede cargarlo en el enlace siguiente:
+
+#+BEGIN_QUOTE
+[[https://www.dropbox.com/request/rposJLTC0c2OrZXwNrDc][Carga Glosario]]
+#+END_QUOTE
+
+* FINISHED Unidad 2 Comunicación y acción
+- State "FINISHED"   from "WAITING"    [2016-07-12 Tue 17:20]
+* FINISHED Unidad 3 La expresión escrita
+- State "FINISHED"   from "WAITING"    [2016-07-12 Tue 17:21]
+* FINISHED Unidad 1 Lenguaje y Comunicación
+** FINISHED Semana 3 Procesos de la Comunicación
+DEADLINE: <2016-04-14 Thu> SCHEDULED: <2016-04-14 Thu>
+- State "FINISHED"   from "WAITING"    [2016-07-12 Tue 17:21]
+****** WAITING *MLP* <2016-04-14 Thu> [[file:Manual_Comunicacion_Efectiva.pdf]] (Pág. 4-12) ¿Qué es la comunicación?
+****** WAITING Factores que intervienen en la comunicación.
+** FINISHED Semana 2 Procesos de Comunicación
+DEADLINE: <2016-04-07 Thu> SCHEDULED: <2016-04-07 Thu>
+****** CANCELLED *MLP* <2016-03-28 Mon> [[file:Manual_Comunicacion_Efectiva.pdf]] (pág. 4-12) ¿Qué es la comunicación?
+****** CANCELLED Factores que intervienen en la comunicación.
+****** TODO Recuerden que hemos desplazado para esta semana la toma del Pre-Test (Diagnóstico), de modo que solicito velar por la asistencia y puntualidad. Este evento es de suma importancia, tanto a nivel formativo como evaluativo. En diversas acciones propias de nuestro desempeño académico y profesional, es costumbre que seamos medidos, tanto al inicio como al final de un proceso. Con ello cautelamos la denominada "trazabilidad". *Quedan entonces cordialmente invitados todas y todos a este proceso evaluativo*.
+** FINISHED Semana 1 Presentación & Diagnóstico
+
+DEADLINE: <2016-03-31 Thu> SCHEDULED: <2016-03-31 Thu>
+****** DONE [#B] En esta primera clase realizaremos *dos acciones* ineludibles y que forman parte de nuestra hoja de ruta: la *primera*, consignar un espacio para las presentaciones de manera colectiva, además estableceremos los principales hitos académicos de la asignatura, su programa, objetivos, evaluaciones. Sin embargo, puede dar lectura a este blog, en el cual se recopilan la mayoría de los antecedentes y material repositorio del mismo.
+****** DEFERRED [#A] La *segunda* acción que llevaremos a cabo, será la toma de un *Diagnóstico Inicial (Pre-Test)*, por ello su /asistencia/ y /puntualidad/ es primordial, se hace particularmente compleja la posibilidad de rendir en rezago este instrumento, que como bien ya debe saber mide conocimientos de entrada.
+
+* FINISHED Agenda
+Esta agenda recopila información de la ruta que seguiremos durante este semestre, y se poblará a medida que ciertos hitos se cumplan, e.g. Evaluaciones. Existen algunas convenciones, aquí *TODO* (del inglés /to do/) corresponde a "tareas" o "acciones" a realizar; *DONE* (del inglés /done/) aparecerá cuando la acción ya esté realizada o bien ya esté fuera de plazo; *STARTED* corresponde a acciones que se inician con anticipación, e.g. "lecturas previas". Se consignan de igual forma, las fechas de cada clase, que en cada oportunidad corresponden a *dos*: la /primera/ a partir de las 19:00PM a 20:20PM y la /segunda/ desde 20:25PM a 21:45PM; o en el caso del día sábado, la /primera/ desde 08:30AM a 09:50PM y la /segunda/ desde 10:00PM a 11:20PM. La consigna en cada clase, es sólo un descriptor del sub-tema que abordaremos, en ningún caso una especificación de las acciones a realizar en el aula. Utilice esta agenda para organizar su tiempo y poblar su propia agenda también. Visite periódicamente la agenda de modo poder establecer prioridades frente a las distintas acciones que surjan en el semestre. Como siempre, sus inquietudes plantéelas en clase, lugar en el cual todos podremos enterarnos de la o las posibles soluciones.
+
+Debido a las distintas audiencias que atiendo, he preferido optar por declarar las *semanas* de clase, iniciando como referencia el día *lunes* de cada semana. Ubique Usted, en su horario el día que corresponda a su clase.
+
+**** FINISHED Semana 1 <2016-03-28 Mon>
+Presentación de la asignatura
+Diagnóstico Inicial Nacional
+**** FINISHED Semana 2 <2016-04-04 Mon>
+¿Qué es la comunicación?
+Factores que intervienen en la comunicación
+**** FINISHED Semana 3 <2016-04-11 Mon>
+¿Qué es la comunicación efectiva?
+**** FINISHED Semana 4 <2016-04-18 Mon>
+- State "FINISHED"   from "WAITING"    [2016-07-12 Tue 17:21]
+Habilidades comunicativas
+**** FINISHED Semana 5 <2016-04-25 Mon>
+- State "FINISHED"   from "WAITING"    [2016-07-12 Tue 17:21]
+Las barreras de la comunicación
+**** FINISHED [#A] Semana 6 <2016-05-02 Mon>
+- State "FINISHED"   from "WAITING"    [2016-07-12 Tue 17:21]
+*Primera Evaluación Parcial Nacional CE (25%)*. Será responsabilidad de la comunidad, establecer *grupos colaborativos de trabajo* (/4 integrantes/), útiles especialmente en la ya conocida *Parte Procedimental* de nuestras evaluaciones. 
+
+* FINISHED PROJECT Recursos
+** Manual CE
+A continuación comparto con la comunidad el *manual oficial de la asignatura*, es primordial que lo descargue y utilice como guía de estudio. Recuerde que en ningún caso, este manual pretende ser una completa visión del panorama comunicativo en organizaciones, ni menos aún, la última palabra en comunicación efectiva. Como siempre, nuestros /manuales Sello/, son un acercamiento a las principales tendencias actuales en torno a la temática que cubran. Un aprendiz profundo, reconoce como propio el deber "ir más allá" y ser un "consumidor eficiente de información". Recuerde que, en plena *Sociedad del Conocimiento*, la información *prolifera* en todas partes.
+
+#+BEGIN_QUOTE
+[[file:Manual_Comunicacion_Efectiva.pdf]]
+#+END_QUOTE
+
+** Método de lectura previa
+
+En la actual asignatura utilizaremos el denominado *Método de la Lectura Previa* (MLP), que permitirá a la audiencia llegar a clases mejor equipados con insumos previamente asignados/propuestos. La idea es simple, con ello favorecemos la clase en una experiencia *dialógica* y podremos de esta forma intercambiar puntos de vista respecto de algún tema de interés.
+
+Este método resulta muy interesante y al mismo tiempo es una excelente oportunidad de *crecimiento personal*, en tanto promueve la *relación de conceptos*, para ello es necesario que dada la ocasión de una MLP, puedan establecer *relaciones causales* o *comparaciones*, *clasificaciones*. Aquí la *memoria* juega un rol importante, existe una crítica respecto a que los métodos de enseñanza relacionados con construir conocimiento "limpian" la memoria, en tanto solo promueven el aprendizaje experiencial y no la memoria. Pues bien, con este método podrán infundir una práctica que apunte a remediar este problema: la memoria almacenará cierto stock de conceptos y datos a partir de los cuales podrán recrear y pensar.
+
+La invitación es a dar una lectura *comprensiva*, aquí verán que ahora la memoria ya no basta, debemos incorporar a su vez una comprensión léxica para ir avanzando hacia temáticas más avanzadas o complejas.
+
+Lo anterior, lo evidenciarán en la medida que sean capaces de responder a diversas preguntas que estableceré con el único objetivo de ir "subiendo" en lo niveles de *comprensión lectora*.
+
+En adelante, cuando se utilicemos el MLP, debe velar por dar justo cumplimiento a lo solicitado, no *procrastine*, no aplaze, tómese un tiempo y ubique la acción en un lugar que no propicie las interrupciones. 
+
+* FINISHED Audiencia
+Estimadas y estimados estudiantes, reciban la bienvenida a este espacio académico y de desarrollo personal. En esta oportunidad, la asignatura *Comunicación Efectiva*, está dirigida a diferentes audiencias provenientes de carreras técnicas y profesionales, todas ubicadas en su respectivo 1er. semestre lectivo. Como es costumbre al compartir espacios, se hace primordial la práctica de la convivencia, es decir, el saber vivir y convivir con otros y otras. Además, de velar por la *puntualidad* y la *asistencia*, es necesario que se plantee *un compromiso* con la asignatura, con la consecución de sus propias *metas*, y no sólo con ésta, sino con todo acto o proceso que inicie.
+
+En este espacio se proveerá de los recursos y medios necesarios para cursar el primer ramo de nuestra /Línea Sello Institucional/, que promueve la infusión de las *Habilidades Blandas* (HB) en nuestra comunidad. Como miembro del /Equipo Sello UAC/ reciban una cordial bienvenida primero a nuestra Institución, y por cierto a las actividades que desarrollamos en nuestra línea. Nuestro principal propósito, es diseminar, promover y generar las HB en nuestros estudiantes, de modo que se tratará de una enseñanza interactiva: /experimentaremos/, /practicaremos/, /reforzaremos/ y /reflexionaremos/, en torno a las oportunidades de aprendizaje de las HB. Mis mejores deseos en este nuevo desafío que juntos iniciamos, Hans.
+
+
+#+BEGIN_QUOTE
+En adelante me referiré a las mencionadas carreras que constituyen la audiencia, como "*comunidad*", con ello favorecemos el sentido de equipo y de convivencia.
+#+END_QUOTE
+
+Las distintas audiencias se distribuyen de la manera siguiente:
+
+**** jueves 19:00PM-21:45PM. *Psicología*
+
+**** viernes 19:00PM-21:45PM. *TNS Agronomía*, sección 2, /nómina letra G-Z/
+
+**** sábado 08:00AM-11:20AM. *Derecho* + *Kinesiología*
+
+** Contacto
+
+#+BEGIN_QUOTE
+- Email: [[mailto:hans.sigrist@uac.cl][hans.sigrist@uac.cl]]
+- Twitter: [[http:twitter.com/hsigrist][@hsigrist]]
+- Web: [[http://hsigrist.github.io][hsigrist.github.io]]
+#+END_QUOTE
+
+* FINISHED Programa
+** Descripción
+Curso teórico-práctico, cuyo objetivo es familiarizar al estudiante en el uso de herramientas de comunicación para comunicar las temáticas de su profesión, alcanzando sus resultados con mayor efectividad y mejorando sus relaciones interpersonales con audiencias especializadas y no especializadas.
+
+Se estima que el desarrollo de estas habilidades es vital tanto en el desempeño profesional como en las tareas propias de la actividad académica del estudiante para alcanzar sus resultados con mayor efectividad.
+
+En ese sentido este curso taller busca propiciar diversas instancias en la que el estudiante se vea sometido a la necesidad de expresarse, tanto en forma oral como escrita, cuidando abordar dicha tarea con la eficacia de la expresión vocal y gestual, en diversos contextos y situaciones.
+Partiendo de la base del carácter transversal del curso, se fomenta el desarrollo de una conciencia comunicativa que motive a los estudiantes a reconocer la importancia de la efectividad en la comunicación, cualquiera sea el ámbito profesional, académico o personal de desempeño.
+
+** Objetivo general
+Familiarizar al estudiante en el uso de herramientas de comunicación para abordar las temáticas de su profesión, con base informativa y argumentativa, aplicando los recursos comunicativos que faciliten la expresión del discurso y mejoren sus relaciones interpersonales con audiencias especializadas y no especializadas.
+
+** Objetivos específicos
+
+1. Comprender a la comunicación como la base fundamental de cualquier relación social y laboral.
+2. Desarrollar las habilidades de comunicación y persuasión para su aplicación inmediata en el proceso de trabajo.
+3. Desarrollar la capacidad de escucha, modelando el acto comunicacional desde la perspectiva del interlocutor
+4. Redactar diversos tipos de textos, según los criterios de adecuación, coherencia, y cohesión.
+5. Elaborar argumentaciones orales y escritas, en el ámbito de la profesión, a través de presentaciones, ponencias, debates y otros escenarios comunicativos.
+6. Usar la comunicación no verbal para enfatizar la transmisión de ideas en el ámbito social y laboral.
+
+** Habilidades a desarrollar
+
+- Habilidad para elaborar argumentaciones orales y escritas, en el ámbito de la profesión.
+- Capacidad para comunicarse en forma efectiva, desde la perspectiva del interlocutor.
+- Capacidad para usar la comunicación no verbal para la comunicación de ideas en el ámbito laboral.
+
+* FINISHED Habilidades Blandas (HB)
+** FINISHED Reflexión
+
+Antes de iniciar con los contenidos de la primera unidad, es conveniente introducir el concepto de *Habilidades Blandas*, de modo familiarizarnos con las nuevas necesidades de la industria y los nuevos desafíos que en plena /Sociedad del Conocimiento/ deben relevar los futuros empleadas y empleados de la industria nacional.
+
+#+BEGIN_QUOTE
+- [[file:habilidades-blandas.html][Habilidades Blandas (online)]]
+- [[file:habilidades-blandas.pdf][Habilidades Blandas (pdf)]]
+#+END_QUOTE

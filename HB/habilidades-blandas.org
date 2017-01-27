@@ -1,0 +1,114 @@
+#+STARTUP: beamer
+#+TITLE: ¿Qué son las habilidades blandas?
+#+AUTHOR: Hans Sigrist, (adaptación, original de Fernando Vera)
+#+EMAIL: hans.sigrist@uac.cl, fernando.vera@uac.cl
+#+OPTIONS: H:1 toc:nil  num:t tags:nil
+#+LATEX_CLASS: hytalk
+#+BEAMER_THEME: Hytex
+#+BEAMER_HEADER: \date{}
+#+BEAMER_HEADER: \institute[UAC]{UAC}
+#+DESCRIPTION: Aproximación conceptual, contempla la visión de la industria, docentes y egresados.
+#+KEYWORDS: habilidades blandas
+#+SUBTITLE: Una breve introducción al concepto
+#+LANGUAGE: es
+#+OPTIONS: reveal_center:nil reveal_progress:t reveal_history:t reveal_control:t
+#+OPTIONS: reveal_mathjax:t reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
+#+OPTIONS: reveal_width:1200 reveal_height:800
+#+REVEAL_MARGIN: 0.2
+#+REVEAL_MIN_SCALE: 0.5
+#+REVEAL_MAX_SCALE: 2.5
+#+REVEAL_TRANS: none
+#+REVEAL_THEME: simple
+#+REVEAL_HLEVEL: 999
+#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/
+#+REVEAL_EXTRA_CSS: simple.css
+
+* Una aproximación conceptual
+Son las destrezas, capacidades, y rasgos que pertenecen a nuestra personalidad, actitud, y comportamiento más que a nuestro conocimiento técnico (Moss y Tilly, 2001) 
+
+* En otras palabras
+Son los atributos personales, que describen nuestra capacidad para interactuar con otros, y que complementan nuestras habilidades duras.
+
+* Dan valor agregado
+Se suele decir que las habilidades duras nos permiten conseguir un trabajo, y que las habilidades blandas (HB) nos permiten mantenernos y crecer en el trabajo.
+
+* Características de las HB
+
+- Universales
+- Genéricas
+- Transversales
+- Transferibles
+- Generativas
+- Medibles
+
+Como tales, no pueden ser desarrolladas, en forma aislada, sino que de manera integrada, a través de todo proceso formativo.
+
+* Formas de enseñar habilidades blandas
+Hay tres métodos para crear oportunidades de aprendizaje experiencial de habilidades blandas:
+- Enseñanza interactiva :: donde el docente crea espacios para experimentar, practicar, reforzar, y reflexionar.
+- Enseñanza experiencial :: donde el énfasis se pone en el ciclo experiencial del estudiante, vale decir, experiencia concreta, reflexión, conceptualización abstracta, y experimentación activa.
+- Coaching :: transferencia mediante entrenamiento y acompañamiento en el puesto de trabajo para generar cambios en la práctica. Una dificultad de este método es encontrar a un coach experimentado que asegure que las habilidades de sus coachees se desarrollen en el lugar de trabajo y que superen los conocimientos técnicos.
+
+* ¿Qué incluyen?
+- Comunicación oral y escrita
+- Trabajo en equipo/colaboración
+- Ética del trabajo
+- Automotivación
+- Confianza en sí mismo
+- Honestidad
+- Pensamiento crítico
+- Actitud positiva
+- Cuestionamiento
+- Liderazgo
+- Resolución de problemas
+- Trabajo bajo presión
+- Creatividad
+- Innovación
+- Organización y gestión del tiempo
+- Atención a los detalles
+
+* Las HB y la nueva generación
+- Multimodales
+- Orientados a la multitarea
+- Orientados a los medios
+- Cuestionadores
+- Optimistas
+- Confiados
+- Inclinados al disfrute y la entretención (se aburren fácilmente)
+- Orientados al logro
+
+* ¿Qué dice la industria?
+Las habilidades técnicas *NO BASTAN* para que alguien sea competitivo en el mercado laboral.
+Se asume que *TODOS* los profesionales manejan las nuevas tecnologías.
+Hoy los profesionales demuestran *BRECHAS* en:
+- Habilidades comunicativas
+- Capacidad para trabajar en equipo/liderazgo
+- Resolución de problemas
+- Razonamiento cuantitativo
+- Conocimiento de procesos de negocios
+- Gestión de proyectos
+- Emprendimiento
+- Autonomía
+- Gestión del conocimiento
+
+* ¿Qué buscan los empleadores en sus equipos?
+- Trabajar productivamente en equipos diversos (76%)
+- Desplegar habilidades de comunicación oral/ escrita (73%)
+- Exhibir capacidad para resolver problemas (70%)
+  - Localizar, organizar, evaluar información
+  - Creatividad e innovación
+- Comprender y comunicarse cuantitativamente (60%)
+- Entender culturas y valores globales (53%)
+- Demostrar integridad y ética (56%)
+
+* Los empleadores también ...
+- Esperan que las universidades e institutos técnicos y profesionales preparen a los estudiantes en estas áreas.
+
+- 63% dice que sus empleados no están haciendo bien su trabajo.
+
+- 87% califica esta falta de preparación como crítica en los profesionales para ser competitivos en la economía global.
+
+* ¿Qué dicen los egresados?
+- 72% dice que necesitan equilibrar el conocimiento general y las habilidades blandas porque muchos terminan trabajando en áreas distintas a las estudiadas.
+- Concuerdan con los empleadores! Efectivamente, la capacidad para trabajar en equipo, el pensamiento crítico, y las habilidades de comunicación oral y escrita son críticas para el éxito.
+- 51% piensa que la universidad no los preparó bien para el mundo laboral.

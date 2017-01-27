@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recientes &amp; próximas Charlas on hsigrist</title>
+    <link>http://hsigrist.github.io/talk/index.xml</link>
+    <description>Recent content in Recientes &amp; próximas Charlas on hsigrist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 1999-2017 Hans Sigrist</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Episodios académicos que requieren procesos comunicativos</title>
+      <link>http://hsigrist.github.io/talk/example-talk/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://hsigrist.github.io/talk/example-talk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Factorización Ecuaciones de segundo grado</title>
+      <link>http://hsigrist.github.io/talk/factorizacion_ecuaciones_segundo_grado/</link>
+      <pubDate>Tue, 11 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://hsigrist.github.io/talk/factorizacion_ecuaciones_segundo_grado/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Resolución Ecuaciones de segundo grado</title>
+      <link>http://hsigrist.github.io/talk/resolucion_ecuaciones_segundo_grado/</link>
+      <pubDate>Fri, 07 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://hsigrist.github.io/talk/resolucion_ecuaciones_segundo_grado/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Identificando identificando cuadráticos</title>
+      <link>http://hsigrist.github.io/talk/identificacion_coeficientes_cuadraticos/</link>
+      <pubDate>Mon, 03 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://hsigrist.github.io/talk/identificacion_coeficientes_cuadraticos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Webinar Transformación Educativa</title>
+      <link>http://hsigrist.github.io/talk/webinar_transformacion_educativa/</link>
+      <pubDate>Sun, 21 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://hsigrist.github.io/talk/webinar_transformacion_educativa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Liderazgo Transformacional</title>
+      <link>http://hsigrist.github.io/talk/liderazgo_transformacional/</link>
+      <pubDate>Mon, 23 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://hsigrist.github.io/talk/liderazgo_transformacional/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Diseño de Tabla de Distribución de Frecuencias (TDF) en Excel</title>
+      <link>http://hsigrist.github.io/talk/diseno_tdf/</link>
+      <pubDate>Sat, 13 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://hsigrist.github.io/talk/diseno_tdf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nombre de rango en Excel</title>
+      <link>http://hsigrist.github.io/talk/nombre_rango/</link>
+      <pubDate>Sun, 24 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://hsigrist.github.io/talk/nombre_rango/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Referencia Absoluta en Excel</title>
+      <link>http://hsigrist.github.io/talk/referencia_absoluta/</link>
+      <pubDate>Sun, 24 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://hsigrist.github.io/talk/referencia_absoluta/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Referencias en frecuencias acumuladas $F_{i}$ en Excel</title>
+      <link>http://hsigrist.github.io/talk/referencias_fi/</link>
+      <pubDate>Sun, 24 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://hsigrist.github.io/talk/referencias_fi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Probabilidades</title>
+      <link>http://hsigrist.github.io/talk/probabilidades/</link>
+      <pubDate>Fri, 06 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://hsigrist.github.io/talk/probabilidades/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pendiente y coeficiente de posición</title>
+      <link>http://hsigrist.github.io/talk/pendiente_coeficiente_posici%C3%B3n/</link>
+      <pubDate>Sat, 31 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://hsigrist.github.io/talk/pendiente_coeficiente_posici%C3%B3n/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Método de los Minimos Cuadrados</title>
+      <link>http://hsigrist.github.io/talk/metodo_minimos_cuadrados/</link>
+      <pubDate>Mon, 26 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://hsigrist.github.io/talk/metodo_minimos_cuadrados/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ecuación de la recta</title>
+      <link>http://hsigrist.github.io/talk/ecuacion_recta/</link>
+      <pubDate>Fri, 23 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://hsigrist.github.io/talk/ecuacion_recta/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Paralelismo &amp; perpendicularidad</title>
+      <link>http://hsigrist.github.io/talk/paralelismo_perpendicularidad/</link>
+      <pubDate>Fri, 23 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://hsigrist.github.io/talk/paralelismo_perpendicularidad/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

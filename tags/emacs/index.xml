@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Emacs on hsigrist</title>
+    <link>http://hsigrist.github.io/tags/emacs/index.xml</link>
+    <description>Recent content in Emacs on hsigrist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 1999-2017 Hans Sigrist</copyright>
+    <atom:link href="/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Enlaces</title>
+      <link>http://hsigrist.github.io/post/enlaces/</link>
+      <pubDate>Tue, 24 Jan 2017 21:07:41 -0300</pubDate>
+      
+      <guid>http://hsigrist.github.io/post/enlaces/</guid>
+      <description>&lt;p&gt;Con el fin de mantener en línea aquellas capturas de enlaces que a diario realizo, he realizado una página dedicada a la recopilación de los mismos.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;div class=&#34;ABSTRACT&#34;&gt;
+&lt;p&gt;
+Esta es una colección (en constante cambio y evolución) de enlaces que dirigen a sitios (páginas) web de autores y curadores de contenido relacionado con la productividad en la creación y diseño &lt;code&gt;html&lt;/code&gt;, &lt;code&gt;css&lt;/code&gt;, etc. Gran parte de los enlaces parten de la base que se trabaja en archivos &lt;code&gt;org-mode&lt;/code&gt; en &lt;b&gt;Emacs&lt;/b&gt;.
+&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-orgc199e83&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;orgc199e83&#34;&gt;&lt;a href=&#34;https://github.com/novoid/org-mode-workshop/blob/master/featureshow/org-mode-teaser.org&#34;&gt;org-mode-teaser&lt;/a&gt;&amp;#xa0;&amp;#xa0;&amp;#xa0;&lt;span class=&#34;tag&#34;&gt;&lt;span class=&#34;org&#34;&gt;org&lt;/span&gt;&amp;#xa0;&lt;span class=&#34;mode&#34;&gt;mode&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&#34;outline-text-2&#34; id=&#34;text-orgc199e83&#34;&gt;
+&lt;p&gt;
+&lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;&amp;lt;2016-12-24 Sat 14:01&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-orgffea3e0&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;orgffea3e0&#34;&gt;&lt;a href=&#34;http://orgmode.org/manual/Effort-estimates.html&#34;&gt;Effort estimates&lt;/a&gt;&amp;#xa0;&amp;#xa0;&amp;#xa0;&lt;span class=&#34;tag&#34;&gt;&lt;span class=&#34;org&#34;&gt;org&lt;/span&gt;&amp;#xa0;&lt;span class=&#34;mode&#34;&gt;mode&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&#34;outline-text-2&#34; id=&#34;text-orgffea3e0&#34;&gt;
+&lt;p&gt;
+&lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;&amp;lt;2016-12-22 Thu 15:49&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-org5498f07&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;org5498f07&#34;&gt;&lt;a href=&#34;https://gpgtools.org&#34;&gt;Gpg Encription&lt;/a&gt;&amp;#xa0;&amp;#xa0;&amp;#xa0;&lt;span class=&#34;tag&#34;&gt;&lt;span class=&#34;encription&#34;&gt;encription&lt;/span&gt;&amp;#xa0;&lt;span class=&#34;gpg&#34;&gt;gpg&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&#34;outline-text-2&#34; id=&#34;text-org5498f07&#34;&gt;
+&lt;p&gt;
+&lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;&amp;lt;2016-12-22 Thu 09:20&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-org4900d53&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;org4900d53&#34;&gt;&lt;a href=&#34;https://code.tutsplus.com/tutorials/its-time-to-encrypt-your-email-using-gpgtools-for-os-x--cms-23721&#34;&gt;GPG Encription&lt;/a&gt;&amp;#xa0;&amp;#xa0;&amp;#xa0;&lt;span class=&#34;tag&#34;&gt;&lt;span class=&#34;encription&#34;&gt;encription&lt;/span&gt;&amp;#xa0;&lt;span class=&#34;gpg&#34;&gt;gpg&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&#34;outline-text-2&#34; id=&#34;text-org4900d53&#34;&gt;
+&lt;p&gt;
+&lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;&amp;lt;2016-12-22 Thu 09:19&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-orgc68cf9f&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;orgc68cf9f&#34;&gt;&lt;a href=&#34;http://mathematicseducationissues.blogspot.cl/2016/04/day-1open-textbooks-in-mathbook-xml.html?utm_content=buffer2b0aa&amp;amp;utm_medium=social&amp;amp;utm_source=plus.google.com&amp;amp;utm_campaign=buffer&#34;&gt;Open textbooks in MathBook XML&lt;/a&gt;&amp;#xa0;&amp;#xa0;&amp;#xa0;&lt;span class=&#34;tag&#34;&gt;&lt;span class=&#34;mathbook&#34;&gt;mathbook&lt;/span&gt;&amp;#xa0;&lt;span class=&#34;xml&#34;&gt;xml&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&#34;outline-text-2&#34; id=&#34;text-orgc68cf9f&#34;&gt;
+&lt;p&gt;
+&lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;&amp;lt;2016-12-18 Sun 16:44&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-org6ed0519&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;org6ed0519&#34;&gt;&lt;a href=&#34;http://docs.mathjax.org/en/latest/start.html&#34;&gt;mathjax configure invoque&lt;/a&gt;&amp;#xa0;&amp;#xa0;&amp;#xa0;&lt;span class=&#34;tag&#34;&gt;&lt;span class=&#34;mathjax&#34;&gt;mathjax&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&#34;outline-text-2&#34; id=&#34;text-org6ed0519&#34;&gt;
+&lt;p&gt;
+Cómo invocar mathjax para ser usado en html via org-mode. Ya no es necesario MML, usar CHTML.
+&lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;&amp;lt;2016-12-17 Sat 19:02&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-org4ec041f&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;org4ec041f&#34;&gt;&lt;a href=&#34;https://github.com/fniessen/org-html-themes&#34;&gt;ideas para insertar css&lt;/a&gt;&amp;#xa0;&amp;#xa0;&amp;#xa0;&lt;span class=&#34;tag&#34;&gt;&lt;span class=&#34;css&#34;&gt;css&lt;/span&gt;&amp;#xa0;&lt;span class=&#34;emacs&#34;&gt;emacs&lt;/span&gt;&amp;#xa0;&lt;span class=&#34;html&#34;&gt;html&lt;/span&gt;&amp;#xa0;&lt;span class=&#34;org&#34;&gt;org&lt;/span&gt;&amp;#xa0;&lt;span class=&#34;mode&#34;&gt;mode&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&#34;outline-text-2&#34; id=&#34;text-org4ec041f&#34;&gt;
+&lt;p&gt;
+&lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;&amp;lt;2016-12-17 Sat 18:46&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-org33d2b76&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;org33d2b76&#34;&gt;&lt;a href=&#34;http://stackoverflow.com/questions/16186843/inline-code-in-org-mode&#34;&gt;insertar code en org-mode&lt;/a&gt;&amp;#xa0;&amp;#xa0;&amp;#xa0;&lt;span class=&#34;tag&#34;&gt;&lt;span class=&#34;emacs&#34;&gt;emacs&lt;/span&gt;&amp;#xa0;&lt;span class=&#34;org&#34;&gt;org&lt;/span&gt;&amp;#xa0;&lt;span class=&#34;mode&#34;&gt;mode&lt;/span&gt;&amp;#xa0;&lt;span class=&#34;code&#34;&gt;code&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&#34;outline-text-2&#34; id=&#34;text-org33d2b76&#34;&gt;
+&lt;p&gt;
+Fácil: basta con usar &lt;code&gt;=code=&lt;/code&gt; o bien &lt;code&gt;~code~&lt;/code&gt;, al exportar desde org-mode a html y usar css se verá en otro formato tipo verbatim.
+&lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;&amp;lt;2016-12-17 Sat 18:36&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-orgfa14222&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;orgfa14222&#34;&gt;&lt;a href=&#34;http://orgmode.org/manual/Special-symbols.html&#34;&gt;entitipretty&lt;/a&gt;&amp;#xa0;&amp;#xa0;&amp;#xa0;&lt;span class=&#34;tag&#34;&gt;&lt;span class=&#34;emacs&#34;&gt;emacs&lt;/span&gt;&amp;#xa0;&lt;span class=&#34;org&#34;&gt;org&lt;/span&gt;&amp;#xa0;&lt;span class=&#34;mode&#34;&gt;mode&lt;/span&gt;&amp;#xa0;&lt;span class=&#34;latex&#34;&gt;latex&lt;/span&gt;&amp;#xa0;&lt;span class=&#34;simbol&#34;&gt;simbol&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&#34;outline-text-2&#34; id=&#34;text-orgfa14222&#34;&gt;
+&lt;p&gt;
+&lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;&amp;lt;2016-12-17 Sat 18:00&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-org7f8580a&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;org7f8580a&#34;&gt;&lt;a href=&#34;http://atuan.com/s5/&#34;&gt;Using s5: a primer&lt;/a&gt;&amp;#xa0;&amp;#xa0;&amp;#xa0;&lt;span class=&#34;tag&#34;&gt;&lt;span class=&#34;emacs&#34;&gt;emacs&lt;/span&gt;&amp;#xa0;&lt;span class=&#34;html&#34;&gt;html&lt;/span&gt;&amp;#xa0;&lt;span class=&#34;css&#34;&gt;css&lt;/span&gt;&amp;#xa0;&lt;span class=&#34;blog&#34;&gt;blog&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&#34;outline-text-2&#34; id=&#34;text-org7f8580a&#34;&gt;
+&lt;p&gt;
+&lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;&amp;lt;2016-12-17 Sat 17:06&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

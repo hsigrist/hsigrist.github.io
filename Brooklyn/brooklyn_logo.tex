@@ -1,0 +1,31 @@
+\documentclass[tikz,spanish]{standalone}
+\usetikzlibrary{decorations.text}
+\usepackage{fontspec,amssymb,amsmath}
+\setmainfont{CopperplateGothic-Bold}
+\setsansfont{GloriaHallelujah}
+\definecolor{greeen}{RGB}{35 139 83}
+\definecolor{damasco}{RGB}{229 0 49}
+\newfontfamily\bolderfont{CopperplateGothic-Bold}
+
+\begin{document}
+
+\begin{tikzpicture}
+\begin{scope}[transparency group]
+\draw[color=gray,fill=black] (0,0) circle (3.5cm);
+\draw[color=gray,fill=white] (0,0) circle (2.6cm);
+\draw[color=gray,fill=black] (0,0) circle (2.5cm);
+\draw[color=gray,fill=greeen] (0,0) circle (2.47cm);
+\end{scope}
+
+\draw[color=black] (0,0) circle (3.6cm);
+\path [postaction={decorate,decoration={raise=-1ex,text along path,reverse path,text align=center,text={|\bfseries\huge\color{white}|PROYECTO BROOKLYN}}}] (-29:3cm) arc (-29:210:3cm);
+\path [postaction={decorate,decoration={raise=-1ex,text along path, text align=center,
+text={|\bfseries\huge\color{white}|MATEMÁTICA }}}] (208:3.1cm) arc (208:330:3.1cm);
+\draw (-2.5,1.5) node[anchor=north west] {\scalebox{3.7}{\Huge\textsf{\color{white}{psu}}}};
+\end{tikzpicture}
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

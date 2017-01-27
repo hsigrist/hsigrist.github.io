@@ -1,0 +1,251 @@
+#+TITLE: RP 2-2016: Resolución de Problemas 
+#+AUTHOR: Hans Sigrist
+#+EMAIL: hans.sigrist@uac.cl
+#+DATE: Sat Jul 09 18:35:08 2016 
+#+OPTIONS: html-link-use-abs-url:nil html-postamble:t
+#+OPTIONS: html-preamble:t html-scripts:t html-style:t
+#+OPTIONS: html5-fancy:t tex:t
+#+OPTIONS: toc:nil num:nil
+#+HTML_DOCTYPE: html5
+#+HTML_CONTAINER: div
+#+DESCRIPTION: Página de la asignatura Resolución de Problemas, parte de la Línea Sello Institucional UAC.
+#+KEYWORDS: resolución, problemas
+#+HTML_LINK_HOME: http://hsigrist.github.io
+#+HTML_LINK_UP: http://hsigrist.github.io/docencia/
+#+HTML_MATHJAX: path:"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+#+HTML_HEAD: <link rel="stylesheet" href="Grump.css" />
+#+SUBTITLE: Derecho + Terapia Ocupacional. Primavera 2016, jornada vespertina · UAC-SF · Prof. Hans Sigrist
+#+LATEX_HEADER:
+#+LANGUAGE: es
+
+#+BEGIN_ABSTRACT
+Hay dos razones por las cuales la mayoría de nosotros no somos muy buenos en la solución creativa de problemas. En primer lugar, muy pocas personas reciben capacitación sobre cómo ser creativos en su educación. En segundo lugar, pocas personas entienden la dinámica del grupo lo suficientemente bien como para aprovechar su poder para ayudar a los grupos a maximizar su creatividad. [[https://hbr.org/search?term=art+markman][Art Markman]] en [[https://hbr.org][hbr.org]].
+#+END_ABSTRACT
+
+#+NAME:   fig:hbr-rp
+#+CAPTION: Los síntomas del "pensamiento de grupo" son evitables usando técnicas de *Resolución de Problemas*.
+[[file:hbr-rp.jpg]]
+
+#+TOC: headlines 2
+
+* TODO Novedades
+****** <2016-08-19 Fri>                      :bienvenida:presentaciones:
+Non eram nescius, Brute, cum, quae summis ingeniis exquisitaque doctrina philosophi Graeco sermone tractavissent, ea Latinis litteris mandaremus, fore ut hic noster labor in varias reprehensiones incurreret. nam quibusdam, et iis quidem non admodum indoctis, totum hoc displicet philosophari. quidam autem non tam id reprehendunt, si remissius agatur, sed tantum studium tamque multam operam ponendam in eo non arbitrantur. erunt etiam, et ii quidem eruditi Graecis litteris, contemnentes Latinas, qui se dicant in Graecis legendis operam malle consumere. postremo aliquos futuros suspicor, qui me ad alias litteras vocent, genus hoc scribendi, etsi sit elegans, personae tamen et dignitatis esse negent.
+* STARTED Audiencia
+Estimadas y estimados estudiantes, reciban la bienvenida a este espacio académico y de desarrollo personal. En esta oportunidad, la asignatura *Resolución de Problemas*, está dirigida a diferentes audiencias provenientes de carreras profesionales, todas ubicadas en su respectivo 4to. semestre lectivo. Como es costumbre al compartir espacios, se hace primordial la práctica de la convivencia, es decir, el /saber vivir y convivir/ con otros y otras. Además, de velar por la *puntualidad* y la *asistencia*, es necesario que se plantee *un compromiso* con la asignatura, con la consecución de sus propias *metas*, y no sólo con ésta, sino con todo acto o proceso que inicie.
+
+En este espacio se proveerá de los recursos y medios necesarios para cursar el primer ramo de nuestra /Línea Sello Institucional/, que promueve la infusión de las *Habilidades Blandas* (HB) en nuestra comunidad. Como miembro del /Equipo Sello UAC/ reciban una cordial bienvenida primero a nuestra Institución, y por cierto a las actividades que desarrollamos en nuestra línea. Nuestro principal propósito, es diseminar, promover y generar las HB en nuestros estudiantes, de modo que se tratará de una enseñanza interactiva: /experimentaremos/, /practicaremos/, /reforzaremos/ y /reflexionaremos/, en torno a las oportunidades de aprendizaje de las HB. Mis mejores deseos en este nuevo desafío que juntos iniciamos, Hans.
+
+
+#+BEGIN_QUOTE
+En adelante me referiré a las mencionadas carreras que constituyen la audiencia, como "*comunidad*", con ello favorecemos el sentido de equipo y de convivencia.
+#+END_QUOTE
+
+Las distintas audiencias se distribuyen de la manera siguiente:
+
+**** sábado 08:30AM-11:20AM. *Derecho* + *Terapia Ocupacional*
+
+** Contacto
+
+#+BEGIN_QUOTE
+- Email: [[mailto:hans.sigrist@uac.cl][hans.sigrist@uac.cl]]
+- Twitter: [[http:twitter.com/hsigrist][@hsigrist]]
+- Web: [[http://hsigrist.github.io][hsigrist.github.io]]
+#+END_QUOTE
+* STARTED Habilidades Blandas (HB)
+** STARTED Reflexión
+
+Antes de iniciar con los contenidos de la primera unidad, es conveniente introducir el concepto de *Habilidades Blandas*, de modo familiarizarnos con las nuevas necesidades de la industria y los nuevos desafíos que en plena /Sociedad del Conocimiento/ deben relevar los futuros empleadas y empleados de la industria nacional.
+
+#+BEGIN_QUOTE
+- [[file:~/repo/hsigrist-hugo/static/HB/habilidades-blandas.html][Habilidades Blandas (online)]]
+- [[file:~/repo/hsigrist-hugo/static/HB/habilidades-blandas.pdf][Habilidades Blandas (pdf)]]
+#+END_QUOTE
+* STARTED Programa
+** Descripción
+
+Curso teórico-práctico orientado a desarrollar la capacidad para identificar un problema y buscar su solución de manera creativa, reflexiva y colaborativa. Esta búsqueda implica reconocer el error, los fallos y los fracasos como oportunidades para la reflexión y el aprendizaje colaborativo. A través de este curso, se busca eliminar las barreras que existen actualmente en el afrontamiento de problemas, tanto del ámbito personal como profesional. En este sentido, se da mucho valor e importancia a la metacognición y el pensamiento creativo y se espera que este curso pueda tener una gran repercusión en las vidas de nuestros estudiantes, quienes normalmente se verán enfrentados a diversos tipos de problemas, tanto cotidianos como profesionales.
+
+** Objetivo general
+
+Desarrollar la capacidad para identificar un problema y buscar su solución de manera creativa, reflexiva y colaborativa.
+
+** Objetivos específicos
+
+1. Distinguir entre problema percibido y problema real (en qué queremos ser creativos).
+2. Desarrollar el pensamiento crítico como proceso cognitivo para analizar o evaluar opiniones o afirmaciones de los demás.
+3. Aplicar técnicas de creatividad en la toma de decisiones y solución de problemas de la vida cotidiana y laboral.
+4. Identificar los problemas de manera analítica, reconociendo que se debe tomar una decisión para llegar a la solución de éste.
+
+** Habilidades Sello
+
+- Capacidad para identificar un problema y buscar su solución de manera creativa, reflexiva y colaborativa.
+- Capacidad para identificar los aspectos relevantes de un problema para la toma de decisiones.
+- Capacidad para aplicar distintas técnicas y métodos creativos para enfrentar problemas desde perspectivas múltiples.
+- Capacidad para utilizar la creatividad para la resolución de problemas o desafíos personales y profesionales.
+* PROJECT Recursos
+** Manual RP
+A continuación comparto con la comunidad el *manual oficial de la asignatura*, es primordial que lo descargue y utilice como guía de estudio. Recuerde que en ningún caso, este manual pretende ser una completa visión del panorama comunicativo en organizaciones, ni menos aún, la última palabra en comunicación efectiva. Como siempre, nuestros /manuales Sello/, son un acercamiento a las principales tendencias actuales en torno a la temática que cubran. Un aprendiz profundo, reconoce como propio el deber "ir más allá" y ser un "consumidor eficiente de información". Recuerde que, en plena *Sociedad del Conocimiento*, la información *prolifera* en todas partes.
+
+#+BEGIN_QUOTE
+
+#+END_QUOTE
+
+** MLP Método de lectura previa
+
+En la actual asignatura utilizaremos el denominado *Método de la Lectura Previa* (MLP), que permitirá a la audiencia llegar a clases mejor equipados con insumos previamente asignados/propuestos. La idea es simple, con ello favorecemos la clase en una experiencia *dialógica* y podremos de esta forma intercambiar puntos de vista respecto de algún tema de interés.
+
+Este método resulta muy interesante y al mismo tiempo es una excelente oportunidad de *crecimiento personal*, en tanto promueve la *relación de conceptos*, para ello es necesario que dada la ocasión de una MLP, puedan establecer *relaciones causales* o *comparaciones*, *clasificaciones*. Aquí la *memoria* juega un rol importante, existe una crítica respecto a que los métodos de enseñanza relacionados con construir conocimiento "limpian" la memoria, en tanto solo promueven el aprendizaje experiencial y no la memoria. Pues bien, con este método podrán infundir una práctica que apunte a remediar este problema: la memoria almacenará cierto stock de conceptos y datos a partir de los cuales podrán recrear y pensar.
+
+La invitación es a dar una lectura *comprensiva*, aquí verán que ahora la memoria ya no basta, debemos incorporar a su vez una comprensión léxica para ir avanzando hacia temáticas más avanzadas o complejas.
+
+Lo anterior, lo evidenciarán en la medida que sean capaces de responder a diversas preguntas que estableceré con el único objetivo de ir "subiendo" en lo niveles de *comprensión lectora*.
+
+En adelante, cuando se utilicemos el MLP, debe velar por dar justo cumplimiento a lo solicitado, no *procrastine*, no aplaze, tómese un tiempo y ubique la acción en un lugar que no propicie las interrupciones. 
+* COMMENT FOCUS GROUP
+* PROJECT Portafolio Transversal 
+** STARTED Agenda Portafolio
+A continuación, comparto el *Calendario de Avances Portafolio*, sugiero ceñirse a esta agenda ya que favorece la /autogestión/ y con ello se evita la /procrastinación/.
+|--------+---------------------------------------------------------+------------------|
+| Avance | Producto                                                | Fecha            |
+|--------+---------------------------------------------------------+------------------|
+|      1 | Biodata, guión personal                                 | 22-27 agosto     |
+|      2 | Matriz de fortalezas/debilidades personales             | 05-10 septiembre |
+|      3 | Principales subhabilidades, historia motivacional breve | 19-24 septiembre |
+|      4 | Currículum vítae                                        | 17-22 octubre    |
+|      5 | Reflexión Final                                         | 24-29 octubre    |
+|--------+---------------------------------------------------------+------------------|
+
+** STARTED COMMENT Temas mínimos a incluir en el Portafolio (*Tercera Evaluación Parcial 40%*):
+
+Entre los *elementos mínimos* que debe incluir su portafolio se encuentran:
+
+****** COMMENT Biodata (resumen profesional, máximo 4 líneas)
+Elabore una descripción personal en la que se destaquen sus principales aspectos profesionales, debe incluir una foto personal.
+Se declara en tercera persona preferentemente. Debe relevar su presencia desde un enfoque académico. En el caso de no existir antecedentes académicos, utilice su condición de estudiante en formación profesional. Si posee algún oficio y habilidad que pueda destacar, puede incluirla entre sus competencias. En general, una biodata nos presenta profesional, académica, disciplinarmente.  
+****** COMMENT Guión personal (forma de venderse profesionalmente, mínimo 60, máximo 90 palabras)
+En el guión nos presentamos en primera persona, destacando nuestras habilidades blandas, posibles reconocimientos, capacitaciones en el ámbito interpersonal, validación de aptitudes, etc. Es una forma de vendernos profesionalmente, nos destaca, nos posiciona, desde una perspectiva positiva, corresponde a la forma en que nos visualizamos y la relevamos desde la evidencia, con total honestidad.
+Responde asertivamente a la pregunta: ¿Podría contarme algo acerca de usted?/Cuénteme algo acerca de usted. Mín. 60 y máx. 90 palabras.
+****** COMMENT Matriz de fortalezas/debilidades personales
+Ambas se deben declarar desde un enfoque de mejora/reconocimiento, por un lado, enunciamos aquella debilidad que nos 
+****** COMMENT Principales subhabilidades a trabajar (deconstrucción propia de una macro habilidad)
+
+****** COMMENT Una historia motivacional breve (relato motivacional que evidencia el desarrollo de una habilidad laboral, mínimo 80, máximo 150 palabras)
+
+****** COMMENT Currículum vítae (preferentemente mixto, máximo 2 páginas)
+
+****** COMMENT Reflexión final (mínimo 80, máximo 100 palabras)
+
+
+*** COMMENT Sobre foto personal
+
+Sugiero una foto de frente, ofreciendo una sonrisa natural y empática. Existen herramientas (software de escritorio) para editar imágenes como también aplicaciones online, entre ellas destaco [[http://www125.lunapic.com/editor/][Lunapic]], que por su simpleza le permitirá rápidamente obtener resultados adecuados. Dos herramientas de Lunapic, fueron utilizadas con la imagen Biodata del Portafolio: /Simple Crop Tool/, ubicado en el menu /Edit/ con la variante (shape) circle; por otra parte se utilizó desde el menu /Filters/ el primero llamado /Black and White/. Una vez terminado se presiona /Save Image/ en el menu /File/ y la imagen se guarda en nuestro computador. A modo de ejemplo se puede pasar de [[file:man-in-suit2.jpg][esto]] a [[file:imageedit_7_2595109213.gif][esto]]; o bien de [[file:bigstock-Successful-Mature-Business-Man-7408934.jpg][esto]] a [[file:imageedit_10_7072456166.gif][esto]]. 
+
+** SENT Portafolio Carga Transversal
+
+Una vez finalizado su Portafolio, cautele relevar todos los *Criterios* parametrizados en la /Pauta de evaluación Portafolio Transversal/, no olvide adjuntar *Carta de presentación* (ver pauta, criterio 10). El enlace para cargar su Portafolio se encuentra en el enlace siguiente:
+
+#+BEGIN_QUOTE
+[[https://www.dropbox.com/request/Fb3eWQzBmG8CSC8aSfc4][Carga Portafolio]]
+#+END_QUOTE
+
+** STARTED Anexos Todo
+(/Principales ejercicios de libre elección, rescatados de las clases, máximo 4 ejercicios desarrollados correctamente/). La libre elección de los ejercicios busca evaluar los criterios de selección del estudiante en cuanto al desafío de la actividad y su relación con la deconstrucción de la macro habilidad presentada como tercer avance.
+
+** PROJECT Pauta Evaluación Portafolio Transversal
+ 
+Este producto será evaluado según la rúbrica que podrá encontrar en el enlace siguiente:
+
+#+BEGIN_QUOTE
+[[file:~/repo/hsigrist-hugo/static/PT/Pauta_de_evaluacion_Portafolio_transversal.pdf][Pauta Evaluación Portafolio Transversal (pdf)]]
+#+END_QUOTE
+
+- El único documento utilizable para la entrega de su Portafolio es el dispuesto en el enlace: 
+
+#+BEGIN_QUOTE
+[[file:~/repo/hsigrist-hugo/static/PT/Portafolio_RP_2_2106_Carrera_Apellido_Nombre.docx][Portafolio RP 2-2016 (docx)]]
+#+END_QUOTE
+
+- Si Usted estudia /Derecho/ y su nombre es /Catalina Ibaceta/, entonces debe nombrar su documento de la manera siguiente:
+~Portafolio_RP_2_2016_Derecho_Ibaceta_Catalina.docx~
+- Si Usted estudia /Terapia Ocupacional/ y su nombre es /Juan Pablo Gutiérrez/, entonces debe nombrar su documento de la manera siguiente:
+~Portafolio_RP_2_2016_Terapia_Ocupacional_Gutierrez_Juan_Pablo.docx~
+- Note, que *no debe usar tilde* al nombrar documentos, ni dejar espacios en blanco, esto favorece la búsqueda por nombre y facilita su carga en repositorios online.
+- *No cambie la estructura del documento plantilla dispuesto*, sólo cambie el contenido del *corpus* y mantenga la estructura de los títulos intacta. Así como tampoco, haga cambios en los aspectos de forma del mismo.
+- Su entrega puede ser presentado en copia dura (impreso) o en formato digital (portafolio electrónico).
+- *Se podrían solicitar avances y/o retroalimentación, conforme el calendario de avances anterior*.
+- /Esta plantilla, su desarrollo, evolución como el calendario de avances sugerido podría ser modificado/.
+       
+#+BEGIN_QUOTE
+*Advertencia*. Esta sección será periódicamente puesta al día, disponiendo nuevos recursos e información para la confección de su *Portafolio*.
+#+END_QUOTE
+
+La elaboración de su Portafolio es una actividad por principio *personal*, en él debe relevar las propiedades o requisitos de toda manifestación verbal. Recuerde que las *propiedades textuales* son:
+
+- Adecuación :: está relacionada con las variaciones del escrito según el grupo social, la situación de comunicación, la interrelación entre los hablantes, etc. Recuerda que ser adecuado significa saber escoger de entre todos los elementos que nos ofrece el lenguaje, el más apropiado para cada situación de comunicación.
+- Coherencia :: establece cuál es la información más pertinente para comunicar y cómo se ha de hacer (en qué orden, con qué grado de detalle, con qué estructura, etc.). Para que un texto sea estructuralmente coherente se deben considerar las siguientes reglas:
+  - Regla de Repetición :: es necesario que la mayor parte de las proposiciones se encadenen tomando como base la repetición o alusión a algunos elementos considerados como centrales.
+  - Regla de Progresión :: es necesario que el desarrollo se produzca con una aportación constante de información nueva.
+  - Regla de no contradicción :: es necesario que no se introduzca ningún elemento semántico que contradiga un contenido establecido previamente (de forma implícita o explícita).
+  - Regla de relación :: es necesario que los hechos referidos estén relacionados en el mundo representado.
+- Cohesión :: las relaciones que se establecen entre los diversos elementos de una oración están vinculadas o conectadas con medios gramaticales diversos, tales como puntuación, conjunciones, artículos, pronombres, sinónimos, etc.
+
+Al respecto, se comparte con la comunidad, dos extractos con las principales características de las propiedades textuales, cuyo uso es vital en la redacción (expresión escrita), los documento se encuentran en los enlaces siguientes:
+
+#+BEGIN_QUOTE
+- [[file:~/repo/hsigrist-hugo/static/PT/Conectores_textuales_logicos.pdf][Conectores textuales logicos.pdf]]
+- [[file:~/repo/hsigrist-hugo/static/PT/Guia_conectores_logicos.pdf][Guia conectores logicos.pdf]]
+#+END_QUOTE
+
+** STARTED ¿Qué se espera de Usted?
+Demostrar capacidad para escribir, seleccionar, coleccionar, analizar y reflexionar. Por tanto, es necesario que conozca los temas a incluir y la forma en que será evaluado.
+
+** STARTED ¿Qué es?
+Es un recurso de evaluación que representa su desempeño a lo largo de un proceso formativo. Puede contener diversas producciones personales que evidencian su avance en una determinada área.
+
+Es un recurso útil para enfatizar el rol y compromiso suyo en su proceso de aprendizaje. Puede ser utilizado con fines auto-evaluativos, hetero-evaluativos y co-evaluativos. Debe diseñarse en formato *Word* (.docx).
+** STARTED Presentación
+¿Sigues usando un currículum para presentarte? ¿Has pensado en usar un *Portafolio*? En esta asignatura diseñaran un *Portafolio*, una buena práctica sería entender el mismo como una representación de quién soy, qué hago, cómo lo hago, es decir, como *me visibilizo* y cómo *me visibilizan*; en este sentido, el Portafolio puede ser utilizado como una herramienta de consecución laboral.
+* SENT Glosario
+Como una forma de fomentar su acervo, les propongo la creación de un *Glosario*, de modo recopilen conceptos e ideas que permitan su uso pertinente en diversos ámbitos de la Resolución de Problemas. Pueden incorporar los conceptos que desees, como mínimo debieran manejarse los propuestos.
+
+Utilice para estos efectos, el documento Word que puede descargar en el enlace siguiente:
+
+#+BEGIN_QUOTE
+[[file:Glosario_RP_2-2016_Carrera.docx]]
+#+END_QUOTE
+
+Los /términos sugeridos/, han sido extraídos del *Manual de Resolución de Problemas*, socializado más abajo en la sección *Recursos*:
+
+#+BEGIN_QUOTE
+gestión · problema · creatividad · estrategia · resolución · situación deseada · situación ideal · identificación · alcance · meta · barrera · cognición · procedimiento · algoritmo · heurística · toma de decisiones · evaluar · composición · complejidad · innovación · adaptativo · reflexivo · versátil · implicado · implementación · monitoreo · retroalimentación · pensamiento convergente · pensamiento divergente · brain-storming · explorar · indagar · discusión · eficacia · eficiencia
+#+END_QUOTE
+
+Una vez finalice su Glosario, debe cargarlo en el enlace siguiente:
+
+#+BEGIN_QUOTE
+[[https://www.dropbox.com/request/rposJLTC0c2OrZXwNrDc][Carga Glosario]]
+#+END_QUOTE
+
+* COMMENT Elicitar
+* COMMENT Bournout
+* COMMENT Resiliencia
+* COMMENT Evidencias
+Registro fotográfico, videos, grabaciones, testimonios y cualquier otro recurso que resulte de la interacción en actividades propuestas, /focus-group/, ejercicios prácticos, etc. 
+
+** Ejercicio práctico 1
+* COMMENT REGISTRO CALIFICACIONES
+|-----------+-----+-----+-----+------+-----+-------|
+|       RUT | EV1 | EV2 | PRT |   NP |  EX |    NF |
+|           | 25% | 35% | 40% |  70% | 30% |       |
+|-----------+-----+-----+-----+------+-----+-------|
+| 121660629 | 5.5 | 5.4 | 5.7 | 5.52 | 6.0 | 5.664 |
+|           |     |     |     |      |     |       |
+|           |     |     |     |      |     |       |
+|           |     |     |     |      |     |       |
+|           |     |     |     |      |     |       |
+|           |     |     |     |      |     |       |
+|           |     |     |     |      |     |       |
+|           |     |     |     |      |     |       |
+|-----------+-----+-----+-----+------+-----+-------|
+#+TBLFM: @3$5=@2$2*@3$3+@2$3*@3$3+@2$4*@$4::@3$7=@2$5*@3$5+@2$6*@3$6

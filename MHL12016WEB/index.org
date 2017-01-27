@@ -1,0 +1,63 @@
+#+LaTeX_CLASS: memoirhs
+#+TITLE: Introducción al Cálculo
+#+AUTHOR: Hans Sigrist
+#+OPTIONS: html-link-use-abs-url:nil html-postamble:auto
+#+OPTIONS: html-preamble:t html-scripts:t html-style:t
+#+OPTIONS: html5-fancy:nil tex:t
+#+OPTIONS: toc:t num:t
+#+HTML_DOCTYPE: xhtml-strict
+#+HTML_CONTAINER: div
+#+DESCRIPTION: Introducción al Cálculo
+#+KEYWORDS: sucesiones diferenciación integración
+#+HTML_LINK_HOME:
+#+HTML_LINK_UP:
+#+HTML_MATHJAX:
+#+HTML_HEAD: <link type="text/css" rel="stylesheet" href="stylemix001.css" />
+#+HTML_HEAD_EXTRA: <meta name="robots" content="INDEX,NOFOLLOW" />
+#+SUBTITLE:
+#+INFOJS_OPT:
+#+LATEX_HEADER:
+
+** Sucesiones y Teorema del Binomio
+
+*** Sucesiones aritméticas 
+Una *sucesión aritmética*, también conocida como /progresión aritmética/, es aquella en que sus términos están /separados/ por la /misma cantidad/ en cada momento. Esta "separación" en común, es conocida como *diferencia común* y es denotada por $d$. Para que una sucesión sea aritmética *debe* existir una diferencia común.
+
+Consideremos la sucesión $5,7,9,11,13,\ldots$
+
+El *primer término* es $5$ y la diferencia es $2$.
+
+Podemos decir entonces que $a=5$ y que $d=2$.
+
+Las sucesiones pueden ser definidas de dos maneras: /implícita/ y /explícitamente/.
+
+- Sucesión implícita :: los resultados se obtienen /en función/ de los términos /anteriores/.
+- Sucesión explítica :: los resultados se obtienen a partir de $n$.
+
+Suele ser, muy fácil expresar sucesiones de manera implícita, sin embargo es muy útil expresarlas de manera explícita (en términos de $n$).
+
+Por ejemplo, consideremos la sucesión implícita $u_{n}=u_{n-1}+2$, aquí $u_{n}$ es llamado el $n$ -ésimo término y $u_{n-1}$ el $(n-1)$ -ésimo término.
+
+La sucesión anterior, desarrollada de manera explícita queda expresada en la tabla siguiente:
+
+| $n$     | 1 | 2 | 3 |  4 |  5 |
+|---------+---+---+---+----+----|
+| $u_{n}$ | 5 | 7 | 9 | 11 | 13 |
+
+Esta sucesión explícitamente es $u_{n}=2n+3$.
+
+Resulta interesante comparar esta sucesión con la función lineal de /pendiente/ $2$ y /coeficiente de posición/ $3$.
+
+Ahora bien, por lo ya dicho, es posible "expandir" una sucesión aritmética en la forma:
+
+$$
+a,a+d,a+2d,a+3d,a+4d,\ldots
+$$
+
+Luego, en general, la *fórmula general* para el $n$ -ésimo término de una /sucesión aritmética/ es
+
+$$
+u_{n}=a+(n-1)d
+$$
+
+

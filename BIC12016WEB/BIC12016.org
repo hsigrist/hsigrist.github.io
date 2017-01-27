@@ -1,0 +1,419 @@
+#+TITLE: BIC 1-2016: Bases de la Investigación Científica (Formato inverso)
+#+AUTHOR: Hans Sigrist
+#+EMAIL: hans.sigrist@uac.cl
+#+DATE: Sat Mar 12 13:23:36 2016
+#+OPTIONS: html-link-use-abs-url:nil html-postamble:t
+#+OPTIONS: html-preamble:t html-scripts:t html-style:t
+#+OPTIONS: html5-fancy:t tex:t
+#+OPTIONS: toc:nil num:nil
+#+HTML_DOCTYPE: html5
+#+HTML_CONTAINER: div
+#+DESCRIPTION: Página de la asignatura Bases de la Investigación Científica, ubicada en primer semestre de la carrera de Psicología de la UAC.
+#+KEYWORDS: investigación científica
+#+HTML_LINK_HOME: http://hsigrist.github.io
+#+HTML_LINK_UP: http://hsigrist.github.io/docencia/
+#+HTML_MATHJAX: path:"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+#+HTML_HEAD: <link rel="stylesheet" href="Grump.css" />
+#+SUBTITLE: Psicología - Nivel 1, jornada vespertina, lunes 19:00PM-21:45PM - Otoño 2016 - UAC-SF · Prof. Hans Sigrist
+#+LATEX_HEADER:
+#+LANGUAGE: es
+
+#+BEGIN_ABSTRACT
+"Si supiese qué es lo que estoy haciendo, no lo llamaría investigación, ¿verdad?. Albert Eintein
+#+END_ABSTRACT
+
+#+NAME:   fig:PTJuly74
+#+CAPTION: En el año 1974 ocurrieron dos cosas importantes: la primera, la psicología intentaba responder por los pilares de la conciencia, al respecto y a su juicio, ¿Qué se pretende con la imagen de esta portada?
+[[file:PTJuly74.jpg]]
+
+#+TOC: headlines 3
+
+* STARTED Unidad 2 Representación gráfica, análisis y síntesis de datos
+** TODO Semana 6 (¿Estas dispuesto a comprometerte en fomentar tus competencias en el pensamiento abstracto, lógico y matemático?) 
+DEADLINE: <2016-05-02 Mon> SCHEDULED: <2016-05-02 Mon>
+****** TODO Iniciamos la Unidad 2, oportunidad para favorecer el establecimiento de metas en conjunto. Por tanto, las acciones serán promovidas incentivando el trabajo colaborativo, en equipo; en definitiva dirigidas a la producción de sinergia de equipos. Se solicita, para estos efectos que se conformen /equipos colaborativos/ de máximo 4 integrantes, quienes deben escoger a un representante que se encargue de la /carga/ de insumos/producciones/resultados que se soliciten. Es importante que todos y todas se sumen a este proceso, que se encuentra en plena sintonía con las metas y compromisos de esta comunidad.
+
+****** MLP [[https://www.ted.com/speakers/hans_rosling][Hans Rosling]], es un experto en salud global y un visionario en visualización de datos. Originario de Suecia, es mundialmente conocido por su carisma y claridad, como también el ser el creador de su popular y elegante software [[http://www.gapminder.org][Gapminder]]. Rosling, a la hora de presentar su particular modo de entender y crear asociaciones entre los datos, la estadística y la realidad, es uno de mis presentadores favoritos. "En las manos de Hans, los datos cantan", cita TED. Los invito a ver dos de sus tantas charlas TED, que confío lo inspirarán/motivarán y lo ayudarán a relacionar y crear asociaciones con su capacidad para tomar decisiones basadas en datos prontamente en esta asignatura y más adelante en su formación académica actual.
+
+#+BEGIN_EXPORT html
+<iframe src="https://embed-ssl.ted.com/talks/lang/es/hans_rosling_shows_the_best_stats_you_ve_ever_seen.html" width="854" height="480" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<iframe src="https://embed-ssl.ted.com/talks/lang/es/hans_rosling_on_global_population_growth.html" width="854" height="480" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+#+END_EXPORT
+
+****** TODO Una de las grandes virtudes de la estadística y/o análisis de datos radica en que es posible realizar experimentos concretos de manera efectiva y medianamente rápida y simple. De esta forma es que quisiera invitarlos a formar parte de un breve análisis en el que serán sujetos de estudio, en la búsqueda de "estilos de aprendizajes". Para ello, deberán contestar un breve cuestionario en formato online, en el enlace siguiente:
+
+#+BEGIN_QUOTE
+[[http://inspvirtual.mx/espm30/alumnos/kolb.php][Test de Kolb - Instrucciones]]
+#+END_QUOTE
+
+Siga las instrucciones iniciales, luego siga el enlace [[http://inspvirtual.mx/espm30/alumnos/kolb1.php][Pulse aqui para constestar el Test]], y complete el cuestionario. Al final del mismo, deberá introducir el texto de una imagen para confirmar que es "un humano" quien realiza el Test y podrá además escoger si desea recibir vía correo sus respuestas. Es una buena idea recibir por correo dicha respuesta, de modo pueda establecer comparativas posteriores. Una vez finalice y tenga sus resultados (son inmediatos), complete la siguiente solicitud, con la cual elaboraremos una muestra estadística, una suerte de "panorama de estilos de aprendizaje de la comunidad".
+
+#+BEGIN_EXPORT html
+<iframe src="https://docs.google.com/forms/d/15N2lu8zY-qnTg8_Y20LNbSHlTC0NqnpueADATIW3SNs/viewform?embedded=true" width="854" height="1000" frameborder="0" marginheight="0" marginwidth="0">Cargando...</iframe>
+#+END_EXPORT
+
+
+****** TODO Paul Gold [fn:1] en el año 2002 estudió, junto a algunos colegas, la efectividad del cese de consumo de tabaco mediante el consumo de dosis de  /bruponio SR/ ($300mg/día$), parches de nicotina ($21mg$ por 2 semanas), sólo o en conjunto con una /terapia de desarrollo cognitivo/. Su estudio, se encuentra en el enlace [[https://www.researchgate.net/profile/Paul_Gold2/publication/10901794_Naturalistic_Self-Assignment_Comparative_Trial_of_Bupropion_SR_a_Nicotine_Patch_or_Both_for_Smoking_Cessation_Treatment_in_Primary_Care/links/00b4951d224182d82d000000.pdf][Naturalistic, Self‐Assignment Comparative Trial of Bupropion SR, a Nicotine Patch, or Both for Smoking Cessation Treatment in Primary Care]]. De él, utilizaremos los datos originales para introducir la unidad y que nos servirán de guía.
+
+#+BEGIN_QUOTE
+48,35,46,44,43,42,39,44,49,49,44,39,38,49,49,53,56,57,51,61,53,66,71,75,72,65,
+67,38,38,44,43,47,46,57,52,54,56,53,64,53,58,54,59,56,62,50,64,53,61,53,62,57,
+52,54,61,59,51,50,50,50,55,63,50,59,54,60,50,56,68,66,71,82,68,78,66,70,66,78,
+69,71,69,78,66,68,71,52,53,61,60,53,53,50,53,54,61,61,61,64,53,53,54,61,60,51,
+50,53,64,64,53,60,54,55,58,37,46,44,44,48,49,30,45,47,45,48,47,47,44,48,43,45,
+40,48,49,57,52,54,53,62,52,62,57,59,59,56,57,53,59,61,55,61,56,52,54,69,77,76,
+71,43,47,48,37,40,42,38,39,43,46,34,46,46,48,47,43,62,62,54,53,61,54,51,62,57,
+50,64,63,65,71,71,73,66
+#+END_QUOTE
+
+
+****** TODO Responda las siguientes preguntas:
+- ¿Cuántos datos son?
+- ¿Qué podrían representar estos datos?
+- ¿Qué relación tienen con el estudio de Gold et al.?
+- ¿Cuál es el valor del dato mínimo/máximo?
+- ¿Cuál es el promedio de los datos?
+- ¿Conoce algún otro estadístico útil que no sea el promedio?
+- ¿Ha reflexionado respecto del carácter ambiguo del promedio?
+- ¿Se le ocurre algún método para representar gráficamente estos datos?
+- ¿Qué ventaja vislumbra al representar gráficamente datos?
+- Si tuviera que extraer una muestra de 10 datos de los originales, ¿cuáles, cómo y por qué razón escogería?
+
+
+****** MLP R-language & SageMath Cell
+En esta unidad nos introduciremos en el uso del lenguaje R, por medio del entorno de trabajo SageMath Cell. Ambos proveen un ambiente que permite la obtención de resultados matemáticos y por ende de la estadística, que es la que nos convoca en esta unidad.
+
+Una página dedicada al entorno de trabajo SageMath Cell y que opera por defecto con el lenguaje R, se encuentra disponible en el enlace siguiente:
+
+#+BEGIN_QUOTE
+[[http://hsigrist.github.io/R/R.html]]
+#+END_QUOTE
+
+Podrá, de igual modo, acceder a una página dedicada a ayuda y orientación respecto al uso del lenguaje R, en el enlace siguiente:
+
+#+BEGIN_QUOTE
+[[http://hsigrist.github.io/R/R-help.html]]
+#+END_QUOTE
+
+* WAITING Unidad 3 Búsqueda de información e interpretación de la investigación científica
+* FINISHED Unidad 1 Método Científico
+** FINISHED Semana 5 (Evaluación Sumativa 1)
+****** EVALUACIÓN Este lunes 25 de abril, realizamos la /Primera Evaluación Sumativa/, nota que representa el 35%.
+DEADLINE: <2016-04-25 Mon> SCHEDULED: <2016-04-25 Mon>
+
+****** ¿Profesor y las respuestas? Comparto con la comunidad algunas reflexiones emitidas por el Dr. Fernando Vera, Director Sello Institucional UAC, que están en plena sintonía con mis pensamientos y acciones, esta vez en referencia a la denominada "Ilusión de competencias", proceso ocurrido en tanto nos acostumbramos a preguntar por todo aquello que no sabemos. Léalo de manera crítica y reflexiva, déjese sorprender y recuerde: no crea en nada que no se alinee con su experiencia, empero, procure provocar/generar nuevas experiencias, de lo contrario ¿cómo?
+
+#+BEGIN_QUOTE
+... estarán de acuerdo conmigo en que cualquiera que conozca un contenido y se lo "aprenda bien", puede transmitirlo, con o sin apoyo de atractivas presentaciones PowerPoint. Ni siquiera necesita manejar alguna estrategia para hacerlo. Pero, me pregunto, ¿para qué alguien va la universidad y llega a titularse de profesor o se capacita para serlo, si simplemente transmitirá contenidos al igual que hace cualquier persona sin esa formación? Investigaciones afirman que esa práctica es una pérdida de tiempo: Ni aprende quien transmite, ni menos quien recibe la información. Quien transmite la información no transita por un proceso de aprendizaje que lo implique, pues sólo necesita apoyarse de algunos soportes físicos para hacerlo. A su vez, quien recibe la información, al no ser inducido en un real proceso de aprendizaje, sólo acumulará contenidos, al igual que quien se los transmite. En definitiva, se trata de un círculo vicioso, altamente ineficiente, algo así como la llamada "ilusión de competencias" (ambos creen que saben, pero no saben). Por ejemplo, nadie aprenderá a ser líder simplemente escuchando teorías sobre el liderazgo. Según Anxo Pérez, uno de los emprendedores más singulares del panorama reciente en España, la educación esconde la parte práctica. Anxo plantea la tesis del "Puente de ida y vuelta": Primero está la parte práctica para darle sentido a la teoría y luego de vuelta a la teoría, utilizando la experiencia de la parte práctica para comprenderla. Entonces, la clave parece ser no transmitir información para almacenarla, sino enseñar a aprender a utilizarla críticamente...
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+... quiero compartir con ustedes parte de los contenidos del curso Learning to learn, de la Universidad de California, en San Diego. Investigaciones demuestran que cuando hacemos una pregunta, buscando que alguien nos de la respuesta, no estamos haciendo nada, es decir, no estamos resolviendo el problema, pues otro lo hizo por nosotros.  Según la Dra. Barbara Oakley de dicha universidad, cuando no nos involucramos activamente en nuestro proceso de aprendizaje, no aprendemos nada, pues necesitamos tejer los nuevos conceptos con nuestro propio circuito neural subyacente. Cuando almacenamos información de la manera fácil (consultando a otros), pensando que ya tenemos la solución, se trata simplemente de “ilusiones de competencia” (creemos que sabemos, pero, en realidad no sabemos), lo que, de acuerdo con esta investigadora, constituye un proceso ineficiente de aprender...
+#+END_QUOTE
+
+Lo anterior, en relación a la necesidad de conocer las respuestas a los Cuestionarios 1, 2 y 3 ya socializados con la comunidad y que paso a compartir un resumen de las respuestas recibidas a la fecha. Como podrán observar, no todos ni todas participaron, lo cual hace poco efectiva la retroalimentación, que en este caso -y lo podrá constatar- habría sido fruto únicamente de su experiencia (en este caso una colectiva).
+
+#+BEGIN_QUOTE
+- [[file:Cuestionario%201%C2%B7%20Unidad%201%C2%B7BIC1-2016%20-%20Formularios%20de%20Google.pdf][Resumen Respuestas Cuestionario 1 Unidad 1]]
+- [[file:Cuestionario%202%C2%B7%20Unidad%201%C2%B7BIC1-2016%20-%20Formularios%20de%20Google.pdf][Resumen Respuestas Cuestionario 2 Unidad 1]]
+- [[file:Cuestionario%203%C2%B7%20Unidad%201%C2%B7BIC1-2016%20-%20Formularios%20de%20Google.pdf][Resumen Respuestas Cuestionario 3 Unidad 1]]
+#+END_QUOTE
+
+****** TODO Para este lunes sugiero dar lectura a los documentos ya compartidos y ampliamente socializados, sistematice su tiempo, no procrastine, elimine las distracciones, profundice su estudio (recuerde ser un consumidor eficiente de información). Fundamentalmente, no estudie para la prueba: no se haga ese daño, no pierda tiempo en ello.
+
+****** TODO Le sugiero a la comunidad, observar las siguientes charlas TED, una de ellas responde a preguntas insondables para el hombre, por uno de los hombres con una de las mentes más insondables que existe. La otra, responde a una pregunta ya conocida para nosotros y que muchos intentaron abordar en su indagatoria.
+
+#+BEGIN_EXPORT html
+<iframe src="https://embed-ssl.ted.com/talks/lang/es/stephen_hawking_asks_big_questions_about_the_universe.html" width="854" height="480" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<iframe src="https://embed-ssl.ted.com/talks/lang/es/russell_foster_why_do_we_sleep.html" width="854" height="480" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+#+END_EXPORT
+
+** FINISHED Semana 4 (Resumen acciones & nuevas acciones)
+** FINISHED Semana 3 (La consigna de esta semana es "No procrastine")
+DEADLINE: <2016-04-11 Mon> SCHEDULED: <2016-04-11 Mon>
+****** DONE *Mapa Mental 1 Enfoques de Investigación*, comparto con la comunidad un /mapa mental/, herramienta que utilizaremos en clase con objeto de distinguir y apreciar desde una perspectiva histórica los distintos enfoques de investigación que surgen producto del tránsito histórico propio de esta disciplina. Puede descargar el mapa en el enlace siguiente:
+#+BEGIN_QUOTE
+[[file:Mapa_Mental_1_BIC_1-2016_Enfoques_de_Investigacion.pdf]]
+#+END_QUOTE
+****** DONE *Glosario* Tal como acordamos, comparto con la comunidad, la acción requerida para esta semana.
+- En primer lugar, comparto un enlace en el que podrán descargar un documento Word que servirá de "plantilla" para su Glosario, por ahora incluye las mismas palabras que inicialmente se propusieron. Debe, sin embargo, volver a realizar su trabajo si ya lo realizó y envió. En esta ocasión, la norma la impone un formato adecuado a nuestra Asignatura, no a la norma APA.
+#+BEGIN_QUOTE
+[[file:Glosario_BIC_1-2016_Psicologia_Freud_Sigmund.docx]]
+#+END_QUOTE
+
+- En segundo lugar, se comparte nuevamente el mismo enlace ya provisto de modo pueda cargar su Glosario utilizando el recurso Dropbox
+#+BEGIN_QUOTE
+[[https://www.dropbox.com/request/rposJLTC0c2OrZXwNrDc][Carga Glosario]]
+#+END_QUOTE
+
+Es importante que cautele leer las instrucciones que se indican en el mismo documento Word que comparto, en él se describe un mecanismo automatizado que le permitirá la inserción de su Glosario de una manera dinámica y elegante. La carga del Glosario, debe realizarla siguiendo la misma instrucción anterior (Semana 2), que indica como nombrar su archivo.
+
+****** DONE *Preguntas sin responder* De acuerdo a lo establecido, solicito realice una experiencia "indagativa" en torno a la o las posibles respuestas que pueda ofrecer como Psicólogo en formación, en torno a las interrogantes propuestas en el documento de mi autoría titulado, "Psicología, Ciencia y vida" ya socializado con anterioridad (Semana 1). Al respecto, debe escoger alguna de las preguntas que se plantean desde las distintas dimensiones que establece el "estado del arte" en Psicología (Cuadro 1, pág.4). Si Usted considera contestar alguna pregunta o desarrollar algún otro problema de la Psicología, tenga a bien, ceñirse a alguna de las dimensiones que establece el mencionado Cuadro.
+
+- Con objeto de organizar su *investigación* comparto con la comunidad un documento plantilla, que se solicita cambiar el /título/ por aquel que responda a su elección, así como su nombre (a menos que claro, Usted se llame /Sigmund Freud/, en cuyo caso creo que me perdí de algo...).
+
+#+BEGIN_QUOTE
+[[file:Indagatoria_BIC_1-2016_Psicologia_Freud_Sigmund.docx]]
+#+END_QUOTE
+
+- Con objeto de favorecer su redacción (recuerde que su investigación es al mismo tiempo un insumo /narrativo/) le sugiero incorpore en su desarrollo elementos textuales como la /cohesión/, la /adecuación/ y uso de /conectores/. (¿Le suena conocido esto? Si es así, vaya a ese lugar que ya descubrió y descargue el material relacionado).
+
+Investigar, desarrollar una capacidad indagativa, no debe necesariamente ser un proceso monótono y/o aburrido. Si logra sentir satisfacción por hallar posibles respuestas a semejantes enigmas, su motivación y empatía por el aprendizaje será continua.
+
+Una vez finalice su trabajo, cárguelo usando el siguiente enlace
+#+BEGIN_QUOTE
+[[https://www.dropbox.com/request/cuDkEw7LvY7aOS5Wc3cM][Carga Indagatoria]]
+#+END_QUOTE
+
+****** DONE Con el objeto de promover nuevas ideas, le sugiero la revisión (/crítica y reflexiva, con parafraseo e indagatoria/) de las siguientes charlas TED, en clases las comentaremos y compartiremos puntos de vista.
+
+#+BEGIN_EXPORT html
+<iframe width="853" height="480" src="https://www.youtube.com/embed/5MgBikgcWnY?list=PLQ6nNnqwPG_ODh5fP3vwYDIsfK1jFWuiV" frameborder="0" allowfullscreen></iframe>
+#+END_EXPORT
+
+****** DONE Posiblemente, tanto agobio unido a la premura por realizar otras acciones (académicas/laborales/familiares) lo colapsen: al respecto le sugiero /no procrastinar/.
+
+** FINISHED Semana 2
+SCHEDULED: <2016-04-04 Mon> DEADLINE: <2016-04-04 Mon>
+****** *Actividad Extra-aula* La siguiente es una lista de artículos científicos (/papers/) y revistas ad-hoc, con ellos se solicita elabore una *Bibliografía* en un documento Word, que incluya todos los campos que Usted considere necesarios y pertinentes de incluir en las *referencias*:
+
+#+BEGIN_QUOTE
+- [[file:10.1.1.331.9796.pdf]]
+- [[file:173.pdf]]
+- [[file:1ciencia_conocimiento.pdf]]
+- [[https://kieranhealy.org/blog/archives/2015/12/03/assault-death-rates-in-the-united-states-1999-2013/]]
+- [[file:268-2013-07-29-Pinuel_Raigada_AnalisisContenido_2002_EstudiosSociolinguisticaUVigo.pdf]]
+- [[file:815.pdf]]
+- [[file:Dialnet-PerspectivasVygotskianasEnLaEducacion-668450.pdf]]
+- [[https://consequently.org/writing/three-cultures/]]
+- [[file:Duelo_y_melancolia-Sigmund_Freud.pdf]]
+- [[file:RIP03834.pdf]]
+- [[http://hsigrist.github.io/lecturas/bpa/]]
+- [[file:Science.Magazine.5731.2005-07-01.pdf]]
+#+END_QUOTE
+
+Una vez finalice, simplemente nombre su archivo de la forma ~Referencias_BIC_Psicologia_Apellido_Nombre.docx~ y cárguelo en el siguiente enlace:
+
+#+BEGIN_QUOTE
+[[https://www.dropbox.com/request/sXJpIf8NZrXgzqOy5nAd][Carga Referencias]]
+#+END_QUOTE
+
+¿Se le ocurre una forma distinta de nombrar los archivos?
+
+** FINISHED Semana 1
+DEADLINE: <2016-03-28 Mon> SCHEDULED: <2016-03-28 Mon>
+****** DONE *MLP*
+
+Con la finalidad de promover la lectura, se solicita una lectura *crítica* y *reflexiva* del documento:
+#+BEGIN_QUOTE
+[[file:1ciencia_conocimiento.pdf]]
+#+END_QUOTE
+Hoy revisaremos el texto en conjunto, la próxima semana y a partir de lo reflexionado haremos una ronda de preguntas e intervenciones.
+
+****** PROJECT [#A] *Glosario*
+DEADLINE: <2016-07-28 Thu> SCHEDULED: <2016-03-28 Mon>
+Una de la actividades con las que finalizaremos este semestre, será la confección individual de un *Glosario* que irá poblándose de todos los conceptos e ideas que trasunten en torno a la asignatura BIC. Será su responsabilidad cargar el documento el día <2016-07-28 Thu> con cierre a las 00:00PM.
+
+Remítase en lo sucesivo a este espacio para obtener las palabras claves, por ahora se proponen los siguientes conceptos:
+
+#+BEGIN_QUOTE
+ciencia · empírico · epistemología · antropología · verdad · evidencia · validez · ensayo-error · TDA/H · salud · inductivo · deductivo · teoría · cognitivo · constructo · ensayo · monografía · tesis · tesina · sociedad · enfermedad · duelo · emoción · sentimiento · fortaleza · principios · valores · justicia · psicología · auto-cuidado · auto-regulación · conocimiento · praxis · ethos · hipocampo · causa · efecto · posición supina · bienestar · infancia · adolescencia · adultez · vejez
+#+END_QUOTE
+
+/En este mismo espacio se dispondrán las especificaciones de forma y fondo del Glosario/, una vez terminado nombre su archivo de la forma ~Glosario_BIC_Psicologia_Apellido_Nombre.docx~ y cárguelo utilizando el enlace siguiente:
+
+#+BEGIN_QUOTE
+[[https://www.dropbox.com/request/rposJLTC0c2OrZXwNrDc][Carga Glosario]]
+#+END_QUOTE
+
+* FINISHED Otros 
+** FINISHED Metodología
+*** FINISHED Intra-aula
+
+Nuestra Institución promueve el *aprendizaje activo* y *colaborativo*, en este sentido, las acciones deben estar centradas en el estudiante, de tal forma, se velará por facilitar la *activación de conocimientos previos*, que impulsen el establecimiento de *relaciones* y *construcciones de nuevos saberes*.
+
+Ejemplos de estrategias en esta línea son:
+- Ejercicio de Lluvia de ideas
+- Elaboración de Mapas conceptuales
+- Desarrollo de Clases expositivas interactivas
+- Formulación de preguntas claves
+- Resolución de problemas
+- Trabajo en Equipo
+- Investigaciones
+
+*** FINISHED Extra-aula
+
+De igual modo, atendiendo a la necesidad de activar conocimientos previos, se favorecerá el *Método de la Lectura Previa* (MLP), así como:
+- Tareas
+- Guías de Ejercicios
+- Trabajos de Investigación (/Monografía, Ensayo, Estudio de caso, Seminario/, etc)
+
+** FINISHED Evaluación
+Con el objeto de verificar y calificar el nivel de logro de los aprendizajes, se establece en el *Programa de la Asignatura*, desde la perspectiva de los momentos y propósitos de evaluación, la aplicación de los siguientes *tipos de instrumentos de medición*:
+
+#+BEGIN_QUOTE
+*Estrategia Evaluativa Diagnóstica* (2 horas): Aplicación de Prueba Objetiva.
+*Estrategia Evaluativa Formativa*: Aplicación de instancias como realización de preguntas claves, aplicación de quiz, observación de los procesos constructivos, etc.
+*Estrategia Evaluativa Sumativa*: Trabajos de investigación, presentaciones orales y escritas y pruebas. Se aplicarán tres instancias evaluativas que ponderarán el 70% de la Nota Final de la asignatura:
+#+END_QUOTE
+
+Las Evaluaciones Sumativas (Pruebas Parciales), representan el 100% y se desglosan del modo siguiente:
+
+#+BEGIN_QUOTE
+- *Primera calificación* (35%)
+- *Segunda calificación* (35%)
+- *Tercera calificación* (30%)
+#+END_QUOTE
+
+Dada la pertenencia de la actual asignatura a nuestra *Línea de Formación Remedial*, ésta *no considera* la eximición del *Examen Final*, que tendrá una asignación del 30%. El restante 70% corresponde a su nota de presentación.
+
+** FINISHED Método de Lectura Previa (MPL)
+
+En la actual asignatura utilizaremos el denominado *Método de la Lectura Previa* (MLP), que permitirá a la audiencia llegar a clases mejor equipados con insumos previamente asignados/propuestos. La idea es simple, con ello favorecemos la clase en una experiencia *dialógica* y podremos de esta forma intercambiar puntos de vista respecto de algún tema de interés.
+
+Este método resulta muy interesante y al mismo tiempo es una excelente oportunidad de *crecimiento personal*, en tanto promueve la *relación de conceptos*, para ello es necesario que dada la ocasión de una MLP, puedan establecer *relaciones causales* o *comparaciones*, *clasificaciones*. Aquí la *memoria* juega un rol importante, existe una crítica respecto a que los métodos de enseñanza relacionados con construir conocimiento "limpian" la memoria, en tanto solo promueven el aprendizaje experiencial y no la memoria. Pues bien, con este método podrán infundir una práctica que apunte a remediar este problema: la memoria almacenará cierto stock de conceptos y datos a partir de los cuales podrán recrear y pensar.
+
+La invitación es a dar una lectura *comprensiva*, aquí verán que ahora la memoria ya no basta, debemos incorporar a su vez una *comprensión léxica* para ir avanzando hacia temáticas más avanzadas o complejas.
+
+Lo anterior, lo evidenciarán en la medida que sean capaces de responder a diversas preguntas que estableceré con el único objetivo de ir "subiendo" en lo niveles de *comprensión lectora*.
+
+En adelante, cuando se utilicemos el MLP, debe velar por dar justo cumplimiento a lo solicitado, no *procrastine*, no aplaze, tómese un tiempo y ubique la acción en un lugar que no propicie las interrupciones. 
+
+* FINISHED Audiencia
+Estimadas y estimados estudiantes, reciban la bienvenida a este espacio académico y de desarrollo personal. En esta oportunidad, la asignatura *Bases de la Investigación Científica*, está dirigida a la audiencia de nuestra carrera profesional *Psicología*, ubicada en el 1er. semestre lectivo. Como es costumbre al compartir espacios, se hace primordial la práctica de la convivencia, es decir, el *saber vivir* y *convivir con otros y otras*. Además, de velar por la *puntualidad* y la *asistencia*, es necesario que se plantee *un compromiso* con la asignatura, con la consecución de sus propias *metas*, y no sólo con ésta, sino con todo acto o proceso que inicie.
+
+#+BEGIN_QUOTE
+En adelante me referiré a la mencionada audiencia, como "*comunidad*", con ello favorecemos el sentido de equipo y de convivencia.
+#+END_QUOTE
+
+Bienvenidos y bienvenidas a todos y todas, reciban mi más cordial saludo y deseos de éxito en este camino que iniciamos todos juntos, Hans.
+
+** Contacto
+
+#+BEGIN_QUOTE
+- Email: [[mailto:hans.sigrist@uac.cl][hans.sigrist@uac.cl]]
+- Twitter: [[http:twitter.com/hsigrist][@hsigrist]]
+- Web: [[http://hsigrist.github.io][hsigrist.github.io]]
+#+END_QUOTE
+
+* FINISHED Programa
+** Características generales
+La asignatura de Bases de la Investigación científica, responde al eje de formación remedial y como tal se constituye en una asignatura de nivelación vinculada al área de las ciencias asociadas a las asignaturas de bioestadística y metodología de la investigación.
+En éste contexto se destaca que la asignatura de Bases de la formación científica ha centrado los núcleos de aprendizajes en aquellos aspectos que se requieren para favorecer la comprensión de los procesos que implican tratamiento de datos. Como núcleos temáticos centrales se considera la importancia de abordar el método científico, la representación y análisis de resultados, el uso de tablas y gráficos, variables y frecuencias como formas variadas de organización y presentación de la información, así como la búsqueda de información relevante en recursos electrónicos vinculados al área de la salud.
+
+Junto con el proceso de evaluación propio de la asignatura, se considera la medición de los conocimientos en una instancia diagnóstica y final. Esta estrategia propende a entregar insumos de información respecto del avance y logros alcanzados por los estudiantes.
+
+A continuación, comparto con la comunidad el /Programa de la Investigación Científica/:
+
+#+BEGIN_QUOTE
+[[file:Programa_Bases_Investigacion_Cientifica_(2016).pdf]]
+#+END_QUOTE
+
+** Relación con el Perfil de Egreso
+La relación con el perfil de egreso se vincula con la línea de formación básica, siendo bases de la formación científica una asignatura que busca nivelar aquellos conocimientos que se requieren para favorecer la adaptación y continuidad con éxito de los estudiantes en su formación profesional. Por tanto la relación es directa con el dominio de saberes vinculados a las ciencias y a los procesos de investigación científica. Es decir contribuirá a comprender los procesos vinculados a la investigación, declarado en el perfil de egreso del Área de la Salud.
+
+** Habilidades asociadas a la Línea Formación Sello Institucional
+*** Habilidades
+- Capacidad para establecer metas en el trabajo conjunto.
+- Capacidad para gestionar el conocimiento.
+*** Aprendizajes Esperados
+- Actúa de manera constructiva, tolerante y táctica cuando hace una crítica.
+- Comparte sus conocimientos con miembros de su equipo para así ayudar al logro de los objetivos comunes.
+
+** Objetivos Generales
+1. Conocer el proceso de evolución del método científico, identificando procesos analíticos, sistémicos, inductivos y deductivos.
+2. Representar y analizar datos y/ o resultados, mediante el uso de diferentes formas de representación y organización de la información.
+3. Conocer y aplicar procedimientos válidos para la búsqueda y recopilación de información e Interpretación de la investigación clínica.
+
+** Objetivos Específicos
+1. Conocer y valorar la importancia del proceso histórico del método científico.
+2. Identificar las fases constituyentes del método científico.
+3. Identificación y formulación de variables desde sus distintos tipos Identificación y formulación de hipótesis, supuestos y preguntas de investigación.
+4. Conocer las diferentes formas de representación de información; tablas de frecuencia, gráficos entre otros.
+5. Utilizar las diferentes formas de representación de la información para analizar e interpretar resultados.
+6. Identificar las normas y procedimientos para la búsqueda y recopilación de información científica válida.
+7. Identificar la estructura para reconocer y elaborar artículos científicos
+   
+* Histórico
+#+BEGIN_ABSTRACT
+/El estudio de la calidad de vida en las personas, en los grupos humanos en las sociedades es uno de los tópicos de investigación más importantes en esta segunda década del s. XXI. Al considerar que se lograron satisfacer, las necesidades básicas de supervivencia, nutrición, vivienda, trabajo, salud para grandes segmentos de la población - ante todo en el mundo industrializado o Primer Mundo - es hora de dar prioridad a la calidad de vida, a la realización de las potencialidades y al logro de una vida plena, en armonía con uno mismo, con otras personas y con la naturaleza./ Prólogo de Rubén Ardilla al libro editado por el psicólogo Emilio Moyano Díaz "Calidad de Vida y Psicología en el Bicentenario de Chile" (2012).
+#+END_ABSTRACT
+
+#+NAME:   fig:PTJuly74
+#+CAPTION: En el año 1974 ocurrieron dos cosas importantes: la primera, la psicología intentaba responder por los pilares de la conciencia, al respecto y a su juicio, ¿Qué se pretende con la imagen de esta portada?.
+[[file:PTJuly74.jpg]]
+
+#+BEGIN_ABSTRACT
+/A partir de su obra La estructura de las revoluciones científicas, Kuhn (2006) define las *revoluciones científicas* como las discontinuidades en el desarrollo de la ciencia o los episodios extraordinarios en los que se produce un cambio en los compromisos profesionales. Por *paradigma* definió los intentos por descubrir la fuente de esas discontinuidades y por *ciencia normal* define la investigación basada firmemente en uno o más logros científicos pasados, logros que una comunidad científica particularmente reconoce durante algún tiempo como el fundamento de su práctica ulterior./
+#+END_ABSTRACT
+
+#+NAME:   fig:desig
+#+CAPTION: Elabore un parafraseo en torno al título «¿Ciencia de la desigualdad?»
+[[file:ciencia_desigualdad.png]]
+#+NAME:   fig:cminds
+#+CAPTION: ¿Qué le sugiere esta portada?
+[[file:Science_Cultivated_Minds.png]]
+
+** Cuestionarios Unidad 1 BIC1-2016 
+
+Estimadas y estimados estudiantes, los invito a auto-evaluar su aprendizaje mediante una serie de cuestionarios que irán apareciendo en este espacio.
+
+#+BEGIN_QUOTE
+[[http://goo.gl/forms/NQuhMEk0AB][Cuestionario 1 Unidad 1 BIC1-2016]]
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+[[http://goo.gl/forms/iS2NOYpTcA][Cuestionario 2 Unidad 1 BIC1-2016]]
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+[[http://goo.gl/forms/TjGfNFFtbU][Cuestionario 3 Unidad 1 BIC1-2016]]
+#+END_QUOTE
+
+** Actividad propuesta
+Estimados/as estudiantes, a continuación encontrarán tres abstract's o resúmenes de diversos artículos de Psicología. Se le pide que i) *proponga un título para cada uno*, además de ii) *sistematizar el problema de investigación* iii) proponga una *metodología* que muestre los /instrumentos de recogida de información, corte temporal, alcance, muestra/, en el caso que estén presentes.
+
+****** Abstract 1
+#+BEGIN_QUOTE
+Se realiza una síntesis acerca del concepto calidad de vida (CV), poniéndose en relieve la insuficiencia de indicadores de tipo económico -bienestar económico- corrientemente en boga para dar cuenta de aquella. Desde la psicología las operacionalizaciones se han efectuado a partir de dos enfoques generales; el hedónico entendido aquel como bienestar subjetivo (BS), y la eudamónica como bienestar psicológico (BP). El BS a sido operacionalizado a su vez como satisfacción con la vida o también, como felicidad, donde la primera aparece como una evaluación cognitiva de más largo plazo y la segunda como un equilibrio entre afectos positivos y negativos en temporalidades acotadas. El BP, en cambio ha sido operacionalizado como desarrollo de capacidades y crecimiento personal, donde aquel se produciría como resultado de lograr metas u objetivos suficientemente exigentes para cada quien. Un esfuerzo de integración de ambos enfoques está representado inicialmente por la creación de algunos instrumentos conocidos como escalas de bienestar psicológico (Ryff, 1989; Ryff y Keyes, 1995) y modelos factoriales derivados posteriormente (Dierengdonck, 2004; Díaz et al. 2006).
+
+Se realiza un estado del arte de la CV mediante investigaciones relevantes e ilustrativas y organizadas en cinco líneas de investigación: i) desarrollo humano, CV, y bienestar subjetivo, ii) CV laboral y organizaciones propendedoras de bienestar, iii) CV e interfase familia-trabajo y relaciones interpersonales saludables, iv) CV y salud mental y, v) un sobrevuelo a los métodos de estudiar la CV.
+#+END_QUOTE
+
+****** Abstract 2
+#+BEGIN_QUOTE
+Se explora la confiabilidad y estructura factorial de tres instrumentos relativos a bienestar subjetivo: la escala de satisfacción con la vida (ESV; Diener et al. 1985), de felicidad subjetiva (EFS; Lyubomirsky & Lepper, 1999) y de salud (ICVRS; Hennessy, 1994) en una muestra de 133 pregraduados mediante dispositivo test-retest de 10 semanas.
+
+La consistencia interna medida mediante coeficiente de alfa de Cronbach es de $0.87$ y de $0.79$ para la ESV y la EFS respectivamente. La confiabilidad test-retest es de $.83$, $.77$ y $.66$, para la ESV, EFS, y ICVRS, respectivamente. La ESV y la EFS aparecen positivamente correlacionadas ($r=.67$). Los análisis factoriales exploratorios realizados conducen soluciones unidimensionales para cada escala, explicando el $65%$ y el $61.08%$ de la varianza para la ESV y la EFS respectivamente.
+#+END_QUOTE
+
+****** Abstract 3
+#+BEGIN_QUOTE
+La ezquizofrenia es un grave trastorno psiquiátrico de considerables consecuencias y alteraciones cognitivas, afectivas y sociales. Este estudio indagó acerca de las posibles relaciones entre el tipo de tratamiento recibido y la calidad de vida e indicadores sintomatológicos en pacientes ezquizofrénicos de la región del Maule.
+
+Se aplicó un instrumento de calidad de vida a $167$ pacientes y uno de sintomatología a $141$ que concurren a los hospitales y centros de rehabilitación de la región.
+
+Los resultados indican que ni el tipo de tratamiento medicamentoso ni la presencia o ausencia de rehabilitación psicosocial se relacionan  en forma unívoca con todos los factores de calidad de vida y sintomatología. Entre los resultados específicos obtenidos, destaca el hecho de que los pacientes que asisten a rehabilitación psicosocial no presentan mejores indicadores de calidad de vida que aquellos que no asisten, salvo por el hecho de que se sienten con mayor control de su situación económica y por poseer una notable y significativa menor presencia de síntomas psicopatológicos. En el caso de la medicación recibida, lo pacientes que se tratn con antipsicóticos atípicos tienen una mejor percepción de su entorno afectivo más cercano y también del tratamiento psiquiátrico recibido. Un resultado inesperado es el hecho que los pacientes que no asisten a rehabilitación psicosocial superen en varios indicadores de calidad de vida a aquellos que asisten a estos programas (por ejemplo, vida amorosa y sexual), lo  cual puede significar que los que asisten a estos programas presentan disfunciones más profundas o bine que los programas introducen otras variables, tales como la comparación social, que afectan negativamente las percepciones subjetivas de los pacientes acerca de sí mismos.
+#+END_QUOTE
+** Material Oficial BIC
+
+Comparto con la comunidad material oficial de la asignatura, lo pueden descargar en el enlace siguiente
+
+#+BEGIN_QUOTE
+- [[file:Apunte_1_U1.pdf]]
+- [[file:Apunte_2_U2.pdf]]
+- [[file:Apunte_No3.pdf]]
+- [[file:Guia_Ejercicios_No1.pdf]]
+- [[file:Guia_Ejercicios_No2.pdf]]
+- [[file:Guia_Ejercicios_No3.pdf]]
+#+END_QUOTE
+
+* Footnotes
+
+[fn:1] Gold, P. B., Rubey, R. N., & Harvey, R. T. (2002). Naturalistic, Self‐Assignment Comparative Trial of Bupropion SR, a Nicotine Patch, or Both for Smoking Cessation Treatment in Primary Care. The American journal on addictions, 11(4), 315-331.

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tp on hsigrist</title>
+    <link>http://hsigrist.github.io/tags/tp/index.xml</link>
+    <description>Recent content in Tp on hsigrist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 1999-2017 Hans Sigrist</copyright>
+    <atom:link href="/tags/tp/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Educación Dual</title>
+      <link>http://hsigrist.github.io/post/educacion_dual/</link>
+      <pubDate>Thu, 26 Jan 2017 19:52:22 -0300</pubDate>
+      
+      <guid>http://hsigrist.github.io/post/educacion_dual/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

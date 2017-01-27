@@ -1,0 +1,114 @@
+#+TITLE: Proyecto Manhattan · La Resolución de Problemas y la Comprensión Lectora: Un modelo de Infusión Curricular e Innovación
+#+AUTHOR: Departamento de Matemática - Liceo Mixto Los Andes
+#+EMAIL: hsigrist@gmail.com
+#+DATE: lun 26 dic 12:12:48 2016
+#+LATEX_CMD: xelatex
+#+STARTUP: showeverything
+#+STARTUP: beamer
+#+SUBTITLE: Desarrollo y microimplementación curricular de las habilidades cognitivas de los subsectores Matemática y Lenguaje como medios orientados al cambio y mejora del currículum en estudiantes de Primer y Segundo año Enseñanza Media en Liceo Mixto Los Andes
+#+DESCRIPTION: Implementación del currículum Técnico Profesional (TP) en la planificación de la asignatura Matemática de estudiantes integrantes del Tercer año Enseñanza Media.
+#+KEYWORDS: enseñanza media, tercero medio, matemática, técnico profesional, currículum, Tuning, capacidades genéricas, capacidades específicas, microimplementación
+#+LATEX_HEADER: \published{Ensayo no publicado. No citar sin permiso.}
+#+OPTIONS: H:3 toc:nil num:nil tags:nil
+#+LATEX_CLASS: memoirhs
+#+BEAMER_THEME: Hytex
+#+BEAMER_HEADER: \institute[LMLA]{LMLA}
+#+BEAMER_HEADER: \date{}
+#+OPTIONS: reveal_center:t reveal_progress:t reveal_history:t reveal_control:t
+#+OPTIONS: reveal_mathjax:t reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
+#+OPTIONS: reveal_width:1200 reveal_height:800
+#+REVEAL_MARGIN: 0.2
+#+REVEAL_MIN_SCALE: 0.5
+#+REVEAL_MAX_SCALE: 2.5
+#+REVEAL_TRANS: none
+#+REVEAL_THEME: simple
+#+REVEAL_HLEVEL: 999
+#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/
+#+REVEAL_EXTRA_CSS: /Users/hsigrist/Dropbox/Org/org-blog/css/simple.css
+#+STARTUP: entitiespretty
+#+OPTIONS: html-link-use-abs-url:nil html-postamble:t
+#+OPTIONS: html-preamble:t html-scripts:t html-style:t
+#+OPTIONS: html5-fancy:nil tex:t
+#+OPTIONS: toc:nil num:t
+
+#+HTML_HEAD_EXTRA: <style type="text/css">
+#+HTML_HEAD_EXTRA: <!--
+#+HTML_HEAD_EXTRA:   .header_author {font-size: 1em; font-weight: bold;text-align:center;}
+#+HTML_HEAD_EXTRA: -->
+#+HTML_HEAD_EXTRA: </style>
+#+MACRO: html-only (eval (if (org-export-derived-backend-p org-export-current-backend 'html) "$1" ""))
+
+#+NAME: html-header
+#+BEGIN_SRC emacs-lisp :results raw :exports (if (org-export-derived-backend-p org-export-current-backend 'html) "results" "none")
+  "#+begin_header
+  ,#+begin_header_author
+  {{{AUTHOR}}}
+  ,#+end_header_author
+  ,#+end_header
+"
+#+END_SRC
+
+#+HTML_DOCTYPE: xhtml-strict
+#+HTML_CONTAINER: div
+#+HTML_LINK_HOME: http://hsigrist.github.io
+#+HTML_LINK_UP: http://hsigrist.github.io/docencia/
+#+HTML_MATHJAX: path:"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+#+HTML_HEAD: <link rel="stylesheet" href="manhattan.css" />
+#+HTML_HEAD_EXTRA: <meta name="robots" content="INDEX,NOFOLLOW" />
+#+LANGUAGE: es
+#+BIBLIOGRAPHY: /Users/hsigrist/Dropbox/bibliography/references
+
+#+COLUMNS:  %18ITEM %9APROVADO(Approvado?){X} %11STATUS(Status) %7TODO %16SCHEDULED %16DEADLINE %20EFFORT{:} %CLOCKSUM
+#+PROPERTY: Status_ALL "En progreso" "No iniciado" "Finalizado"
+#+PROPERTY: Approved_ALL "[ ]" "[X]"
+#+PROPERTY: Effort_ALL "0" "0:45" "1:30" "3:00"
+
+
+#+NAME: file:manhattan_logo
+#+CAPTION: Logotipo del Proyecto Manhattan 2017. 
+[[file:manhattan_logo.png]]
+
+
+#+BEGIN_abstract
+Con el fin de infusionar el currículum Técnico Profesional de las distintas especialidades en la asignatura Matemática, se diseña un plan de articulación entre las competencias específicas y genéricas provenientes de la especialidad con aquellas que integran la enseñanza de la matemática en estudiantes de Tercer año Enseñanza Media. Se desarrolla un plan de articulación y adecuación evidenciados en la microimplementación curricular de la enseñanza Matemática, interviniendo con instrumentos como con planificaciones ad-hoc, que tributan por un lado, a las distintas capacidades y competencias necesarias y promovidas por los Planes y Programas propios del Currículum, como también a las capacidades genéricas, propias de la sociedad del s. XXI, descritas en el Proyecto Tuning Latinoamérica, que promocionan la formación de futuros profesionales idóneos y propenden al aprendizaje significativo y a lo largo de la vida (LLL, Life Long Learning por sus siglas en inglés).
+#+END_abstract
+
+#+NAME: file:manhattan
+#+CAPTION: El puente de Manhattan es un puente colgante que cruza el río Este en la ciudad de Nueva York, que conecta al Bajo Manhattan con Brooklyn, en Long Island. El Puente Manhattan, el más joven de los tres puentes colgantes del East River construidos por el Departamento de Transporte de la Ciudad de Nueva York, representa el entusiasmo que esperamos transmitir a las nuevas generaciones de primer y segundo año medio, por otra parte sus elaborados portales de piedra reflejan las bases que buscamos promover en nuestros estudiantes. 
+[[file:manhattan.jpg]]
+
+
+
+#+TOC: headlines 3
+
+* Problematización
+** Planteamiento del problema
+Es el repensar respecto del horizonte académico unido a la reformulación de estrategias que promuevan una mejora en los resultados, como en la idoneidad de los aprendizajes, que el presente proyecto se instala como una propuesta curricular que incentive el desarrollo de las competencias propias del desempeño de los estudiantes adscritos al programa de formación Técnico Profesional (TP) dosificando características propias del currículum TP en el de Matemática, ambos ubicados en el Tercer año de la Enseñanza Media.
+
+Ciertamente, el desarrollo de la enseñanza Matemática debe ser coherente con los actuales paradigmas en educación, así es como el proyecto Tuning desliza entre sus lineas de trabajo (citeauthor:gonzalez2004contribucion), a *las competencias (genéricas y específicas de las áreas temáticas)*, en este sentido, es pertinente *repensar* la forma en la que se diseñan las planificaciones de la asignatura matemática, en tanto, éstas no reflejan necesariamente el sentir y objeto de una enseñanza integradora y en permanente cambio, y que la actual Sociedad del Conocimiento demanda con sus constantes reformulaciones (citeauthor:gonzalez2004contribucion).
+
+
+** Preguntas de investigación
+*** Competencias laborales
+*** Pensamiento crítico
+*** Trazabilidad
+*** Reformulación
+** Objetivos de investigación
+*** Microimplementación curricular
+*** Consecución de objetivos
+** Hipótesis
+*** Estado del arte
+*** Estatus local versus horizonte académico y profesional
+** Viabilidad
+* Marco Teórico
+* Marco Metodológico
+** Paradigma
+** Tipo de estudio
+** Descripción de los instrumentos
+** Confiabilidad y viabilidad de los instrumentos cuantitativos
+** Procesamiento de la información
+* Análisis de los resultados
+** Conclusiones
+** Recomendaciones
+
+#+LaTeX: \printbibliography

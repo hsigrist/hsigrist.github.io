@@ -1,0 +1,158 @@
+% Created 2017-01-24 Tue 17:47
+% Intended LaTeX compiler: pdflatex
+%!TEX program = xelatex
+\documentclass[12pt,letterpaper,article,x11names]{memoir}
+\usepackage{pbox}
+\usepackage[tight,%
+            undotted,%
+            nohints,%
+            spanish]{minitoc}
+\usepackage{hyperref}
+\usepackage{abstract}
+\usepackage{fourier}
+\usepackage{wallpaper}
+\usepackage{memoir-article-styles}
+\usepackage{fontspec}
+\usepackage{amssymb,amsmath}
+\usepackage{polyglossia}
+\setdefaultlanguage{spanish}
+\usepackage[style=spanish]{csquotes}
+\usepackage[hyperref=false,%
+          backend=biber,%
+          style=apa,%
+          citetracker=true,%
+          pagetracker=true]{biblatex}
+\DeclareLanguageMapping{spanish}{spanish-apa}
+\addbibresource{/Users/hsigrist/Dropbox/bibliography/references.bib}
+\usepackage{polyglossia}
+\setdefaultlanguage{spanish}
+\usepackage[style=spanish]{csquotes}
+\usepackage{pstricks-add}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\usepackage{siunitx}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{marvosym}
+\usepackage{longtable}
+\usepackage[left=2cm,%
+          right=2cm,%
+          top=2cm,%
+          bottom=3cm,%
+          paperheight=33cm]{geometry}
+\setlength{\absleftindent}{0pt}
+\setlength{\absrightindent}{0pt}
+\definecolor{links}{HTML}{000000}
+\setromanfont[Mapping={tex-text}]{LinLibertineO}
+\setsansfont[Mapping={tex-text}]{LinBiolinumO}
+\setmonofont[Mapping={tex-text},Scale=0.8]{PragmataPro-Regular}
+\graphicspath{{/Users/hsigrist/Dropbox/images/}}
+\chapterstyle{article-2}
+\pagestyle{kjh}
+\definecolor{bluac}{RGB}{7,29,66}
+\newtheorem{teorema}{Teorema}[chapter]
+\newtheorem{lema}[teorema]{Lema}
+\newtheorem{proposicion}[teorema]{Proposición}
+\newtheorem{corolario}[teorema]{Corolario}
+\newtheorem{definicion}[teorema]{Definición}
+\newtheorem{ejemplo}[teorema]{Ejemplo}
+\newtheorem{nota}[teorema]{Nota}
+\title{}
+      
+
+\published{Ensayo no publicado. No citar sin permiso.}
+\author{Hans Sigrist}
+\date{lun 26 dic 12:12:48 2016}
+\title{Proyecto Queens · Habilidades Técnico Profesionales desde la enseñanza Matemática: Un modelo de Infusión Curricular e Innovación\\\medskip
+\large Desarrollo y microimplementación curricular de competencias específicas y genéricas como medios orientados al cambio y mejora del currículum en estudiantes de Tercer año Enseñanza Media en Liceo Mixto Los Andes}
+\hypersetup{
+ pdfauthor={Hans Sigrist},
+ pdftitle={Proyecto Queens · Habilidades Técnico Profesionales desde la enseñanza Matemática: Un modelo de Infusión Curricular e Innovación},
+ pdfkeywords={enseñanza media, tercero medio, matemática, técnico profesional, currículum, Tuning, capacidades genéricas, capacidades específicas, microimplementación},
+ pdfsubject={Implementación del currículum Técnico Profesional (TP) en la planificación de la asignatura Matemática de estudiantes integrantes del Tercer año Enseñanza Media.},
+ pdfcreator={Emacs 25.1.1 (Org mode 9.0.3)}, 
+ pdflang={Spanish}}
+\begin{document}
+
+\maketitle
+\begin{abstract}
+Con el fin de infusionar el currículum Técnico Profesional de las distintas especialidades en la asignatura Matemática, se diseña un plan de articulación entre las competencias específicas y genéricas provenientes de la especialidad con aquellas que integran la enseñanza de la matemática en estudiantes de Tercer año Enseñanza Media. Se desarrolla un plan de articulación y adecuación evidenciados en la microimplementación curricular de la enseñanza Matemática, interviniendo con instrumentos como con planificaciones ad-hoc, que tributan por un lado, a las distintas capacidades y competencias necesarias y promovidas por los Planes y Programas propios del Currículum, como también a las capacidades genéricas, propias de la sociedad del s. XXI, descritas en el Proyecto Tuning Latinoamérica, que promocionan la formación de futuros profesionales idóneos y propenden al aprendizaje significativo y a lo largo de la vida (LLL, Life Long Learning por sus siglas en inglés).
+\end{abstract}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=.9\linewidth]{queens.jpg}
+\caption{\label{fig:org05cedaa}
+El puente de Queensboro o también llamado el puente de la calle 59, es un puente en celosía o de estructura reticular. Este tipo de puentes hace uso de fenómenos físicos y matemáticos como la compresión y la tracción que favorecen pequeñas flexiones. Su diseño e ingeniería son una fiel demostración de las competencias que esperamos integrar en nuestros estudiantes, de modo que puedan desenvolverse en un mundo tecnologizado con una toma de decisiones certera y que les permitan resolver problemas complejos, no rutinarios y no familiares con las competencias matemáticas más idóneas.}
+\end{figure}
+
+
+\setcounter{tocdepth}{3}
+\tableofcontents
+
+\chapter{Problematización}
+\label{sec:org0610d0d}
+\section{Planteamiento del problema}
+\label{sec:org86d995b}
+Es el repensar respecto del horizonte académico unido a la reformulación de estrategias que promuevan una mejora en los resultados, como en la idoneidad de los aprendizajes, que el presente proyecto se instala como una propuesta curricular que incentive el desarrollo de las competencias propias del desempeño de los estudiantes adscritos al programa de formación Técnico Profesional (TP) dosificando características propias del currículum TP en el de Matemática, ambos ubicados en el Tercer año de la Enseñanza Media.
+
+Ciertamente, el desarrollo de la enseñanza Matemática debe ser coherente con los actuales paradigmas en educación, así es como el proyecto Tuning desliza entre sus lineas de trabajo (\citeauthor{gonzalez2004contribucion}), a \textbf{las competencias (genéricas y específicas de las áreas temáticas)}, en este sentido, es pertinente \textbf{repensar} la forma en la que se diseñan las planificaciones de la asignatura matemática, en tanto, éstas no reflejan necesariamente el sentir y objeto de una enseñanza integradora y en permanente cambio, y que la actual Sociedad del Conocimiento demanda con sus constantes reformulaciones (\citeauthor{gonzalez2004contribucion}).
+
+\begin{center}
+\includegraphics[width=.9\linewidth]{images/flavell.png}
+\end{center}
+
+\begin{center}
+\includegraphics[width=.9\linewidth]{images/polya.png}
+\end{center}
+
+
+\section{Preguntas de investigación}
+\label{sec:org7d3b614}
+\subsection{Competencias laborales}
+\label{sec:org5c636ad}
+\subsection{Pensamiento crítico}
+\label{sec:org51e36eb}
+\subsection{Trazabilidad}
+\label{sec:org4a18445}
+\subsection{Reformulación}
+\label{sec:org111f70b}
+\section{Objetivos de investigación}
+\label{sec:org7dfd3b6}
+\subsection{Microimplementación curricular}
+\label{sec:org285f4bc}
+\subsection{Consecución de objetivos}
+\label{sec:org5497b0e}
+\section{Hipótesis}
+\label{sec:orge791c1f}
+\subsection{Estado del arte}
+\label{sec:org817808d}
+\subsection{Estatus local versus horizonte académico y profesional}
+\label{sec:org1981f92}
+\section{Viabilidad}
+\label{sec:org92c97a0}
+\chapter{Marco Teórico}
+\label{sec:org7f50a1d}
+\chapter{Marco Metodológico}
+\label{sec:org0006f1d}
+\section{Paradigma}
+\label{sec:org4f385ef}
+\section{Tipo de estudio}
+\label{sec:org8b8e037}
+\section{Descripción de los instrumentos}
+\label{sec:org37b3f36}
+\section{Confiabilidad y viabilidad de los instrumentos cuantitativos}
+\label{sec:orgbd36f25}
+\section{Procesamiento de la información}
+\label{sec:org45c2bc7}
+\chapter{Análisis de los resultados}
+\label{sec:orgd42ee37}
+\section{Conclusiones}
+\label{sec:orgc182af6}
+\section{Recomendaciones}
+\label{sec:org2d7c409}
+
+\printbibliography
+\end{document}

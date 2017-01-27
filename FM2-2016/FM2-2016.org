@@ -1,0 +1,134 @@
+#+TITLE: FM 2-2016: Fundamentos de la Matemática 
+#+AUTHOR: Hans Sigrist
+#+EMAIL: hans.sigrist@uac.cl
+#+DATE: Sun Jul 10 11:11:08 2016 
+#+OPTIONS: html-link-use-abs-url:nil html-postamble:t
+#+OPTIONS: html-preamble:t html-scripts:t html-style:t
+#+OPTIONS: html5-fancy:t tex:t
+#+OPTIONS: toc:nil num:nil
+#+HTML_DOCTYPE: html5
+#+HTML_CONTAINER: div
+#+DESCRIPTION: Página de la asignatura Fundamentos de la Matemática, parte de la Línea Formación Remedial UAC.
+#+KEYWORDS: lenguaje matemático, racionales, aplicaciones
+#+HTML_LINK_HOME: http://hsigrist.github.io
+#+HTML_LINK_UP: http://hsigrist.github.io/docencia/
+#+HTML_MATHJAX: path:"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+#+HTML_HEAD: <link rel='stylesheet' href='Grump.css' />
+#+SUBTITLE: Psicología. Primavera 2016, jornada vespertina · UAC-SF · Prof. Hans Sigrist
+#+LATEX_HEADER:
+#+LANGUAGE: es
+
+#+NAME:   fig:R1605E_MORRIS
+#+CAPTION: Artwork: Sarah Morris, ESTHER (Säo Paulo), 2014, Household Gloss Paint on Canvas
+
+#+BEGIN_SRC html
+
+#+END_SRC
+
+#+TOC: headlines 2
+
+* TODO Novedades
+****** <2016-08-19 Fri>                      :bienvenida:presentaciones:
+Non eram nescius, Brute, cum, quae summis ingeniis exquisitaque doctrina philosophi Graeco sermone tractavissent, ea Latinis litteris mandaremus, fore ut hic noster labor in varias reprehensiones incurreret. nam quibusdam, et iis quidem non admodum indoctis, totum hoc displicet philosophari. quidam autem non tam id reprehendunt, si remissius agatur, sed tantum studium tamque multam operam ponendam in eo non arbitrantur. erunt etiam, et ii quidem eruditi Graecis litteris, contemnentes Latinas, qui se dicant in Graecis legendis operam malle consumere. postremo aliquos futuros suspicor, qui me ad alias litteras vocent, genus hoc scribendi, etsi sit elegans, personae tamen et dignitatis esse negent.
+* STARTED Audiencia
+Estimadas y estimados estudiantes, reciban la bienvenida a este espacio académico y de desarrollo personal. En esta oportunidad, la asignatura *Resolución de Problemas*, está dirigida a diferentes audiencias provenientes de carreras profesionales, todas ubicadas en su respectivo 4to. semestre lectivo. Como es costumbre al compartir espacios, se hace primordial la práctica de la convivencia, es decir, el /saber vivir y convivir/ con otros y otras. Además, de velar por la *puntualidad* y la *asistencia*, es necesario que se plantee *un compromiso* con la asignatura, con la consecución de sus propias *metas*, y no sólo con ésta, sino con todo acto o proceso que inicie.
+
+En este espacio se proveerá de los recursos y medios necesarios para cursar el primer ramo de nuestra /Línea Sello Institucional/, que promueve la infusión de las *Habilidades Blandas* (HB) en nuestra comunidad. Como miembro del /Equipo Sello UAC/ reciban una cordial bienvenida primero a nuestra Institución, y por cierto a las actividades que desarrollamos en nuestra línea. Nuestro principal propósito, es diseminar, promover y generar las HB en nuestros estudiantes, de modo que se tratará de una enseñanza interactiva: /experimentaremos/, /practicaremos/, /reforzaremos/ y /reflexionaremos/, en torno a las oportunidades de aprendizaje de las HB. Mis mejores deseos en este nuevo desafío que juntos iniciamos, Hans.
+
+
+#+BEGIN_QUOTE
+En adelante me referiré a las mencionadas carreras que constituyen la audiencia, como "*comunidad*", con ello favorecemos el sentido de equipo y de convivencia.
+#+END_QUOTE
+
+Las distintas audiencias se distribuyen de la manera siguiente:
+
+**** sábado 08:30AM-11:20AM. *Derecho* + *Terapia Ocupacional*
+
+** Contacto
+
+#+BEGIN_QUOTE
+- Email: [[mailto:hans.sigrist@uac.cl][hans.sigrist@uac.cl]]
+- Twitter: [[http:twitter.com/hsigrist][@hsigrist]]
+- Web: [[http://hsigrist.github.io][hsigrist.github.io]]
+#+END_QUOTE
+* STARTED Programa
+** Descripción
+
+Curso teórico-práctico orientado a desarrollar la capacidad para identificar un problema y buscar su solución de manera creativa, reflexiva y colaborativa. Esta búsqueda implica reconocer el error, los fallos y los fracasos como oportunidades para la reflexión y el aprendizaje colaborativo. A través de este curso, se busca eliminar las barreras que existen actualmente en el afrontamiento de problemas, tanto del ámbito personal como profesional. En este sentido, se da mucho valor e importancia a la metacognición y el pensamiento creativo y se espera que este curso pueda tener una gran repercusión en las vidas de nuestros estudiantes, quienes normalmente se verán enfrentados a diversos tipos de problemas, tanto cotidianos como profesionales.
+
+** Objetivo general
+
+Desarrollar la capacidad para identificar un problema y buscar su solución de manera creativa, reflexiva y colaborativa.
+
+** Objetivos específicos
+
+1. Distinguir entre problema percibido y problema real (en qué queremos ser creativos).
+2. Desarrollar el pensamiento crítico como proceso cognitivo para analizar o evaluar opiniones o afirmaciones de los demás.
+3. Aplicar técnicas de creatividad en la toma de decisiones y solución de problemas de la vida cotidiana y laboral.
+4. Identificar los problemas de manera analítica, reconociendo que se debe tomar una decisión para llegar a la solución de éste.
+
+** Habilidades Sello
+
+- Capacidad para identificar un problema y buscar su solución de manera creativa, reflexiva y colaborativa.
+- Capacidad para identificar los aspectos relevantes de un problema para la toma de decisiones.
+- Capacidad para aplicar distintas técnicas y métodos creativos para enfrentar problemas desde perspectivas múltiples.
+- Capacidad para utilizar la creatividad para la resolución de problemas o desafíos personales y profesionales.
+* PROJECT Recursos
+** Manual RP
+A continuación comparto con la comunidad el *manual oficial de la asignatura*, es primordial que lo descargue y utilice como guía de estudio. Recuerde que en ningún caso, este manual pretende ser una completa visión del panorama comunicativo en organizaciones, ni menos aún, la última palabra en comunicación efectiva. Como siempre, nuestros /manuales Sello/, son un acercamiento a las principales tendencias actuales en torno a la temática que cubran. Un aprendiz profundo, reconoce como propio el deber "ir más allá" y ser un "consumidor eficiente de información". Recuerde que, en plena *Sociedad del Conocimiento*, la información *prolifera* en todas partes.
+
+#+BEGIN_QUOTE
+
+#+END_QUOTE
+
+** MLP Método de lectura previa
+
+En la actual asignatura utilizaremos el denominado *Método de la Lectura Previa* (MLP), que permitirá a la audiencia llegar a clases mejor equipados con insumos previamente asignados/propuestos. La idea es simple, con ello favorecemos la clase en una experiencia *dialógica* y podremos de esta forma intercambiar puntos de vista respecto de algún tema de interés.
+
+Este método resulta muy interesante y al mismo tiempo es una excelente oportunidad de *crecimiento personal*, en tanto promueve la *relación de conceptos*, para ello es necesario que dada la ocasión de una MLP, puedan establecer *relaciones causales* o *comparaciones*, *clasificaciones*. Aquí la *memoria* juega un rol importante, existe una crítica respecto a que los métodos de enseñanza relacionados con construir conocimiento "limpian" la memoria, en tanto solo promueven el aprendizaje experiencial y no la memoria. Pues bien, con este método podrán infundir una práctica que apunte a remediar este problema: la memoria almacenará cierto stock de conceptos y datos a partir de los cuales podrán recrear y pensar.
+
+La invitación es a dar una lectura *comprensiva*, aquí verán que ahora la memoria ya no basta, debemos incorporar a su vez una comprensión léxica para ir avanzando hacia temáticas más avanzadas o complejas.
+
+Lo anterior, lo evidenciarán en la medida que sean capaces de responder a diversas preguntas que estableceré con el único objetivo de ir "subiendo" en lo niveles de *comprensión lectora*.
+
+En adelante, cuando se utilicemos el MLP, debe velar por dar justo cumplimiento a lo solicitado, no *procrastine*, no aplaze, tómese un tiempo y ubique la acción en un lugar que no propicie las interrupciones. 
+* SENT Glosario
+Como una forma de fomentar su acervo, les propongo la creación de un *Glosario*, de modo recopilen conceptos e ideas que permitan su uso pertinente en diversos ámbitos de la Resolución de Problemas. Pueden incorporar los conceptos que desees, como mínimo debieran manejarse los propuestos.
+
+Utilice para estos efectos, el documento Word que puede descargar en el enlace siguiente:
+
+#+BEGIN_QUOTE
+[[file:Glosario_RP_2-2016_Carrera.docx]]
+#+END_QUOTE
+
+Los /términos sugeridos/, han sido extraídos del *Manual de Resolución de Problemas*, socializado más abajo en la sección *Recursos*:
+
+#+BEGIN_QUOTE
+gestión · problema · creatividad · estrategia · resolución · situación deseada · situación ideal · identificación · alcance · meta · barrera · cognición · procedimiento · algoritmo · heurística · toma de decisiones · evaluar · composición · complejidad · innovación · adaptativo · reflexivo · versátil · implicado · implementación · monitoreo · retroalimentación · pensamiento convergente · pensamiento divergente · brain-storming · explorar · indagar · discusión · eficacia · eficiencia
+#+END_QUOTE
+
+Una vez finalice su Glosario, debe cargarlo en el enlace siguiente:
+
+#+BEGIN_QUOTE
+[[https://www.dropbox.com/request/rposJLTC0c2OrZXwNrDc][Carga Glosario]]
+#+END_QUOTE
+
+* COMMENT Evidencias
+Registro fotográfico, videos, grabaciones, testimonios y cualquier otro recurso que resulte de la interacción en actividades propuestas, /focus-group/, ejercicios prácticos, etc. 
+
+** Ejercicio práctico 1
+* COMMENT REGISTRO CALIFICACIONES
+|-----------+-----+-----+-----+------+-----+-------|
+|       RUT | EV1 | EV2 | PRT |   NP |  EX |    NF |
+|           | 25% | 35% | 40% |  70% | 30% |       |
+|-----------+-----+-----+-----+------+-----+-------|
+| 121660629 | 5.5 | 5.4 | 5.7 | 5.52 | 6.0 | 5.664 |
+|           |     |     |     |      |     |       |
+|           |     |     |     |      |     |       |
+|           |     |     |     |      |     |       |
+|           |     |     |     |      |     |       |
+|           |     |     |     |      |     |       |
+|           |     |     |     |      |     |       |
+|           |     |     |     |      |     |       |
+|-----------+-----+-----+-----+------+-----+-------|
+#+TBLFM: @3$5=@2$2*@3$3+@2$3*@3$3+@2$4*@$4::@3$7=@2$5*@3$5+@2$6*@3$6

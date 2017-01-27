@@ -1,0 +1,43 @@
+#+TITLE: Lenguaje R - SageMath Cell
+#+AUTHOR: Hans Sigrist
+#+EMAIL: hans.sigrist@uac.cl
+#+DATE: Sat Apri 24 17:12:36 2016
+#+OPTIONS: html-link-use-abs-url:nil html-postamble:t
+#+OPTIONS: html-preamble:t html-scripts:t html-style:t
+#+OPTIONS: html5-fancy:t tex:t
+#+OPTIONS: toc:t num:nil
+#+HTML_DOCTYPE: html5
+#+HTML_CONTAINER: div
+#+DESCRIPTION: Página de interacción con el software R, a traves de SageMath Cell.
+#+KEYWORDS: R-language, SageMath, SageMath Cell
+#+HTML_LINK_HOME: http://hsigrist.github.io
+#+HTML_LINK_UP: http://hsigrist.github.io/docencia/
+#+HTML_MATHJAX: path:"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+#+HTML_HEAD: <link rel="stylesheet" href="Grump.css" />
+#+HTML_HEAD: <meta charset="utf-8">
+#+HTML_HEAD: <meta name="viewport" content="width=device-width">  
+#+HTML_HEAD: <script src="https://sagecell.sagemath.org/static/jquery.min.js"></script>
+#+HTML_HEAD: <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+#+HTML_HEAD: <script>sagecell.makeSagecell({"inputLocation": ".sage"});</script>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://sagecell.sagemath.org/static/sagecell_embed.css">
+#+SUBTITLE: Lenguaje R - UAC-SF · Prof. Hans Sigrist
+#+LATEX_HEADER:
+#+LANGUAGE: es
+
+#+BEGIN_HTML
+<script>
+$(function () {
+    sagecell.makeSagecell({inputLocation: 'div.compute-r',
+                           evalButtonText: 'Evaluar',
+                           defaultLanguage: "r", 
+                           languages: sagecell.allLanguages});
+});
+</script>
+#+END_HTML
+
+
+#+BEGIN_HTML
+<div class="compute-r"><script type="text/x-sage">
+</script></div>
+#+END_HTML
+

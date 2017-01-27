@@ -1,0 +1,378 @@
+/*
+serif on headings, san-serif on body.
+which is the opposite to print work
+
+Verdana was designed to look good at small sizes, so
+it does. Other fonts (notably Arial and Helvetica) often look better at
+some larger sizes.
+
+
+*/
+
+/* ToDo
+style for ii category bold italics nyt
+color HRs
+do margins in a DIV.bod rather than BODY (delete completely from BODY?
+ Netscape bug of _adding_ the margin properties to its default margins
+
+font families
+ serif, sans-serif, cursive, fantasy, and monospace
+
+BODY { position: absolute; left: 0px; top: 0px; margin-top: 0px;
+ margin-left: 0px; }
+
+Netscapism: body leftmargin=0 topmargin=0 marginwidth=0 marginheight=0
+maybe use strict DTD -- include FPI(?) and URL
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+ "http://www.w3.org/TR/REC-html40/strict.dtd>
+
+h1, h2 { margin-bottom: 0 }
+h1 + *, h2 + * { margin-top: 0 }
+
+*/
+
+/* what about TD, TH, and CAPTION Nance?? */
+/* EXPERIMENT: position: absolute; */
+
+/* OLD (changed on 8-Nov-2000)
+ font-family: Verdana, "Myriad Web", Syntax, Arial, Helvetica, sans-serif;
+*/
+
+BODY {
+ font-family: "Trebuchet MS", Trebuchet, Geneva, Arial, Helvetica, Verdana, "Myriad Web", Syntax, sans-serif;
+ background-color: #FFFFD8;
+ color: #000000;
+ margin-left: 0;
+ margin-right: 0;
+}
+
+/*
+TD {
+text-align: left;
+}
+*/
+
+.reverse {
+ color: #FFFFD8;
+ background-color: #000000;
+}
+
+/* Georgia, Palatino, */
+/* "Copperplate Gothic Bold" -- all caps, squiggles on the edges  */
+/* .headfoot, .footer, .header, .nav, .metanote { */
+.headfoot, .header {
+ font-family : garamond, "Times New Roman", Times, serif;
+ color: #000000;
+}
+
+.footer, .nav, .metanote {
+ font-family : "Times New Roman", Times, serif;
+ color: #000000;
+}
+
+/* fantasy or whatever CSMS is in */
+.sig {
+ font-family : "Marker Felt", "Comic Sans MS", "Times New Roman", Times, serif;
+ color: #000000;
+}
+
+
+DIV.metanote {
+ margin-left: 15%;
+ margin-right: 16%;
+}
+
+DIV.news {
+ margin-left: 15%;
+ margin-right: 16%;
+ font-size: 105%;
+}
+
+DIV.toc {
+ margin-left: 10%;
+ margin-right: 11%;
+}
+
+/* next in toc1 is inhereted by toc2, etc in IE 
+font-weight: bold;
+ list-style-type:  square;
+*/
+
+.toc1 {
+ list-style-type: none;
+ font-weight: bold;
+}
+
+/*
+ font-size: small;
+*/
+
+
+.toc2, .toc3, .toc4, .tocN {
+ list-style-type: none;
+ font-size: 95%;
+ font-weight: normal;
+}
+
+.bod, .contents {
+ margin-left: 5%;
+ margin-right: 4%;
+}
+
+/*
+UL.hidebullets,  {
+ list-style-type: none;
+}
+*/
+
+.hidebullets  {
+ list-style-type: none;
+}
+
+UL.sqbullets {
+ list-style-type: square;
+ list-style-image: none;
+}
+
+
+UL.pinebullets {
+ list-style-image: url(/images/pine-green.gif);
+}
+
+LI.delbullets {
+ list-style-image: url(/images/del.png);
+}
+
+
+UL.fishbullets {
+ list-style-image: url(/images/fish.gif);
+}
+
+UL.plainbull {
+ list-style-image: url(/images/bull.gif);
+}
+
+
+/* OLD:
+ font-family : Tahoma, Verdana, Geneva, Arial, Trebuchet, sans-serif;
+Verdana doesn't look good at big sizes so don't use it for
+Headers!
+Impact - yuk? maybe only for large?
+*/
+
+H1, H2, H3, H4, H5, H6 {
+ font-family : "Helvetica Bold", Helvetica, Geneva, Arial, sans-serif;
+ color: #003366;
+}
+
+
+/* font-style: normal; */
+/*, TH, THEAD, TFOOT */
+DT {
+ font-weight: bold;
+}
+
+
+
+/* list-style-type :  oblique; */
+
+/* below works in opera but not in ie???
+DIV.toc > LI {
+ list-style-type :  none;
+}
+*/
+
+
+
+/* OLD:
+ font-family: Fixedsys, "Monotype.com", "Andale Mono", "Courier New", Courier, monospace;
+*/
+
+/* Goal: Use something other than ugly Courier! 
+ * Need to use Truetype fonts so user can resize 
+ * I don't like these anymore: "Monotype.com", "Andale Mono" 
+ * "OCR A Extended" 
+ * "Lucida Console", 
+ * "Courier New" and "Andale Mono" contain the euro sign; what else
+ * does?? */
+
+var, code, pre, samp { 
+ font-family: "Panic Sans", Monaco, "Courier New", Courier, "Andale Mono", monospace;
+ font-weight: normal;
+ color: #003366;
+ }
+
+/* Use TT for teletype font (without special color!) */
+tt { 
+ font-family: "Panic Sans", Monaco, "Courier New", Courier, "Andale Mono", monospace;
+ font-weight: normal;
+ }
+
+/* font-family: "Lucida Console", "Courier New", Courier, * monospace; */
+kbd { 
+ font-family: "Panic Sans", Monaco, "Courier New", Courier, "Andale Mono", monospace;
+ font-weight: bold;
+ color: #003366;
+ }
+
+.reversemono {
+ color: #FFFFD8;
+ background-color: #003366;
+}
+
+
+PRE { 
+ margin-left: 3%;
+ margin-right: 2%;
+ }
+
+/* border = none; */
+.altbg {
+ margin-left: 1%;
+ background-color: white;
+ border: none;
+}
+
+EM, VAR, CITE, DFN { 
+ font-style: italic;
+ }
+
+
+STRONG { 
+ font-style: italic;
+ font-weight: bold;
+ }
+
+.dashborder { 
+ border: dashed #000000 2px; 
+}
+
+.reversedashborder { 
+ border: dashed #FFFFFF 2px; 
+}
+
+.solidborder { 
+ border: solid #000000 1px; 
+}
+
+
+/* Order Matters!!
+1. link
+2. visited
+3. active
+4. hover
+
+below seen in css-d
+a:link {color:blue}
+a:visited {color:purple}
+a:hover {color:red}
+a:focus {color:green}
+a:active {color:yellow}
+*/
+
+
+/* from W3C Steely-- color: #FF3300; */
+A:link, A.flex:link { 
+ text-decoration: none;
+ color: #CC0000;
+ } 
+  
+
+/* Ugly Olive from Steely-- color: #999966; */
+A:visited, A.flex:visited { 
+ text-decoration: none;
+ color: #330099;
+ } 
+  
+
+A:active, A.flex:active { 
+ text-decoration: none;
+ color: #FF3300;
+ }
+
+
+A:hover {
+ text-decoration: underline;
+ color: #FF3300;
+ background-color: #FFFFE8;
+ }  
+
+
+A.flex:hover {
+ text-decoration: underline;
+ font-style: italic;
+ color: #FF3300;
+ background-color: #FFFFE8;
+ } 
+
+
+A.scary:link, A.scary:visited, A.scary:active { 
+ text-decoration: none;
+ color: #036;
+ background-color: transparent;
+ } 
+
+A.scary:hover {
+ font-family: "Marker Felt", "Comic Sans MS", sans-serif;
+ text-decoration: line-through;
+ color: #f00;
+ background-color: transparent;
+ }  
+  
+/* add .offsite 
+maybe italics on hover?
+*/
+
+/*
+A.onsite:link { 
+ text-decoration: none;
+ color: #CC0000;
+ } 
+
+A.onsite:visited { 
+ text-decoration: none;
+ color: #330099;
+ } 
+
+A.onsite:active { 
+ text-decoration: none;
+ color: #FF3300;
+ }
+
+A.onsite:hover {
+ text-decoration: underline;
+ color: #FF3300;
+ background-color: #FFFFFF;
+ } 
+  
+
+A.onpage:link { 
+ text-decoration: none;
+ color: #CC0000;
+ } 
+
+A.onpage:visited { 
+ text-decoration: none;
+ color: #330099;
+ } 
+
+A.onpage:active { 
+ text-decoration: none;
+ color: #FF3300;
+ }
+
+A.onpage:hover {
+ text-decoration: underline;
+ color: #FF3300;
+ background-color: #FFFFD8;
+ } 
+*/
+
+/* or is above FFFFE8??? */
+
+/* figure out this stuff
+div.toc a { text-decoration: none; }
+div.toc a:hover { background: #fff none; color: #f00; }
+*/
+
+

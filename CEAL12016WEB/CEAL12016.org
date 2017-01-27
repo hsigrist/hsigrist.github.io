@@ -1,0 +1,264 @@
+#+TITLE: CEAL 1-2016: Comunicación Efectiva en el Ámbito Laboral (Formato inverso)
+#+AUTHOR: Hans Sigrist
+#+EMAIL: hans.sigrist@uac.cl
+#+DATE: Sat Mar 26 12:46:05 2016
+#+OPTIONS: html-link-use-abs-url:nil html-postamble:t
+#+OPTIONS: html-preamble:t html-scripts:t html-style:t
+#+OPTIONS: html5-fancy:t tex:t
+#+OPTIONS: toc:nil num:nil
+#+HTML_DOCTYPE: html5
+#+HTML_CONTAINER: div
+#+DESCRIPTION: Página de la asignatura Comunicación Efectiva en el Ámbito Laboral, parte de la Línea Sello Institucional UAC.
+#+KEYWORDS: comunicación efectiva ambito laboral
+#+HTML_LINK_HOME: http://hsigrist.github.io
+#+HTML_LINK_UP: http://hsigrist.github.io/docencia/
+#+HTML_MATHJAX: path:"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+#+HTML_HEAD: <link rel="stylesheet" href="Grump.css" />
+#+SUBTITLE: Psicología+Kinesiología · Nivel 5 · Otoño 2016 · UAC-SF · 1er. semestre, jornada vespertina, sábados 11:30AM-14:20PM · Prof. Hans Sigrist
+#+LATEX_HEADER:
+#+LANGUAGE: es
+
+#+BEGIN_ABSTRACT
+Se han implementado acciones nuevas a seguir, suponga por un momento que son acciones bajo la línea de una ocupación laboral. Se trata de deberes y/o responsabilidades, al respecto, cautele llevar acabo todas las acciones que se solicitan, su consecución demanda tiempo y dedicación, empero también compromiso con los plazos y con sus metas para con la asignatura. Reflexione en torno a su grado de alineamiento: individual y colectivo. Piense en grande.
+#+END_ABSTRACT
+#+TOC: headlines 2
+
+#+NAME:   fig:change faster
+#+CAPTION: Esta claro, debemos cambiar, por ejemplo, con adecuación. Pero, el cambio debe ser rápido, sin timidez, ¿Qué cambiarías, que abandonarías, qué dejarías de practicar? y ¿Estás dispuesto a hacerlo ahora? 
+[[file:change_faster.png]]
+
+
+* PROJECT Portafolio Transversal 
+** STARTED Agenda Portafolio
+A continuación, comparto el *Calendario de Avances Portafolio*, sugiero ceñirse a esta agenda ya que favorece la /autogestión/ y con ello se evita la /procrastinación/.
+|--------+---------------------------------------------------------+-------------|
+| Avance | Producto                                                | Fecha       |
+|--------+---------------------------------------------------------+-------------|
+|      1 | Biodata, guión personal                                 | 11-16 abril |
+|      2 | Matriz de fortalezas/debilidades personales             | 25-30 abril |
+|      3 | Principales subhabilidades, historia motivacional breve | 9-14 mayo   |
+|      4 | Currículum vítae                                        | 13-18 junio |
+|      5 | Reflexión Final                                         | 20-25 junio |
+|--------+---------------------------------------------------------+-------------|
+
+Los siguientes, son los avances que verificaremos en las fechas propuestas (Semana). *No debe cargar avances, no se harán retroalimentaciones. Más bien, se orientarán inquietudes en clase en torno a los avances propuestos*.
+
+****** Avance 1: Semana 3
+DEADLINE: <2016-04-16 Sat> SCHEDULED: <2016-04-11 Mon>
+- Biodata :: Elabore una descripción personal en la que se destaquen sus principales aspectos profesionales, debe incluir una foto personal.
+- Guión personal :: Responde asertivamente a la pregunta: ¿Podría contarme algo acerca de usted?/Cuénteme algo acerca de usted. Mín. 60 y máx. 90 palabras.
+
+** STARTED Temas mínimos a incluir en el Portafolio (*Tercera Evaluación Parcial 40%*):
+DEADLINE: <2016-07-02 Sat> SCHEDULED: <2016-03-28 Mon>
+
+
+#+BEGIN_QUOTE
+Entre los *elementos mínimos* que debe incluir su portafolio se encuentran:
+
+- Biodata (resumen profesional, máximo 4 líneas)
+- Guión personal (forma de venderse profesionalmente, mínimo 60, máximo 90 palabras)
+- Matriz de fortalezas/debilidades personales
+- Principales subhabilidades a trabajar (deconstrucción propia de una macro habilidad)
+- Una historia motivacional breve (relato motivacional que evidencia el desarrollo de una habilidad laboral, mínimo 80, máximo 150 palabras)
+- Currículum vítae (preferentemente mixto, máximo 2 páginas)
+- Reflexión final (mínimo 80, máximo 100 palabras)
+#+END_QUOTE
+
+*** Sobre foto personal
+
+Sugiero una foto de frente, ofreciendo una sonrisa natural y empática. Existen herramientas (software de escritorio) para editar imágenes como también aplicaciones online, entre ellas destaco [[http://www125.lunapic.com/editor/][Lunapic]], que por su simpleza le permitirá rápidamente obtener resultados adecuados. Dos herramientas de Lunapic, fueron utilizadas con la imagen Biodata del Portafolio: /Simple Crop Tool/, ubicado en el menu /Edit/ con la variante (shape) circle; por otra parte se utilizó desde el menu /Filters/ el primero llamado /Black and White/. Una vez terminado se presiona /Save Image/ en el menu /File/ y la imagen se guarda en nuestro computador. A modo de ejemplo se puede pasar de [[file:man-in-suit2.jpg][esto]] a [[file:imageedit_7_2595109213.gif][esto]]; o bien de [[file:bigstock-Successful-Mature-Business-Man-7408934.jpg][esto]] a [[file:imageedit_10_7072456166.gif][esto]]. 
+
+** SENT Portafolio Carga Transversal
+
+Una vez finalizado su Portafolio, cautele relevar todos los *Criterios* parametrizados en la /Pauta de evaluación Portafolio Transversal/, no olvide adjuntar *Carta de presentación* (ver pauta, criterio 10). El enlace para cargar su Portafolio se encuentra en el enlace siguiente:
+
+#+BEGIN_QUOTE
+[[https://www.dropbox.com/request/Fb3eWQzBmG8CSC8aSfc4][Carga Portafolio]]
+#+END_QUOTE
+** TODO Anexos
+(/Principales ejercicios de libre elección, rescatados de las clases, máximo 4 ejercicios desarrollados correctamente/). La libre elección de los ejercicios busca evaluar los criterios de selección del estudiante en cuanto al desafío de la actividad y su relación con la deconstrucción de la macro habilidad presentada como tercer avance.
+
+** PROJECT Pauta Evaluación Portafolio Transversal
+ 
+Este producto será evaluado según la rúbrica que podrá encontrar en el enlace siguiente:
+
+#+BEGIN_QUOTE
+[[file:Pauta_de_evaluacion_Portafolio_transversal.pdf]]
+#+END_QUOTE
+
+
+- El único documento utilizable para la entrega de su Portafolio es el dispuesto en el enlace: 
+#+BEGIN_QUOTE
+[[file:Portafolio_CEAL_Carrera_Apellido_Nombre.docx]]
+#+END_QUOTE
+- Si Usted estudia /Kinesiología/ y su nombre es /Catalina Ibaceta/, entonces debe nombrar su documento de la manera siguiente:
+~Portafolio_CEAL_Kinesiologia_Ibaceta_Catalina.docx~
+- Si Usted estudia /Psicología/ y su nombre es /Juan Pablo Gutiérrez/, entonces debe nombrar su documento de la manera siguiente:
+~Portafolio_CEAL_Psicologia_Gutierrez_Juan_Pablo.docx~
+- Note, que no debe usar tilde al nombrar documentos, ni dejar espacios en blanco, esto favorece la búsqueda por nombre y facilita su carga en repositorios online.
+- No cambie la estructura del documento plantilla dispuesto, sólo cambie el contenido del *corpus* y mantenga la estructura de los títulos intacta. Así como tampoco, haga cambios en los aspectos de forma del mismo.
+- Su entrega puede ser presentado en copia dura (impreso) o en formato digital (portafolio electrónico).
+- *Se solicitarán avances y/o retroalimentación, conforme el calendario de avances anterior*.
+       
+#+BEGIN_QUOTE
+*Advertencia*. Esta sección será periódicamente puesta al día, disponiendo nuevos recursos e información para la confección de su *Portafolio*.
+#+END_QUOTE
+
+La elaboración de su Portafolio es una actividad por principio *personal*, en él debe relevar las propiedades o requisitos de toda manifestación verbal. Recuerde que las *propiedades textuales* son:
+
+- Adecuación :: está relacionada con las variaciones del escrito según el grupo social, la situación de comunicación, la interrelación entre los hablantes, etc. Recuerda que ser adecuado significa saber escoger de entre todos los elementos que nos ofrece el lenguaje, el más apropiado para cada situación de comunicación.
+- Coherencia :: establece cuál es la información más pertinente para comunicar y cómo se ha de hacer (en qué orden, con qué grado de detalle, con qué estructura, etc.). Para que un texto sea estructuralmente coherente se deben considerar las siguientes reglas:
+  - Regla de Repetición :: es necesario que la mayor parte de las proposiciones se encadenen tomando como base la repetición o alusión a algunos elementos considerados como centrales.
+  - Regla de Progresión :: es necesario que el desarrollo se produzca con una aportación constante de información nueva.
+  - Regla de no contradicción :: es necesario que no se introduzca ningún elemento semántico que contradiga un contenido establecido previamente (de forma implícita o explícita).
+  - Regla de relación :: es necesario que los hechos referidos estén relacionados en el mundo representado.
+- Cohesión :: las relaciones que se establecen entre los diversos elementos de una oración están vinculadas o conectadas con medios gramaticales diversos, tales como puntuación, conjunciones, artículos, pronombres, sinónimos, etc.
+
+Al respecto, se comparte con la comunidad, dos extractos con las principales características de las propiedades textuales, cuyo uso es vital en la redacción (expresión escrita), los documento se encuentran en los enlaces siguientes:
+
+#+BEGIN_QUOTE
+- [[file:Conectores_textuales_logicos.pdf]]
+- [[file:Guia_conectores_logicos.pdf]]
+#+END_QUOTE
+
+** FINISHED ¿Qué se espera de Usted?
+Demostrar capacidad para escribir, seleccionar, coleccionar, analizar y reflexionar. Por tanto, es necesario que conozca los temas a incluir y la forma en que será evaluado.
+** FINISHED ¿Qué es?
+Es un recurso de evaluación que representa su desempeño a lo largo de un proceso formativo. Puede contener diversas producciones personales que evidencian su avance en una determinada área.
+
+Es un recurso útil para enfatizar el rol y compromiso suyo en su proceso de aprendizaje. Puede ser utilizado con fines auto-evaluativos, hetero-evaluativos y co-evaluativos. Debe diseñarse en formato *Word* (.docx).
+** FINISHED Presentación
+¿Sigues usando un currículum para presentarte? ¿Has pensado en usar un *Portafolio*? En esta asignatura diseñaran un *Portafolio*, una buena práctica sería entender el mismo como una representación de quién soy, qué hago, cómo lo hago, es decir, como *me visibilizo* y cómo *me visibilizan*; en este sentido, el Portafolio puede ser utilizado como una herramienta de consecución laboral.
+* SENT Glosario
+Como una forma de fomentar su acervo, les propongo la creación de un *Glosario*, de modo recopilen conceptos e ideas que permitan su uso pertinente en diversos ámbitos de la comunicación. Pueden incorporar los conceptos que desees, como mínimo debieran manejarse los siguientes:
+
+Utilice para estos efectos, el documento Word que puede descargar en el enlace siguiente:
+
+#+BEGIN_QUOTE
+[[file:Glosario_CEAL_1-2016_Carrera_Apellido_Nombre.docx]]
+#+END_QUOTE
+
+Los /términos sugeridos/, han sido extraídos del *Manual de Comunicación Efectiva en el Ámbito Laboral*, socializado más abajo en la sección *Recursos*:
+
+#+BEGIN_QUOTE
+Escucha activa · Comunicación asertiva · Factor Crítico de Éxito (FCE) · Parafrasear · Retro alimentar · carisma · escéptico · control · persuasión
+#+END_QUOTE
+
+Una vez finalice su Glosario, puede cargarlo en el enlace siguiente:
+
+#+BEGIN_QUOTE
+[[https://www.dropbox.com/request/rposJLTC0c2OrZXwNrDc][Carga Glosario]]
+#+END_QUOTE
+
+* STARTED Unidad 1 Comunicación Efectiva en el Trabajo
+** TODO Semana 3 
+****** TODO <2016-04-16 Sat> Experiencia grupal, debate subhabilidades CEAL, indicaciones Portafolio.
+** DONE Semana 2 Importancia de la comunicación efectiva. Proceso Transaccional en la organización
+****** DONE <2016-04-09 Sat> *MLP* : [[file:Mod_1_Comunicacion_efectiva_en_el_ambito_laboral.pdf]] (pág. 4-10)
+DEADLINE: <2016-04-09 Sat> SCHEDULED: <2016-03-28 Mon>
+****** DONE En esta sesión, abordaremos la importancia de la comunicación efectiva como herramienta en el mundo laboral actual. Al respecto se solicita la *lectura previa* del Manual en las páginas que se indican.
+****** DONE <2016-04-09 Sat> *EP1* : Ejercicio Práctico 1. Este sábado además, daremos revisión a *las señales de alerta en la comunicación* y podremos detectar errores propios y/o ajenos. ¡Anímense a participar! Los recursos para este día son los siguientes:
+
+#+BEGIN_QUOTE
+- [[file:CE-EP1.html][CEAL-EP1 (online)]]
+- [[file:CE-EP1.pdf][CEAL-EP1 (pdf)]]
+#+END_QUOTE
+
+** DONE Semana 1 Presentación & Diagnóstico
+****** DONE [#B] En esta primera clase realizaremos dos acciones ineludibles y que forman parte de nuestra hoja de ruta: la *primera*, consignar un espacio para las presentaciones de manera colectiva, además estableceremos los principales hitos académicos de la asignatura, su programa, objetivos, evaluaciones. Sin embargo, puede dar lectura a este blog, en el cual se recopilan la mayoría de los antecedentes y material repositorio del mismo.
+
+****** DONE [#A] La *segunda* acción que llevaremos a cabo, será la toma de un *Diagnóstico Inicial (Pre-Test)*, por ello su /asistencia/ y /puntualidad/ es primordial, se hace particularmente compleja la posibilidad de rendir en rezago este instrumento, que como bien ya debe saber mide conocimientos de entrada.
+
+* WAITING Unidad 2 Los perfiles comunicacionales
+* WAITING Unidad 3 Herramienta para mejorar la comunicación en el trabajo
+* PROJECT Recursos
+** FINISHED Manual CEAL
+
+A continuación comparto con la comunidad los *manuales oficiales de la asignatura*, es primordial que los descargue y utilice como guía de estudio. Recuerde que en ningún caso, estos manuales pretenden ser una completa visión del panorama comunicativo en organizaciones, ni menos aún, la última palabra en comunicación efectiva. Como siempre, nuestros manuales Sello, son un acercamiento a las principales tendencias actuales en torno a la temática que cubran. Un aprendiz profundo, reconoce como propio el deber "ir más allá" y ser un "consumidor eficiente de información". Recuerde que, en plena *Sociedad del Conocimiento*, la información prolifera en todas partes.
+
+#+BEGIN_QUOTE
+- [[file:Mod_1_Comunicacion_efectiva_en_el_ambito_laboral.pdf]]
+- [[file:Mod_2_Comunicacion_efectiva_en_el_ambito_laboral.pdf]]
+- [[file:Mod_3_Comunicacion_efectiva_en_el_ambito_laboral.pdf]]
+#+END_QUOTE
+** PROJECT Método de Lectura Previa (MLP)
+
+En la actual asignatura utilizaremos el denominado *Método de la Lectura Previa* (MLP), que permitirá a la audiencia llegar a clases mejor equipados con insumos previamente asignados/propuestos. La idea es simple, con ello favorecemos la clase en una experiencia *dialógica* y podremos de esta forma intercambiar puntos de vista respecto de algún tema de interés.
+
+Este método resulta muy interesante y al mismo tiempo es una excelente oportunidad de *crecimiento personal*, en tanto promueve la *relación de conceptos*, para ello es necesario que dada la ocasión de una MLP, puedan establecer *relaciones causales* o *comparaciones*, *clasificaciones*. Aquí la *memoria* juega un rol importante, existe una crítica respecto a que los métodos de enseñanza relacionados con construir conocimiento "limpian" la memoria, en tanto solo promueven el aprendizaje experiencial y no la memoria. Pues bien, con este método podrán infundir una práctica que apunte a remediar este problema: la memoria almacenará cierto stock de conceptos y datos a partir de los cuales podrán recrear y pensar.
+
+La invitación es a dar una lectura *comprensiva*, aquí verán que ahora la memoria ya no basta, debemos incorporar a su vez una *comprensión léxica* para ir avanzando hacia temáticas más avanzadas o complejas.
+
+Lo anterior, lo evidenciarán en la medida que sean capaces de responder a diversas preguntas que estableceré con el único objetivo de ir "subiendo" en lo niveles de *comprensión lectora*.
+
+En adelante, cuando se utilicemos el MLP, debe velar por dar justo cumplimiento a lo solicitado, no *procrastine*, no aplaze, tómese un tiempo y ubique la acción en un lugar que no propicie las interrupciones. 
+
+* TODO Agenda
+Esta agenda recopila información de la ruta que seguiremos durante este semestre, y se poblará a medida que ciertos hitos se cumplan, e.g. Evaluaciones. Existen algunas convenciones, aquí *TODO* (del inglés /to do/) corresponde a "tareas" o "acciones" a realizar; *DONE* (del inglés /done/) aparecerá cuando la acción ya esté realizada o bien ya esté fuera de plazo; *STARTED* corresponde a acciones que se inician con anticipación, e.g. "lecturas previas". Se consignan de igual forma, las fechas de cada clase, que cada sábado corresponden *dos*: la /primera/ desde 11:30AM a 12:50PM y la /segunda/ desde 13:00PM a 14:20PM. La consigna en cada clase, es sólo un descriptor del sub-tema que abordaremos, en ningún caso una especificación de las acciones a realizar en el aula. Utilice esta agenda para organizar su tiempo y poblar su propia agenda también. Visite periódicamente la agenda de modo poder establecer prioridades frente a las distintas acciones que surjan en el semestre. Como siempre, sus inquietudes plantéelas en clase, lugar en el cual todos podremos enterarnos de la o las posibles soluciones.
+**** DONE Clase 1-2 <2016-04-02 Sat>
+Presentación de la asignatura
+Diagnóstico Inicial Nacional
+**** DONE Clase 3-4 <2016-04-09 Sat>
+Importancia de la comunicación efectiva y proceso transaccional en la organización
+Factores de la comunicación efectiva en el ámbito laboral
+La comunicación en la organización
+**** WAITING Clase 5-6 <2016-04-16 Sat>
+La comunicación como proceso interpersonal.
+Emisor y receptor en la comunicación.
+**** TODO Clase 7-8 <2016-04-23 Sat>
+Lenguaje verbal, no verbal y paraverbal en la comunicación interpersonal
+Escucha activa como habilidad lingüística básica en la comunicación
+**** TODO Clase 9-10 <2016-04-30 Sat>
+La escucha activa como clave del alto desempeño. 
+**** TODO [#A] Clase 11-12 <2016-05-07 Sat>
+*Primera Evaluación Parcial Nacional CEAL (25%)*. Será responsabilidad de la comunidad, establecer *grupos colaborativos de trabajo* (/4 integrantes/), útiles especialmente en la ya conocida *Parte Procedimental* de nuestras evaluaciones. 
+
+* FINISHED Comunicación Efectiva (curso previo)
+** FINISHED Reflexión
+La ya cursada asignatura de primer semestre *Comunicación Efectiva*, debe haber dejado cierta huella diferenciadora en su praxis, debe sin duda, haber generado un cambio en su manera de expresarse y conducirse. Como una forma de recordar aquellos hitos más destacados de aquella oportunidad, se las y los invita a una reflexión de las principales ideas, conceptos, conclusiones, etc.
+
+Iniciemos esta reflexión, recordando algunas de las principales acciones que tuve oportunidad de observar al inicio del primer semestre 2015:
+
+#+BEGIN_QUOTE
+- [[file:requieren_pc.html][Episodios que requieren procesos comunicativos (html)]]
+- [[file:requieren_pc.pdf][Episodios que requieren procesos comunicativos (pdf)]]
+- [[file:relevan_pc.html][Episodios que relevan procesos comunicativos (html)]]
+- [[file:relevan_pc.pdf][Episodios que relevan procesos comunicativos (pdf)]]
+#+END_QUOTE
+
+* FINISHED Programa
+** Descripción
+Curso teórico-práctico, cuyo objetivo es entregar al estudiante herramientas para comunicarse efectivamente con jefes, compañeros de trabajo, proveedores y clientes para un mejor entendimiento, a nivel organizacional.
+Como sabemos, el acto de comunicarse hace que las sociedades existan de manera funcional. En el ámbito laboral, es importante comprender el concepto de comunicación como una forma de entablar relaciones con los colaboradores, quienes son parte integral en el proceso de trabajo. Cuando se comunica de manera efectiva se mejora la productividad de la organización, ya que el buen entendimiento hace que todo resulte más eficaz e inmediato.
+Se estima que el desarrollo de estas habilidades es fundamental para el buen desempeño profesional, pues durante la jornada laboral se está constantemente recibiendo instrucciones, entregando información, coordinando equipos de trabajo. Todas estas labores y relaciones involucran la comunicación, de ahí la importancia de lograr una buena comunicación en las organizaciones laborales.
+Partiendo de la base del carácter transversal del curso, se fomenta el desarrollo de una conciencia comunicativa que motive a los estudiantes a reconocer la importancia de la efectividad en la comunicación, cualquiera sea el ámbito profesional, académico o personal de desempeño.
+** Objetivo general
+Entregar al estudiante herramientas para comunicarse efectivamente con jefes, compañeros de trabajo, proveedores y clientes, a nivel organizacional.
+** Objetivos específicos
+1. Comprender la importancia de la comunicación efectiva como habilidad clave para interactuar adecuadamente en el ámbito laboral.
+2. Reconocer los perfiles comunicacionales y los roles de los miembros de un equipo, como factores críticos de éxito en la relaciones laborales.
+3. Aplicar estrategias de comunicación efectiva para mejorar las relaciones interpersonales en la organización.
+4. Valorar la pertinencia de utilizar determinadas herramientas para la comunicación efectiva en el mundo laboral.
+** Habilidades a desarrollar
+- Habilidad para elaborar argumentaciones orales y escritas, en el ámbito de la profesión.
+- Capacidad para comunicarse en forma efectiva, desde la perspectiva del interlocutor.
+- Capacidad para utilizar coherentemente los recursos verbales, paraverbales y no verbales para interactuar efectivamente en el ámbito laboral.
+* FINISHED Audiencia
+Estimadas y estimados estudiantes, reciban la bienvenida a este espacio académico y de desarrollo personal. En esta oportunidad, la asignatura *Comunicación Efectiva en el Ámbito Laboral*, está dirigida a la audiencia de las carreras profesionales *Kinesiología* y *Psicología*, ambas ubicadas en su respectivo 5to. semestre lectivo. Como es costumbre al compartir espacios, se hace primordial la práctica de la convivencia, es decir, el saber vivir y convivir con otros y otras. Además, de velar por la *puntualidad* y la *asistencia*, es necesario que se plantee *un compromiso* con la asignatura, con la consecución de sus propias *metas*, y no sólo con ésta sino con todo acto o proceso que inicie.
+
+#+BEGIN_QUOTE
+En adelante me referiré a las mencionadas carreras que constituyen la audiencia, como "*comunidad*", con ello favorecemos el sentido de equipo y de convivencia.
+#+END_QUOTE
+
+Bienvenidos y bienvenidas a todos y todas, reciban mi más cordial saludo y deseos de éxito en este camino que iniciamos todos juntos, Hans.
+
+** Contacto
+
+#+BEGIN_QUOTE
+- Email: [[mailto:hans.sigrist@uac.cl][hans.sigrist@uac.cl]]
+
+- Twitter: [[http:twitter.com/hsigrist][@hsigrist]]
+
+- Web: [[http://hsigrist.github.io][hsigrist.github.io]]
+
+#+END_QUOTE

@@ -1,0 +1,52 @@
+#+TITLE: Enlaces
+#+AUTHOR: Hans Sigrist
+#+EMAIL: hsigrist@gmail.com
+#+DATE: sáb 17 dic 18:14:33 2016   
+#+TAGS: links(i) deploy(e) updates(a) hugo(g)
+#+TAGS: productividad(p) docencia(d) LMLA(l) UAC(u)
+#+TAGS: emacs(e) orgmode(o) html(h) css(c) org(r)
+#+STARTUP: entitiespretty
+#+OPTIONS: html-link-use-abs-url:nil html-postamble:t
+#+OPTIONS: html-preamble:t html-scripts:t html-style:t
+#+OPTIONS: html5-fancy:t tex:t
+#+OPTIONS: toc:nil num:nil
+#+HTML_DOCTYPE: html5
+#+HTML_CONTAINER: div
+#+DESCRIPTION: Enlaces a páginas web de interés relativas a productividad del blog.
+#+KEYWORDS: enlaces links
+#+HTML_LINK_HOME: http://hsigrist.github.io
+#+HTML_LINK_UP: http://hsigrist.github.io/enlaces/
+#+HTML_MATHJAX: path:"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-CHTML"
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="Grump.css" />
+#+SUBTITLE: Enlaces web - Repositorio enlaces sobre productividad Emacs, Hugo Framework, deploy, LaTeX, org-mode & otros - 2016 · Prof. Hans Sigrist
+#+LATEX_HEADER:
+#+LANGUAGE: es
+
+
+#+BEGIN_ABSTRACT
+Esta es una colección (en constante cambio y evolución) de enlaces que dirigen a sitios (páginas) web de autores y curadores de contenido relacionado con la productividad en la creación y diseño ~html~, ~css~, etc. Gran parte de los enlaces parten de la base que se trabaja en archivos ~org-mode~ en *Emacs*.
+#+END_ABSTRACT
+
+
+** [[https://github.com/novoid/org-mode-workshop/blob/master/featureshow/org-mode-teaser.org][org-mode-teaser]] :org:mode:  
+<2016-12-24 sáb 14:01>
+** [[http://orgmode.org/manual/Effort-estimates.html][Effort estimates]] :org:mode:  
+<2016-12-22 jue 15:49>
+** [[https://gpgtools.org][Gpg Encription]] :encription:gpg:  
+<2016-12-22 jue 09:20>
+** [[https://code.tutsplus.com/tutorials/its-time-to-encrypt-your-email-using-gpgtools-for-os-x--cms-23721][GPG Encription]] :encription:gpg:  
+<2016-12-22 jue 09:19>
+** [[http://mathematicseducationissues.blogspot.cl/2016/04/day-1open-textbooks-in-mathbook-xml.html?utm_content=buffer2b0aa&utm_medium=social&utm_source=plus.google.com&utm_campaign=buffer][Open textbooks in MathBook XML]]                             :mathbook:xml:  
+<2016-12-18 dom 16:44>
+** [[http://docs.mathjax.org/en/latest/start.html][mathjax configure invoque]]                                       :mathjax: 
+Cómo invocar mathjax para ser usado en html via org-mode. Ya no es necesario MML, usar CHTML.
+<2016-12-17 sáb 19:02>
+** [[https://github.com/fniessen/org-html-themes][ideas para insertar css]]                         :css:emacs:html:org:mode: 
+<2016-12-17 sáb 18:46>
+** [[http://stackoverflow.com/questions/16186843/inline-code-in-org-mode][insertar code en org-mode]]                           :emacs:org:mode:code: 
+Fácil: basta con usar ==code== o bien ~~code~~, al exportar desde org-mode a html y usar css se verá en otro formato tipo verbatim.
+<2016-12-17 sáb 18:36>
+** [[http://orgmode.org/manual/Special-symbols.html][entitipretty]]                                :emacs:org:mode:latex:simbol: 
+<2016-12-17 sáb 18:00>
+** [[http://atuan.com/s5/][Using s5: a primer]]                                  :emacs:html:css:blog: 
+ <2016-12-17 sáb 17:06>

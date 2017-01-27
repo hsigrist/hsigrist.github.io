@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- 2016-11-27 Sun 15:27 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Metodología de la Investigación (Sistematización &amp; nuevos enfoques)</title>
+<meta name="generator" content="Org mode">
+<meta name="author" content="Hans Sigrist">
+<meta name="description" content="Sistematización, enfoques, fichas de estudio y visiones personales en Metodología de la Investigación."
+>
+<meta name="keywords" content="metodología de la investigación">
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" href="Grump.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="http://hsigrist.github.io/docencia/"> UP </a>
+ |
+ <a accesskey="H" href="http://hsigrist.github.io"> HOME </a>
+</div><div id="wrapper">
+<header>
+<h1 class="title">Metodología de la Investigación (Sistematización &amp; nuevos enfoques)</h1>
+<p class="subtitle">Notas Módulo Metodología de la Investigación - Magíster en Docencia Universitaria (MDU) - Otoño 2016 - UAC-SF · Prof. Hans Sigrist</p>
+</header><nav id="table-of-contents">
+<h2>&Iacute;ndice</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org8a46e55">1. Concepto de investigación</a>
+<ul>
+<li><a href="#org7588967">1.1. Algunas definiciones</a></li>
+<li><a href="#org156625b">1.2. Qué no es investigar</a></li>
+</ul>
+</li>
+<li><a href="#orgbc3ff01">2. Consejos prácticos para realizar una tesis</a>
+<ul>
+<li><a href="#org1f45268">2.1. Consejos metodológicos prácticos:</a></li>
+<li><a href="#org766af68">2.2. Consejos autorregulatorios prácticos:</a></li>
+</ul>
+</li>
+<li><a href="#orge3b6c65">3. Tipología de investigaciones</a>
+<ul>
+<li><a href="#org5b0eb0e">3.1. Según</a></li>
+</ul>
+</li>
+<li><a href="#orgd2f9a6f">4. Elaboración del marco teórico</a>
+<ul>
+<li><a href="#org8cb64cc">4.1. ¿Qué es el marco teórico?</a></li>
+<li><a href="#org81293bb">4.2. Consejo práctico</a></li>
+<li><a href="#org8ca30f1">4.3. ¿Qué partes componen el marco teórico?</a></li>
+<li><a href="#orgafb313e">4.4. Estructura del marco teórico</a></li>
+<li><a href="#org1d67c64">4.5. Funciones del marco teórico</a></li>
+<li><a href="#org94e063c">4.6. Importancia del lenguaje teórico</a></li>
+<li><a href="#org82c4110">4.7. ¿Cuándo manejamos el lenguaje teórico?</a></li>
+<li><a href="#org422f198">4.8. Construcción de argumentos</a></li>
+</ul>
+</li>
+<li><a href="#org9fc8a2f">5. Conceptos previos</a>
+<ul>
+<li><a href="#org7cc8284">5.1. Al iniciar:</a></li>
+<li><a href="#org37596cf">5.2. Selección tema</a></li>
+<li><a href="#org305346d">5.3. Tema &amp; título</a></li>
+</ul>
+</li>
+<li><a href="#org7205471">6. Preguntas básicas para iniciar una investigación</a>
+<ul>
+<li><a href="#org51526e2">6.1. Introducción</a></li>
+<li><a href="#orgb4f6597">6.2. Definir límites</a></li>
+<li><a href="#orgb94d2fe">6.3. No innovar sobre la marcha</a></li>
+<li><a href="#org25cb69a">6.4. Responda a sí mismo</a></li>
+<li><a href="#orgcbdcc4d">6.5. Definir términos</a></li>
+<li><a href="#orgce57070">6.6. Generar un trampolín</a></li>
+<li><a href="#org3c2f59f">6.7. Pregúntese a sí mismo</a></li>
+</ul>
+</li>
+<li><a href="#orgdc2deae">7. Paradigmas en investigación educativa</a></li>
+<li><a href="#orgec42ccc">8. Diseño de investigaciones</a>
+<ul>
+<li><a href="#org9d2808a">8.1. Diseño de investigación</a></li>
+<li><a href="#org630679a">8.2. Tipos de diseños</a></li>
+</ul>
+</li>
+<li><a href="#org7ce2702">9. Referencias</a></li>
+</ul>
+</div>
+</nav>
+<div id="outline-container-org8a46e55" class="outline-2">
+<h2 id="org8a46e55"><span class="section-number-2">1</span> Concepto de investigación</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-org7588967" class="outline-3">
+<h3 id="org7588967"><span class="section-number-3">1.1</span> Algunas definiciones</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>&laquo;Genéricamente, la investigación es una actividad del hombre, orientada a descubrir algo desconocido&raquo; (Sierra Bravo, 1991, p.27).</li>
+<li>&laquo;Una investigación puede definirse como un esfuerzo que se emprende para resolver un problema, claro está, un problema de conocimiento&raquo; <a class='org-ref-reference' href="#sabino2014proceso">sabino2014proceso</a></li>
+<li>La investigación es una actividad encaminada a la solución de problemas. Su objetivo consiste en hallar respuesta a preguntas mediante el empleo de procesos científicos <a class='org-ref-reference' href="#bervian2002metodologia">bervian2002metodologia</a>.</li>
+</ul>
+
+<p>
+Según <a class='org-ref-reference' href="#arias2012proyecto">arias2012proyecto</a>, la investigación implica:
+</p>
+<ul class="org-ul">
+<li>El descubrimiento de algún aspecto de la realidad; y</li>
+<li>La producción de un nuevo conocimiento, el cual puede estar dirigido a incrementar los postulados teóricos de una determinada ciencia (investigación básica o pura) o puede tener una aplicación inmediata en la solución de problemas prác,cos (investigación aplicada).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org156625b" class="outline-3">
+<h3 id="org156625b"><span class="section-number-3">1.2</span> Qué no es investigar</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+Según <a class='org-ref-reference' href="#arias2012proyecto">arias2012proyecto</a>, son actividades distintas a la investigación científica:
+</p>
+<ul class="org-ul">
+<li>El diseño de un programa instruccional, o de un plan de estudios;</li>
+<li>El desarrollo de sistemas de información;</li>
+<li>Los planes o proyectos de carácter económico, social, o tecnológico; y</li>
+<li>Las propuestas de cualquier índole.</li>
+</ul>
+
+<p>
+No obstante, en los casos anteriores, la investigación debe estar presente cuando se pretende arribar a un diagnóstico de necesidades, o cuando el objetivo es probar la efectividad del plan, programa o proyecto (<a class='org-ref-reference' href="#arias2012proyecto">arias2012proyecto</a>). Por consiguiente, en el plano de la investigación educativa, se puede analizar o evaluar la efectividad de un programa, desde algún modelo de evaluación de programas, tal como, el modelo Context, Input, Process, Product (Stufellbeam &amp; Shinkfield, 1987), conocido por su acrónimo CIPP.
+</p>
+
+<p>
+Investigar es un proceso dirigido a la solución de problemas del saber, mediante la obtención de nuevos conocimientos (<a class='org-ref-reference' href="#arias2012proyecto">arias2012proyecto</a>). Dicho proceso comprende las siguientes etapas:
+</p>
+<ul class="org-ul">
+<li>Planificación;</li>
+<li>Ejecución o desarrollo; y</li>
+<li>Divulgación.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgbc3ff01" class="outline-2">
+<h2 id="orgbc3ff01"><span class="section-number-2">2</span> Consejos prácticos para realizar una tesis</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+¿Qué buscamos en un trabajo de tesis? Esencialmente, buscamos demostrar que somos personas autónomas, que poseemos las competencias necesarias para graduarnos, y que tenemos la capacidad para cuestionarnos la realidad, de manera crítica, respondiendo a una determinada interrogante o pregunta. Para ello necesitamos aplicar nuestras habilidades de pensamiento de orden superior, pues sólo así seremos capaces de delimitar bien el problema de investigación y hacer un uso correcto, pertinente y estratégico de las fuentes, básicamente estado del arte y literatura relacionada. No a la inversa. Por cierto, se entiende que muchos tengamos grandes aspiraciones y deseos de cambio, pero, hay que tener presente que no se trata de hacer la obra maestra de nuestra vida, ni tampoco de reinventar la rueda. Más concretamente, se trata de un trabajo de graduación de alta exigencia académica y mucha dedicación, pero lograble.
+</p>
+</div>
+
+<div id="outline-container-org1f45268" class="outline-3">
+<h3 id="org1f45268"><span class="section-number-3">2.1</span> Consejos metodológicos prácticos:</h3>
+<div class="outline-text-3" id="text-2-1">
+<ol class="org-ol">
+<li>Identifique un problema a investigar relacionado con su área formativa e inscrito dentro de las líneas de investigación establecidas por la institución educativa respectiva.</li>
+<li>Indague sobre el estado del arte del problema a investigar. Esto le permitirá tener un punto de referencia para su estudio. De lo contrario, su trabajo se hará cuesta arriba.</li>
+<li>Delimite el problema de investigación, tanto temática, espacial, como temporalmente. Por ejemplo, es muy distinto estudiar el problema a nivel nacional que en un contexto determinado (escenario del estudio).</li>
+<li>Plantee el problema de investigación desde una perspectiva general o macro hasta llegar a contextualizarlo desde una perspectiva más específica (micro contexto o escenario del estudio).</li>
+<li>Formule el problema de investigación mediante una interrogante rectora o pregunta principal, que esté lo suficientemente bien delimitada y que sea coherente con el tipo de investigación, según su finalidad, medios utilizados, nivel de conocimientos (alcance) y paradigma desde el cual el estudio será enfocado.</li>
+<li>Tenga en cuenta que debe definir las variables para su estudio, tanto de forma conceptual como operacional. Normalmente, la definición conceptual de las variables se logra en el marco teórico referencial, mientras que la definición operacional se realiza en el marco metodológico, a través de una matriz o tabla de operacionalización de variables, la cual debe incluir los objetivos, las variables, las dimensiones, los indicadores y los ítems respectivos.</li>
+<li>Considere la viabilidad de la investigación, también conocida como factibilidad, tomando en cuenta, como mínimo, las capacidades técnicas y recursos humanos (factibilidad técnica), los recursos financieros (factibilidad económica) y las autorizaciones o permisos correspondientes para realizar la investigación en un lugar determinado (factibilidad institucional).</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org766af68" class="outline-3">
+<h3 id="org766af68"><span class="section-number-3">2.2</span> Consejos autorregulatorios prácticos:</h3>
+<div class="outline-text-3" id="text-2-2">
+<ol class="org-ol">
+<li>Elija un tema que le interese o apasione. Desde mi punto de vista, esto marca una gran diferencia desde el inicio.</li>
+<li>Sea organizado, disciplinado y metódico. El trabajo de tesis requiere mucha planificación.</li>
+<li>Aproveche cualquier tajada de tiempo que tenga, aunque sea para realizar una tarea mínima.</li>
+<li>Asegúrese de dejar parte de la semana para trabajar en su tesis, de manera focalizada. Las tareas cognitivas difíciles requieren mucha concentración.</li>
+<li>Planifique su investigación por partes. ¿Qué haré hoy, mañana, este fin de semana, el próximo mes? Esto es muy distinto a la carta Gantt, que muchas veces se transforma meramente en un tema formal.</li>
+<li>Sea resiliente ante las retroalimentaciones de sus tutores o profesores guía. A veces, las observaciones pueden ser demoledoras. No deje que los comentarios sobre desempeños descendidos lo desmotive. Todos hemos pasado por este proceso.</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge3b6c65" class="outline-2">
+<h2 id="orge3b6c65"><span class="section-number-2">3</span> Tipología de investigaciones</h2>
+<div class="outline-text-2" id="text-3">
+</div><div id="outline-container-org5b0eb0e" class="outline-3">
+<h3 id="org5b0eb0e"><span class="section-number-3">3.1</span> Según</h3>
+<div class="outline-text-3" id="text-3-1">
+<dl class="org-dl">
+<dt>Según la finalidad o propósito</dt><dd><b>Básica</b> (pura, teórica o dogmática). <b>Aplicada</b> (práctica o empírica).</dd>
+<dt>Según los medios utilizados</dt><dd>Documental. De campo. Experimental.</dd>
+<dt>Según el nivel de conocimientos</dt><dd>Exploratoria. Descriptiva. Correlacional. Explicativa.</dd>
+<dt>Investigación básica (pura teórica o empírica)</dt><dd>Parte de un marco teórico y permanece en él. Formula nuevas teorías o modifica las existentes. Incrementa los conocimientos científicos, sin contrastarlos con ningún aspecto práctico.</dd>
+<dt>Investigación aplicada (práctica o empírica)</dt><dd>Busca la aplicación de los conocimientos. Requiere de un marco teórico. Se orienta al mejoramiento de un área disciplinar.</dd>
+<dt>Investigación documental</dt><dd>Se apoya en fuentes de carácter documental, tales como, fuentes bibliográficas (libros, ensayos, arNculos) o fuentes hemerográficas (cartas, circulares, correos electrónicos, etc.).</dd>
+<dt>Investigación de campo</dt><dd>Se apoya en información que proviene de entrevistas, encuestas y observaciones. Requiere la revisión del estado del arte y la consulta documental.</dd>
+<dt>Investigación experimental</dt><dd>Se apoya en la información obtenida a través de un experimento o experiencia realizados intencionadamente por el investigador. Modifica la realidad con el fin de crear el fenómeno mismo que se investiga. Requiere la formulación de hipótesis.</dd>
+<dt>Investigación exploratoria</dt><dd>Describe los aspectos fundamentales de un problema y encuentra los procedimientos adecuados para elaborar una investigación posterior. Abre líneas de investigación a partir de sus resultados.</dd>
+<dt>Investigación descriptiva</dt><dd>Caracteriza al objeto de estudio, señalando sus peculiaridades o propiedades. Permite sistema/zar la información obtenida del objeto de estudio. Mide, evalúa, recolecta datos sobre las características del fenómeno en estudio.</dd>
+<dt>Investigación correlacional</dt><dd>Busca predecir el comportamiento de una variable con base al comportamiento conocido de otra. Evalúa el grado de relación entre dos variables. Estudia las relaciones entre las variables dependientes e independientes. En algunos casos, requiere la formulación de hipótesis.</dd>
+<dt>Investigación explicativa</dt><dd>Busca las razones o causas, que provocan ciertos eventos, sucesos o fenómenos. Explica por qué ocurre el fenómeno, en qué condiciones y por qué se relacionan dos o más variables. Es más estructurada. Incluye los propósitos de exploración, descripción y correlación.</dd>
+</dl>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd2f9a6f" class="outline-2">
+<h2 id="orgd2f9a6f"><span class="section-number-2">4</span> Elaboración del marco teórico</h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-org8cb64cc" class="outline-3">
+<h3 id="org8cb64cc"><span class="section-number-3">4.1</span> ¿Qué es el marco teórico?</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+El Marco Teórico es una investigación documental y bibliográfica que nos permite tomar decisiones en el diseño de nuestra investigación para así orientar el análisis de los datos recogidos. Más concretamente, nos ayuda a ordenar nuestra investigación con foco en la teoría u opción teórica que estamos siguiendo como modelo del problema que estamos investigando.
+</p>
+
+<p>
+Independientemente del enfoque que sigamos, siempre debemos consultar papers, revistas científicas, tesis, materiales de Internet, testimonios de expertos y toda fuente que se relacione con nuestra investigación (<a class='org-ref-reference' href="#hernandez2010metodologia">hernandez2010metodologia</a>).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org81293bb" class="outline-3">
+<h3 id="org81293bb"><span class="section-number-3">4.2</span> Consejo práctico</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+Cuando esté elaborando su marco teórico, refiérase al conocimiento desarrollado sobre el tema, especialmente sobre las variables en estudio. Qué entiende por ellas, qué acercamientos 9enen diversos autores, años, países, corrientes, qué puntos de vista contrastante, complementarios o discordantes existen; cuales son los conceptos o definición que usted adopta en su estudio, ¿cuál es su opción teórica?
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8ca30f1" class="outline-3">
+<h3 id="org8ca30f1"><span class="section-number-3">4.3</span> ¿Qué partes componen el marco teórico?</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+El marco teórico se compone de tres partes:
+</p>
+<dl class="org-dl">
+<dt>Marco teórico</dt><dd>conjunto de proposiciones relativas al problema que estamos investigado;</dd>
+<dt>Marco referencial</dt><dd>estudios que abordan el problema que estamos investigando y que nos sirven como antecedentes; y</dd>
+<dt>Marco conceptual</dt><dd>conjunto de conceptos más importantes de nuestra investigación.</dd>
+</dl>
+</div>
+</div>
+
+<div id="outline-container-orgafb313e" class="outline-3">
+<h3 id="orgafb313e"><span class="section-number-3">4.4</span> Estructura del marco teórico</h3>
+<div class="outline-text-3" id="text-4-4">
+<p>
+El marco teórico puede presentar la siguiente estructura:
+</p>
+<ul class="org-ul">
+<li>Antecedentes de la investigación</li>
+<li>Bases teóricas</li>
+<li>Bases legales (si aplica)</li>
+<li>Definición conceptual de variables</li>
+<li>Definición de términos básicos</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1d67c64" class="outline-3">
+<h3 id="org1d67c64"><span class="section-number-3">4.5</span> Funciones del marco teórico</h3>
+<div class="outline-text-3" id="text-4-5">
+<p>
+Según <a class='org-ref-reference' href="#hernandez2010metodologia">hernandez2010metodologia</a>, el marco teórico cumple diversas funciones dentro de una investigación, entre las cuales destacan las siguientes seis:
+</p>
+<ol class="org-ol">
+<li>Ayuda a prevenir errores que se han cometido en otros estudios.</li>
+<li>Orienta sobre cómo habrá́ de llevarse a cabo el estudio. En efecto, al acudir a los antecedentes, nos podemos dar cuenta de cómo ha sido tratado un problema específico de investigación (qué tipos de estudios se han efectuado, con qué 9po de sujetos, cómo se han recolectado los datos, en qué lugares se han llevado a cabo, qué diseños se han utilizado).</li>
+<li>Amplía el horizonte del estudio y guía al investigador para que éste se centre en su problema evitando desviaciones del planteamiento original.</li>
+<li>Conduce al establecimiento de hipótesis o afirmaciones que más tarde habrán de someterse a prueba en la realidad.</li>
+<li>Inspira nuevas líneas y áreas de investigación (Yurén Camarena, 2000).</li>
+<li>Provee de un marco de referencia para interpretar los resultados del estudio.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org94e063c" class="outline-3">
+<h3 id="org94e063c"><span class="section-number-3">4.6</span> Importancia del lenguaje teórico</h3>
+<div class="outline-text-3" id="text-4-6">
+<p>
+Cuando investigamos nos sumergimos en una disciplina que vemos desde dos niveles dis9ntos: el lenguaje ordinario que u9lizamos en nuestra vida cotidiana y el lenguaje teórico, que u9lizamos en un campo disciplinar.
+</p>
+
+<p>
+De hecho, uno de los mayores problemas que enfrentamos los profesores de metodología de la investigación es precisamente lograr que nuestros estudiantes dejen de lado el lenguaje ordinario y asuman el lenguaje teórico para significar la realidad, que están investigando.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org82c4110" class="outline-3">
+<h3 id="org82c4110"><span class="section-number-3">4.7</span> ¿Cuándo manejamos el lenguaje teórico?</h3>
+<div class="outline-text-3" id="text-4-7">
+<p>
+Cuando mediante un metalenguaje somos capaces de generar abstracciones y generalizaciones para explicar los fenómenos que ocurren en nuestra realidad, estamos utilizando un lenguaje teórico.
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Concepto</th>
+<th scope="col" class="org-left">Fenómeno</th>
+<th scope="col" class="org-left">Interpretación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Aprendizaje multimodal</td>
+<td class="org-left">Aprendizaje adquirido mediante diversos modos simultáneos de disposición de la información, que incluyen medios escritos, gráficos, visuales, auditivos y multimediales.</td>
+<td class="org-left">Con este concepto, el autor hace referencia a la capacidad de aprender una lengua extranjera (L2), utilizando textos multimodales, que integran pistas extra textuales.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org422f198" class="outline-3">
+<h3 id="org422f198"><span class="section-number-3">4.8</span> Construcción de argumentos</h3>
+<div class="outline-text-3" id="text-4-8">
+<p>
+Un argumento es la exposición fundamentada que nos permite sostener una afirmación. Por tanto, toda afirmación que realicemos en el contexto de una investigación debe ser sustentada mediante la exposición de evidencia empírica, encontrada en otros estudios relacionados o formalizados en la teoría.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9fc8a2f" class="outline-2">
+<h2 id="org9fc8a2f"><span class="section-number-2">5</span> Conceptos previos</h2>
+<div class="outline-text-2" id="text-5">
+</div><div id="outline-container-org7cc8284" class="outline-3">
+<h3 id="org7cc8284"><span class="section-number-3">5.1</span> Al iniciar:</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li>El tema</li>
+<li>El título</li>
+<li>El problema</li>
+<li>El supuesto</li>
+<li>La idea</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org37596cf" class="outline-3">
+<h3 id="org37596cf"><span class="section-number-3">5.2</span> Selección tema</h3>
+<div class="outline-text-3" id="text-5-2">
+<p>
+La selección del tema puede ser influenciada por un interés:
+</p>
+<ul class="org-ul">
+<li>personal</li>
+<li>profesional</li>
+<li>por la influencia de un profesor cercano</li>
+</ul>
+
+<p>
+El paso inicial incluye:
+</p>
+<ul class="org-ul">
+<li>Indagación superficial (La indagación profunda, se posterga para el trabajo de investigación posterior).</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org305346d" class="outline-3">
+<h3 id="org305346d"><span class="section-number-3">5.3</span> Tema &amp; título</h3>
+<div class="outline-text-3" id="text-5-3">
+<p>
+Se investiga sobre lo que interesa para saber qué se puede hacer. El tema parte de una idea inicial. Seleccionar un tema consiste en <b>enunciar el área sobre la que se quiere trabajar</b>. Lo siguiente es detectar la existencia de un problema. <i>Otro paso es formular un título a partir de un tema</i>.
+</p>
+<ul class="org-ul">
+<li>Idea inicial</li>
+<li id="Tema">enunciar el área</li>
+<li>Detectar la existencia de un problema</li>
+<li>Formular título a partir del problema</li>
+</ul>
+</div>
+
+<ol class="org-ol"><li><a id="org5de6be8"></a>El tema parte de una idea inicial&#xa0;&#xa0;&#xa0;<span class="tag"><span class="idea">idea</span>&#xa0;<span class="inicial">inicial</span></span><br ></li>
+<li><a id="org385f0fd"></a>Seleccionar el tema consiste en enunciar el área sobre la que se quiere trabajar&#xa0;&#xa0;&#xa0;<span class="tag"><span class="enunciar">enunciar</span>&#xa0;<span class="area">area</span></span><br ></li>
+<li><a id="org91d98b4"></a>Detectar la existencia de un problema&#xa0;&#xa0;&#xa0;<span class="tag"><span class="detectar">detectar</span>&#xa0;<span class="problema">problema</span></span><br ></li>
+<li><a id="orgece8b06"></a>Formular título para el problema&#xa0;&#xa0;&#xa0;<span class="tag"><span class="formular">formular</span>&#xa0;<span class="titulo">titulo</span></span><br ><div class="outline-text-7" id="text-5-3-0-0-0-4">
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Bruma o neblina</td>
+<td class="org-left">El principal problema no es la</td>
+</tr>
+
+<tr>
+<td class="org-left">no se tiene claridad</td>
+<td class="org-left">falta de definición, sino lo que</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">normalmente se provoca es una</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">primera sensación.</td>
+</tr>
+
+<tr>
+<td class="org-left">Dónde arrimarse</td>
+<td class="org-left">- Como si no hubieran problemas</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">por resolver</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">- Como si ya todo estuviese</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">resuelto</td>
+</tr>
+
+<tr>
+<td class="org-left">Parece que todo se</td>
+<td class="org-left">Una investigación detallada</td>
+</tr>
+
+<tr>
+<td class="org-left">encuentra hecho</td>
+<td class="org-left">revelará que todavía falta</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">mucho por resolver.</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Normalmente, un buen título resume estratégicamente todo el contenido de una investigación. Debe incluir:
+</p>
+<ul class="org-ul">
+<li>El tema a investigar</li>
+<li><b>Al menos dos variables</b></li>
+<li>La espacialidad (¿Dónde?)</li>
+<li>La temporalidad (¿Cuándo?)</li>
+
+<li id="Con mucha más información el investigador podría abrumarse">Durante el desarrollo, el investigador se encontrara con  muchas más información de la que inicialmente  había considerado.</li>
+
+<li id="El investigador podría inclinarse a incluirlo todo">La inclinación es a incorporar todo aquello que el investigador descubra.</li>
+
+<li id="Sin embargo, aún queda mucho por descubrir">Aunque parezca lo contrario, aún quedan muchas cosas por investigar, pero éstas deben descubrirse.</li>
+</ul>
+</div></li></ol>
+</div>
+</div>
+
+<div id="outline-container-org7205471" class="outline-2">
+<h2 id="org7205471"><span class="section-number-2">6</span> Preguntas básicas para iniciar una investigación</h2>
+<div class="outline-text-2" id="text-6">
+</div><div id="outline-container-org51526e2" class="outline-3">
+<h3 id="org51526e2"><span class="section-number-3">6.1</span> Introducción</h3>
+<div class="outline-text-3" id="text-6-1">
+<p>
+<b>Una vez analizado el tema, se asume un enfoque particular, que debe ser coherente con las preguntas y objetivos a plantear. El investigador debe mantener coherencia constructiva con todos los elementos de una tesis, desde las preguntas y objetivos de investigación hasta las conclusiones.</b> 
+</p>
+
+<ul class="org-ul">
+<li>¿De qué se trata el tema?</li>
+<li>¿Qué quiero conocer?</li>
+</ul>
+
+<p>
+Así se entiende mejor el problema, antes de buscarle una solución :: También debe tener claridad del problema y no quedarse en la penumbra.
+</p>
+
+<p>
+El planteamiento del problema se aborda describiendo algunos aspectos que más lo caracterizan, tales como <b>su identificación</b>, <b>tipos</b> y <b>etapas</b>. (<a class='org-ref-reference' href="#latorre1996bases">latorre1996bases</a>)
+</p>
+</div>
+
+<ol class="org-ol"><li><a id="org2d57041"></a>Identificación<br ></li>
+<li><a id="org84454bf"></a>Valoración<br ></li>
+<li><a id="org09bfe64"></a>Formulación<br ></li>
+<li><a id="orgde22001"></a>Tipos<br ></li>
+<li><a id="org318ba46"></a>Etapas<br ><div class="outline-text-7" id="text-6-1-0-0-0-5">
+<p>
+Otra perspectiva es que el problema surja como consecuencia de:
+</p>
+</div>
+
+<ol class="org-ol"><li><a id="orgdd1b117"></a>Un cuestionamiento tras la comprensión o explicación de un fenómeno educativo (Dewey, 1983) :cuestionamiento:fenomeno:&#xa0;&#xa0;&#xa0;<span class="tag"><span class="obstaculo">obstaculo</span></span><br ></li>
+<li><a id="org01a129c"></a>Algún obstáculo o dificultad (Dewey, 1983)<br ></li>
+<li><a id="orgdfe7d1c"></a>El efecto de alguna situación educativa susceptible de cambio educativo (Elliot, 1990)&#xa0;&#xa0;&#xa0;<span class="tag"><span class="situacion">situacion</span>&#xa0;<span class="susceptible">susceptible</span>&#xa0;<span class="cambio">cambio</span></span><br ></li></ol></li></ol>
+</div>
+
+<div id="outline-container-orgb4f6597" class="outline-3">
+<h3 id="orgb4f6597"><span class="section-number-3">6.2</span> Definir límites</h3>
+<div class="outline-text-3" id="text-6-2">
+<p>
+Definir desde el inicio el alcance y los límites de la investigación. Esto se logra definiendo lo mejor posible:
+</p>
+<ul class="org-ul">
+<li><b>el producto que se desea obtener</b> y</li>
+<li><b>los productos intermedios</b></li>
+</ul>
+
+<p>
+Los <b>productos intermedios</b> sirven como un mecanismo de control para mantener el desarrollo del trabajo. Los <b>limites</b> se establecen mediante el <b>marco teórico</b> y las referencias.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb94d2fe" class="outline-3">
+<h3 id="orgb94d2fe"><span class="section-number-3">6.3</span> No innovar sobre la marcha</h3>
+<div class="outline-text-3" id="text-6-3">
+<p>
+Evitar que la investigación  sea moldeada por hallazgos posteriores. Una vez definido el tema investigación, se debe considerar cuidadosamente si vale la pena o no incorporar nuevas ideas.
+</p>
+
+<div class="BLOCK">
+<p>
+Una máxima que es positivo recordar es aquella que se produce cuando se inicia un pololeo y luego un noviazgo con un tema, y cuando se dan los primeros pasos, y se queman etapas, iniciándose algo más serio, como el matrimonio que es para toda la vida&#x2026;, en la medida de lo posible. (Siempre conviene no abortar o divorciarse de un tema).
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-org25cb69a" class="outline-3">
+<h3 id="org25cb69a"><span class="section-number-3">6.4</span> Responda a sí mismo</h3>
+<div class="outline-text-3" id="text-6-4">
+<p>
+Intente iniciar un investigación respondiendo a sí mismo:
+</p>
+<ul class="org-ul">
+<li>¿Cuál es el área en la que me gustaría centrar mi investigación?</li>
+<li>¿Dispongo de la información adecuada?</li>
+<li>¿Existe alguna teoría aplicable?</li>
+<li>¿Qué título le pondré a la investigación?</li>
+<li>¿Suena importante?</li>
+<li>¿Ya tengo el tema, el título?</li>
+<li>¿Qué quiero investigar?</li>
+<li>¿Puedo identificar el producto resultante?</li>
+<li>Tengo posibilidades concretas de recoger datos?</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgcbdcc4d" class="outline-3">
+<h3 id="orgcbdcc4d"><span class="section-number-3">6.5</span> Definir términos</h3>
+<div class="outline-text-3" id="text-6-5">
+<dl class="org-dl">
+<dt>Aclarar con precisión el fenómeno</dt><dd>Al enunciar un problema, debe procurar aclarar con precisión el fenómeno a estudiar.</dd>
+<dt>Comprendrer la distancia entre el lenguaje común y el leguaje técnico</dt><dd>Una polisemia de ciertos términos muchas veces es necesario precisarlos. Por ejemplo, autonomía, calidad. Una ambigüedad que se presenta por la diferencia entre el concepto común y el lenguaje técnico.</dd>
+<dt>Evaluar cada término y generar una revisión bibliográfica que permita dilucidar dudas</dt><dd>Por tanto, es necesario evaluar si cada término o símbolo tendrá el mismo significado intrínseco para todos los investigadores competentes en es campo. Por ejemplo, expectativas.</dd>
+<dt>Precisar el alcance conceptual</dt><dd>Si una palabra no satisface tal requerimiento es preciso substituirla por un término más especifico, de modo que se relacione de manera directa con un suceso observable, o bien,</dd>
+<dt>Ayudar al lector a comprender</dt><dd>Si decide conservar las palabra original, agregue una definición que ayude al lector a comprender el significado que le está atribuyendo.</dd>
+<dt>Iniciar el marco teórico con las definiciones de distintos autores</dt><dd>La definición de uno o más términos debe incluirse al redactar el informe en la investigación al igual que el enunciado del problema.</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-orgce57070" class="outline-3">
+<h3 id="orgce57070"><span class="section-number-3">6.6</span> Generar un trampolín</h3>
+<div class="outline-text-3" id="text-6-6">
+<dl class="org-dl">
+<dt>Alta inversión de tiempo</dt><dd>Una invesigación le exigirá invertir un tiempo considerable.</dd>
+<dt>Fuerte aprendizaje disciplinar</dt><dd>Tras su desarrollo, aprenderá mucho acerca del tema en estudio.</dd>
+<dt>Que sea un puente entre sus actividades actuales y futuras</dt><dd>Por tanto, procure que ese tema le sirva en su próxima etapa profesional.</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-org3c2f59f" class="outline-3">
+<h3 id="org3c2f59f"><span class="section-number-3">6.7</span> Pregúntese a sí mismo</h3>
+<div class="outline-text-3" id="text-6-7">
+<dl class="org-dl">
+<dt>Lo que propongo realizar</dt><dd>En lo que estoy haciendo, ¿estoy poniendo en juego lo medular de lo que he aprendido en la disciplina?</dd>
+<dt>En la balanza disciplinar, ¿pesa, realmente?</dt><dd>En concreto, ¿posee sustancia?</dd>
+<dt>¿Lo valoro? ¿Lo valoran mis pares disciplinares?</dt><dd>Desde la perspectiva disciplinar,¿vale la pena?</dd>
+</dl>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgdc2deae" class="outline-2">
+<h2 id="orgdc2deae"><span class="section-number-2">7</span> Paradigmas en investigación educativa</h2>
+<div class="outline-text-2" id="text-7">
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Paradigma/Dimensión</th>
+<th scope="col" class="org-left">Positivista</th>
+<th scope="col" class="org-left">Interpretativo</th>
+<th scope="col" class="org-left">Socio-crítico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b>Fundamentos y teoría que lo sustenta</b></td>
+<td class="org-left">Racionalista. Positivismo lógico. Empirismo.</td>
+<td class="org-left">Fenomenología. Teoría interpretativa.</td>
+<td class="org-left">Teoría crítica</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Método asociado</b></td>
+<td class="org-left">Cuantitativo</td>
+<td class="org-left">Naturalista, cualitativo</td>
+<td class="org-left">Dialéctico</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Naturaleza de la realidad</b></td>
+<td class="org-left">Objetiva, estática, única, dada, fragmentable, convergente.</td>
+<td class="org-left">Dinámica, múltiple, holística, construida, divergente.</td>
+<td class="org-left">Compartida, histórica, construida, dinámica, divergente.</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Finalidad de la investigación</b></td>
+<td class="org-left">Explicar, predecir, controlar los fenómenos, verificar teorías. Leyes para regular los fenómenos.</td>
+<td class="org-left">Comprender e interpretar la realidad, los significados de las personas, percepciones, intenciones y acciones.</td>
+<td class="org-left">Identificar potencial de cambio, emancipar sujetos. Analizar la realidad.</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Relación Sujeto/Objeto</b></td>
+<td class="org-left">Independencia. Neutralidad. No se afectan. Investigador externo. Sujeto como objeto de investigación.</td>
+<td class="org-left">Dependencia. Se afectan. Implicación investigador. Interrelación.</td>
+<td class="org-left">Relación influida por el compromiso. El investigador es un sujeto más.</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Valores</b></td>
+<td class="org-left">Neutros. Investigador libre de valores. Método es garantía de objetividad.</td>
+<td class="org-left">Explícitos. Influyen en la investigación.</td>
+<td class="org-left">Compartidos. Ideología compartida.</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Teoría/práctica</b></td>
+<td class="org-left">Disociada, constituyen entidades distintas. La teoría norma para la práctica.</td>
+<td class="org-left">Relacionadas. Retroalimentación mutua.</td>
+<td class="org-left">Indisociables. Relación dialéctica. La práctica es teoría en acción.</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Criterios de calidad</b></td>
+<td class="org-left">Validez, Fiabilidad, objetividad.</td>
+<td class="org-left">Credibilidad, confirmación, transferibilidad.</td>
+<td class="org-left">Intersubjetividad. Validez consensuada.</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Técnicas: Instrumentos, estrategias</b></td>
+<td class="org-left">Cuantitativos, medición de tests, cuestionarios, observación sistemática. Experimentación.</td>
+<td class="org-left">Cualitativos, descriptivos. Investigador principal instrumento. Perspectiva participante.</td>
+<td class="org-left">Estudio de casos. Técnicas dialécticas.</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Análisis de datos</b></td>
+<td class="org-left">Cuantitativo. Estadística descriptiva e inferencial.</td>
+<td class="org-left">Cualitativo. Inducción analítica, Triangulación.</td>
+<td class="org-left">Intersubjetivo. Dialéctico.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgec42ccc" class="outline-2">
+<h2 id="orgec42ccc"><span class="section-number-2">8</span> Diseño de investigaciones</h2>
+<div class="outline-text-2" id="text-8">
+</div><div id="outline-container-org9d2808a" class="outline-3">
+<h3 id="org9d2808a"><span class="section-number-3">8.1</span> Diseño de investigación</h3>
+<div class="outline-text-3" id="text-8-1">
+<p>
+<a class='org-ref-reference' href="#latorre1996bases">latorre1996bases</a> define a un diseño de investigación como &laquo;un procedimiento de asignación de sujetos a las condiciones experimentales, así como la selección de las técnicas estadística de análisis adecuadas&raquo;.
+</p>
+
+<p>
+Para <a class='org-ref-reference' href="#kerlinger2001">kerlinger2001</a>, &laquo;.. El diseño de investigaciones es el plan de estructura de las investigaciones concebidas de manera que se pueden obtener respuestas a las preguntas de investigación&#x2026;&raquo;. El diseño de investigación es un plan, dado que este especifica lo que investiga hará al plantearse su o sus hipótesis y las manipulaciones necesarias o para la recolección de datos. Asimismo es la estructura de la investigación, porque organiza p configura todos elementos del estudio relacionándolos de manera específica es decir, entre sí. En resumen para Kerlinger (1999), un diseño expresa la estructura del problema así como el plan de la investigación, para obtener evidencia empírica sobre las relaciones buscadas.
+</p>
+
+<p>
+Otra forma de expresar estas ideas es simplemente decir que un diseño de investigación es la forma de arreglar las condiciones de un experimento, con el fin de poder responder a las preguntas formuladas sobre un evento o acontecimiento. Se relaciona con la identificación de variables importantes que determina la producción de un fenómeno, así como la evaluación de las condiciones experimentales para alcanzar la respuestas adecuadas a las preguntas planteadas.
+</p>
+
+<p>
+Una de las funciones más importantes de los diseños investigación es la de eliminar las posibles fuentes de error para poder establecer relaciones inequívocas entre las variables identificadas, que en este caso son: la variable independiente la variable dependiente, (Plutchick, 1975; Kratochwill, 1978 y Schmelkes, 1988). Una segunda función es la de controlar las fuentes de error que pueden llevar erróneamente al investigador a afirmar que los defectos observados en la variable dependiente se deben a las manipulaciones en la variable independiente.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org630679a" class="outline-3">
+<h3 id="org630679a"><span class="section-number-3">8.2</span> Tipos de diseños</h3>
+<div class="outline-text-3" id="text-8-2">
+<p>
+Llamamos diseños al arreglo de condiciones de investigación a las que serán sometidos los sujetos bajo estudio, y que nos permiten establecer una relación entre la variable independiente y la variable dependiente. Algunos de estos arreglos pueden ser más o menos precisos para establecer la relación mencionada. De acuerdo al control que los diseños pueden tener sobre las variables extrañas se clasifican como: preexperimentales, cuasiexperimentales, experimentales de grupos y experimentales de N=1 o series de temporales (Campbell y Stanley, 1978; Kratochwill, 1978; Cook y Campbell, 1979; Hersen y Barlow, 1976). 
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org7ce2702" class="outline-2">
+<h2 id="org7ce2702"><span class="section-number-2">9</span> Referencias</h2>
+<div class="outline-text-2" id="text-9">
+<p>
+
+<h1 class='org-ref-bib-h1'>Bibliography</h1>
+<ul class='org-ref-bib'><li><a id="sabino2014proceso">[sabino2014proceso] Sabino, El proceso de investigación, Editorial Episteme (2014).</a></li>
+<li><a id="bervian2002metodologia">[bervian2002metodologia] Bervian, Cervo & SILVA, Metodologia científica, <i>Sao Paulo: Pretence Hall</i>, <b></b>, (2002).</a></li>
+<li><a id="arias2012proyecto">[arias2012proyecto] Arias, El Proyecto de Investigación. Introducción a la metodología científica. 5ta, Fidias G. Arias Odón (2012).</a></li>
+<li><a id="hernandez2010metodologia">[hernandez2010metodologia] Hernández Sampieri, Fernández Collado & Baptista Lucio, Metodología de la investigación, <i>México: Editorial Mc Graw Hill</i>, <b></b>, (2010).</a></li>
+<li><a id="latorre1996bases">[latorre1996bases] Latorre Beltrán, del Rincón & Arnal, Bases metodológicas de la investigación educativa, <i>Investigación Fenomenológica. Barcelona: Grafiques</i>, <b>92</b>, (1996).</a></li>
+<li><a id="kerlinger2001">[kerlinger2001] Kerlinger Fred; Lee, Investigación del comportamiento. Métodos de Investigación en Ciencias Sociales, McGraw-Hill (2001).</a></li>
+</ul>
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Hans Sigrist (<a href="mailto:hans.sigrist@uac.cl">hans.sigrist@uac.cl</a>)</p>
+<p class="date">Date: Sat Jun 05 17:41:36 2016</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.1.1 (<a href="http://orgmode.org">Org</a> mode 9.0.1)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,284 @@
+#+TITLE: Metodología de la Investigación (Sistematización & nuevos enfoques)
+#+AUTHOR: Hans Sigrist
+#+EMAIL: hans.sigrist@uac.cl
+#+DATE: Sat Jun 05 17:41:36 2016
+#+OPTIONS: html-link-use-abs-url:t html-postamble:t
+#+OPTIONS: html-preamble:t html-scripts:t html-style:t
+#+OPTIONS: html5-fancy:t tex:t
+#+OPTIONS: toc:nil num:t
+#+HTML_DOCTYPE: html5
+#+HTML_CONTAINER: div
+#+DESCRIPTION: Sistematización, enfoques, fichas de estudio y visiones personales en Metodología de la Investigación.
+#+KEYWORDS: metodología de la investigación
+#+HTML_LINK_HOME: http://hsigrist.github.io
+#+HTML_LINK_UP: http://hsigrist.github.io/docencia/
+#+HTML_MATHJAX: path:"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+#+HTML_HEAD: <link rel="stylesheet" href="Grump.css" />
+#+SUBTITLE: Notas Módulo Metodología de la Investigación - Magíster en Docencia Universitaria (MDU) - Otoño 2016 - UAC-SF · Prof. Hans Sigrist
+#+LANGUAGE: es
+
+
+#+TOC: headlines 3
+* Concepto de investigación
+** Algunas definiciones
+- "Genéricamente, la investigación es una actividad del hombre, orientada a descubrir algo desconocido" (Sierra Bravo, 1991, p.27).
+- "Una investigación puede definirse como un esfuerzo que se emprende para resolver un problema, claro está, un problema de conocimiento" parencite:sabino2014proceso 
+- La investigación es una actividad encaminada a la solución de problemas. Su objetivo consiste en hallar respuesta a preguntas mediante el empleo de procesos científicos cite:bervian2002metodologia.
+
+Según cite:arias2012proyecto, la investigación implica:
+- El descubrimiento de algún aspecto de la realidad; y
+- La producción de un nuevo conocimiento, el cual puede estar dirigido a incrementar los postulados teóricos de una determinada ciencia (investigación básica o pura) o puede tener una aplicación inmediata en la solución de problemas prác,cos (investigación aplicada).
+** Qué no es investigar
+Según cite:arias2012proyecto, son actividades distintas a la investigación científica:
+- El diseño de un programa instruccional, o de un plan de estudios;
+- El desarrollo de sistemas de información;
+- Los planes o proyectos de carácter económico, social, o tecnológico; y
+- Las propuestas de cualquier índole.
+
+No obstante, en los casos anteriores, la investigación debe estar presente cuando se pretende arribar a un diagnóstico de necesidades, o cuando el objetivo es probar la efectividad del plan, programa o proyecto (cite:arias2012proyecto). Por consiguiente, en el plano de la investigación educativa, se puede analizar o evaluar la efectividad de un programa, desde algún modelo de evaluación de programas, tal como, el modelo Context, Input, Process, Product (Stufellbeam & Shinkfield, 1987), conocido por su acrónimo CIPP.
+
+Investigar es un proceso dirigido a la solución de problemas del saber, mediante la obtención de nuevos conocimientos (cite:arias2012proyecto). Dicho proceso comprende las siguientes etapas:
+- Planificación;
+- Ejecución o desarrollo; y
+- Divulgación.
+
+* Consejos prácticos para realizar una tesis
+
+¿Qué buscamos en un trabajo de tesis? Esencialmente, buscamos demostrar que somos personas autónomas, que poseemos las competencias necesarias para graduarnos, y que tenemos la capacidad para cuestionarnos la realidad, de manera crítica, respondiendo a una determinada interrogante o pregunta. Para ello necesitamos aplicar nuestras habilidades de pensamiento de orden superior, pues sólo así seremos capaces de delimitar bien el problema de investigación y hacer un uso correcto, pertinente y estratégico de las fuentes, básicamente estado del arte y literatura relacionada. No a la inversa. Por cierto, se entiende que muchos tengamos grandes aspiraciones y deseos de cambio, pero, hay que tener presente que no se trata de hacer la obra maestra de nuestra vida, ni tampoco de reinventar la rueda. Más concretamente, se trata de un trabajo de graduación de alta exigencia académica y mucha dedicación, pero lograble.
+
+** Consejos metodológicos prácticos:
+1. Identifique un problema a investigar relacionado con su área formativa e inscrito dentro de las líneas de investigación establecidas por la institución educativa respectiva.
+2. Indague sobre el estado del arte del problema a investigar. Esto le permitirá tener un punto de referencia para su estudio. De lo contrario, su trabajo se hará cuesta arriba.
+3. Delimite el problema de investigación, tanto temática, espacial, como temporalmente. Por ejemplo, es muy distinto estudiar el problema a nivel nacional que en un contexto determinado (escenario del estudio).
+4. Plantee el problema de investigación desde una perspectiva general o macro hasta llegar a contextualizarlo desde una perspectiva más específica (micro contexto o escenario del estudio).
+5. Formule el problema de investigación mediante una interrogante rectora o pregunta principal, que esté lo suficientemente bien delimitada y que sea coherente con el tipo de investigación, según su finalidad, medios utilizados, nivel de conocimientos (alcance) y paradigma desde el cual el estudio será enfocado.
+6. Tenga en cuenta que debe definir las variables para su estudio, tanto de forma conceptual como operacional. Normalmente, la definición conceptual de las variables se logra en el marco teórico referencial, mientras que la definición operacional se realiza en el marco metodológico, a través de una matriz o tabla de operacionalización de variables, la cual debe incluir los objetivos, las variables, las dimensiones, los indicadores y los ítems respectivos.
+7. Considere la viabilidad de la investigación, también conocida como factibilidad, tomando en cuenta, como mínimo, las capacidades técnicas y recursos humanos (factibilidad técnica), los recursos financieros (factibilidad económica) y las autorizaciones o permisos correspondientes para realizar la investigación en un lugar determinado (factibilidad institucional).
+
+** Consejos autorregulatorios prácticos:
+1. Elija un tema que le interese o apasione. Desde mi punto de vista, esto marca una gran diferencia desde el inicio.
+2. Sea organizado, disciplinado y metódico. El trabajo de tesis requiere mucha planificación.
+3. Aproveche cualquier tajada de tiempo que tenga, aunque sea para realizar una tarea mínima.
+4. Asegúrese de dejar parte de la semana para trabajar en su tesis, de manera focalizada. Las tareas cognitivas difíciles requieren mucha concentración.
+5. Planifique su investigación por partes. ¿Qué haré hoy, mañana, este fin de semana, el próximo mes? Esto es muy distinto a la carta Gantt, que muchas veces se transforma meramente en un tema formal.
+6. Sea resiliente ante las retroalimentaciones de sus tutores o profesores guía. A veces, las observaciones pueden ser demoledoras. No deje que los comentarios sobre desempeños descendidos lo desmotive. Todos hemos pasado por este proceso.
+
+* Tipología de investigaciones
+** Según
+- Según la finalidad o propósito :: *Básica* (pura, teórica o dogmática). *Aplicada* (práctica o empírica).
+- Según los medios utilizados :: Documental. De campo. Experimental.
+- Según el nivel de conocimientos :: Exploratoria. Descriptiva. Correlacional. Explicativa.
+- Investigación básica (pura teórica o empírica) :: Parte de un marco teórico y permanece en él. Formula nuevas teorías o modifica las existentes. Incrementa los conocimientos científicos, sin contrastarlos con ningún aspecto práctico.
+- Investigación aplicada (práctica o empírica) :: Busca la aplicación de los conocimientos. Requiere de un marco teórico. Se orienta al mejoramiento de un área disciplinar.
+- Investigación documental :: Se apoya en fuentes de carácter documental, tales como, fuentes bibliográficas (libros, ensayos, arNculos) o fuentes hemerográficas (cartas, circulares, correos electrónicos, etc.).
+- Investigación de campo :: Se apoya en información que proviene de entrevistas, encuestas y observaciones. Requiere la revisión del estado del arte y la consulta documental.
+- Investigación experimental :: Se apoya en la información obtenida a través de un experimento o experiencia realizados intencionadamente por el investigador. Modifica la realidad con el fin de crear el fenómeno mismo que se investiga. Requiere la formulación de hipótesis.
+- Investigación exploratoria :: Describe los aspectos fundamentales de un problema y encuentra los procedimientos adecuados para elaborar una investigación posterior. Abre líneas de investigación a partir de sus resultados.
+- Investigación descriptiva :: Caracteriza al objeto de estudio, señalando sus peculiaridades o propiedades. Permite sistema/zar la información obtenida del objeto de estudio. Mide, evalúa, recolecta datos sobre las características del fenómeno en estudio.
+- Investigación correlacional :: Busca predecir el comportamiento de una variable con base al comportamiento conocido de otra. Evalúa el grado de relación entre dos variables. Estudia las relaciones entre las variables dependientes e independientes. En algunos casos, requiere la formulación de hipótesis.
+- Investigación explicativa :: Busca las razones o causas, que provocan ciertos eventos, sucesos o fenómenos. Explica por qué ocurre el fenómeno, en qué condiciones y por qué se relacionan dos o más variables. Es más estructurada. Incluye los propósitos de exploración, descripción y correlación.
+* Elaboración del marco teórico
+** ¿Qué es el marco teórico?
+El Marco Teórico es una investigación documental y bibliográfica que nos permite tomar decisiones en el diseño de nuestra investigación para así orientar el análisis de los datos recogidos. Más concretamente, nos ayuda a ordenar nuestra investigación con foco en la teoría u opción teórica que estamos siguiendo como modelo del problema que estamos investigando.
+
+Independientemente del enfoque que sigamos, siempre debemos consultar papers, revistas científicas, tesis, materiales de Internet, testimonios de expertos y toda fuente que se relacione con nuestra investigación (cite:hernandez2010metodologia).
+
+** Consejo práctico
+Cuando esté elaborando su marco teórico, refiérase al conocimiento desarrollado sobre el tema, especialmente sobre las variables en estudio. Qué entiende por ellas, qué acercamientos 9enen diversos autores, años, países, corrientes, qué puntos de vista contrastante, complementarios o discordantes existen; cuales son los conceptos o definición que usted adopta en su estudio, ¿cuál es su opción teórica?
+
+** ¿Qué partes componen el marco teórico?
+El marco teórico se compone de tres partes:
+- Marco teórico :: conjunto de proposiciones relativas al problema que estamos investigado;
+- Marco referencial :: estudios que abordan el problema que estamos investigando y que nos sirven como antecedentes; y
+- Marco conceptual :: conjunto de conceptos más importantes de nuestra investigación.
+
+** Estructura del marco teórico
+
+El marco teórico puede presentar la siguiente estructura:
+- Antecedentes de la investigación
+- Bases teóricas
+- Bases legales (si aplica)
+- Definición conceptual de variables
+- Definición de términos básicos
+** Funciones del marco teórico
+Según cite:hernandez2010metodologia, el marco teórico cumple diversas funciones dentro de una investigación, entre las cuales destacan las siguientes seis:
+1.  Ayuda a prevenir errores que se han cometido en otros estudios.
+2.  Orienta sobre cómo habrá́ de llevarse a cabo el estudio. En efecto, al acudir a los antecedentes, nos podemos dar cuenta de cómo ha sido tratado un problema específico de investigación (qué tipos de estudios se han efectuado, con qué 9po de sujetos, cómo se han recolectado los datos, en qué lugares se han llevado a cabo, qué diseños se han utilizado).
+3.  Amplía el horizonte del estudio y guía al investigador para que éste se centre en su problema evitando desviaciones del planteamiento original.
+4.  Conduce al establecimiento de hipótesis o afirmaciones que más tarde habrán de someterse a prueba en la realidad.
+5.  Inspira nuevas líneas y áreas de investigación (Yurén Camarena, 2000).
+6.  Provee de un marco de referencia para interpretar los resultados del estudio.
+
+** Importancia del lenguaje teórico
+Cuando investigamos nos sumergimos en una disciplina que vemos desde dos niveles dis9ntos: el lenguaje ordinario que u9lizamos en nuestra vida cotidiana y el lenguaje teórico, que u9lizamos en un campo disciplinar.
+
+De hecho, uno de los mayores problemas que enfrentamos los profesores de metodología de la investigación es precisamente lograr que nuestros estudiantes dejen de lado el lenguaje ordinario y asuman el lenguaje teórico para significar la realidad, que están investigando.
+
+** ¿Cuándo manejamos el lenguaje teórico?
+Cuando mediante un metalenguaje somos capaces de generar abstracciones y generalizaciones para explicar los fenómenos que ocurren en nuestra realidad, estamos utilizando un lenguaje teórico.
+
+|------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Concepto               | Fenómeno                                                                                                                                                                 | Interpretación                                                                                                                                                          |
+|------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Aprendizaje multimodal | Aprendizaje adquirido mediante diversos modos simultáneos de disposición de la información, que incluyen medios escritos, gráficos, visuales, auditivos y multimediales. | Con este concepto, el autor hace referencia a la capacidad de aprender una lengua extranjera (L2), utilizando textos multimodales, que integran pistas extra textuales. |
+|------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+** Construcción de argumentos
+
+Un argumento es la exposición fundamentada que nos permite sostener una afirmación. Por tanto, toda afirmación que realicemos en el contexto de una investigación debe ser sustentada mediante la exposición de evidencia empírica, encontrada en otros estudios relacionados o formalizados en la teoría.
+
+* Conceptos previos
+** Al iniciar:
+- El tema
+- El título
+- El problema
+- El supuesto
+- La idea
+
+** Selección tema
+La selección del tema puede ser influenciada por un interés:
+- personal
+- profesional
+- por la influencia de un profesor cercano
+
+El paso inicial incluye:
+- Indagación superficial (La indagación profunda, se posterga para el trabajo de investigación posterior).
+
+** Tema & título
+Se investiga sobre lo que interesa para saber qué se puede hacer. El tema parte de una idea inicial. Seleccionar un tema consiste en *enunciar el área sobre la que se quiere trabajar*. Lo siguiente es detectar la existencia de un problema. /Otro paso es formular un título a partir de un tema/.
+- Idea inicial
+- Tema :: enunciar el área
+- Detectar la existencia de un problema
+- Formular título a partir del problema
+
+****** El tema parte de una idea inicial                  :idea:inicial:
+****** Seleccionar el tema consiste en enunciar el área sobre la que se quiere trabajar :enunciar:area:
+****** Detectar la existencia de un problema         :detectar:problema:
+****** Formular título para el problema                :formular:titulo:
+
+|----------------------+----------------------------------|
+| Bruma o neblina      | El principal problema no es la   |
+| no se tiene claridad | falta de definición, sino lo que |
+|                      | normalmente se provoca es una    |
+|                      | primera sensación.               |
+| Dónde arrimarse      | - Como si no hubieran problemas  |
+|                      | por resolver                     |
+|                      | - Como si ya todo estuviese      |
+|                      | resuelto                         |
+| Parece que todo se   | Una investigación detallada      |
+| encuentra hecho      | revelará que todavía falta       |
+|                      | mucho por resolver.              |
+|----------------------+----------------------------------|
+
+Normalmente, un buen título resume estratégicamente todo el contenido de una investigación. Debe incluir:
+- El tema a investigar
+- *Al menos dos variables*
+- La espacialidad (¿Dónde?)
+- La temporalidad (¿Cuándo?)
+
+- Con mucha más información el investigador podría abrumarse :: Durante el desarrollo, el investigador se encontrara con  muchas más información de la que inicialmente  había considerado.
+
+- El investigador podría inclinarse a incluirlo todo :: La inclinación es a incorporar todo aquello que el investigador descubra.
+
+- Sin embargo, aún queda mucho por descubrir :: Aunque parezca lo contrario, aún quedan muchas cosas por investigar, pero éstas deben descubrirse.
+
+* Preguntas básicas para iniciar una investigación
+** Introducción
+*Una vez analizado el tema, se asume un enfoque particular, que debe ser coherente con las preguntas y objetivos a plantear. El investigador debe mantener coherencia constructiva con todos los elementos de una tesis, desde las preguntas y objetivos de investigación hasta las conclusiones.* 
+
+- ¿De qué se trata el tema?
+- ¿Qué quiero conocer?
+
+Así se entiende mejor el problema, antes de buscarle una solución :: También debe tener claridad del problema y no quedarse en la penumbra.
+
+El planteamiento del problema se aborda describiendo algunos aspectos que más lo caracterizan, tales como *su identificación*, *tipos* y *etapas*. (cite:latorre1996bases)
+
+****** Identificación 
+****** Valoración
+****** Formulación
+****** Tipos
+****** Etapas
+
+Otra perspectiva es que el problema surja como consecuencia de:
+
+******** Un cuestionamiento tras la comprensión o explicación de un fenómeno educativo (Dewey, 1983) :cuestionamiento:fenomeno: :obstaculo:
+******** Algún obstáculo o dificultad (Dewey, 1983)
+******** El efecto de alguna situación educativa susceptible de cambio educativo (Elliot, 1990) :situacion:susceptible:cambio:
+
+** Definir límites
+Definir desde el inicio el alcance y los límites de la investigación. Esto se logra definiendo lo mejor posible:
+- *el producto que se desea obtener* y
+- *los productos intermedios*
+
+Los *productos intermedios* sirven como un mecanismo de control para mantener el desarrollo del trabajo. Los *limites* se establecen mediante el *marco teórico* y las referencias.
+
+** No innovar sobre la marcha
+Evitar que la investigación  sea moldeada por hallazgos posteriores. Una vez definido el tema investigación, se debe considerar cuidadosamente si vale la pena o no incorporar nuevas ideas.
+
+#+BEGIN_BLOCK
+Una máxima que es positivo recordar es aquella que se produce cuando se inicia un pololeo y luego un noviazgo con un tema, y cuando se dan los primeros pasos, y se queman etapas, iniciándose algo más serio, como el matrimonio que es para toda la vida..., en la medida de lo posible. (Siempre conviene no abortar o divorciarse de un tema).
+#+END_BLOCK
+
+** Responda a sí mismo
+Intente iniciar un investigación respondiendo a sí mismo:
+- ¿Cuál es el área en la que me gustaría centrar mi investigación?
+- ¿Dispongo de la información adecuada?
+- ¿Existe alguna teoría aplicable?
+- ¿Qué título le pondré a la investigación?
+- ¿Suena importante?
+- ¿Ya tengo el tema, el título?
+- ¿Qué quiero investigar?
+- ¿Puedo identificar el producto resultante?
+- Tengo posibilidades concretas de recoger datos?
+** Definir términos
+- Aclarar con precisión el fenómeno :: Al enunciar un problema, debe procurar aclarar con precisión el fenómeno a estudiar.
+- Comprendrer la distancia entre el lenguaje común y el leguaje técnico :: Una polisemia de ciertos términos muchas veces es necesario precisarlos. Por ejemplo, autonomía, calidad. Una ambigüedad que se presenta por la diferencia entre el concepto común y el lenguaje técnico.
+- Evaluar cada término y generar una revisión bibliográfica que permita dilucidar dudas :: Por tanto, es necesario evaluar si cada término o símbolo tendrá el mismo significado intrínseco para todos los investigadores competentes en es campo. Por ejemplo, expectativas.
+- Precisar el alcance conceptual :: Si una palabra no satisface tal requerimiento es preciso substituirla por un término más especifico, de modo que se relacione de manera directa con un suceso observable, o bien,
+- Ayudar al lector a comprender :: Si decide conservar las palabra original, agregue una definición que ayude al lector a comprender el significado que le está atribuyendo.
+- Iniciar el marco teórico con las definiciones de distintos autores :: La definición de uno o más términos debe incluirse al redactar el informe en la investigación al igual que el enunciado del problema.
+** Generar un trampolín
+- Alta inversión de tiempo :: Una invesigación le exigirá invertir un tiempo considerable.
+- Fuerte aprendizaje disciplinar :: Tras su desarrollo, aprenderá mucho acerca del tema en estudio.
+- Que sea un puente entre sus actividades actuales y futuras :: Por tanto, procure que ese tema le sirva en su próxima etapa profesional.
+** Pregúntese a sí mismo
+- Lo que propongo realizar :: En lo que estoy haciendo, ¿estoy poniendo en juego lo medular de lo que he aprendido en la disciplina?
+- En la balanza disciplinar, ¿pesa, realmente? :: En concreto, ¿posee sustancia?
+- ¿Lo valoro? ¿Lo valoran mis pares disciplinares? :: Desde la perspectiva disciplinar,¿vale la pena?
+
+* Paradigmas en investigación educativa
+#+CAPTION: Fuente 
+ 
+|----------------------------------------+-------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------|
+| Paradigma/Dimensión                    | Positivista                                                                                           | Interpretativo                                                                                                | Socio-crítico                                                             |
+|----------------------------------------+-------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------|
+| *Fundamentos y teoría que lo sustenta* | Racionalista. Positivismo lógico. Empirismo.                                                          | Fenomenología. Teoría interpretativa.                                                                         | Teoría crítica                                                            |
+| *Método asociado*                      | Cuantitativo                                                                                          | Naturalista, cualitativo                                                                                      | Dialéctico                                                                |
+| *Naturaleza de la realidad*            | Objetiva, estática, única, dada, fragmentable, convergente.                                           | Dinámica, múltiple, holística, construida, divergente.                                                        | Compartida, histórica, construida, dinámica, divergente.                  |
+| *Finalidad de la investigación*        | Explicar, predecir, controlar los fenómenos, verificar teorías. Leyes para regular los fenómenos.     | Comprender e interpretar la realidad, los significados de las personas, percepciones, intenciones y acciones. | Identificar potencial de cambio, emancipar sujetos. Analizar la realidad. |
+| *Relación Sujeto/Objeto*               | Independencia. Neutralidad. No se afectan. Investigador externo. Sujeto como objeto de investigación. | Dependencia. Se afectan. Implicación investigador. Interrelación.                                             | Relación influida por el compromiso. El investigador es un sujeto más.    |
+| *Valores*                              | Neutros. Investigador libre de valores. Método es garantía de objetividad.                            | Explícitos. Influyen en la investigación.                                                                     | Compartidos. Ideología compartida.                                        |
+| *Teoría/práctica*                      | Disociada, constituyen entidades distintas. La teoría norma para la práctica.                         | Relacionadas. Retroalimentación mutua.                                                                        | Indisociables. Relación dialéctica. La práctica es teoría en acción.      |
+| *Criterios de calidad*                 | Validez, Fiabilidad, objetividad.                                                                     | Credibilidad, confirmación, transferibilidad.                                                                 | Intersubjetividad. Validez consensuada.                                   |
+| *Técnicas: Instrumentos, estrategias*  | Cuantitativos, medición de tests, cuestionarios, observación sistemática. Experimentación.            | Cualitativos, descriptivos. Investigador principal instrumento. Perspectiva participante.                     | Estudio de casos. Técnicas dialécticas.                                   |
+| *Análisis de datos*                    | Cuantitativo. Estadística descriptiva e inferencial.                                                  | Cualitativo. Inducción analítica, Triangulación.                                                              | Intersubjetivo. Dialéctico.                                               |
+|----------------------------------------+-------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------|
+
+* Diseño de investigaciones
+** Diseño de investigación
+cite:latorre1996bases define a un diseño de investigación como "un procedimiento de asignación de sujetos a las condiciones experimentales, así como la selección de las técnicas estadística de análisis adecuadas".
+
+Para cite:kerlinger2001, ".. El diseño de investigaciones es el plan de estructura de las investigaciones concebidas de manera que se pueden obtener respuestas a las preguntas de investigación...". El diseño de investigación es un plan, dado que este especifica lo que investiga hará al plantearse su o sus hipótesis y las manipulaciones necesarias o para la recolección de datos. Asimismo es la estructura de la investigación, porque organiza p configura todos elementos del estudio relacionándolos de manera específica es decir, entre sí. En resumen para Kerlinger (1999), un diseño expresa la estructura del problema así como el plan de la investigación, para obtener evidencia empírica sobre las relaciones buscadas.
+
+Otra forma de expresar estas ideas es simplemente decir que un diseño de investigación es la forma de arreglar las condiciones de un experimento, con el fin de poder responder a las preguntas formuladas sobre un evento o acontecimiento. Se relaciona con la identificación de variables importantes que determina la producción de un fenómeno, así como la evaluación de las condiciones experimentales para alcanzar la respuestas adecuadas a las preguntas planteadas.
+
+Una de las funciones más importantes de los diseños investigación es la de eliminar las posibles fuentes de error para poder establecer relaciones inequívocas entre las variables identificadas, que en este caso son: la variable independiente la variable dependiente, (Plutchick, 1975; Kratochwill, 1978 y Schmelkes, 1988). Una segunda función es la de controlar las fuentes de error que pueden llevar erróneamente al investigador a afirmar que los defectos observados en la variable dependiente se deben a las manipulaciones en la variable independiente.
+
+** Tipos de diseños
+Llamamos diseños al arreglo de condiciones de investigación a las que serán sometidos los sujetos bajo estudio, y que nos permiten establecer una relación entre la variable independiente y la variable dependiente. Algunos de estos arreglos pueden ser más o menos precisos para establecer la relación mencionada. De acuerdo al control que los diseños pueden tener sobre las variables extrañas se clasifican como: preexperimentales, cuasiexperimentales, experimentales de grupos y experimentales de N=1 o series de temporales (Campbell y Stanley, 1978; Kratochwill, 1978; Cook y Campbell, 1979; Hersen y Barlow, 1976). 
+
+
+* Referencias 
+
+[[bibliographystyle:unsrt]]
+[[bibliography:/Users/HS/Dropbox/bibliography/references.bib]]

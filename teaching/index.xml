@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docencia on hsigrist</title>
+    <link>http://hsigrist.github.io/teaching/index.xml</link>
+    <description>Recent content in Docencia on hsigrist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 1999-2017 Hans Sigrist</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/teaching/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>CE12016 Comunicación Efectiva</title>
+      <link>http://hsigrist.github.io/teaching/CE12016/</link>
+      <pubDate>Thu, 26 Jan 2017 14:26:13 -0300</pubDate>
+      
+      <guid>http://hsigrist.github.io/teaching/CE12016/</guid>
+      <description>&lt;nav id=&#34;table-of-contents&#34;&gt;
+&lt;h2&gt;&amp;Iacute;ndice&lt;/h2&gt;
+&lt;div id=&#34;text-table-of-contents&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#org674b1fe&#34;&gt;&lt;span class=&#34;todo NOVEDADES&#34;&gt;NOVEDADES&lt;/span&gt; REGISTRO CALIFICACIONES&amp;#xa0;&amp;#xa0;&amp;#xa0;&lt;span class=&#34;tag&#34;&gt;&lt;span class=&#34;agronom_a&#34;&gt;agronomía&lt;/span&gt;&amp;#xa0;&lt;span class=&#34;derecho&#34;&gt;derecho&lt;/span&gt;&amp;#xa0;&lt;span class=&#34;kinesiolog_a&#34;&gt;kinesiología&lt;/span&gt;&amp;#xa0;&lt;span class=&#34;psicolog_a&#34;&gt;psicología&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#org86b38a4&#34;&gt;&lt;span class=&#34;todo NOVEDADES&#34;&gt;NOVEDADES&lt;/span&gt; REFLEXIÓN FINAL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#org39c086f&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; PROJECT Portafolio Transversal&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#orgbfa9b88&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Agenda Portafolio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#org37397ac&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Temas mínimos a incluir en el Portafolio (&lt;b&gt;Tercera Evaluación Parcial 40%&lt;/b&gt;):&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#orgbaedef1&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; SENT Portafolio Carga Transversal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#org3fbf3e9&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Anexos Todo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#org9ef3362&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; PROJECT Pauta Evaluación Portafolio Transversal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#org7fbc10f&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; ¿Qué se espera de Usted?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#orgaa377eb&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; ¿Qué es?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#orgb9b4869&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Presentación&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#orge3bd5bb&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; SENT Glosario&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#org3aa2f04&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Unidad 2 Comunicación y acción&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#org49eaa66&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Unidad 3 La expresión escrita&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#org65176aa&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Unidad 1 Lenguaje y Comunicación&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#org5f25bfe&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Semana 3 Procesos de la Comunicación&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#org9b36160&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Semana 2 Procesos de Comunicación&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#org2158188&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Semana 1 Presentación &amp;amp; Diagnóstico&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#org0a8ec58&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Agenda&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#org66a141f&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; PROJECT Recursos&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#orga521b21&#34;&gt;Manual CE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#orga94c3c5&#34;&gt;Método de lectura previa&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#org57a6890&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Audiencia&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#org32bccb6&#34;&gt;Contacto&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#org9880cc4&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Programa&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#orgcdea244&#34;&gt;Descripción&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#orgcf492d7&#34;&gt;Objetivo general&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#org51da0f0&#34;&gt;Objetivos específicos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#orgeab7e87&#34;&gt;Habilidades a desarrollar&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#orgd60a11c&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Habilidades Blandas (HB)&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#org8944858&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Reflexión&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/nav&gt;
+
+&lt;div id=&#34;outline-container-org674b1fe&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;org674b1fe&#34;&gt;&lt;span class=&#34;todo NOVEDADES&#34;&gt;NOVEDADES&lt;/span&gt; REGISTRO CALIFICACIONES&amp;#xa0;&amp;#xa0;&amp;#xa0;&lt;span class=&#34;tag&#34;&gt;&lt;span class=&#34;agronom_a&#34;&gt;agronomía&lt;/span&gt;&amp;#xa0;&lt;span class=&#34;derecho&#34;&gt;derecho&lt;/span&gt;&amp;#xa0;&lt;span class=&#34;kinesiolog_a&#34;&gt;kinesiología&lt;/span&gt;&amp;#xa0;&lt;span class=&#34;psicolog_a&#34;&gt;psicología&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&#34;outline-text-2&#34; id=&#34;text-org674b1fe&#34;&gt;
+&lt;p&gt;
+Estimados y estimadas estudiantes, ya se encuentra habilitada la primera fase del &amp;laquo;Portal del Alumno&amp;raquo;, en el cual podrán acceder a la revisión de su carga académica, mensajería proveniente de sus respectivos docentes y posibilidad de descargar documentos y/o recursos que sus profesores les carguen. En este sentido, es que los invito a que revisen el portal y puedan acceder con sus credenciales de modo conozcan sus registros académicos, en particular, aquellos de nuestra asignatura &lt;b&gt;Comunicación Efectiva&lt;/b&gt;. Actualmente me encuentro en proceso de levantar los registros que ya poseo y migrarlos hacia el nuevo sistema. Quedan entonces invitados a revisar sus registros, *cualquier inquietud, solicito encarecidamente, referir correo a &lt;a href=&#34;mailto:hans.sigrist@uac.cl&#34;&gt;hans.sigrist@uac.cl&lt;/a&gt; bajo el asunto &amp;laquo;Situación Académica CE&amp;raquo;, de este modo podré atender a las consultas de manera más eficiente. Les comparto el enlace, que de todas formas es accesible desde nuestra página institucional en &lt;a href=&#34;http://www.uac.cl&#34;&gt;www.uac.cl&lt;/a&gt; en la sección &amp;laquo;Estudiantes&amp;raquo;.
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://www.uac.cl/portaldealumnos&#34;&gt;Acceso a Portal de Alumnos&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-org86b38a4&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;org86b38a4&#34;&gt;&lt;span class=&#34;todo NOVEDADES&#34;&gt;NOVEDADES&lt;/span&gt; REFLEXIÓN FINAL&lt;/h2&gt;
+&lt;div class=&#34;outline-text-2&#34; id=&#34;text-org86b38a4&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Estimados y estimadas estudiantes, al finalizar la asignatura refiero una reflexión que aúne sentimientos de satisfacción y que elevan mi convicción respecto de lo esencial que resultan este tipo de oportunidades de aprendizaje. Me inclino a pensar que iniciado este tránsito con quien escribe, logran conciliar un nivel de compromiso y responsabilidad más allá del simple hecho de &amp;laquo;recibir&amp;raquo; contenidos, entonces me sentiré confortado y al mismo tiempo certero de que fue un inicio auspiciante. No todo es ni debe ser autocomplacencia, la autoevaluación (o evaluación reflexiva) debe ser una praxis diaria y permanente a lo largo de toda la vida, en este sentido, me inclino a pensar que la asignatura puede ser mucho más provechosa e enriquecedora. Sólo me queda recordar la máxima de la asignatura -y que según he observado- ha dejado una huella en muchos y muchas: &amp;laquo;No emita juicios valóricos, éstos sólo aportan sesgo&amp;raquo;. Saludos cordiales, &lt;i&gt;Hans&lt;/i&gt;.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-org39c086f&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;org39c086f&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; PROJECT Portafolio Transversal&lt;/h2&gt;
+&lt;div class=&#34;outline-text-2&#34; id=&#34;text-org39c086f&#34;&gt;
+&lt;/div&gt;&lt;div id=&#34;outline-container-orgbfa9b88&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;orgbfa9b88&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Agenda Portafolio&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-orgbfa9b88&#34;&gt;
+&lt;p&gt;
+A continuación, comparto el &lt;b&gt;Calendario de Avances Portafolio&lt;/b&gt;, sugiero ceñirse a esta agenda ya que favorece la &lt;i&gt;autogestión&lt;/i&gt; y con ello se evita la &lt;i&gt;procrastinación&lt;/i&gt;.
+&lt;/p&gt;
+&lt;table&gt;
+
+
+&lt;colgroup&gt;
+&lt;col  class=&#34;org-right&#34;&gt;
+
+&lt;col  class=&#34;org-left&#34;&gt;
+
+&lt;col  class=&#34;org-left&#34;&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th scope=&#34;col&#34; class=&#34;org-right&#34;&gt;Avance&lt;/th&gt;
+&lt;th scope=&#34;col&#34; class=&#34;org-left&#34;&gt;Producto&lt;/th&gt;
+&lt;th scope=&#34;col&#34; class=&#34;org-left&#34;&gt;Fecha&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&#34;org-right&#34;&gt;1&lt;/td&gt;
+&lt;td class=&#34;org-left&#34;&gt;Biodata, guión personal&lt;/td&gt;
+&lt;td class=&#34;org-left&#34;&gt;11-16 abril&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class=&#34;org-right&#34;&gt;2&lt;/td&gt;
+&lt;td class=&#34;org-left&#34;&gt;Matriz de fortalezas/debilidades personales&lt;/td&gt;
+&lt;td class=&#34;org-left&#34;&gt;25-30 abril&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class=&#34;org-right&#34;&gt;3&lt;/td&gt;
+&lt;td class=&#34;org-left&#34;&gt;Principales subhabilidades, historia motivacional breve&lt;/td&gt;
+&lt;td class=&#34;org-left&#34;&gt;9-14 mayo&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class=&#34;org-right&#34;&gt;4&lt;/td&gt;
+&lt;td class=&#34;org-left&#34;&gt;Currículum vítae&lt;/td&gt;
+&lt;td class=&#34;org-left&#34;&gt;13-18 junio&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class=&#34;org-right&#34;&gt;5&lt;/td&gt;
+&lt;td class=&#34;org-left&#34;&gt;Reflexión Final&lt;/td&gt;
+&lt;td class=&#34;org-left&#34;&gt;20-25 junio&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;
+Los siguientes, son los avances que verificaremos en las fechas propuestas (Semana). &lt;b&gt;No debe cargar avances, no se harán retroalimentaciones. Más bien, se orientarán inquietudes en clase en torno a los avances propuestos&lt;/b&gt;.
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;ul class=&#34;org-ul&#34;&gt;&lt;li&gt;&lt;a id=&#34;org56f921b&#34;&gt;&lt;/a&gt;Avance 1: Semana 3&lt;br &gt;&lt;div class=&#34;outline-text-7&#34; id=&#34;text-org56f921b&#34;&gt;
+&lt;dl class=&#34;org-dl&#34;&gt;
+&lt;dt&gt;Biodata&lt;/dt&gt;&lt;dd&gt;Elabore una descripción personal en la que se destaquen sus principales aspectos profesionales, debe incluir una foto personal.&lt;/dd&gt;
+&lt;dt&gt;Guión personal&lt;/dt&gt;&lt;dd&gt;Responde asertivamente a la pregunta: ¿Podría contarme algo acerca de usted?/Cuénteme algo acerca de usted. Mín. 60 y máx. 90 palabras.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-org37397ac&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;org37397ac&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Temas mínimos a incluir en el Portafolio (&lt;b&gt;Tercera Evaluación Parcial 40%&lt;/b&gt;):&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-org37397ac&#34;&gt;
+&lt;p&gt;
+Entre los &lt;b&gt;elementos mínimos&lt;/b&gt; que debe incluir su portafolio se encuentran:
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;ul class=&#34;org-ul&#34;&gt;&lt;li&gt;&lt;a id=&#34;orgee349de&#34;&gt;&lt;/a&gt;Biodata (resumen profesional, máximo 4 líneas)&lt;br &gt;&lt;div class=&#34;outline-text-7&#34; id=&#34;text-orgee349de&#34;&gt;
+&lt;p&gt;
+Se declara en tercera persona preferentemente. Debe relevar su presencia desde un enfoque académico. En el caso de no existir antecedentes académicos, utilice su condición de estudiante en formación profesional. Si posee algún oficio y habilidad que pueda destacar, puede incluirla entre sus competencias. En general, una biodata nos presenta profesional, académica, disciplinarmente.  
+&lt;/p&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&#34;orgf9d37f1&#34;&gt;&lt;/a&gt;Guión personal (forma de venderse profesionalmente, mínimo 60, máximo 90 palabras)&lt;br &gt;&lt;div class=&#34;outline-text-7&#34; id=&#34;text-orgf9d37f1&#34;&gt;
+&lt;p&gt;
+En el guión nos presentamos en primera persona, destacando nuestras habilidades blandas, posibles reconocimientos, capacitaciones en el ámbito interpersonal, validación de aptitudes, etc. Es una forma de vendernos profesionalmente, nos destaca, nos posiciona, desde una perspectiva positiva, corresponde a la forma en que nos visualizamos y la relevamos desde la evidencia, con total honestidad.
+&lt;/p&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&#34;org7a109dc&#34;&gt;&lt;/a&gt;Matriz de fortalezas/debilidades personales&lt;br &gt;&lt;div class=&#34;outline-text-7&#34; id=&#34;text-org7a109dc&#34;&gt;
+&lt;p&gt;
+Ambas se deben declarar desde un enfoque de mejora/reconocimiento, por un lado, enunciamos aquella debilidad que nos 
+&lt;/p&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&#34;org3c0b28f&#34;&gt;&lt;/a&gt;Principales subhabilidades a trabajar (deconstrucción propia de una macro habilidad)&lt;br &gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a id=&#34;org9577ca9&#34;&gt;&lt;/a&gt;Una historia motivacional breve (relato motivacional que evidencia el desarrollo de una habilidad laboral, mínimo 80, máximo 150 palabras)&lt;br &gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a id=&#34;org651b977&#34;&gt;&lt;/a&gt;Currículum vítae (preferentemente mixto, máximo 2 páginas)&lt;br &gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a id=&#34;org6d1a066&#34;&gt;&lt;/a&gt;Reflexión final (mínimo 80, máximo 100 palabras)&lt;br &gt;&lt;/li&gt;
+
+
+&lt;div id=&#34;outline-container-org446669c&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;org446669c&#34;&gt;Sobre foto personal&lt;/h4&gt;
+&lt;div class=&#34;outline-text-4&#34; id=&#34;text-org446669c&#34;&gt;
+&lt;p&gt;
+Sugiero una foto de frente, ofreciendo una sonrisa natural y empática. Existen herramientas (software de escritorio) para editar imágenes como también aplicaciones online, entre ellas destaco &lt;a href=&#34;http://www125.lunapic.com/editor/&#34;&gt;Lunapic&lt;/a&gt;, que por su simpleza le permitirá rápidamente obtener resultados adecuados. Dos herramientas de Lunapic, fueron utilizadas con la imagen Biodata del Portafolio: &lt;i&gt;Simple Crop Tool&lt;/i&gt;, ubicado en el menu &lt;i&gt;Edit&lt;/i&gt; con la variante (shape) circle; por otra parte se utilizó desde el menu &lt;i&gt;Filters&lt;/i&gt; el primero llamado &lt;i&gt;Black and White&lt;/i&gt;. Una vez terminado se presiona &lt;i&gt;Save Image&lt;/i&gt; en el menu &lt;i&gt;File&lt;/i&gt; y la imagen se guarda en nuestro computador. A modo de ejemplo se puede pasar de &lt;a href=&#34;man-in-suit2.jpg&#34;&gt;esto&lt;/a&gt; a &lt;a href=&#34;imageedit_7_2595109213.gif&#34;&gt;esto&lt;/a&gt;; o bien de &lt;a href=&#34;bigstock-Successful-Mature-Business-Man-7408934.jpg&#34;&gt;esto&lt;/a&gt; a &lt;a href=&#34;imageedit_10_7072456166.gif&#34;&gt;esto&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-orgbaedef1&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;orgbaedef1&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; SENT Portafolio Carga Transversal&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-orgbaedef1&#34;&gt;
+&lt;p&gt;
+Una vez finalizado su Portafolio, cautele relevar todos los &lt;b&gt;Criterios&lt;/b&gt; parametrizados en la &lt;i&gt;Pauta de evaluación Portafolio Transversal&lt;/i&gt;, no olvide adjuntar &lt;b&gt;Carta de presentación&lt;/b&gt; (ver pauta, criterio 10). El enlace para cargar su Portafolio se encuentra en el enlace siguiente:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.dropbox.com/request/Fb3eWQzBmG8CSC8aSfc4&#34;&gt;Carga Portafolio&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-org3fbf3e9&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;org3fbf3e9&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Anexos Todo&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-org3fbf3e9&#34;&gt;
+&lt;p&gt;
+(&lt;i&gt;Principales ejercicios de libre elección, rescatados de las clases, máximo 4 ejercicios desarrollados correctamente&lt;/i&gt;). La libre elección de los ejercicios busca evaluar los criterios de selección del estudiante en cuanto al desafío de la actividad y su relación con la deconstrucción de la macro habilidad presentada como tercer avance.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-org9ef3362&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;org9ef3362&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; PROJECT Pauta Evaluación Portafolio Transversal&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-org9ef3362&#34;&gt;
+&lt;p&gt;
+Este producto será evaluado según la rúbrica que podrá encontrar en el enlace siguiente:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;a href=&#34;Pauta_de_evaluacion_Portafolio_transversal.pdf&#34;&gt;Pauta_de_evaluacion_Portafolio_transversal.pdf&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;El único documento utilizable para la entrega de su Portafolio es el dispuesto en el enlace:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;a href=&#34;Portafolio_CE_Carrera_Apellido_Nombre.docx&#34;&gt;Portafolio_CE_Carrera_Apellido_Nombre.docx&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;Si Usted estudia &lt;i&gt;Derecho&lt;/i&gt; y su nombre es &lt;i&gt;Catalina Ibaceta&lt;/i&gt;, entonces debe nombrar su documento de la manera siguiente:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;code&gt;Portafolio_CE_Derecho_Ibaceta_Catalina.docx&lt;/code&gt;
+&lt;/p&gt;
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;Si Usted estudia &lt;i&gt;TNS en Agronomía&lt;/i&gt; y su nombre es &lt;i&gt;Juan Pablo Gutiérrez&lt;/i&gt;, entonces debe nombrar su documento de la manera siguiente:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;code&gt;Portafolio_CE_TNS_Agronomia_Gutierrez_Juan_Pablo.docx&lt;/code&gt;
+&lt;/p&gt;
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;Note, que no debe usar tilde al nombrar documentos, ni dejar espacios en blanco, esto favorece la búsqueda por nombre y facilita su carga en repositorios online.&lt;/li&gt;
+&lt;li&gt;No cambie la estructura del documento plantilla dispuesto, sólo cambie el contenido del &lt;b&gt;corpus&lt;/b&gt; y mantenga la estructura de los títulos intacta. Así como tampoco, haga cambios en los aspectos de forma del mismo.&lt;/li&gt;
+&lt;li&gt;Su entrega puede ser presentado en copia dura (impreso) o en formato digital (portafolio electrónico).&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Se solicitarán avances y/o retroalimentación, conforme el calendario de avances anterior&lt;/b&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;b&gt;Advertencia&lt;/b&gt;. Esta sección será periódicamente puesta al día, disponiendo nuevos recursos e información para la confección de su &lt;b&gt;Portafolio&lt;/b&gt;.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+La elaboración de su Portafolio es una actividad por principio &lt;b&gt;personal&lt;/b&gt;, en él debe relevar las propiedades o requisitos de toda manifestación verbal. Recuerde que las &lt;b&gt;propiedades textuales&lt;/b&gt; son:
+&lt;/p&gt;
+
+&lt;dl class=&#34;org-dl&#34;&gt;
+&lt;dt&gt;Adecuación&lt;/dt&gt;&lt;dd&gt;está relacionada con las variaciones del escrito según el grupo social, la situación de comunicación, la interrelación entre los hablantes, etc. Recuerda que ser adecuado significa saber escoger de entre todos los elementos que nos ofrece el lenguaje, el más apropiado para cada situación de comunicación.&lt;/dd&gt;
+&lt;dt&gt;Coherencia&lt;/dt&gt;&lt;dd&gt;establece cuál es la información más pertinente para comunicar y cómo se ha de hacer (en qué orden, con qué grado de detalle, con qué estructura, etc.). Para que un texto sea estructuralmente coherente se deben considerar las siguientes reglas:
+&lt;dl class=&#34;org-dl&#34;&gt;
+&lt;dt&gt;Regla de Repetición&lt;/dt&gt;&lt;dd&gt;es necesario que la mayor parte de las proposiciones se encadenen tomando como base la repetición o alusión a algunos elementos considerados como centrales.&lt;/dd&gt;
+&lt;dt&gt;Regla de Progresión&lt;/dt&gt;&lt;dd&gt;es necesario que el desarrollo se produzca con una aportación constante de información nueva.&lt;/dd&gt;
+&lt;dt&gt;Regla de no contradicción&lt;/dt&gt;&lt;dd&gt;es necesario que no se introduzca ningún elemento semántico que contradiga un contenido establecido previamente (de forma implícita o explícita).&lt;/dd&gt;
+&lt;dt&gt;Regla de relación&lt;/dt&gt;&lt;dd&gt;es necesario que los hechos referidos estén relacionados en el mundo representado.&lt;/dd&gt;
+&lt;/dl&gt;&lt;/dd&gt;
+&lt;dt&gt;Cohesión&lt;/dt&gt;&lt;dd&gt;las relaciones que se establecen entre los diversos elementos de una oración están vinculadas o conectadas con medios gramaticales diversos, tales como puntuación, conjunciones, artículos, pronombres, sinónimos, etc.&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;
+Al respecto, se comparte con la comunidad, dos extractos con las principales características de las propiedades textuales, cuyo uso es vital en la redacción (expresión escrita), los documento se encuentran en los enlaces siguientes:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;&lt;a href=&#34;Conectores_textuales_logicos.pdf&#34;&gt;Conectores_textuales_logicos.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;Guia_conectores_logicos.pdf&#34;&gt;Guia_conectores_logicos.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-org7fbc10f&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;org7fbc10f&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; ¿Qué se espera de Usted?&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-org7fbc10f&#34;&gt;
+&lt;p&gt;
+Demostrar capacidad para escribir, seleccionar, coleccionar, analizar y reflexionar. Por tanto, es necesario que conozca los temas a incluir y la forma en que será evaluado.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-orgaa377eb&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;orgaa377eb&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; ¿Qué es?&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-orgaa377eb&#34;&gt;
+&lt;p&gt;
+Es un recurso de evaluación que representa su desempeño a lo largo de un proceso formativo. Puede contener diversas producciones personales que evidencian su avance en una determinada área.
+&lt;/p&gt;
+
+&lt;p&gt;
+Es un recurso útil para enfatizar el rol y compromiso suyo en su proceso de aprendizaje. Puede ser utilizado con fines auto-evaluativos, hetero-evaluativos y co-evaluativos. Debe diseñarse en formato &lt;b&gt;Word&lt;/b&gt; (.docx).
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-orgb9b4869&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;orgb9b4869&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Presentación&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-orgb9b4869&#34;&gt;
+&lt;p&gt;
+¿Sigues usando un currículum para presentarte? ¿Has pensado en usar un &lt;b&gt;Portafolio&lt;/b&gt;? En esta asignatura diseñaran un &lt;b&gt;Portafolio&lt;/b&gt;, una buena práctica sería entender el mismo como una representación de quién soy, qué hago, cómo lo hago, es decir, como &lt;b&gt;me visibilizo&lt;/b&gt; y cómo &lt;b&gt;me visibilizan&lt;/b&gt;; en este sentido, el Portafolio puede ser utilizado como una herramienta de consecución laboral.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-orge3bd5bb&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;orge3bd5bb&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; SENT Glosario&lt;/h2&gt;
+&lt;div class=&#34;outline-text-2&#34; id=&#34;text-orge3bd5bb&#34;&gt;
+&lt;p&gt;
+Como una forma de fomentar su acervo, les propongo la creación de un &lt;b&gt;Glosario&lt;/b&gt;, de modo recopilen conceptos e ideas que permitan su uso pertinente en diversos ámbitos de la comunicación. Pueden incorporar los conceptos que desees, como mínimo debieran manejarse los siguientes:
+&lt;/p&gt;
+
+&lt;p&gt;
+Utilice para estos efectos, el documento Word que puede descargar en el enlace siguiente:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;a href=&#34;Glosario_CE_1-2016_Carrera_Apellido_Nombre.docx&#34;&gt;Glosario_CE_1-2016_Carrera_Apellido_Nombre.docx&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+Los &lt;i&gt;términos sugeridos&lt;/i&gt;, han sido extraídos del &lt;b&gt;Manual de Comunicación Efectiva&lt;/b&gt;, socializado más abajo en la sección &lt;b&gt;Recursos&lt;/b&gt;:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+comunicación · comunicación humana · información · comunicación efectiva · convivencia personal · convivencia laboral · modelo transaccional de comunicación · niveles de comunicación · lenguaje formal · lenguaje informal · barreras de la comunicación · cognición · signos verbales · signos no verbales · frustración · empatía · actitud · enfoque · atención · generalizaciones · acusaciones · crítica · diálogo · escucha activa · manejo del estrés · conciencia emocional · turnos del habla · parafrasear · retroalimentación · percepción · persuasión · imagen · adecuación · coherencia · cohesión
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+Una vez finalice su Glosario, puede cargarlo en el enlace siguiente:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.dropbox.com/request/rposJLTC0c2OrZXwNrDc&#34;&gt;Carga Glosario&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-org3aa2f04&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;org3aa2f04&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Unidad 2 Comunicación y acción&lt;/h2&gt;
+&lt;div class=&#34;outline-text-2&#34; id=&#34;text-org3aa2f04&#34;&gt;
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;State &amp;laquo;FINISHED&amp;raquo;   from &amp;laquo;WAITING&amp;raquo;    &lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;[2016-07-12 Tue 17:20]&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-org49eaa66&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;org49eaa66&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Unidad 3 La expresión escrita&lt;/h2&gt;
+&lt;div class=&#34;outline-text-2&#34; id=&#34;text-org49eaa66&#34;&gt;
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;State &amp;laquo;FINISHED&amp;raquo;   from &amp;laquo;WAITING&amp;raquo;    &lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;[2016-07-12 Tue 17:21]&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-org65176aa&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;org65176aa&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Unidad 1 Lenguaje y Comunicación&lt;/h2&gt;
+&lt;div class=&#34;outline-text-2&#34; id=&#34;text-org65176aa&#34;&gt;
+&lt;/div&gt;&lt;div id=&#34;outline-container-org5f25bfe&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;org5f25bfe&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Semana 3 Procesos de la Comunicación&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-org5f25bfe&#34;&gt;
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;State &amp;laquo;FINISHED&amp;raquo;   from &amp;laquo;WAITING&amp;raquo;    &lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;[2016-07-12 Tue 17:21]&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;ul class=&#34;org-ul&#34;&gt;&lt;li&gt;&lt;a id=&#34;org34a5729&#34;&gt;&lt;/a&gt;&lt;span class=&#34;todo WAITING&#34;&gt;WAITING&lt;/span&gt; &lt;b&gt;MLP&lt;/b&gt; &lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;&amp;lt;2016-04-14 Thu&amp;gt; &lt;/span&gt;&lt;/span&gt; &lt;a href=&#34;Manual_Comunicacion_Efectiva.pdf&#34;&gt;Manual_Comunicacion_Efectiva.pdf&lt;/a&gt; (Pág. 4-12) ¿Qué es la comunicación?&lt;br &gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&#34;orge560259&#34;&gt;&lt;/a&gt;&lt;span class=&#34;todo WAITING&#34;&gt;WAITING&lt;/span&gt; Factores que intervienen en la comunicación.&lt;br &gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-org9b36160&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;org9b36160&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Semana 2 Procesos de Comunicación&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-org9b36160&#34;&gt;
+&lt;/div&gt;
+&lt;ul class=&#34;org-ul&#34;&gt;&lt;li&gt;&lt;a id=&#34;org28a9ba9&#34;&gt;&lt;/a&gt;&lt;span class=&#34;done CANCELLED&#34;&gt;CANCELLED&lt;/span&gt; &lt;b&gt;MLP&lt;/b&gt; &lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;&amp;lt;2016-03-28 Mon&amp;gt; &lt;/span&gt;&lt;/span&gt; &lt;a href=&#34;Manual_Comunicacion_Efectiva.pdf&#34;&gt;Manual_Comunicacion_Efectiva.pdf&lt;/a&gt; (pág. 4-12) ¿Qué es la comunicación?&lt;br &gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&#34;orgaf8c09a&#34;&gt;&lt;/a&gt;&lt;span class=&#34;done CANCELLED&#34;&gt;CANCELLED&lt;/span&gt; Factores que intervienen en la comunicación.&lt;br &gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&#34;org7cab9dd&#34;&gt;&lt;/a&gt;&lt;span class=&#34;todo TODO&#34;&gt;TODO&lt;/span&gt; Recuerden que hemos desplazado para esta semana la toma del Pre-Test (Diagnóstico), de modo que solicito velar por la asistencia y puntualidad. Este evento es de suma importancia, tanto a nivel formativo como evaluativo. En diversas acciones propias de nuestro desempeño académico y profesional, es costumbre que seamos medidos, tanto al inicio como al final de un proceso. Con ello cautelamos la denominada &amp;laquo;trazabilidad&amp;raquo;. &lt;b&gt;Quedan entonces cordialmente invitados todas y todos a este proceso evaluativo&lt;/b&gt;.&lt;br &gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-org2158188&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;org2158188&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Semana 1 Presentación &amp;amp; Diagnóstico&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-org2158188&#34;&gt;
+&lt;p&gt;
+DEADLINE: &lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;&amp;lt;2016-03-31 Thu&amp;gt; &lt;/span&gt;&lt;/span&gt; SCHEDULED: &lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;&amp;lt;2016-03-31 Thu&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;ul class=&#34;org-ul&#34;&gt;&lt;li&gt;&lt;a id=&#34;orgd8d2fcd&#34;&gt;&lt;/a&gt;&lt;span class=&#34;done DONE&#34;&gt;DONE&lt;/span&gt; En esta primera clase realizaremos &lt;b&gt;dos acciones&lt;/b&gt; ineludibles y que forman parte de nuestra hoja de ruta: la &lt;b&gt;primera&lt;/b&gt;, consignar un espacio para las presentaciones de manera colectiva, además estableceremos los principales hitos académicos de la asignatura, su programa, objetivos, evaluaciones. Sin embargo, puede dar lectura a este blog, en el cual se recopilan la mayoría de los antecedentes y material repositorio del mismo.&lt;br &gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&#34;org5cd4a9d&#34;&gt;&lt;/a&gt;&lt;span class=&#34;done DEFERRED&#34;&gt;DEFERRED&lt;/span&gt; La &lt;b&gt;segunda&lt;/b&gt; acción que llevaremos a cabo, será la toma de un &lt;b&gt;Diagnóstico Inicial (Pre-Test)&lt;/b&gt;, por ello su &lt;i&gt;asistencia&lt;/i&gt; y &lt;i&gt;puntualidad&lt;/i&gt; es primordial, se hace particularmente compleja la posibilidad de rendir en rezago este instrumento, que como bien ya debe saber mide conocimientos de entrada.&lt;br &gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-org0a8ec58&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;org0a8ec58&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Agenda&lt;/h2&gt;
+&lt;div class=&#34;outline-text-2&#34; id=&#34;text-org0a8ec58&#34;&gt;
+&lt;p&gt;
+Esta agenda recopila información de la ruta que seguiremos durante este semestre, y se poblará a medida que ciertos hitos se cumplan, e.g. Evaluaciones. Existen algunas convenciones, aquí &lt;b&gt;TODO&lt;/b&gt; (del inglés &lt;i&gt;to do&lt;/i&gt;) corresponde a &amp;laquo;tareas&amp;raquo; o &amp;laquo;acciones&amp;raquo; a realizar; &lt;b&gt;DONE&lt;/b&gt; (del inglés &lt;i&gt;done&lt;/i&gt;) aparecerá cuando la acción ya esté realizada o bien ya esté fuera de plazo; &lt;b&gt;STARTED&lt;/b&gt; corresponde a acciones que se inician con anticipación, e.g. &amp;laquo;lecturas previas&amp;raquo;. Se consignan de igual forma, las fechas de cada clase, que en cada oportunidad corresponden a &lt;b&gt;dos&lt;/b&gt;: la &lt;i&gt;primera&lt;/i&gt; a partir de las 19:00PM a 20:20PM y la &lt;i&gt;segunda&lt;/i&gt; desde 20:25PM a 21:45PM; o en el caso del día sábado, la &lt;i&gt;primera&lt;/i&gt; desde 08:30AM a 09:50PM y la &lt;i&gt;segunda&lt;/i&gt; desde 10:00PM a 11:20PM. La consigna en cada clase, es sólo un descriptor del sub-tema que abordaremos, en ningún caso una especificación de las acciones a realizar en el aula. Utilice esta agenda para organizar su tiempo y poblar su propia agenda también. Visite periódicamente la agenda de modo poder establecer prioridades frente a las distintas acciones que surjan en el semestre. Como siempre, sus inquietudes plantéelas en clase, lugar en el cual todos podremos enterarnos de la o las posibles soluciones.
+&lt;/p&gt;
+
+&lt;p&gt;
+Debido a las distintas audiencias que atiendo, he preferido optar por declarar las &lt;b&gt;semanas&lt;/b&gt; de clase, iniciando como referencia el día &lt;b&gt;lunes&lt;/b&gt; de cada semana. Ubique Usted, en su horario el día que corresponda a su clase.
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;ul class=&#34;org-ul&#34;&gt;&lt;li&gt;&lt;a id=&#34;orgf94393d&#34;&gt;&lt;/a&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Semana 1 &lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;&amp;lt;2016-03-28 Mon&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br &gt;&lt;div class=&#34;outline-text-5&#34; id=&#34;text-orgf94393d&#34;&gt;
+&lt;p&gt;
+Presentación de la asignatura
+Diagnóstico Inicial Nacional
+&lt;/p&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&#34;org07b898f&#34;&gt;&lt;/a&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Semana 2 &lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;&amp;lt;2016-04-04 Mon&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br &gt;&lt;div class=&#34;outline-text-5&#34; id=&#34;text-org07b898f&#34;&gt;
+&lt;p&gt;
+¿Qué es la comunicación?
+Factores que intervienen en la comunicación
+&lt;/p&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&#34;org8b7033b&#34;&gt;&lt;/a&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Semana 3 &lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;&amp;lt;2016-04-11 Mon&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br &gt;&lt;div class=&#34;outline-text-5&#34; id=&#34;text-org8b7033b&#34;&gt;
+&lt;p&gt;
+¿Qué es la comunicación efectiva?
+&lt;/p&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&#34;org138307b&#34;&gt;&lt;/a&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Semana 4 &lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;&amp;lt;2016-04-18 Mon&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br &gt;&lt;div class=&#34;outline-text-5&#34; id=&#34;text-org138307b&#34;&gt;
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;State &amp;laquo;FINISHED&amp;raquo;   from &amp;laquo;WAITING&amp;raquo;    &lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;[2016-07-12 Tue 17:21]&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+Habilidades comunicativas
+&lt;/p&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&#34;org13a92b0&#34;&gt;&lt;/a&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Semana 5 &lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;&amp;lt;2016-04-25 Mon&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br &gt;&lt;div class=&#34;outline-text-5&#34; id=&#34;text-org13a92b0&#34;&gt;
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;State &amp;laquo;FINISHED&amp;raquo;   from &amp;laquo;WAITING&amp;raquo;    &lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;[2016-07-12 Tue 17:21]&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+Las barreras de la comunicación
+&lt;/p&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&#34;org484621f&#34;&gt;&lt;/a&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Semana 6 &amp;lt;2016-05-02 Mon&amp;gt;&lt;br &gt;&lt;div class=&#34;outline-text-5&#34; id=&#34;text-org484621f&#34;&gt;
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;State &amp;laquo;FINISHED&amp;raquo;   from &amp;laquo;WAITING&amp;raquo;    &lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;[2016-07-12 Tue 17:21]&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;b&gt;Primera Evaluación Parcial Nacional CE (25%)&lt;/b&gt;. Será responsabilidad de la comunidad, establecer &lt;b&gt;grupos colaborativos de trabajo&lt;/b&gt; (&lt;i&gt;4 integrantes&lt;/i&gt;), útiles especialmente en la ya conocida &lt;b&gt;Parte Procedimental&lt;/b&gt; de nuestras evaluaciones. 
+&lt;/p&gt;
+&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-org66a141f&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;org66a141f&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; PROJECT Recursos&lt;/h2&gt;
+&lt;div class=&#34;outline-text-2&#34; id=&#34;text-org66a141f&#34;&gt;
+&lt;/div&gt;&lt;div id=&#34;outline-container-orga521b21&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;orga521b21&#34;&gt;Manual CE&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-orga521b21&#34;&gt;
+&lt;p&gt;
+A continuación comparto con la comunidad el &lt;b&gt;manual oficial de la asignatura&lt;/b&gt;, es primordial que lo descargue y utilice como guía de estudio. Recuerde que en ningún caso, este manual pretende ser una completa visión del panorama comunicativo en organizaciones, ni menos aún, la última palabra en comunicación efectiva. Como siempre, nuestros &lt;i&gt;manuales Sello&lt;/i&gt;, son un acercamiento a las principales tendencias actuales en torno a la temática que cubran. Un aprendiz profundo, reconoce como propio el deber &amp;laquo;ir más allá&amp;raquo; y ser un &amp;laquo;consumidor eficiente de información&amp;raquo;. Recuerde que, en plena &lt;b&gt;Sociedad del Conocimiento&lt;/b&gt;, la información &lt;b&gt;prolifera&lt;/b&gt; en todas partes.
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;a href=&#34;Manual_Comunicacion_Efectiva.pdf&#34;&gt;Manual_Comunicacion_Efectiva.pdf&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-orga94c3c5&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;orga94c3c5&#34;&gt;Método de lectura previa&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-orga94c3c5&#34;&gt;
+&lt;p&gt;
+En la actual asignatura utilizaremos el denominado &lt;b&gt;Método de la Lectura Previa&lt;/b&gt; (MLP), que permitirá a la audiencia llegar a clases mejor equipados con insumos previamente asignados/propuestos. La idea es simple, con ello favorecemos la clase en una experiencia &lt;b&gt;dialógica&lt;/b&gt; y podremos de esta forma intercambiar puntos de vista respecto de algún tema de interés.
+&lt;/p&gt;
+
+&lt;p&gt;
+Este método resulta muy interesante y al mismo tiempo es una excelente oportunidad de &lt;b&gt;crecimiento personal&lt;/b&gt;, en tanto promueve la &lt;b&gt;relación de conceptos&lt;/b&gt;, para ello es necesario que dada la ocasión de una MLP, puedan establecer &lt;b&gt;relaciones causales&lt;/b&gt; o &lt;b&gt;comparaciones&lt;/b&gt;, &lt;b&gt;clasificaciones&lt;/b&gt;. Aquí la &lt;b&gt;memoria&lt;/b&gt; juega un rol importante, existe una crítica respecto a que los métodos de enseñanza relacionados con construir conocimiento &amp;laquo;limpian&amp;raquo; la memoria, en tanto solo promueven el aprendizaje experiencial y no la memoria. Pues bien, con este método podrán infundir una práctica que apunte a remediar este problema: la memoria almacenará cierto stock de conceptos y datos a partir de los cuales podrán recrear y pensar.
+&lt;/p&gt;
+
+&lt;p&gt;
+La invitación es a dar una lectura &lt;b&gt;comprensiva&lt;/b&gt;, aquí verán que ahora la memoria ya no basta, debemos incorporar a su vez una comprensión léxica para ir avanzando hacia temáticas más avanzadas o complejas.
+&lt;/p&gt;
+
+&lt;p&gt;
+Lo anterior, lo evidenciarán en la medida que sean capaces de responder a diversas preguntas que estableceré con el único objetivo de ir &amp;laquo;subiendo&amp;raquo; en lo niveles de &lt;b&gt;comprensión lectora&lt;/b&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+En adelante, cuando se utilicemos el MLP, debe velar por dar justo cumplimiento a lo solicitado, no &lt;b&gt;procrastine&lt;/b&gt;, no aplaze, tómese un tiempo y ubique la acción en un lugar que no propicie las interrupciones. 
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-org57a6890&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;org57a6890&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Audiencia&lt;/h2&gt;
+&lt;div class=&#34;outline-text-2&#34; id=&#34;text-org57a6890&#34;&gt;
+&lt;p&gt;
+Estimadas y estimados estudiantes, reciban la bienvenida a este espacio académico y de desarrollo personal. En esta oportunidad, la asignatura &lt;b&gt;Comunicación Efectiva&lt;/b&gt;, está dirigida a diferentes audiencias provenientes de carreras técnicas y profesionales, todas ubicadas en su respectivo 1er. semestre lectivo. Como es costumbre al compartir espacios, se hace primordial la práctica de la convivencia, es decir, el saber vivir y convivir con otros y otras. Además, de velar por la &lt;b&gt;puntualidad&lt;/b&gt; y la &lt;b&gt;asistencia&lt;/b&gt;, es necesario que se plantee &lt;b&gt;un compromiso&lt;/b&gt; con la asignatura, con la consecución de sus propias &lt;b&gt;metas&lt;/b&gt;, y no sólo con ésta, sino con todo acto o proceso que inicie.
+&lt;/p&gt;
+
+&lt;p&gt;
+En este espacio se proveerá de los recursos y medios necesarios para cursar el primer ramo de nuestra &lt;i&gt;Línea Sello Institucional&lt;/i&gt;, que promueve la infusión de las &lt;b&gt;Habilidades Blandas&lt;/b&gt; (HB) en nuestra comunidad. Como miembro del &lt;i&gt;Equipo Sello UAC&lt;/i&gt; reciban una cordial bienvenida primero a nuestra Institución, y por cierto a las actividades que desarrollamos en nuestra línea. Nuestro principal propósito, es diseminar, promover y generar las HB en nuestros estudiantes, de modo que se tratará de una enseñanza interactiva: &lt;i&gt;experimentaremos&lt;/i&gt;, &lt;i&gt;practicaremos&lt;/i&gt;, &lt;i&gt;reforzaremos&lt;/i&gt; y &lt;i&gt;reflexionaremos&lt;/i&gt;, en torno a las oportunidades de aprendizaje de las HB. Mis mejores deseos en este nuevo desafío que juntos iniciamos, Hans.
+&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+En adelante me referiré a las mencionadas carreras que constituyen la audiencia, como &amp;laquo;&lt;b&gt;comunidad&lt;/b&gt;&amp;raquo;, con ello favorecemos el sentido de equipo y de convivencia.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+Las distintas audiencias se distribuyen de la manera siguiente:
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;ul class=&#34;org-ul&#34;&gt;&lt;li&gt;&lt;a id=&#34;orgb94b0bb&#34;&gt;&lt;/a&gt;jueves 19:00PM-21:45PM. &lt;b&gt;Psicología&lt;/b&gt;&lt;br &gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a id=&#34;orgeb22c48&#34;&gt;&lt;/a&gt;viernes 19:00PM-21:45PM. &lt;b&gt;TNS Agronomía&lt;/b&gt;, sección 2, &lt;i&gt;nómina letra G-Z&lt;/i&gt;&lt;br &gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a id=&#34;org0b669b8&#34;&gt;&lt;/a&gt;sábado 08:00AM-11:20AM. &lt;b&gt;Derecho&lt;/b&gt; + &lt;b&gt;Kinesiología&lt;/b&gt;&lt;br &gt;&lt;/li&gt;
+
+&lt;div id=&#34;outline-container-org32bccb6&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;org32bccb6&#34;&gt;Contacto&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-org32bccb6&#34;&gt;
+&lt;blockquote&gt;
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;Email: &lt;a href=&#34;mailto:hans.sigrist@uac.cl&#34;&gt;hans.sigrist@uac.cl&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Twitter: &lt;a href=&#34;http:twitter.com/hsigrist&#34;&gt;@hsigrist&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Web: &lt;a href=&#34;http://hsigrist.github.io&#34;&gt;hsigrist.github.io&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-org9880cc4&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;org9880cc4&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Programa&lt;/h2&gt;
+&lt;div class=&#34;outline-text-2&#34; id=&#34;text-org9880cc4&#34;&gt;
+&lt;/div&gt;&lt;div id=&#34;outline-container-orgcdea244&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;orgcdea244&#34;&gt;Descripción&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-orgcdea244&#34;&gt;
+&lt;p&gt;
+Curso teórico-práctico, cuyo objetivo es familiarizar al estudiante en el uso de herramientas de comunicación para comunicar las temáticas de su profesión, alcanzando sus resultados con mayor efectividad y mejorando sus relaciones interpersonales con audiencias especializadas y no especializadas.
+&lt;/p&gt;
+
+&lt;p&gt;
+Se estima que el desarrollo de estas habilidades es vital tanto en el desempeño profesional como en las tareas propias de la actividad académica del estudiante para alcanzar sus resultados con mayor efectividad.
+&lt;/p&gt;
+
+&lt;p&gt;
+En ese sentido este curso taller busca propiciar diversas instancias en la que el estudiante se vea sometido a la necesidad de expresarse, tanto en forma oral como escrita, cuidando abordar dicha tarea con la eficacia de la expresión vocal y gestual, en diversos contextos y situaciones.
+Partiendo de la base del carácter transversal del curso, se fomenta el desarrollo de una conciencia comunicativa que motive a los estudiantes a reconocer la importancia de la efectividad en la comunicación, cualquiera sea el ámbito profesional, académico o personal de desempeño.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-orgcf492d7&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;orgcf492d7&#34;&gt;Objetivo general&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-orgcf492d7&#34;&gt;
+&lt;p&gt;
+Familiarizar al estudiante en el uso de herramientas de comunicación para abordar las temáticas de su profesión, con base informativa y argumentativa, aplicando los recursos comunicativos que faciliten la expresión del discurso y mejoren sus relaciones interpersonales con audiencias especializadas y no especializadas.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-org51da0f0&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;org51da0f0&#34;&gt;Objetivos específicos&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-org51da0f0&#34;&gt;
+&lt;ol class=&#34;org-ol&#34;&gt;
+&lt;li&gt;Comprender a la comunicación como la base fundamental de cualquier relación social y laboral.&lt;/li&gt;
+&lt;li&gt;Desarrollar las habilidades de comunicación y persuasión para su aplicación inmediata en el proceso de trabajo.&lt;/li&gt;
+&lt;li&gt;Desarrollar la capacidad de escucha, modelando el acto comunicacional desde la perspectiva del interlocutor&lt;/li&gt;
+&lt;li&gt;Redactar diversos tipos de textos, según los criterios de adecuación, coherencia, y cohesión.&lt;/li&gt;
+&lt;li&gt;Elaborar argumentaciones orales y escritas, en el ámbito de la profesión, a través de presentaciones, ponencias, debates y otros escenarios comunicativos.&lt;/li&gt;
+&lt;li&gt;Usar la comunicación no verbal para enfatizar la transmisión de ideas en el ámbito social y laboral.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-orgeab7e87&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;orgeab7e87&#34;&gt;Habilidades a desarrollar&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-orgeab7e87&#34;&gt;
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;Habilidad para elaborar argumentaciones orales y escritas, en el ámbito de la profesión.&lt;/li&gt;
+&lt;li&gt;Capacidad para comunicarse en forma efectiva, desde la perspectiva del interlocutor.&lt;/li&gt;
+&lt;li&gt;Capacidad para usar la comunicación no verbal para la comunicación de ideas en el ámbito laboral.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-orgd60a11c&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;orgd60a11c&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Habilidades Blandas (HB)&lt;/h2&gt;
+&lt;div class=&#34;outline-text-2&#34; id=&#34;text-orgd60a11c&#34;&gt;
+&lt;/div&gt;&lt;div id=&#34;outline-container-org8944858&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;org8944858&#34;&gt;&lt;span class=&#34;todo FINISHED&#34;&gt;FINISHED&lt;/span&gt; Reflexión&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-org8944858&#34;&gt;
+&lt;p&gt;
+Antes de iniciar con los contenidos de la primera unidad, es conveniente introducir el concepto de &lt;b&gt;Habilidades Blandas&lt;/b&gt;, de modo familiarizarnos con las nuevas necesidades de la industria y los nuevos desafíos que en plena &lt;i&gt;Sociedad del Conocimiento&lt;/i&gt; deben relevar los futuros empleadas y empleados de la industria nacional.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote&gt;
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;&lt;a href=&#34;habilidades-blandas.html&#34;&gt;Habilidades Blandas (online)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;habilidades-blandas.pdf&#34;&gt;Habilidades Blandas (pdf)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

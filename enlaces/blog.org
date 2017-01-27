@@ -1,0 +1,10 @@
+* 2016
+** 2016-12 diciembre
+*** 2016-12-15 jueves
+**** TODO Deploy updates                                  :deploy:updates: 
+Iniciar deploy con últimos cambios.
+Escrito el <2016-12-15 jue 21:42>
+**** TODO Alegreya será la fuente principal en grump.css  :alegreya:grump: 
+
+Escrito el <2016-12-15 jue 21:57>
+*** 2016-12-16 viernes

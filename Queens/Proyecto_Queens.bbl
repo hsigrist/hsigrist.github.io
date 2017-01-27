@@ -1,0 +1,54 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{apa/global/}
+    \entry{gonzalez2004contribucion}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=ff6697c443b85312ae0f8ef22e676d91}{%
+           family={González},
+           familyi={G\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{uniquename=0,hash=c54029537cbdfba18e6ae5635a203c0b}{%
+           family={Wagenaar},
+           familyi={W\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Deusto, España: Universidad de Deusto Publicaciones}%
+      }
+      \strng{namehash}{f593e0e5fddbc48438a3d89a1c156497}
+      \strng{fullhash}{f593e0e5fddbc48438a3d89a1c156497}
+      \strng{authornamehash}{f593e0e5fddbc48438a3d89a1c156497}
+      \strng{authorfullhash}{f593e0e5fddbc48438a3d89a1c156497}
+      \field{sortinit}{G}
+      \field{sortinithash}{618d986594b7198ba52cf8b00d348f3f}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{La contribución de las universidades al proceso de Bolonia. Una introducción}
+      \field{year}{2004}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

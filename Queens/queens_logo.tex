@@ -1,0 +1,32 @@
+\documentclass[tikz,spanish]{standalone}
+\usetikzlibrary{decorations.text}
+\usepackage{fontspec,amssymb,amsmath}
+\setmainfont{CopperplateGothic-Bold}
+\setsansfont{GloriaHallelujah}
+\newfontfamily\bolderfont{CopperplateGothic-Bold}
+
+\definecolor{greeen}{RGB}{35 139 83}
+\definecolor{bluuue}{RGB}{22 93 194}
+
+\begin{document}
+
+\begin{tikzpicture}
+\begin{scope}[transparency group]
+\draw[color=gray,fill=black] (0,0) circle (3.5cm);
+\draw[color=gray,fill=white] (0,0) circle (2.6cm);
+\draw[color=gray,fill=black] (0,0) circle (2.5cm);
+\draw[color=gray,fill=bluuue] (0,0) circle (2.47cm);
+\end{scope}
+
+\draw[color=black] (0,0) circle (3.6cm);
+\path [postaction={decorate,decoration={raise=-1ex,text along path,reverse path,text align=center,text={|\bfseries\huge\color{white}|PROYECTO QUEENS}}}] (-29:3cm) arc (-29:210:3cm);
+\path [postaction={decorate,decoration={raise=-1ex,text along path, text align=center,
+text={|\bfseries\Large\color{white}|MATEMÁTICA INTEGRADA}}}] (190:3cm) arc (190:350:3cm);
+\draw (-2.4,1.4) node[anchor=north west] {\scalebox{3}{\Huge\textsf{\color{white}{ABP}}}};
+\end{tikzpicture}
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
