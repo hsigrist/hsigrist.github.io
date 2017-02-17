@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on hsigrist</title>
-    <link>http://hsigrist.github.io/project/index.xml</link>
+    <link>https://hsigrist.github.io/project/index.xml</link>
     <description>Recent content in Projects on hsigrist</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>Proyecto Brooklyn</title>
-      <link>http://hsigrist.github.io/project/proyecto-brooklyn/</link>
+      <link>https://hsigrist.github.io/project/proyecto-brooklyn/</link>
       <pubDate>Tue, 24 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://hsigrist.github.io/project/proyecto-brooklyn/</guid>
+      <guid>https://hsigrist.github.io/project/proyecto-brooklyn/</guid>
       <description>&lt;div class=&#34;abstract&#34;&gt;
 &lt;p&gt;
 Con el fin de infusionar el currículum Técnico Profesional de las distintas especialidades en la asignatura Matemática, se diseña un plan de articulación entre las competencias específicas y genéricas provenientes de la especialidad con aquellas que integran la enseñanza de la matemática en estudiantes de Tercer año Enseñanza Media. Se desarrolla un plan de articulación y adecuación evidenciados en la microimplementación curricular de la enseñanza Matemática, interviniendo con instrumentos como con planificaciones ad-hoc, que tributan por un lado, a las distintas capacidades y competencias necesarias y promovidas por los Planes y Programas propios del Currículum, como también a las capacidades genéricas, propias de la sociedad del s. XXI, descritas en el Proyecto Tuning Latinoamérica, que promocionan la formación de futuros profesionales idóneos y propenden al aprendizaje significativo y a lo largo de la vida (LLL, Life Long Learning por sus siglas en inglés).
@@ -168,13 +168,13 @@ Ciertamente, el desarrollo de la enseñanza Matemática debe ser coherente con l
     
     <item>
       <title>Proyecto Queens</title>
-      <link>http://hsigrist.github.io/project/proyecto-queens/</link>
+      <link>https://hsigrist.github.io/project/proyecto-queens/</link>
       <pubDate>Tue, 24 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://hsigrist.github.io/project/proyecto-queens/</guid>
+      <guid>https://hsigrist.github.io/project/proyecto-queens/</guid>
       <description>&lt;p&gt;Este Proyecto es una iniciativa personal que pretende implementar el &lt;em&gt;Aprendizaje Basado en Proyectos&lt;/em&gt; (ABP) en la asignatura matemática del currículum Técnico Profesional (TP) (ubicado en tercer nivel) y promover desde él una convergencia entre lso contenidos curriculares técnicos y las habilidades cognitivas matemáticas.&lt;/p&gt;
 
-&lt;p&gt;Una página dedicada al proyecto se encuentra en el enlace &lt;a href=&#34;http://hsigrist.github.io/Queens/Proyecto_Queens.html&#34;&gt;Queens&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Una página dedicada al proyecto se encuentra en el enlace &lt;a href=&#34;https://hsigrist.github.io/Queens/Proyecto_Queens.html&#34;&gt;Queens&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

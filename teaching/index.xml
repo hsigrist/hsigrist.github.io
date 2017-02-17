@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docencia on hsigrist</title>
-    <link>http://hsigrist.github.io/teaching/index.xml</link>
+    <link>https://hsigrist.github.io/teaching/index.xml</link>
     <description>Recent content in Docencia on hsigrist</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>CE12016 Comunicación Efectiva</title>
-      <link>http://hsigrist.github.io/teaching/CE12016/</link>
+      <link>https://hsigrist.github.io/teaching/CE12016/</link>
       <pubDate>Thu, 26 Jan 2017 14:26:13 -0300</pubDate>
       
-      <guid>http://hsigrist.github.io/teaching/CE12016/</guid>
+      <guid>https://hsigrist.github.io/teaching/CE12016/</guid>
       <description>&lt;nav id=&#34;table-of-contents&#34;&gt;
 &lt;h2&gt;&amp;Iacute;ndice&lt;/h2&gt;
 &lt;div id=&#34;text-table-of-contents&#34;&gt;

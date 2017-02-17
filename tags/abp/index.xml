@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Abp on hsigrist</title>
-    <link>http://hsigrist.github.io/tags/abp/index.xml</link>
+    <link>https://hsigrist.github.io/tags/abp/index.xml</link>
     <description>Recent content in Abp on hsigrist</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,10 +11,10 @@
     
     <item>
       <title>ABP</title>
-      <link>http://hsigrist.github.io/post/ABP/</link>
+      <link>https://hsigrist.github.io/post/ABP/</link>
       <pubDate>Thu, 26 Jan 2017 19:49:40 -0300</pubDate>
       
-      <guid>http://hsigrist.github.io/post/ABP/</guid>
+      <guid>https://hsigrist.github.io/post/ABP/</guid>
       <description>&lt;p&gt;lorem&lt;/p&gt;
 </description>
     </item>

@@ -28,13 +28,13 @@
   <link rel="stylesheet" href="/css/hugo-academic.css">
   
 
-  <link rel="alternate" href="http://hsigrist.github.io/index.xml" type="application/rss+xml" title="hsigrist">
-  <link rel="feed" href="http://hsigrist.github.io/index.xml" type="application/rss+xml" title="hsigrist">
+  <link rel="alternate" href="https://hsigrist.github.io/index.xml" type="application/rss+xml" title="hsigrist">
+  <link rel="feed" href="https://hsigrist.github.io/index.xml" type="application/rss+xml" title="hsigrist">
 
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://hsigrist.github.io/project/proyecto-brooklyn/">
+  <link rel="canonical" href="https://hsigrist.github.io/project/proyecto-brooklyn/">
 
   
 
@@ -318,7 +318,7 @@ Ciertamente, el desarrollo de la enseñanza Matemática debe ser coherente con l
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://hsigrist.github.io/project/proyecto-queens/"><span
+    <li class="previous"><a href="https://hsigrist.github.io/project/proyecto-queens/"><span
       aria-hidden="true">&larr;</span> Proyecto Queens</a></li>
     
 
@@ -355,6 +355,26 @@ Ciertamente, el desarrollo de la enseñanza Matemática debe ser coherente con l
     <script src="/js/hugo-academic.js"></script>
     
 
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-47163105-1', 'auto');
+        ga('send', 'pageview');
+
+         
+        var links = document.querySelectorAll('a');
+        Array.prototype.map.call(links, function(item) {
+            if (item.host != document.location.host) {
+                item.addEventListener('click', function() {
+                    var action = item.getAttribute('data-action') || 'follow';
+                    ga('send', 'event', 'outbound', action, item.href);
+                });
+            }
+        });
+    </script>
     
 
     

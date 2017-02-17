@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Proyecto Queens on hsigrist</title>
-    <link>http://hsigrist.github.io/tags/proyecto-queens/index.xml</link>
+    <link>https://hsigrist.github.io/tags/proyecto-queens/index.xml</link>
     <description>Recent content in Proyecto Queens on hsigrist</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,13 +11,13 @@
     
     <item>
       <title>Proyecto Queens</title>
-      <link>http://hsigrist.github.io/project/proyecto-queens/</link>
+      <link>https://hsigrist.github.io/project/proyecto-queens/</link>
       <pubDate>Tue, 24 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://hsigrist.github.io/project/proyecto-queens/</guid>
+      <guid>https://hsigrist.github.io/project/proyecto-queens/</guid>
       <description>&lt;p&gt;Este Proyecto es una iniciativa personal que pretende implementar el &lt;em&gt;Aprendizaje Basado en Proyectos&lt;/em&gt; (ABP) en la asignatura matemática del currículum Técnico Profesional (TP) (ubicado en tercer nivel) y promover desde él una convergencia entre lso contenidos curriculares técnicos y las habilidades cognitivas matemáticas.&lt;/p&gt;
 
-&lt;p&gt;Una página dedicada al proyecto se encuentra en el enlace &lt;a href=&#34;http://hsigrist.github.io/Queens/Proyecto_Queens.html&#34;&gt;Queens&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Una página dedicada al proyecto se encuentra en el enlace &lt;a href=&#34;https://hsigrist.github.io/Queens/Proyecto_Queens.html&#34;&gt;Queens&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
