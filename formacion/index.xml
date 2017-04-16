@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Formacions on hsigrist</title>
+    <link>https://hsigrist.github.io/formacion/</link>
+    <description>Recent content in Formacions on hsigrist</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 1999-2017 Hans Sigrist</copyright>
+    <atom:link href="/formacion/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title></title>
+      <link>https://hsigrist.github.io/formacion/para_que_evaluar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hsigrist.github.io/formacion/para_que_evaluar/</guid>
+      <description>&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;
+&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Strict//EN&#34;
+&#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&#34;&gt;
+&lt;html xmlns=&#34;http://www.w3.org/1999/xhtml&#34; lang=&#34;es&#34; xml:lang=&#34;es&#34;&gt;
+&lt;head&gt;
+&lt;!-- 2017-04-15 Sat 17:21 --&gt;
+&lt;meta http-equiv=&#34;Content-Type&#34; content=&#34;text/html;charset=utf-8&#34; /&gt;
+&lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1&#34; /&gt;
+&lt;title&gt;¿Para qué evaluar?&lt;/title&gt;
+&lt;meta name=&#34;generator&#34; content=&#34;Org mode&#34; /&gt;
+&lt;meta name=&#34;author&#34; content=&#34;Hans Sigrist&#34; /&gt;
+&lt;meta name=&#34;description&#34; content=&#34;Estrategias para relevar el impacto de la evaluación en el aprendizaje de los estudiantes, a reconocer el potencial de la evaluación en el fortalecimiento de la enseñanza, y a identificar los diferentes usos de los resultados de la evaluación en el fortalecimiento de las prácticas pedagógicas.&#34;
+ /&gt;
+&lt;meta name=&#34;keywords&#34; content=&#34;evaluación&#34; /&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+ &lt;!--/*--&gt;&lt;![CDATA[/*&gt;&lt;!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: &#39;Asymptote&#39;; }
+  pre.src-awk:before { content: &#39;Awk&#39;; }
+  pre.src-C:before { content: &#39;C&#39;; }
+  /* pre.src-C++ doesn&#39;t work in CSS */
+  pre.src-clojure:before { content: &#39;Clojure&#39;; }
+  pre.src-css:before { content: &#39;CSS&#39;; }
+  pre.src-D:before { content: &#39;D&#39;; }
+  pre.src-ditaa:before { content: &#39;ditaa&#39;; }
+  pre.src-dot:before { content: &#39;Graphviz&#39;; }
+  pre.src-calc:before { content: &#39;Emacs Calc&#39;; }
+  pre.src-emacs-lisp:before { content: &#39;Emacs Lisp&#39;; }
+  pre.src-fortran:before { content: &#39;Fortran&#39;; }
+  pre.src-gnuplot:before { content: &#39;gnuplot&#39;; }
+  pre.src-haskell:before { content: &#39;Haskell&#39;; }
+  pre.src-java:before { content: &#39;Java&#39;; }
+  pre.src-js:before { content: &#39;Javascript&#39;; }
+  pre.src-latex:before { content: &#39;LaTeX&#39;; }
+  pre.src-ledger:before { content: &#39;Ledger&#39;; }
+  pre.src-lisp:before { content: &#39;Lisp&#39;; }
+  pre.src-lilypond:before { content: &#39;Lilypond&#39;; }
+  pre.src-lua:before { content: &#39;Lua&#39;; }
+  pre.src-matlab:before { content: &#39;MATLAB&#39;; }
+  pre.src-mscgen:before { content: &#39;Mscgen&#39;; }
+  pre.src-ocaml:before { content: &#39;Objective Caml&#39;; }
+  pre.src-octave:before { content: &#39;Octave&#39;; }
+  pre.src-org:before { content: &#39;Org mode&#39;; }
+  pre.src-oz:before { content: &#39;OZ&#39;; }
+  pre.src-plantuml:before { content: &#39;Plantuml&#39;; }
+  pre.src-processing:before { content: &#39;Processing.js&#39;; }
+  pre.src-python:before { content: &#39;Python&#39;; }
+  pre.src-R:before { content: &#39;R&#39;; }
+  pre.src-ruby:before { content: &#39;Ruby&#39;; }
+  pre.src-sass:before { content: &#39;Sass&#39;; }
+  pre.src-scheme:before { content: &#39;Scheme&#39;; }
+  pre.src-screen:before { content: &#39;Gnu Screen&#39;; }
+  pre.src-sed:before { content: &#39;Sed&#39;; }
+  pre.src-sh:before { content: &#39;shell&#39;; }
+  pre.src-sql:before { content: &#39;SQL&#39;; }
+  pre.src-sqlite:before { content: &#39;SQLite&#39;; }
+  /* additional languages in org.el&#39;s org-babel-load-languages alist */
+  pre.src-forth:before { content: &#39;Forth&#39;; }
+  pre.src-io:before { content: &#39;IO&#39;; }
+  pre.src-J:before { content: &#39;J&#39;; }
+  pre.src-makefile:before { content: &#39;Makefile&#39;; }
+  pre.src-maxima:before { content: &#39;Maxima&#39;; }
+  pre.src-perl:before { content: &#39;Perl&#39;; }
+  pre.src-picolisp:before { content: &#39;Pico Lisp&#39;; }
+  pre.src-scala:before { content: &#39;Scala&#39;; }
+  pre.src-shell:before { content: &#39;Shell Script&#39;; }
+  pre.src-ebnf2ps:before { content: &#39;ebfn2ps&#39;; }
+  /* additional language identifiers per &#34;defun org-babel-execute&#34;
+       in ob-*.el */
+  pre.src-cpp:before  { content: &#39;C++&#39;; }
+  pre.src-abc:before  { content: &#39;ABC&#39;; }
+  pre.src-coq:before  { content: &#39;Coq&#39;; }
+  pre.src-groovy:before  { content: &#39;Groovy&#39;; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: &#39;bash&#39;; }
+  pre.src-csh:before  { content: &#39;csh&#39;; }
+  pre.src-ash:before  { content: &#39;ash&#39;; }
+  pre.src-dash:before  { content: &#39;dash&#39;; }
+  pre.src-ksh:before  { content: &#39;ksh&#39;; }
+  pre.src-mksh:before  { content: &#39;mksh&#39;; }
+  pre.src-posh:before  { content: &#39;posh&#39;; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: &#39;Ada&#39;; }
+  pre.src-asm:before { content: &#39;Assembler&#39;; }
+  pre.src-caml:before { content: &#39;Caml&#39;; }
+  pre.src-delphi:before { content: &#39;Delphi&#39;; }
+  pre.src-html:before { content: &#39;HTML&#39;; }
+  pre.src-idl:before { content: &#39;IDL&#39;; }
+  pre.src-mercury:before { content: &#39;Mercury&#39;; }
+  pre.src-metapost:before { content: &#39;MetaPost&#39;; }
+  pre.src-modula-2:before { content: &#39;Modula-2&#39;; }
+  pre.src-pascal:before { content: &#39;Pascal&#39;; }
+  pre.src-ps:before { content: &#39;PostScript&#39;; }
+  pre.src-prolog:before { content: &#39;Prolog&#39;; }
+  pre.src-simula:before { content: &#39;Simula&#39;; }
+  pre.src-tcl:before { content: &#39;tcl&#39;; }
+  pre.src-tex:before { content: &#39;TeX&#39;; }
+  pre.src-plain-tex:before { content: &#39;Plain TeX&#39;; }
+  pre.src-verilog:before { content: &#39;Verilog&#39;; }
+  pre.src-vhdl:before { content: &#39;VHDL&#39;; }
+  pre.src-xml:before { content: &#39;XML&#39;; }
+  pre.src-nxml:before { content: &#39;XML&#39;; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list &#39;org-latex-listings-langs &#39;(conf &#34; &#34;)) in .emacs */
+  pre.src-conf:before { content: &#39;Configuration File&#39;; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]&gt;*/--&gt;
+&lt;/style&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;Grump.css&#34; /&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+&lt;!--
+.header_author {font-size: 1em; font-weight: bold;text-align:center;}
+--&gt;
+&lt;/style&gt;
+&lt;meta name=&#34;robots&#34; content=&#34;INDEX,NOFOLLOW&#34; /&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+&lt;!--/*--&gt;&lt;![CDATA[/*&gt;&lt;!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = &#34;code-highlighted&#34;;
+     elem.className   = &#34;code-highlighted&#34;;
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]&gt;*///--&gt;
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&#34;org-div-home-and-up&#34;&gt;
+ &lt;a accesskey=&#34;h&#34; href=&#34;http://hsigrist.github.io/docencia/&#34;&gt; UP &lt;/a&gt;
+ |
+ &lt;a accesskey=&#34;H&#34; href=&#34;http://hsigrist.github.io&#34;&gt; HOME &lt;/a&gt;
+&lt;/div&gt;&lt;div id=&#34;wrapper&#34;&gt;
+&lt;h1 class=&#34;title&#34;&gt;¿Para qué evaluar?
+&lt;br&gt;
+&lt;span class=&#34;subtitle&#34;&gt;Notas del curso impartido por Fundación Chile&lt;/span&gt;
+&lt;/h1&gt;
+&lt;div class=&#34;header&#34;&gt;
+&lt;div class=&#34;header_author&#34;&gt;
+&lt;p&gt;
+Hans Sigrist
+&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class=&#34;abstract&#34;&gt;
+&lt;p&gt;
+Dimensionar el impacto de la evaluación de los aprendizajes en el proceso formativo de los y las estudiantes.
+&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;div id=&#34;table-of-contents&#34;&gt;
+&lt;h2&gt;&amp;Iacute;ndice&lt;/h2&gt;
+&lt;div id=&#34;text-table-of-contents&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#orgf595fa1&#34;&gt;1. Observación&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#orge6b4b54&#34;&gt;1.1. Caso 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#org0e15097&#34;&gt;1.2. Caso 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#org6d2e562&#34;&gt;1.3. Caso 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#org0f54fd1&#34;&gt;1.4. Para analizar las experiencias&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#orgfc6e67e&#34;&gt;1.5. Foro para analizar las experiencias&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#org78adfa4&#34;&gt;1.5.1. de Andrea Vásquez Guerra - martes, 28 de marzo de 2017, 14:42&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#org28e79c7&#34;&gt;1.5.2. de valeria paz jara novoa .. - miércoles, 12 de abril de 2017, 20:50&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#orgb7d250e&#34;&gt;1.5.3. de Maria Eugenia Chara Niño .. - jueves, 13 de abril de 2017, 15:40&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#org2ba6dbe&#34;&gt;1.5.4. de Hans Sigrist - sábado, 15 de abril de 2017, 10:37&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#org8d18e92&#34;&gt;1.5.5. de Hans Sigrist - sábado, 15 de abril de 2017, 11:21&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#orgcae5ad6&#34;&gt;2. Fase 3 Conceptualización&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#orgbb6e947&#34;&gt;2.1. Definición de evaluación&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#org72f6768&#34;&gt;2.2. ¿He aprendido?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#orgc1ca0cd&#34;&gt;2.3. Evaluación para el aprendizaje&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#org0dd5ef8&#34;&gt;2.4. 5 principios de una buena evaluación&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#orgeb61230&#34;&gt;2.5. Lo central: la retroalimentación&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#org3ed3839&#34;&gt;2.6. Rol de los actores del proceso de enseñanza aprendizaje en la evaluación para el aprendizaje&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#orge93535a&#34;&gt;2.6.1. Los Docentes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#org5a7ba87&#34;&gt;2.6.2. Los Estudiantes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#org1fa5f65&#34;&gt;2.7. Componentes de la evaluación&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#org3762a87&#34;&gt;2.7.1. 1.Finalidad: ¿para qué evaluar?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#org6b4b48b&#34;&gt;2.7.2. 2.Objeto: ¿qué evaluar?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#orgdb40498&#34;&gt;2.7.3. 3.Información: ¿a través de qué medio se evaluará?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#org57eb03e&#34;&gt;2.7.4. 4.Agente: ¿quién evalúa?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#orgc287bc3&#34;&gt;2.7.5. 5.Momento: ¿cuándo evaluar?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#org8a5d5e2&#34;&gt;2.7.6. 6.Valoración: ¿respecto de qué evalúo?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#orga3a8c3e&#34;&gt;2.7.7. 7.Informe de evaluación: ¿Cómo informo?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#orgf1884e7&#34;&gt;2.8. Práctica docente&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#orga002a9a&#34;&gt;2.9. Actividad práctica&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-orgf595fa1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;orgf595fa1&#34;&gt;&lt;span class=&#34;section-number-2&#34;&gt;1&lt;/span&gt; Observación&lt;/h2&gt;
+&lt;div class=&#34;outline-text-2&#34; id=&#34;text-1&#34;&gt;
+&lt;/div&gt;&lt;div id=&#34;outline-container-orge6b4b54&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;orge6b4b54&#34;&gt;&lt;span class=&#34;section-number-3&#34;&gt;1.1&lt;/span&gt; Caso 1&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-1-1&#34;&gt;
+&lt;p&gt;
+Una profesora trabajó en clases ejercicios de matemáticas que consistían en resolver cálculos con reserva. Una vez finalizada la actividad, la profesora revisa los cuadernos y los entrega a cada estudiante con las correcciones. 
+&lt;/p&gt;
+
+
+&lt;div class=&#34;figure&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;file:///Users/hsigrist/Dropbox/Org/org-mode/formacion_continua/para_que_evaluar/f2.1.jpg&#34; alt=&#34;f2.1.jpg&#34; /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+Al entregárselos se dirige uno a uno y les entrega retroalimentación de sus resultados. Se detiene con Emilia y le indica: “resolviste los ejercicios, distingues cuando debes resolver sumas o restas, pero todavía te cuesta resolver sumas más complejas como las sumas con reserva. En esta prueba te equivocaste en el ejercicio 3 y 5”
+&lt;/p&gt;
+
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;¿Qué se puede observar de esta experiencia?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+Existe una falta de coherencia entre lo que se pretende enseñar y lo evaluado. En tanto, tan solo dos de seis preguntas abordan las sumas con reserva. Y son precisamente aquellos dos ejercicios los malos.  
+&lt;/p&gt;
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;¿Cómo es la retroalimentación que la docente le entrega a Emilia?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+Es una retroalimentación, sesgada, en tanto la dificultad que la profesora observa en la estudiante, se desprende de una evaluación que no fue orientada al aprendizaje: no midió lo enseñado, y lo aprendido no supera lo conocido (sumas sin reserva).
+&lt;/p&gt;
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;¿Qué podría hacer la docente para mejorar la retroalimentación y provocar que el estudiante tenga un aprendizaje significativo?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+Primero, evaluar de una manera coherente, poniendo el foco en el aprendizaje y no midiendo la enseñanza. Evitar juicios valorativos, como expresar que le cuesta resolver sumas más complejas, puesto que la evaluación en un 66.6% evalúa un contenido distinto al objeto de la evaluación.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-org0e15097&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;org0e15097&#34;&gt;&lt;span class=&#34;section-number-3&#34;&gt;1.2&lt;/span&gt; Caso 2&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-1-2&#34;&gt;
+&lt;p&gt;
+La profesora revisa las pruebas realizadas a los estudiantes y hace marcas de colores frente a sus respuestas, escribe puntajes y agrega anotaciones que la mayoría de las veces son poco legibles.
+&lt;/p&gt;
+
+
+&lt;div class=&#34;figure&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;file:///Users/hsigrist/Dropbox/Org/org-mode/formacion_continua/para_que_evaluar/c2.jpg&#34; alt=&#34;c2.jpg&#34; /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+A partir de esta situación que pudo haber ocurrido en tu formación docente, reflexiona en base a las siguientes preguntas:
+&lt;/p&gt;
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;¿Qué sentido tiene entregar al estudiante las marcas que el docente hace sobre las palabras?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+Ninguna, son más bien reflexiones internas que se hace el docente evaluador. No comparte ni retro-alimenta nada con el estudiante. Más bien, insiste en interpelar al estudiante en aquello que resulta obvio que ya no supo. 
+&lt;/p&gt;
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;¿Hasta qué punto es útil para el estudiante saber que obtuvo 8,5 puntos de un total de 22?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+Conocer el puntaje no permite al estudiante conocer sus errores y posibles mejoras. Retroalimentar con puntaje y por ende con una calificación de esta forma, es más bien un castigo y no resulta una fuente de aprendizaje.
+&lt;/p&gt;
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;En este caso la profesora tarja parte de la respuesta y además corrige varias de las otras. ¿Cómo crees que esto puede ayudar al estudiante a mejorar su aprendizaje a partir de sus errores?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+No se muestra un camino claro que pueda seguir el estudiante, tan sólo se le entrega una evaluación con enmiendas que son mensajes para la misma profesora, además la oportunidad de aprendizaje que el estudiante espera es antes de ser evaluado no después.
+&lt;/p&gt;
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;¿Cómo consideras que fue la retroalimentación que el profesor o profesora entrega al estudiante?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+Deficiente, castigadora, sesgada y egoísta.
+&lt;/p&gt;
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;¿Qué emoción (es) crees que vive el estudiante cuando recibe información de su desempeño a través de la retroalimentación? ¿Cómo esta retroalimentación le permite alcanzar sus metas?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+Las emociones más comunes luego de una retroalimentación autocomplaciente, castigadora y sesgada son: miedo, frustración, derrota y el convencimiento (erróneo e inducido sádicamente) de que el estudiante no puede aprender, no sabe aprender y no podrá aprender. Este tipo de retroalimentación no se alinea con el aprendizaje significativo ni con la consecución de metas de aprendizaje, en tanto no promueve en él nada que lo impulse a seguir adelante. 
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-org6d2e562&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;org6d2e562&#34;&gt;&lt;span class=&#34;section-number-3&#34;&gt;1.3&lt;/span&gt; Caso 3&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-1-3&#34;&gt;
+&lt;p&gt;
+Tal como estaba planificado, una profesora de historia propone a sus estudiantes realizar un debate para trabajar los conceptos de ciudadanía y participación ciudadana. Entrega algunas orientaciones y divide a los estudiantes en distintos grupos. Luego de un rato, se da cuenta a partir de la observación de su curso, que si bien los estudiantes están trabajando no logran avanzar ni coordinarse entre sí Decide entonces cambiar la estrategia y asigna roles más definidos al interior de los grupos y les plantea metas concretas para cada clases. Sus estudiantes asumen de buena manera estos cambios, logrando cumplir con los objetivos de aprendizaje definidos para la actividad.
+&lt;/p&gt;
+
+
+&lt;div class=&#34;figure&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;file:///Users/hsigrist/Dropbox/Org/org-mode/formacion_continua/para_que_evaluar/c3.png&#34; alt=&#34;c3.png&#34; /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+Considerando las características de la evaluación:
+&lt;/p&gt;
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;¿De qué manera la profesora realizó el proceso de evaluación?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+La evaluación de un debate requiere de rúbricas específicas y dinámicas, se evalúa un proceso, un rendimiento, un producto, un atributo 
+&lt;/p&gt;
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;¿Qué sentido tiene recoger información general respecto del desempeño del curso?&lt;/li&gt;
+&lt;li&gt;¿En qué medida la recogida de información de la profesora sirve para el aprendizaje de sus estudiantes?&lt;/li&gt;
+&lt;li&gt;¿Qué impacto tiene la evaluación en los estudiantes y su proceso de aprendizaje?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-org0f54fd1&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;org0f54fd1&#34;&gt;&lt;span class=&#34;section-number-3&#34;&gt;1.4&lt;/span&gt; Para analizar las experiencias&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-1-4&#34;&gt;
+&lt;p&gt;
+Para mayor complemento, Miguel Santos Guerra, entrega variadas situaciones que permiten a los docentes ver sus prácticas pedagógicas en torno al por qué evaluar y desde las cuáles es posible inferir y establecer principios respecto a la evaluación educativa.Veamos el siguiente video:
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;a href=&#34;https://youtu.be/zhbM8dzpIYA&#34;&gt;La evaluacion como aprendizaje Santos Guerra&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+Tras la observación de estas situaciones les invitamos a participar en el foro y responder algunas preguntas que amplíen la reflexión en torno a:
+&lt;/p&gt;
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;¿Cómo consideras que debe ser la retroalimentación que el profesor o profesora entrega al estudiante?&lt;/li&gt;
+&lt;li&gt;¿En qué aspectos se debe centrar la evaluación educativa para que esta cumpla con su fin?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-orgfc6e67e&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;orgfc6e67e&#34;&gt;&lt;span class=&#34;section-number-3&#34;&gt;1.5&lt;/span&gt; Foro para analizar las experiencias&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-1-5&#34;&gt;
+&lt;/div&gt;&lt;div id=&#34;outline-container-org78adfa4&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;org78adfa4&#34;&gt;&lt;span class=&#34;section-number-4&#34;&gt;1.5.1&lt;/span&gt; de Andrea Vásquez Guerra - martes, 28 de marzo de 2017, 14:42&lt;/h4&gt;
+&lt;div class=&#34;outline-text-4&#34; id=&#34;text-1-5-1&#34;&gt;
+&lt;p&gt;
+¡Hola! 
+Acabas de reflexionar sobre situaciones de evaluación, desde el punto de vista del profesor y del estudiante. También viste un video que nos hace pensar sobre la evaluación centrada en los aprendizajes. Respecto a estos temas, ¿Cómo consideras que debe ser la retroalimentación que el profesor o profesora entrega al estudiante?, ¿en qué aspectos se debe centrar la evaluación educativa para que esta cumpla con su fin? 
+&lt;/p&gt;
+
+&lt;p&gt;
+Haz click en “Responder” para dejar tus comentarios. 
+&lt;/p&gt;
+
+&lt;p&gt;
+¡No olvides presentarte!
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-org28e79c7&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;org28e79c7&#34;&gt;&lt;span class=&#34;section-number-4&#34;&gt;1.5.2&lt;/span&gt; de valeria paz jara novoa .. - miércoles, 12 de abril de 2017, 20:50&lt;/h4&gt;
+&lt;div class=&#34;outline-text-4&#34; id=&#34;text-1-5-2&#34;&gt;
+&lt;p&gt;
+La retroalimentación, en primer lugar, debe ser pertinente, es decir, debe responder las dudas del estudiante para asegurar que comprende el porqué se equivocó, cuáles son los procesos, etc. También debe ser inmediatamente posterior a la evaluación, para que tenga sentido para el estudiante. Por último, debe presentar primero los aspectos positivos del estudiante y los procesos que desarrolló para responder la evaluación, para luego indicar los aspectos en que debe mejorar con respecto a su evaluación.
+&lt;/p&gt;
+
+&lt;p&gt;
+En relación a la evaluación, debe centrarse en las habilidades y no sólo en los contenidos.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-orgb7d250e&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;orgb7d250e&#34;&gt;&lt;span class=&#34;section-number-4&#34;&gt;1.5.3&lt;/span&gt; de Maria Eugenia Chara Niño .. - jueves, 13 de abril de 2017, 15:40&lt;/h4&gt;
+&lt;div class=&#34;outline-text-4&#34; id=&#34;text-1-5-3&#34;&gt;
+&lt;p&gt;
+La retroalimentación   que el profesor entrega al estudiante   debe estar   mediada por el diálogo centrada en lo que el estudiante logró y que permite ser la base para    continúe reforzando los aprendizajes esperados atendiendo a su forma   y estilo de aprender.  En esa   perspectiva cobra importancia reflexionar entorno a dos aspectos:  Primero ¿para qué se coloca un porcentaje, se subraya una palabra o se coloca un signo si esto no le está informando nada en relación con sus avances?, y segundo en la retroalimentación ¿qué papel juega el docente en la evaluación y su respectiva retroalimentación?
+&lt;/p&gt;
+
+&lt;p&gt;
+La retroalimentación debería garantizar el derecho   al éxito escolar   de  cada uno de los actores de la escuela: estudiantes, docentes, padres de familia , la sociedad.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-org2ba6dbe&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;org2ba6dbe&#34;&gt;&lt;span class=&#34;section-number-4&#34;&gt;1.5.4&lt;/span&gt; de Hans Sigrist - sábado, 15 de abril de 2017, 10:37&lt;/h4&gt;
+&lt;div class=&#34;outline-text-4&#34; id=&#34;text-1-5-4&#34;&gt;
+&lt;p&gt;
+Hola a todas y todos, mi nombre es Hans Sigrist y soy profesor de matemática en enseñanza media. Respecto de la interrogante planteada y a partir de los casos expuestos, el Caso 1 es un muy buen ejemplo de una muy mala práctica: ausencia de coherencia evaluativa, la que resulta evidente en tanto se evalúan apenas 2 preguntas de sumas con reserva y otras cuatro sin reserva. No resulta extraño entonces que el estudiante conteste mal precisamente aquello que menos se intenciona o se promueve. En este sentido, entiendo la coherencia como un factor crítico de éxito, su ausencia se traduce en sesgo. Contextualizando con el Caso 2, pienso que una retroalimentación no debe incluir reflexiones internas (marcas, preguntas, tachados, etc) que se hace el docente evaluador, con ello no comparte ni retro-alimenta nada con el estudiante. Más bien, insiste en interpelar al estudiante en aquello que resulta obvio que ya no supo. Al respecto, las emociones más comunes luego de una retroalimentación autocomplaciente, castigadora y sesgada son: miedo, frustración, derrota y el convencimiento (erróneo e inducido sádicamente) de que el estudiante no puede aprender, no sabe aprender y no podrá aprender. Este tipo de retroalimentación no se alinea con el aprendizaje significativo ni con la consecución de metas de aprendizaje, en tanto no promueve en él nada que lo impulse a seguir adelante. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Frente a la segunda interrogante, preguntar por las finalidades de la evaluación es preguntarse en alguna medida por sus funciones, y ésta a su vez, está en estrecha relación con el papel de la educación en la sociedad. En consecuencia, están vinculadas con la concepción de la enseñanza y con el aprendizaje que se quiere promover y el que se promueve. En este sentido, una evaluación educativa, debiera centrarse (pretendiendo o no) en funciones sociales, en tanto certificamos el saber, lo acreditamos, lo seleccionamos y finalmente lo promovemos; funciones de control en retirada en mi opinión, ya que abogamos por una relación educativa democrática. sin embargo aún persisten intentos conductistas dados por la asimetría profesor/estudiante que permiten el desarrollo y evaluación de lo normal, lo adecuado, lo relevante, lo bueno respecto del comportamiento de los estudiantes; y finalmente funciones pedagógicas por ejemplo, determinar los resultados y la calidad de éstos. Si se alcanza o no el aprendizaje esperado, etc.
+&lt;/p&gt;
+
+&lt;p&gt;
+Cordiales saludos, Hans.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-org8d18e92&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;org8d18e92&#34;&gt;&lt;span class=&#34;section-number-4&#34;&gt;1.5.5&lt;/span&gt; de Hans Sigrist - sábado, 15 de abril de 2017, 11:21&lt;/h4&gt;
+&lt;div class=&#34;outline-text-4&#34; id=&#34;text-1-5-5&#34;&gt;
+&lt;p&gt;
+Hola reciban todos y todas un cordial saludo, no mencioné en mi respuesta anterior el contundente efecto del docente como líder transformacional, en este sentido, un docente transformacional tiene, entre otros componentes: un entendimiento cognitivo de cómo aprenden sus estudiantes; también rescato el hecho que, tiene una preparación emocional para relacionarse con sus estudiantes. La principal función de un docente alineado con el cambio, es que ya sea por que evalúa o enseña, éste comprende que en el fondo transforma, de ahí que su principal rol es facilitar que sus estudiantes se involucren en forma activa en el desarrollo de conocimientos y habilidades, logrando que alcancen altos niveles de pensamiento crítico. Debemos convertirnos en docentes motivados al logro e inspirar con el ejemplo. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Lamentablemente, tal como ya lo dije en otro foro, una gran barrera que impide la concreción de una enseñanza alineada con el cambio, es que los docentes de ayer fueron educados bajo un paradigma muy distinto al que pretendemos promover hoy, por así decirlo, ¿Profesionales de la educación formados en un modelo centrado en el docente (enseñanza directiva) y bajo un paradigma conductista, podrán sumarse fácilmente a modelos construccionistas o de orden superior? Y extrapolando, ¿Si fueron evaluados con instrumentos de ultranza rígidos y que castigaban con la nota, resistirán la tentación de premiar y castigar con las evaluaciones?
+&lt;/p&gt;
+
+&lt;p&gt;
+Éxito a todas y todas en este camino, saludos Hans.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-orgcae5ad6&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;orgcae5ad6&#34;&gt;&lt;span class=&#34;section-number-2&#34;&gt;2&lt;/span&gt; Fase 3 Conceptualización&lt;/h2&gt;
+&lt;div class=&#34;outline-text-2&#34; id=&#34;text-2&#34;&gt;
+&lt;/div&gt;&lt;div id=&#34;outline-container-orgbb6e947&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;orgbb6e947&#34;&gt;&lt;span class=&#34;section-number-3&#34;&gt;2.1&lt;/span&gt; Definición de evaluación&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-2-1&#34;&gt;
+&lt;p&gt;
+En ese contexto una definición de Evaluación es la que entregan Himmel, Olivares y Zabalza (1999) que refiere a un &amp;laquo;proceso que lleva a emitir un juicio acerca de un/unos atributo(s) de algo o alguien, fundamentado en información obtenida, procesada y analizada correctamente y contrastada con un referente claramente establecido (…), que está encaminado a mejorar los procesos educacionales y que produce efectos educativos en sus participantes&amp;raquo;.
+&lt;/p&gt;
+
+&lt;p&gt;
+Para efectos de comprensión y análisis se plantean estas etapas de manera desagregadas. En el contexto de aula y cuando este proceso está internalizado en el quehacer docente, no se requiere detenerse mayormente en cada una de ellas, formando parte de la práctica cotidiana de los y las docentes.
+&lt;/p&gt;
+
+
+&lt;div class=&#34;figure&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;file:///Users/hsigrist/Dropbox/Org/org-mode/formacion_continua/para_que_evaluar/f3_1.png&#34; alt=&#34;f3_1.png&#34; /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;¿Visualiza estas etapas en alguna situación evaluativa propia del proceso de enseñanza aprendizaje (sin considerar las pruebas formales)?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+Esta concepción implica que durante el proceso formativo, el docente debe estar recogiendo información respecto de los referentes establecidos, los objetivos de aprendizaje y sus indicadores, para ir monitoreando el avance de sus estudiantes y de esta forma orientarlos respecto de su trabajo o bien reorientar las estrategias pedagógicas utilizadas. 
+&lt;/p&gt;
+
+
+&lt;div class=&#34;figure&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;file:///Users/hsigrist/Dropbox/Org/org-mode/formacion_continua/para_que_evaluar/f3_2.png&#34; alt=&#34;f3_2.png&#34; /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;¿Cada cuánto crees que se debe recoger información?&lt;/li&gt;
+&lt;li&gt;¿Cómo utilizarías las evidencias recogidas?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-org72f6768&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;org72f6768&#34;&gt;&lt;span class=&#34;section-number-3&#34;&gt;2.2&lt;/span&gt; ¿He aprendido?&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-2-2&#34;&gt;
+&lt;p&gt;
+Han surgido nuevas corrientes dentro de la evaluación que plantean que se debe utilizar dicha información, no sólo para tomar decisiones respecto del desempeño final de los estudiantes en función de un aprendizaje determinado, sino que se debe utilizar este proceso para potenciar el aprendizaje, utilizando la evaluación como una estrategia pedagógica más que potencie los logros de los y las estudiantes.
+&lt;/p&gt;
+
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;¿Crees que esto podría mejorar tus prácticas docentes?&lt;/li&gt;
+&lt;li&gt;¿Mejorará esto el nivel de logro de los aprendizajes de tus estudiantes?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-orgc1ca0cd&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;orgc1ca0cd&#34;&gt;&lt;span class=&#34;section-number-3&#34;&gt;2.3&lt;/span&gt; Evaluación para el aprendizaje&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-2-3&#34;&gt;
+&lt;p&gt;
+Surge en este contexto la evaluación para el aprendizaje que se define como:
+&lt;/p&gt;
+
+&lt;p&gt;
+&amp;laquo;El proceso de búsqueda e interpretación de evidencias para ser usada por los estudiantes y sus docentes para decidir dónde se encuentran los aprendices en sus procesos de aprendizaje, hacia dónde necesitan dirigirse y cuál es el mejor modo de llegar hasta allí.&amp;raquo; (Fuente: Broadfoot, Daugherty, Gardner, Harlen, James &amp;amp; Stobart, 2002).
+&lt;/p&gt;
+
+
+&lt;div class=&#34;figure&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;file:///Users/hsigrist/Dropbox/Org/org-mode/formacion_continua/para_que_evaluar/f3_3.png&#34; alt=&#34;f3_3.png&#34; /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-org0dd5ef8&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;org0dd5ef8&#34;&gt;&lt;span class=&#34;section-number-3&#34;&gt;2.4&lt;/span&gt; 5 principios de una buena evaluación&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-2-4&#34;&gt;
+&lt;ol class=&#34;org-ol&#34;&gt;
+&lt;li&gt;&lt;b&gt;La evaluación debe estar al servicio del aprendizaje&lt;/b&gt;: el foco debe estar en mejorar el aprendizaje, no en la calificación.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Múltiples medidas entregan una visión mas detallada&lt;/b&gt;: esto implica diversificar las formas de obtener evidencia respecto a los aprendizajes, utilizar variados instrumentos de evaluación.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Las evaluaciones deben estar alineadas con las metas&lt;/b&gt;: para deducir conclusiones a partir de los resultados, las evaluaciones deben estar directamente relacionadas con los aprendizajes planificados y trabajados.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Las evaluaciones deben medir lo que es importante&lt;/b&gt;: lo que evaluamos es una señal a los estudiantes de lo que valoramos como aprendizaje, por lo que debemos revisar constantemente si estamos enviando las señales correctas.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Las evaluaciones deben ser equitativas&lt;/b&gt;: se debe dar a todos los estudiantes oportunidades de mostrar lo que saben, entienden y saben hacer.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-orgeb61230&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;orgeb61230&#34;&gt;&lt;span class=&#34;section-number-3&#34;&gt;2.5&lt;/span&gt; Lo central: la retroalimentación&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-2-5&#34;&gt;
+&lt;p&gt;
+En este contexto lo más importante pasa a ser el insumo que tengan los estudiantes para potenciar su aprendizaje. Es en este sentido que destaca la retroalimentación definida como “un proceso mediante el cual los estudiantes obtienen información acerca de su trabajo con el fin de apreciar las similitudes y diferencias entre los estándares adecuados al trabajo dado, y las cualidades de este, con el fin de generar un mejor trabajo.” (Fuente: D. Boud, 2015, p.4)
+&lt;/p&gt;
+
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;¿De qué manera te han entregado retroalimentación en tu rol de estudiante?&lt;/li&gt;
+&lt;li&gt;¿Cuál de estas formas te ha permito aprender más y mejor?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-org3ed3839&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;org3ed3839&#34;&gt;&lt;span class=&#34;section-number-3&#34;&gt;2.6&lt;/span&gt; Rol de los actores del proceso de enseñanza aprendizaje en la evaluación para el aprendizaje&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-2-6&#34;&gt;
+&lt;/div&gt;&lt;div id=&#34;outline-container-orge93535a&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;orge93535a&#34;&gt;&lt;span class=&#34;section-number-4&#34;&gt;2.6.1&lt;/span&gt; Los Docentes&lt;/h4&gt;
+&lt;div class=&#34;outline-text-4&#34; id=&#34;text-2-6-1&#34;&gt;
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;Asumen rol de colaboradores que organizan situaciones y oportunidades de aprendizaje.&lt;/li&gt;
+&lt;li&gt;Se preocupan de comprobar permanentemente que los estudiantes estén logrando el aprendizaje y retroalimentarlos respecto de sus desempeños, no sólo al finalizar una unidad de trabajo.&lt;/li&gt;
+&lt;li&gt;Comparten la responsabilidad de evaluar con los demás actores.&lt;/li&gt;
+&lt;li&gt;Revisan sus prácticas docentes en función de esta información para analizar como mejorar su quehacer.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-org5a7ba87&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;org5a7ba87&#34;&gt;&lt;span class=&#34;section-number-4&#34;&gt;2.6.2&lt;/span&gt; Los Estudiantes&lt;/h4&gt;
+&lt;div class=&#34;outline-text-4&#34; id=&#34;text-2-6-2&#34;&gt;
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;Asumen rol de colaboradores que organizan situaciones y oportunidades de aprendizaje.&lt;/li&gt;
+&lt;li&gt;Se preocupan de comprobar permanentemente que los estudiantes estén logrando el aprendizaje y retroalimentarlos respecto de sus desempeños, no sólo al finalizar una unidad de trabajo.&lt;/li&gt;
+&lt;li&gt;Comparten la responsabilidad de evaluar con los demás actores.&lt;/li&gt;
+&lt;li&gt;Revisan sus prácticas docentes en función de esta información para analizar cómo mejorar su quehacer.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;
+López Pastor señala que se debe “implicar al alumnado en los procesos de evaluación. Esto supone concebir la evaluación como un proceso de diálogo y una toma de decisiones mutuas y colectivas entre los implicados en dicho proceso (profesorado y alumnado), más que un proceso externo, individual e impuesto” (FUENTE: López Pastor; 2011, p.94).
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-org1fa5f65&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;org1fa5f65&#34;&gt;&lt;span class=&#34;section-number-3&#34;&gt;2.7&lt;/span&gt; Componentes de la evaluación&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-2-7&#34;&gt;
+&lt;p&gt;
+Nos centraremos a continuación en la evaluación que se desarrolla en el aula, sin embargo, cada uno de los componentes que se presentan a continuación se pueden trabajar a otras escalas, tales como las instituciones, los programas, proyectos escolares, etc…
+&lt;/p&gt;
+
+
+&lt;div class=&#34;figure&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;file:///Users/hsigrist/Dropbox/Org/org-mode/formacion_continua/para_que_evaluar/f3_5.jpg&#34; alt=&#34;f3_5.jpg&#34; /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div id=&#34;outline-container-org3762a87&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;org3762a87&#34;&gt;&lt;span class=&#34;section-number-4&#34;&gt;2.7.1&lt;/span&gt; 1.Finalidad: ¿para qué evaluar?&lt;/h4&gt;
+&lt;div class=&#34;outline-text-4&#34; id=&#34;text-2-7-1&#34;&gt;
+&lt;dl class=&#34;org-dl&#34;&gt;
+&lt;dt&gt;Diagnóstica&lt;/dt&gt;&lt;dd&gt;Cuyo fin es conocer el estado inicial de un proceso de enseñanza aprendizaje. Permite reorientar las actividades planificadas por el docente e identificar los elementos a trabajar por parte de los estudiantes para lograr los aprendizajes esperados.&lt;/dd&gt;
+&lt;dt&gt;Formativa&lt;/dt&gt;&lt;dd&gt;Cuyo fin es contribuir al mejoramiento del aprendizaje esperado, se debe por lo tanto retroalimentar a medida que se va desarrollando el trabajo.&lt;/dd&gt;
+&lt;dt&gt;Sumativa&lt;/dt&gt;&lt;dd&gt;Cuyo fin es certificar el aprendizaje, por lo tanto se realiza cuando el proceso está terminado.&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;
+Cada una de estas finalidades se puede trabajar a nivel de actividad, clase, aprendizaje o unidad de aprendizaje, entre otros, por lo que los tiempos en que se utilizan dependerán del contexto en el que nos situamos.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-org6b4b48b&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;org6b4b48b&#34;&gt;&lt;span class=&#34;section-number-4&#34;&gt;2.7.2&lt;/span&gt; 2.Objeto: ¿qué evaluar?&lt;/h4&gt;
+&lt;div class=&#34;outline-text-4&#34; id=&#34;text-2-7-2&#34;&gt;
+&lt;p&gt;
+Se debe clarificar y explicitar qué es lo que se evaluará. Desde la perspectiva del estudiante se debe señalar cuál o cuáles serán los aprendizajes evaluados.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-orgdb40498&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;orgdb40498&#34;&gt;&lt;span class=&#34;section-number-4&#34;&gt;2.7.3&lt;/span&gt; 3.Información: ¿a través de qué medio se evaluará?&lt;/h4&gt;
+&lt;div class=&#34;outline-text-4&#34; id=&#34;text-2-7-3&#34;&gt;
+&lt;p&gt;
+Planificar la mejor forma de obtener información para retroalimentar el trabajo realizado por los estudiantes, qué actividad se realizará para obtener la información y qué instrumento de evaluación se utilizará para recoger la información.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-org57eb03e&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;org57eb03e&#34;&gt;&lt;span class=&#34;section-number-4&#34;&gt;2.7.4&lt;/span&gt; 4.Agente: ¿quién evalúa?&lt;/h4&gt;
+&lt;div class=&#34;outline-text-4&#34; id=&#34;text-2-7-4&#34;&gt;
+&lt;dl class=&#34;org-dl&#34;&gt;
+&lt;dt&gt;Autoevaluación&lt;/dt&gt;&lt;dd&gt;El evaluado y el evaluador son la misma persona, el estudiante evalúa su propio desempeño de acuerdo a lo que se espera que logre.&lt;/dd&gt;
+&lt;dt&gt;Coevaluación&lt;/dt&gt;&lt;dd&gt;Evaluados y evaluadores son pares en el desarrollo de la actividad evaluada.&lt;/dd&gt;
+&lt;dt&gt;Heteroevalaución&lt;/dt&gt;&lt;dd&gt;Evaluador no participó del desarrollo de la actividad realizada por el evaluado. Es la más clásica, sobre todo cuando se trata de docente y estudiante.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-orgc287bc3&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;orgc287bc3&#34;&gt;&lt;span class=&#34;section-number-4&#34;&gt;2.7.5&lt;/span&gt; 5.Momento: ¿cuándo evaluar?&lt;/h4&gt;
+&lt;div class=&#34;outline-text-4&#34; id=&#34;text-2-7-5&#34;&gt;
+&lt;dl class=&#34;org-dl&#34;&gt;
+&lt;dt&gt;Inicial&lt;/dt&gt;&lt;dd&gt;se hace al partir el proceso de enseñanza aprendizaje, permite fijar un punto de partida respecto de lo que se espera lograr. Suela coincidir con la finalidad diagnóstica.&lt;/dd&gt;
+&lt;dt&gt;Procesual&lt;/dt&gt;&lt;dd&gt;es la evaluación continua, que se hace a lo largo del proceso de enseñanza aprendizaje, recogiendo información y tomando decisiones respecto del aprendizaje de los estudiantes y la enseñanza del docente. Se relaciona directamente con la evaluación formativa.&lt;/dd&gt;
+&lt;dt&gt;Final&lt;/dt&gt;&lt;dd&gt;Al cierre del proceso de enseñanza aprendizaje, cuando se ha completado el ciclo, si bien puede ser sumativa no es necesario que lo sea, lo importante es que se entregue información a los estudiantes y que puedan reflexionar respecto de cuando lograron.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-org8a5d5e2&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;org8a5d5e2&#34;&gt;&lt;span class=&#34;section-number-4&#34;&gt;2.7.6&lt;/span&gt; 6.Valoración: ¿respecto de qué evalúo?&lt;/h4&gt;
+&lt;div class=&#34;outline-text-4&#34; id=&#34;text-2-7-6&#34;&gt;
+&lt;p&gt;
+Se deben establecer criterios de evaluación que permitan emitir un juicio evaluativo en relación a la calidad de un trabajo o desempeño determinado. Estos criterios deben ser conocidos por todos los actores pues también permiten orientar el proceso de enseñanza aprendizaje, idealmente deben ser consensuados.
+&lt;/p&gt;
+
+&lt;dl class=&#34;org-dl&#34;&gt;
+&lt;dt&gt;Criterial&lt;/dt&gt;&lt;dd&gt;el juicio se emite de acuerdo a parámetros previamente establecidos, señalando que tan lejos o cerca se encuentra el trabajo o desempeño de un estudiante determinado.&lt;/dd&gt;
+
+&lt;dt&gt;Ideográfico&lt;/dt&gt;&lt;dd&gt;el juicio se emite en relación al estudiante a su desempeño anterior cuanto ha progresado, cuánto ha avanzado respecto de su propio desempeño previo.&lt;/dd&gt;
+
+&lt;dt&gt;Normativo&lt;/dt&gt;&lt;dd&gt;el juicio se emite en relación al desempeño de un grupo de comparación determinado, de la posición relativa que ocupa en ese curso. No permite obtener información respecto de los aprendizajes de los estudiantes sino solo situarlos respecto de otros.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-orga3a8c3e&#34; class=&#34;outline-4&#34;&gt;
+&lt;h4 id=&#34;orga3a8c3e&#34;&gt;&lt;span class=&#34;section-number-4&#34;&gt;2.7.7&lt;/span&gt; 7.Informe de evaluación: ¿Cómo informo?&lt;/h4&gt;
+&lt;div class=&#34;outline-text-4&#34; id=&#34;text-2-7-7&#34;&gt;
+&lt;p&gt;
+Se debe incluir en este, la descripción de lo observado respecto del aprendizaje, las conclusiones a las que se llega luego de todo el análisis, sugerencias de mejora, orientaciones respecto de lo que se espera, destacar y visibilizar los logros de acuerdo a lo que se estableció como finalidad y objeto de la evaluación.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-orgf1884e7&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;orgf1884e7&#34;&gt;&lt;span class=&#34;section-number-3&#34;&gt;2.8&lt;/span&gt; Práctica docente&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-2-8&#34;&gt;
+&lt;p&gt;
+Cada uno de los elementos trabajados en este módulo deben ser considerados al momento de pensar y concretar la evaluación de los procesos de enseñanza aprendizaje. Se deben pensar los componentes de manera coordinada y coherente entre sí, pues de no existir esta coherencia nuestras evaluaciones perderán sentido. Esto nos impedirá tomar decisiones válidas y confiables a partir de estas. 
+&lt;/p&gt;
+
+&lt;p&gt;
+“La vocación principal de toda evaluación es modificar la realidad, pero la evaluación por sí misma no produce cambios si no hay actores que usen los resultados y tomen decisiones a partir de las valoraciones resultantes de la misma”
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Ravela, Pedro. Fichas didácticas. Para comprender las evaluaciones educativas.
+&lt;/p&gt;
+
+&lt;p&gt;
+Santiago de Chile: PREAL, 2006 Ficha nº2 “¿qué son las evaluaciones educativas y para qué sirven?”
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-orga002a9a&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;orga002a9a&#34;&gt;&lt;span class=&#34;section-number-3&#34;&gt;2.9&lt;/span&gt; Actividad práctica&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-2-9&#34;&gt;
+&lt;p&gt;
+Te invitamos a sintetizar tus aprendizajes a través de la siguiente actividad.
+&lt;/p&gt;
+
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;&lt;a href=&#34;https://db.tt/k3LTxgylOW&#34;&gt;ACTIVIDAD PRACTICA MODULO 1 2017.docx&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://db.tt/sifGHXxD2u&#34;&gt;RUBRICA ACT PRACTICA MODULO 1 2017.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;postamble&#34; class=&#34;status&#34;&gt;
+&lt;p class=&#34;author&#34;&gt;Author: Hans Sigrist (&lt;a href=&#34;mailto:hsigrist@gmail.com&#34;&gt;hsigrist@gmail.com&lt;/a&gt;)&lt;/p&gt;
+&lt;p class=&#34;date&#34;&gt;Date: Sat Apr 15 16:53:42 2017&lt;/p&gt;
+&lt;p class=&#34;creator&#34;&gt;&lt;a href=&#34;http://www.gnu.org/software/emacs/&#34;&gt;Emacs&lt;/a&gt; 25.1.1 (&lt;a href=&#34;http://orgmode.org&#34;&gt;Org&lt;/a&gt; mode 9.0.5)&lt;/p&gt;
+&lt;p class=&#34;validation&#34;&gt;&lt;a href=&#34;http://validator.w3.org/check?uri=referer&#34;&gt;Validate&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

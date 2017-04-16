@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Abp on hsigrist</title>
-    <link>https://hsigrist.github.io/tags/abp/index.xml</link>
+    <link>https://hsigrist.github.io/tags/abp/</link>
     <description>Recent content in Abp on hsigrist</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 1999-2017 Hans Sigrist</copyright>
-    <atom:link href="/tags/abp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Jan 2017 19:49:40 -0300</lastBuildDate>
+    <atom:link href="/tags/abp/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>ABP</title>
-      <link>https://hsigrist.github.io/post/ABP/</link>
+      <link>https://hsigrist.github.io/post/abp/</link>
       <pubDate>Thu, 26 Jan 2017 19:49:40 -0300</pubDate>
       
-      <guid>https://hsigrist.github.io/post/ABP/</guid>
-      <description>&lt;p&gt;lorem&lt;/p&gt;
-</description>
+      <guid>https://hsigrist.github.io/post/abp/</guid>
+      <description></description>
     </item>
     
   </channel>

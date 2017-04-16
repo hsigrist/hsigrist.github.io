@@ -2,12 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tp on hsigrist</title>
-    <link>https://hsigrist.github.io/tags/tp/index.xml</link>
+    <link>https://hsigrist.github.io/tags/tp/</link>
     <description>Recent content in Tp on hsigrist</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 1999-2017 Hans Sigrist</copyright>
-    <atom:link href="/tags/tp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Jan 2017 19:52:22 -0300</lastBuildDate>
+    <atom:link href="/tags/tp/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Educación Dual</title>

@@ -2,12 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Educación on hsigrist</title>
-    <link>https://hsigrist.github.io/tags/educaci%C3%B3n/index.xml</link>
+    <link>https://hsigrist.github.io/tags/educaci%C3%B3n/</link>
     <description>Recent content in Educación on hsigrist</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 1999-2017 Hans Sigrist</copyright>
-    <atom:link href="/tags/educaci%C3%B3n/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Jan 2017 19:52:22 -0300</lastBuildDate>
+    <atom:link href="/tags/educaci%C3%B3n/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Educación Dual</title>
@@ -30,12 +31,11 @@
     
     <item>
       <title>ABP</title>
-      <link>https://hsigrist.github.io/post/ABP/</link>
+      <link>https://hsigrist.github.io/post/abp/</link>
       <pubDate>Thu, 26 Jan 2017 19:49:40 -0300</pubDate>
       
-      <guid>https://hsigrist.github.io/post/ABP/</guid>
-      <description>&lt;p&gt;lorem&lt;/p&gt;
-</description>
+      <guid>https://hsigrist.github.io/post/abp/</guid>
+      <description></description>
     </item>
     
   </channel>

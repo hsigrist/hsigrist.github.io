@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Recientes &amp; próximas Charlas on hsigrist</title>
-    <link>https://hsigrist.github.io/talk/index.xml</link>
+    <link>https://hsigrist.github.io/talk/</link>
     <description>Recent content in Recientes &amp; próximas Charlas on hsigrist</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 1999-2017 Hans Sigrist</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/talk/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Episodios académicos que requieren procesos comunicativos</title>
@@ -25,7 +25,8 @@
       <pubDate>Tue, 11 Oct 2016 00:00:00 +0000</pubDate>
       
       <guid>https://hsigrist.github.io/talk/factorizacion_ecuaciones_segundo_grado/</guid>
-      <description></description>
+      <description>&lt;iframe width=&#34;1100&#34; height=&#34;620&#34; src=&#34;https://www.youtube.com/embed/D5QMigilXDg?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
     </item>
     
     <item>

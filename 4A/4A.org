@@ -1,0 +1,37 @@
+#+TITLE: 4A-HC
+#+AUTHOR: Hans Sigrist
+#+EMAIL: hsigrist@liceomixto.cl
+#+DATE: Wed Mar 22 19:33:13 2017 
+#+OPTIONS: html-link-use-abs-url:nil html-postamble:t
+#+OPTIONS: html-preamble:t html-scripts:t html-style:t
+#+OPTIONS: html5-fancy:t tex:t
+#+OPTIONS: toc:nil num:nil
+#+HTML_DOCTYPE: html5
+#+HTML_CONTAINER: div
+#+DESCRIPTION: Página de la generación 2017 régimen científico-humanista
+#+KEYWORDS: liderazgo estratégico
+#+HTML_LINK_HOME: http://hsigrist.github.io
+#+HTML_LINK_UP: http://hsigrist.github.io/docencia/
+#+HTML_MATHJAX: path:"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+#+HTML_HEAD: <link rel="stylesheet" href="Grump.css" />
+#+SUBTITLE: La generación que logró primero ser feliz y luego exitosos · LMLA · Prof. Hans Sigrist
+#+LATEX_HEADER:
+#+LANGUAGE: es
+
+#+TOC: headlines 2
+
+* 
+
+* Gestión administrativa
+
+* Gestión del conocimiento
+
+* Estrategias académicas
+
+* Buenas prácticas académicas y laborales
+
+* Autoeficiencia
+
+* Autorregulación
+
+* Habilidades socio-laborales y socio-emocionales

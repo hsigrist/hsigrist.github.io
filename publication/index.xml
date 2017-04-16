@@ -2,13 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publicaciones on hsigrist</title>
-    <link>https://hsigrist.github.io/publication/index.xml</link>
+    <link>https://hsigrist.github.io/publication/</link>
     <description>Recent content in Publicaciones on hsigrist</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 1999-2017 Hans Sigrist</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/publication/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>¿Para qué evaluar? · Notas del curso impartido por Fundación Chile</title>
+      <link>https://hsigrist.github.io/publication/para_que_evaluar/</link>
+      <pubDate>Sat, 15 Apr 2017 17:48:29 +0000</pubDate>
+      
+      <guid>https://hsigrist.github.io/publication/para_que_evaluar/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Proyecto Brooklyn · Implementación de las transformaciones y referencias curriculares de la PSU e infusión de las Habilidades Cognitivas y sus Contenidos en el currículum</title>

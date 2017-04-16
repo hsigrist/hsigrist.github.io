@@ -2,13 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hsigrist on hsigrist</title>
-    <link>https://hsigrist.github.io/index.xml</link>
+    <link>https://hsigrist.github.io/</link>
     <description>Recent content in hsigrist on hsigrist</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 1999-2017 Hans Sigrist</copyright>
     <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>¿Para qué evaluar? · Notas del curso impartido por Fundación Chile</title>
+      <link>https://hsigrist.github.io/publication/para_que_evaluar/</link>
+      <pubDate>Sat, 15 Apr 2017 17:48:29 +0000</pubDate>
+      
+      <guid>https://hsigrist.github.io/publication/para_que_evaluar/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Educación Dual</title>
@@ -41,20 +50,19 @@
     
     <item>
       <title>ABP</title>
-      <link>https://hsigrist.github.io/post/ABP/</link>
+      <link>https://hsigrist.github.io/post/abp/</link>
       <pubDate>Thu, 26 Jan 2017 19:49:40 -0300</pubDate>
       
-      <guid>https://hsigrist.github.io/post/ABP/</guid>
-      <description>&lt;p&gt;lorem&lt;/p&gt;
-</description>
+      <guid>https://hsigrist.github.io/post/abp/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>CE12016 Comunicación Efectiva</title>
-      <link>https://hsigrist.github.io/teaching/CE12016/</link>
+      <link>https://hsigrist.github.io/teaching/ce12016/</link>
       <pubDate>Thu, 26 Jan 2017 14:26:13 -0300</pubDate>
       
-      <guid>https://hsigrist.github.io/teaching/CE12016/</guid>
+      <guid>https://hsigrist.github.io/teaching/ce12016/</guid>
       <description>&lt;nav id=&#34;table-of-contents&#34;&gt;
 &lt;h2&gt;&amp;Iacute;ndice&lt;/h2&gt;
 &lt;div id=&#34;text-table-of-contents&#34;&gt;
@@ -1479,7 +1487,8 @@ Ciertamente, el desarrollo de la enseñanza Matemática debe ser coherente con l
       <pubDate>Tue, 11 Oct 2016 00:00:00 +0000</pubDate>
       
       <guid>https://hsigrist.github.io/talk/factorizacion_ecuaciones_segundo_grado/</guid>
-      <description></description>
+      <description>&lt;iframe width=&#34;1100&#34; height=&#34;620&#34; src=&#34;https://www.youtube.com/embed/D5QMigilXDg?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
     </item>
     
     <item>
@@ -1488,15 +1497,6 @@ Ciertamente, el desarrollo de la enseñanza Matemática debe ser coherente con l
       <pubDate>Fri, 07 Oct 2016 00:00:00 +0000</pubDate>
       
       <guid>https://hsigrist.github.io/talk/resolucion_ecuaciones_segundo_grado/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Identificando identificando cuadráticos</title>
-      <link>https://hsigrist.github.io/talk/identificacion_coeficientes_cuadraticos/</link>
-      <pubDate>Mon, 03 Oct 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://hsigrist.github.io/talk/identificacion_coeficientes_cuadraticos/</guid>
       <description></description>
     </item>
     

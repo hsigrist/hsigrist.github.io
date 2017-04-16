@@ -2,12 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Proyecto Queens on hsigrist</title>
-    <link>https://hsigrist.github.io/tags/proyecto-queens/index.xml</link>
+    <link>https://hsigrist.github.io/tags/proyecto-queens/</link>
     <description>Recent content in Proyecto Queens on hsigrist</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 1999-2017 Hans Sigrist</copyright>
-    <atom:link href="/tags/proyecto-queens/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/proyecto-queens/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Proyecto Queens</title>

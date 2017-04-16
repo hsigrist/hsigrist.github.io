@@ -2,12 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Biodata on hsigrist</title>
-    <link>https://hsigrist.github.io/tags/biodata/index.xml</link>
+    <link>https://hsigrist.github.io/tags/biodata/</link>
     <description>Recent content in Biodata on hsigrist</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 1999-2017 Hans Sigrist</copyright>
-    <atom:link href="/tags/biodata/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Jan 2017 10:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/biodata/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Biodata</title>

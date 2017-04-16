@@ -2,12 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on hsigrist</title>
-    <link>https://hsigrist.github.io/tags/blog/index.xml</link>
+    <link>https://hsigrist.github.io/tags/blog/</link>
     <description>Recent content in Blog on hsigrist</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 1999-2017 Hans Sigrist</copyright>
-    <atom:link href="/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Jan 2017 21:07:41 -0300</lastBuildDate>
+    <atom:link href="/tags/blog/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Enlaces</title>

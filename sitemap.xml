@@ -4,6 +4,14 @@
     
     
     <url>
+      <loc>https://hsigrist.github.io/publication/para_que_evaluar/</loc>
+      <lastmod>2017-04-15T17:48:29+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
       <loc>https://hsigrist.github.io/post/educacion_dual/</loc>
       <lastmod>2017-01-26T19:52:22-03:00</lastmod>
     </url>
@@ -28,7 +36,7 @@
     
     
     <url>
-      <loc>https://hsigrist.github.io/post/ABP/</loc>
+      <loc>https://hsigrist.github.io/post/abp/</loc>
       <lastmod>2017-01-26T19:49:40-03:00</lastmod>
     </url>
     
@@ -36,7 +44,7 @@
     
     
     <url>
-      <loc>https://hsigrist.github.io/teaching/CE12016/</loc>
+      <loc>https://hsigrist.github.io/teaching/ce12016/</loc>
       <lastmod>2017-01-26T14:26:13-03:00</lastmod>
     </url>
     
@@ -268,8 +276,15 @@
     
     
     <url>
+      <loc>https://hsigrist.github.io/formacion/para_que_evaluar/</loc>
+    </url>
+    
+  
+    
+    
+    <url>
       <loc>https://hsigrist.github.io/publication_types/3/</loc>
-      <lastmod>2017-01-24T00:00:00+00:00</lastmod>
+      <lastmod>2017-04-15T17:48:29+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -313,6 +328,14 @@
     
     
     <url>
+      <loc>https://hsigrist.github.io/categorias/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
       <loc>https://hsigrist.github.io/tags/educaci%C3%B3n/</loc>
       <lastmod>2017-01-26T19:52:22-03:00</lastmod>
       <priority>0</priority>
@@ -349,6 +372,14 @@
     
     
     <url>
+      <loc>https://hsigrist.github.io/formacion/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
       <loc>https://hsigrist.github.io/tags/hans-sigrist/</loc>
       <lastmod>2017-01-01T10:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -362,9 +393,6 @@
       <lastmod>2017-01-26T19:52:22-03:00</lastmod>
       <priority>0</priority>
     </url>
-    
-  
-    
     
   
     
@@ -416,6 +444,7 @@
     
     <url>
       <loc>https://hsigrist.github.io/publication_types/</loc>
+      <lastmod>2017-04-15T17:48:29+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -424,6 +453,7 @@
     
     <url>
       <loc>https://hsigrist.github.io/tags/</loc>
+      <lastmod>2017-01-26T19:49:40-03:00</lastmod>
       <priority>0</priority>
     </url>
     
