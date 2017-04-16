@@ -79,7 +79,7 @@ Bienvenidos al módulo de autoaprendizaje "¿Para qué evaluar el proceso de apr
 ** Caso 1
 Una profesora trabajó en clases ejercicios de matemáticas que consistían en resolver cálculos con reserva. Una vez finalizada la actividad, la profesora revisa los cuadernos y los entrega a cada estudiante con las correcciones. 
 
-[[/Users/hsigrist/repo/source-blog/static/formacion_continua/para_que_evaluar/f2.1.jpg]]
+[[file:f2.1.jpg][file:~/repo/source-blog/static/formacion_continua/para_que_evaluar/f2.1.jpg]]
 
 Al entregárselos se dirige uno a uno y les entrega retroalimentación de sus resultados. Se detiene con Emilia y le indica: “resolviste los ejercicios, distingues cuando debes resolver sumas o restas, pero todavía te cuesta resolver sumas más complejas como las sumas con reserva. En esta prueba te equivocaste en el ejercicio 3 y 5”
 
@@ -92,7 +92,7 @@ Primero, evaluar de una manera coherente, poniendo el foco en el aprendizaje y n
 ** Caso 2
 La profesora revisa las pruebas realizadas a los estudiantes y hace marcas de colores frente a sus respuestas, escribe puntajes y agrega anotaciones que la mayoría de las veces son poco legibles.
 
-[[/Users/hsigrist/repo/source-blog/static/formacion_continua/para_que_evaluar/c2.jpg]]
+[[file:~/repo/source-blog/static/formacion_continua/para_que_evaluar/c2.jpg]]
 
 A partir de esta situación que pudo haber ocurrido en tu formación docente, reflexiona en base a las siguientes preguntas:
 - ¿Qué sentido tiene entregar al estudiante las marcas que el docente hace sobre las palabras?
@@ -108,7 +108,7 @@ Las emociones más comunes luego de una retroalimentación autocomplaciente, cas
 ** Caso 3
 Tal como estaba planificado, una profesora de historia propone a sus estudiantes realizar un debate para trabajar los conceptos de ciudadanía y participación ciudadana. Entrega algunas orientaciones y divide a los estudiantes en distintos grupos. Luego de un rato, se da cuenta a partir de la observación de su curso, que si bien los estudiantes están trabajando no logran avanzar ni coordinarse entre sí Decide entonces cambiar la estrategia y asigna roles más definidos al interior de los grupos y les plantea metas concretas para cada clases. Sus estudiantes asumen de buena manera estos cambios, logrando cumplir con los objetivos de aprendizaje definidos para la actividad.
 
-[[/Users/hsigrist/repo/source-blog/static/formacion_continua/para_que_evaluar/c3.png]]
+[[file:c3.png][file:~/repo/source-blog/static/formacion_continua/para_que_evaluar/c3.png]]
 
 Considerando las características de la evaluación:
 - ¿De qué manera la profesora realizó el proceso de evaluación?
@@ -169,14 +169,14 @@ En ese contexto una definición de Evaluación es la que entregan Himmel, Olivar
 
 Para efectos de comprensión y análisis se plantean estas etapas de manera desagregadas. En el contexto de aula y cuando este proceso está internalizado en el quehacer docente, no se requiere detenerse mayormente en cada una de ellas, formando parte de la práctica cotidiana de los y las docentes.
 
-[[/Users/hsigrist/repo/source-blog/static/formacion_continua/para_que_evaluar/f3_1.png]]
+[[file:f3_1.png][file:~/repo/source-blog/static/formacion_continua/para_que_evaluar/f3_1.png]]
 
 - ¿Visualiza estas etapas en alguna situación evaluativa propia del proceso de enseñanza aprendizaje (sin considerar las pruebas formales)? 
 
 Esta concepción implica que durante el proceso formativo, el docente debe estar recogiendo información respecto de los referentes establecidos, los objetivos de aprendizaje y sus indicadores, para ir monitoreando el avance de sus estudiantes y de esta forma orientarlos respecto de su trabajo o bien reorientar las estrategias pedagógicas utilizadas. 
 
-[[/Users/hsigrist/repo/source-blog/static/formacion_continua/para_que_evaluar/f3_2.png]]
-
+[[file:f3_2.png][file:~/repo/source-blog/static/formacion_continua/para_que_evaluar/f3_2.png
+]]
 - ¿Cada cuánto crees que se debe recoger información?
 - ¿Cómo utilizarías las evidencias recogidas?
 
@@ -192,7 +192,8 @@ Surge en este contexto la evaluación para el aprendizaje que se define como:
 
 "El proceso de búsqueda e interpretación de evidencias para ser usada por los estudiantes y sus docentes para decidir dónde se encuentran los aprendices en sus procesos de aprendizaje, hacia dónde necesitan dirigirse y cuál es el mejor modo de llegar hasta allí." (Fuente: Broadfoot, Daugherty, Gardner, Harlen, James & Stobart, 2002).
 
-[[/Users/hsigrist/repo/source-blog/static/formacion_continua/para_que_evaluar/f3_3.png]]
+[[file:f3_3.png][file:~/repo/source-blog/static/formacion_continua/para_que_evaluar/f3_3.png]]
+
 ** 5 principios de una buena evaluación
 
 1. *La evaluación debe estar al servicio del aprendizaje*: el foco debe estar en mejorar el aprendizaje, no en la calificación.
@@ -225,7 +226,7 @@ López Pastor señala que se debe “implicar al alumnado en los procesos de eva
 ** Componentes de la evaluación
 Nos centraremos a continuación en la evaluación que se desarrolla en el aula, sin embargo, cada uno de los componentes que se presentan a continuación se pueden trabajar a otras escalas, tales como las instituciones, los programas, proyectos escolares, etc…
 
-[[/Users/hsigrist/repo/source-blog/static/formacion_continua/para_que_evaluar/f3_5.jpg]]
+[[file:f3_5.jpg][file:~/repo/source-blog/static/formacion_continua/para_que_evaluar/f3_5.jpg]]
 
 *** 1. Finalidad: ¿para qué evaluar?
 - Diagnóstica :: Cuyo fin es conocer el estado inicial de un proceso de enseñanza aprendizaje. Permite reorientar las actividades planificadas por el docente e identificar los elementos a trabajar por parte de los estudiantes para lograr los aprendizajes esperados.
