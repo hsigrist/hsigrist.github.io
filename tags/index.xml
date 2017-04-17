@@ -7,17 +7,8 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 1999-2017 Hans Sigrist</copyright>
-    <lastBuildDate>Thu, 26 Jan 2017 19:49:40 -0300</lastBuildDate>
+    <lastBuildDate>Sun, 01 Jan 2017 10:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Abp</title>
-      <link>https://hsigrist.github.io/tags/abp/</link>
-      <pubDate>Thu, 26 Jan 2017 19:49:40 -0300</pubDate>
-      
-      <guid>https://hsigrist.github.io/tags/abp/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Biodata</title>
@@ -47,29 +38,11 @@
     </item>
     
     <item>
-      <title>Educación</title>
-      <link>https://hsigrist.github.io/tags/educaci%C3%B3n/</link>
-      <pubDate>Thu, 26 Jan 2017 19:52:22 -0300</pubDate>
-      
-      <guid>https://hsigrist.github.io/tags/educaci%C3%B3n/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Emacs</title>
       <link>https://hsigrist.github.io/tags/emacs/</link>
       <pubDate>Tue, 24 Jan 2017 21:07:41 -0300</pubDate>
       
       <guid>https://hsigrist.github.io/tags/emacs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Emociones</title>
-      <link>https://hsigrist.github.io/tags/emociones/</link>
-      <pubDate>Thu, 26 Jan 2017 19:51:33 -0300</pubDate>
-      
-      <guid>https://hsigrist.github.io/tags/emociones/</guid>
       <description></description>
     </item>
     
@@ -92,29 +65,11 @@
     </item>
     
     <item>
-      <title>Hc</title>
-      <link>https://hsigrist.github.io/tags/hc/</link>
-      <pubDate>Thu, 26 Jan 2017 19:52:22 -0300</pubDate>
-      
-      <guid>https://hsigrist.github.io/tags/hc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Org Mode</title>
       <link>https://hsigrist.github.io/tags/org-mode/</link>
       <pubDate>Tue, 24 Jan 2017 21:07:41 -0300</pubDate>
       
       <guid>https://hsigrist.github.io/tags/org-mode/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Plutchik</title>
-      <link>https://hsigrist.github.io/tags/plutchik/</link>
-      <pubDate>Thu, 26 Jan 2017 19:51:33 -0300</pubDate>
-      
-      <guid>https://hsigrist.github.io/tags/plutchik/</guid>
       <description></description>
     </item>
     
@@ -133,15 +88,6 @@
       <pubDate>Tue, 24 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://hsigrist.github.io/tags/proyecto-queens/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tic</title>
-      <link>https://hsigrist.github.io/tags/tic/</link>
-      <pubDate>Thu, 26 Jan 2017 19:51:57 -0300</pubDate>
-      
-      <guid>https://hsigrist.github.io/tags/tic/</guid>
       <description></description>
     </item>
     

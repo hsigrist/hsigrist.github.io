@@ -11,49 +11,20 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>¿Cómo liderar una visión estratégica compartida? · Notas del curso impartido por Formación Contínua vía educarchile</title>
+      <link>https://hsigrist.github.io/publication/como_liderar_vision_estrategica_compartida/</link>
+      <pubDate>Sat, 15 Apr 2017 17:48:29 +0000</pubDate>
+      
+      <guid>https://hsigrist.github.io/publication/como_liderar_vision_estrategica_compartida/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>¿Para qué evaluar? · Notas del curso impartido por Fundación Chile</title>
       <link>https://hsigrist.github.io/publication/para_que_evaluar/</link>
       <pubDate>Sat, 15 Apr 2017 17:48:29 +0000</pubDate>
       
       <guid>https://hsigrist.github.io/publication/para_que_evaluar/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Educación Dual</title>
-      <link>https://hsigrist.github.io/post/educacion_dual/</link>
-      <pubDate>Thu, 26 Jan 2017 19:52:22 -0300</pubDate>
-      
-      <guid>https://hsigrist.github.io/post/educacion_dual/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Estandares TIC</title>
-      <link>https://hsigrist.github.io/post/estandares_tic/</link>
-      <pubDate>Thu, 26 Jan 2017 19:51:57 -0300</pubDate>
-      
-      <guid>https://hsigrist.github.io/post/estandares_tic/</guid>
-      <description>&lt;p&gt;lorem&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>La Naturaleza de las Emociones</title>
-      <link>https://hsigrist.github.io/post/naturaleza_emociones/</link>
-      <pubDate>Thu, 26 Jan 2017 19:51:33 -0300</pubDate>
-      
-      <guid>https://hsigrist.github.io/post/naturaleza_emociones/</guid>
-      <description>&lt;p&gt;En su trabajo original publicado en la American Scientist, Robert Plutchik, estima que existen más de 90 definiciones de &amp;ldquo;emoción&amp;rdquo; propuestas en el curso del s. XX. El consenso, sin embargo, establece que se trata de un estado interno.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>ABP</title>
-      <link>https://hsigrist.github.io/post/abp/</link>
-      <pubDate>Thu, 26 Jan 2017 19:49:40 -0300</pubDate>
-      
-      <guid>https://hsigrist.github.io/post/abp/</guid>
       <description></description>
     </item>
     
@@ -985,6 +956,15 @@ Ciertamente, el desarrollo de la enseñanza Matemática debe ser coherente con l
     </item>
     
     <item>
+      <title>Aprendizaje Basado en Proyectos - Colaboración · Notas del curso impartido por Formación Contínua de educarchile</title>
+      <link>https://hsigrist.github.io/publication/aprendizaje_basado_proyectos_colaboracion/</link>
+      <pubDate>Sat, 21 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hsigrist.github.io/publication/aprendizaje_basado_proyectos_colaboracion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Biodata</title>
       <link>https://hsigrist.github.io/post/biodata/</link>
       <pubDate>Sun, 01 Jan 2017 10:00:00 +0000</pubDate>
@@ -1482,6 +1462,33 @@ Ciertamente, el desarrollo de la enseñanza Matemática debe ser coherente con l
     </item>
     
     <item>
+      <title>Expedición de Aprendizaje · Notas del curso impartido por Formación Contínua de educarchile</title>
+      <link>https://hsigrist.github.io/publication/expedicion_aprendizaje/</link>
+      <pubDate>Sun, 13 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://hsigrist.github.io/publication/expedicion_aprendizaje/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Aprendizaje Basado en Proyectos - Evaluación· Notas del curso impartido por Formación Contínua vía educarchile</title>
+      <link>https://hsigrist.github.io/publication/aprendizaje_basado_proyectos_evaluacion/</link>
+      <pubDate>Sat, 12 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://hsigrist.github.io/publication/aprendizaje_basado_proyectos_evaluacion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Aprendizaje Basado en Proyectos - Planificación · Notas del curso impartido por Formación Contínua vía educarchile</title>
+      <link>https://hsigrist.github.io/publication/aprendizaje_basado_proyectos_planificacion/</link>
+      <pubDate>Thu, 10 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://hsigrist.github.io/publication/aprendizaje_basado_proyectos_planificacion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Factorización Ecuaciones de segundo grado</title>
       <link>https://hsigrist.github.io/talk/factorizacion_ecuaciones_segundo_grado/</link>
       <pubDate>Tue, 11 Oct 2016 00:00:00 +0000</pubDate>
@@ -1489,15 +1496,6 @@ Ciertamente, el desarrollo de la enseñanza Matemática debe ser coherente con l
       <guid>https://hsigrist.github.io/talk/factorizacion_ecuaciones_segundo_grado/</guid>
       <description>&lt;iframe width=&#34;1100&#34; height=&#34;620&#34; src=&#34;https://www.youtube.com/embed/D5QMigilXDg?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Resolución Ecuaciones de segundo grado</title>
-      <link>https://hsigrist.github.io/talk/resolucion_ecuaciones_segundo_grado/</link>
-      <pubDate>Fri, 07 Oct 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://hsigrist.github.io/talk/resolucion_ecuaciones_segundo_grado/</guid>
-      <description></description>
     </item>
     
   </channel>

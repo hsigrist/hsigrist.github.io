@@ -1,0 +1,76 @@
+#+TITLE: ¿Cómo liderar una visión estratégica compartida?
+#+SUBTITLE: Notas del curso impartido por Fundación Chile
+#+AUTHOR: Hans Sigrist
+#+EMAIL: hsigrist@gmail.com
+#+DATE: Sat Apr 15 17:25:00 2017  
+#+LATEX_CMD: xelatex
+#+STARTUP: showeverything
+#+STARTUP: beamer
+#+DESCRIPTION: Estrategias para relevar la importancia de construir una visión estratégica compartida en el marco de las exigencias al rol de los directivos, en el contexto de la Reforma Educativa y la Política de Liderazgo Escolar en Chile; a su vez se busca que se despliegue esta dimensión de práctica comunicando y explicando los planes y metas institucionales, fortaleciendo el sentido de propósito de la institución en relación a sus miembros y el entorno; a su vez, esperamos que comprendas el sentido de fortalecer una cultura e identidad institucional con foco en la mejora, cautelando el acceso a la información de toda la comunidad educativa.
+#+KEYWORDS: liderazgo, PEI, PME
+#+LATEX_HEADER: \published{Ensayo no publicado. No citar sin permiso.}
+#+OPTIONS: H:3 toc:nil num:nil tags:nil
+#+LATEX_CLASS: memoirhs
+#+BEAMER_THEME: Hytex
+#+BEAMER_HEADER: \institute[LMLA]{LMLA}
+#+BEAMER_HEADER: \date{}
+#+OPTIONS: reveal_center:t reveal_progress:t reveal_history:t reveal_control:t
+#+OPTIONS: reveal_mathjax:t reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
+#+OPTIONS: reveal_width:1200 reveal_height:800
+#+REVEAL_MARGIN: 0.2
+#+REVEAL_MIN_SCALE: 0.5
+#+REVEAL_MAX_SCALE: 2.5
+#+REVEAL_TRANS: none
+#+REVEAL_THEME: simple
+#+REVEAL_HLEVEL: 999
+#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/
+#+REVEAL_EXTRA_CSS: /Users/hsigrist/Dropbox/Org/org-blog/css/simple.css
+#+STARTUP: entitiespretty
+#+OPTIONS: html-link-use-abs-url:nil html-postamble:t
+#+OPTIONS: html-preamble:t html-scripts:t html-style:t
+#+OPTIONS: html5-fancy:nil tex:t
+#+OPTIONS: toc:nil num:t
+
+#+HTML_HEAD_EXTRA: <style type="text/css">
+#+HTML_HEAD_EXTRA: <!--
+#+HTML_HEAD_EXTRA:   .header_author {font-size: 1em; font-weight: bold;text-align:center;}
+#+HTML_HEAD_EXTRA: -->
+#+HTML_HEAD_EXTRA: </style>
+#+MACRO: html-only (eval (if (org-export-derived-backend-p org-export-current-backend 'html) "$1" ""))
+
+#+NAME: html-header
+#+BEGIN_SRC emacs-lisp :results raw :exports (if (org-export-derived-backend-p org-export-current-backend 'html) "results" "none")
+  "#+begin_header
+  ,#+begin_header_author
+  {{{AUTHOR}}}
+  ,#+end_header_author
+  ,#+end_header
+"
+#+END_SRC
+
+#+HTML_DOCTYPE: xhtml-strict
+#+HTML_CONTAINER: div
+#+HTML_LINK_HOME: http://hsigrist.github.io
+#+HTML_LINK_UP: http://hsigrist.github.io/docencia/
+#+HTML_MATHJAX: path:"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+#+HTML_HEAD: <link rel="stylesheet" href="Grump.css" />
+#+HTML_HEAD_EXTRA: <meta name="robots" content="INDEX,NOFOLLOW" />
+#+LANGUAGE: es
+#+BIBLIOGRAPHY: /Users/hsigrist/Dropbox/bibliography/references
+
+#+COLUMNS:  %18ITEM %9APROVADO(Approvado?){X} %11STATUS(Status) %7TODO %16SCHEDULED %16DEADLINE %20EFFORT{:} %CLOCKSUM
+#+PROPERTY: Status_ALL "En progreso" "No iniciado" "Finalizado"
+#+PROPERTY: Approved_ALL "[ ]" "[X]"
+#+PROPERTY: Effort_ALL "0" "0:45" "1:30" "3:00"
+
+#+BEGIN_abstract
+Construir o actualizar una visión estratégica compartida del establecimiento mediante la comunicación efectiva de los objetivos y proyectos institucionales.
+#+END_abstract
+
+#+TOC: headlines 3
+
+* Introducción
+Bienvenidos al módulo de auto-aprendizaje denominado ¿Cómo liderar una visión estratégica compartida? En esta oportunidad esperamos que aprendas a relevar la importancia de construir una visión estratégica compartida en el marco de las exigencias al rol de los directivos, en el contexto de la Reforma Educativa y la Política de Liderazgo Escolar en Chile; a su vez se busca que se despliegue esta dimensión de práctica comunicando y explicando los planes y metas institucionales, fortaleciendo el sentido de propósito de la institución en relación a sus miembros y el entorno; a su vez, esperamos que comprendas el sentido de fortalecer una cultura e identidad institucional con foco en la mejora, cautelando el acceso a la información de toda la comunidad educativa.
+
+- [[file:1 PROGRAMA_MODULO1_2017.docx]]
+- [[file:8 MATERIAL_COMPLEMENTARIO_MODULO1_2017.docx]]
