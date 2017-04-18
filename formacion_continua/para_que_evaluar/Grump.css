@@ -139,7 +139,11 @@ body {
     font-size: 1.1em;
     font-family: 'Alegreya', serif;
     /* color de la orilla */
-    background: #8EA7C2
+    background: #19C5C6
+}
+/* color de la fuente negra (era gris) */
+p {
+    color: black
 }
 #wrapper {
     font-size: 1.3125em;
