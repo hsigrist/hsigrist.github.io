@@ -1,0 +1,17 @@
+\documentclass{standalone}
+\usepackage{pstricks-add}
+\pagestyle{empty}
+\begin{document}
+\newrgbcolor{qqwuqq}{0. 0.39215686274509803 0.}
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.9925624135552789,-1.1566326126722997)(3.422133555933694,4.521889669237618)
+\multips(0,-1)(0,1.0){6}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-1.9925624135552789,0)(3.422133555933694,0)}
+\multips(-1,0)(1.0,0){6}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-1.1566326126722997)(0,4.521889669237618)}
+\psaxes[linewidth=1.4pt,labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.9925624135552789,-1.1566326126722997)(3.422133555933694,4.521889669237618)
+\psplot[linewidth=1.2pt,linecolor=qqwuqq,plotpoints=200]{-1.9925624135552789}{3.422133555933694}{x^(2.0)-2.0*x+3.0}
+\end{pspicture*}
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

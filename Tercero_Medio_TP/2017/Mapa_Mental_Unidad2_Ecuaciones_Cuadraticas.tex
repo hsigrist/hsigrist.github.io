@@ -1,0 +1,261 @@
+\documentclass[tikz,border=2pt,x11names]{standalone}
+%----------------------------------------------------------------------------------------------------------------------------------------
+\usepackage{hyperref}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{amssymb,amsmath}
+\usepackage{polyglossia}
+\setdefaultlanguage{spanish}
+\usetikzlibrary{mindmap,trees,positioning,backgrounds}
+%----------------------------------------------------------------------------------------------------------------------------------------
+\setromanfont[Mapping={tex-text},Numbers={OldStyle},Ligatures=TeX]{LinBiolinumO}
+\setsansfont[Mapping={tex-text},Numbers={OldStyle},Ligatures=TeX]{LinBiolinumO}
+\setmonofont[Mapping={tex-text},Numbers={OldStyle},Ligatures=Rare,Scale=0.8]{PragmataPro-Regular}
+%----------------------------------------------------------------------------------------------------------------------------------------
+\everymath{\displaystyle}
+\def\NN{\mathbb{N}}
+\def\RR{\mathbb{R}}
+\def\QQ{\mathbb{Q}}
+\def\ZZ{\mathbb{Z}}
+\def\II{\mathbb{I}}
+\def\CC{\mathbb{C}}
+\def\mytitle{Mapa Mental Unidad 2 Ecuación de segundo grado}
+\def\mykeywords{ecuación cuadrática, métodos de resolución, discriminante}
+\def\mysubject{Ecuaciones de segundo grado.}
+\def\myauthor{Prof. Hans Sigrist}
+%----------------------------------------------------------------------------------------------------------------------------------------
+\definecolor{links}{HTML}{000000}
+\hypersetup{%
+      colorlinks,%
+      linkcolor=,%
+      citecolor=black,%
+      urlcolor=links,%
+      pdftitle={\mytitle},%
+      pdfauthor={\myauthor},%
+      pdfsubject={\mysubject},%
+      pdfkeywords={\mykeywords}
+      }
+%----------------------------------------------------------------------------------------------------------------------------------------
+\makeatletter
+%----------------------------------------------------------------------------------------------------------------------------------------
+\tikzset{
+    non-concept/.style={
+        rectangle,
+        execute at begin node=\footnotesize,
+        text width=12em,
+    },
+    cncc east/.style={% concept-non-concept-connection
+                      % where the non-concept is east of the concept
+        out=0,
+        in=180,
+        to path={
+            \pgfextra{
+                \edef\tikztostart{\tikztostart.east}
+                \edef\tikztotargetB{\tikztotarget.south east}
+                \edef\tikztotarget{\tikztotarget.south west}
+            }
+            \tikz@to@curve@path% needs \makeatletter and \makeatother
+            -- (\tikztotargetB)
+        }
+    }
+}
+%----------------------------------------------------------------------------------------------------------------------------------------
+\tikzset{
+    non-concept/.style={
+        rectangle,
+        execute at begin node=\footnotesize,
+        text width=12em,
+    },
+    cncc seast/.style={% concept-non-concept-connection
+                      % where the non-concept is east of the concept
+        out=0,
+        in=180,
+        to path={
+            \pgfextra{
+                \edef\tikztostart{\tikztostart.south east}
+                \edef\tikztotargetB{\tikztotarget.south east}
+                \edef\tikztotarget{\tikztotarget.south west}
+            }
+            \tikz@to@curve@path% needs \makeatletter and \makeatother
+            -- (\tikztotarget)
+        }
+    }
+}
+%----------------------------------------------------------------------------------------------------------------------------------------
+\tikzset{
+    non-concept/.style={
+        rectangle,
+        execute at begin node=\footnotesize,
+        text width=12em,
+    },
+    cncc south/.style={% concept-non-concept-connection
+                      % where the non-concept is east of the concept
+        out=180,
+        in=0,
+        to path={
+            \pgfextra{
+                \edef\tikztostart{\tikztostart.west}
+                \edef\tikztotargetB{\tikztotarget.south west}
+                \edef\tikztotarget{\tikztotarget.south east}
+            }
+            \tikz@to@curve@path% needs \makeatletter and \makeatother
+            -- (\tikztotargetB)
+        }
+    }
+}
+%----------------------------------------------------------------------------------------------------------------------------------------
+\tikzset{
+    non-concept/.style={
+        rectangle,
+        execute at begin node=\footnotesize,
+        text width=12em,
+    },
+    cncc north/.style={% concept-non-concept-connection
+                      % where the non-concept is east of the concept
+        out=180,
+        in=0,
+        to path={
+            \pgfextra{
+                \edef\tikztostart{\tikztostart.west}
+                \edef\tikztotargetB{\tikztotarget.south west}
+                \edef\tikztotarget{\tikztotarget.south east}
+            }
+            \tikz@to@curve@path% needs \makeatletter and \makeatother
+            -- (\tikztotargetB)
+        }
+    }
+}
+%----------------------------------------------------------------------------------------------------------------------------------------
+\makeatother
+%----------------------------------------------------------------------------------------------------------------------------------------
+\begin{document}
+\pagestyle{empty}
+
+\begin{tikzpicture}
+  \path[mindmap, concept color=Aquamarine4, text=black]
+    node[concept] {\textbf{Ecuaciones de segundo grado (cuadráticas)}}[clockwise from=0]
+    child[concept color=Aquamarine3] { node[concept] (incompleta1)
+    {\textbf{1 Ecuación cuadrática incompleta $ax^2+c=0$}} }
+    child[concept color=Aquamarine2,sibling angle=100]   { node[concept]  (incompleta2)
+    {\textbf{2 Ecuación cuadrática incompleta $ax^2+bx=0$}} }
+    child[concept color=DarkSeaGreen3,level distance=5cm,sibling angle=-105]   { node[concept]  (trinomio)
+    {\textbf{3 Ecuación cuadrática completa, trinomio factorizable}} }
+    child[concept color=DarkSeaGreen1,level distance=7cm,sibling angle=-50]   { node[concept]  (formula)
+    {\textbf{4 Ecuación cuadrática, fórmula general}} }
+    child[concept color=SeaGreen3,level distance=9cm,sibling angle=-30]   { node[concept]  (naturaleza)
+    {\textbf{5 Naturaleza de las soluciones}} }
+    child[concept color=DarkSeaGreen1,level distance=10cm,sibling angle=-8]   { node[concept]  (prop)
+    {\textbf{6 Propiedades de las soluciones}} };
+%----------------------------------------------------------------------------------------------------------------------------------------
+  \tikzset{
+    every node/.style=non-concept,
+    node distance=2ex,
+  }
+%----------------------------------------------------------------------------------------------------------------------------------------
+\node[right=3cm of incompleta1]  (incompleta10)
+    {1. En estas ecuaciones el coeficiente lineal $b=0$. Es importante observar que el orden de los términos \textbf{no siempre será igual}, por ello, el último término no es necesariamente el \textbf{independiente}.};
+\node[below=of incompleta10]   (incompleta11)
+    {2. Lo anterior justifica el mecanismo de "despeje de $x$". Su solución, por tanto es siempre $x=\pm \sqrt{\frac{-c}{a}}$};
+\node[below=of incompleta11]   (incompleta12)
+    {3. Al despejar $x$, \textbf{siempre se obtendrán dos soluciones iguales, pero de signos contrarios}, es decir, $x_1=-x_2$.};
+\node[below=of incompleta12]   (incompleta13)
+    {4. Si el coeficiente cuadrático $a$ es negativo, entonces, es conveniente partir despejando dicho término.};
+%----------------------------------------------------------------------------------------------------------------------------------------
+\node[right=2cm of incompleta2] (incompleta20)
+    {1. Aquí, el \textbf{coeficiente independiente} $c=0$, en consecuencia, es posible factorizar por $x$, y en ocasiones es posible encontrar también un factor común entre $a$ y $b$.};
+\node[below=of incompleta20]    (incompleta21)
+    {2. La \textbf{factorización} siempre incluirá como uno de sus factores a la potencia \textbf{mínima}, es decir a $x$.};
+\node[below=of incompleta21]  (incompleta22)
+    {3. La forma de dicha factorización es $ax^2+bx=x(ax+b)=0$, por tanto, $x_1=0$ \textbf{siempre} será una solución. La otra solución, se obtiene de igualar a cero el segundo factor $ax+b$, luego $x_2=\frac{-b}{a}$.};
+%----------------------------------------------------------------------------------------------------------------------------------------
+\node[left=4cm of trinomio] (trinomio0)
+    {1. Esta es una ecuación completa en la cual, mayoritariamente $a=1$; la \textbf{estrategia} consiste en "buscar \textbf{dos números} que multiplicados den $c$ y sumados den $b$". Dichos "candidatos" \textbf{no son las soluciones}.};
+\node[below=of trinomio0]  (trinomio1)
+    {2. Las soluciones, emanan de la factorización en la forma $ax^{2}+bx+c=(x+x_1)(x+x_2)=0$, en donde $x_1$ y $x_2$ son los candidatos encontrados. De esta forma, las soluciones se hallan al despejar $x$ en $x+x_1=0$ y $x+x_2=0$.};
+%----------------------------------------------------------------------------------------------------------------------------------------
+\node[left=2cm of formula] (formula0)
+    {1. La \textbf{fórmula general} para resolver ecuaciones cuadráticas, viene dada por:
+      \begin{equation*}
+        x=\frac{-b\pm\sqrt{b^{2}-4ac}}{2a}
+      \end{equation*}
+      y asume \textbf{conocidos} $a,b$ y $c$. Su utilización es válida en cualquiera de los métodos antes mencionados. Se debe tener particular cuidado con el \emph{argumento} en el radical, puesto que si $b^{2}-4ac$ (el discriminante) es negativo, las soluciones \textbf{son raíces imaginarias}.};
+%----------------------------------------------------------------------------------------------------------------------------------------
+\node[right=2cm of naturaleza] (naturaleza0)
+    {1. Por \textbf{naturaleza} de las soluciones, se entiende \emph{a qué conjunto numérico pertenecen}, su estudio se basa en el análisis del \textbf{discriminante} (y en particular de \textbf{su signo})  dado por $\Delta=b^{2}-4ac$, luego:
+    \begin{itemize}
+      \item Si $\Delta=0$, existen 2 soluciones, iguales y reales ($\in\RR$).
+      \item Si $\Delta>0$, existen 2 soluciones, distintas y reales ($\in\RR$).
+      \item Si $\Delta<0$, existen 2 soluciones, distintas y complejas ($\in\CC$), en donde una es el \textbf{conjugado} de la otra.
+    \end{itemize}};
+%----------------------------------------------------------------------------------------------------------------------------------------
+\node[right=2cm of prop, anchor=south west] (prop0)
+    {1. Si $x_1$ y $x_2$ son las soluciones de la ecuación $ax^{2}+bx+c=0$, entonces se verifican:
+      \begin{eqnarray*}
+        x_1+x_2&=&\frac{-b}{a}\\
+        x_1\cdot x_2&=&\frac{c}{a}
+      \end{eqnarray*}
+    };
+\node[below=of prop0] (prop1)
+    {2. Note la concordancia entre estas propiedades y el caso en que $a=1$ en el trinomio factorizable, puesto que $x_1+x_2=-b$ y $x_1\cdot x_2=c$.
+};
+%----------------------------------------------------------------------------------------------------------------------------------------
+\begin{scope}[every annotation/.style={fill=Aquamarine4}]
+    \node[annotation, above,text width=19em, text=black] at (-10,-10){
+    \textbf{\Large Matemática 3M-TP}\\
+    \vspace{0.5cm}
+    \textcolor{white}{\large\textbf{\emph{Mapa Mental Unidad 2 Ecuación de segundo grado}}\\
+    \vspace{0.3cm}
+    \textcolor{black}{Diseñado por \emph{Prof. Hans Sigrist}, 2017.}}};
+\end{scope}
+%----------------------------------------------------------------------------------------------------------------------------------------
+\draw[
+    line width=1pt,
+    shorten <=.06em,
+    color=Aquamarine3,
+    ]
+        (incompleta1) edge[cncc east] (incompleta10)
+              edge[cncc east] (incompleta11)
+              edge[cncc east] (incompleta12)
+              edge[cncc east] (incompleta13);
+\draw[
+    line width=1pt,
+    shorten <=.06em,
+    color=Aquamarine2,
+    ]
+        (incompleta2) edge[cncc east] (incompleta20)
+              edge[cncc east] (incompleta21)
+              edge[cncc east] (incompleta22);
+\draw[
+    line width=1pt,
+    shorten <=.06em,
+    color=DarkSeaGreen3,
+    ]
+        (trinomio) edge[cncc north] (trinomio0)
+              edge[cncc north] (trinomio1);
+\draw[
+    line width=1pt,
+    shorten <=.06em,
+    color=DarkSeaGreen1,
+    ]
+        (formula) edge[cncc north]    (formula0);
+\draw[
+    line width=1pt,
+    shorten <=.06em,
+    color=SeaGreen3,
+    ]
+        (naturaleza) edge[cncc east] (naturaleza0);
+\draw[
+    line width=1pt,
+    shorten <=.06em,
+    color=DarkSeaGreen1,
+    ]
+        (prop) edge[cncc east] (prop0)
+            edge[cncc east] (prop1);
+\end{tikzpicture}
+%----------------------------------------------------------------------------------------------------------------------------------------
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

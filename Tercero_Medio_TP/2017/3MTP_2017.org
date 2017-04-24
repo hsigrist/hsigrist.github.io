@@ -1,0 +1,244 @@
+#+TITLE: Tercero Medio TP 2017
+#+SUBTITLE: Ruta de Aprendizaje Matemática
+#+AUTHOR: Hans Sigrist
+#+EMAIL: hsigrist@liceomixto.cl
+#+DATE: Wed Apr 19 19:17:23 2017
+#+LATEX_CMD: xelatex
+#+STARTUP: latexpreview
+#+STARTUP: showeverything
+#+STARTUP: beamer
+#+DESCRIPTION: Recursos, estrategias, planificación de la asignatura.
+#+KEYWORDS: matemática, tercero medio, TP
+#+LATEX_HEADER: \published{Ensayo no publicado. No citar sin permiso.}
+#+OPTIONS: H:3 toc:nil num:nil tags:t
+#+LATEX_CLASS: memoirhs
+#+BEAMER_THEME: Hytex
+#+BEAMER_HEADER: \institute[LMLA]{LMLA}
+#+BEAMER_HEADER: \date{}
+#+OPTIONS: reveal_center:t reveal_progress:t reveal_history:t reveal_control:t
+#+OPTIONS: reveal_mathjax:t reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
+#+OPTIONS: reveal_width:1200 reveal_height:800
+#+REVEAL_MARGIN: 0.2
+#+REVEAL_MIN_SCALE: 0.5
+#+REVEAL_MAX_SCALE: 2.5
+#+REVEAL_TRANS: none
+#+REVEAL_THEME: simple
+#+REVEAL_HLEVEL: 999
+#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/
+#+REVEAL_EXTRA_CSS: /Users/hsigrist/Dropbox/Org/org-blog/css/simple.css
+#+STARTUP: entitiespretty
+#+OPTIONS: html-link-use-abs-url:nil html-postamble:t
+#+OPTIONS: html-preamble:t html-scripts:t html-style:t
+#+OPTIONS: html5-fancy:t tex:t
+#+OPTIONS: toc:nil num:t
+#+HTML_HEAD_EXTRA: <style type="text/css">
+#+HTML_HEAD_EXTRA: <!--
+#+HTML_HEAD_EXTRA:   .header_author {font-size: 1em; font-weight: bold;text-align:center;}
+#+HTML_HEAD_EXTRA: -->
+#+HTML_HEAD_EXTRA: </style>
+#+MACRO: html-only (eval (if (org-export-derived-backend-p org-export-current-backend 'html) "$1" ""))
+
+#+NAME: html-header
+#+BEGIN_SRC emacs-lisp :results raw :exports (if (org-export-derived-backend-p org-export-current-backend 'html) "results" "none")
+  "#+begin_header
+  ,#+begin_header_author
+  {{{AUTHOR}}}
+  ,#+end_header_author
+  ,#+end_header
+"
+#+END_SRC
+
+#+HTML_DOCTYPE: xhtml5
+#+HTML_CONTAINER: div 
+#+HTML_LINK_HOME: http://hsigrist.github.io
+#+HTML_LINK_UP: http://hsigrist.github.io/teaching/
+#+HTML_MATHJAX: path:"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+#+HTML_HEAD: <link rel="stylesheet" href="Grump.css" />
+#+HTML_HEAD_EXTRA: <meta name="robots" content="INDEX,NOFOLLOW" />
+#+LANGUAGE: es
+#+BIBLIOGRAPHY: /Users/hsigrist/Dropbox/bibliography/references
+
+#+COLUMNS:  %18ITEM %9APROVADO(Approvado?){X} %11STATUS(Status) %7TODO %16SCHEDULED %16DEADLINE %20EFFORT{:} %CLOCKSUM
+#+PROPERTY: Status_ALL "En progreso" "No iniciado" "Finalizado"
+#+PROPERTY: Approved_ALL "[ ]" "[X]"
+#+PROPERTY: Effort_ALL "0" "0:45" "1:30" "3:00"
+
+#+BEGIN_abstract
+Recursos, estrategias, notas de clase y material complementario de la asignatura Matemática, dirigido a estudiantes de Tercer año Enseñanza Media en régimen Técnico Profesional (TP).
+#+END_abstract
+
+#+TOC: headlines 5
+
+* Unidad 1 Números Complejos
+** DONE Números imaginarios                                  :raiz:unitaria:
+** DONE Potencias de números imaginarios                  :reloj:imaginario:
+** DONE Módulo y conjugado de un número complejo          :modulo:conjugado:
+** DONE Operatoria combinada con complejos :suma:resta:multiplicacion:division:
+*** Suma y resta de complejos
+*** Multiplicación
+*** División
+* Unidad 2 Ecuaciones de segundo grado
+** DONE Syllabus
+Entre las *Metas de Aprendizaje* de la actual unidad se encuentran:
+
+- Modelar situaciones o fenómenos cuyos modelos resultantes sean funciones cuadráticas.
+- Comprender que toda ecuación de segundo grado con coeficientes reales tiene raíces en el conjunto de los números complejos.
+- Formular conjeturas, verificar para casos particulares y demostrar proposiciones utilizando conceptos, propiedades o relaciones de los diversos temas tratados en el nivel, y utilizar heurísticas para resolver problemas combinando, modificando o generalizando estrategias conocidas, fomentando la actitud reflexiva y crítica en la resolución de problemas.
+- Interesarse por conocer la realidad y utilizar el conocimiento.
+- Comprender y valorar la perseverancia, el rigor y el cumplimiento, la flexibilidad y la originalidad.
+
+#+BEGIN_SRC ditaa :file esquema_unidad2.png :cmdline -r
+Esquema Unidad 2 Ecuaciones de segundo grado
+
+                                               +---------------------------+
+                                               |  Ecuaciones cuadráticas   |
+                                               |  y función cuadrática     |
+                                               |                           |
+                                               |      c242                 |
+                                               +--------------+------------+
+                                                              |
+                                                              v
+                         +--------------------------------------------------------------------+
+                         |                                                                    |
+                         |                                                                    |
+                         v                                                                    v
+     +-------------------+--------------+                                +--------------------+-------------+
+     |Concepto de ecuación cuadrática   |                                |Concepto de función cuadrática    |
+     |      c242                        |                                |    c242                          |
+     |                                  |                                |                                  |
+     +------------------+---------------+                                +---------------------+------------+
+                        |                                                                      |
+                        v                                                                      v
+     +------------------+---------------+                                +---------------------+------------+
+     |Tipos de ecuaciones cuadráticas   |                                |Análisis de la función cuadrática |
+     |y métodos de resolución           |                                |    c242                          |
+     |    c242                          |                                |                                  |
+     +------------------+---------------+                                +---------------------+------------+
+                        |                                                                      |
+                        |                                                                      |
+                        \----------------------------------------------------------------------/
+                                                              |
+                                                              v
+                                              +---------------+------------+
+                                              |Problemas de aplicación     |
+                                              |a la vida diaria            |
+                                              |    c242                    |
+                                              |                            |
+                                              +----------------------------+
+#+END_SRC
+
+#+RESULTS:
+[[file:esquema_unidad2.png]]
+
+** TODO Ecuaciones cuadráticas
+*** TODO Panorama
+[[file:mmental1-ecuacion-cuadratica.png][file:mmental1-ecuacion-cuadratica.png]]
+
+*** PROYECT Recursos
+1. [[file:Guia_Formativa_2_3TP_Ecuacion_Segundo_Grado.pdf][file:Guia_Formativa_2_3TP_Ecuacion_Segundo_Grado.pdf]]. Este material provee una serie de 90 ejercicios para apoyar su aprendizaje en los /métodos de resolución de ecuaciones de segundo grado/ propios de la *Unidad 2 Ecuaciones de segundo grado*.
+2. [[file:Mapa_Mental_Unidad2_Ecuaciones_Cuadraticas.pdf][file:Mapa_Mental_Unidad2_Ecuaciones_Cuadraticas.pdf]]. Mapa Mental de la unidad ecuaciones cuadráticas, refiérase a esta ficha para apreciar un *panorama de las principales características de este tipo de ecuaciones*.
+
+*** DONE Problema de apertura
+Suponga que se desea cercar un terreno cuadrado cuya área conocida es de $552.25m^2$, al respecto:
+
+- ¿Cuál es el perímetro del terreno?
+- ¿Cómo obtiene la dimensión del lado del cuadrado?
+
+#+BEGIN_SRC ditaa :file apertura.png :cmdline -r
++-----------------+
+|                 |
+|                 |
+|                 |
+|                 |
+|     552.25m2    |
+|       c242      |
+|                 |
+|                 |
+|                 |
++-----------------+
+#+END_SRC
+
+#+RESULTS:
+[[file:apertura.png]]
+
+
+
+Si ya reflexionó en torno a estas ideas, lo invito a observar el siguiente video que lo puede orientar más aún.
+
+#+BEGIN_EXPORT html
+<video controls="controls" width="800" height="600" name="apertura" src="apertura.mov"></video>
+#+END_EXPORT
+
+- ¿Por qué se desecha la solución $x_2=-23.5$?
+- ¿Por qué valor absoluto provee *dos soluciones*, una positiva y una negativa?
+
+*** DONE Ecuaciones incompletas de la forma $ax^2+c=0$
+Estas ecuaciones se caracterizan por la ausencia del término lineal, debido a que el *coeficiente lineal*, $b=0$.
+En consecuencia, estas ecuaciones se resuelven mediante /despeje/ de la incógnita, a modo de ejemplo, observe la siguiente ecuación:
+  \begin{eqnarray*}
+    4x^{2}-16&=&0\\
+    4x^{2}&=&16\\
+    x^{2}&=&4\\
+    |x|&=&\sqrt{4}\\
+    x&=&\pm2\\
+     &\Rightarrow&x_1=2\wedge x_2=-2
+  \end{eqnarray*}
+
+Lo anterior, permite establecer que toda ecuación de segundo grado de la forma $ax^2+c=0$, se puede resolver mediante un procedimiento similar al del ejemplo.
+
+Para profundizar, puede observar el siguiente video:
+
+#+BEGIN_EXPORT html
+<video controls="controls" width="800" height="600" name="ecuacion segundo grado incompleta 1" src="ecuacion-segundo-grado-incompleta-1.mov"></video>
+#+END_EXPORT
+
+*** DONE Ecuaciones incompletas de la forma $ax^2+bx=0$
+
+*** DONE Ecuaciones cuadráticas trinomio factorizable de la forma $ax^2+bx+c=0$
+En este tipo de ecuaciones cuadráticas, están presentes todos los coeficientes, i.e., $a,b,c$, particularmente el caso en que $a=1$, de modo que es posible observar tan sólo los coeficientes lineal e independiente.
+
+La estrategia consiste en *encontrar dos números que multiplicados den el valor de $c$ y los mismos números sumados den el valor de $b$*.
+*** TODO Ecuaciones completas mediante fórmula general $ax^2+bx+c=0$
+
+*** TODO Aplicaciones a problemas no rutinarios, complejos y no familiares (CUN)
+
+** WAITING Funciones cuadráticas                                   :WAITING:
+- State "WAITING"    from              [2017-04-24 Mon 01:22] \\
+  junio-2017
+*** TODO Representación de la función cuadrática mediante tablas y gráficos, y algebráicamente
+**** TODO Caso 1                                     :ejercicio:comentado:
+
+
+*************** 1. Dada la función $f(x)=x^2+2x+1$, encuentre pares $(x,y)$ que cumplen con la igualdad y anótelos en la tabla siguiente:
+
+| $x$ | 0 | 1 | -1 | -2 | -3 | 2 | -5 |
+|-----+---+---+----+----+----+---+----|
+| $y$ |   |   |    |    |    |   |    |
+*************** END
+
+*************** 2. Represente estos pares ordenados en el plano cartesiano, busque otros puntos y verifique si pertenecen o no a la gráfica de la función.
+Recuerde que un punto $(x,y)$ pertenece a la curva de una ecuación cuando $x$ satisface la función dada.
+*************** END
+
+*************** 3. Grafique la función en el plano cartesiano.
+Una los puntos (pares ordenados) obtenidos. ¿Se trata de una recta o una curva?
+*************** END
+
+*************** 4. Analice el significado del par ordenado $(-1,0)$ y su relación el valor del discriminante igual a cero, en este caso particular.
+El discriminante $\Delta=b^2-4ac=0$ establece que existen $2$ soluciones, iguales y que pertenecen al conjunto de los números reales.
+*************** END
+
+Las actividades anteriores las puede encontrar desarrolladas en un /applet/ de *Geogebra*, disponible en el /cuaderno/ siguiente:
+
+
+#+BEGIN_EXPORT html
+<iframe scrolling="no" title="Análisis de caso 1" src="https://www.geogebra.org/material/iframe/id/ryCMeuQF/width/850/height/600/border/BAF2C9/smb/true/stb/true/stbh/true/ai/true/asb/true/sri/true/rc/true/ld/true/sdz/true/ctl/true" width="850px" height="600px" style="border:0px;"> </iframe>
+#+END_EXPORT
+
+
+#+BEGIN_QUOTE
+Existe un repositorio en *Onenote* que incluye la mayoría de los contenidos de los videos, además de recursos y notas de clase hechas "in situ". Puede ver dicho contenido en el siguiente libro *Onenote*:
+#+BEGIN_EXPORT html
+<iframe src="https://onedrive.live.com/embed?cid=FB21DB7A941BB0C6&resid=FB21DB7A941BB0C6%212500&authkey=AOtWzjDdXBPrne8" width="98" height="120" frameborder="0" scrolling="no"></iframe>
+#+END_EXPORT
+#+END_QUOTE

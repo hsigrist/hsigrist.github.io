@@ -166,6 +166,9 @@ Modelo de Polya de cuatro etapas
                                                                                         +--------------------------------+
 #+END_SRC
 
+#+RESULTS:
+[[file:images/polya.png]]
+
 
 ** Preguntas de investigación
 *** Competencias laborales

@@ -1,0 +1,15 @@
+\message{ !name(ejemplo1.tex)}\documentclass{standalone}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{tkz-fct}
+\begin{document}
+
+\message{ !name(ejemplo1.tex) !offset(-3) }
+
+\begin{tikzpicture}[scale=1]
+    \tkzInit[xmax=5,ymax=2]
+    \tkzGrid[sub]
+    \tkzAxeXY
+    \tkzFct[samples=400,domain=.5:5]{1/x}
+\end{tikzpicture}
+\end{document}
+\message{ !name(ejemplo1.tex) !offset(-15) }
