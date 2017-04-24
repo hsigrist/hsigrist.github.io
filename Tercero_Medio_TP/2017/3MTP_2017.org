@@ -10,7 +10,7 @@
 #+DESCRIPTION: Recursos, estrategias, planificación de la asignatura.
 #+KEYWORDS: matemática, tercero medio, TP
 #+LATEX_HEADER: \published{Ensayo no publicado. No citar sin permiso.}
-#+OPTIONS: H:3 toc:nil num:nil tags:t
+#+OPTIONS: H:3 toc:t num:nil tags:t
 #+LATEX_CLASS: memoirhs
 #+BEAMER_THEME: Hytex
 #+BEAMER_HEADER: \institute[LMLA]{LMLA}
@@ -30,7 +30,7 @@
 #+OPTIONS: html-link-use-abs-url:nil html-postamble:t
 #+OPTIONS: html-preamble:t html-scripts:t html-style:t
 #+OPTIONS: html5-fancy:t tex:t
-#+OPTIONS: toc:nil num:t
+#+OPTIONS: toc:nil num:nil
 #+HTML_HEAD_EXTRA: <style type="text/css">
 #+HTML_HEAD_EXTRA: <!--
 #+HTML_HEAD_EXTRA:   .header_author {font-size: 1em; font-weight: bold;text-align:center;}
@@ -48,10 +48,10 @@
 "
 #+END_SRC
 
-#+HTML_DOCTYPE: xhtml5
+#+HTML_DOCTYPE: xhtml-strict
 #+HTML_CONTAINER: div 
-#+HTML_LINK_HOME: http://hsigrist.github.io
-#+HTML_LINK_UP: http://hsigrist.github.io/teaching/
+#+HTML_LINK_HOME: https://hsigrist.github.io
+#+HTML_LINK_UP: https://hsigrist.github.io/#teaching
 #+HTML_MATHJAX: path:"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
 #+HTML_HEAD: <link rel="stylesheet" href="Grump.css" />
 #+HTML_HEAD_EXTRA: <meta name="robots" content="INDEX,NOFOLLOW" />
@@ -78,7 +78,7 @@ Recursos, estrategias, notas de clase y material complementario de la asignatura
 *** Multiplicación
 *** División
 * Unidad 2 Ecuaciones de segundo grado
-** DONE Syllabus
+** DONE Syllabus                                         :metas:aprendizaje:
 Entre las *Metas de Aprendizaje* de la actual unidad se encuentran:
 
 - Modelar situaciones o fenómenos cuyos modelos resultantes sean funciones cuadráticas.
@@ -135,10 +135,16 @@ Esquema Unidad 2 Ecuaciones de segundo grado
 [[file:mmental1-ecuacion-cuadratica.png][file:mmental1-ecuacion-cuadratica.png]]
 
 *** PROYECT Recursos
+
+#+BEGIN_QUOTE
+*3A: esta es la guía que deben descargar:*
 1. [[file:Guia_Formativa_2_3TP_Ecuacion_Segundo_Grado.pdf][file:Guia_Formativa_2_3TP_Ecuacion_Segundo_Grado.pdf]]. Este material provee una serie de 90 ejercicios para apoyar su aprendizaje en los /métodos de resolución de ecuaciones de segundo grado/ propios de la *Unidad 2 Ecuaciones de segundo grado*.
+#+END_QUOTE
+
 2. [[file:Mapa_Mental_Unidad2_Ecuaciones_Cuadraticas.pdf][file:Mapa_Mental_Unidad2_Ecuaciones_Cuadraticas.pdf]]. Mapa Mental de la unidad ecuaciones cuadráticas, refiérase a esta ficha para apreciar un *panorama de las principales características de este tipo de ecuaciones*.
 
 *** DONE Problema de apertura
+DEADLINE: <2017-04-07 Fri> SCHEDULED: <2017-04-03 Mon>
 Suponga que se desea cercar un terreno cuadrado cuya área conocida es de $552.25m^2$, al respecto:
 
 - ¿Cuál es el perímetro del terreno?
@@ -173,6 +179,7 @@ Si ya reflexionó en torno a estas ideas, lo invito a observar el siguiente vide
 - ¿Por qué valor absoluto provee *dos soluciones*, una positiva y una negativa?
 
 *** DONE Ecuaciones incompletas de la forma $ax^2+c=0$
+DEADLINE: <2017-04-14 Fri> SCHEDULED: <2017-04-10 Mon>
 Estas ecuaciones se caracterizan por la ausencia del término lineal, debido a que el *coeficiente lineal*, $b=0$.
 En consecuencia, estas ecuaciones se resuelven mediante /despeje/ de la incógnita, a modo de ejemplo, observe la siguiente ecuación:
   \begin{eqnarray*}
@@ -193,12 +200,15 @@ Para profundizar, puede observar el siguiente video:
 #+END_EXPORT
 
 *** DONE Ecuaciones incompletas de la forma $ax^2+bx=0$
+SCHEDULED: <2017-04-17 Mon>
 
 *** DONE Ecuaciones cuadráticas trinomio factorizable de la forma $ax^2+bx+c=0$
+DEADLINE: <2017-04-21 Fri>
 En este tipo de ecuaciones cuadráticas, están presentes todos los coeficientes, i.e., $a,b,c$, particularmente el caso en que $a=1$, de modo que es posible observar tan sólo los coeficientes lineal e independiente.
 
 La estrategia consiste en *encontrar dos números que multiplicados den el valor de $c$ y los mismos números sumados den el valor de $b$*.
 *** TODO Ecuaciones completas mediante fórmula general $ax^2+bx+c=0$
+SCHEDULED: <2017-04-24 Mon>
 
 *** TODO Aplicaciones a problemas no rutinarios, complejos y no familiares (CUN)
 
@@ -230,10 +240,13 @@ El discriminante $\Delta=b^2-4ac=0$ establece que existen $2$ soluciones, iguale
 
 Las actividades anteriores las puede encontrar desarrolladas en un /applet/ de *Geogebra*, disponible en el /cuaderno/ siguiente:
 
+***** Solución caso1                                  :geogebra:solucion:
 
 #+BEGIN_EXPORT html
 <iframe scrolling="no" title="Análisis de caso 1" src="https://www.geogebra.org/material/iframe/id/ryCMeuQF/width/850/height/600/border/BAF2C9/smb/true/stb/true/stbh/true/ai/true/asb/true/sri/true/rc/true/ld/true/sdz/true/ctl/true" width="850px" height="600px" style="border:0px;"> </iframe>
 #+END_EXPORT
+
+*** Libro Onenote                                                 :onenote:
 
 
 #+BEGIN_QUOTE

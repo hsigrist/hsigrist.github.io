@@ -50,8 +50,8 @@
 
 #+HTML_DOCTYPE: xhtml-strict
 #+HTML_CONTAINER: div
-#+HTML_LINK_HOME: http://hsigrist.github.io
-#+HTML_LINK_UP: http://hsigrist.github.io/docencia/
+#+HTML_LINK_HOME: https://hsigrist.github.io
+#+HTML_LINK_UP: https://hsigrist.github.io/#teaching
 #+HTML_MATHJAX: path:"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
 #+HTML_HEAD: <link rel="stylesheet" href="Grump.css" />
 #+HTML_HEAD_EXTRA: <meta name="robots" content="INDEX,NOFOLLOW" />

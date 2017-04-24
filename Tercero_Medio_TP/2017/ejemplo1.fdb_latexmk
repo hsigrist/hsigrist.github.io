@@ -1,10 +1,10 @@
 # Fdb version 3
-["xdvipdfmx"] 1492910790 "ejemplo1.xdv" "ejemplo1.pdf" "ejemplo1" 1492910792
-  "ejemplo1.xdv" 1492910790 19648 45f6fcf904f75042f0dd53c1118dfe8a "xelatex"
+["xdvipdfmx"] 1493064727 "ejemplo1.xdv" "ejemplo1.pdf" "ejemplo1" 1493064733
+  "ejemplo1.xdv" 1493064727 19636 5b3127b31863a7f459f22ebe22f3917d "xelatex"
   (generated)
   "ejemplo1.pdf"
-["xelatex"] 1492910788 "ejemplo1.tex" "ejemplo1.xdv" "ejemplo1" 1492910792
-  "/dev/null" 1492910791 0 d41d8cd98f00b204e9800998ecf8427e ""
+["xelatex"] 1493064725 "ejemplo1.tex" "ejemplo1.xdv" "ejemplo1" 1493064733
+  "/dev/null" 1493064729 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty" 1284331290 1458 43ab4710dc82f3edeabecd0d099626b2 ""
   "/usr/local/texlive/2016/texmf-dist/tex/generic/multido/multido.tex" 1274110955 9097 0ff4dff7eb59381cc861308a1c448fc4 ""
   "/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifluatex.sty" 1480098815 7324 2310d1247db0114eb4726807c8837a0e ""
@@ -63,9 +63,9 @@
   "/usr/local/texlive/2016/texmf-dist/web2c/texmf.cnf" 1491389445 32192 c18bc721db8195c55b3f5b993e802bbf ""
   "/usr/local/texlive/2016/texmf-var/web2c/xetex/xelatex.fmt" 1491656905 3746840 aae0499450de061d8bc62946c0e75bd0 ""
   "/usr/local/texlive/2016/texmf.cnf" 1463979140 577 2938757e76f31531e65cc647e3507693 ""
-  "ejemplo1.aux" 1492910790 8 a94a2480d3289e625eea47cd1b285758 ""
-  "ejemplo1.tex" 1492910786 1106 32f2eae006390a6d2bbbc8c1787db3de ""
+  "ejemplo1.aux" 1493064727 8 a94a2480d3289e625eea47cd1b285758 ""
+  "ejemplo1.tex" 1493064723 1085 a7b3312d6a2c8c239b322053347f48d9 ""
   (generated)
-  "ejemplo1.aux"
   "ejemplo1.xdv"
+  "ejemplo1.aux"
   "ejemplo1.log"
