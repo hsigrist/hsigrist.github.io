@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<!-- 2016-07-12 Tue 17:33 -->
-<meta  charset="utf-8">
-<meta  name="viewport" content="width=device-width, initial-scale=1">
+<!-- 2017-04-28 Fri 18:36 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CE 1-2016: Comunicación Efectiva (Formato inverso)</title>
-<meta  name="generator" content="Org-mode">
-<meta  name="author" content="Hans Sigrist">
-<meta  name="description" content="Página de la asignatura Comunicación Efectiva, parte de la Línea Sello Institucional UAC."
+<meta name="generator" content="Org mode">
+<meta name="author" content="Hans Sigrist">
+<meta name="description" content="Página de la asignatura Comunicación Efectiva, parte de la Línea Sello Institucional UAC."
 >
-<meta  name="keywords" content="comunicación efectiva">
+<meta name="keywords" content="comunicación efectiva">
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
@@ -54,13 +54,97 @@
     border: 1px solid black;
   }
   pre.src:hover:before { display: inline;}
-  pre.src-sh:before    { content: 'sh'; }
-  pre.src-bash:before  { content: 'sh'; }
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
   pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-R:before     { content: 'R'; }
-  pre.src-perl:before  { content: 'Perl'; }
-  pre.src-java:before  { content: 'Java'; }
-  pre.src-sql:before   { content: 'SQL'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
 
   table { border-collapse:collapse; }
   caption.t-above { caption-side: top; }
@@ -93,6 +177,7 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
 <link rel="stylesheet" href="Grump.css" />
@@ -156,53 +241,53 @@ for the JavaScript code in this tag.
 <h2>&Iacute;ndice</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgheadline1"><span class="todo NOVEDADES">NOVEDADES</span> REGISTRO CALIFICACIONES&#xa0;&#xa0;&#xa0;<span class="tag"><span class="agronom_a">agronomía</span>&#xa0;<span class="derecho">derecho</span>&#xa0;<span class="kinesiolog_a">kinesiología</span>&#xa0;<span class="psicolog_a">psicología</span></span></a></li>
-<li><a href="#orgheadline2"><span class="todo NOVEDADES">NOVEDADES</span> REFLEXIÓN FINAL</a></li>
-<li><a href="#orgheadline3"><span class="todo FINISHED">FINISHED</span> PROJECT Portafolio Transversal</a>
+<li><a href="#orgbe6dc0c"><span class="todo NOVEDADES">NOVEDADES</span> REGISTRO CALIFICACIONES&#xa0;&#xa0;&#xa0;<span class="tag"><span class="agronom_a">agronomía</span>&#xa0;<span class="derecho">derecho</span>&#xa0;<span class="kinesiolog_a">kinesiología</span>&#xa0;<span class="psicolog_a">psicología</span></span></a></li>
+<li><a href="#org0b983a2"><span class="todo NOVEDADES">NOVEDADES</span> REFLEXIÓN FINAL</a></li>
+<li><a href="#org87031a6"><span class="todo FINISHED">FINISHED</span> PROJECT Portafolio Transversal</a>
 <ul>
-<li><a href="#orgheadline4"><span class="todo FINISHED">FINISHED</span> Agenda Portafolio</a></li>
-<li><a href="#orgheadline5"><span class="todo FINISHED">FINISHED</span> Temas mínimos a incluir en el Portafolio (<b>Tercera Evaluación Parcial 40%</b>):</a></li>
-<li><a href="#orgheadline6"><span class="todo FINISHED">FINISHED</span> SENT Portafolio Carga Transversal</a></li>
-<li><a href="#orgheadline7"><span class="todo FINISHED">FINISHED</span> Anexos Todo</a></li>
-<li><a href="#orgheadline8"><span class="todo FINISHED">FINISHED</span> PROJECT Pauta Evaluación Portafolio Transversal</a></li>
-<li><a href="#orgheadline9"><span class="todo FINISHED">FINISHED</span> ¿Qué se espera de Usted?</a></li>
-<li><a href="#orgheadline10"><span class="todo FINISHED">FINISHED</span> ¿Qué es?</a></li>
-<li><a href="#orgheadline11"><span class="todo FINISHED">FINISHED</span> Presentación</a></li>
+<li><a href="#orgf1eab83"><span class="todo FINISHED">FINISHED</span> Agenda Portafolio</a></li>
+<li><a href="#org778a587"><span class="todo FINISHED">FINISHED</span> Temas mínimos a incluir en el Portafolio (<b>Tercera Evaluación Parcial 40%</b>):</a></li>
+<li><a href="#org8a3260a"><span class="todo FINISHED">FINISHED</span> SENT Portafolio Carga Transversal</a></li>
+<li><a href="#orgd889db4"><span class="todo FINISHED">FINISHED</span> Anexos Todo</a></li>
+<li><a href="#org29ca9f2"><span class="todo FINISHED">FINISHED</span> PROJECT Pauta Evaluación Portafolio Transversal</a></li>
+<li><a href="#org0c06d40"><span class="todo FINISHED">FINISHED</span> ¿Qué se espera de Usted?</a></li>
+<li><a href="#org810a297"><span class="todo FINISHED">FINISHED</span> ¿Qué es?</a></li>
+<li><a href="#orgab28236"><span class="todo FINISHED">FINISHED</span> Presentación</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline12"><span class="todo FINISHED">FINISHED</span> SENT Glosario</a></li>
-<li><a href="#orgheadline13"><span class="todo FINISHED">FINISHED</span> Unidad 2 Comunicación y acción</a></li>
-<li><a href="#orgheadline14"><span class="todo FINISHED">FINISHED</span> Unidad 3 La expresión escrita</a></li>
-<li><a href="#orgheadline15"><span class="todo FINISHED">FINISHED</span> Unidad 1 Lenguaje y Comunicación</a>
+<li><a href="#org832ce34"><span class="todo FINISHED">FINISHED</span> SENT Glosario</a></li>
+<li><a href="#org026d9b8"><span class="todo FINISHED">FINISHED</span> Unidad 2 Comunicación y acción</a></li>
+<li><a href="#orgd7fdb99"><span class="todo FINISHED">FINISHED</span> Unidad 3 La expresión escrita</a></li>
+<li><a href="#orgd521a68"><span class="todo FINISHED">FINISHED</span> Unidad 1 Lenguaje y Comunicación</a>
 <ul>
-<li><a href="#orgheadline16"><span class="todo FINISHED">FINISHED</span> Semana 3 Procesos de la Comunicación</a></li>
-<li><a href="#orgheadline17"><span class="todo FINISHED">FINISHED</span> Semana 2 Procesos de Comunicación</a></li>
-<li><a href="#orgheadline18"><span class="todo FINISHED">FINISHED</span> Semana 1 Presentación &amp; Diagnóstico</a></li>
+<li><a href="#orgb00edca"><span class="todo FINISHED">FINISHED</span> Semana 3 Procesos de la Comunicación</a></li>
+<li><a href="#org09282a6"><span class="todo FINISHED">FINISHED</span> Semana 2 Procesos de Comunicación</a></li>
+<li><a href="#org5019615"><span class="todo FINISHED">FINISHED</span> Semana 1 Presentación &amp; Diagnóstico</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline19"><span class="todo FINISHED">FINISHED</span> Agenda</a></li>
-<li><a href="#orgheadline20"><span class="todo FINISHED">FINISHED</span> PROJECT Recursos</a>
+<li><a href="#orgd77591b"><span class="todo FINISHED">FINISHED</span> Agenda</a></li>
+<li><a href="#orgc303e21"><span class="todo FINISHED">FINISHED</span> PROJECT Recursos</a>
 <ul>
-<li><a href="#orgheadline21">Manual CE</a></li>
-<li><a href="#orgheadline22">Método de lectura previa</a></li>
+<li><a href="#org26a7fec">Manual CE</a></li>
+<li><a href="#org346ab50">Método de lectura previa</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline23"><span class="todo FINISHED">FINISHED</span> Audiencia</a>
+<li><a href="#orgae318d0"><span class="todo FINISHED">FINISHED</span> Audiencia</a>
 <ul>
-<li><a href="#orgheadline24">Contacto</a></li>
+<li><a href="#org774289d">Contacto</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline25"><span class="todo FINISHED">FINISHED</span> Programa</a>
+<li><a href="#org89af693"><span class="todo FINISHED">FINISHED</span> Programa</a>
 <ul>
-<li><a href="#orgheadline26">Descripción</a></li>
-<li><a href="#orgheadline27">Objetivo general</a></li>
-<li><a href="#orgheadline28">Objetivos específicos</a></li>
-<li><a href="#orgheadline29">Habilidades a desarrollar</a></li>
+<li><a href="#org2965cbd">Descripción</a></li>
+<li><a href="#org2b8a002">Objetivo general</a></li>
+<li><a href="#org9a36cf8">Objetivos específicos</a></li>
+<li><a href="#org81e2429">Habilidades a desarrollar</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline30"><span class="todo FINISHED">FINISHED</span> Habilidades Blandas (HB)</a>
+<li><a href="#org0cefcef"><span class="todo FINISHED">FINISHED</span> Habilidades Blandas (HB)</a>
 <ul>
-<li><a href="#orgheadline31"><span class="todo FINISHED">FINISHED</span> Reflexión</a></li>
+<li><a href="#org193a7a5"><span class="todo FINISHED">FINISHED</span> Reflexión</a></li>
 </ul>
 </li>
 </ul>
@@ -210,11 +295,11 @@ for the JavaScript code in this tag.
 </nav>
 
 
-<div id="outline-container-orgheadline1" class="outline-2">
-<h2 id="orgheadline1"><span class="todo NOVEDADES">NOVEDADES</span> REGISTRO CALIFICACIONES&#xa0;&#xa0;&#xa0;<span class="tag"><span class="agronom_a">agronomía</span>&#xa0;<span class="derecho">derecho</span>&#xa0;<span class="kinesiolog_a">kinesiología</span>&#xa0;<span class="psicolog_a">psicología</span></span></h2>
-<div class="outline-text-2" id="text-orgheadline1">
+<div id="outline-container-orgbe6dc0c" class="outline-2">
+<h2 id="orgbe6dc0c"><span class="todo NOVEDADES">NOVEDADES</span> REGISTRO CALIFICACIONES&#xa0;&#xa0;&#xa0;<span class="tag"><span class="agronom_a">agronomía</span>&#xa0;<span class="derecho">derecho</span>&#xa0;<span class="kinesiolog_a">kinesiología</span>&#xa0;<span class="psicolog_a">psicología</span></span></h2>
+<div class="outline-text-2" id="text-orgbe6dc0c">
 <p>
-Estimados y estimadas estudiantes, ya se encuentra habilitada la primera fase del &laquo;Portal del Alumno&raquo;, en el cual podrán acceder a la revisión de su carga académica, mensajería proveniente de sus respectivos docentes y posibilidad de descargar documentos y/o recursos que sus profesores les carguen. En este sentido, es que los invito a que revisen el portal y puedan acceder con sus credenciales de modo conozcan sus registros académicos, en particular, aquellos de nuestra asignatura <b>Comunicación Efectiva</b>. Actualmente me encuentro en proceso de levantar los registros que ya poseo y migrarlos hacia el nuevo sistema. Quedan entonces invitados a revisar sus registros, *cualquier inquietud, solicito encarecidamente, referir correo a <a href="mailto:hans.sigrist@uac.cl">hans.sigrist@uac.cl</a> bajo el asunto &laquo;Situación Académica CE&raquo;, de este modo podré atender a las consultas de manera más eficiente. Les comparto el enlace, que de todas formas es accesible desde nuestra página institucional en <a href="http://www.uac.cl/">www.uac.cl</a> en la sección &laquo;Estudiantes&raquo;.
+Estimados y estimadas estudiantes, ya se encuentra habilitada la primera fase del &laquo;Portal del Alumno&raquo;, en el cual podrán acceder a la revisión de su carga académica, mensajería proveniente de sus respectivos docentes y posibilidad de descargar documentos y/o recursos que sus profesores les carguen. En este sentido, es que los invito a que revisen el portal y puedan acceder con sus credenciales de modo conozcan sus registros académicos, en particular, aquellos de nuestra asignatura <b>Comunicación Efectiva</b>. Actualmente me encuentro en proceso de levantar los registros que ya poseo y migrarlos hacia el nuevo sistema. Quedan entonces invitados a revisar sus registros, *cualquier inquietud, solicito encarecidamente, referir correo a <a href="mailto:hans.sigrist@uac.cl">hans.sigrist@uac.cl</a> bajo el asunto &laquo;Situación Académica CE&raquo;, de este modo podré atender a las consultas de manera más eficiente. Les comparto el enlace, que de todas formas es accesible desde nuestra página institucional en <a href="http://www.uac.cl">www.uac.cl</a> en la sección &laquo;Estudiantes&raquo;.
 </p>
 
 <blockquote>
@@ -225,9 +310,9 @@ Estimados y estimadas estudiantes, ya se encuentra habilitada la primera fase de
 </div>
 </div>
 
-<div id="outline-container-orgheadline2" class="outline-2">
-<h2 id="orgheadline2"><span class="todo NOVEDADES">NOVEDADES</span> REFLEXIÓN FINAL</h2>
-<div class="outline-text-2" id="text-orgheadline2">
+<div id="outline-container-org0b983a2" class="outline-2">
+<h2 id="org0b983a2"><span class="todo NOVEDADES">NOVEDADES</span> REFLEXIÓN FINAL</h2>
+<div class="outline-text-2" id="text-org0b983a2">
 <blockquote>
 <p>
 Estimados y estimadas estudiantes, al finalizar la asignatura refiero una reflexión que aúne sentimientos de satisfacción y que elevan mi convicción respecto de lo esencial que resultan este tipo de oportunidades de aprendizaje. Me inclino a pensar que iniciado este tránsito con quien escribe, logran conciliar un nivel de compromiso y responsabilidad más allá del simple hecho de &laquo;recibir&raquo; contenidos, entonces me sentiré confortado y al mismo tiempo certero de que fue un inicio auspiciante. No todo es ni debe ser autocomplacencia, la autoevaluación (o evaluación reflexiva) debe ser una praxis diaria y permanente a lo largo de toda la vida, en este sentido, me inclino a pensar que la asignatura puede ser mucho más provechosa e enriquecedora. Sólo me queda recordar la máxima de la asignatura -y que según he observado- ha dejado una huella en muchos y muchas: &laquo;No emita juicios valóricos, éstos sólo aportan sesgo&raquo;. Saludos cordiales, <i>Hans</i>.
@@ -236,12 +321,12 @@ Estimados y estimadas estudiantes, al finalizar la asignatura refiero una reflex
 </div>
 </div>
 
-<div id="outline-container-orgheadline3" class="outline-2">
-<h2 id="orgheadline3"><span class="todo FINISHED">FINISHED</span> PROJECT Portafolio Transversal</h2>
-<div class="outline-text-2" id="text-orgheadline3">
-</div><div id="outline-container-orgheadline4" class="outline-3">
-<h3 id="orgheadline4"><span class="todo FINISHED">FINISHED</span> Agenda Portafolio</h3>
-<div class="outline-text-3" id="text-orgheadline4">
+<div id="outline-container-org87031a6" class="outline-2">
+<h2 id="org87031a6"><span class="todo FINISHED">FINISHED</span> PROJECT Portafolio Transversal</h2>
+<div class="outline-text-2" id="text-org87031a6">
+</div><div id="outline-container-orgf1eab83" class="outline-3">
+<h3 id="orgf1eab83"><span class="todo FINISHED">FINISHED</span> Agenda Portafolio</h3>
+<div class="outline-text-3" id="text-orgf1eab83">
 <p>
 A continuación, comparto el <b>Calendario de Avances Portafolio</b>, sugiero ceñirse a esta agenda ya que favorece la <i>autogestión</i> y con ello se evita la <i>procrastinación</i>.
 </p>
@@ -300,7 +385,7 @@ Los siguientes, son los avances que verificaremos en las fechas propuestas (Sema
 </p>
 </div>
 
-<ul class="org-ul"><li><a id="orgheadline32"></a>Avance 1: Semana 3<br ><div class="outline-text-7" id="text-orgheadline32">
+<ul class="org-ul"><li><a id="org68c8557"></a>Avance 1: Semana 3<br><div class="outline-text-7" id="text-org68c8557">
 <dl class="org-dl">
 <dt>Biodata</dt><dd>Elabore una descripción personal en la que se destaquen sus principales aspectos profesionales, debe incluir una foto personal.</dd>
 <dt>Guión personal</dt><dd>Responde asertivamente a la pregunta: ¿Podría contarme algo acerca de usted?/Cuénteme algo acerca de usted. Mín. 60 y máx. 90 palabras.</dd>
@@ -308,41 +393,41 @@ Los siguientes, son los avances que verificaremos en las fechas propuestas (Sema
 </div></li></ul>
 </div>
 
-<div id="outline-container-orgheadline5" class="outline-3">
-<h3 id="orgheadline5"><span class="todo FINISHED">FINISHED</span> Temas mínimos a incluir en el Portafolio (<b>Tercera Evaluación Parcial 40%</b>):</h3>
-<div class="outline-text-3" id="text-orgheadline5">
+<div id="outline-container-org778a587" class="outline-3">
+<h3 id="org778a587"><span class="todo FINISHED">FINISHED</span> Temas mínimos a incluir en el Portafolio (<b>Tercera Evaluación Parcial 40%</b>):</h3>
+<div class="outline-text-3" id="text-org778a587">
 <p>
 Entre los <b>elementos mínimos</b> que debe incluir su portafolio se encuentran:
 </p>
 </div>
 
-<ul class="org-ul"><li><a id="orgheadline33"></a>Biodata (resumen profesional, máximo 4 líneas)<br ><div class="outline-text-7" id="text-orgheadline33">
+<ul class="org-ul"><li><a id="orgdd750f3"></a>Biodata (resumen profesional, máximo 4 líneas)<br><div class="outline-text-7" id="text-orgdd750f3">
 <p>
 Se declara en tercera persona preferentemente. Debe relevar su presencia desde un enfoque académico. En el caso de no existir antecedentes académicos, utilice su condición de estudiante en formación profesional. Si posee algún oficio y habilidad que pueda destacar, puede incluirla entre sus competencias. En general, una biodata nos presenta profesional, académica, disciplinarmente.  
 </p>
 </div></li>
-<li><a id="orgheadline34"></a>Guión personal (forma de venderse profesionalmente, mínimo 60, máximo 90 palabras)<br ><div class="outline-text-7" id="text-orgheadline34">
+<li><a id="org8be9618"></a>Guión personal (forma de venderse profesionalmente, mínimo 60, máximo 90 palabras)<br><div class="outline-text-7" id="text-org8be9618">
 <p>
 En el guión nos presentamos en primera persona, destacando nuestras habilidades blandas, posibles reconocimientos, capacitaciones en el ámbito interpersonal, validación de aptitudes, etc. Es una forma de vendernos profesionalmente, nos destaca, nos posiciona, desde una perspectiva positiva, corresponde a la forma en que nos visualizamos y la relevamos desde la evidencia, con total honestidad.
 </p>
 </div></li>
-<li><a id="orgheadline35"></a>Matriz de fortalezas/debilidades personales<br ><div class="outline-text-7" id="text-orgheadline35">
+<li><a id="orgb9402af"></a>Matriz de fortalezas/debilidades personales<br><div class="outline-text-7" id="text-orgb9402af">
 <p>
 Ambas se deben declarar desde un enfoque de mejora/reconocimiento, por un lado, enunciamos aquella debilidad que nos 
 </p>
 </div></li>
-<li><a id="orgheadline36"></a>Principales subhabilidades a trabajar (deconstrucción propia de una macro habilidad)<br ></li>
+<li><a id="orge396dc2"></a>Principales subhabilidades a trabajar (deconstrucción propia de una macro habilidad)<br></li>
 
-<li><a id="orgheadline37"></a>Una historia motivacional breve (relato motivacional que evidencia el desarrollo de una habilidad laboral, mínimo 80, máximo 150 palabras)<br ></li>
+<li><a id="org8fc95d1"></a>Una historia motivacional breve (relato motivacional que evidencia el desarrollo de una habilidad laboral, mínimo 80, máximo 150 palabras)<br></li>
 
-<li><a id="orgheadline38"></a>Currículum vítae (preferentemente mixto, máximo 2 páginas)<br ></li>
+<li><a id="org0a01a12"></a>Currículum vítae (preferentemente mixto, máximo 2 páginas)<br></li>
 
-<li><a id="orgheadline39"></a>Reflexión final (mínimo 80, máximo 100 palabras)<br ></li>
+<li><a id="org609c110"></a>Reflexión final (mínimo 80, máximo 100 palabras)<br></li>
 
 
-<div id="outline-container-orgheadline40" class="outline-4">
-<h4 id="orgheadline40">Sobre foto personal</h4>
-<div class="outline-text-4" id="text-orgheadline40">
+<div id="outline-container-orgdf60910" class="outline-4">
+<h4 id="orgdf60910">Sobre foto personal</h4>
+<div class="outline-text-4" id="text-orgdf60910">
 <p>
 Sugiero una foto de frente, ofreciendo una sonrisa natural y empática. Existen herramientas (software de escritorio) para editar imágenes como también aplicaciones online, entre ellas destaco <a href="http://www125.lunapic.com/editor/">Lunapic</a>, que por su simpleza le permitirá rápidamente obtener resultados adecuados. Dos herramientas de Lunapic, fueron utilizadas con la imagen Biodata del Portafolio: <i>Simple Crop Tool</i>, ubicado en el menu <i>Edit</i> con la variante (shape) circle; por otra parte se utilizó desde el menu <i>Filters</i> el primero llamado <i>Black and White</i>. Una vez terminado se presiona <i>Save Image</i> en el menu <i>File</i> y la imagen se guarda en nuestro computador. A modo de ejemplo se puede pasar de <a href="man-in-suit2.jpg">esto</a> a <a href="imageedit_7_2595109213.gif">esto</a>; o bien de <a href="bigstock-Successful-Mature-Business-Man-7408934.jpg">esto</a> a <a href="imageedit_10_7072456166.gif">esto</a>. 
 </p>
@@ -350,9 +435,9 @@ Sugiero una foto de frente, ofreciendo una sonrisa natural y empática. Existen 
 </div>
 </div>
 
-<div id="outline-container-orgheadline6" class="outline-3">
-<h3 id="orgheadline6"><span class="todo FINISHED">FINISHED</span> SENT Portafolio Carga Transversal</h3>
-<div class="outline-text-3" id="text-orgheadline6">
+<div id="outline-container-org8a3260a" class="outline-3">
+<h3 id="org8a3260a"><span class="todo FINISHED">FINISHED</span> SENT Portafolio Carga Transversal</h3>
+<div class="outline-text-3" id="text-org8a3260a">
 <p>
 Una vez finalizado su Portafolio, cautele relevar todos los <b>Criterios</b> parametrizados en la <i>Pauta de evaluación Portafolio Transversal</i>, no olvide adjuntar <b>Carta de presentación</b> (ver pauta, criterio 10). El enlace para cargar su Portafolio se encuentra en el enlace siguiente:
 </p>
@@ -364,18 +449,18 @@ Una vez finalizado su Portafolio, cautele relevar todos los <b>Criterios</b> par
 </blockquote>
 </div>
 </div>
-<div id="outline-container-orgheadline7" class="outline-3">
-<h3 id="orgheadline7"><span class="todo FINISHED">FINISHED</span> Anexos Todo</h3>
-<div class="outline-text-3" id="text-orgheadline7">
+<div id="outline-container-orgd889db4" class="outline-3">
+<h3 id="orgd889db4"><span class="todo FINISHED">FINISHED</span> Anexos Todo</h3>
+<div class="outline-text-3" id="text-orgd889db4">
 <p>
 (<i>Principales ejercicios de libre elección, rescatados de las clases, máximo 4 ejercicios desarrollados correctamente</i>). La libre elección de los ejercicios busca evaluar los criterios de selección del estudiante en cuanto al desafío de la actividad y su relación con la deconstrucción de la macro habilidad presentada como tercer avance.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgheadline8" class="outline-3">
-<h3 id="orgheadline8"><span class="todo FINISHED">FINISHED</span> PROJECT Pauta Evaluación Portafolio Transversal</h3>
-<div class="outline-text-3" id="text-orgheadline8">
+<div id="outline-container-org29ca9f2" class="outline-3">
+<h3 id="org29ca9f2"><span class="todo FINISHED">FINISHED</span> PROJECT Pauta Evaluación Portafolio Transversal</h3>
+<div class="outline-text-3" id="text-org29ca9f2">
 <p>
 Este producto será evaluado según la rúbrica que podrá encontrar en el enlace siguiente:
 </p>
@@ -449,18 +534,18 @@ Al respecto, se comparte con la comunidad, dos extractos con las principales car
 </div>
 </div>
 
-<div id="outline-container-orgheadline9" class="outline-3">
-<h3 id="orgheadline9"><span class="todo FINISHED">FINISHED</span> ¿Qué se espera de Usted?</h3>
-<div class="outline-text-3" id="text-orgheadline9">
+<div id="outline-container-org0c06d40" class="outline-3">
+<h3 id="org0c06d40"><span class="todo FINISHED">FINISHED</span> ¿Qué se espera de Usted?</h3>
+<div class="outline-text-3" id="text-org0c06d40">
 <p>
 Demostrar capacidad para escribir, seleccionar, coleccionar, analizar y reflexionar. Por tanto, es necesario que conozca los temas a incluir y la forma en que será evaluado.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgheadline10" class="outline-3">
-<h3 id="orgheadline10"><span class="todo FINISHED">FINISHED</span> ¿Qué es?</h3>
-<div class="outline-text-3" id="text-orgheadline10">
+<div id="outline-container-org810a297" class="outline-3">
+<h3 id="org810a297"><span class="todo FINISHED">FINISHED</span> ¿Qué es?</h3>
+<div class="outline-text-3" id="text-org810a297">
 <p>
 Es un recurso de evaluación que representa su desempeño a lo largo de un proceso formativo. Puede contener diversas producciones personales que evidencian su avance en una determinada área.
 </p>
@@ -470,18 +555,18 @@ Es un recurso útil para enfatizar el rol y compromiso suyo en su proceso de apr
 </p>
 </div>
 </div>
-<div id="outline-container-orgheadline11" class="outline-3">
-<h3 id="orgheadline11"><span class="todo FINISHED">FINISHED</span> Presentación</h3>
-<div class="outline-text-3" id="text-orgheadline11">
+<div id="outline-container-orgab28236" class="outline-3">
+<h3 id="orgab28236"><span class="todo FINISHED">FINISHED</span> Presentación</h3>
+<div class="outline-text-3" id="text-orgab28236">
 <p>
 ¿Sigues usando un currículum para presentarte? ¿Has pensado en usar un <b>Portafolio</b>? En esta asignatura diseñaran un <b>Portafolio</b>, una buena práctica sería entender el mismo como una representación de quién soy, qué hago, cómo lo hago, es decir, como <b>me visibilizo</b> y cómo <b>me visibilizan</b>; en este sentido, el Portafolio puede ser utilizado como una herramienta de consecución laboral.
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-orgheadline12" class="outline-2">
-<h2 id="orgheadline12"><span class="todo FINISHED">FINISHED</span> SENT Glosario</h2>
-<div class="outline-text-2" id="text-orgheadline12">
+<div id="outline-container-org832ce34" class="outline-2">
+<h2 id="org832ce34"><span class="todo FINISHED">FINISHED</span> SENT Glosario</h2>
+<div class="outline-text-2" id="text-org832ce34">
 <p>
 Como una forma de fomentar su acervo, les propongo la creación de un <b>Glosario</b>, de modo recopilen conceptos e ideas que permitan su uso pertinente en diversos ámbitos de la comunicación. Pueden incorporar los conceptos que desees, como mínimo debieran manejarse los siguientes:
 </p>
@@ -518,55 +603,58 @@ Una vez finalice su Glosario, puede cargarlo en el enlace siguiente:
 </div>
 </div>
 
-<div id="outline-container-orgheadline13" class="outline-2">
-<h2 id="orgheadline13"><span class="todo FINISHED">FINISHED</span> Unidad 2 Comunicación y acción</h2>
-<div class="outline-text-2" id="text-orgheadline13">
+<div id="outline-container-org026d9b8" class="outline-2">
+<h2 id="org026d9b8"><span class="todo FINISHED">FINISHED</span> Unidad 2 Comunicación y acción</h2>
+<div class="outline-text-2" id="text-org026d9b8">
 <ul class="org-ul">
 <li>State &laquo;FINISHED&raquo;   from &laquo;WAITING&raquo;    <span class="timestamp-wrapper"><span class="timestamp">[2016-07-12 Tue 17:20]</span></span></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgheadline14" class="outline-2">
-<h2 id="orgheadline14"><span class="todo FINISHED">FINISHED</span> Unidad 3 La expresión escrita</h2>
-<div class="outline-text-2" id="text-orgheadline14">
+<div id="outline-container-orgd7fdb99" class="outline-2">
+<h2 id="orgd7fdb99"><span class="todo FINISHED">FINISHED</span> Unidad 3 La expresión escrita</h2>
+<div class="outline-text-2" id="text-orgd7fdb99">
 <ul class="org-ul">
 <li>State &laquo;FINISHED&raquo;   from &laquo;WAITING&raquo;    <span class="timestamp-wrapper"><span class="timestamp">[2016-07-12 Tue 17:21]</span></span></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgheadline15" class="outline-2">
-<h2 id="orgheadline15"><span class="todo FINISHED">FINISHED</span> Unidad 1 Lenguaje y Comunicación</h2>
-<div class="outline-text-2" id="text-orgheadline15">
-</div><div id="outline-container-orgheadline16" class="outline-3">
-<h3 id="orgheadline16"><span class="todo FINISHED">FINISHED</span> Semana 3 Procesos de la Comunicación</h3>
-<div class="outline-text-3" id="text-orgheadline16">
+<div id="outline-container-orgd521a68" class="outline-2">
+<h2 id="orgd521a68"><span class="todo FINISHED">FINISHED</span> Unidad 1 Lenguaje y Comunicación</h2>
+<div class="outline-text-2" id="text-orgd521a68">
+</div><div id="outline-container-orgb00edca" class="outline-3">
+<h3 id="orgb00edca"><span class="todo FINISHED">FINISHED</span> Semana 3 Procesos de la Comunicación</h3>
+<div class="outline-text-3" id="text-orgb00edca">
 <ul class="org-ul">
 <li>State &laquo;FINISHED&raquo;   from &laquo;WAITING&raquo;    <span class="timestamp-wrapper"><span class="timestamp">[2016-07-12 Tue 17:21]</span></span></li>
 </ul>
 </div>
-<ul class="org-ul"><li><a id="orgheadline41"></a><span class="todo WAITING">WAITING</span> <b>MLP</b> <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-04-14 Thu&gt; </span></span> <a href="Manual_Comunicacion_Efectiva.pdf">Manual_Comunicacion_Efectiva.pdf</a> (Pág. 4-12) ¿Qué es la comunicación?<br ></li>
-<li><a id="orgheadline42"></a><span class="todo WAITING">WAITING</span> Factores que intervienen en la comunicación.<br ></li></ul>
+<ul class="org-ul"><li><a id="orgd188fbe"></a><span class="todo WAITING">WAITING</span> <b>MLP</b> <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-04-14 Thu&gt; </span></span> <a href="Manual_Comunicacion_Efectiva.pdf">Manual_Comunicacion_Efectiva.pdf</a> (Pág. 4-12) ¿Qué es la comunicación?<br></li>
+<li><a id="org4a92e28"></a><span class="todo WAITING">WAITING</span> Factores que intervienen en la comunicación.<br></li></ul>
 </div>
-<div id="outline-container-orgheadline17" class="outline-3">
-<h3 id="orgheadline17"><span class="todo FINISHED">FINISHED</span> Semana 2 Procesos de Comunicación</h3>
-<div class="outline-text-3" id="text-orgheadline17">
+<div id="outline-container-org09282a6" class="outline-3">
+<h3 id="org09282a6"><span class="todo FINISHED">FINISHED</span> Semana 2 Procesos de Comunicación</h3>
+<div class="outline-text-3" id="text-org09282a6">
 </div>
-<ul class="org-ul"><li><a id="orgheadline43"></a><span class="done CANCELLED">CANCELLED</span> <b>MLP</b> <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-03-28 Mon&gt; </span></span> <a href="Manual_Comunicacion_Efectiva.pdf">Manual_Comunicacion_Efectiva.pdf</a> (pág. 4-12) ¿Qué es la comunicación?<br ></li>
-<li><a id="orgheadline44"></a><span class="done CANCELLED">CANCELLED</span> Factores que intervienen en la comunicación.<br ></li>
-<li><a id="orgheadline45"></a><span class="todo TODO">TODO</span> Recuerden que hemos desplazado para esta semana la toma del Pre-Test (Diagnóstico), de modo que solicito velar por la asistencia y puntualidad. Este evento es de suma importancia, tanto a nivel formativo como evaluativo. En diversas acciones propias de nuestro desempeño académico y profesional, es costumbre que seamos medidos, tanto al inicio como al final de un proceso. Con ello cautelamos la denominada &laquo;trazabilidad&raquo;. <b>Quedan entonces cordialmente invitados todas y todos a este proceso evaluativo</b>.<br ></li></ul>
+<ul class="org-ul"><li><a id="org3ebb40a"></a><span class="done CANCELLED">CANCELLED</span> <b>MLP</b> <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-03-28 Mon&gt; </span></span> <a href="Manual_Comunicacion_Efectiva.pdf">Manual_Comunicacion_Efectiva.pdf</a> (pág. 4-12) ¿Qué es la comunicación?<br></li>
+<li><a id="org867b4d3"></a><span class="done CANCELLED">CANCELLED</span> Factores que intervienen en la comunicación.<br></li>
+<li><a id="orgd157611"></a><span class="todo TODO">TODO</span> Recuerden que hemos desplazado para esta semana la toma del Pre-Test (Diagnóstico), de modo que solicito velar por la asistencia y puntualidad. Este evento es de suma importancia, tanto a nivel formativo como evaluativo. En diversas acciones propias de nuestro desempeño académico y profesional, es costumbre que seamos medidos, tanto al inicio como al final de un proceso. Con ello cautelamos la denominada &laquo;trazabilidad&raquo;. <b>Quedan entonces cordialmente invitados todas y todos a este proceso evaluativo</b>.<br></li></ul>
 </div>
-<div id="outline-container-orgheadline18" class="outline-3">
-<h3 id="orgheadline18"><span class="todo FINISHED">FINISHED</span> Semana 1 Presentación &amp; Diagnóstico</h3>
-<div class="outline-text-3" id="text-orgheadline18">
+<div id="outline-container-org5019615" class="outline-3">
+<h3 id="org5019615"><span class="todo FINISHED">FINISHED</span> Semana 1 Presentación &amp; Diagnóstico</h3>
+<div class="outline-text-3" id="text-org5019615">
+<p>
+DEADLINE: <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-03-31 Thu&gt; </span></span> SCHEDULED: <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-03-31 Thu&gt;</span></span>
+</p>
 </div>
-<ul class="org-ul"><li><a id="orgheadline46"></a><span class="done DONE">DONE</span> En esta primera clase realizaremos <b>dos acciones</b> ineludibles y que forman parte de nuestra hoja de ruta: la <b>primera</b>, consignar un espacio para las presentaciones de manera colectiva, además estableceremos los principales hitos académicos de la asignatura, su programa, objetivos, evaluaciones. Sin embargo, puede dar lectura a este blog, en el cual se recopilan la mayoría de los antecedentes y material repositorio del mismo.<br ></li>
-<li><a id="orgheadline47"></a><span class="done DEFERRED">DEFERRED</span> La <b>segunda</b> acción que llevaremos a cabo, será la toma de un <b>Diagnóstico Inicial (Pre-Test)</b>, por ello su <i>asistencia</i> y <i>puntualidad</i> es primordial, se hace particularmente compleja la posibilidad de rendir en rezago este instrumento, que como bien ya debe saber mide conocimientos de entrada.<br ></li></ul>
+<ul class="org-ul"><li><a id="org67ead80"></a><span class="done DONE">DONE</span> En esta primera clase realizaremos <b>dos acciones</b> ineludibles y que forman parte de nuestra hoja de ruta: la <b>primera</b>, consignar un espacio para las presentaciones de manera colectiva, además estableceremos los principales hitos académicos de la asignatura, su programa, objetivos, evaluaciones. Sin embargo, puede dar lectura a este blog, en el cual se recopilan la mayoría de los antecedentes y material repositorio del mismo.<br></li>
+<li><a id="org3653ecc"></a><span class="done DEFERRED">DEFERRED</span> La <b>segunda</b> acción que llevaremos a cabo, será la toma de un <b>Diagnóstico Inicial (Pre-Test)</b>, por ello su <i>asistencia</i> y <i>puntualidad</i> es primordial, se hace particularmente compleja la posibilidad de rendir en rezago este instrumento, que como bien ya debe saber mide conocimientos de entrada.<br></li></ul>
 </div>
 </div>
 
-<div id="outline-container-orgheadline19" class="outline-2">
-<h2 id="orgheadline19"><span class="todo FINISHED">FINISHED</span> Agenda</h2>
-<div class="outline-text-2" id="text-orgheadline19">
+<div id="outline-container-orgd77591b" class="outline-2">
+<h2 id="orgd77591b"><span class="todo FINISHED">FINISHED</span> Agenda</h2>
+<div class="outline-text-2" id="text-orgd77591b">
 <p>
 Esta agenda recopila información de la ruta que seguiremos durante este semestre, y se poblará a medida que ciertos hitos se cumplan, e.g. Evaluaciones. Existen algunas convenciones, aquí <b>TODO</b> (del inglés <i>to do</i>) corresponde a &laquo;tareas&raquo; o &laquo;acciones&raquo; a realizar; <b>DONE</b> (del inglés <i>done</i>) aparecerá cuando la acción ya esté realizada o bien ya esté fuera de plazo; <b>STARTED</b> corresponde a acciones que se inician con anticipación, e.g. &laquo;lecturas previas&raquo;. Se consignan de igual forma, las fechas de cada clase, que en cada oportunidad corresponden a <b>dos</b>: la <i>primera</i> a partir de las 19:00PM a 20:20PM y la <i>segunda</i> desde 20:25PM a 21:45PM; o en el caso del día sábado, la <i>primera</i> desde 08:30AM a 09:50PM y la <i>segunda</i> desde 10:00PM a 11:20PM. La consigna en cada clase, es sólo un descriptor del sub-tema que abordaremos, en ningún caso una especificación de las acciones a realizar en el aula. Utilice esta agenda para organizar su tiempo y poblar su propia agenda también. Visite periódicamente la agenda de modo poder establecer prioridades frente a las distintas acciones que surjan en el semestre. Como siempre, sus inquietudes plantéelas en clase, lugar en el cual todos podremos enterarnos de la o las posibles soluciones.
 </p>
@@ -576,24 +664,24 @@ Debido a las distintas audiencias que atiendo, he preferido optar por declarar l
 </p>
 </div>
 
-<ul class="org-ul"><li><a id="orgheadline48"></a><span class="todo FINISHED">FINISHED</span> Semana 1 <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-03-28 Mon&gt;</span></span><br ><div class="outline-text-5" id="text-orgheadline48">
+<ul class="org-ul"><li><a id="org6ce3bd6"></a><span class="todo FINISHED">FINISHED</span> Semana 1 <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-03-28 Mon&gt;</span></span><br><div class="outline-text-5" id="text-org6ce3bd6">
 <p>
 Presentación de la asignatura
 Diagnóstico Inicial Nacional
 </p>
 </div></li>
-<li><a id="orgheadline49"></a><span class="todo FINISHED">FINISHED</span> Semana 2 <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-04-04 Mon&gt;</span></span><br ><div class="outline-text-5" id="text-orgheadline49">
+<li><a id="org9da3e26"></a><span class="todo FINISHED">FINISHED</span> Semana 2 <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-04-04 Mon&gt;</span></span><br><div class="outline-text-5" id="text-org9da3e26">
 <p>
 ¿Qué es la comunicación?
 Factores que intervienen en la comunicación
 </p>
 </div></li>
-<li><a id="orgheadline50"></a><span class="todo FINISHED">FINISHED</span> Semana 3 <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-04-11 Mon&gt;</span></span><br ><div class="outline-text-5" id="text-orgheadline50">
+<li><a id="orge24a331"></a><span class="todo FINISHED">FINISHED</span> Semana 3 <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-04-11 Mon&gt;</span></span><br><div class="outline-text-5" id="text-orge24a331">
 <p>
 ¿Qué es la comunicación efectiva?
 </p>
 </div></li>
-<li><a id="orgheadline51"></a><span class="todo FINISHED">FINISHED</span> Semana 4 <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-04-18 Mon&gt;</span></span><br ><div class="outline-text-5" id="text-orgheadline51">
+<li><a id="org0eb2882"></a><span class="todo FINISHED">FINISHED</span> Semana 4 <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-04-18 Mon&gt;</span></span><br><div class="outline-text-5" id="text-org0eb2882">
 <ul class="org-ul">
 <li>State &laquo;FINISHED&raquo;   from &laquo;WAITING&raquo;    <span class="timestamp-wrapper"><span class="timestamp">[2016-07-12 Tue 17:21]</span></span></li>
 </ul>
@@ -601,7 +689,7 @@ Factores que intervienen en la comunicación
 Habilidades comunicativas
 </p>
 </div></li>
-<li><a id="orgheadline52"></a><span class="todo FINISHED">FINISHED</span> Semana 5 <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-04-25 Mon&gt;</span></span><br ><div class="outline-text-5" id="text-orgheadline52">
+<li><a id="orgd74a634"></a><span class="todo FINISHED">FINISHED</span> Semana 5 <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-04-25 Mon&gt;</span></span><br><div class="outline-text-5" id="text-orgd74a634">
 <ul class="org-ul">
 <li>State &laquo;FINISHED&raquo;   from &laquo;WAITING&raquo;    <span class="timestamp-wrapper"><span class="timestamp">[2016-07-12 Tue 17:21]</span></span></li>
 </ul>
@@ -609,7 +697,7 @@ Habilidades comunicativas
 Las barreras de la comunicación
 </p>
 </div></li>
-<li><a id="orgheadline53"></a><span class="todo FINISHED">FINISHED</span> Semana 6 &lt;2016-05-02 Mon&gt;<br ><div class="outline-text-5" id="text-orgheadline53">
+<li><a id="orgb90dc9e"></a><span class="todo FINISHED">FINISHED</span> Semana 6 &lt;2016-05-02 Mon&gt;<br><div class="outline-text-5" id="text-orgb90dc9e">
 <ul class="org-ul">
 <li>State &laquo;FINISHED&raquo;   from &laquo;WAITING&raquo;    <span class="timestamp-wrapper"><span class="timestamp">[2016-07-12 Tue 17:21]</span></span></li>
 </ul>
@@ -619,12 +707,12 @@ Las barreras de la comunicación
 </div></li></ul>
 </div>
 
-<div id="outline-container-orgheadline20" class="outline-2">
-<h2 id="orgheadline20"><span class="todo FINISHED">FINISHED</span> PROJECT Recursos</h2>
-<div class="outline-text-2" id="text-orgheadline20">
-</div><div id="outline-container-orgheadline21" class="outline-3">
-<h3 id="orgheadline21">Manual CE</h3>
-<div class="outline-text-3" id="text-orgheadline21">
+<div id="outline-container-orgc303e21" class="outline-2">
+<h2 id="orgc303e21"><span class="todo FINISHED">FINISHED</span> PROJECT Recursos</h2>
+<div class="outline-text-2" id="text-orgc303e21">
+</div><div id="outline-container-org26a7fec" class="outline-3">
+<h3 id="org26a7fec">Manual CE</h3>
+<div class="outline-text-3" id="text-org26a7fec">
 <p>
 A continuación comparto con la comunidad el <b>manual oficial de la asignatura</b>, es primordial que lo descargue y utilice como guía de estudio. Recuerde que en ningún caso, este manual pretende ser una completa visión del panorama comunicativo en organizaciones, ni menos aún, la última palabra en comunicación efectiva. Como siempre, nuestros <i>manuales Sello</i>, son un acercamiento a las principales tendencias actuales en torno a la temática que cubran. Un aprendiz profundo, reconoce como propio el deber &laquo;ir más allá&raquo; y ser un &laquo;consumidor eficiente de información&raquo;. Recuerde que, en plena <b>Sociedad del Conocimiento</b>, la información <b>prolifera</b> en todas partes.
 </p>
@@ -637,9 +725,9 @@ A continuación comparto con la comunidad el <b>manual oficial de la asignatura<
 </div>
 </div>
 
-<div id="outline-container-orgheadline22" class="outline-3">
-<h3 id="orgheadline22">Método de lectura previa</h3>
-<div class="outline-text-3" id="text-orgheadline22">
+<div id="outline-container-org346ab50" class="outline-3">
+<h3 id="org346ab50">Método de lectura previa</h3>
+<div class="outline-text-3" id="text-org346ab50">
 <p>
 En la actual asignatura utilizaremos el denominado <b>Método de la Lectura Previa</b> (MLP), que permitirá a la audiencia llegar a clases mejor equipados con insumos previamente asignados/propuestos. La idea es simple, con ello favorecemos la clase en una experiencia <b>dialógica</b> y podremos de esta forma intercambiar puntos de vista respecto de algún tema de interés.
 </p>
@@ -663,9 +751,9 @@ En adelante, cuando se utilicemos el MLP, debe velar por dar justo cumplimiento 
 </div>
 </div>
 
-<div id="outline-container-orgheadline23" class="outline-2">
-<h2 id="orgheadline23"><span class="todo FINISHED">FINISHED</span> Audiencia</h2>
-<div class="outline-text-2" id="text-orgheadline23">
+<div id="outline-container-orgae318d0" class="outline-2">
+<h2 id="orgae318d0"><span class="todo FINISHED">FINISHED</span> Audiencia</h2>
+<div class="outline-text-2" id="text-orgae318d0">
 <p>
 Estimadas y estimados estudiantes, reciban la bienvenida a este espacio académico y de desarrollo personal. En esta oportunidad, la asignatura <b>Comunicación Efectiva</b>, está dirigida a diferentes audiencias provenientes de carreras técnicas y profesionales, todas ubicadas en su respectivo 1er. semestre lectivo. Como es costumbre al compartir espacios, se hace primordial la práctica de la convivencia, es decir, el saber vivir y convivir con otros y otras. Además, de velar por la <b>puntualidad</b> y la <b>asistencia</b>, es necesario que se plantee <b>un compromiso</b> con la asignatura, con la consecución de sus propias <b>metas</b>, y no sólo con ésta, sino con todo acto o proceso que inicie.
 </p>
@@ -686,32 +774,32 @@ Las distintas audiencias se distribuyen de la manera siguiente:
 </p>
 </div>
 
-<ul class="org-ul"><li><a id="orgheadline54"></a>jueves 19:00PM-21:45PM. <b>Psicología</b><br ></li>
+<ul class="org-ul"><li><a id="orgbf12a52"></a>jueves 19:00PM-21:45PM. <b>Psicología</b><br></li>
 
-<li><a id="orgheadline55"></a>viernes 19:00PM-21:45PM. <b>TNS Agronomía</b>, sección 2, <i>nómina letra G-Z</i><br ></li>
+<li><a id="org338977c"></a>viernes 19:00PM-21:45PM. <b>TNS Agronomía</b>, sección 2, <i>nómina letra G-Z</i><br></li>
 
-<li><a id="orgheadline56"></a>sábado 08:00AM-11:20AM. <b>Derecho</b> + <b>Kinesiología</b><br ></li>
+<li><a id="org719f777"></a>sábado 08:00AM-11:20AM. <b>Derecho</b> + <b>Kinesiología</b><br></li>
 
-<div id="outline-container-orgheadline24" class="outline-3">
-<h3 id="orgheadline24">Contacto</h3>
-<div class="outline-text-3" id="text-orgheadline24">
+<div id="outline-container-org774289d" class="outline-3">
+<h3 id="org774289d">Contacto</h3>
+<div class="outline-text-3" id="text-org774289d">
 <blockquote>
 <ul class="org-ul">
 <li>Email: <a href="mailto:hans.sigrist@uac.cl">hans.sigrist@uac.cl</a></li>
 <li>Twitter: <a href="http:twitter.com/hsigrist">@hsigrist</a></li>
-<li>Web: <a href="http://hsigrist.github.io/">hsigrist.github.io</a></li>
+<li>Web: <a href="http://hsigrist.github.io">hsigrist.github.io</a></li>
 </ul>
 </blockquote>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgheadline25" class="outline-2">
-<h2 id="orgheadline25"><span class="todo FINISHED">FINISHED</span> Programa</h2>
-<div class="outline-text-2" id="text-orgheadline25">
-</div><div id="outline-container-orgheadline26" class="outline-3">
-<h3 id="orgheadline26">Descripción</h3>
-<div class="outline-text-3" id="text-orgheadline26">
+<div id="outline-container-org89af693" class="outline-2">
+<h2 id="org89af693"><span class="todo FINISHED">FINISHED</span> Programa</h2>
+<div class="outline-text-2" id="text-org89af693">
+</div><div id="outline-container-org2965cbd" class="outline-3">
+<h3 id="org2965cbd">Descripción</h3>
+<div class="outline-text-3" id="text-org2965cbd">
 <p>
 Curso teórico-práctico, cuyo objetivo es familiarizar al estudiante en el uso de herramientas de comunicación para comunicar las temáticas de su profesión, alcanzando sus resultados con mayor efectividad y mejorando sus relaciones interpersonales con audiencias especializadas y no especializadas.
 </p>
@@ -727,18 +815,18 @@ Partiendo de la base del carácter transversal del curso, se fomenta el desarro
 </div>
 </div>
 
-<div id="outline-container-orgheadline27" class="outline-3">
-<h3 id="orgheadline27">Objetivo general</h3>
-<div class="outline-text-3" id="text-orgheadline27">
+<div id="outline-container-org2b8a002" class="outline-3">
+<h3 id="org2b8a002">Objetivo general</h3>
+<div class="outline-text-3" id="text-org2b8a002">
 <p>
 Familiarizar al estudiante en el uso de herramientas de comunicación para abordar las temáticas de su profesión, con base informativa y argumentativa, aplicando los recursos comunicativos que faciliten la expresión del discurso y mejoren sus relaciones interpersonales con audiencias especializadas y no especializadas.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgheadline28" class="outline-3">
-<h3 id="orgheadline28">Objetivos específicos</h3>
-<div class="outline-text-3" id="text-orgheadline28">
+<div id="outline-container-org9a36cf8" class="outline-3">
+<h3 id="org9a36cf8">Objetivos específicos</h3>
+<div class="outline-text-3" id="text-org9a36cf8">
 <ol class="org-ol">
 <li>Comprender a la comunicación como la base fundamental de cualquier relación social y laboral.</li>
 <li>Desarrollar las habilidades de comunicación y persuasión para su aplicación inmediata en el proceso de trabajo.</li>
@@ -750,9 +838,9 @@ Familiarizar al estudiante en el uso de herramientas de comunicación para abor
 </div>
 </div>
 
-<div id="outline-container-orgheadline29" class="outline-3">
-<h3 id="orgheadline29">Habilidades a desarrollar</h3>
-<div class="outline-text-3" id="text-orgheadline29">
+<div id="outline-container-org81e2429" class="outline-3">
+<h3 id="org81e2429">Habilidades a desarrollar</h3>
+<div class="outline-text-3" id="text-org81e2429">
 <ul class="org-ul">
 <li>Habilidad para elaborar argumentaciones orales y escritas, en el ámbito de la profesión.</li>
 <li>Capacidad para comunicarse en forma efectiva, desde la perspectiva del interlocutor.</li>
@@ -762,12 +850,12 @@ Familiarizar al estudiante en el uso de herramientas de comunicación para abor
 </div>
 </div>
 
-<div id="outline-container-orgheadline30" class="outline-2">
-<h2 id="orgheadline30"><span class="todo FINISHED">FINISHED</span> Habilidades Blandas (HB)</h2>
-<div class="outline-text-2" id="text-orgheadline30">
-</div><div id="outline-container-orgheadline31" class="outline-3">
-<h3 id="orgheadline31"><span class="todo FINISHED">FINISHED</span> Reflexión</h3>
-<div class="outline-text-3" id="text-orgheadline31">
+<div id="outline-container-org0cefcef" class="outline-2">
+<h2 id="org0cefcef"><span class="todo FINISHED">FINISHED</span> Habilidades Blandas (HB)</h2>
+<div class="outline-text-2" id="text-org0cefcef">
+</div><div id="outline-container-org193a7a5" class="outline-3">
+<h3 id="org193a7a5"><span class="todo FINISHED">FINISHED</span> Reflexión</h3>
+<div class="outline-text-3" id="text-org193a7a5">
 <p>
 Antes de iniciar con los contenidos de la primera unidad, es conveniente introducir el concepto de <b>Habilidades Blandas</b>, de modo familiarizarnos con las nuevas necesidades de la industria y los nuevos desafíos que en plena <i>Sociedad del Conocimiento</i> deben relevar los futuros empleadas y empleados de la industria nacional.
 </p>
@@ -785,7 +873,7 @@ Antes de iniciar con los contenidos de la primera unidad, es conveniente introdu
 <div id="postamble" class="status">
 <p class="author">Author: Hans Sigrist (<a href="mailto:hans.sigrist@uac.cl">hans.sigrist@uac.cl</a>)</p>
 <p class="date">Date: Thu Feb 25 15:18:08 2016</p>
-<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.3.4)</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.1 (<a href="http://orgmode.org">Org</a> mode 9.0.5)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
