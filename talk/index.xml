@@ -11,11 +11,21 @@
     <atom:link href="/talk/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Algunas concepciones clásicas del hombre (Séneca)</title>
+      <link>https://hsigrist.github.io/talk/algunas_concepciones_clasicas_del_hombre_seneca/</link>
+      <pubDate>Sun, 07 May 2017 23:06:00 +0000</pubDate>
+      
+      <guid>https://hsigrist.github.io/talk/algunas_concepciones_clasicas_del_hombre_seneca/</guid>
+      <description>&lt;p&gt;Una página dedicada al &lt;strong&gt;estoicismo&lt;/strong&gt; integrado en la &amp;ldquo;Serie estoicismo&amp;rdquo; pronto será publicada, en tanto, puede ver la presentación (Dzslides). Para navegar use las teclas de dirección (izquierda y derecha), para una vista sin distracciones presione f, para una vista de todas las slides presione o.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Episodios académicos que requieren procesos comunicativos</title>
-      <link>https://hsigrist.github.io/talk/example-talk/</link>
+      <link>https://hsigrist.github.io/talk/episodios_academicos_requieren_procesos_comunicativos/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://hsigrist.github.io/talk/example-talk/</guid>
+      <guid>https://hsigrist.github.io/talk/episodios_academicos_requieren_procesos_comunicativos/</guid>
       <description></description>
     </item>
     
@@ -39,7 +49,7 @@
     </item>
     
     <item>
-      <title>Identificando identificando cuadráticos</title>
+      <title>Identificando coeficientes cuadráticos</title>
       <link>https://hsigrist.github.io/talk/identificacion_coeficientes_cuadraticos/</link>
       <pubDate>Mon, 03 Oct 2016 00:00:00 +0000</pubDate>
       
@@ -134,15 +144,6 @@
       <pubDate>Fri, 23 May 2014 00:00:00 +0000</pubDate>
       
       <guid>https://hsigrist.github.io/talk/ecuacion_recta/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Paralelismo &amp; perpendicularidad</title>
-      <link>https://hsigrist.github.io/talk/paralelismo_perpendicularidad/</link>
-      <pubDate>Fri, 23 May 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://hsigrist.github.io/talk/paralelismo_perpendicularidad/</guid>
       <description></description>
     </item>
     

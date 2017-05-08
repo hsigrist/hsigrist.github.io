@@ -1,0 +1,235 @@
+Algunas concepciones clásicas del hombre **[subtle]##(##Séneca[subtle]##)##**
+=============================================================================
+Hans Sigrist, @hsigrist
+:website: https://hsigrist.github.io
+:backend: dzslides
+:dzslides-style: stormy 
+:dzslides-transition: fade
+:dzslides-fonts: family=Yanone+Kaffeesatz:400,700,200,300&family=Cedarville+Cursive
+:dzslides-highlight: monokai
+:linkcss: true
+:lang:
+
+
+[.ending]
+== Algunas concepciones clásicas del hombre y su base educativa, según **Séneca**
+
+
+[topic.intro]
+== idea de un _hombre_ **virtuoso** 
+
+
+== !
+[.middle]
+El estoicismo encarnaba las virtudes del antiguo pueblo romano +
+  +
+  +
+[incremental pull-right]#*austeridad* *piedad* *abnegación*{nbsp} {nbsp}#
+
+
+== !
+[.middle]
+La personalidad estoica representa un interesante __modelo educativo__, a causa de los rasgos que implica: +
+  +
+  +
+[incremental pull-right]#*firmeza de carácter* *espíritu de sacrificio* *autodominio* *superación de las pasiones*{nbsp} {nbsp}#
+
+
+== !
+[.middle]
+El estoicismo **clásico**, es el estoicismo __puro__ y __duro__, adoptando en sus ideales una exageración y extremismo que no se presta a ser un buen modelo humano ni, por consiguiente, educativo.
+
+
+== !
+[quote, i.e. según la razón]
+____
+Lo mas relevante del *estoicismo* es su moral: manda al hombre a vivir según la *naturaleza*
+____
+
+
+
+[topic.intro]
+== la **virtud** como actividad humana
+
+
+== !
+[.middle]
+Séneca explica que la virtud es un acto de conocimiento, por lo cual es una sola (*no hay virtudes diversas*), cuando el sabio la tiene, ya no la pierde nunca, y así *el sumo bien y la virtud son imperecederos*.
+
+
+== !
+[.middle]
+Para los estoicos, *la virtud* no es un medio para lograr un bien moral, sino que es un fin en sí misma, porque ella *es ya el bien*.
+
+
+
+== !
+[.middle]
+Séneca recomienda que la persona cuente con *un mentor*, *un educador*, alguien que *le sirva de ejemplo* o sea testigo de su conducta, la cual, de este modo, se verá estimulada a ser mejor.
+
+
+[topic.intro]
+== el ideal de la lucha **ascética**
+
+
+== !
+[quote, Por eso el ideal será llevar una vida activa y laboriosa]
+____
+el placer es un deslizadero que resbala hacia el dolor si no se pone mesura en él
+____
+
+
+== !
+[.middle]
+Por consiguiente, al hombre habrá que darle "*una educación dura y áspera*", pero esa educación *se la ha de dar cada cual a sí mismo*.
+
+
+
+[topic.intro]
+== diversas formas de practicar la **virtud**
+[topic]
+== Para Séneca, las *maneras de ser virtuoso*, son *practicando* las siguientes virtudes:
+
+
+[role="incremental middle pull-left"]
+* La sinceridad y simplicidad
+* El amor a la pobreza
+* El apartamiento del mundo
+* El pensamiento de la muerte
+* El menosprecio de los males
+* No tener envidia
+ 
+
+[topic.intro]
+== el **sabio** como prototipo humano
+[topic]
+== El sabio es aquel que	*tiene una cosmovisión conforme con todo lo dicho y actúa del modo indicado*. Sus principales rasgos son:
+
+[role="incremental middle pull-right"]
+* Serenidad y magnanimidad
+* Los males no le afectan
+* No necesita de las cosas
+* El sabio, al tener la virtud, tiene todos los bienes
+* Grandeza personal
+
+
+[topic]
+== El sabio es aquel que *tiene una cosmovisión conforme con todo lo dicho y actúa del modo indicado*. Sus principales rasgos son:
+
+[role="incremental middle pull-left"]
+* Lo soporta todo
+* Tiene el orgullo del sabio
+* Huye del vulgo, al cual desprecia
+* Es libre
+* No perdona
+
+
+[topic.intro]
+== la **felicidad del sabio** como bien humano supremo
+
+[topic]
+== la felicidad del sabio
+[role="incremental middle pull-left"]
+* Para Séneca la felicidad depende sólo de uno mismo.
+* El sabio puede ser feliz, y lo es sólo él. Su desprecio de la fortuna le produce la tranquilidad y la armonía del alma.
+
+
+[topic]
+== la felicidad del sabio
+[role="incremental middle pull-left"]
+* Esto produce en el sabio la *ataraxia*, es decir, su imperturbabilidad.
+* Un sistema cósmico determinista como es el estoico debería excluir la idea de libertad, sin embargo, la admite aunque bajo la premisa: "Libertad es obedecer a Dios".
+
+
+[topic.intro]
+== Resumen *final*
+
+
+[role="topic recap final"]
+== Resumen
+
+++++
+<hgroup>
+  <p></p>
+  <h2>Generalmente, sabemos qué hacer para mejorar nuestra vida.</h2>
+  <h3>Pero no lo hacemos. Paradoja: Akrasia, esto es, actuamos contra nuestros propios intereses.</h3>
+</hgroup>
+++++
+
+
+[role="topic recap final"]
+== Resumen
+
+++++
+<hgroup>
+  <p></p>
+  <h2>La evolución, nos muestra el uso de impulsos destructivos justificados.</h2>
+  <h3>El mundo moderno, impone claves para mejorar. Enkrateia, esto es, el poder sobre uno mismo.</h3>
+</hgroup>
+++++
+
+[role="topic recap final"]
+== Resumen
+
+[role="incremental middle pull-right"]
+* Vive apegado a la naturaleza
+* Diferencia lo que depende de tí de lo que no
+* Incomodidad voluntaria
+
+[NOTE.speaker]
+--
+1. "Una vida feliz es aquella vivida de acuerdo a la naturaleza" – Séneca. El ser humano está diseñado para florecer en un entorno específico. Se destacaba la naturaleza social del hombre.
+2. Hay tres tipos de eventos: los que no dependen de nosotros, los que dependen parcialmente de nosotros y los que dependen completamente de nosotros. No te preocupes por cosas que no puedes cambiar. Roba tiempo y energía, necesarios para actuar sobre aquello que sí depende de ti. (Matriz de Covey, GTD). Diferenciar entre objetivos de resultado y objetivos de comportamiento.
+3. "Una gema no se pule sin fricción, al igual que un hombre no se perfecciona sin dolor" – Séneca. La comodidad infectaba la antigua sociedad romana, no solo el cuerpo, sino la mente. Séneca recomendaba dedicar varios días al mes a vestirse con ropa barata, comer poco y exponerse a los elementos, y preguntarse después "¿Es esto lo que tanto temía?". Estrés controlado nos hace bien - Nassim Taleb (autor de antifrágil).
+--
+
+[role="topic recap final"]
+== Resumen
+
+[role="incremental middle pull-right"]
+* Ignora las opniones de otros
+* Pasa de la teoría a la práctica
+
+[NOTE.speaker]
+--
+1. "El objetivo de la vida no es estar del lado de la mayoría, sino escapar del grupo de los insensatos" – Marco Aurelio. Adopta mejores hábitos y sentirás la presión del grupo. Catón, prominente estoico caminaba descalzo y vestía túnicas de otros colores: acostumbrarse a la vergüenza y así evitar su perversa influencia. Se averguenza solo de las cosas que lo merecen.
+2. "Muchos son competentes en las aulas, pero llévalos a la práctica y fracasan estrepitosamente" – Epicteto. Más acción, más exposición, mas peligros, empero: Según Séneca, cada adversidad es una nueva oportunidad para practicar.
+--
+
+
+[role="topic recap final"]
+== Resumen
+
+[role="incremental middle pull-right"]
+* Diseña tu perspectiva
+* Disfruta lo bueno de la vida
+
+[NOTE.speaker]
+--
+1. "Los hombres no se perturban por las cosas, sino por la interpretación que de ellas hacen" – Epicteto. Los estoicos hacían mucho énfasis en separar los eventos de su interpretación. Los estoicos proponían tres ejercicios para diseñar una mejor perspectiva: vista desde arriba, visualización negativa y foco en el presente.
+2. "Cuando te levantes por la mañana, piensa que precioso privilegio es estar vivo y poder respirar, pensar, disfrutar, amar" – Marco Aurelio.  La incomodidad es un medio para mejorar, no un fin. Sócrates decía que una vida no examinada no merecía ser vivida. Los estoicos añadirían que una vida no vivida tampoco merecería la pena ser examinada. Examina tu vida para mejorar, pero no olvides vivirla.
+--
+
+[topic.intro]
+== **ref**erencias
+
+
+== !
+[.middle]
+* http://www.fitnessrevolucionario.com/2014/01/13/mas-alla-de-la-fortaleza-conviertete-en-antifragil/[Más allá de la fortaleza – conviértete en antifrágil]
+* https://www.theguardian.com/books/2012/nov/24/nassim-taleb-antifragile-finance-interview[Nassim Taleb: my rules for life]
+* http://www.fitnessrevolucionario.com/2015/01/14/episodio-26-entrevista-con-robert-sanchez-sobre-comer-compulsivamente-metodo-natural-y-mindfulness/[Episodio 26: Entrevista con Robert Sánchez sobre comer compulsivamente, Método Natural y Mindfulness]
+* https://faircompanies.com/articles/guia-de-la-buena-vida-10-tecnicas-para-practicar-estoicismo/[Guía de la buena vida: 10 técnicas para practicar estoicismo]
+* https://youtu.be/D3vFZ7ES9Wc[Séneca y la ira - Alain de Botton]
+
+
+== !
+[quote, Séneca]
+____
+Cuando un hombre no sabe hacia dónde navega, ningún viento le es favorable.
+____
+
+
+[.ending]
+== Fin!
+

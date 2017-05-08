@@ -10,7 +10,7 @@
 #+DESCRIPTION: Recursos, estrategias, planificación de la asignatura.
 #+KEYWORDS: matemática, tercero medio, TP
 #+LATEX_HEADER: \published{Ensayo no publicado. No citar sin permiso.}
-#+OPTIONS: H:3 toc:t num:nil tags:t
+#+OPTIONS: H:3 toc:t num:nil tags:t \n:nil
 #+LATEX_CLASS: memoirhs
 #+BEAMER_THEME: Hytex
 #+BEAMER_HEADER: \institute[LMLA]{LMLA}
@@ -48,7 +48,7 @@
 "
 #+END_SRC
 
-#+HTML_DOCTYPE: xhtml-strict
+#+HTML_DOCTYPE: html5
 #+HTML_CONTAINER: div 
 #+HTML_LINK_HOME: https://hsigrist.github.io
 #+HTML_LINK_UP: https://hsigrist.github.io/#teaching
@@ -58,10 +58,6 @@
 #+LANGUAGE: es
 #+BIBLIOGRAPHY: /Users/hsigrist/Dropbox/bibliography/references
 
-#+COLUMNS:  %18ITEM %9APROVADO(Approvado?){X} %11STATUS(Status) %7TODO %16SCHEDULED %16DEADLINE %20EFFORT{:} %CLOCKSUM
-#+PROPERTY: Status_ALL "En progreso" "No iniciado" "Finalizado"
-#+PROPERTY: Approved_ALL "[ ]" "[X]"
-#+PROPERTY: Effort_ALL "0" "0:45" "1:30" "3:00"
 
 #+BEGIN_abstract
 Recursos, estrategias, notas de clase y material complementario de la asignatura Matemática, dirigido a estudiantes de Tercer año Enseñanza Media en régimen Técnico Profesional (TP).
@@ -210,6 +206,27 @@ La estrategia consiste en *encontrar dos números que multiplicados den el valor
 *** TODO Ecuaciones completas mediante fórmula general $ax^2+bx+c=0$
 SCHEDULED: <2017-04-24 Mon>
 
+La denominada *fórmula general*, permite resolver una ecuación de segundo grado en cualquiera de sus formas, es decir, es aplicable a ecuaciones: incompletas e incompletas, factorizables o no. Este hecho permite el hallazgo de soluciones de ecuaciones más complejas o con coeficientes numéricos menos tratables.
+
+La mencionada fórmula es
+
+\begin{equation*}
+x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
+\end{equation*}
+
+#+BEGIN_error
+Se debe tener especial cuidado con *la extracción de los coeficientes $a,b$ y $c$*, y su posterior reemplazo en la anterior fórmula. Entre los *errores frecuentes*, se observan:
+- /El caso en que $a<0$ no es correctamente reemplazado en la fórmula. No se considera correctamente su signo y tan sólo se considera el signo negativo de la fórmula y no el de $a$./
+- /El caso en que $c<0$, idem anterior./
+- /El caso en que $b<0$, idem anterior, a pesar que dentro del radical da lo mismo -puesto que está al cuadrado- afuera debe multiplicarse el signo de $b$ por el signo negativo de la fórmula./
+- /El caso en que $a<0$, afecta finalmente a todos los sumandos del numerador./
+#+END_error
+
+** TODO Análisis del discriminante
+
+#+BEGIN_info#+END_info
+
+
 *** TODO Aplicaciones a problemas no rutinarios, complejos y no familiares (CUN)
 
 ** WAITING Funciones cuadráticas                                   :WAITING:
@@ -248,10 +265,11 @@ Las actividades anteriores las puede encontrar desarrolladas en un /applet/ de *
 
 *** Libro Onenote                                                 :onenote:
 
-
 #+BEGIN_QUOTE
 Existe un repositorio en *Onenote* que incluye la mayoría de los contenidos de los videos, además de recursos y notas de clase hechas "in situ". Puede ver dicho contenido en el siguiente libro *Onenote*:
 #+BEGIN_EXPORT html
 <iframe src="https://onedrive.live.com/embed?cid=FB21DB7A941BB0C6&resid=FB21DB7A941BB0C6%212500&authkey=AOtWzjDdXBPrne8" width="98" height="120" frameborder="0" scrolling="no"></iframe>
 #+END_EXPORT
 #+END_QUOTE
+
+

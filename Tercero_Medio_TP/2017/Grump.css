@@ -538,3 +538,28 @@ body {
         page-break-inside: avoid
     }
 }
+
+/* added Sun Apr 30 17:46:05 2017 for messages like Bootsptrap with no icons, pure css, more fast */
+
+.info, .success, .warning, .error {
+    margin: 10px 0px;
+    padding:12px;
+    border-radius: .5em;
+    border: 1px solid;
+}
+.info {
+    color: #00529B;
+    background-color: #BDE5F8;
+}
+.success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+}
+.warning {
+    color: #9F6000;
+    background-color: #FEEFB3;
+}
+.error {
+    color: #D8000C;
+    background-color: #FFBABA;
+}
