@@ -11,6 +11,16 @@
     <atom:link href="/talk/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>¿Todo es bullying?</title>
+      <link>https://hsigrist.github.io/talk/todo_es_bullying/</link>
+      <pubDate>Sun, 29 Oct 2017 23:57:00 +0000</pubDate>
+      
+      <guid>https://hsigrist.github.io/talk/todo_es_bullying/</guid>
+      <description>&lt;p&gt;Charla impartida en enseñanza básica número 2 del Liceo Mixto Los Andes, a propósito de una invitación hecha por el Jefe UTP Sr. Máx González y el Director del Establecimiento Sr. Pedro Navea. En esta ocasión, entre la audiencia, se encontraban apoderados, profesores y autoridades.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Algunas concepciones clásicas del hombre (Séneca)</title>
       <link>https://hsigrist.github.io/talk/algunas_concepciones_clasicas_del_hombre_seneca/</link>
       <pubDate>Sun, 07 May 2017 23:06:00 +0000</pubDate>
@@ -135,15 +145,6 @@
       <pubDate>Mon, 26 May 2014 00:00:00 +0000</pubDate>
       
       <guid>https://hsigrist.github.io/talk/metodo_minimos_cuadrados/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ecuación de la recta</title>
-      <link>https://hsigrist.github.io/talk/ecuacion_recta/</link>
-      <pubDate>Fri, 23 May 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://hsigrist.github.io/talk/ecuacion_recta/</guid>
       <description></description>
     </item>
     

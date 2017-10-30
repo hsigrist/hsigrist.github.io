@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 <head>
-<!-- 2017-01-24 Tue 21:53 -->
+<!-- 2017-10-29 dom 23:05 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Proyecto Brooklyn · Implementación de las transformaciones y referencias curriculares de la PSU e infusión de las Habilidades Cognitivas y sus Contenidos en el currículum</title>
@@ -71,6 +71,7 @@
   pre.src-fortran:before { content: 'Fortran'; }
   pre.src-gnuplot:before { content: 'gnuplot'; }
   pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
   pre.src-java:before { content: 'Java'; }
   pre.src-js:before { content: 'Javascript'; }
   pre.src-latex:before { content: 'LaTeX'; }
@@ -194,7 +195,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2013 Free Software Foundation, Inc.
+Copyright (C) 2012-2017 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -241,9 +242,9 @@ for the JavaScript code in this tag.
  <a accesskey="h" href="http://hsigrist.github.io/docencia/"> UP </a>
  |
  <a accesskey="H" href="http://hsigrist.github.io"> HOME </a>
-</div><div id="wrapper">
+</div><div id="content">
 <h1 class="title">Proyecto Brooklyn · Implementación de las transformaciones y referencias curriculares de la PSU e infusión de las Habilidades Cognitivas y sus Contenidos en el currículum
-<br>
+<br />
 <span class="subtitle">Desarrollo y microimplementación curricular de las nuevas Habilidades Cognitivas y Contenidos Mínimos Obligatorios (CMO) en los Ejes Temáticos dispuestos por PSU DEMRE en la enseñanza Matemática para el cuarto nivel de Enseñanza Media en Liceo Mixto Los Andes</span>
 </h1>
 <div class="header">
@@ -258,64 +259,57 @@ Hans Sigrist
 
 <div class="abstract">
 <p>
-Con el fin de infusionar el currículum Técnico Profesional de las distintas especialidades en la asignatura Matemática, se diseña un plan de articulación entre las competencias específicas y genéricas provenientes de la especialidad con aquellas que integran la enseñanza de la matemática en estudiantes de Tercer año Enseñanza Media. Se desarrolla un plan de articulación y adecuación evidenciados en la microimplementación curricular de la enseñanza Matemática, interviniendo con instrumentos como con planificaciones ad-hoc, que tributan por un lado, a las distintas capacidades y competencias necesarias y promovidas por los Planes y Programas propios del Currículum, como también a las capacidades genéricas, propias de la sociedad del s. XXI, descritas en el Proyecto Tuning Latinoamérica, que promocionan la formación de futuros profesionales idóneos y propenden al aprendizaje significativo y a lo largo de la vida (LLL, Life Long Learning por sus siglas en inglés).
+Con el fin de infusionar el currículum Técnico Profesional de las distintas especialidades en la asignatura Matemática, se diseña un plan de articulación entre las competencias específicas y genéricas provenientes de la especialidad con aquellas que integran la enseñanza de la matemática en estudiantes de Tercer año Enseñanza Media. Se desarrolla un plan de articulación y adecuación evidenciados en la microimplementación curricular de la enseñanza Matemática, interviniendo con instrumentos como con planificaciones ad-hoc, que tributan por un lado, a las distintas capacidades y competencias necesarias y promovidas por los Planes y Programas propios del Currículum, como también a las capacidades genéricas, propias de la sociedad del s. XXI, descritas en el Proyecto Tuning Latinoamérica, que promocionan la formación de futuros profesionales idóneos y propenden al aprendizaje significativo y a lo largo de la vida (LLL, Life Long Learning por sus siglas en inglés)
 </p>
 
 </div>
 
-
-
-<div id="orgdab363d" class="figure">
-<p><img src="brooklyn.jpg" alt="brooklyn.jpg" />
-</p>
-<p><span class="figure-number">Figura 1: </span>El puente de Brooklyn nace con la principal función de unir por vía terrestre la isla de Manhattan con la zona de Brooklyn, debido a crecientes demandas de trabajo en Manhattan. Bajo este principio se instala el presente proyecto, cuya misión es favorecer el tránsito de nuestros estudiantes hacia una educación de calidad y que permita conectar sus aprendizajes con las competencias, contenidos y ejes temáticos propuestos por PSU DEMRE, con las actividades a desarrollar en cuarto nivel de Enseñanza Media.</p>
-</div>
 
 
 <div id="table-of-contents">
 <h2>&Iacute;ndice</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org82a26ba">1. Problematización</a>
+<li><a href="#org87d1b59">1. Problematización</a>
 <ul>
-<li><a href="#org4087454">1.1. Planteamiento del problema</a></li>
-<li><a href="#org04be350">1.2. Preguntas de investigación</a>
+<li><a href="#org3222e2e">1.1. Planteamiento del problema</a></li>
+<li><a href="#org779d9ab">1.2. Preguntas de investigación</a>
 <ul>
-<li><a href="#org81cce8c">1.2.1. Competencias laborales</a></li>
-<li><a href="#org8907567">1.2.2. Pensamiento crítico</a></li>
-<li><a href="#orgef509b6">1.2.3. Trazabilidad</a></li>
-<li><a href="#orgad59ba7">1.2.4. Reformulación</a></li>
+<li><a href="#org79f4f91">1.2.1. Competencias laborales</a></li>
+<li><a href="#org2d386dc">1.2.2. Pensamiento crítico</a></li>
+<li><a href="#orge20bb9b">1.2.3. Trazabilidad</a></li>
+<li><a href="#org8d3062d">1.2.4. Reformulación</a></li>
 </ul>
 </li>
-<li><a href="#orgfe42256">1.3. Objetivos de investigación</a>
+<li><a href="#orgd42d5fb">1.3. Objetivos de investigación</a>
 <ul>
-<li><a href="#org12ef159">1.3.1. Microimplementación curricular</a></li>
-<li><a href="#org601c4f5">1.3.2. Consecución de objetivos</a></li>
+<li><a href="#orgf97f78b">1.3.1. Microimplementación curricular</a></li>
+<li><a href="#orgd6e6146">1.3.2. Consecución de objetivos</a></li>
 </ul>
 </li>
-<li><a href="#org2b0d920">1.4. Hipótesis</a>
+<li><a href="#org80247a4">1.4. Hipótesis</a>
 <ul>
-<li><a href="#org25900bc">1.4.1. Estado del arte</a></li>
-<li><a href="#orgf56c3f8">1.4.2. Estatus local versus horizonte académico y profesional</a></li>
+<li><a href="#org0888819">1.4.1. Estado del arte</a></li>
+<li><a href="#orgf1c0742">1.4.2. Estatus local versus horizonte académico y profesional</a></li>
 </ul>
 </li>
-<li><a href="#orgd6a2851">1.5. Viabilidad</a></li>
+<li><a href="#org8df3502">1.5. Viabilidad</a></li>
 </ul>
 </li>
-<li><a href="#orgddfb394">2. Marco Teórico</a></li>
-<li><a href="#org35ed665">3. Marco Metodológico</a>
+<li><a href="#orgb037c3e">2. Marco Teórico</a></li>
+<li><a href="#orgf0b0f40">3. Marco Metodológico</a>
 <ul>
-<li><a href="#org6cb6729">3.1. Paradigma</a></li>
-<li><a href="#org2d8868c">3.2. Tipo de estudio</a></li>
-<li><a href="#orgbc9725d">3.3. Descripción de los instrumentos</a></li>
-<li><a href="#org448c50e">3.4. Confiabilidad y viabilidad de los instrumentos cuantitativos</a></li>
-<li><a href="#org3e261c3">3.5. Procesamiento de la información</a></li>
+<li><a href="#org0ee046c">3.1. Paradigma</a></li>
+<li><a href="#org3544387">3.2. Tipo de estudio</a></li>
+<li><a href="#orgc135a03">3.3. Descripción de los instrumentos</a></li>
+<li><a href="#orgf542977">3.4. Confiabilidad y viabilidad de los instrumentos cuantitativos</a></li>
+<li><a href="#org4b5d0f8">3.5. Procesamiento de la información</a></li>
 </ul>
 </li>
-<li><a href="#orgc195fb1">4. Análisis de los resultados</a>
+<li><a href="#org5abb123">4. Análisis de los resultados</a>
 <ul>
-<li><a href="#orgcb24be0">4.1. Conclusiones</a></li>
-<li><a href="#org0a1a6f1">4.2. Recomendaciones</a></li>
+<li><a href="#orgc23c95b">4.1. Conclusiones</a></li>
+<li><a href="#org597ab21">4.2. Recomendaciones</a></li>
 </ul>
 </li>
 </ul>
@@ -323,11 +317,12 @@ Con el fin de infusionar el currículum Técnico Profesional de las distintas es
 </div>
 
 
-<div id="outline-container-org82a26ba" class="outline-2">
-<h2 id="org82a26ba"><span class="section-number-2">1</span> Problematización</h2>
+<div id="outline-container-org87d1b59" class="outline-2">
+<h2 id="org87d1b59"><span class="section-number-2">1</span> Problematización</h2>
 <div class="outline-text-2" id="text-1">
-</div><div id="outline-container-org4087454" class="outline-3">
-<h3 id="org4087454"><span class="section-number-3">1.1</span> Planteamiento del problema</h3>
+</div>
+<div id="outline-container-org3222e2e" class="outline-3">
+<h3 id="org3222e2e"><span class="section-number-3">1.1</span> Planteamiento del problema</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 Es el repensar respecto del horizonte académico unido a la reformulación de estrategias que promuevan una mejora en los resultados, como en la idoneidad de los aprendizajes, que el presente proyecto se instala como una propuesta curricular que incentive el desarrollo de las competencias propias del desempeño de los estudiantes adscritos al programa de formación Técnico Profesional (TP) dosificando características propias del currículum TP en el de Matemática, ambos ubicados en el Tercer año de la Enseñanza Media.
@@ -340,76 +335,81 @@ Ciertamente, el desarrollo de la enseñanza Matemática debe ser coherente con l
 </div>
 
 
-<div id="outline-container-org04be350" class="outline-3">
-<h3 id="org04be350"><span class="section-number-3">1.2</span> Preguntas de investigación</h3>
+<div id="outline-container-org779d9ab" class="outline-3">
+<h3 id="org779d9ab"><span class="section-number-3">1.2</span> Preguntas de investigación</h3>
 <div class="outline-text-3" id="text-1-2">
-</div><div id="outline-container-org81cce8c" class="outline-4">
-<h4 id="org81cce8c"><span class="section-number-4">1.2.1</span> Competencias laborales</h4>
 </div>
-<div id="outline-container-org8907567" class="outline-4">
-<h4 id="org8907567"><span class="section-number-4">1.2.2</span> Pensamiento crítico</h4>
+<div id="outline-container-org79f4f91" class="outline-4">
+<h4 id="org79f4f91"><span class="section-number-4">1.2.1</span> Competencias laborales</h4>
 </div>
-<div id="outline-container-orgef509b6" class="outline-4">
-<h4 id="orgef509b6"><span class="section-number-4">1.2.3</span> Trazabilidad</h4>
+<div id="outline-container-org2d386dc" class="outline-4">
+<h4 id="org2d386dc"><span class="section-number-4">1.2.2</span> Pensamiento crítico</h4>
 </div>
-<div id="outline-container-orgad59ba7" class="outline-4">
-<h4 id="orgad59ba7"><span class="section-number-4">1.2.4</span> Reformulación</h4>
+<div id="outline-container-orge20bb9b" class="outline-4">
+<h4 id="orge20bb9b"><span class="section-number-4">1.2.3</span> Trazabilidad</h4>
+</div>
+<div id="outline-container-org8d3062d" class="outline-4">
+<h4 id="org8d3062d"><span class="section-number-4">1.2.4</span> Reformulación</h4>
 </div>
 </div>
-<div id="outline-container-orgfe42256" class="outline-3">
-<h3 id="orgfe42256"><span class="section-number-3">1.3</span> Objetivos de investigación</h3>
+<div id="outline-container-orgd42d5fb" class="outline-3">
+<h3 id="orgd42d5fb"><span class="section-number-3">1.3</span> Objetivos de investigación</h3>
 <div class="outline-text-3" id="text-1-3">
-</div><div id="outline-container-org12ef159" class="outline-4">
-<h4 id="org12ef159"><span class="section-number-4">1.3.1</span> Microimplementación curricular</h4>
 </div>
-<div id="outline-container-org601c4f5" class="outline-4">
-<h4 id="org601c4f5"><span class="section-number-4">1.3.2</span> Consecución de objetivos</h4>
+<div id="outline-container-orgf97f78b" class="outline-4">
+<h4 id="orgf97f78b"><span class="section-number-4">1.3.1</span> Microimplementación curricular</h4>
+</div>
+<div id="outline-container-orgd6e6146" class="outline-4">
+<h4 id="orgd6e6146"><span class="section-number-4">1.3.2</span> Consecución de objetivos</h4>
 </div>
 </div>
-<div id="outline-container-org2b0d920" class="outline-3">
-<h3 id="org2b0d920"><span class="section-number-3">1.4</span> Hipótesis</h3>
+<div id="outline-container-org80247a4" class="outline-3">
+<h3 id="org80247a4"><span class="section-number-3">1.4</span> Hipótesis</h3>
 <div class="outline-text-3" id="text-1-4">
-</div><div id="outline-container-org25900bc" class="outline-4">
-<h4 id="org25900bc"><span class="section-number-4">1.4.1</span> Estado del arte</h4>
 </div>
-<div id="outline-container-orgf56c3f8" class="outline-4">
-<h4 id="orgf56c3f8"><span class="section-number-4">1.4.2</span> Estatus local versus horizonte académico y profesional</h4>
+<div id="outline-container-org0888819" class="outline-4">
+<h4 id="org0888819"><span class="section-number-4">1.4.1</span> Estado del arte</h4>
 </div>
-</div>
-<div id="outline-container-orgd6a2851" class="outline-3">
-<h3 id="orgd6a2851"><span class="section-number-3">1.5</span> Viabilidad</h3>
+<div id="outline-container-orgf1c0742" class="outline-4">
+<h4 id="orgf1c0742"><span class="section-number-4">1.4.2</span> Estatus local versus horizonte académico y profesional</h4>
 </div>
 </div>
-<div id="outline-container-orgddfb394" class="outline-2">
-<h2 id="orgddfb394"><span class="section-number-2">2</span> Marco Teórico</h2>
+<div id="outline-container-org8df3502" class="outline-3">
+<h3 id="org8df3502"><span class="section-number-3">1.5</span> Viabilidad</h3>
 </div>
-<div id="outline-container-org35ed665" class="outline-2">
-<h2 id="org35ed665"><span class="section-number-2">3</span> Marco Metodológico</h2>
+</div>
+<div id="outline-container-orgb037c3e" class="outline-2">
+<h2 id="orgb037c3e"><span class="section-number-2">2</span> Marco Teórico</h2>
+</div>
+<div id="outline-container-orgf0b0f40" class="outline-2">
+<h2 id="orgf0b0f40"><span class="section-number-2">3</span> Marco Metodológico</h2>
 <div class="outline-text-2" id="text-3">
-</div><div id="outline-container-org6cb6729" class="outline-3">
-<h3 id="org6cb6729"><span class="section-number-3">3.1</span> Paradigma</h3>
 </div>
-<div id="outline-container-org2d8868c" class="outline-3">
-<h3 id="org2d8868c"><span class="section-number-3">3.2</span> Tipo de estudio</h3>
+<div id="outline-container-org0ee046c" class="outline-3">
+<h3 id="org0ee046c"><span class="section-number-3">3.1</span> Paradigma</h3>
 </div>
-<div id="outline-container-orgbc9725d" class="outline-3">
-<h3 id="orgbc9725d"><span class="section-number-3">3.3</span> Descripción de los instrumentos</h3>
+<div id="outline-container-org3544387" class="outline-3">
+<h3 id="org3544387"><span class="section-number-3">3.2</span> Tipo de estudio</h3>
 </div>
-<div id="outline-container-org448c50e" class="outline-3">
-<h3 id="org448c50e"><span class="section-number-3">3.4</span> Confiabilidad y viabilidad de los instrumentos cuantitativos</h3>
+<div id="outline-container-orgc135a03" class="outline-3">
+<h3 id="orgc135a03"><span class="section-number-3">3.3</span> Descripción de los instrumentos</h3>
 </div>
-<div id="outline-container-org3e261c3" class="outline-3">
-<h3 id="org3e261c3"><span class="section-number-3">3.5</span> Procesamiento de la información</h3>
+<div id="outline-container-orgf542977" class="outline-3">
+<h3 id="orgf542977"><span class="section-number-3">3.4</span> Confiabilidad y viabilidad de los instrumentos cuantitativos</h3>
+</div>
+<div id="outline-container-org4b5d0f8" class="outline-3">
+<h3 id="org4b5d0f8"><span class="section-number-3">3.5</span> Procesamiento de la información</h3>
 </div>
 </div>
-<div id="outline-container-orgc195fb1" class="outline-2">
-<h2 id="orgc195fb1"><span class="section-number-2">4</span> Análisis de los resultados</h2>
+<div id="outline-container-org5abb123" class="outline-2">
+<h2 id="org5abb123"><span class="section-number-2">4</span> Análisis de los resultados</h2>
 <div class="outline-text-2" id="text-4">
-</div><div id="outline-container-orgcb24be0" class="outline-3">
-<h3 id="orgcb24be0"><span class="section-number-3">4.1</span> Conclusiones</h3>
 </div>
-<div id="outline-container-org0a1a6f1" class="outline-3">
-<h3 id="org0a1a6f1"><span class="section-number-3">4.2</span> Recomendaciones</h3>
+<div id="outline-container-orgc23c95b" class="outline-3">
+<h3 id="orgc23c95b"><span class="section-number-3">4.1</span> Conclusiones</h3>
+</div>
+<div id="outline-container-org597ab21" class="outline-3">
+<h3 id="org597ab21"><span class="section-number-3">4.2</span> Recomendaciones</h3>
 <div class="outline-text-3" id="text-4-2">
 </div>
 </div>
@@ -418,7 +418,7 @@ Ciertamente, el desarrollo de la enseñanza Matemática debe ser coherente con l
 <div id="postamble" class="status">
 <p class="author">Author: Hans Sigrist (<a href="mailto:hsigrist@gmail.com">hsigrist@gmail.com</a>)</p>
 <p class="date">Date: lun 26 dic 12:12:48 2016</p>
-<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.1.1 (<a href="http://orgmode.org">Org</a> mode 9.0.3)</p>
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 25.2.2 (<a href="http://orgmode.org">Org</a> mode 9.1.2)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

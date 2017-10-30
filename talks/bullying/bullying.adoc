@@ -1,0 +1,175 @@
+¿Todo es bullying?
+==================
+Hans Sigrist - 2017, @hsigrist
+:website: https://hsigrist.github.io
+:imagesdir: images
+:backend: dzslides
+:dzslides-style: stormy
+:dzslides-transition: fade
+:dzslides-fonts: family=Yanone+Kaffeesatz:400,700,200,300&family=Cedarville+Cursive
+
+
+[topic.intro]
+== ¿Qué *no* es bullying?
+
+[NOTE.speaker]
+--
+1. La RAE sugiere en lugar del anglicismo "bullying" acoso escolar o matonaje.
+2. Existen diversos eventos catalogados como bullying y que no se corresponden con la definición.
+--
+
+
+[role="topic recap final"]
+== es agresión
+
+++++
+<hgroup>
+  <p></p>
+  <p></p>
+  <h2>No hablamos de bullying entre adultos, aquello es regulado por leyes civiles.</h2>
+  <h3>Tampoco confundir con "maltrato escolar", que es la agresión del educador hacia el educando (alumno/a).</h3>
+</hgroup>
+++++
+
+[NOTE.speaker]
+--
+1. Un adulto, un profesor que maltrata a un escolar es un victimario y agente de delito.
+--
+
+
+[role="topic recap final"]
+== no sinónimo
+
+++++
+<hgroup>
+  <p></p>
+  <p></p>
+  <h2>El bullying o acoso escolar, no es lo mismo que mala conducta, conflicto escolar, conducta agresiva, conducta violenta o maltrato escolar.</h2>
+</hgroup>
+++++
+
+[NOTE.speaker]
+--
+1. Las acciones mencionadas son prevenidas y reguladas por los establecimientos, por medio de pares, profesores, inspectores, funcionarios, directivos, orientación, equipos multi-disciplinarios, psicólogos, etc.
+--
+
+
+[role="topic recap final"]
+== interpersonales
+
+++++
+<hgroup>
+  <p></p>
+  <p></p>
+  <h3>Los conflictos escolares se resuelven en la inmediatez, pues son concernientes a relaciones interpersonales. No requieren intervención de profesionales. No alteran la armonía escolar.</h3>
+</hgroup>
+++++
+
+[NOTE.speaker]
+--
+1. Las relaciones interpersonales, se caracterizan por su heterogéneo: no todos poseemos las mismas habilidades. No todos nos movilizamos del mismo modo. Más tolerancia, menos frustración: autorregulación.
+--
+
+[topic]
+== !
+No son constitutivos de bullying, las siguientes acciones: +
+  +
+  +
+[incremental pull-right]#*armar equipos de trabajo* *pelearse con el mejor amigo* *una pelea aislada en el patio* *no admitir a alguien en Facebook* *tener un grupo de "mejores amigos"* *ponerse apodos entre todos* *ir al cine y no invitar a todos* *no invitar a alguien a mi casa* *no pasarle la tarea a alguien*{nbsp} {nbsp}#
+
+[NOTE.speaker]
+--
+1. No usar expresiones entre adultos como "me están haciendo bullying" , propende a la confusión y de paso denosta situaciones que si requieren atención y cuidado.
+--
+
+[topic.intro]
+== ¿Qué *si* es bullying?
+[topic]
+== !
+Si son constitutivos de bullying, las siguientes acciones: +
+  +
+  +
+[incremental pull-right]#*hacer comentarios despectivos sobre un compañero o su familia* *humillarlo delante de los demás* *organizar un plan el día de su cumpleaños para que los demás tengan que elegir* *organizar a un grupo de compañeros para que no sean amigos de alguien y no le hablen, no lo acompañen, no asistan a su cumpleaños, etc.*{nbsp} {nbsp}#
+
+[NOTE.speaker]
+--
+1. Autorregulación en niños y adolescentes: más temple, más carácter, enseñar a diferenciar enre lo que depende de tíy lo que no depende de ti
+--
+
+
+[topic.intro]
+== Características del *bullying*
+
+
+== !
+[.middle]
+Algunas características del bullying son: +
+  +
+  +
+[incremental pull-right]#*1. implica desbalance de poder* *2. tiende a ser frecuente* *3. puede ser físico, verbal o indirecto*{nbsp} {nbsp}#
+
+
+== !
+[.middle]
+El matonaje, bullying o agresión la podemos encontrar en diversos tipos, entre ellos: +
+  +
+  +
+[incremental pull-right]#*bloqueo social* *hostigamiento* *manipulación social* *coacción a conductas* *matonaje racial* *matonaje sexual* *exclusión social* *intimidación*{nbsp} {nbsp}#
+
+== !
+[.middle]
+El matonaje, bullying o agresión la podemos encontrar en diversos tipos, entre ellos: +
+  +
+  +
+[incremental pull-right]#*amenaza a la integridad* *matonaje cibernético* *privar a otros de su propiedad, robarla o malograrla*{nbsp} {nbsp}#
+
+
+[topic.intro]
+== convivencia escolar *ley 20.536*
+
+== !
+[.topic]
+En nuestro país, existe la *LEY 201536 SOBRE VIOLENCIA ESCOLAR*, promulgada el 17 de septiembre de 2011 y que especifica en su párrafo 3º, sobre convivencia escolar:
+
+*Artículo 16 B*. Se entenderá por acoso escolar toda acción u omisión constitutiva de agresión u hostigamiento reiterado, realizada fuera o dentro del establecimiento educacional por estudiantes que, en forma individual o colectiva, atenten en contra de otro estudiante, valiéndose para ello de una situación de superioridad o de indefensión del estudiante afectado, que provoque en este último, maltrato, humillación o fundado temor de verse expuesto a un mal de carácter grave, ya sea por medios tecnológicos o cualquier otro medio, tomando en cuenta su edad y condición.
+
+
+
+
+[topic.intro]
+== *errores* frecuentes
+
+== !
+[.topic]
+Malas prácticas, malos consejos, errores comunes, estrategias inútiles, expresiones inapropiadas: +
+  +
+  +
+[incremental pull-right]#*aprende a defenderte (odio por odio = más violencia)* *dense la mano y háganse amigos -sin hablar- (aumenta el odio y refuerza humillación)* *es molestoso, le gusta que lo molesten, no es amistoso, le gusta llamar la atención, por todo reclama, nunca está contento, ... califican como hostigamiento, el niño desarrolla entonces estrategias para sobrevivir/defenderse y la situación empeora*{nbsp} {nbsp}#
+
+
+[topic.intro]
+== *citas*
+
+== !
+[.topic]
+[incremental pull-right]#*1. si un perro te muerde y tu muerdes al perro, ambos deben usar un bozal* *2. usa las cosas y ama a las personas, lo inverso es inútil* *3. no dejes que aplasten tus sueños: si tienes alma de dentista sé dentista, no oficinista: las aves asadas no vuelan* *4. aceptemos la diversidad y la protesta: los pájaros hambrientos y lo pájaros con el vientre lleno no pueden volar juntos* *5. denuncia el hostigamiento: Los pájaros nacidos en jaulas creen que volar es una enfermedad* *6. los empates morales no existen: dos malas no hacen una buena* *7. diferencie entre problema y persona: con los problemas enfático, con las personas amable y respetuosa* *8. víctima y victimario siguen siendo personas: no existen humanos de segunda clase* *9. no forzar nada, nunca* *10. enseña a tu hijo a reconocer apariencias: el agua en la botella cree que tiene forma de botella* *11. educa para ser feliz* *12. enséñale a ser agradecido* *13. enséñale que un no, es 1 no, no 2 ni 3*{nbsp} {nbsp}#
+
+[NOTE.speaker]
+--
+1. si un perro te muerde y tu muerdes al perro, ambos deben usar un bozal
+2. usa las cosas y ama a las personas, lo inverso es inútil
+3. no dejes que aplasten tus sueños: si tienes alma de dentista sé dentista, no oficinista: las aves asadas no vuelan
+4. aceptemos la diversidad y la protesta: los pájaros hambrientos y lo pájaros con el vientre lleno no pueden volar juntos
+5. denuncia el hostigamiento: Los pájaros nacidos en jaulas creen que volar es una enfermedad
+6. los empates morales no existen: dos malas no hacen una buena
+7. diferencie entre problema y persona: con los problemas enfático, con las personas amable y respetuosa
+8. víctima y victimario siguen siendo personas: no existen humanos de segunda clase
+9. no forzar nada, nunca
+10. enseña a tu hijo a reconocer apariencias: el agua en la botella cree que tiene forma de botella
+11. educa para ser feliz
+12. enséñale a ser agradecido
+13. enséñale que un no, es 1 no, no 2 ni 3
+--
+
+[.ending]
+== fin!

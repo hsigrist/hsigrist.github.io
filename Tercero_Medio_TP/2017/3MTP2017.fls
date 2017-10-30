@@ -1,0 +1,6 @@
+PWD /Users/hsigrist/repo/source-blog/static/Tercero_Medio_TP/2017
+INPUT /usr/local/texlive/2016/texmf.cnf
+INPUT /usr/local/texlive/2016/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2016/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT 3MTP2017.html
+OUTPUT 3MTP2017.log

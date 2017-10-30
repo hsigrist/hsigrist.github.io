@@ -1,0 +1,440 @@
+carreras profesionales: **orientación** _cluster's, impulsos & movilidad_
+=========================================================================
+Hans Sigrist - 2017, @hsigrist
+:website: https://hsigrist.github.io
+:backend: dzslides
+:dzslides-style: stormy
+:dzslides-transition: fade
+:dzslides-fonts: family=Yanone+Kaffeesatz:400,700,200,300&family=Cedarville+Cursive
+
+== !
+[.middle]
+[quote, Séneca]
+____
+Cuando un hombre no sabe hacia dónde navega, ningún viento le es favorable.
+____
+
+
+[topic]
+== **CLUSTER'S**
+[.middle]
+[incremental pull-right]#*1. administración y comercio* *2. agroindustria* *3. artes visuales* *4. carreras técnicas* *5. ciencias básicas* *6. ciencias sociales* *7. comunicaciones* *8. educación* *9. idiomas* *10. ingeniería* *11. salud*{nbsp} {nbsp}#
+
+
+
+[topic.intro]
+== administración & *comercio* 
+
+== !
+[.middle]
+Son profesionales impulsados por características tales como: +
+  +
+  +
+[incremental pull-right]#*trato con personas* *administración* *contabilidad* *vocación de servicio* *finanzas*{nbsp} {nbsp}#
+
+[role="topic recap final"]
+== Gestión
+
+[role="incremental middle pull-left"]
+* Administración pública
+* Contador Auditor
+* Ingeniería Comercial
+* Ecoturismo
+* Administración Turística
+* Administración de servicios
+* Administracion de Negocios Internacionales
+ 
+[topic.intro]
+== *agro* industria 
+== !
+[.middle]
+Son profesionales impulsados por características tales como: +
+  +
+  +
+[incremental pull-right]#*tecnología* *ciencia* *empatía animal* *zoología* *gestión empresarial* *visión industrial*{nbsp} {nbsp}#
+
+
+[role="topic recap final"]
+== conciencia
+
+[role="incremental middle pull-left"]
+* Medicina Veterinaria
+* Biología Marina
+* Ingeniería en Maderas
+* Ingeniería en Acuicultura
+* Agronomía
+
+[role="topic recap final"]
+== conciencia
+
+[role="incremental middle pull-left"]
+* Ingeniería en Alimentos
+* Oceanografía
+* Ingeniería en Pesca y Acuicultura
+* Ingeniería Agropecuaria
+* Ecología Marina
+
+[topic.intro]
+== *artes* visuales
+
+== !
+[.middle]
+Son profesionales impulsados por características tales como: +
+  +
+  +
+[incremental pull-right]#*creatividad* *agilidad* *capacidad artística* *sentido crítico* *visión humanista*{nbsp} {nbsp}#
+
+[role="topic recap final"]
+== creatividad
+
+[role="incremental middle pull-left"]
+* Licenciatura en Artes
+* Diseño de Interiores
+* Teatro
+* Licenciatura en Música
+* Diseño Industrial
+* Cine
+* Arquitectura
+
+[role="topic recap final"]
+== creatividad
+
+[role="incremental middle pull-left"]
+* Diseño Gráfico
+* Diseño
+* Licenciatura en Historia del Arte
+* Licenciatura en Artes (Teoría Musical)
+* Fotografía
+* Diseño Teatral
+* Diseño Gráfico y Multimedia
+
+
+[topic.intro]
+== *técnico* profesionales
+
+== !
+[.middle]
+Son profesionales impulsados por características tales como: +
+  +
+[incremental pull-right]#*razonamiento lógico* *tecnología* *comunicación efectiva* *trabajo en equipo* *atención de clientes* *liderazgo* *resolución de problemas* *espíritu de colaboración*{nbsp} {nbsp}#
+
+[role="topic recap final"]
+== socio-emocionales
+
+[role="incremental middle pull-left"]
+* Técnico en Mecánica Automotriz y Autotrónica
+* Técnico en Telecomunicaciones
+* Analista Programador Computacional
+* Administrador de Redes Computacionales
+
+[role="topic recap final"]
+== socio-emocionales
+
+[role="incremental middle pull-left"]
+* Técnico en Electricidad y Electrónica
+* Técnico en Diseño Gráfico
+* Dibujo Proyectista
+* Ingeniería en Ejecución en Informática
+* Técnico Veterinario
+
+[role="topic recap final"]
+== socio-emocionales
+
+[role="incremental middle pull-left"]
+* Técnico en Construcción
+* Preparador Físico
+* Técnico en Odontología
+* Técnico en Enfermería, Radioterapia e Imagenología
+* Técnico en Enfermería
+* Técnico en Laboratorio Clínico y Banco de Sangre
+
+[role="topic recap final"]
+== socio-emocionales
+
+[role="incremental middle pull-left"]
+* Ingeniería en Ejecución / Técnico en Medio Ambiente
+* Técnico en Prevención de Riesgos
+* Técnico Jurídico
+* Técnico Deportivo
+* Técnico en Topología
+
+[role="topic recap final"]
+== socio-emocionales
+
+[role="incremental middle pull-left"]
+* Técnico en Trabajo Social
+* Técnico en Sonido
+* Ingeniería en Ejecución en Administración
+* Administración Financiera
+* Ingeniería en Ejecución / Técnico en Medio Ambiente
+
+[role="topic recap final"]
+== socio-emocionales
+
+[role="incremental middle pull-left"]
+* Contabilidad General
+* Ingeniería en Ejecución en Electricidad
+* Ingeniería en Ejecución Conectividad y Redes
+* Secretariado Ejecutivo Computación
+* Secretariado Ejecutivo Bilingüe
+* Técnico Agrónomo
+* Ingeniería en Ejecución en Informática
+
+[topic.intro]
+== *ciencias básicas*
+
+== !
+[.middle]
+Son profesionales impulsados por características tales como: +
+  +
+  +
+[incremental pull-right]#*espíritu crítico* *capacidad de observación* *capacidad de abstracción* *razonamiento lógico* *capacidad analítica* *trabajo práctico*{nbsp} {nbsp}#
+
+[role="topic recap final"]
+== tenacidad
+
+[role="incremental middle pull-left"]
+* Cartografía
+* Bioquímica
+* Química Ambiental
+* Licenciatura en Química
+* Licenciatura en Física
+* Licenciatura en Matemática
+* Licenciatura en Astronomía
+
+[role="topic recap final"]
+== tenacidad
+
+[role="incremental middle pull-left"]
+* Licenciatura en Biología
+* Geología
+* Química Industrial o Laboratorista
+* Química en Metalurgia Extractiva
+* Analista Químico
+
+
+[topic.intro]
+== ciencias *sociales*
+
+== !
+[.middle]
+Son profesionales impulsados por características tales como: +
+  +
+  +
+[incremental pull-right]#*metodológicos* *espíritu cuestionador* *investigativo* *capacidad analítica* *sentido social* *dotado de criterio*{nbsp} {nbsp}#
+
+[role="topic recap final"]
+== crítico
+
+[role="incremental middle pull-left"]
+* Bibliotecnología
+* Sociología
+* Antropología
+* Geografía
+* Literatura
+* Arqueología
+* Licenciatura en Historia
+
+[role="topic recap final"]
+== crítico
+
+[role="incremental middle pull-left"]
+* Licenciado en Letras con mención en Lingüística y Literatura Inglesas
+* Licenciado en Letras con mención en Lingüística y Literatura Hispánicas
+* Ciencias Políticas
+* Derecho
+* Trabajo Social
+* Licenciatura en Teología
+* Licenciatura en Filosofía
+
+[topic.intro]
+== *comuni-* *caciones*
+
+== !
+[.middle]
+Son profesionales impulsados por características tales como: +
+  +
+  +
+[incremental pull-right]#*liderazgo* *iniciativa* *creatividad* *capacidad de observación* *comunicación efectiva* *resolución de problemas*{nbsp} {nbsp}#
+
+[role="topic recap final"]
+== pro-activo
+
+[role="incremental middle pull-left"]
+* Relaciones Públicas
+* Publicidad
+* Periodismo
+* Comunicación Organizacional/Estratégica
+
+[topic.intro]
+== *educación*
+
+== !
+[.middle]
+Son profesionales impulsados por características tales como: +
+  +
+[incremental pull-right]#*pensamiento crítico* *formación humanista* *compromiso social* *creatividad* *vocación pedagógica* *resiliencia* *dinámico y sensible* *autorregulación* {nbsp} {nbsp}#
+
+[role="topic recap final"]
+== vocación
+
+[role="incremental middle pull-left"]
+* Pedagogía en Biología
+* Educación Diferencial
+* Educación Parvularia
+* Pedagogía en Educación Básica
+* Pedagogía en Educación Física
+* Pedagogía en Matemática y Computación
+
+[role="topic recap final"]
+== vocación
+
+[role="incremental middle pull-left"]
+* Pedagogía en Historia y Geografía
+* Pedagogía en Educación Musical
+* Pedagogía en Filosofía
+* Pedagogía en Química
+* Pedagogía en Lengua Castellana y Comunicación
+* Pedagogía en Física
+* Pedagogía en Química
+
+[role="topic recap final"]
+== vocación
+
+[role="incremental middle pull-left"]
+* Pedagogía en Artes Plásticas
+* Pedagogía en Matemática
+* Pedagogía en Danza
+* Pedagogía en Religión y Filosofía
+* Pedagogía en Educación Intercultural
+* Pedagogía en Inglés
+* Pedagogía en Francés
+
+
+
+[topic.intro]
+== *idiomas*
+
+== !
+[.middle]
+Son profesionales impulsados por características tales como: +
+  +
+[incremental pull-right]#*comunicación efectiva* *expresión oral*{nbsp} {nbsp}#
+
+[role="topic recap final"]
+== vocación
+
+[role="incremental middle pull-left"]
+* Traducción e Interpretación Inglés / Español
+* Traducción/interpretación en idiomas extranjeros
+
+
+
+
+[topic.intro]
+== *ingeniería*
+
+== !
+[.middle]
+Son profesionales impulsados por características tales como: +
+  +
+[incremental pull-right]#*capacidad de análisis* *dirección* *liderazgo* *resolución de problemas* *investigación* *trabajo en equipo* *creatividad* *razonamiento lógico* *ciencias básicas*{nbsp} {nbsp}#
+
+[role="topic recap final"]
+== RP
+
+[role="incremental middle pull-left"]
+* Ingeniería Física
+* Ingeniería Civil en Computación e Informática
+* Ingeniería Eléctrica
+* Ingeniería en Construcción
+* Ingeniería Civil Química
+* Ingeniería Civil Metalúrgica
+* Ingeniería Civil en Obras Civiles
+
+[role="topic recap final"]
+== RP
+
+[role="incremental middle pull-left"]
+* Ingeniería en Prevención de Riesgos y Medio Ambiente
+* Ingeniería Civil en Minas
+* Ingeniería Civil Matemática
+* Ingeniería en Turismo y Hotelería
+* Ingeniería Civil Industrial Mención en Bioprocesos
+* Ingeniería Mecánica
+* Ingeniería Ambiental
+
+
+[role="topic recap final"]
+== RP
+
+[role="incremental middle pull-left"]
+* Ingeniería en Sonido/Acústica
+* Ingeniería en Biotecnología
+* Ingeniería Civil Oceánica
+* Ingeniería Naval
+* Ingeniería Marítimo Portuaria
+* Ingeniería Civil en Geografía
+* Ingeniería Estadística
+* Ingeniería Geomensura
+
+[role="topic recap final"]
+== RP
+
+[role="incremental middle pull-left"]
+* Ingeniería en Diseño de Productos
+* Ingeniería en Comercio Internacional
+* Ingeniería en Bioinformática
+* Ingeniería en Administración de Empresas
+* Ingeniería Civil Hidráulica
+* Ingeniería Civil Geotécnica
+* Ingeniería Aviación Comercial
+
+
+[role="topic recap final"]
+== RP
+
+[role="incremental middle pull-left"]
+* Ingeniería Civil Estructural
+* Ingeniería Civil en Telemática
+* Ingeniería Civil en Materiales
+* Ingeniería Civil Bioquímica
+* Ingeniería Civil Agroindustrial
+* Ingeniería Civil Aeroespacial
+
+
+
+
+[topic.intro]
+== *salud*
+
+== !
+[.middle]
+Son profesionales impulsados por características tales como: +
+  +
+[incremental pull-right]#*espíritu de servicio* *ciencias básicas* *adaptabilidad social* *comunicación efectiva* *resolución de problemas* *trabajo en equipo* *liderazgo*{nbsp} {nbsp}#
+
+[role="topic recap final"]
+== TE
+
+[role="incremental middle pull-left"]
+* Tecnología Médica
+* Odontología
+* Obstetricia y Puericultura
+* Nutrición y Dietética
+* Terapia Ocupacional
+* Fonoaudiología
+
+[role="topic recap final"]
+== TE
+
+[role="incremental middle pull-left"]
+* Psicología
+* Enfermería
+* Medicina
+* Kinesiología
+* Óptica
+
+
+[.ending]
+== Fin!

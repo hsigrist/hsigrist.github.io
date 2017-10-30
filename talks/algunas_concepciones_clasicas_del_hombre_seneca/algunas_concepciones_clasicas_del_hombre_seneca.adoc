@@ -3,12 +3,9 @@ Algunas concepciones clásicas del hombre **[subtle]##(##Séneca[subtle]##)##**
 Hans Sigrist, @hsigrist
 :website: https://hsigrist.github.io
 :backend: dzslides
-:dzslides-style: stormy 
+:dzslides-style: stormy
 :dzslides-transition: fade
 :dzslides-fonts: family=Yanone+Kaffeesatz:400,700,200,300&family=Cedarville+Cursive
-:dzslides-highlight: monokai
-:linkcss: true
-:lang:
 
 
 [.ending]
