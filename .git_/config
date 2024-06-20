@@ -1,0 +1,8 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[submodule "themes/ananke"]
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
+	active = true
