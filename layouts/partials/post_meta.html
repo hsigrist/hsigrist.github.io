@@ -18,3 +18,13 @@
 {{- with ($scratch.Get "meta") }}
 {{- delimit . "&nbsp;&middot;&nbsp;" | safeHTML -}}
 {{- end -}}
+
+{{- /* Conteo de palabras added by me */ -}}
+{{ if .Param "ShowWordCount" }}
+  <span>· {{ .WordCount }} palabras</span>
+{{ end }}
+
+{{- /* Tiempo de lectura added by me*/ -}}
+{{ if .Param "ShowReadingTime" }}
+  <span>· {{ .ReadingTime }} min lectura</span>
+{{ end }}
