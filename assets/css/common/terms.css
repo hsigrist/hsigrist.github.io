@@ -1,19 +1,30 @@
+/* Style list of tags */
+
+/* List layout */
+
 .terms-tags li {
     display: inline-block;
-    margin: 10px;
-    font-weight: 400;
+    margin-left: 0px;
+    margin-right: 12px;
+    margin-top: 0px;
+    margin-bottom: 12px;
 }
+
+/* Tag layout */
 
 .terms-tags a {
     display: block;
     padding: 3px 10px;
-    background: var(--tertiary);
+    background: var(--entry);
     border-radius: 6px;
-    transition: transform 0.1s;
-    font-size: var(--homesize);
+    border: 1px solid var(--border);
+    font-size: var(--meta-size);
+    transition: all 0.15s ease-in-out;
 }
+
+/* Highlighted tags */
 
 .terms-tags a:hover {
-    background: var(--lightcolor);
+    background: var(--graypurple);
+    border: 1px solid var(--purple);
 }
-

@@ -1,14 +1,19 @@
+/* Style profile page */
+
+/* Page layout */
+
 .buttons,
 .main .profile {
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
 }
+
 .main .profile {
     align-items: center;
-    min-height: calc(100vh - var(--footer-height) - (var(--gap) * 2));
-    font-size: var(--homesize);
-    line-height: var(--lineheight);
-    padding: var(--gap);
+    max-width: 600px;
+    min-height: calc(100dvh  - (var(--gap) * 2));
+    line-height: var(--line-height);
+    font-size: var(--content-size);
 }
 
 .profile .profile_inner {
@@ -18,24 +23,33 @@
     gap: 10px;
 }
 
+/* Profile name */
+
 .profile .profile_inner h1 {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
+    font-weight: var(--title-bold);
 }
+
+/* Profile picture */
 
 .profile img {
     border-radius: 50%;
-    border: 1px solid var(--tertiary);
+    border: 1px solid var(--border);
 }
+
+/* Buttons */
 
 .buttons {
     flex-wrap: wrap;
 }
 
 .button {
-    background: var(--tertiary);
+    background: var(--entry);
+    border: 1px solid var(--border);
     border-radius: var(--radius);
     margin: 6px 12px 6px 0px;
     padding: 10px;
+    transition: all 0.15s ease-in-out;
 }
 
 .button-inner {
@@ -43,5 +57,6 @@
 }
 
 .button:hover {
-    background: var(--lightcolor);
+    background: var(--graypurple);
+    border: 1px solid var(--purple);
 }

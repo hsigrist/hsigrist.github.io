@@ -1,3 +1,7 @@
+/* Style header */
+
+/* Navigation */
+
 .nav {
     display: flex;
     flex-wrap: wrap;
@@ -18,13 +22,15 @@
     margin: auto var(--gap);
 }
 
+/* Website logo */
+
 .logo {
     flex-wrap: inherit;
 }
 
 .logo a {
-    font-size: var(--headersize);
-    font-weight: var(--semibold);
+    font-size: var(--header-size);
+    font-weight: var(--title-bold);
 }
 
 .logo a img, .logo a svg {
@@ -36,19 +42,7 @@
     margin-inline-end: 8px;
 }
 
-button#theme-toggle {
-    font-size: 20px;
-    margin: auto 4px;
-}
-
-body.dark #moon {
-    vertical-align: middle;
-    display: none;
-}
-
-body:not(.dark) #sun {
-    display: none;
-}
+/* Navigation menu */
 
 #menu {
     list-style: none;
@@ -62,32 +56,10 @@ body:not(.dark) #sun {
 }
 
 #menu a {
-    font-size: var(--headersize);
-    font-weight: 400;
+    font-size: var(--header-size);
 }
 
 #menu .active {
-    border-bottom: 2px solid var(--darkcolor);
-}
-
-.lang-switch li,
-.lang-switch ul,
-.logo-switches {
-    display: inline-flex;
-    margin: auto 4px;
-}
-
-.lang-switch {
-    display: flex;
-    flex-wrap: inherit;
-}
-
-.lang-switch a {
-    margin: auto 3px;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.logo-switches {
-    flex-wrap: inherit;
+    padding-bottom: 2px;
+    border-bottom: 2px solid var(--purple);
 }

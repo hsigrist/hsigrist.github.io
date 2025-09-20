@@ -1,51 +1,46 @@
+/* Style generic page */
+
 .main {
     position: relative;
-    min-height: calc(100vh - var(--header-height) - var(--footer-height));
+    min-height: calc(100dvh - var(--header-height));
     max-width: calc(var(--main-width) + var(--gap) * 2);
     margin: auto;
     padding: var(--gap);
 }
 
+.list {
+    background: var(--code-bg);
+}
+
 .page-header h1 {
-    font-size: var(--h1size);
+    font-size: 1.5rem;
+    line-height: var(--title-height);
 }
 
-.pagination {
-    display: flex;
-}
-
-.pagination a {
-    color: var(--theme);
-    font-size: 13px;
-    line-height: 36px;
-    background: var(--primary);
-    border-radius: calc(36px / 2);
-    padding: 0 16px;
-}
-
-.pagination .next {
-    margin-inline-start: auto;
-}
+/* Social icons */
 
 .social-icons a {
     display: inline-flex;
-    padding: 10px 14px 10px 0px;
+    padding: 10px 15px 10px 0px;
+    transition: all 0.15s ease-in-out;
 }
 
 .social-icons a svg {
-    height: 30px;
-    width: 30px;
+    width: 2rem;
+    height: auto;
 }
 
 .social-icons a:hover {
-    color: var(--darkcolor);
+    color: var(--purple);
 }
+
+/* Code block */
 
 code {
     direction: ltr;
 }
 
-code {
+code, .archive-entry-title, .entry-header {
     text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
@@ -57,20 +52,41 @@ pre {
     position: relative;
 }
 
+/* Button to copy code */
+
 .copy-code {
-    display: none;
-    position: absolute;
-    top: 4px;
-    right: 4px;
-    color: rgba(255, 255, 255, 0.8);
-    background: rgba(78, 78, 78, 0.8);
-    border-radius: var(--radius);
-    padding: 0 5px;
-    font-size: 14px;
-    user-select: none;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  background: none;
+  border: none;
+  padding: 0.25em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  color: var(--tertiary);
+  transition: opacity 0.15s ease-in-out;
 }
 
-div.highlight:hover .copy-code,
-pre:hover .copy-code {
-    display: block;
+/* When users activate the code block, show the icon */
+.highlight:hover  .copy-code,
+pre:hover         .copy-code {
+  opacity: 1;
+}
+
+/* When users hover the icon itself, switch to purple */
+.copy-code:hover {
+  color: var(--purple);
+}
+
+.copy-code.copied {
+  color: var(--tertiary);
+}
+
+.copy-code svg {
+  display: block;
+  width: 1em;
+  height: 1em;
 }
