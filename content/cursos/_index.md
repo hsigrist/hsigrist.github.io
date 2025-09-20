@@ -1,4 +1,4 @@
 ---
-title: "Courses"
-description: "Courses on philology by Professor Dr von Igelfeld and esteemed colleagues. For undergraduate and graduate students."
+title: "Cursos"
+description: "Cursos impartidos por Hans sigrist en enseñanza media y en docencia universitaria."
 ---
