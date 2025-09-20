@@ -71,7 +71,7 @@ params:
               url: cursos/
     socialIcons:
         - name: CV
-          url: Hans-Sigrist-Curriculum.pdf
+          url: /Hans-Sigrist-Curriculum.pdf
         - name: Email
           url: mailto:hsigrist@gmail.com
         - name: Location
