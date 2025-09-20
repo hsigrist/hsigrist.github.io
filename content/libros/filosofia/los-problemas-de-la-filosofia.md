@@ -10,9 +10,11 @@ cover:
     alt: "Los problemas de la filosofía - Bertrand Russell"
     relative: true
 editPost:
-    URL: "https://youtube.com/course_playlist"
-    Text: "YouTube playlist"
+    URL: "/Los-Problemas-de-La-Filosofia-Bertrand-Russell.pdf"
+    Text: "PDF"
 disableAnchoredHeadings: true
 showToc: true
 
 ---
+
+Versión más moderna: [Los problemas de la filosofia - Bertrand Russell.pdf](/Los-problemas-de-la-filosofia-Bertrand-Russell.pdf)
