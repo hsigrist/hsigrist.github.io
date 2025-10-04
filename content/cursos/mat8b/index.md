@@ -6,7 +6,7 @@ author: ["Hans Sigrist"]
 description: "Este es la página de la asignatura Matemática para 7mo. básico."
 summary: "Repositorio de los artículos, apéndices, actividades, evaluaciones (rúbricas) y todo material del presente año lectivo."
 cover:
-    image: "mat8b.png"
+    image: "73720_rdtldbuzzrad_sm.png"
     alt: "Matemática 8vo. básico"
     relative: true
 editPost:
