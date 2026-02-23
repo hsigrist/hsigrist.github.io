@@ -1,0 +1,31 @@
+---
+title: "Rúbrica: Cuestionario Grupal"
+subtitle: "Estadística — Portafolio 2026"
+lang: es
+
+format:
+  html:
+    toc: false
+    number-sections: false
+    format-links: true
+  pdf:
+    toc: false
+    number-sections: false
+    colorlinks: true
+
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+## Criterios de evaluación
+
+| Criterio | Excelente | Bueno | Suficiente | Insuficiente |
+|-----------|-----------|--------|-------------|---------------|
+| **Dominio conceptual y análisis** | **50 pts** | **40 pts** | **25 pts** | **0 pts** |
+| *Comprensión del problema, interpretación de datos y solidez argumentativa.* | Respuestas rigurosas; análisis correcto; conclusiones bien fundamentadas. | Análisis mayormente correcto con errores menores. | Comprensión parcial; errores relevantes. | Falta de comprensión o conclusiones incorrectas. |
+| **Coherencia y desarrollo de respuestas** | **30 pts** | **24 pts** | **15 pts** | **0 pts** |
+| *Claridad, redacción académica y consistencia entre respuestas.* | Redacción formal, coherente y bien estructurada. | Leves imprecisiones formales. | Redacción débil o poco articulada. | Trabajo incoherente o informal. |
+| **Presentación y cumplimiento** | **20 pts** | **16 pts** | **10 pts** | **0 pts** |
+| *Formato, entrega y respeto de instrucciones.* | Entrega en plazo y cumple todas las instrucciones. | Leves errores formales. | Incumplimientos parciales. | No cumple instrucciones o no se recibe. |

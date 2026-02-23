@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>hsigrist</title>
+<link>https://hsigrist.github.io/blog/</link>
+<atom:link href="https://hsigrist.github.io/blog/index.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.8.27</generator>
+<lastBuildDate>Sun, 01 Mar 2026 03:00:00 GMT</lastBuildDate>
+<item>
+  <title>Bienvenida</title>
+  <link>https://hsigrist.github.io/blog/posts/2026-03-01-bienvenida.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>En este blog se irán publicando avisos y novedades. Revisar periódicamente.</p>
+
+
+
+ ]]></description>
+  <category>EPDI</category>
+  <guid>https://hsigrist.github.io/blog/posts/2026-03-01-bienvenida.html</guid>
+  <pubDate>Sun, 01 Mar 2026 03:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

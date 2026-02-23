@@ -1,0 +1,61 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "hsigrist"
+  site-url: "https://hsigrist.github.io"
+  repo-url: "https://github.com/hsigrist/hsigrist.github.io"
+
+  navbar:
+    title: "hsigrist"
+    left:
+      - href: blog/index.qmd
+        text: "Blog"
+      - text: "Cursos"
+        menu:
+          - href: epdi/index.qmd
+            text: "EPDI - Estadística"
+          - href: ldi/index.qmd
+            text: "LDI - Cálculo"
+    right:
+      - icon: github
+        href: "https://github.com/hsigrist/hsigrist.github.io"
+
+  page-footer:
+    left: "© 2025 Hans Sigrist"
+
+  sidebar:
+    - id: sidebar-epdi
+      title: "EPDI 2026"
+      contents:
+        - epdi/index.qmd
+        - section: "Programa"
+          contents:
+            - epdi/programa/index.qmd
+        - section: "Evaluación"
+          contents:
+            - epdi/evaluacion/index.qmd
+            - epdi/evaluacion/cuestionario-grupal.qmd
+        - section: "Rúbricas"
+          contents:
+            - epdi/rubricas/index.qmd
+            - epdi/rubricas/rubrica-cuestionario-grupal.qmd
+        - section: "Lecciones"
+          contents:
+            - epdi/lecciones/leccion-1-introduccion-a-los-datos.qmd
+            - epdi/lecciones/leccion-2-tipos-de-datos.qmd
+            - epdi/lecciones/leccion-3-tipos-de-variables.qmd
+
+format:
+  html:
+    theme:
+      light: [cosmo, theme-light.scss]
+      dark: [cosmo, theme-dark.scss]
+    css: styles.css
+    toc: true
+    number-sections: true
+    code-copy: true
+    code-overflow: wrap
+    page-layout: full
+    respect-user-color-scheme: true

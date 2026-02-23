@@ -1,0 +1,84 @@
+---
+title: "EPDI - Estadística y Probabilidad"
+sidebar:
+  id: sidebar-epdi
+  title: "EPDI 2026"
+  style: floating
+  pinned: true
+  search: true
+  contents:
+    - index.qmd
+    - section: "Programa"
+      contents:
+        - programa/index.qmd
+    - section: "Evaluación"
+      contents:
+        - evaluacion/index.qmd
+        - evaluacion/cuestionario-grupal.qmd
+    - section: "Rúbricas"
+      contents:
+        - rubricas/index.qmd
+        - rubricas/rubrica-cuestionario-grupal.qmd
+    - section: "Lecciones"
+      contents:
+        - lecciones/leccion-1-introduccion-a-los-datos.qmd
+        - lecciones/leccion-2-tipos-de-datos.qmd
+        - lecciones/leccion-3-tipos-de-variables.qmd
+page-footer:
+  left: "© 2026 Hans Sigrist"
+---
+
+
+::: {.content-visible when-format="html"}
+![EPDI](https://img.shields.io/badge/EPDI--2026-v4.0-blue)
+![LaTeX](https://img.shields.io/badge/LaTeX-v3.141592653--2.6--1.40.27-008080?style=flat&logo=latex&logoColor=white)
+![R](https://img.shields.io/badge/R-v4.5.2-blue?logo=r)
+![Quarto](https://img.shields.io/badge/Quarto-v1.8.27-blue?logo=quarto)
+![tidyverse](https://img.shields.io/badge/tidyverse-v2.0.0-1A162D?logo=r)
+![openintro](https://img.shields.io/badge/openintro-v2.0.0-103B59?logo=r&logoColor=white)
+![county](https://img.shields.io/badge/Dataset-county%20(openintro)-103B59?style=flat)
+![region30](https://img.shields.io/badge/Dataset-region30%20(Original)-5E4FA2?style=flat)
+![empleo50](https://img.shields.io/badge/Dataset-empleo50%20(Original)-5E4FA2?style=flat)
+:::
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-width: 12
+#| fig-height: 7
+#| fig-align: center
+#| out-width: 100%
+#| label: fig-portada-gapminder
+#| fig-cap: "Relación entre esperanza de vida (y) y PIB per cápita (x) en 2007. El tamaño representa población."
+#| fig-number: false
+
+library(ggplot2)
+library(dplyr)
+library(ggrepel)
+library(gapminder)
+
+data <- gapminder %>%
+  filter(year == 2007)
+
+ggplot(data, aes(x = gdpPercap,
+                 y = lifeExp,
+                 size = pop,
+                 color = continent)) +
+  geom_point(alpha = 0.6) +
+  scale_size(range = c(1, 24), name = "Población") +
+  geom_text_repel(
+    data = filter(data, country == "Chile"),
+    aes(label = country),
+    size = 5,
+    fontface = "bold",
+    color = "black"
+  ) +
+  scale_x_log10() +
+  labs(
+    x = "PIB per cápita (USD, escala log)",
+    y = "Esperanza de vida",
+    title = "Riqueza y esperanza de vida en el mundo (2007)"
+  ) +
+  theme_minimal(base_size = 13)
+```

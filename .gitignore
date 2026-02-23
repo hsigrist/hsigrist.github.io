@@ -1,0 +1,51 @@
+# Quarto / build outputs (NO versionar)
+public/
+_site/
+*/_site/
+.quarto/
+*/.quarto/
+_freeze/
+*/_freeze/
+
+# --- Quarto internals ---
+.quarto-lock
+**/*.quarto_ipynb
+
+# --- Knitr / pandoc intermediates ---
+*.knit.md
+*.utf8.md
+*.knit.html
+
+# --- Freeze / cache ---
+_freeze/
+*_cache/
+_cache/
+
+# --- R noise ---
+.Rhistory
+.RData
+.Ruserdata
+
+# --- LaTeX junk (por PDF) ---
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+
+# --- Jupyter / Python ---
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+
+# --- Editor/OS ---
+*~
+.DS_Store

@@ -1,0 +1,117 @@
+---
+title: "Evaluación"
+subtitle: "Sistema de evaluación del curso"
+course-version: "4.0"
+academic-year: "2026"
+lang: es
+description: >
+  Sistema de evaluación de la asignatura Formación Diferenciada
+  Estadística y Probabilidad Descriptiva e Inferencial.
+
+format:
+  html:
+    toc: true
+    number-sections: true
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
+---
+
+
+## Principios de evaluación
+
+La evaluación del curso busca medir el desarrollo de competencias estadísticas, no la repetición mecánica de procedimientos.
+
+Se evalúan principalmente:
+
+* Interpretación de información.
+* Razonamiento estadístico.
+* Argumentación fundamentada.
+* Uso pertinente de herramientas tecnológicas.
+* Claridad en la comunicación escrita y gráfica.
+
+## Instrumentos de evaluación
+
+### Cuestionarios grupales
+
+* Frecuencia: periódica (aprox. cada 1–2 semanas).
+* Modalidad: grupos de 3 integrantes.
+
+Qué evalúan
+
+* Comprensión conceptual.
+* Interpretación de tablas y gráficos.
+* Argumentación estadística.
+* Aplicación de procedimientos vistos en clase.
+
+Cómo se califican
+
+* Se utilizan rúbricas previamente publicadas.
+* Cada cuestionario forma parte del Portafolio semestral.
+
+### Mini-informe aplicado
+
+Se realizará al menos un mini-informe por semestre.
+
+Qué evalúa
+
+* Capacidad de análisis de datos reales.
+* Construcción de tablas y gráficos.
+* Interpretación argumentada.
+* Coherencia entre evidencia y conclusión.
+
+Características
+
+* Extensión máxima: 1 página de análisis.
+* Incluye: 1 tabla + 1 gráfico + interpretación (150–250 palabras).
+* Código reproducible.
+
+## Portafolio semestral
+
+El portafolio reúne:
+
+* Cuestionarios corregidos (según rol en el grupo).
+* Rúbricas correspondientes.
+* Mini-informe(s).
+
+Su propósito es evidenciar el progreso del estudiante durante el semestre.
+
+## Criterios generales de corrección
+
+En todos los instrumentos se considera:
+
+* Pertinencia de la respuesta.
+* Uso correcto de conceptos.
+* Coherencia lógica.
+* Claridad en la argumentación.
+* Presentación ordenada.
+
+No se evalúa cantidad de texto, sino calidad del razonamiento.
+
+## Trabajo en grupo
+
+* Los grupos son de exactamente 3 integrantes.
+* Cada integrante debe comprender el trabajo entregado.
+* El/la jefe/a de grupo conserva el cuestionario original corregido.
+* Los demás integrantes conservan su rúbrica individual.
+
+## Entregas y puntualidad
+
+* Las fechas de entrega se informarán oportunamente.
+* Entregas fuera de plazo podrán estar sujetas a penalización.
+* La ausencia injustificada en actividades evaluadas deberá regularizarse según normativa institucional.
+
+## Relación con los ejes del curso
+
+Los instrumentos de evaluación están alineados con los cuatro ejes formativos del curso:
+
+* Representación y estructura de datos.
+* Estadística descriptiva.
+* Probabilidad y modelación.
+* Inferencia estadística.
+
+Cada actividad evaluada se vincula explícitamente con uno o más de estos ejes.
+
+> **Observación final.**
+> El objetivo de la evaluación no es acumular calificaciones, sino desarrollar pensamiento estadístico riguroso y autónomo.

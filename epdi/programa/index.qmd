@@ -1,0 +1,50 @@
+---
+title: "Syllabus"
+subtitle: "Estadística y Probabilidad Descriptiva e Inferencial"
+course-version: "4.0"
+academic-year: "2026"
+lang: es
+description: >
+  Programa oficial de la asignatura de Formación Diferenciada
+  Estadística y Probabilidad Descriptiva e Inferencial (3°–4° medio).
+
+format:
+  html:
+    toc: true
+    number-sections: true
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
+---
+
+## Organización temática del curso
+
+El curso se organiza en **cuatro ejes articulados**, coherentes con el Programa de Formación Diferenciada HC de Probabilidades y Estadística Descriptiva e Inferencial. Estos ejes permiten una secuencia flexible de lecciones, manteniendo cobertura curricular y coherencia conceptual.
+
+### Eje 1 — Representación y estructura de datos
+
+* Tipos de variables
+* Matriz de datos
+* Tablas y representaciones gráficas
+* Interpretación crítica de información estadística
+
+### Eje 2 — Estadística descriptiva
+
+* Media, mediana y medidas de dispersión
+* Diagramas de caja e histogramas
+* Asociación y correlación entre variables
+
+### Eje 3 — Probabilidad y modelación
+
+* Proporciones y eventos
+* Distribución binomial
+* Distribución normal
+
+### Eje 4 — Inferencia estadística
+
+* Estimación de parámetros
+* Interpretación de evidencia estadística
+* Toma de decisiones basada en datos
+
+> La secuencia específica de lecciones podrá ajustarse según el ritmo y necesidades del curso, manteniendo la cobertura de estos ejes formativos.

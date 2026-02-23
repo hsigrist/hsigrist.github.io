@@ -1,0 +1,38 @@
+---
+title: "Rúbricas"
+subtitle: "Instrumentos de evaluación"
+lang: es
+
+format:
+  html:
+    toc: true
+    number-sections: false
+---
+
+En esta sección se encuentran los instrumentos formales de evaluación utilizados en la asignatura.
+
+Las rúbricas permiten conocer con anticipación los criterios de evaluación y los niveles de desempeño esperados.
+
+## Cuestionario grupal
+
+Instrumento utilizado periódicamente durante el semestre para evaluar:
+
+- Comprensión conceptual.
+- Interpretación estadística.
+- Argumentación y coherencia.
+- Presentación formal.
+
+[Rúbrica: Cuestionario Grupal](rubrica-cuestionario-grupal.qmd)
+
+## Portafolio final
+
+Instrumento de evaluación semestral que considera:
+
+- Integración de evidencias.
+- Progreso conceptual.
+- Organización del trabajo.
+- Reflexión y argumentación.
+
+*(Próximamente disponible)*
+
+> Se recomienda revisar la rúbrica correspondiente antes de realizar cada entrega.

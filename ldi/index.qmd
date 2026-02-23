@@ -1,0 +1,13 @@
+---
+title: "LDI - Límites, Derivadas e Integrales"
+sidebar:
+  title: "LDI 2026"
+  style: floating
+  search: true
+  contents:
+    - index.qmd
+page-footer:
+  left: "© 2026 Hans Sigrist"
+---
+
+Este curso estará disponible el 2027.

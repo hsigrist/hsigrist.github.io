@@ -1,0 +1,262 @@
+---
+title: "Lección 2: Tipos de datos y estructura de la información"
+date: 2026-03-11
+description: >
+  Estudio de la estructura de una matriz de datos y clasificación de variables mediante el análisis del conjunto empleo50 utilizando R.
+
+abstract: >
+  En esta lección se analiza un conjunto de datos inspirado en la Encuesta Nacional de Empleo. Se estudian las nociones de observación, variable y niveles de medición, junto con la clasificación en variables categóricas y cuantitativas. Mediante herramientas básicas de R se exploran tablas, resúmenes descriptivos y representaciones gráficas. El objetivo es consolidar una comprensión estructural de los datos como fundamento del análisis estadístico posterior.
+author:
+  - name: Hans Sigrist
+    id: hs
+    email: hsigrist@colegioportaliano.cl
+    affiliation:
+      - name: Colegio Portaliano
+        city: San Felipe
+        url: https://www.colegioportaliano.cl
+lang: es
+author-title: "Autor"
+format:
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
+    linkcolor: blue
+    urlcolor: blue
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    other-links:
+      - text: Mercado Laboral (NEE)
+        href: https://www.ine.gob.cl/estadisticas/sociales/mercado-laboral
+      - text: Ocupación y desocupacion (NEE)
+        href: https://www.ine.gob.cl/estadisticas/sociales/mercado-laboral/ocupacion-y-desocupacion
+      - text: Banco de datos INE
+        href: https://bancodatosene.ine.cl/
+      - text: .Stat
+        href: https://stat.ine.cl/?lang=es
+    code-links:
+      - text: empleo50.csv
+        href: datos/empleo50.csv
+        icon: filetype-csv
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+::: {.content-visible when-format="html"}
+![LaTeX](https://img.shields.io/badge/LaTeX-v3.141592653--2.6--1.40.27-008080?style=flat&logo=latex&logoColor=white)
+![R](https://img.shields.io/badge/R-v4.5.2-blue?logo=r)
+![Quarto](https://img.shields.io/badge/Quarto-v1.8.27-blue?logo=quarto)
+![empleo50](https://img.shields.io/badge/Dataset-empleo50%20(Original)-5E4FA2?style=flat)
+:::
+
+::: {.content-visible when-format="pdf"}
+Built with Quarto v1.8.27 · R v4.5.2 · tidyverse v2.0.0 · LaTeX v3.141592653-2.6-1.40.27
+:::
+
+::: {.content-visible when-format="html"}
+::: {#fig-railroad fig-cap="Ilustración utilizada con fines educativos. Fuente: USF ClipArt Collection (University of South Florida)." fig-number="false"}
+![](../imagenes/63564_railroad_lg.png)
+:::
+:::
+
+::: {.content-visible when-format="pdf"}
+::: {#fig-railroad-pdf fig-cap="Ilustración utilizada con fines educativos. Fuente: USF ClipArt Collection (University of South Florida)." fig-number="false"}
+![](../imagenes/63564_railroad_lg.png){width=0.6\textwidth}
+:::
+:::
+
+## Origen institucional de los datos
+
+> The simple graph has brought more information to the data analyst’s mind than any other device.
+>
+> — John Tukey
+
+Los datos utilizados en esta lección (`empleo50`) son una versión didáctica simplificada de lo que habitualmente se obtiene a partir de encuestas oficiales de empleo. En Chile, la **Encuesta Nacional de Empleo (ENE)** es un estudio estadístico sistemático conducido por el **Instituto Nacional de Estadísticas (INE)**, que busca medir las condiciones del mercado laboral a nivel nacional. Esta encuesta recoge información individual sobre edad, región, estado laboral, ingresos y horas trabajadas, entre otras variables, con el propósito de estimar indicadores como la tasa de ocupación y desempleo, identificar brechas laborales y apoyar el diseño de políticas públicas y programas sociales. El dataset `empleo50` simula la estructura principal de estos datos reales para facilitar el análisis de tipos de variables y la comprensión de la estructura de una matriz de datos sin necesidad de trabajar con bases originales completas.
+
+## Observaciones y variables
+
+La organización y descripción efectiva de los datos es el primer paso en la mayoría de los análisis. Esta sección presenta la matriz de datos para organizarlos, así como la terminología sobre los diferentes tipos de datos que se utilizará a lo largo de este libro.
+
+Primero cargamos las librerías neccesarias para la lección y operatividad de `R`:
+
+```{r}
+#| label: setup-cran
+#| include: false
+
+options(repos = c(CRAN = "https://cloud.r-project.org"))
+
+```
+
+```{r}
+library(readr)
+library(dplyr)
+library(ggplot2)
+library(knitr)
+```
+
+```{r}
+#| include: false
+knitr::opts_knit$set(root.dir = normalizePath(".."))
+empleo <- readr::read_csv("../datos/empleo50.csv", show_col_types = FALSE)
+```
+
+::: {.callout-note}
+
+## Exploración opcional en `R` (Jupyter / Colab)
+
+Los estudiantes que deseen experimentar, pueden cargar la base directamente a su computador utilizando:
+
+[empleo50.csv](../datos/empleo50.csv)
+:::
+
+Los datos de la @tbl-matriz representan una **matriz de datos**, una forma práctica y común de organizarlos, especialmente si se recopilan en una hoja de cálculo. Cada fila de una matriz de datos corresponde a un caso único (unidad de observación) y cada columna a una variable.
+
+En la práctica, es especialmente importante hacer preguntas aclaratorias para garantizar la comprensión de aspectos importantes de los datos. Por ejemplo, siempre es importante asegurarse de comprender el significado de cada variable y sus unidades de medida. Las descripciones de las variables de `empleo50` se presentan en la @tbl-matriz.
+
+```{r}
+#| label: tbl-matriz
+#| tbl-cap: "Cuatro filas de la matriz de datos `empleo50`."
+#| tbl-pos: H
+
+empleo4 <- empleo |>
+  mutate(id = row_number()) |>
+  slice(c(1,2,3, n())) |>
+  select(id, everything())
+
+kable(empleo4, booktabs = TRUE)
+```
+
+La @tbl-diccionario es una descripción de cada variable de `empleo50`:
+
+```{r}
+#| label: tbl-diccionario
+#| tbl-cap: "Variables y descripción para el conjunto de datos `empleo50`."
+#| tbl-pos: H
+
+library(tibble)
+
+dic_empleo <- tribble(
+  ~variable, ~descripcion,
+  "region",            "Región de residencia (categórica nominal).",
+  "sexo",              "Sexo declarado (categórica nominal).",
+  "edad",              "Edad en años (numérica discreta).",
+  "nivel_educacional", "Nivel educacional (categórica ordinal).",
+  "estado_laboral",    "Condición laboral: Ocupado / Desocupado / Inactivo.",
+  "tipo_contrato",     "Tipo de contrato si está ocupado (NA si no aplica).",
+  "ingreso_mensual",   "Ingreso mensual en CLP (numérica).",
+  "horas_trabajo",     "Horas trabajadas por semana (numérica)."
+)
+
+kable(dic_empleo, booktabs = TRUE)
+```
+
+```{r}
+head(empleo, 5)
+dim(empleo)
+```
+
+```{r}
+summary(select(empleo, edad, ingreso_mensual, horas_trabajo))
+```
+
+```{r}
+table(empleo$region)
+table(empleo$sexo)
+```
+
+```{r}
+empleo_ocup <- filter(empleo, estado_laboral == "Ocupado")
+
+ggplot(empleo_ocup, aes(x = edad, y = ingreso_mensual)) +
+  geom_point() +
+  labs(title = "Edad vs Ingreso mensual")
+```
+
+```{r}
+ggplot(empleo_ocup, aes(x = nivel_educacional, y = ingreso_mensual)) +
+  geom_boxplot()
+```
+
+```{r}
+ggplot(empleo_ocup, aes(x = nivel_educacional, y = horas_trabajo)) +
+  geom_boxplot()
+```
+
+```{r}
+ggplot(empleo_ocup, aes(x = ingreso_mensual, y = horas_trabajo)) +
+  geom_boxplot()
+```
+
+## Cuestionario Tipos de Datos (Portafolio)
+
+Utiliza este enlace para contestar las siguientes preguntas:
+
+::: {.content-visible when-format="html"}
+<a href="https://www.ine.gob.cl/estadisticas/sociales/mercado-laboral"
+   target="_blank" rel="noopener"
+   class="btn btn-outline-primary">
+   Mercado laboral
+</a> <a href="https://www.ine.gob.cl/estadisticas/sociales/mercado-laboral/ocupacion-y-desocupacion"
+   target="_blank" rel="noopener"
+   class="btn btn-outline-primary">
+   Ocupación y desocupación
+</a>
+:::
+
+::: {.content-visible when-format="pdf"}
+
+- [Mercado laboral (INE)](https://www.ine.gob.cl/estadisticas/sociales/mercado-laboral)
+- [Ocupación y desocupación](https://www.ine.gob.cl/estadisticas/sociales/mercado-laboral/ocupacion-y-desocupacion)
+
+:::
+
+1. Según el documento "Metodología Encuesta Nacional de Empleo ENE 2020", ¿Cuál es la edad de la población objetivo?
+2. En referencia al mismo documento anterior, ¿Cómo define el Glosario del documento "Brecha de género"? Da un ejemplo que conozcas donde se presente esta brecha.
+3. Lee atentamente este extracto:
+
+   > "Tal y como se define en las normas internacionales, existen tres categorías principales, personas ocupadas,
+personas desocupadas y personas fuera de la fuerza de trabajo, por lo que la población activa está formada
+por las personas en edad de trabajar que participan activamente en el mercado de trabajo, es decir la
+suma de las personas ocupadas y las desocupadas (personas cesantes y personas que buscan trabajo por
+primera vez). En conjunto, estos dos grupos de población en edad de trabajar representan la oferta de
+mano de obra para la producción de bienes y servicios a cambio de la remuneración o beneficio que existe
+en un país en un momento dado. Por otro lado, las personas fuera de la fuerza de trabajo son aquellas
+personas en edad de trabajar que durante el período de referencia no estaban ni en la ocupación ni en la
+desocupación".
+
+A partir de este extracto, explica quién es una persona fuera de la fuerza de trabajo y da un ejemplo concreto.
+
+4. ¿Es lo mismo estar desempleado que estar fuera de la fuerza de trabajo?
+
+::: {.content-visible when-format="html"}
+
+<a href="https://www.ine.gob.cl/estadisticas/sociales/mercado-laboral"
+   target="_blank" rel="noopener"
+   class="btn btn-outline-primary">
+   Mercado laboral
+</a>
+
+<a href="https://bancodatosene.ine.cl/"
+   target="_blank" rel="noopener"
+   class="btn btn-outline-primary">
+   Banco de datos ENE
+</a>
+
+<a href="https://stat.ine.cl/?lang=es"
+   target="_blank" rel="noopener"
+   class="btn btn-outline-primary">
+   .Stat
+</a>
+:::
+
+::: {.content-visible when-format="pdf"}
+
+- [Mercado laboral (INE)](https://www.ine.gob.cl/estadisticas/sociales/mercado-laboral)
+- [Banco de datos de la ENE](https://bancodatosene.ine.cl/)
+- [.Stat (INE)](https://stat.ine.cl/?lang=es)
+
+:::
