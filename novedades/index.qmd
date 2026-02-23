@@ -6,7 +6,7 @@ listing:
   type: default
   categories: true
   page-size: 10
-  feed: true                # ← Feed general (SIMPLE)
+  feed: true
   fields:
     - date
     - title
@@ -17,8 +17,10 @@ listing:
     categories: "Categorías"
   field-links:
     - title
+  date-format: "D MMM, YYYY"    # ← Esto da: "3 Ene, 2026"
 page-footer:
   left: "© 2026 Hans Sigrist"
+lang: es                          # ← Importante: idioma español
 ---
 
 Novedades del curso.
