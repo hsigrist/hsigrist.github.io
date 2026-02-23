@@ -21,4 +21,4 @@ page-footer:
   left: "© 2026 Hans Sigrist"
 ---
 
-Novedades.
+Novedades del curso.
