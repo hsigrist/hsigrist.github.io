@@ -1,5 +1,5 @@
 ---
-title: "EPDI - Estadística y Probabilidad"
+title: "EPDI - Estadística y Probabilidad Descriptiva e Inferencial"
 sidebar:
   id: sidebar-epdi
   title: "EPDI 2026"
@@ -82,3 +82,7 @@ ggplot(data, aes(x = gdpPercap,
   ) +
   theme_minimal(base_size = 13)
 ```
+
+Esta es la página oficial de la asignatura **Estadística y Probabilidad Descriptiva e Inferencial**.
+
+En el panel de la izquierda podrá encontrar toda la información del curso, incluidas las **Lecciones** que se irán publicando periódicamente y que serán anunciadas en [Novedades](/novedades/index.qmd).

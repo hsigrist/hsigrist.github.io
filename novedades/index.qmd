@@ -6,7 +6,7 @@ listing:
   type: default
   categories: true
   page-size: 10
-  feed: true
+  feed: true                # ← Feed general (SIMPLE)
   fields:
     - date
     - title

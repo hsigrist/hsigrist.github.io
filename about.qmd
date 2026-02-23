@@ -1,5 +1,10 @@
 ---
-title: "About"
+title: "Acerca de"
 ---
 
-About this site
+## Hans Sigrist {-}
+
+Profesor y docente de Matemática en [Colegio Portaliano](https://colegioportaliano.cl/){target="_blank"}  y en [Universidad de Playa Ancha - campus San Felipe](https://www.upla.cl/sanfelipe/){target="_blank"}.
+
+- [hsigrist@colegioportaliano.cl](mailto:hsigrist@colegioportaliano.cl)
+- [hans.sigrist@upla.cl](mailto:hans.sigrist@upla.cl)

@@ -5,6 +5,7 @@ project:
 website:
   title: "hsigrist"
   site-url: "https://hsigrist.github.io"
+  description: "Materiales docentes y novedades de Formación Diferenciada | Colegio Portaliano"
   repo-url: "https://github.com/hsigrist/hsigrist.github.io"
 
   navbar:
@@ -19,8 +20,17 @@ website:
           - href: ldi/index.qmd
             text: "LDI - Cálculo"
     right:
+      - href: about.qmd
+        text: "Acerca de"
+      - icon: rss
+        href: /novedades/index.xml
+        aria-label: "Feed RSS de Novedades"
       - icon: github
         href: "https://github.com/hsigrist/hsigrist.github.io"
+        aria-label: "GitHub"
+      - icon: envelope
+        href: "mailto:hsigrist@colegioportaliano.cl"
+        aria-label: "Enviar correo"
 
   page-footer:
     left: "© 2025 Hans Sigrist"

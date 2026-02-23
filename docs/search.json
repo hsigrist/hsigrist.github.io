@@ -11,14 +11,21 @@
     "href": "novedades/index.html",
     "title": "Novedades - Formación Diferenciada",
     "section": "",
-    "text": "Novedades del curso.\n\n\n\n\n\n\n\n\n\nBienvenida\n\n\n\nEPDI\n\n\n\n\n\n\nMar 1, 2026\n\n\n\n\n\nNo matching items"
+    "text": "Novedades del curso.\n\n\n\n\n\n\n\n\n\nBienvenida\n\n\n\nEPDI\n\n\n\n\n\n\nJan 3, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Acerca de",
     "section": "",
-    "text": "About this site"
+    "text": "Profesor y docente de Matemática en Colegio Portaliano y en Universidad de Playa Ancha - campus San Felipe.\n\nhsigrist@colegioportaliano.cl\nhans.sigrist@upla.cl"
+  },
+  {
+    "objectID": "about.html#hans-sigrist",
+    "href": "about.html#hans-sigrist",
+    "title": "Acerca de",
+    "section": "",
+    "text": "Profesor y docente de Matemática en Colegio Portaliano y en Universidad de Playa Ancha - campus San Felipe.\n\nhsigrist@colegioportaliano.cl\nhans.sigrist@upla.cl"
   },
   {
     "objectID": "epdi/evaluacion/index.html",
@@ -320,19 +327,19 @@
   {
     "objectID": "epdi/index.html",
     "href": "epdi/index.html",
-    "title": "EPDI - Estadística y Probabilidad",
+    "title": "EPDI - Estadística y Probabilidad Descriptiva e Inferencial",
     "section": "",
-    "text": "Figure 1: Relación entre esperanza de vida (y) y PIB per cápita (x) en 2007. El tamaño representa población.",
+    "text": "Figure 1: Relación entre esperanza de vida (y) y PIB per cápita (x) en 2007. El tamaño representa población.\n\n\n\n\n\nEsta es la página oficial de la asignatura Estadística y Probabilidad Descriptiva e Inferencial.\nEn el panel de la izquierda podrá encontrar toda la información del curso, incluidas las Lecciones que se irán publicando periódicamente y que serán anunciadas en Novedades.",
     "crumbs": [
-      "EPDI - Estadística y Probabilidad"
+      "EPDI - Estadística y Probabilidad Descriptiva e Inferencial"
     ]
   },
   {
-    "objectID": "novedades/posts/2026-03-01-bienvenida.html",
-    "href": "novedades/posts/2026-03-01-bienvenida.html",
+    "objectID": "novedades/posts/01-03-2026-bienvenida.html",
+    "href": "novedades/posts/01-03-2026-bienvenida.html",
     "title": "Bienvenida",
     "section": "",
-    "text": "En este blog se irán publicando avisos y novedades. Revisar periódicamente."
+    "text": "En este espacio se irán publicando las novedades del curso EPDI (Estadística y Probabilidad Descriptiva e Inferencial) . Revisar periódicamente."
   },
   {
     "objectID": "ldi/index.html",

@@ -1,7 +1,0 @@
----
-title: "Bienvenida"
-date: 2026-03-01
-categories: [EPDI]
----
-
-En este blog se irán publicando avisos y novedades. Revisar periódicamente.
