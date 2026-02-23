@@ -6,14 +6,14 @@
       version="2.0">
 <channel>
 <title>hsigrist</title>
-<link>https://hsigrist.github.io/blog/</link>
-<atom:link href="https://hsigrist.github.io/blog/index.xml" rel="self" type="application/rss+xml"/>
+<link>https://hsigrist.github.io/novedades/</link>
+<atom:link href="https://hsigrist.github.io/novedades/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.27</generator>
 <lastBuildDate>Sun, 01 Mar 2026 03:00:00 GMT</lastBuildDate>
 <item>
   <title>Bienvenida</title>
-  <link>https://hsigrist.github.io/blog/posts/2026-03-01-bienvenida.html</link>
+  <link>https://hsigrist.github.io/novedades/posts/2026-03-01-bienvenida.html</link>
   <description><![CDATA[ 
 
 
@@ -26,7 +26,7 @@
 
  ]]></description>
   <category>EPDI</category>
-  <guid>https://hsigrist.github.io/blog/posts/2026-03-01-bienvenida.html</guid>
+  <guid>https://hsigrist.github.io/novedades/posts/2026-03-01-bienvenida.html</guid>
   <pubDate>Sun, 01 Mar 2026 03:00:00 GMT</pubDate>
 </item>
 </channel>

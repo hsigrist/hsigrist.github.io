@@ -10,8 +10,8 @@ website:
   navbar:
     title: "hsigrist"
     left:
-      - href: blog/index.qmd
-        text: "Blog"
+      - href: novedades/index.qmd
+        text: "Novedades"
       - text: "Cursos"
         menu:
           - href: epdi/index.qmd

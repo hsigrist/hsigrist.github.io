@@ -1,17 +1,17 @@
 [
   {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Novedades - Formación Diferenciada",
-    "section": "",
-    "text": "Novedades.\n\n\n\n\n\n\n\n\n\nBienvenida\n\n\n\nEPDI\n\n\n\n\n\n\nMar 1, 2026\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Hans Sigrist",
     "section": "",
     "text": "Repositorio de materiales académicos y recursos de docencia para estudiantes del Colegio Portaliano e ITEC-UPLA (San Felipe)."
+  },
+  {
+    "objectID": "novedades/index.html",
+    "href": "novedades/index.html",
+    "title": "Novedades - Formación Diferenciada",
+    "section": "",
+    "text": "Novedades del curso.\n\n\n\n\n\n\n\n\n\nBienvenida\n\n\n\nEPDI\n\n\n\n\n\n\nMar 1, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -328,17 +328,17 @@
     ]
   },
   {
+    "objectID": "novedades/posts/2026-03-01-bienvenida.html",
+    "href": "novedades/posts/2026-03-01-bienvenida.html",
+    "title": "Bienvenida",
+    "section": "",
+    "text": "En este blog se irán publicando avisos y novedades. Revisar periódicamente."
+  },
+  {
     "objectID": "ldi/index.html",
     "href": "ldi/index.html",
     "title": "LDI - Límites, Derivadas e Integrales",
     "section": "",
     "text": "Este curso estará disponible el 2027."
-  },
-  {
-    "objectID": "blog/posts/2026-03-01-bienvenida.html",
-    "href": "blog/posts/2026-03-01-bienvenida.html",
-    "title": "Bienvenida",
-    "section": "",
-    "text": "En este blog se irán publicando avisos y novedades. Revisar periódicamente."
   }
 ]
