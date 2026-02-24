@@ -1,8 +1,8 @@
 ---
 title: "Lección 1: Introducción a los datos"
 date: 2026-03-05
+draft: true
 categories: [EPDI]
-# draft: true
 description: >
   Introducción al análisis de datos experimentales mediante tablas de contingencia y proporciones, utilizando R y el paquete openintro.
 

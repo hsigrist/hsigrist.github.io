@@ -1,12 +1,11 @@
 ---
-title: "Nueva lección: Lección 1 Introducción a los datos "
+title: "Nueva lección: Lección 1 Introducción a los datos"
 date: 2026-03-05
 date-format: "DD-MM-YYYY"
 author: "Hans Sigrist"
 categories: [EPDI]
-description: "Agregada nueva lección"
-image: "../../epdi/imagenes/65138_patient_lg.png"
-# draft: true
+lang: es
+draft: true
 ---
 
 Ya está disponible la [Lección 1 Introducción a los datos](../../epdi/lecciones/leccion-1-introduccion-a-los-datos.qmd).

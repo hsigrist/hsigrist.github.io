@@ -2,6 +2,7 @@
 title: "Bienvenida"
 date: 2026-03-04
 date-format: "D MMMM, YYYY"
+author: "Hans Sigrist"
 categories: [EPDI]
 lang: es
 ---
