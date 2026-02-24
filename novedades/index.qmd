@@ -1,5 +1,5 @@
 ---
-title: "Novedades - Formación Diferenciada"
+title: "Novedades"
 listing:
   contents: posts
   sort: "date desc"
@@ -17,10 +17,10 @@ listing:
     categories: "Categorías"
   field-links:
     - title
-  date-format: "D MMM, YYYY"    # ← Esto da: "3 Ene, 2026"
+  date-format: "D MMM, YYYY"
 page-footer:
   left: "© 2026 Hans Sigrist"
-lang: es                          # ← Importante: idioma español
+lang: es
 ---
 
-Novedades del curso.
+Novedades del sitio.
