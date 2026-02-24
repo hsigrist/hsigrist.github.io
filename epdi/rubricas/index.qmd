@@ -33,6 +33,4 @@ Instrumento de evaluación semestral que considera:
 - Organización del trabajo.
 - Reflexión y argumentación.
 
-*(Próximamente disponible)*
-
 > Se recomienda revisar la rúbrica correspondiente antes de realizar cada entrega.
