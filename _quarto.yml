@@ -33,7 +33,7 @@ website:
         aria-label: "Enviar correo"
 
   page-footer:
-    left: "© 2025 Hans Sigrist"
+    left: "© 2026 Hans Sigrist"
 
   sidebar:
     - id: sidebar-epdi

@@ -10,7 +10,7 @@
 <atom:link href="https://hsigrist.github.io/novedades/index.xml" rel="self" type="application/rss+xml"/>
 <description>Materiales docentes y novedades de Formación Diferenciada | Colegio Portaliano</description>
 <generator>quarto-1.8.27</generator>
-<lastBuildDate>Sat, 03 Jan 2026 03:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 04 Mar 2026 03:00:00 GMT</lastBuildDate>
 <item>
   <title>Bienvenida</title>
   <link>https://hsigrist.github.io/novedades/posts/01-03-2026-bienvenida.html</link>
@@ -20,6 +20,7 @@
 
 
 
+<p>Bienvenidos al sitio de las asignaturas de <em>Formación Diferenciada</em> el Prof.&nbsp;Hans Sigrist.</p>
 <p>En este espacio se irán publicando las novedades del curso <a href="../../epdi/index.html">EPDI</a> (Estadística y Probabilidad Descriptiva e Inferencial) . Revisar periódicamente.</p>
 
 
@@ -27,7 +28,7 @@
  ]]></description>
   <category>EPDI</category>
   <guid>https://hsigrist.github.io/novedades/posts/01-03-2026-bienvenida.html</guid>
-  <pubDate>Sat, 03 Jan 2026 03:00:00 GMT</pubDate>
+  <pubDate>Wed, 04 Mar 2026 03:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
