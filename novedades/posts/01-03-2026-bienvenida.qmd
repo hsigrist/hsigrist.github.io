@@ -1,7 +1,9 @@
 ---
 title: "Bienvenida"
 date: 01-03-2026
+date-format: "D MMM, YYYY"
 categories: [EPDI]
+lang: es
 ---
 
 En este espacio se irán publicando las novedades del curso [EPDI](/epdi/index.qmd) (Estadística y Probabilidad Descriptiva e Inferencial) . Revisar periódicamente.
