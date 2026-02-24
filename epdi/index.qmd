@@ -1,5 +1,6 @@
 ---
 title: "EPDI - Estadística y Probabilidad Descriptiva e Inferencial"
+draft-mode: gone
 sidebar:
   id: sidebar-epdi
   title: "EPDI 2026"
