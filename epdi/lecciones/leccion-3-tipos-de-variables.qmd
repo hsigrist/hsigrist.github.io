@@ -1,6 +1,8 @@
 ---
 title: "Lección 3: Tipos de variables"
-date: 2026-03-11
+date: 2026-03-19
+draft: true
+categories: [EPDI]
 description: >
   Clasificación de variables estadísticas y estudio de relaciones entre variables utilizando una base de datos didáctica simulada.
 

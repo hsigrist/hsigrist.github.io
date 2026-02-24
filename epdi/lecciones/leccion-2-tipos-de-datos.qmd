@@ -1,6 +1,7 @@
 ---
 title: "Lección 2: Tipos de datos y estructura de la información"
-date: 2026-03-11
+date: 2026-03-12
+categories: [EPDI]
 description: >
   Estudio de la estructura de una matriz de datos y clasificación de variables mediante el análisis del conjunto empleo50 utilizando R.
 
@@ -77,11 +78,11 @@ Built with Quarto v1.8.27 · R v4.5.2 · tidyverse v2.0.0 · LaTeX v3.141592653-
 
 Los datos utilizados en esta lección (`empleo50`) son una versión didáctica simplificada de lo que habitualmente se obtiene a partir de encuestas oficiales de empleo. En Chile, la **Encuesta Nacional de Empleo (ENE)** es un estudio estadístico sistemático conducido por el **Instituto Nacional de Estadísticas (INE)**, que busca medir las condiciones del mercado laboral a nivel nacional. Esta encuesta recoge información individual sobre edad, región, estado laboral, ingresos y horas trabajadas, entre otras variables, con el propósito de estimar indicadores como la tasa de ocupación y desempleo, identificar brechas laborales y apoyar el diseño de políticas públicas y programas sociales. El dataset `empleo50` simula la estructura principal de estos datos reales para facilitar el análisis de tipos de variables y la comprensión de la estructura de una matriz de datos sin necesidad de trabajar con bases originales completas.
 
-## Observaciones y variables
+## Preparar el entorno y cargar datos
 
 La organización y descripción efectiva de los datos es el primer paso en la mayoría de los análisis. Esta sección presenta la matriz de datos para organizarlos, así como la terminología sobre los diferentes tipos de datos que se utilizará a lo largo de este libro.
 
-Primero cargamos las librerías neccesarias para la lección y operatividad de `R`:
+Primero cargamos las librerías necesarias para la lección y operatividad de `R`. En este caso, usaremos dplyr para manipular datos y ggplot2 para graficar.
 
 ```{r}
 #| label: setup-cran
@@ -97,6 +98,7 @@ library(dplyr)
 library(ggplot2)
 library(knitr)
 ```
+Los datos que utilizaremos corresponden a una muestra de 50 personas ocupadas en la Región de Valparaíso (fuente: Nueva Encuesta Nacional de Empleo, INE). Carguemos el archivo:
 
 ```{r}
 #| include: false
@@ -113,24 +115,25 @@ Los estudiantes que deseen experimentar, pueden cargar la base directamente a su
 [empleo50.csv](../datos/empleo50.csv)
 :::
 
-Los datos de la @tbl-matriz representan una **matriz de datos**, una forma práctica y común de organizarlos, especialmente si se recopilan en una hoja de cálculo. Cada fila de una matriz de datos corresponde a un caso único (unidad de observación) y cada columna a una variable.
+## Explorar la estructura de los datos
 
-En la práctica, es especialmente importante hacer preguntas aclaratorias para garantizar la comprensión de aspectos importantes de los datos. Por ejemplo, siempre es importante asegurarse de comprender el significado de cada variable y sus unidades de medida. Las descripciones de las variables de `empleo50` se presentan en la @tbl-matriz.
+Cada fila es una observación (persona) y cada columna una variable. Con `str()` vemos el tipo de cada variable:
 
 ```{r}
-#| label: tbl-matriz
-#| tbl-cap: "Cuatro filas de la matriz de datos `empleo50`."
-#| tbl-pos: H
+str(empleo)
+```
+Aparecen variables numéricas (edad, ingreso_mensual) y categóricas (sexo, region). Esta distinción determina qué análisis podemos hacer.
 
-empleo4 <- empleo |>
-  mutate(id = row_number()) |>
-  slice(c(1,2,3, n())) |>
-  select(id, everything())
+Las primeras filas y la dimensión nos ayudan a entender su tamaño:
 
-kable(empleo4, booktabs = TRUE)
+```{r}
+head(empleo, 5)
+dim(empleo)
 ```
 
-La @tbl-diccionario es una descripción de cada variable de `empleo50`:
+## Diccionario de variables
+
+Para saber qué mide cada columna la @tbl-diccionario es una descripción de cada variable de `empleo50`:
 
 ```{r}
 #| label: tbl-diccionario
@@ -154,19 +157,74 @@ dic_empleo <- tribble(
 kable(dic_empleo, booktabs = TRUE)
 ```
 
+## Resúmenes numéricos para variables cuantitativas
+
+Para variables numéricas (cuantitativas), el resumen más útil suele ser el de cinco números: mínimo, primer cuartil, mediana, media, tercer cuartil y máximo. Lo obtenemos con `summary()`:
+
 ```{r}
-head(empleo, 5)
-dim(empleo)
+summary(empleo)
 ```
+
+Observa que `summary()` también nos da una tabla de frecuencias para las variables categóricas (como sexo). ¿Por qué crees que hace eso?
+
+## Tablas de frecuencias para variables categóricas
+
+Cuando una variable es categórica, el resumen adecuado es una tabla de frecuencias. Podemos obtenerla con `table()`:
+
+```{r}
+table(empleo$sexo)
+```
+
+¿Cuántos hombres y cuántas mujeres hay en la muestra? Esta tabla responde esa pregunta de forma directa.
+
+## Filtrar datos para un análisis más específico
+
+Supongamos que solo queremos estudiar a las personas ocupadas (que ya lo están) y además queremos quedarnos con quienes trabajan al menos 30 horas semanales. Usamos `filter()`:
+
+```{r}
+empleo_ocup <- empleo %>%
+  filter(horas_trabajo >= 30)
+```
+
+¿Por qué es útil filtrar? Porque nos permite centrarnos en un subgrupo con características similares y evitar que los resultados se vean afectados por casos atípicos (como personas con trabajos de muy pocas horas).
+
+Los datos de la @tbl-matriz representan una **matriz de datos**, una forma práctica y común de organizarlos, especialmente si se recopilan en una hoja de cálculo. Cada fila de una matriz de datos corresponde a un caso único (unidad de observación) y cada columna a una variable.
+
+En la práctica, es especialmente importante hacer preguntas aclaratorias para garantizar la comprensión de aspectos importantes de los datos. Por ejemplo, siempre es importante asegurarse de comprender el significado de cada variable y sus unidades de medida. Las descripciones de las variables de `empleo50` se presentan en la @tbl-matriz.
+
+```{r}
+#| label: tbl-matriz
+#| tbl-cap: "Cuatro filas de la matriz de datos `empleo50`."
+#| tbl-pos: H
+
+empleo4 <- empleo |>
+  mutate(id = row_number()) |>
+  slice(c(1,2,3, n())) |>
+  select(id, everything())
+
+kable(empleo4, booktabs = TRUE)
+```
+Para variables numéricas: `summary()`:
 
 ```{r}
 summary(select(empleo, edad, ingreso_mensual, horas_trabajo))
 ```
 
+Entrega mínimo, cuartiles, media y máximo. Es útil para detectar rangos y valores atípicos.
+
+Para variables categóricas: `table()`:
+
 ```{r}
 table(empleo$region)
+```
+
+```{r}
 table(empleo$sexo)
 ```
+
+## Relación entre dos variables cuantitativas: el diagrama de dispersión
+
+Ahora queremos explorar si existe relación entre edad e ingreso mensual. Para dos variables numéricas, el gráfico adecuado es un diagrama de dispersión (scatter plot):
 
 ```{r}
 empleo_ocup <- filter(empleo, estado_laboral == "Ocupado")
@@ -176,43 +234,43 @@ ggplot(empleo_ocup, aes(x = edad, y = ingreso_mensual)) +
   labs(title = "Edad vs Ingreso mensual")
 ```
 
+Interpretación
+: Cada punto es una persona. Observa si hay alguna tendencia: ¿a mayor edad, mayor ingreso? ¿Es una relación lineal? ¿Hay valores extremos?
+
+## Relación entre una variable numérica y una categórica: boxplots
+
+Queremos comparar la distribución del ingreso mensual entre hombres y mujeres. Aquí tenemos una variable numérica (ingreso_mensual) y una categórica (sexo). El gráfico adecuado es el boxplot (diagrama de caja y bigotes):
+
 ```{r}
 ggplot(empleo_ocup, aes(x = nivel_educacional, y = ingreso_mensual)) +
   geom_boxplot()
 ```
+
+¿Qué observas? Compara las medianas (la línea dentro de la caja), la dispersión (tamaño de las cajas) y la presencia de valores atípicos (puntos fuera de los bigotes). ¿Hay diferencias notables entre sexos?
 
 ```{r}
 ggplot(empleo_ocup, aes(x = nivel_educacional, y = horas_trabajo)) +
   geom_boxplot()
 ```
 
+## (Mal) Ejemplo: forzar un gráfico inadecuado
+
+Finalmente, probemos un gráfico que no es apropiado para el tipo de variables que tenemos. Queremos relacionar ingreso mensual (numérica) con horas de trabajo (también numérica), pero usamos un geom_boxplot() que está diseñado para una numérica y una categórica:
+
 ```{r}
 ggplot(empleo_ocup, aes(x = ingreso_mensual, y = horas_trabajo)) +
   geom_boxplot()
 ```
 
-## Cuestionario Tipos de Datos (Portafolio)
+¿Por qué es un mal ejemplo?
+: Porque el boxplot agrupa por los valores únicos de x, y al ser ingreso_mensual una variable continua con muchos valores distintos, cada grupo tiene muy pocos datos (a menudo uno solo). El resultado es un gráfico confuso que no muestra ninguna estructura útil. Este error es común cuando no se piensa en la naturaleza de las variables antes de graficar.
 
-Utiliza este enlace para contestar las siguientes preguntas:
+## Cuestionario Grupal (Portafolio): Tipos de Datos
 
-::: {.content-visible when-format="html"}
-<a href="https://www.ine.gob.cl/estadisticas/sociales/mercado-laboral"
-   target="_blank" rel="noopener"
-   class="btn btn-outline-primary">
-   Mercado laboral
-</a> <a href="https://www.ine.gob.cl/estadisticas/sociales/mercado-laboral/ocupacion-y-desocupacion"
-   target="_blank" rel="noopener"
-   class="btn btn-outline-primary">
-   Ocupación y desocupación
-</a>
-:::
+Utiliza estos enlaces para contestar las siguientes preguntas:
 
-::: {.content-visible when-format="pdf"}
-
-- [Mercado laboral (INE)](https://www.ine.gob.cl/estadisticas/sociales/mercado-laboral)
+- [Mercado laboral](https://www.ine.gob.cl/estadisticas/sociales/mercado-laboral)
 - [Ocupación y desocupación](https://www.ine.gob.cl/estadisticas/sociales/mercado-laboral/ocupacion-y-desocupacion)
-
-:::
 
 1. Según el documento "Metodología Encuesta Nacional de Empleo ENE 2020", ¿Cuál es la edad de la población objetivo?
 2. En referencia al mismo documento anterior, ¿Cómo define el Glosario del documento "Brecha de género"? Da un ejemplo que conozcas donde se presente esta brecha.
@@ -231,32 +289,4 @@ desocupación".
 A partir de este extracto, explica quién es una persona fuera de la fuerza de trabajo y da un ejemplo concreto.
 
 4. ¿Es lo mismo estar desempleado que estar fuera de la fuerza de trabajo?
-
-::: {.content-visible when-format="html"}
-
-<a href="https://www.ine.gob.cl/estadisticas/sociales/mercado-laboral"
-   target="_blank" rel="noopener"
-   class="btn btn-outline-primary">
-   Mercado laboral
-</a>
-
-<a href="https://bancodatosene.ine.cl/"
-   target="_blank" rel="noopener"
-   class="btn btn-outline-primary">
-   Banco de datos ENE
-</a>
-
-<a href="https://stat.ine.cl/?lang=es"
-   target="_blank" rel="noopener"
-   class="btn btn-outline-primary">
-   .Stat
-</a>
-:::
-
-::: {.content-visible when-format="pdf"}
-
-- [Mercado laboral (INE)](https://www.ine.gob.cl/estadisticas/sociales/mercado-laboral)
-- [Banco de datos de la ENE](https://bancodatosene.ine.cl/)
-- [.Stat (INE)](https://stat.ine.cl/?lang=es)
-
-:::
+5. ¿Por qué el último gráfico (ingreso vs horas) es un mal ejemplo? ¿Qué gráfico sería el adecuado?

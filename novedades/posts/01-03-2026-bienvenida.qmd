@@ -6,6 +6,6 @@ categories: [EPDI]
 lang: es
 ---
 
-Bienvenidos al sitio de las asignaturas de *Formación Diferenciada* el Prof. Hans Sigrist.
+Bienvenidos al sitio de las asignaturas de *Formación Diferenciada* del Prof. Hans Sigrist.
 
 En este espacio se irán publicando las novedades del curso [EPDI](/epdi/index.qmd) (Estadística y Probabilidad Descriptiva e Inferencial) . Revisar periódicamente.

@@ -1,6 +1,7 @@
 ---
 title: "Lección 1: Introducción a los datos"
-date: 2026-03-04
+date: 2026-03-05
+categories: [EPDI]
 description: >
   Introducción al análisis de datos experimentales mediante tablas de contingencia y proporciones, utilizando R y el paquete openintro.
 
@@ -58,7 +59,7 @@ format:
 :::
 
 ::: {.content-visible when-format="pdf"}
-Built with Quarto v1.8.27 · R v4.5.2 · tidyverse v2.0.0 · LaTeX v3.141592653-2.6-1.40.27
+Built with Quarto v1.8.27 · R v4.5.2 · tidyverse v2.0.0 · LaTeX v3.141592653-2.6-1.40.27 · openintro v2.5.0
 :::
 
 ::: {.content-visible when-format="html"}
@@ -66,6 +67,13 @@ Built with Quarto v1.8.27 · R v4.5.2 · tidyverse v2.0.0 · LaTeX v3.141592653-
 ![](../imagenes/65138_patient_lg.png)
 :::
 :::
+
+::: {.content-visible when-format="pdf"}
+::: {#fig-railroad-pdf fig-cap="Ilustración utilizada con fines educativos. Fuente: USF ClipArt Collection (University of South Florida)." fig-number="false"}
+![](../imagenes/63564_railroad_lg.png){width=0.6\textwidth}
+:::
+:::
+
 
 ## Google Colaboratory (Colab)
 
@@ -255,62 +263,35 @@ barplot(prop.table(tab_stent365, 1),
 
 ## Cuestionario
 
-### Diseño del estudio
+1.  Explica con tus palabras cuál era la pregunta de investigación y por qué los médicos necesitaban un experimento para responderla, en lugar de confiar solo en su intuición.
 
-1. ¿Cuál es la pregunta de investigación del estudio?
-2. ¿Cuál es la variable explicativa?
-3. ¿Cuál es la variable respuesta?
-4. ¿Por qué es importante que la asignación a los grupos haya sido aleatoria?
-5. ¿Qué función cumple el grupo de control?
+2.  Identifica la **variable explicativa** y la **variable respuesta** del estudio. ¿Por qué la primera se llama “explicativa” y la segunda “respuesta”?
 
-### Naturaleza de las variables
+3.  ¿Qué problema resuelve la **asignación aleatoria** de los pacientes a los grupos? ¿Qué podría haber pasado si los médicos hubieran decidido qué paciente recibe stent y cuál no?
 
-6. Clasifica las variables `group` y `outcome`. ¿Son:
-   - cuantitativas discretas?
-   - cuantitativas continuas?
-   - categóricas nominales?
-   - categóricas ordinales?
+4.  Sin un **grupo de control**, ¿podríamos saber si los stents realmente causaron alguna diferencia? Explica por qué.
 
-   Justifica tu respuesta.
+5.  Clasifica las variables `group` y `outcome` según su naturaleza (cuantitativas discretas, continuas, categóricas nominales u ordinales). Justifica cada clasificación.
 
-7. ¿Por qué el resumen natural de estos datos es una tabla de contingencia?
+6.  ¿Por qué estos datos se resumen naturalmente en una **tabla de contingencia** y no, por ejemplo, en un promedio o una mediana?
 
-### Cálculo manual de proporciones
+7.  Con los datos del estudio (224 tratamiento, 45 ACV; 227 control, 28 ACV):
+    a) Calcula la proporción de ACV en cada grupo.
+    b) Calcula la diferencia entre ambas proporciones.
+    c) A la luz de estos números, ¿dirías que los stents reducen el riesgo de ACV? ¿Por qué?
 
-Sabemos que:
+8.  La diferencia que calculaste, ¿podría deberse simplemente al azar? Explica usando un ejemplo simple, como lanzar una moneda.
 
-- En el grupo tratamiento hubo 224 pacientes, de los cuales 45 tuvieron ACV en 365 días.
-- En el grupo control hubo 227 pacientes, de los cuales 28 tuvieron ACV en 365 días.
+9.  Si el estudio hubiera tenido muchos menos pacientes, ¿confiarías más o menos en el resultado? ¿Por qué?
 
-8. Calcula la proporción de pacientes con ACV en el grupo tratamiento.
-9. Calcula la proporción de pacientes con ACV en el grupo control.
-10. Calcula la diferencia absoluta entre ambas proporciones.
-11. Expresa esa diferencia en porcentaje.
+10. Los pacientes fueron **voluntarios**. ¿Podemos estar seguros de que estos resultados se aplican a *todos* los pacientes con riesgo de ACV? Explica.
 
-### Interpretación
+11. El estudio encontró “evidencia convincente de daño” en lugar de beneficio. ¿Qué significa esta frase en el contexto de los stents?
 
-12. Según tus cálculos, ¿el uso de stents reduce el riesgo de ACV?
-13. ¿El resultado coincide con lo que esperaban los médicos?
-14. ¿Puede una diferencia observada deberse al azar? Explica usando el ejemplo de lanzar una moneda muchas veces.
+12. Calcula la **razón de proporciones** (tratamiento / control). Un valor mayor que 1 indica mayor riesgo en el grupo tratamiento. ¿Qué obtuviste? Interprétalo.
 
-### Pensamiento crítico
+13. Si el stent realmente redujera el riesgo de ACV, ¿qué esperarías ver en las proporciones y en la razón que calculaste?
 
-15. ¿Podemos generalizar estos resultados a todos los pacientes con riesgo de ACV? Explica.
-16. ¿Qué implica que los pacientes hayan sido voluntarios?
-17. Menciona al menos dos posibles limitaciones del estudio.
-18. ¿Qué crees que significa que el estudio encontró “evidencia convincente de daño”?
+14. Menciona dos **limitaciones** del estudio que podrían afectar la confianza en sus conclusiones.
 
-### Profundización matemática
-
-19. Calcula la razón de proporciones:
-
-   $$\dfrac{0.20}{0.12}$$
-
-   Interpreta el resultado.
-
-20. Si el tratamiento fuera realmente beneficioso, ¿qué esperarías observar en las proporciones?
-21. Si el tamaño de la muestra fuera mucho menor, ¿sería más o menos confiable la diferencia observada? Explica.
-
-### Reflexión final
-
-22. ¿Qué enseñanza deja este estudio respecto a la intuición médica y la necesidad de evidencia estadística?
+15. ¿Qué enseñanza deja este caso sobre la relación entre la **intuición médica** y la **evidencia estadística**? Escribe una reflexión breve.

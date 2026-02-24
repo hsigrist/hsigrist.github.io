@@ -456,12 +456,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Lección 2: Tipos de datos y estructura de la información</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../epdi/lecciones/leccion-3-tipos-de-variables.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lección 3: Tipos de variables</span></a>
-  </div>
-</li>
       </ul>
   </li>
     </ul>
@@ -475,8 +469,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#origen-institucional-de-los-datos" id="toc-origen-institucional-de-los-datos" class="nav-link active" data-scroll-target="#origen-institucional-de-los-datos"><span class="header-section-number">1</span> Origen institucional de los datos</a></li>
-  <li><a href="#observaciones-y-variables" id="toc-observaciones-y-variables" class="nav-link" data-scroll-target="#observaciones-y-variables"><span class="header-section-number">2</span> Observaciones y variables</a></li>
-  <li><a href="#cuestionario-tipos-de-datos-portafolio" id="toc-cuestionario-tipos-de-datos-portafolio" class="nav-link" data-scroll-target="#cuestionario-tipos-de-datos-portafolio"><span class="header-section-number">3</span> Cuestionario Tipos de Datos (Portafolio)</a></li>
+  <li><a href="#preparar-el-entorno-y-cargar-datos" id="toc-preparar-el-entorno-y-cargar-datos" class="nav-link" data-scroll-target="#preparar-el-entorno-y-cargar-datos"><span class="header-section-number">2</span> Preparar el entorno y cargar datos</a></li>
+  <li><a href="#explorar-la-estructura-de-los-datos" id="toc-explorar-la-estructura-de-los-datos" class="nav-link" data-scroll-target="#explorar-la-estructura-de-los-datos"><span class="header-section-number">3</span> Explorar la estructura de los datos</a></li>
+  <li><a href="#diccionario-de-variables" id="toc-diccionario-de-variables" class="nav-link" data-scroll-target="#diccionario-de-variables"><span class="header-section-number">4</span> Diccionario de variables</a></li>
+  <li><a href="#resúmenes-numéricos-para-variables-cuantitativas" id="toc-resúmenes-numéricos-para-variables-cuantitativas" class="nav-link" data-scroll-target="#resúmenes-numéricos-para-variables-cuantitativas"><span class="header-section-number">5</span> Resúmenes numéricos para variables cuantitativas</a></li>
+  <li><a href="#tablas-de-frecuencias-para-variables-categóricas" id="toc-tablas-de-frecuencias-para-variables-categóricas" class="nav-link" data-scroll-target="#tablas-de-frecuencias-para-variables-categóricas"><span class="header-section-number">6</span> Tablas de frecuencias para variables categóricas</a></li>
+  <li><a href="#filtrar-datos-para-un-análisis-más-específico" id="toc-filtrar-datos-para-un-análisis-más-específico" class="nav-link" data-scroll-target="#filtrar-datos-para-un-análisis-más-específico"><span class="header-section-number">7</span> Filtrar datos para un análisis más específico</a></li>
+  <li><a href="#relación-entre-dos-variables-cuantitativas-el-diagrama-de-dispersión" id="toc-relación-entre-dos-variables-cuantitativas-el-diagrama-de-dispersión" class="nav-link" data-scroll-target="#relación-entre-dos-variables-cuantitativas-el-diagrama-de-dispersión"><span class="header-section-number">8</span> Relación entre dos variables cuantitativas: el diagrama de dispersión</a></li>
+  <li><a href="#relación-entre-una-variable-numérica-y-una-categórica-boxplots" id="toc-relación-entre-una-variable-numérica-y-una-categórica-boxplots" class="nav-link" data-scroll-target="#relación-entre-una-variable-numérica-y-una-categórica-boxplots"><span class="header-section-number">9</span> Relación entre una variable numérica y una categórica: boxplots</a></li>
+  <li><a href="#mal-ejemplo-forzar-un-gráfico-inadecuado" id="toc-mal-ejemplo-forzar-un-gráfico-inadecuado" class="nav-link" data-scroll-target="#mal-ejemplo-forzar-un-gráfico-inadecuado"><span class="header-section-number">10</span> (Mal) Ejemplo: forzar un gráfico inadecuado</a></li>
+  <li><a href="#cuestionario-grupal-portafolio-tipos-de-datos" id="toc-cuestionario-grupal-portafolio-tipos-de-datos" class="nav-link" data-scroll-target="#cuestionario-grupal-portafolio-tipos-de-datos"><span class="header-section-number">11</span> Cuestionario Grupal (Portafolio): Tipos de Datos</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Otros formatos</h2><ul><li><a href="leccion-2-tipos-de-datos.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div><div class="quarto-other-links"><h2>Otros Enlaces</h2><ul><li><a href="https://www.ine.gob.cl/estadisticas/sociales/mercado-laboral"><i class="bi bi-link-45deg"></i>Mercado Laboral (NEE)</a></li><li><a href="https://www.ine.gob.cl/estadisticas/sociales/mercado-laboral/ocupacion-y-desocupacion"><i class="bi bi-link-45deg"></i>Ocupación y desocupacion (NEE)</a></li><li><a href="https://bancodatosene.ine.cl/"><i class="bi bi-link-45deg"></i>Banco de datos INE</a></li><li><a href="https://stat.ine.cl/?lang=es"><i class="bi bi-link-45deg"></i>.Stat</a></li></ul></div><div class="quarto-code-links"><h2>Enlaces de código</h2><ul><li><a href="datos/empleo50.csv"><i class="bi bi-filetype-csv"></i>empleo50.csv</a></li></ul></div></nav>
     </div>
@@ -487,7 +489,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../epdi/lecciones/leccion-1-introduccion-a-los-datos.html">Lecciones</a></li><li class="breadcrumb-item"><a href="../../epdi/lecciones/leccion-2-tipos-de-datos.html">Lección 2: Tipos de datos y estructura de la información</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Lección 2: Tipos de datos y estructura de la información</h1>
-</div>
+  <div class="quarto-categories">
+    <div class="quarto-category">EPDI</div>
+  </div>
+  </div>
 
 <div>
   <div class="description">
@@ -517,7 +522,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Fecha de publicación</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">11 de marzo de 2026</p>
+      <p class="date">12 de marzo de 2026</p>
     </div>
   </div>
   
@@ -554,16 +559,17 @@ Figura&nbsp;1: Ilustración utilizada con fines educativos. Fuente: USF ClipArt 
 </blockquote>
 <p>Los datos utilizados en esta lección (<code>empleo50</code>) son una versión didáctica simplificada de lo que habitualmente se obtiene a partir de encuestas oficiales de empleo. En Chile, la <strong>Encuesta Nacional de Empleo (ENE)</strong> es un estudio estadístico sistemático conducido por el <strong>Instituto Nacional de Estadísticas (INE)</strong>, que busca medir las condiciones del mercado laboral a nivel nacional. Esta encuesta recoge información individual sobre edad, región, estado laboral, ingresos y horas trabajadas, entre otras variables, con el propósito de estimar indicadores como la tasa de ocupación y desempleo, identificar brechas laborales y apoyar el diseño de políticas públicas y programas sociales. El dataset <code>empleo50</code> simula la estructura principal de estos datos reales para facilitar el análisis de tipos de variables y la comprensión de la estructura de una matriz de datos sin necesidad de trabajar con bases originales completas.</p>
 </section>
-<section id="observaciones-y-variables" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="observaciones-y-variables"><span class="header-section-number">2</span> Observaciones y variables</h2>
+<section id="preparar-el-entorno-y-cargar-datos" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="preparar-el-entorno-y-cargar-datos"><span class="header-section-number">2</span> Preparar el entorno y cargar datos</h2>
 <p>La organización y descripción efectiva de los datos es el primer paso en la mayoría de los análisis. Esta sección presenta la matriz de datos para organizarlos, así como la terminología sobre los diferentes tipos de datos que se utilizará a lo largo de este libro.</p>
-<p>Primero cargamos las librerías neccesarias para la lección y operatividad de <code>R</code>:</p>
+<p>Primero cargamos las librerías necesarias para la lección y operatividad de <code>R</code>. En este caso, usaremos dplyr para manipular datos y ggplot2 para graficar.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
+<p>Los datos que utilizaremos corresponden a una muestra de 50 personas ocupadas en la Región de Valparaíso (fuente: Nueva Encuesta Nacional de Empleo, INE). Carguemos el archivo:</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -578,19 +584,193 @@ Figura&nbsp;1: Ilustración utilizada con fines educativos. Fuente: USF ClipArt 
 <p><a href="../datos/empleo50.csv">empleo50.csv</a></p>
 </div>
 </div>
-<p>Los datos de la <a href="#tbl-matriz" class="quarto-xref">Tabla&nbsp;1</a> representan una <strong>matriz de datos</strong>, una forma práctica y común de organizarlos, especialmente si se recopilan en una hoja de cálculo. Cada fila de una matriz de datos corresponde a un caso único (unidad de observación) y cada columna a una variable.</p>
-<p>En la práctica, es especialmente importante hacer preguntas aclaratorias para garantizar la comprensión de aspectos importantes de los datos. Por ejemplo, siempre es importante asegurarse de comprender el significado de cada variable y sus unidades de medida. Las descripciones de las variables de <code>empleo50</code> se presentan en la <a href="#tbl-matriz" class="quarto-xref">Tabla&nbsp;1</a>.</p>
+</section>
+<section id="explorar-la-estructura-de-los-datos" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="explorar-la-estructura-de-los-datos"><span class="header-section-number">3</span> Explorar la estructura de los datos</h2>
+<p>Cada fila es una observación (persona) y cada columna una variable. Con <code>str()</code> vemos el tipo de cada variable:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(empleo)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>spc_tbl_ [49 × 8] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
+ $ region           : chr [1:49] "Metropolitana" "Biobío" "Valparaíso" "Araucanía" ...
+ $ sexo             : chr [1:49] "Mujer" "Hombre" "Mujer" "Hombre" ...
+ $ edad             : num [1:49] 28 34 42 19 51 24 37 46 33 55 ...
+ $ nivel_educacional: chr [1:49] "Universitaria" "Técnica" "Media" "Básica" ...
+ $ estado_laboral   : chr [1:49] "Ocupado" "Ocupado" "Ocupado" "Desocupado" ...
+ $ tipo_contrato    : chr [1:49] "Indefinido" "Plazo fijo" "Informal" "N/A" ...
+ $ ingreso_mensual  : num [1:49] 720000 560000 450000 0 890000 410000 520000 1050000 470000 0 ...
+ $ horas_trabajo    : num [1:49] 40 38 35 0 42 40 36 45 38 0 ...
+ - attr(*, "spec")=
+  .. cols(
+  ..   region = col_character(),
+  ..   sexo = col_character(),
+  ..   edad = col_double(),
+  ..   nivel_educacional = col_character(),
+  ..   estado_laboral = col_character(),
+  ..   tipo_contrato = col_character(),
+  ..   ingreso_mensual = col_double(),
+  ..   horas_trabajo = col_double()
+  .. )
+ - attr(*, "problems")=&lt;externalptr&gt; </code></pre>
+</div>
+</div>
+<p>Aparecen variables numéricas (edad, ingreso_mensual) y categóricas (sexo, region). Esta distinción determina qué análisis podemos hacer.</p>
+<p>Las primeras filas y la dimensión nos ayudan a entender su tamaño:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(empleo, <span class="dv">5</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 5 × 8
+  region        sexo    edad nivel_educacional estado_laboral tipo_contrato
+  &lt;chr&gt;         &lt;chr&gt;  &lt;dbl&gt; &lt;chr&gt;             &lt;chr&gt;          &lt;chr&gt;        
+1 Metropolitana Mujer     28 Universitaria     Ocupado        Indefinido   
+2 Biobío        Hombre    34 Técnica           Ocupado        Plazo fijo   
+3 Valparaíso    Mujer     42 Media             Ocupado        Informal     
+4 Araucanía     Hombre    19 Básica            Desocupado     N/A          
+5 Metropolitana Mujer     51 Universitaria     Ocupado        Indefinido   
+# ℹ 2 more variables: ingreso_mensual &lt;dbl&gt;, horas_trabajo &lt;dbl&gt;</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(empleo)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 49  8</code></pre>
+</div>
+</div>
+</section>
+<section id="diccionario-de-variables" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="diccionario-de-variables"><span class="header-section-number">4</span> Diccionario de variables</h2>
+<p>Para saber qué mide cada columna la <a href="#tbl-diccionario" class="quarto-xref">Tabla&nbsp;1</a> es una descripción de cada variable de <code>empleo50</code>:</p>
 <div class="cell" data-tbl-pos="H">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>empleo4 <span class="ot">&lt;-</span> empleo <span class="sc">|&gt;</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">id =</span> <span class="fu">row_number</span>()) <span class="sc">|&gt;</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice</span>(<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>, <span class="fu">n</span>())) <span class="sc">|&gt;</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(id, <span class="fu">everything</span>())</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(empleo4, <span class="at">booktabs =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tibble)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>dic_empleo <span class="ot">&lt;-</span> <span class="fu">tribble</span>(</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="sc">~</span>variable, <span class="sc">~</span>descripcion,</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"region"</span>,            <span class="st">"Región de residencia (categórica nominal)."</span>,</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">"sexo"</span>,              <span class="st">"Sexo declarado (categórica nominal)."</span>,</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="st">"edad"</span>,              <span class="st">"Edad en años (numérica discreta)."</span>,</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  <span class="st">"nivel_educacional"</span>, <span class="st">"Nivel educacional (categórica ordinal)."</span>,</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  <span class="st">"estado_laboral"</span>,    <span class="st">"Condición laboral: Ocupado / Desocupado / Inactivo."</span>,</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>  <span class="st">"tipo_contrato"</span>,     <span class="st">"Tipo de contrato si está ocupado (NA si no aplica)."</span>,</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>  <span class="st">"ingreso_mensual"</span>,   <span class="st">"Ingreso mensual en CLP (numérica)."</span>,</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>  <span class="st">"horas_trabajo"</span>,     <span class="st">"Horas trabajadas por semana (numérica)."</span></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(dic_empleo, <span class="at">booktabs =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="tbl-diccionario" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-tbl-pos="H">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-diccionario-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabla&nbsp;1: Variables y descripción para el conjunto de datos <code>empleo50</code>.
+</figcaption>
+<div aria-describedby="tbl-diccionario-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="do-not-create-environment cell caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 74%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">variable</th>
+<th style="text-align: left;">descripcion</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">region</td>
+<td style="text-align: left;">Región de residencia (categórica nominal).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sexo</td>
+<td style="text-align: left;">Sexo declarado (categórica nominal).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">edad</td>
+<td style="text-align: left;">Edad en años (numérica discreta).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">nivel_educacional</td>
+<td style="text-align: left;">Nivel educacional (categórica ordinal).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">estado_laboral</td>
+<td style="text-align: left;">Condición laboral: Ocupado / Desocupado / Inactivo.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tipo_contrato</td>
+<td style="text-align: left;">Tipo de contrato si está ocupado (NA si no aplica).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ingreso_mensual</td>
+<td style="text-align: left;">Ingreso mensual en CLP (numérica).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">horas_trabajo</td>
+<td style="text-align: left;">Horas trabajadas por semana (numérica).</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="resúmenes-numéricos-para-variables-cuantitativas" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="resúmenes-numéricos-para-variables-cuantitativas"><span class="header-section-number">5</span> Resúmenes numéricos para variables cuantitativas</h2>
+<p>Para variables numéricas (cuantitativas), el resumen más útil suele ser el de cinco números: mínimo, primer cuartil, mediana, media, tercer cuartil y máximo. Lo obtenemos con <code>summary()</code>:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(empleo)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    region              sexo                edad       nivel_educacional 
+ Length:49          Length:49          Min.   :19.00   Length:49         
+ Class :character   Class :character   1st Qu.:29.00   Class :character  
+ Mode  :character   Mode  :character   Median :37.00   Mode  :character  
+                                       Mean   :38.12                     
+                                       3rd Qu.:46.00                     
+                                       Max.   :61.00                     
+ estado_laboral     tipo_contrato      ingreso_mensual   horas_trabajo  
+ Length:49          Length:49          Min.   :      0   Min.   : 0.00  
+ Class :character   Class :character   1st Qu.: 420000   1st Qu.:36.00  
+ Mode  :character   Mode  :character   Median : 540000   Median :40.00  
+                                       Mean   : 541633   Mean   :33.39  
+                                       3rd Qu.: 810000   3rd Qu.:40.00  
+                                       Max.   :1050000   Max.   :45.00  </code></pre>
+</div>
+</div>
+<p>Observa que <code>summary()</code> también nos da una tabla de frecuencias para las variables categóricas (como sexo). ¿Por qué crees que hace eso?</p>
+</section>
+<section id="tablas-de-frecuencias-para-variables-categóricas" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="tablas-de-frecuencias-para-variables-categóricas"><span class="header-section-number">6</span> Tablas de frecuencias para variables categóricas</h2>
+<p>Cuando una variable es categórica, el resumen adecuado es una tabla de frecuencias. Podemos obtenerla con <code>table()</code>:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(empleo<span class="sc">$</span>sexo)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Hombre  Mujer 
+    24     25 </code></pre>
+</div>
+</div>
+<p>¿Cuántos hombres y cuántas mujeres hay en la muestra? Esta tabla responde esa pregunta de forma directa.</p>
+</section>
+<section id="filtrar-datos-para-un-análisis-más-específico" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="filtrar-datos-para-un-análisis-más-específico"><span class="header-section-number">7</span> Filtrar datos para un análisis más específico</h2>
+<p>Supongamos que solo queremos estudiar a las personas ocupadas (que ya lo están) y además queremos quedarnos con quienes trabajan al menos 30 horas semanales. Usamos <code>filter()</code>:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>empleo_ocup <span class="ot">&lt;-</span> empleo <span class="sc">%&gt;%</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(horas_trabajo <span class="sc">&gt;=</span> <span class="dv">30</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>¿Por qué es útil filtrar? Porque nos permite centrarnos en un subgrupo con características similares y evitar que los resultados se vean afectados por casos atípicos (como personas con trabajos de muy pocas horas).</p>
+<p>Los datos de la <a href="#tbl-matriz" class="quarto-xref">Tabla&nbsp;2</a> representan una <strong>matriz de datos</strong>, una forma práctica y común de organizarlos, especialmente si se recopilan en una hoja de cálculo. Cada fila de una matriz de datos corresponde a un caso único (unidad de observación) y cada columna a una variable.</p>
+<p>En la práctica, es especialmente importante hacer preguntas aclaratorias para garantizar la comprensión de aspectos importantes de los datos. Por ejemplo, siempre es importante asegurarse de comprender el significado de cada variable y sus unidades de medida. Las descripciones de las variables de <code>empleo50</code> se presentan en la <a href="#tbl-matriz" class="quarto-xref">Tabla&nbsp;2</a>.</p>
+<div class="cell" data-tbl-pos="H">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>empleo4 <span class="ot">&lt;-</span> empleo <span class="sc">|&gt;</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">id =</span> <span class="fu">row_number</span>()) <span class="sc">|&gt;</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice</span>(<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>, <span class="fu">n</span>())) <span class="sc">|&gt;</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(id, <span class="fu">everything</span>())</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(empleo4, <span class="at">booktabs =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <div id="tbl-matriz" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-tbl-pos="H">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-matriz-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Tabla&nbsp;1: Cuatro filas de la matriz de datos <code>empleo50</code>.
+Tabla&nbsp;2: Cuatro filas de la matriz de datos <code>empleo50</code>.
 </figcaption>
 <div aria-describedby="tbl-matriz-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
@@ -671,101 +851,9 @@ Tabla&nbsp;1: Cuatro filas de la matriz de datos <code>empleo50</code>.
 </figure>
 </div>
 </div>
-<p>La <a href="#tbl-diccionario" class="quarto-xref">Tabla&nbsp;2</a> es una descripción de cada variable de <code>empleo50</code>:</p>
-<div class="cell" data-tbl-pos="H">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tibble)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>dic_empleo <span class="ot">&lt;-</span> <span class="fu">tribble</span>(</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="sc">~</span>variable, <span class="sc">~</span>descripcion,</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"region"</span>,            <span class="st">"Región de residencia (categórica nominal)."</span>,</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">"sexo"</span>,              <span class="st">"Sexo declarado (categórica nominal)."</span>,</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="st">"edad"</span>,              <span class="st">"Edad en años (numérica discreta)."</span>,</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="st">"nivel_educacional"</span>, <span class="st">"Nivel educacional (categórica ordinal)."</span>,</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="st">"estado_laboral"</span>,    <span class="st">"Condición laboral: Ocupado / Desocupado / Inactivo."</span>,</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  <span class="st">"tipo_contrato"</span>,     <span class="st">"Tipo de contrato si está ocupado (NA si no aplica)."</span>,</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="st">"ingreso_mensual"</span>,   <span class="st">"Ingreso mensual en CLP (numérica)."</span>,</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  <span class="st">"horas_trabajo"</span>,     <span class="st">"Horas trabajadas por semana (numérica)."</span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(dic_empleo, <span class="at">booktabs =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<div id="tbl-diccionario" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-tbl-pos="H">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-diccionario-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Tabla&nbsp;2: Variables y descripción para el conjunto de datos <code>empleo50</code>.
-</figcaption>
-<div aria-describedby="tbl-diccionario-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output-display">
-<table class="do-not-create-environment cell caption-top table table-sm table-striped small">
-<colgroup>
-<col style="width: 25%">
-<col style="width: 74%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">variable</th>
-<th style="text-align: left;">descripcion</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">region</td>
-<td style="text-align: left;">Región de residencia (categórica nominal).</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">sexo</td>
-<td style="text-align: left;">Sexo declarado (categórica nominal).</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">edad</td>
-<td style="text-align: left;">Edad en años (numérica discreta).</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">nivel_educacional</td>
-<td style="text-align: left;">Nivel educacional (categórica ordinal).</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">estado_laboral</td>
-<td style="text-align: left;">Condición laboral: Ocupado / Desocupado / Inactivo.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">tipo_contrato</td>
-<td style="text-align: left;">Tipo de contrato si está ocupado (NA si no aplica).</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">ingreso_mensual</td>
-<td style="text-align: left;">Ingreso mensual en CLP (numérica).</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">horas_trabajo</td>
-<td style="text-align: left;">Horas trabajadas por semana (numérica).</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</figure>
-</div>
-</div>
+<p>Para variables numéricas: <code>summary()</code>:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(empleo, <span class="dv">5</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 5 × 8
-  region        sexo    edad nivel_educacional estado_laboral tipo_contrato
-  &lt;chr&gt;         &lt;chr&gt;  &lt;dbl&gt; &lt;chr&gt;             &lt;chr&gt;          &lt;chr&gt;        
-1 Metropolitana Mujer     28 Universitaria     Ocupado        Indefinido   
-2 Biobío        Hombre    34 Técnica           Ocupado        Plazo fijo   
-3 Valparaíso    Mujer     42 Media             Ocupado        Informal     
-4 Araucanía     Hombre    19 Básica            Desocupado     N/A          
-5 Metropolitana Mujer     51 Universitaria     Ocupado        Indefinido   
-# ℹ 2 more variables: ingreso_mensual &lt;dbl&gt;, horas_trabajo &lt;dbl&gt;</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(empleo)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 49  8</code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">select</span>(empleo, edad, ingreso_mensual, horas_trabajo))</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">select</span>(empleo, edad, ingreso_mensual, horas_trabajo))</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>      edad       ingreso_mensual   horas_trabajo  
  Min.   :19.00   Min.   :      0   Min.   : 0.00  
@@ -776,8 +864,10 @@ Tabla&nbsp;2: Variables y descripción para el conjunto de datos <code>empleo50<
  Max.   :61.00   Max.   :1050000   Max.   :45.00  </code></pre>
 </div>
 </div>
+<p>Entrega mínimo, cuartiles, media y máximo. Es útil para detectar rangos y valores atípicos.</p>
+<p>Para variables categóricas: <code>table()</code>:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(empleo<span class="sc">$</span>region)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(empleo<span class="sc">$</span>region)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
   Antofagasta     Araucanía        Biobío      Coquimbo     Los Lagos 
@@ -787,65 +877,95 @@ Tabla&nbsp;2: Variables y descripción para el conjunto de datos <code>empleo50<
    Valparaíso 
             6 </code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(empleo<span class="sc">$</span>sexo)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(empleo<span class="sc">$</span>sexo)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Hombre  Mujer 
     24     25 </code></pre>
 </div>
 </div>
+</section>
+<section id="relación-entre-dos-variables-cuantitativas-el-diagrama-de-dispersión" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="relación-entre-dos-variables-cuantitativas-el-diagrama-de-dispersión"><span class="header-section-number">8</span> Relación entre dos variables cuantitativas: el diagrama de dispersión</h2>
+<p>Ahora queremos explorar si existe relación entre edad e ingreso mensual. Para dos variables numéricas, el gráfico adecuado es un diagrama de dispersión (scatter plot):</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>empleo_ocup <span class="ot">&lt;-</span> <span class="fu">filter</span>(empleo, estado_laboral <span class="sc">==</span> <span class="st">"Ocupado"</span>)</span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(empleo_ocup, <span class="fu">aes</span>(<span class="at">x =</span> edad, <span class="at">y =</span> ingreso_mensual)) <span class="sc">+</span></span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Edad vs Ingreso mensual"</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>empleo_ocup <span class="ot">&lt;-</span> <span class="fu">filter</span>(empleo, estado_laboral <span class="sc">==</span> <span class="st">"Ocupado"</span>)</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(empleo_ocup, <span class="fu">aes</span>(<span class="at">x =</span> edad, <span class="at">y =</span> ingreso_mensual)) <span class="sc">+</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Edad vs Ingreso mensual"</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="leccion-2-tipos-de-datos_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="leccion-2-tipos-de-datos_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
+<dl>
+<dt>Interpretación</dt>
+<dd>
+Cada punto es una persona. Observa si hay alguna tendencia: ¿a mayor edad, mayor ingreso? ¿Es una relación lineal? ¿Hay valores extremos?
+</dd>
+</dl>
+</section>
+<section id="relación-entre-una-variable-numérica-y-una-categórica-boxplots" class="level2" data-number="9">
+<h2 data-number="9" class="anchored" data-anchor-id="relación-entre-una-variable-numérica-y-una-categórica-boxplots"><span class="header-section-number">9</span> Relación entre una variable numérica y una categórica: boxplots</h2>
+<p>Queremos comparar la distribución del ingreso mensual entre hombres y mujeres. Aquí tenemos una variable numérica (ingreso_mensual) y una categórica (sexo). El gráfico adecuado es el boxplot (diagrama de caja y bigotes):</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(empleo_ocup, <span class="fu">aes</span>(<span class="at">x =</span> nivel_educacional, <span class="at">y =</span> ingreso_mensual)) <span class="sc">+</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(empleo_ocup, <span class="fu">aes</span>(<span class="at">x =</span> nivel_educacional, <span class="at">y =</span> ingreso_mensual)) <span class="sc">+</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="leccion-2-tipos-de-datos_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="leccion-2-tipos-de-datos_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
+<p>¿Qué observas? Compara las medianas (la línea dentro de la caja), la dispersión (tamaño de las cajas) y la presencia de valores atípicos (puntos fuera de los bigotes). ¿Hay diferencias notables entre sexos?</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(empleo_ocup, <span class="fu">aes</span>(<span class="at">x =</span> nivel_educacional, <span class="at">y =</span> horas_trabajo)) <span class="sc">+</span></span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(empleo_ocup, <span class="fu">aes</span>(<span class="at">x =</span> nivel_educacional, <span class="at">y =</span> horas_trabajo)) <span class="sc">+</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="leccion-2-tipos-de-datos_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(empleo_ocup, <span class="fu">aes</span>(<span class="at">x =</span> ingreso_mensual, <span class="at">y =</span> horas_trabajo)) <span class="sc">+</span></span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="leccion-2-tipos-de-datos_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="leccion-2-tipos-de-datos_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="cuestionario-tipos-de-datos-portafolio" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="cuestionario-tipos-de-datos-portafolio"><span class="header-section-number">3</span> Cuestionario Tipos de Datos (Portafolio)</h2>
-<p>Utiliza este enlace para contestar las siguientes preguntas:</p>
-<p><a href="https://www.ine.gob.cl/estadisticas/sociales/mercado-laboral" target="_blank" rel="noopener" class="btn btn-outline-primary"> Mercado laboral </a> <a href="https://www.ine.gob.cl/estadisticas/sociales/mercado-laboral/ocupacion-y-desocupacion" target="_blank" rel="noopener" class="btn btn-outline-primary"> Ocupación y desocupación </a></p>
+<section id="mal-ejemplo-forzar-un-gráfico-inadecuado" class="level2" data-number="10">
+<h2 data-number="10" class="anchored" data-anchor-id="mal-ejemplo-forzar-un-gráfico-inadecuado"><span class="header-section-number">10</span> (Mal) Ejemplo: forzar un gráfico inadecuado</h2>
+<p>Finalmente, probemos un gráfico que no es apropiado para el tipo de variables que tenemos. Queremos relacionar ingreso mensual (numérica) con horas de trabajo (también numérica), pero usamos un geom_boxplot() que está diseñado para una numérica y una categórica:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(empleo_ocup, <span class="fu">aes</span>(<span class="at">x =</span> ingreso_mensual, <span class="at">y =</span> horas_trabajo)) <span class="sc">+</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="leccion-2-tipos-de-datos_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<dl>
+<dt>¿Por qué es un mal ejemplo?</dt>
+<dd>
+Porque el boxplot agrupa por los valores únicos de x, y al ser ingreso_mensual una variable continua con muchos valores distintos, cada grupo tiene muy pocos datos (a menudo uno solo). El resultado es un gráfico confuso que no muestra ninguna estructura útil. Este error es común cuando no se piensa en la naturaleza de las variables antes de graficar.
+</dd>
+</dl>
+</section>
+<section id="cuestionario-grupal-portafolio-tipos-de-datos" class="level2" data-number="11">
+<h2 data-number="11" class="anchored" data-anchor-id="cuestionario-grupal-portafolio-tipos-de-datos"><span class="header-section-number">11</span> Cuestionario Grupal (Portafolio): Tipos de Datos</h2>
+<p>Utiliza estos enlaces para contestar las siguientes preguntas:</p>
+<ul>
+<li><a href="https://www.ine.gob.cl/estadisticas/sociales/mercado-laboral">Mercado laboral</a></li>
+<li><a href="https://www.ine.gob.cl/estadisticas/sociales/mercado-laboral/ocupacion-y-desocupacion">Ocupación y desocupación</a></li>
+</ul>
 <ol type="1">
 <li><p>Según el documento “Metodología Encuesta Nacional de Empleo ENE 2020”, ¿Cuál es la edad de la población objetivo?</p></li>
 <li><p>En referencia al mismo documento anterior, ¿Cómo define el Glosario del documento “Brecha de género”? Da un ejemplo que conozcas donde se presente esta brecha.</p></li>
@@ -857,10 +977,8 @@ Hombre  Mujer
 <p>A partir de este extracto, explica quién es una persona fuera de la fuerza de trabajo y da un ejemplo concreto.</p>
 <ol start="4" type="1">
 <li>¿Es lo mismo estar desempleado que estar fuera de la fuerza de trabajo?</li>
+<li>¿Por qué el último gráfico (ingreso vs horas) es un mal ejemplo? ¿Qué gráfico sería el adecuado?</li>
 </ol>
-<p><a href="https://www.ine.gob.cl/estadisticas/sociales/mercado-laboral" target="_blank" rel="noopener" class="btn btn-outline-primary"> Mercado laboral </a></p>
-<p><a href="https://bancodatosene.ine.cl/" target="_blank" rel="noopener" class="btn btn-outline-primary"> Banco de datos ENE </a></p>
-<p><a href="https://stat.ine.cl/?lang=es" target="_blank" rel="noopener" class="btn btn-outline-primary"> .Stat </a></p>
 
 
 </section>
