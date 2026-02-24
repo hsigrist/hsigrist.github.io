@@ -10,10 +10,30 @@
 <atom:link href="https://hsigrist.github.io/novedades/index.xml" rel="self" type="application/rss+xml"/>
 <description>Materiales docentes y novedades de Formación Diferenciada | Colegio Portaliano</description>
 <generator>quarto-1.8.27</generator>
-<lastBuildDate>Wed, 04 Mar 2026 03:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 05 Mar 2026 03:00:00 GMT</lastBuildDate>
+<item>
+  <title>Nueva lección: Lección 1 Introducción a los datos</title>
+  <dc:creator>Hans Sigrist</dc:creator>
+  <link>https://hsigrist.github.io/novedades/posts/05-03-2026-leccion-1-introduccion-a-los-datos.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Ya está disponible la <a href="../../epdi/lecciones/leccion-1-introduccion-a-los-datos.html">Lección 1 Introducción a los datos</a>.</p>
+
+
+
+ ]]></description>
+  <category>EPDI</category>
+  <guid>https://hsigrist.github.io/novedades/posts/05-03-2026-leccion-1-introduccion-a-los-datos.html</guid>
+  <pubDate>Thu, 05 Mar 2026 03:00:00 GMT</pubDate>
+  <media:content url="https://hsigrist.github.io/epdi/imagenes/65138_patient_lg.png" medium="image" type="image/png" height="125" width="144"/>
+</item>
 <item>
   <title>Bienvenida</title>
-  <link>https://hsigrist.github.io/novedades/posts/01-03-2026-bienvenida.html</link>
+  <link>https://hsigrist.github.io/novedades/posts/04-03-2026-bienvenida.html</link>
   <description><![CDATA[ 
 
 
@@ -27,7 +47,7 @@
 
  ]]></description>
   <category>EPDI</category>
-  <guid>https://hsigrist.github.io/novedades/posts/01-03-2026-bienvenida.html</guid>
+  <guid>https://hsigrist.github.io/novedades/posts/04-03-2026-bienvenida.html</guid>
   <pubDate>Wed, 04 Mar 2026 03:00:00 GMT</pubDate>
 </item>
 </channel>
