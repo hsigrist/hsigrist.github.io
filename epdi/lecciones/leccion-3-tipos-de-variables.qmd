@@ -88,9 +88,9 @@ Los datos utilizados en esta lección (region30) corresponden a una versión did
 No representan datos oficiales del INE ni de ningún organismo público, y han sido construidos únicamente con fines pedagógicos para el estudio de tipos de variables y relaciones estadísticas.
 :::
 
-## Investigación sobre tipos de variables
+## Cargar librerías y explorar los datos
 
-Primero cargar la librería `tidyverse` (si no está instalada aparecerá un error, en ese caso instalar primero con `install.package('tidyverse')`. Tidyverse es una colección de paquetes de `R` diseñados para la ciencia de datos. Todos los paquetes comparten una filosofía de diseño, una gramática y estructuras de datos subyacentes. Luego leer la base de datos `region30` creada especialmente para esta lección. Finalmente usamos el comando `glimpse()` que nos da una visión transpuesta de los datos de manera que sea más fácil su lectura.
+Cargamos `tidyverse` (colección de paquetes para ciencia de datos) y leemos el archivo `region30.csv`. Luego usamos `glimpse()` para ver la estructura de los datos de forma compacta.
 
 ```{r}
 library(tidyverse)
@@ -98,130 +98,114 @@ region30 <- read_csv("../datos/region30.csv")
 glimpse(region30)
 ```
 
-Perfecto, Son 8 columnas y 30 filas. Verifiquemos los nombres de cada columna:
-
-::: {.callout-warning}
-La variable region en la base region30 no corresponde a la división político-administrativa oficial de Chile. Las categorías “Norte”, “Centro”, “Sur” y “Austral” representan macrozonas ficticias subdivididas artificialmente con fines didácticos. Esta construcción permite disponer de múltiples niveles categóricos para el análisis estadístico sin introducir interpretaciones geográficas, políticas o socioeconómicas reales. El objetivo es estudiar la clasificación de variables y las relaciones entre ellas, no describir la situación territorial efectiva del país.
-:::
-
-
-Verifiquemos los nombres de las 8 columnas:
+Observamos que tenemos 30 filas y 8 columnas. Cada columna es una variable. Con `names()` podemos listar sus nombres:
 
 ```{r}
 names(region30)
 ```
 
-::: {.callout-tip}
+## Tipos de variables: ¿cómo clasificarlas?
 
-## Debes saber
+En estadística, las variables se clasifican en:
 
-Variable numérica continua
-: puede tomar infinitos valores en un intervalo.
+Numéricas continuas
+: pueden tomar cualquier valor en un intervalo (ej: tasa_desempleo).
 
-Variable numérica discreta
-: representa conteos.
+Numéricas discretas
+: toman valores enteros que representan conteos (ej: poblacion_total).
 
-Variable categórica nominal
-: categorías sin orden.
+Categóricas nominales
+: categorías sin orden (ej: region).
 
-Variable categórica ordinal
-: categorías con orden natural.
-:::
+Categóricas ordinales
+: categorías con un orden natural (ej: nivel_educativo).
 
-Cuidado con las variables numéricas, ya que si consideramos el **número** de celular, ciertamente estamos hablando de una variable numérica, pero a diferencia de la `tasa_desempleo` ésta última -también numérica- si es posible *sumar, restar* o *tomar un promedio* de sus valores. ¿Harías lo mismo con los números de celular?
+Pero cuidado: no todo lo que parece número es una variable numérica en sentido estadístico. Por ejemplo, un número de teléfono es un identificador, no tiene sentido calcular su promedio. En cambio, la tasa_desempleo sí es una variable numérica con la que podemos hacer operaciones.
 
-Otra consideración muy especial de las variables, es que numéricamente se expresan en concordancia con su contexto, por ejemplo, si observas la variable `poblacion_total` te podrás dar cuenta que ocupa valores **enteros**. La razón, es más obvia de lo aparente. Justifícala.
-
-
-## Asociación $\neq$ Causalidad
-
-En primero medio tuviste oportunidad de conocer la "nube de puntos" también llamada **scatterplot**. Usaremos este tipo de gráfico para exponer una situación muy comúnmente errónea:
+Para las variables categóricas, podemos usar table() o count() para ver frecuencias. Por ejemplo, la variable region:
 
 ```{r}
-ggplot(region30, aes(x = ingreso_mediano_hogar,
-                     y = tasa_desempleo)) +
+table(region30$region)
+region30 |> count(region, sort = TRUE)
+```
+
+Relación entre variables: diagramas de dispersión
+
+Cuando queremos explorar la relación entre dos variables numéricas, el gráfico adecuado es el diagrama de dispersión (scatter plot). Veamos si existe relación entre el ingreso mediano del hogar y la tasa de desempleo:
+
+
+```{r}
+ggplot(region30, aes(x = ingreso_mediano_hogar, y = tasa_desempleo)) +
   geom_point() +
-  labs(
-    x = "Ingreso mediano del hogar",
-    y = "Tasa de desempleo",
-    title = "Ingreso vs Tasa de Desempleo"
-  )
+  labs(x = "Ingreso mediano del hogar", y = "Tasa de desempleo",
+       title = "Ingreso vs Tasa de Desempleo")
 ```
 
+¿Se observa alguna tendencia? ¿A mayor ingreso, menor desempleo?
 
-
+Ahora exploremos otra posible relación: porcentaje de viviendas en edificios de varios pisos versus tasa de propietarios.
 
 ```{r}
-ggplot(region30, aes(x = viviendas_multipiso,
-                     y = tasa_propietarios)) +
+ggplot(region30, aes(x = viviendas_multipiso, y = tasa_propietarios)) +
   geom_point() +
-  labs(
-    x = "Porcentaje viviendas multipiso",
-    y = "Tasa de propietarios",
-    title = "Multipiso vs Propietarios"
-  )
+  labs(x = "% viviendas multipiso", y = "Tasa de propietarios",
+       title = "Multipiso vs Propietarios")
 ```
 
+Importante: Que dos variables muestren una asociación en un gráfico no significa que una cause la otra. La correlación no implica causalidad.
+
+## Efecto de los valores atípicos (outliers) en la media y la mediana
+
+Vamos a simular un conjunto de ingresos para entender cómo los valores extremos afectan las medidas de tendencia central.
+
+Primero, generamos 60 ingresos "típicos" usando una distribución log-normal (común para ingresos) y luego añadimos tres valores extremadamente altos.
 
 ```{r}
-set.seed(123)
-```
-
-```{r}
+set.seed(123)  # para que los resultados sean reproducibles
 ingresos_tipicos <- round(rlnorm(60, meanlog = log(650), sdlog = 0.25))
-```
-
-```{r}
 ingresos_extremos <- c(5000, 7000, 12000)
-```
-
-```{r}
 ingresos <- c(ingresos_tipicos, ingresos_extremos)
 ```
 
-```{r}
-length(ingresos)
-```
+Ahora tenemos 63 valores. Veamos un resumen estadístico:
 
 ```{r}
+length(ingresos)
 summary(ingresos)
 ```
+
+Calculamos la media y la mediana:
 
 ```{r}
 media <- mean(ingresos)
 mediana <- median(ingresos)
-```
-
-```{r}
 media
 mediana
 ```
 
+Observa que la media es mucho mayor que la mediana debido a los valores extremos. Visualicemos la distribución con un histograma:
+
 ```{r}
 hist(ingresos, breaks = 20, main = "Distribución de ingresos (con outliers)",
      xlab = "Ingreso (miles de pesos)")
-abline(v = media, lwd = 2)
-abline(v = mediana, lwd = 2)
-legend("topright", legend = c("Media", "Mediana"), lwd = 2, bty = "n")
+abline(v = media, col = "red", lwd = 2)
+abline(v = mediana, col = "blue", lwd = 2)
+legend("topright", legend = c("Media", "Mediana"), col = c("red", "blue"), lwd = 2)
 ```
+
+La media es sensible a outliers; la mediana es más robusta. Si eliminamos los valores extremos:
 
 ```{r}
 ingresos_sin_extremos <- ingresos_tipicos
-
 mean(ingresos_sin_extremos)
 median(ingresos_sin_extremos)
 ```
 
-## Cuestionario Grupal
+Ahora media y mediana son mucho más cercanas.
 
-1. Para cada variable que aparece en `names(region30)`, determine si es:
+## Cuestionario Grupal: Tipos de variables
 
-* Numérica continua
-* Numérica discreta
-* Categórica nominal
-* Categórica ordinal
-
-Para ello complete la siguiente tabla:
+1. **Clasifica las siguientes variables de `region30`**. Para cada una, indica si es: numérica continua, numérica discreta, categórica nominal o categórica ordinal, y justifica brevemente.
 
 +----------+------+------------------+
 | Variable | Tipo | Justificación    |
@@ -235,12 +219,17 @@ Para ello complete la siguiente tabla:
 |          |      |                  |
 +----------+------+------------------+
 
-2. Como pudiste apreciar al usar `glimpse(region30)` la variable `región` no alcanza a mostrar todos sus campos. ¿Qué comando usarías para poder ver todos los valores de la variable `región`?
+2. **Explorando la variable region**. Al usar glimpse(region30) no se ven todos los valores de la variable region. ¿Qué comando usarías para listar todos los valores únicos de esa variable?
+
+::: {.callout-tip}
+(Ayuda: prueba con `unique()`, `sort()`, `table()` o combinaciones)
+:::
+
 
 ```{r}
-unique(region30$region)
-sort(unique(region30$region))
-table(region30$region)
-region30 |>
-  count(region, sort = TRUE)
+# Escribe aquí tu código
 ```
+
+3. **Interpretación de gráficos**. Observa el gráfico de dispersión entre viviendas_multipiso y tasa_propietarios. ¿Qué tendencia parece haber? ¿Crees que vivir en un edificio de varios pisos causa una menor tasa de propietarios? Explica.
+
+4. **Media vs mediana**. En el ejemplo de los ingresos simulados, ¿por qué la media es mayor que la mediana? ¿Qué medida es más representativa del "ingreso típico" en presencia de outliers? ¿Por qué?
