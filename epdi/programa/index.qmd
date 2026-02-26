@@ -1,5 +1,5 @@
 ---
-title: "Syllabus"
+title: "Programa"
 subtitle: "Estadística y Probabilidad Descriptiva e Inferencial"
 course-version: "4.0"
 academic-year: "2026"
@@ -17,6 +17,25 @@ format:
     number-sections: true
     colorlinks: true
 ---
+
+::: {.callout-important appearance="simple"}
+## 📵Regulación de dispositivos móviles en el colegio
+
+A partir del **año escolar 2026**, rige la nueva ley que regula el uso de dispositivos móviles personales (celulares, smartwatches, etc.) en establecimientos educacionales.
+
+**Aspectos clave para nuestra comunidad:**
+
+*   **Prohibición general** durante la jornada escolar, con el fin de proteger la atención, el bienestar y la convivencia.
+*   **Excepciones reguladas:** Solo se permitirán usos pedagógicos planificados (en Educación Media), por razones de salud, necesidades educativas especiales o emergencias, y siempre bajo autorización de la Dirección y según nuestro Reglamento Interno.
+*   **Comunicación familias-colegio:** Durante la jornada, la comunicación fluirá siempre a través de los canales formales del establecimiento.
+
+Para más detalles, revisa las orientaciones oficiales del Mineduc: [Modo Aula](https://modoaula.mineduc.gob.cl)
+:::
+
+## Horario
+
+- miércoles 11:30 AM - 13:00 PM, 13:00 PM - 13:45 PM (3 bloques)
+- jueves 11:30 AM - 13:00 PM, 13:00 PM - 13:45 PM (3 bloques)
 
 ## Organización temática del curso
 
