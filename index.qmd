@@ -1,5 +1,6 @@
 ---
 title: "Hans Sigrist"
+lang: es
 ---
 
 [![](https://img.shields.io/badge/GitHub-hsigrist.github.io-103B59?logo=github&logoColor=white)](https://github.com/hsigrist/hsigrist.github.io)

@@ -1,5 +1,6 @@
 ---
 title: "LDI - Límites, Derivadas e Integrales"
+lang: es
 sidebar:
   title: "LDI 2026"
   style: floating

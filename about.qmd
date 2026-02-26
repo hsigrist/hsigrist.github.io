@@ -1,5 +1,6 @@
 ---
 title: "Acerca de"
+lang: es
 ---
 
 ## Hans Sigrist {-}
