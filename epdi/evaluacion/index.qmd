@@ -115,3 +115,26 @@ Cada actividad evaluada se vincula explícitamente con uno o más de estos ejes.
 
 > **Observación final.**
 > El objetivo de la evaluación no es acumular calificaciones, sino desarrollar pensamiento estadístico riguroso y autónomo.
+
+## Organización de los grupos de trabajo
+
+El trabajo en grupo es fundamental en esta asignatura. Para que este sea efectivo y ordenado, dedicaremos un momento específico al inicio del curso a su conformación.
+
+**Procedimiento para la primera clase:**
+
+1.  **Formación de grupos:** Los estudiantes se organizarán libremente en grupos de **exactamente 3 integrantes**. Esta libertad inicial busca que puedan trabajar con compañeros con quienes tengan confianza y buena comunicación.
+2.  **Elección del/la jefe/a de grupo:** Cada grupo deberá elegir a un/a **jefe/a**. Su rol no es jerárquico, sino de **coordinación y responsabilidad**. Entre sus funciones están:
+    *   Asegurarse de que todos los integrantes participan y comprenden el trabajo.
+    *   Conservar y custodiar el cuestionario grupal original una vez corregido por el profesor.
+    *   Ser el nexo de comunicación con el profesor para temas logísticos del grupo (entregas, dudas sobre la organización, etc.).
+3.  **Registro:** Cada grupo deberá anotar los nombres de sus integrantes y el nombre del/la jefe/a en una lista que se proporcionará en la pizarra o en un formulario digital. Esto me permitirá conocer la composición de los equipos desde el principio.
+
+::: {.callout-tip}
+## Rotación del rol de jefe/a
+El rol de jefe/a puede rotar en diferentes actividades a lo largo del semestre si el grupo así lo decide. Lo fundamental es que exista una figura responsable en cada entrega.
+:::
+
+::: {.callout-important}
+## Estudiantes sin grupo
+Si algún estudiante no logra integrar un grupo de 3, se habilitará un espacio para que pueda encontrar equipo. De no ser posible, el profesor asignará grupos para garantizar que todos tengan las mismas oportunidades de trabajo colaborativo.
+:::
