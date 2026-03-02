@@ -42,6 +42,9 @@ website:
       title: "EPDI 2026"
       contents:
         - epdi/index.qmd
+        - section: "Presentaciones"
+          contents:
+            - epdi/presentaciones/presentacion-edpi.qmd
         - section: "Programa"
           contents:
             - epdi/programa/index.qmd

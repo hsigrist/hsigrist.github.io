@@ -1,0 +1,168 @@
+---
+title: "EPDI"
+subtitle: "Estadística y Probabilidad Descriptiva e Inferencial"
+author: "Prof. Hans Sigrist"
+institute: "Colegio Portaliano, San Felipe"
+date: "2026-03-05"
+lang: es
+format:
+  revealjs:
+    theme: default
+    date-format: "D MMM, YYYY"
+    navigation-mode: vertical
+    slide-number: true
+    preview-links: auto
+    logo: /epdi/imagenes/logoport.png
+    footer: "EPDI 2026 - Prof. Hans Sigrist"
+    chalkboard:
+      theme: whiteboard
+    transition: slide
+    background-transition: fade
+    auto-stretch: true
+    smaller: false
+    touch: true
+    controls: true
+    progress: true
+    center: true
+    hash: true
+    history: true
+    width: 1200
+    height: 700
+    margin: 0.1
+    min-scale: 0.2
+    max-scale: 2.5
+    callout-appearance: simple
+    code-line-numbers: false
+    incremental: true
+---
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-width: 12
+#| fig-height: 7
+#| fig-align: center
+#| out-width: 100%
+#| label: fig-portada-gapminder
+#| fig-cap: "Relación entre esperanza de vida (y) y PIB per cápita (x) en 2007. El tamaño representa población."
+#| fig-number: false
+
+library(ggplot2)
+library(dplyr)
+library(ggrepel)
+library(gapminder)
+
+data <- gapminder %>%
+  filter(year == 2007)
+
+ggplot(data, aes(x = gdpPercap,
+                 y = lifeExp,
+                 size = pop,
+                 color = continent)) +
+  geom_point(alpha = 0.6) +
+  scale_size(range = c(1, 24), name = "Población") +
+  geom_text_repel(
+    data = filter(data, country == "Chile"),
+    aes(label = country),
+    size = 5,
+    fontface = "bold",
+    color = "black"
+  ) +
+  scale_x_log10() +
+  labs(
+    x = "PIB per cápita (USD, escala log)",
+    y = "Esperanza de vida",
+    title = "Riqueza y esperanza de vida en el mundo (2007)"
+  ) +
+  theme_minimal(base_size = 13)
+```
+
+# Horario
+
+::: {.nonincremental}
+
+- miércoles 11:30 AM - 13:00 PM, 13:00 PM - 13:45 PM (3 bloques)
+- jueves 11:30 AM - 13:00 PM, 13:00 PM - 13:45 PM (3 bloques)
+:::
+
+# Organización temática del curso
+
+El curso se organiza en **cuatro ejes articulados**, coherentes con el Programa de Formación Diferenciada HC de Estadística y Probabilidad Descriptiva e Inferencial.
+
+::: {.nonincremental}
+
+- Eje 1 — Representación y estructura de datos
+- Eje 2 — Estadística descriptiva
+- Eje 3 — Probabilidad y modelación
+- Eje 4 — Inferencia estadística
+:::
+
+# Instrumentos de evaluación
+
+## Cuestionarios grupales
+
+::: {.nonincremental}
+
+- Frecuencia: periódica (aprox. cada 1–2 semanas).
+- Modalidad: grupos de 3 integrantes.
+- Se utilizan rúbricas previamente publicadas.
+- Cada cuestionario forma parte del Portafolio semestral.
+:::
+
+## Mini-informe aplicado
+
+Se realizará al menos un mini-informe por semestre.
+
+::: {.nonincremental}
+
+- Extensión máxima: 1 página de análisis.
+- Incluye: 1 tabla + 1 gráfico + interpretación (150–250 palabras).
+- Código reproducible.
+- Cada mini-informe forma parte del Portafolio semestral.
+:::
+
+# Portafolio semestral
+
+## El portafolio reúne
+
+::: {.nonincremental}
+
+- Cuestionarios corregidos (según rol en el grupo).
+- Rúbricas correspondientes.
+- Mini-informe(s).
+:::
+
+## Criterios generales de corrección
+
+En todos los instrumentos se considera:
+
+::: {.nonincremental}
+
+- Pertinencia de la respuesta.
+- Uso correcto de conceptos.
+- Coherencia lógica.
+- Claridad en la argumentación.
+- Presentación ordenada.
+:::
+
+# Trabajo en grupo
+
+## Características
+
+::: {.nonincremental}
+
+- Los grupos son de exactamente 3 integrantes.
+- Cada integrante debe comprender el trabajo entregado.
+- El/la jefe/a de grupo conserva el cuestionario original corregido.
+- Los demás integrantes conservan su rúbrica individual.
+:::
+
+## Entregas y puntualidad
+
+::: {.nonincremental}
+
+- Las fechas de entrega se informarán oportunamente.
+- Entregas fuera de plazo podrán estar sujetas a penalización.
+- La ausencia injustificada en actividades evaluadas deberá regularizarse según normativa institucional.
+:::
