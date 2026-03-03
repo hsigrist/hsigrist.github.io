@@ -10,7 +10,26 @@
 <atom:link href="https://hsigrist.github.io/novedades/index.xml" rel="self" type="application/rss+xml"/>
 <description>Materiales docentes y novedades de Formación Diferenciada | Colegio Portaliano</description>
 <generator>quarto-1.8.27</generator>
-<lastBuildDate>Wed, 04 Mar 2026 03:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 05 Mar 2026 03:00:00 GMT</lastBuildDate>
+<item>
+  <title>Nueva lección: Lección 1 Introducción a los datos</title>
+  <dc:creator>Hans Sigrist</dc:creator>
+  <link>https://hsigrist.github.io/novedades/posts/05-03-2026-leccion-1-introduccion-a-los-datos.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Ya está disponible la <a href="../../epdi/lecciones/leccion-1-introduccion-a-los-datos.html">Lección 1 Introducción a los datos</a>. Existe una versión en PDF, misma que se ha entregado en clases impresa.</p>
+
+
+
+ ]]></description>
+  <category>EPDI</category>
+  <guid>https://hsigrist.github.io/novedades/posts/05-03-2026-leccion-1-introduccion-a-los-datos.html</guid>
+  <pubDate>Thu, 05 Mar 2026 03:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Bienvenida</title>
   <dc:creator>Hans Sigrist</dc:creator>

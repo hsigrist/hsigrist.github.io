@@ -11,7 +11,14 @@
     "href": "novedades/index.html",
     "title": "Novedades",
     "section": "",
-    "text": "Novedades del sitio.\n\n\n\n\n\n\n\n\n\nBienvenida\n\n\n\nEPDI\n\n\n\n\n\n\n4 mar, 2026\n\n\n\n\n\nNo hay resultados"
+    "text": "Novedades del sitio.\n\n\n\n\n\n\n\n\n\nNueva lección: Lección 1 Introducción a los datos\n\n\n\nEPDI\n\n\n\n\n\n\n5 mar, 2026\n\n\n\n\n\n\n\nBienvenida\n\n\n\nEPDI\n\n\n\n\n\n\n4 mar, 2026\n\n\n\n\n\nNo hay resultados"
+  },
+  {
+    "objectID": "novedades/posts/05-03-2026-leccion-1-introduccion-a-los-datos.html",
+    "href": "novedades/posts/05-03-2026-leccion-1-introduccion-a-los-datos.html",
+    "title": "Nueva lección: Lección 1 Introducción a los datos",
+    "section": "",
+    "text": "Ya está disponible la Lección 1 Introducción a los datos. Existe una versión en PDF, misma que se ha entregado en clases impresa."
   },
   {
     "objectID": "epdi/presentaciones/presentacion-edpi.html#cuestionarios-grupales",
@@ -242,6 +249,61 @@
     "crumbs": [
       "Rúbricas",
       "Rúbricas"
+    ]
+  },
+  {
+    "objectID": "epdi/lecciones/leccion-1-introduccion-a-los-datos.html#google-colaboratory-colab",
+    "href": "epdi/lecciones/leccion-1-introduccion-a-los-datos.html#google-colaboratory-colab",
+    "title": "Lección 1: Introducción a los datos",
+    "section": "1 Google Colaboratory (Colab)",
+    "text": "1 Google Colaboratory (Colab)\ncolab es un servicio alojado de Jupyter Notebook que no requiere configuración y ofrece acceso gratuito a recursos informáticos, como GPU y TPU. Colab es especialmente adecuado para el aprendizaje automático, la ciencia de datos y la educación.\nEn esta asignatura, lo utilizaremos para representar, graficar y resumir datos que no es posible implementar en otras aplicaciones como Excel u Hojas de Cálculo de Google (al menos sin la fricción propia de éstos).\nPero colab solo es el espacio de trabajo, necesitamos un motor, un lenguaje que compile nuestros datos. Actualmente, existen dos principalmente que permiten desarrollar análisis matemático y/o estadístico: python y R.\nUsualmente, un usuario interesado en ejecutar este tipo de programas necesita:\n\nUn editor\nUn kernel\nConocer los comandos del lenguaje correspondiente\n\nCon colab contamos con los dos primeros recursos: (1) colab en sí es un editor y (2) Google ofrece por medio de sus servicios distintos kernel, entre ellos python y R. Es cosa de “instalarlos” (en realidad nada se instala en tu computador solo se instalan en el servidor) y luego (3) usar los comandos respectivos para manipular datos -por ejemplo.",
+    "crumbs": [
+      "Lecciones",
+      "Lección 1: Introducción a los datos"
+    ]
+  },
+  {
+    "objectID": "epdi/lecciones/leccion-1-introduccion-a-los-datos.html#tu-cuenta-institucional",
+    "href": "epdi/lecciones/leccion-1-introduccion-a-los-datos.html#tu-cuenta-institucional",
+    "title": "Lección 1: Introducción a los datos",
+    "section": "2 Tu cuenta institucional",
+    "text": "2 Tu cuenta institucional\nSolo necesitas eso, tu cuenta institucional @colegioportaliano.cl:\n\nIngresa en colab\nPresiona el botón “New Notebook”, te advertirá que se requiere el acceso a Google y presionas el botón Acceder.\nIngresas tus credenciales, posiblemente te solicite que ingreses un segundo nivel de seguridad (mensaje de texto en tu celular, presionar “si” en un celular, etc.)\nListo ya estás en colab.",
+    "crumbs": [
+      "Lecciones",
+      "Lección 1: Introducción a los datos"
+    ]
+  },
+  {
+    "objectID": "epdi/lecciones/leccion-1-introduccion-a-los-datos.html#r",
+    "href": "epdi/lecciones/leccion-1-introduccion-a-los-datos.html#r",
+    "title": "Lección 1: Introducción a los datos",
+    "section": "3 R",
+    "text": "3 R\nR es un entorno de software libre para computación estadística y gráficos. Se compila y ejecuta en una amplia variedad de plataformas UNIX, Windows y macOS. Este será nuestro kernel por defecto. Y por sus características, versatilidad y amplios usos en ciencias, economía, salud, ingeniería, etc. es alimentado por una gran comunidad que provee paquetes o librerías de dedicación especial. ¿Qué significa esto? Bueno, que usuarios alrededor del mundo han facilitado mucho las cosas para que otros usuarios -como ustedes y yo- podamos utilizar bases de datos originales y actualizadas que junto con la potencia del kernel R nos permiten realizar simulaciones que no podríamos hacer con otros software convencionales (mucha fricción).\nY eso es justamente lo que haremos ahora. Prepárate.",
+    "crumbs": [
+      "Lecciones",
+      "Lección 1: Introducción a los datos"
+    ]
+  },
+  {
+    "objectID": "epdi/lecciones/leccion-1-introduccion-a-los-datos.html#estudio-de-caso-uso-de-stent-para-prevenir-acv-accidente-cerebrovascular",
+    "href": "epdi/lecciones/leccion-1-introduccion-a-los-datos.html#estudio-de-caso-uso-de-stent-para-prevenir-acv-accidente-cerebrovascular",
+    "title": "Lección 1: Introducción a los datos",
+    "section": "4 Estudio de caso: uso de stent para prevenir ACV (accidente cerebrovascular)",
+    "text": "4 Estudio de caso: uso de stent para prevenir ACV (accidente cerebrovascular)\nEn esta sección, consideraremos un experimento que estudia la eficacia de los stents (también conocido como endoprótesis vascular: una malla o férula diseñada para abrir arterias, venas u otros conductos estrechados o bloqueados) en el tratamiento de pacientes con riesgo de ACV. Los stents son dispositivos que se colocan dentro de los vasos sanguíneos y que facilitan la recuperación del paciente tras un evento cardíaco y reducen el riesgo de sufrir otro ACV o incluso la muerte. Muchos médicos esperaban que se obtuvieran beneficios similares para los pacientes con riesgo de ACV.\nComenzamos por escribir la pregunta principal que los investigadores esperan responder:\n¿Reduce el uso de stents el riesgo de un ACV?\n\n4.1 El experimento\nLos investigadores que formularon esta pregunta realizaron un experimento con \\(451\\) pacientes en riesgo.\nCada paciente voluntario fue asignado aleatoriamente a uno de dos grupos:\n\nGrupo de tratamiento. Los pacientes del grupo de tratamiento recibieron un stent y tratamiento médico. El tratamiento médico incluyó medicamentos, control de los factores de riesgo y ayuda para modificar el estilo de vida.\nGrupo de control. Los pacientes del grupo de control recibieron el mismo tratamiento médico que el grupo de tratamiento, pero no recibieron stents.\n\nLos investigadores asignaron aleatoriamente a \\(224\\) pacientes al grupo de tratamiento y a \\(227\\) al grupo de control.\nEn este estudio, el grupo de control proporciona un punto de referencia para medir el impacto médico de los stents en el grupo de tratamiento.\nLos investigadores estudiaron el efecto de los stents en dos momentos: \\(30\\) días después de la inscripción y \\(365\\) días después de la inscripción.\n\n\n4.2 El resumen\nLos resultados de 5 pacientes se resumen en la tabla Tabla 1. Los resultados de los pacientes se registran como “stroke” o “no event”, lo que indica si el paciente sufrió o no un ACV al final de un período.\n\n\n\nTabla 1: Tabla de resultados por paciente en el estudio de stents\n\n\n\n\n\nPatient\nGroup\n0–30 days\n0–365 days\n\n\n\n\n1\ntreatment\nno event\nno event\n\n\n2\ntreatment\nstroke\nstroke\n\n\n3\ntreatment\nno event\nno event\n\n\n⋮\n⋮\n⋮\n⋮\n\n\n450\ncontrol\nno event\nno event\n\n\n451\ncontrol\nno event\nno event\n\n\n\n\n\n\n\n\n4.3 Primer problema\nConsiderar los datos de cada paciente individualmente sería un proceso largo y engorroso para responder a la pregunta de investigación original.\nEn cambio, realizar un análisis estadístico de datos nos permite considerar todos los datos a la vez.\nAquí entra R.\nExiste una librería llamada “openintro” que a su vez es la creadora de muchas bases de datos, entre ellas stent30 y stent365, para usarlas debemos primero, instalar la librería:\nPresiona Shift+Enter dentro de esta celda (usualmente al final del texto):\n\ninstall.packages(\"openintro\")\n\nPodrás ver cómo colab instala la librería y sus componentes e incluso algunas otras cosas que necesita para su funcionamiento (dependencias). Puede durar desde algunos pocos segundos hasta un minuto aproximadamente. No hagas nada, solo espera que termine.\nYa instalada la librería, debemos invocarla:\n\nlibrary(openintro)\n\nCargando paquete requerido: airports\n\n\nCargando paquete requerido: cherryblossom\n\n\nCargando paquete requerido: usdata\n\n\nListo, librería activa. No se observa nada.\nPara inspeccionar qué contiene esta librería usamos el comando data():\n\ndata(package = \"openintro\")\n\nSe desplegará un menú vertical a la derecha con todos los conjuntos de datos del paquete “openintro” y su descripción. Si navegas podrás ver a stent30 y a stent365.\nAhora carguemos nuestras bases de datos de estudio, recuerda que son de la librería openintro. Usamos data() nuevamente:\n\ndata(stent30,stent365)\n\nUn comando útil en estos momentos es ls(), éste lista el contenido cargado:\n\nls()\n\n[1] \"stent30\"  \"stent365\"\n\n\nPodrás ver la salida: 'stent30' y 'stent365'\nAhora queremos saber qué estructura tiene el archivo, pues aún no lo vemos. Para ello usamos str():\n\nprint(str(stent365))\n\ntibble [451 × 2] (S3: tbl_df/tbl/data.frame)\n $ group  : Factor w/ 2 levels \"control\",\"treatment\": 2 2 2 2 2 2 2 2 2 2 ...\n $ outcome: Factor w/ 2 levels \"no event\",\"stroke\": 2 2 2 2 2 2 2 2 2 2 ...\nNULL\n\n\nInterpretación: se trata de una tabla de dos factores, cada uno con dos niveles.\n¿Podrías decir cuáles son cada uno?\nTambién podemos usar el comando head() que nos muestra el encabezado de la tabla:\n\nhead(stent365)\n\n# A tibble: 6 × 2\n  group     outcome\n  &lt;fct&gt;     &lt;fct&gt;  \n1 treatment stroke \n2 treatment stroke \n3 treatment stroke \n4 treatment stroke \n5 treatment stroke \n6 treatment stroke \n\n\n¿Cómo interpretas lo anterior?\nJusto en este momento sería bueno que ejecutaras el siguiente comando que te permitirá conocer finalmente la base de datos stent365:\n\nwrite.csv(stent30,  \"stent30.csv\",  row.names = FALSE)\nwrite.csv(stent365, \"stent365.csv\", row.names = FALSE)\nlist.files(pattern = \"^stent(30|365)\\\\.csv$\")\n\n[1] \"stent30.csv\"  \"stent365.csv\"\n\n\nAhora ve al panel de la izquierda y abre el penúltimo ícono Archivos, actualiza y verás dos nuevos archivos para descargar. ¿Te diste cuenta? Es simplemente un archivo csv (comma separated values) de valores separados por coma, que leídos por esta hoja de cálculo corresponden simplemente a dos columnas de datos.\nPor las características de los datos (estructura, encabezados, extensión), a veces es imposible usar hojas de cálculo para su lectura. Eso es justamente lo que estamos haciendo aquí. Como ambas variables son categóricas, el resumen natural es una tabla de contingencia (doble entrada).\nPara una tabla de contingencia usamos el comando table() de esta forma:\n\ntab_stent365 &lt;- table(stent365$group, stent365$outcome)\ntab_stent365\n\n           \n            no event stroke\n  control        199     28\n  treatment      179     45\n\n\nCon la primera linea estamos pidiendo a R que use el comando table() para agrupar tanto por group como por outcome. Con la segunda linea, le pedimos que muestre dicha tabla.\nIntenta hacer algunos simples cálculos aritméticos y te sorprenderás…\nAhora haremos algo más matemático y desde el punto de vista estadístico muy importante. Introduciremos la probabilidad, en este contexto: la proporción de pacientes según el grupo y el nivel.\nPara ello usamos el comando prop.table() de esta forma:\n\nprop.table(tab_stent365, margin = 1)\n\n           \n             no event    stroke\n  control   0.8766520 0.1233480\n  treatment 0.7991071 0.2008929\n\n\nEsta vez no copiaré el resultado porque ya te has dado cuenta de que son exactamente las salidas de los comandos que he ido proponiéndote.\nA partir de tabla, ¿Qué estás observando? ¿Cómo lo interpretas? ¿Podrías hacer una conclusión? ¿Podrías responder a la pregunta inicial?\nPara ayudar a tus conclusiones, siempre es bueno una perspectiva visual de la problemática. Para ello usamos el comando barplot() de esta forma:\n\nbarplot(prop.table(tab_stent365, 1),\n        beside = FALSE,\n        legend = TRUE\n)\n\n\n\n\n\n\n\n\n¿Te atreves ahora a responder a la pregunta inicial? Escribe tu respuesta en tu cuaderno y compártela cuando se te solicite.",
+    "crumbs": [
+      "Lecciones",
+      "Lección 1: Introducción a los datos"
+    ]
+  },
+  {
+    "objectID": "epdi/lecciones/leccion-1-introduccion-a-los-datos.html#cuestionario",
+    "href": "epdi/lecciones/leccion-1-introduccion-a-los-datos.html#cuestionario",
+    "title": "Lección 1: Introducción a los datos",
+    "section": "5 Cuestionario",
+    "text": "5 Cuestionario\n\nExplica con tus palabras cuál era la pregunta de investigación y por qué los médicos necesitaban un experimento para responderla, en lugar de confiar solo en su intuición.\nIdentifica la variable explicativa y la variable respuesta del estudio. ¿Por qué la primera se llama “explicativa” y la segunda “respuesta”?\n¿Qué problema resuelve la asignación aleatoria de los pacientes a los grupos? ¿Qué podría haber pasado si los médicos hubieran decidido qué paciente recibe stent y cuál no?\nSin un grupo de control, ¿podríamos saber si los stents realmente causaron alguna diferencia? Explica por qué.\nClasifica las variables group y outcome según su naturaleza (cuantitativas discretas, continuas, categóricas nominales u ordinales). Justifica cada clasificación.\n¿Por qué estos datos se resumen naturalmente en una tabla de contingencia y no, por ejemplo, en un promedio o una mediana?\nCon los datos del estudio (224 tratamiento, 45 ACV; 227 control, 28 ACV):\n\nCalcula la proporción de ACV en cada grupo.\nCalcula la diferencia entre ambas proporciones.\nA la luz de estos números, ¿dirías que los stents reducen el riesgo de ACV? ¿Por qué?\n\nLa diferencia que calculaste, ¿podría deberse simplemente al azar? Explica usando un ejemplo simple, como lanzar una moneda.\nSi el estudio hubiera tenido muchos menos pacientes, ¿confiarías más o menos en el resultado? ¿Por qué?\nLos pacientes fueron voluntarios. ¿Podemos estar seguros de que estos resultados se aplican a todos los pacientes con riesgo de ACV? Explica.\nEl estudio encontró “evidencia convincente de daño” en lugar de beneficio. ¿Qué significa esta frase en el contexto de los stents?\nCalcula la razón de proporciones (tratamiento / control). Un valor mayor que 1 indica mayor riesgo en el grupo tratamiento. ¿Qué obtuviste? Interprétalo.\nSi el stent realmente redujera el riesgo de ACV, ¿qué esperarías ver en las proporciones y en la razón que calculaste?\nMenciona dos limitaciones del estudio que podrían afectar la confianza en sus conclusiones.\n¿Qué enseñanza deja este caso sobre la relación entre la intuición médica y la evidencia estadística? Escribe una reflexión breve.",
+    "crumbs": [
+      "Lecciones",
+      "Lección 1: Introducción a los datos"
     ]
   },
   {
