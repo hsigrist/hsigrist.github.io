@@ -252,6 +252,127 @@
     ]
   },
   {
+    "objectID": "epdi/lecciones/leccion-2-tipos-de-datos.html#origen-institucional-de-los-datos",
+    "href": "epdi/lecciones/leccion-2-tipos-de-datos.html#origen-institucional-de-los-datos",
+    "title": "Lección 2: Tipos de datos y estructura de la información",
+    "section": "1 Origen institucional de los datos",
+    "text": "1 Origen institucional de los datos\n\nThe simple graph has brought more information to the data analyst’s mind than any other device.\n— John Tukey\n\nLos datos utilizados en esta lección (empleo50) son una versión didáctica simplificada de lo que habitualmente se obtiene a partir de encuestas oficiales de empleo. En Chile, la Encuesta Nacional de Empleo (ENE) es un estudio estadístico sistemático conducido por el Instituto Nacional de Estadísticas (INE), que busca medir las condiciones del mercado laboral a nivel nacional. Esta encuesta recoge información individual sobre edad, región, estado laboral, ingresos y horas trabajadas, entre otras variables, con el propósito de estimar indicadores como la tasa de ocupación y desempleo, identificar brechas laborales y apoyar el diseño de políticas públicas y programas sociales. El dataset empleo50 simula la estructura principal de estos datos reales para facilitar el análisis de tipos de variables y la comprensión de la estructura de una matriz de datos sin necesidad de trabajar con bases originales completas.",
+    "crumbs": [
+      "Lecciones",
+      "Lección 2: Tipos de datos y estructura de la información"
+    ]
+  },
+  {
+    "objectID": "epdi/lecciones/leccion-2-tipos-de-datos.html#preparar-el-entorno-y-cargar-datos",
+    "href": "epdi/lecciones/leccion-2-tipos-de-datos.html#preparar-el-entorno-y-cargar-datos",
+    "title": "Lección 2: Tipos de datos y estructura de la información",
+    "section": "2 Preparar el entorno y cargar datos",
+    "text": "2 Preparar el entorno y cargar datos\nLa organización y descripción efectiva de los datos es el primer paso en la mayoría de los análisis. Esta sección presenta la matriz de datos para organizarlos, así como la terminología sobre los diferentes tipos de datos que se utilizará a lo largo de este libro.\nPrimero cargamos las librerías necesarias para la lección y operatividad de R. En este caso, usaremos dplyr para manipular datos y ggplot2 para graficar.\n\nlibrary(readr)\nlibrary(dplyr)\nlibrary(ggplot2)\nlibrary(knitr)\n\nLos datos que utilizaremos corresponden a una muestra de 50 personas ocupadas en la Región de Valparaíso (fuente: Nueva Encuesta Nacional de Empleo, INE). Carguemos el archivo:\n\n\n\n\n\n\nNotaExploración opcional en R (Jupyter / Colab)\n\n\n\nLos estudiantes que deseen experimentar, pueden cargar la base directamente a su computador utilizando:\nempleo50.csv",
+    "crumbs": [
+      "Lecciones",
+      "Lección 2: Tipos de datos y estructura de la información"
+    ]
+  },
+  {
+    "objectID": "epdi/lecciones/leccion-2-tipos-de-datos.html#explorar-la-estructura-de-los-datos",
+    "href": "epdi/lecciones/leccion-2-tipos-de-datos.html#explorar-la-estructura-de-los-datos",
+    "title": "Lección 2: Tipos de datos y estructura de la información",
+    "section": "3 Explorar la estructura de los datos",
+    "text": "3 Explorar la estructura de los datos\nCada fila es una observación (persona) y cada columna una variable. Con str() vemos el tipo de cada variable:\n\nstr(empleo)\n\nspc_tbl_ [49 × 8] (S3: spec_tbl_df/tbl_df/tbl/data.frame)\n $ region           : chr [1:49] \"Metropolitana\" \"Biobío\" \"Valparaíso\" \"Araucanía\" ...\n $ sexo             : chr [1:49] \"Mujer\" \"Hombre\" \"Mujer\" \"Hombre\" ...\n $ edad             : num [1:49] 28 34 42 19 51 24 37 46 33 55 ...\n $ nivel_educacional: chr [1:49] \"Universitaria\" \"Técnica\" \"Media\" \"Básica\" ...\n $ estado_laboral   : chr [1:49] \"Ocupado\" \"Ocupado\" \"Ocupado\" \"Desocupado\" ...\n $ tipo_contrato    : chr [1:49] \"Indefinido\" \"Plazo fijo\" \"Informal\" \"N/A\" ...\n $ ingreso_mensual  : num [1:49] 720000 560000 450000 0 890000 410000 520000 1050000 470000 0 ...\n $ horas_trabajo    : num [1:49] 40 38 35 0 42 40 36 45 38 0 ...\n - attr(*, \"spec\")=\n  .. cols(\n  ..   region = col_character(),\n  ..   sexo = col_character(),\n  ..   edad = col_double(),\n  ..   nivel_educacional = col_character(),\n  ..   estado_laboral = col_character(),\n  ..   tipo_contrato = col_character(),\n  ..   ingreso_mensual = col_double(),\n  ..   horas_trabajo = col_double()\n  .. )\n - attr(*, \"problems\")=&lt;externalptr&gt; \n\n\nAparecen variables numéricas (edad, ingreso_mensual) y categóricas (sexo, region). Esta distinción determina qué análisis podemos hacer.\nLas primeras filas y la dimensión nos ayudan a entender su tamaño:\n\nhead(empleo, 5)\n\n# A tibble: 5 × 8\n  region        sexo    edad nivel_educacional estado_laboral tipo_contrato\n  &lt;chr&gt;         &lt;chr&gt;  &lt;dbl&gt; &lt;chr&gt;             &lt;chr&gt;          &lt;chr&gt;        \n1 Metropolitana Mujer     28 Universitaria     Ocupado        Indefinido   \n2 Biobío        Hombre    34 Técnica           Ocupado        Plazo fijo   \n3 Valparaíso    Mujer     42 Media             Ocupado        Informal     \n4 Araucanía     Hombre    19 Básica            Desocupado     N/A          \n5 Metropolitana Mujer     51 Universitaria     Ocupado        Indefinido   \n# ℹ 2 more variables: ingreso_mensual &lt;dbl&gt;, horas_trabajo &lt;dbl&gt;\n\ndim(empleo)\n\n[1] 49  8",
+    "crumbs": [
+      "Lecciones",
+      "Lección 2: Tipos de datos y estructura de la información"
+    ]
+  },
+  {
+    "objectID": "epdi/lecciones/leccion-2-tipos-de-datos.html#diccionario-de-variables",
+    "href": "epdi/lecciones/leccion-2-tipos-de-datos.html#diccionario-de-variables",
+    "title": "Lección 2: Tipos de datos y estructura de la información",
+    "section": "4 Diccionario de variables",
+    "text": "4 Diccionario de variables\nPara saber qué mide cada columna la Tabla 1 es una descripción de cada variable de empleo50:\n\nlibrary(tibble)\n\ndic_empleo &lt;- tribble(\n  ~variable, ~descripcion,\n  \"region\",            \"Región de residencia (categórica nominal).\",\n  \"sexo\",              \"Sexo declarado (categórica nominal).\",\n  \"edad\",              \"Edad en años (numérica discreta).\",\n  \"nivel_educacional\", \"Nivel educacional (categórica ordinal).\",\n  \"estado_laboral\",    \"Condición laboral: Ocupado / Desocupado / Inactivo.\",\n  \"tipo_contrato\",     \"Tipo de contrato si está ocupado (NA si no aplica).\",\n  \"ingreso_mensual\",   \"Ingreso mensual en CLP (numérica).\",\n  \"horas_trabajo\",     \"Horas trabajadas por semana (numérica).\"\n)\n\nkable(dic_empleo, booktabs = TRUE)\n\n\n\nTabla 1: Variables y descripción para el conjunto de datos empleo50.\n\n\n\n\n\n\n\n\n\n\nvariable\ndescripcion\n\n\n\n\nregion\nRegión de residencia (categórica nominal).\n\n\nsexo\nSexo declarado (categórica nominal).\n\n\nedad\nEdad en años (numérica discreta).\n\n\nnivel_educacional\nNivel educacional (categórica ordinal).\n\n\nestado_laboral\nCondición laboral: Ocupado / Desocupado / Inactivo.\n\n\ntipo_contrato\nTipo de contrato si está ocupado (NA si no aplica).\n\n\ningreso_mensual\nIngreso mensual en CLP (numérica).\n\n\nhoras_trabajo\nHoras trabajadas por semana (numérica).",
+    "crumbs": [
+      "Lecciones",
+      "Lección 2: Tipos de datos y estructura de la información"
+    ]
+  },
+  {
+    "objectID": "epdi/lecciones/leccion-2-tipos-de-datos.html#resúmenes-numéricos-para-variables-cuantitativas",
+    "href": "epdi/lecciones/leccion-2-tipos-de-datos.html#resúmenes-numéricos-para-variables-cuantitativas",
+    "title": "Lección 2: Tipos de datos y estructura de la información",
+    "section": "5 Resúmenes numéricos para variables cuantitativas",
+    "text": "5 Resúmenes numéricos para variables cuantitativas\nPara variables numéricas (cuantitativas), el resumen más útil suele ser el de cinco números: mínimo, primer cuartil, mediana, media, tercer cuartil y máximo. Lo obtenemos con summary():\n\nsummary(empleo)\n\n    region              sexo                edad       nivel_educacional \n Length:49          Length:49          Min.   :19.00   Length:49         \n Class :character   Class :character   1st Qu.:29.00   Class :character  \n Mode  :character   Mode  :character   Median :37.00   Mode  :character  \n                                       Mean   :38.12                     \n                                       3rd Qu.:46.00                     \n                                       Max.   :61.00                     \n estado_laboral     tipo_contrato      ingreso_mensual   horas_trabajo  \n Length:49          Length:49          Min.   :      0   Min.   : 0.00  \n Class :character   Class :character   1st Qu.: 420000   1st Qu.:36.00  \n Mode  :character   Mode  :character   Median : 540000   Median :40.00  \n                                       Mean   : 541633   Mean   :33.39  \n                                       3rd Qu.: 810000   3rd Qu.:40.00  \n                                       Max.   :1050000   Max.   :45.00  \n\n\nObserva que summary() también nos da una tabla de frecuencias para las variables categóricas (como sexo). ¿Por qué crees que hace eso?",
+    "crumbs": [
+      "Lecciones",
+      "Lección 2: Tipos de datos y estructura de la información"
+    ]
+  },
+  {
+    "objectID": "epdi/lecciones/leccion-2-tipos-de-datos.html#tablas-de-frecuencias-para-variables-categóricas",
+    "href": "epdi/lecciones/leccion-2-tipos-de-datos.html#tablas-de-frecuencias-para-variables-categóricas",
+    "title": "Lección 2: Tipos de datos y estructura de la información",
+    "section": "6 Tablas de frecuencias para variables categóricas",
+    "text": "6 Tablas de frecuencias para variables categóricas\nCuando una variable es categórica, el resumen adecuado es una tabla de frecuencias. Podemos obtenerla con table():\n\ntable(empleo$sexo)\n\n\nHombre  Mujer \n    24     25 \n\n\n¿Cuántos hombres y cuántas mujeres hay en la muestra? Esta tabla responde esa pregunta de forma directa.",
+    "crumbs": [
+      "Lecciones",
+      "Lección 2: Tipos de datos y estructura de la información"
+    ]
+  },
+  {
+    "objectID": "epdi/lecciones/leccion-2-tipos-de-datos.html#filtrar-datos-para-un-análisis-más-específico",
+    "href": "epdi/lecciones/leccion-2-tipos-de-datos.html#filtrar-datos-para-un-análisis-más-específico",
+    "title": "Lección 2: Tipos de datos y estructura de la información",
+    "section": "7 Filtrar datos para un análisis más específico",
+    "text": "7 Filtrar datos para un análisis más específico\nSupongamos que solo queremos estudiar a las personas ocupadas (que ya lo están) y además queremos quedarnos con quienes trabajan al menos 30 horas semanales. Usamos filter():\n\nempleo_ocup &lt;- empleo %&gt;%\n  filter(horas_trabajo &gt;= 30)\n\n¿Por qué es útil filtrar? Porque nos permite centrarnos en un subgrupo con características similares y evitar que los resultados se vean afectados por casos atípicos (como personas con trabajos de muy pocas horas).\nLos datos de la Tabla 2 representan una matriz de datos, una forma práctica y común de organizarlos, especialmente si se recopilan en una hoja de cálculo. Cada fila de una matriz de datos corresponde a un caso único (unidad de observación) y cada columna a una variable.\nEn la práctica, es especialmente importante hacer preguntas aclaratorias para garantizar la comprensión de aspectos importantes de los datos. Por ejemplo, siempre es importante asegurarse de comprender el significado de cada variable y sus unidades de medida. Las descripciones de las variables de empleo50 se presentan en la Tabla 2.\n\nempleo4 &lt;- empleo |&gt;\n  mutate(id = row_number()) |&gt;\n  slice(c(1,2,3, n())) |&gt;\n  select(id, everything())\n\nkable(empleo4, booktabs = TRUE)\n\n\n\nTabla 2: Cuatro filas de la matriz de datos empleo50.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nid\nregion\nsexo\nedad\nnivel_educacional\nestado_laboral\ntipo_contrato\ningreso_mensual\nhoras_trabajo\n\n\n\n\n1\nMetropolitana\nMujer\n28\nUniversitaria\nOcupado\nIndefinido\n720000\n40\n\n\n2\nBiobío\nHombre\n34\nTécnica\nOcupado\nPlazo fijo\n560000\n38\n\n\n3\nValparaíso\nMujer\n42\nMedia\nOcupado\nInformal\n450000\n35\n\n\n49\nMetropolitana\nMujer\n36\nTécnica\nOcupado\nPlazo fijo\n600000\n40\n\n\n\n\n\n\n\n\nPara variables numéricas: summary():\n\nsummary(select(empleo, edad, ingreso_mensual, horas_trabajo))\n\n      edad       ingreso_mensual   horas_trabajo  \n Min.   :19.00   Min.   :      0   Min.   : 0.00  \n 1st Qu.:29.00   1st Qu.: 420000   1st Qu.:36.00  \n Median :37.00   Median : 540000   Median :40.00  \n Mean   :38.12   Mean   : 541633   Mean   :33.39  \n 3rd Qu.:46.00   3rd Qu.: 810000   3rd Qu.:40.00  \n Max.   :61.00   Max.   :1050000   Max.   :45.00  \n\n\nEntrega mínimo, cuartiles, media y máximo. Es útil para detectar rangos y valores atípicos.\nPara variables categóricas: table():\n\ntable(empleo$region)\n\n\n  Antofagasta     Araucanía        Biobío      Coquimbo     Los Lagos \n            3             4             6             6             3 \n     Los Ríos    Magallanes         Maule Metropolitana     O’Higgins \n            3             3             4             8             3 \n   Valparaíso \n            6 \n\n\n\ntable(empleo$sexo)\n\n\nHombre  Mujer \n    24     25",
+    "crumbs": [
+      "Lecciones",
+      "Lección 2: Tipos de datos y estructura de la información"
+    ]
+  },
+  {
+    "objectID": "epdi/lecciones/leccion-2-tipos-de-datos.html#relación-entre-dos-variables-cuantitativas-el-diagrama-de-dispersión",
+    "href": "epdi/lecciones/leccion-2-tipos-de-datos.html#relación-entre-dos-variables-cuantitativas-el-diagrama-de-dispersión",
+    "title": "Lección 2: Tipos de datos y estructura de la información",
+    "section": "8 Relación entre dos variables cuantitativas: el diagrama de dispersión",
+    "text": "8 Relación entre dos variables cuantitativas: el diagrama de dispersión\nAhora queremos explorar si existe relación entre edad e ingreso mensual. Para dos variables numéricas, el gráfico adecuado es un diagrama de dispersión (scatter plot):\n\nempleo_ocup &lt;- filter(empleo, estado_laboral == \"Ocupado\")\n\nggplot(empleo_ocup, aes(x = edad, y = ingreso_mensual)) +\n  geom_point() +\n  labs(title = \"Edad vs Ingreso mensual\")\n\n\n\n\n\n\n\n\n\nInterpretación\n\nCada punto es una persona. Observa si hay alguna tendencia: ¿a mayor edad, mayor ingreso? ¿Es una relación lineal? ¿Hay valores extremos?",
+    "crumbs": [
+      "Lecciones",
+      "Lección 2: Tipos de datos y estructura de la información"
+    ]
+  },
+  {
+    "objectID": "epdi/lecciones/leccion-2-tipos-de-datos.html#relación-entre-una-variable-numérica-y-una-categórica-boxplots",
+    "href": "epdi/lecciones/leccion-2-tipos-de-datos.html#relación-entre-una-variable-numérica-y-una-categórica-boxplots",
+    "title": "Lección 2: Tipos de datos y estructura de la información",
+    "section": "9 Relación entre una variable numérica y una categórica: boxplots",
+    "text": "9 Relación entre una variable numérica y una categórica: boxplots\nQueremos comparar la distribución del ingreso mensual entre hombres y mujeres. Aquí tenemos una variable numérica (ingreso_mensual) y una categórica (sexo). El gráfico adecuado es el boxplot (diagrama de caja y bigotes):\n\nggplot(empleo_ocup, aes(x = nivel_educacional, y = ingreso_mensual)) +\n  geom_boxplot()\n\n\n\n\n\n\n\n\n¿Qué observas? Compara las medianas (la línea dentro de la caja), la dispersión (tamaño de las cajas) y la presencia de valores atípicos (puntos fuera de los bigotes). ¿Hay diferencias notables entre sexos?\n\nggplot(empleo_ocup, aes(x = nivel_educacional, y = horas_trabajo)) +\n  geom_boxplot()",
+    "crumbs": [
+      "Lecciones",
+      "Lección 2: Tipos de datos y estructura de la información"
+    ]
+  },
+  {
+    "objectID": "epdi/lecciones/leccion-2-tipos-de-datos.html#mal-ejemplo-forzar-un-gráfico-inadecuado",
+    "href": "epdi/lecciones/leccion-2-tipos-de-datos.html#mal-ejemplo-forzar-un-gráfico-inadecuado",
+    "title": "Lección 2: Tipos de datos y estructura de la información",
+    "section": "10 (Mal) Ejemplo: forzar un gráfico inadecuado",
+    "text": "10 (Mal) Ejemplo: forzar un gráfico inadecuado\nFinalmente, probemos un gráfico que no es apropiado para el tipo de variables que tenemos. Queremos relacionar ingreso mensual (numérica) con horas de trabajo (también numérica), pero usamos un geom_boxplot() que está diseñado para una numérica y una categórica:\n\nggplot(empleo_ocup, aes(x = ingreso_mensual, y = horas_trabajo)) +\n  geom_boxplot()\n\n\n\n\n\n\n\n\n\n¿Por qué es un mal ejemplo?\n\nPorque el boxplot agrupa por los valores únicos de x, y al ser ingreso_mensual una variable continua con muchos valores distintos, cada grupo tiene muy pocos datos (a menudo uno solo). El resultado es un gráfico confuso que no muestra ninguna estructura útil. Este error es común cuando no se piensa en la naturaleza de las variables antes de graficar.",
+    "crumbs": [
+      "Lecciones",
+      "Lección 2: Tipos de datos y estructura de la información"
+    ]
+  },
+  {
+    "objectID": "epdi/lecciones/leccion-2-tipos-de-datos.html#cuestionario-grupal-portafolio-tipos-de-datos",
+    "href": "epdi/lecciones/leccion-2-tipos-de-datos.html#cuestionario-grupal-portafolio-tipos-de-datos",
+    "title": "Lección 2: Tipos de datos y estructura de la información",
+    "section": "11 Cuestionario Grupal (Portafolio): Tipos de Datos",
+    "text": "11 Cuestionario Grupal (Portafolio): Tipos de Datos\nUtiliza estos enlaces para contestar las siguientes preguntas:\n\nMercado laboral\nOcupación y desocupación\n\n\nSegún el documento “Metodología Encuesta Nacional de Empleo ENE 2020”, ¿Cuál es la edad de la población objetivo?\nEn referencia al mismo documento anterior, ¿Cómo define el Glosario del documento “Brecha de género”? Da un ejemplo que conozcas donde se presente esta brecha.\nLee atentamente este extracto:\n\n“Tal y como se define en las normas internacionales, existen tres categorías principales, personas ocupadas, personas desocupadas y personas fuera de la fuerza de trabajo, por lo que la población activa está formada por las personas en edad de trabajar que participan activamente en el mercado de trabajo, es decir la suma de las personas ocupadas y las desocupadas (personas cesantes y personas que buscan trabajo por primera vez). En conjunto, estos dos grupos de población en edad de trabajar representan la oferta de mano de obra para la producción de bienes y servicios a cambio de la remuneración o beneficio que existe en un país en un momento dado. Por otro lado, las personas fuera de la fuerza de trabajo son aquellas personas en edad de trabajar que durante el período de referencia no estaban ni en la ocupación ni en la desocupación”.\n\n\nA partir de este extracto, explica quién es una persona fuera de la fuerza de trabajo y da un ejemplo concreto.\n\n¿Es lo mismo estar desempleado que estar fuera de la fuerza de trabajo?\n¿Por qué el último gráfico (ingreso vs horas) es un mal ejemplo? ¿Qué gráfico sería el adecuado?",
+    "crumbs": [
+      "Lecciones",
+      "Lección 2: Tipos de datos y estructura de la información"
+    ]
+  },
+  {
     "objectID": "epdi/lecciones/leccion-1-introduccion-a-los-datos.html#google-colaboratory-colab",
     "href": "epdi/lecciones/leccion-1-introduccion-a-los-datos.html#google-colaboratory-colab",
     "title": "Lección 1: Introducción a los datos",

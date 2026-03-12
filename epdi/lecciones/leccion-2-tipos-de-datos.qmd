@@ -2,7 +2,6 @@
 title: "Lección 2: Tipos de datos y estructura de la información"
 date: 2026-03-12
 categories: [EPDI]
-draft: true
 description: >
   Estudio de la estructura de una matriz de datos y clasificación de variables mediante el análisis del conjunto empleo50 utilizando R.
 

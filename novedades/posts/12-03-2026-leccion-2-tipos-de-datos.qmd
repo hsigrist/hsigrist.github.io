@@ -1,0 +1,10 @@
+---
+title: "Nueva lección: Lección 2 Tipos de datos"
+date: 2026-03-12
+date-format: "D MMMM, YYYY"
+author: "Hans Sigrist"
+categories: [EPDI]
+lang: es
+---
+
+Ya está disponible la [Lección 2 Tipos de datos](../../epdi/lecciones/leccion-2-tipos-de-datos.qmd). Existe una versión en PDF, misma que se ha entregado en clases impresa.
