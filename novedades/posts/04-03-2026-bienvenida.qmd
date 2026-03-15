@@ -5,6 +5,7 @@ date-format: "D MMMM, YYYY"
 author: "Hans Sigrist"
 categories: [EPDI]
 lang: es
+image: "/epdi/imagenes/fig-portada-gapminder-1.png"
 ---
 
 Bienvenidos al sitio de las asignaturas de *Formación Diferenciada* del Prof. Hans Sigrist.

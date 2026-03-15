@@ -11,7 +11,14 @@
     "href": "novedades/index.html",
     "title": "Novedades",
     "section": "",
-    "text": "Novedades del sitio.\n\n\n\n\n\n\n\n\n\nNueva lección: Lección 2 Tipos de datos\n\n\n\nEPDI\n\n\n\n\n\n\n12 mar, 2026\n\n\n\n\n\n\n\nNueva lección: Lección 1 Introducción a los datos\n\n\n\nEPDI\n\n\n\n\n\n\n5 mar, 2026\n\n\n\n\n\n\n\nBienvenida\n\n\n\nEPDI\n\n\n\n\n\n\n4 mar, 2026\n\n\n\n\n\nNo hay resultados"
+    "text": "Novedades del sitio.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPesticidas en San Felipe y pingüinos calvos: una correlación muy espuria\n\n\n\nEPDI\n\nHumor\n\n\n\n\n\n\n15 mar, 2026\n\n3 minutos\n\n564 palabras\n\n\n\n\n\n\n\n\n\n\n\n\nNueva presentación: Las lavadoras previenen los embarazos\n\n\n\nEPDI\n\nPresentaciones\n\n\n\n\n\n\n14 mar, 2026\n\n1 minutos\n\n153 palabras\n\n\n\n\n\n\n\n\n\n\n\n\nNueva lección: Lección 2 Tipos de datos\n\n\n\nEPDI\n\n\n\n\n\n\n12 mar, 2026\n\n1 minutos\n\n22 palabras\n\n\n\n\n\n\n\n\n\n\n\n\nNueva presentación: EPDI\n\n\n\nEPDI\n\nPresentaciones\n\n\n\n\n\n\n11 mar, 2026\n\n1 minutos\n\n16 palabras\n\n\n\n\n\n\n\n\n\n\n\n\nNueva lección: Lección 1 Introducción a los datos\n\n\n\nEPDI\n\n\n\n\n\n\n5 mar, 2026\n\n1 minutos\n\n23 palabras\n\n\n\n\n\n\n\n\n\n\n\n\nBienvenida\n\n\n\nEPDI\n\n\n\n\n\n\n4 mar, 2026\n\n1 minutos\n\n32 palabras\n\n\n\n\n\nNo hay resultados"
+  },
+  {
+    "objectID": "novedades/posts/12-03-2026-leccion-2-tipos-de-datos.html",
+    "href": "novedades/posts/12-03-2026-leccion-2-tipos-de-datos.html",
+    "title": "Nueva lección: Lección 2 Tipos de datos",
+    "section": "",
+    "text": "Ya está disponible la Lección 2 Tipos de datos. Existe una versión en PDF, misma que se ha entregado en clases impresa."
   },
   {
     "objectID": "novedades/posts/04-03-2026-bienvenida.html",
@@ -21,18 +28,77 @@
     "text": "Bienvenidos al sitio de las asignaturas de Formación Diferenciada del Prof. Hans Sigrist.\nEn este espacio se irán publicando las novedades del curso EPDI (Estadística y Probabilidad Descriptiva e Inferencial) . Revisar periódicamente."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Acerca de",
+    "objectID": "novedades/posts/11-03-2026-epdi.html",
+    "href": "novedades/posts/11-03-2026-epdi.html",
+    "title": "Nueva presentación: EPDI",
     "section": "",
-    "text": "Profesor y docente de Matemática en Colegio Portaliano y en Universidad de Playa Ancha - campus San Felipe.\n\nhsigrist@colegioportaliano.cl\nhans.sigrist@upla.cl"
+    "text": "Acabo de publicar una presentación titulada EPDI. En ella se resume las características de la asignatura."
   },
   {
-    "objectID": "about.html#hans-sigrist",
-    "href": "about.html#hans-sigrist",
-    "title": "Acerca de",
-    "section": "",
-    "text": "Profesor y docente de Matemática en Colegio Portaliano y en Universidad de Playa Ancha - campus San Felipe.\n\nhsigrist@colegioportaliano.cl\nhans.sigrist@upla.cl"
+    "objectID": "epdi/presentaciones/presentacion-edpi.html#cuestionarios-grupales",
+    "href": "epdi/presentaciones/presentacion-edpi.html#cuestionarios-grupales",
+    "title": "EPDI",
+    "section": "Cuestionarios grupales",
+    "text": "Cuestionarios grupales\n\nFrecuencia: periódica (aprox. cada 1–2 semanas).\nModalidad: grupos de 3 integrantes.\nSe utilizan rúbricas previamente publicadas.\nCada cuestionario forma parte del Portafolio semestral.",
+    "crumbs": [
+      "Presentaciones",
+      "EPDI"
+    ]
+  },
+  {
+    "objectID": "epdi/presentaciones/presentacion-edpi.html#mini-informe-aplicado",
+    "href": "epdi/presentaciones/presentacion-edpi.html#mini-informe-aplicado",
+    "title": "EPDI",
+    "section": "Mini-informe aplicado",
+    "text": "Mini-informe aplicado\nSe realizará al menos un mini-informe por semestre.\n\nExtensión máxima: 1 página de análisis.\nIncluye: 1 tabla + 1 gráfico + interpretación (150–250 palabras).\nCódigo reproducible.\nCada mini-informe forma parte del Portafolio semestral.",
+    "crumbs": [
+      "Presentaciones",
+      "EPDI"
+    ]
+  },
+  {
+    "objectID": "epdi/presentaciones/presentacion-edpi.html#el-portafolio-reúne",
+    "href": "epdi/presentaciones/presentacion-edpi.html#el-portafolio-reúne",
+    "title": "EPDI",
+    "section": "El portafolio reúne",
+    "text": "El portafolio reúne\n\nCuestionarios corregidos (según rol en el grupo).\nRúbricas correspondientes.\nMini-informe(s).",
+    "crumbs": [
+      "Presentaciones",
+      "EPDI"
+    ]
+  },
+  {
+    "objectID": "epdi/presentaciones/presentacion-edpi.html#criterios-generales-de-corrección",
+    "href": "epdi/presentaciones/presentacion-edpi.html#criterios-generales-de-corrección",
+    "title": "EPDI",
+    "section": "Criterios generales de corrección",
+    "text": "Criterios generales de corrección\nEn todos los instrumentos se considera:\n\nPertinencia de la respuesta.\nUso correcto de conceptos.\nCoherencia lógica.\nClaridad en la argumentación.\nPresentación ordenada.",
+    "crumbs": [
+      "Presentaciones",
+      "EPDI"
+    ]
+  },
+  {
+    "objectID": "epdi/presentaciones/presentacion-edpi.html#características",
+    "href": "epdi/presentaciones/presentacion-edpi.html#características",
+    "title": "EPDI",
+    "section": "Características",
+    "text": "Características\n\nLos grupos son de exactamente 3 integrantes.\nCada integrante debe comprender el trabajo entregado.\nEl/la jefe/a de grupo conserva el cuestionario original corregido.\nLos demás integrantes conservan su rúbrica individual.",
+    "crumbs": [
+      "Presentaciones",
+      "EPDI"
+    ]
+  },
+  {
+    "objectID": "epdi/presentaciones/presentacion-edpi.html#entregas-y-puntualidad",
+    "href": "epdi/presentaciones/presentacion-edpi.html#entregas-y-puntualidad",
+    "title": "EPDI",
+    "section": "Entregas y puntualidad",
+    "text": "Entregas y puntualidad\n\nLas fechas de entrega se informarán oportunamente.\nEntregas fuera de plazo podrán estar sujetas a penalización.\nLa ausencia injustificada en actividades evaluadas deberá regularizarse según normativa institucional.",
+    "crumbs": [
+      "Presentaciones",
+      "EPDI"
+    ]
   },
   {
     "objectID": "epdi/index.html",
@@ -419,70 +485,106 @@
     ]
   },
   {
-    "objectID": "epdi/presentaciones/presentacion-edpi.html#cuestionarios-grupales",
-    "href": "epdi/presentaciones/presentacion-edpi.html#cuestionarios-grupales",
-    "title": "EPDI",
-    "section": "Cuestionarios grupales",
-    "text": "Cuestionarios grupales\n\nFrecuencia: periódica (aprox. cada 1–2 semanas).\nModalidad: grupos de 3 integrantes.\nSe utilizan rúbricas previamente publicadas.\nCada cuestionario forma parte del Portafolio semestral.",
+    "objectID": "epdi/presentaciones/las-lavadoras-previenen-el-embarazo.html#un-viaje-al-corazón-de-la-correlación",
+    "href": "epdi/presentaciones/las-lavadoras-previenen-el-embarazo.html#un-viaje-al-corazón-de-la-correlación",
+    "title": "Las lavadoras previenen el embarazo",
+    "section": "Un viaje al corazón de la correlación",
+    "text": "Un viaje al corazón de la correlación",
     "crumbs": [
       "Presentaciones",
-      "EPDI"
+      "Las lavadoras previenen el embarazo"
     ]
   },
   {
-    "objectID": "epdi/presentaciones/presentacion-edpi.html#mini-informe-aplicado",
-    "href": "epdi/presentaciones/presentacion-edpi.html#mini-informe-aplicado",
-    "title": "EPDI",
-    "section": "Mini-informe aplicado",
-    "text": "Mini-informe aplicado\nSe realizará al menos un mini-informe por semestre.\n\nExtensión máxima: 1 página de análisis.\nIncluye: 1 tabla + 1 gráfico + interpretación (150–250 palabras).\nCódigo reproducible.\nCada mini-informe forma parte del Portafolio semestral.",
+    "objectID": "epdi/presentaciones/las-lavadoras-previenen-el-embarazo.html#el-estudio-curioso",
+    "href": "epdi/presentaciones/las-lavadoras-previenen-el-embarazo.html#el-estudio-curioso",
+    "title": "Las lavadoras previenen el embarazo",
+    "section": "El estudio curioso",
+    "text": "El estudio curioso\nEn Taiwán, un equipo de investigadores estudió el uso de anticonceptivos y recolectó todo tipo de datos.\nHallazgo inesperado: El mejor predictor del uso de anticonceptivos era la cantidad de electrodomésticos en el hogar (tostadoras, ventiladores, licuadoras, ¡lavadoras!).\n\nEste es un ejemplo real citado por Dunn (2001). La correlación era alta y positiva: más electrodomésticos, más uso de anticonceptivos.",
     "crumbs": [
       "Presentaciones",
-      "EPDI"
+      "Las lavadoras previenen el embarazo"
     ]
   },
   {
-    "objectID": "epdi/presentaciones/presentacion-edpi.html#el-portafolio-reúne",
-    "href": "epdi/presentaciones/presentacion-edpi.html#el-portafolio-reúne",
-    "title": "EPDI",
-    "section": "El portafolio reúne",
-    "text": "El portafolio reúne\n\nCuestionarios corregidos (según rol en el grupo).\nRúbricas correspondientes.\nMini-informe(s).",
+    "objectID": "epdi/presentaciones/las-lavadoras-previenen-el-embarazo.html#entonces",
+    "href": "epdi/presentaciones/las-lavadoras-previenen-el-embarazo.html#entonces",
+    "title": "Las lavadoras previenen el embarazo",
+    "section": "¿Entonces…?",
+    "text": "¿Entonces…?\nSi seguimos esta lógica…\n\nMás lavadoras → menos embarazos\n¿Regalamos lavadoras en los colegios?\n¿Solución para el embarazo adolescente?\n\n–\nObviamente, no. La idea es absurda. Pero los datos mostraban una correlación real.",
     "crumbs": [
       "Presentaciones",
-      "EPDI"
+      "Las lavadoras previenen el embarazo"
     ]
   },
   {
-    "objectID": "epdi/presentaciones/presentacion-edpi.html#criterios-generales-de-corrección",
-    "href": "epdi/presentaciones/presentacion-edpi.html#criterios-generales-de-corrección",
-    "title": "EPDI",
-    "section": "Criterios generales de corrección",
-    "text": "Criterios generales de corrección\nEn todos los instrumentos se considera:\n\nPertinencia de la respuesta.\nUso correcto de conceptos.\nCoherencia lógica.\nClaridad en la argumentación.\nPresentación ordenada.",
+    "objectID": "epdi/presentaciones/las-lavadoras-previenen-el-embarazo.html#el-problema-de-la-tercera-variable",
+    "href": "epdi/presentaciones/las-lavadoras-previenen-el-embarazo.html#el-problema-de-la-tercera-variable",
+    "title": "Las lavadoras previenen el embarazo",
+    "section": "El problema de la tercera variable",
+    "text": "El problema de la tercera variable",
     "crumbs": [
       "Presentaciones",
-      "EPDI"
+      "Las lavadoras previenen el embarazo"
     ]
   },
   {
-    "objectID": "epdi/presentaciones/presentacion-edpi.html#características",
-    "href": "epdi/presentaciones/presentacion-edpi.html#características",
-    "title": "EPDI",
-    "section": "Características",
-    "text": "Características\n\nLos grupos son de exactamente 3 integrantes.\nCada integrante debe comprender el trabajo entregado.\nEl/la jefe/a de grupo conserva el cuestionario original corregido.\nLos demás integrantes conservan su rúbrica individual.",
+    "objectID": "epdi/presentaciones/las-lavadoras-previenen-el-embarazo.html#la-verdadera-causa-educación-y-nivel-socioeconómico",
+    "href": "epdi/presentaciones/las-lavadoras-previenen-el-embarazo.html#la-verdadera-causa-educación-y-nivel-socioeconómico",
+    "title": "Las lavadoras previenen el embarazo",
+    "section": "La verdadera causa: educación y nivel socioeconómico",
+    "text": "La verdadera causa: educación y nivel socioeconómico\n\n\nLa educación (y los ingresos) explican ambas variables.\nLos electrodomésticos son solo un marcador, no la causa.",
     "crumbs": [
       "Presentaciones",
-      "EPDI"
+      "Las lavadoras previenen el embarazo"
     ]
   },
   {
-    "objectID": "epdi/presentaciones/presentacion-edpi.html#entregas-y-puntualidad",
-    "href": "epdi/presentaciones/presentacion-edpi.html#entregas-y-puntualidad",
-    "title": "EPDI",
-    "section": "Entregas y puntualidad",
-    "text": "Entregas y puntualidad\n\nLas fechas de entrega se informarán oportunamente.\nEntregas fuera de plazo podrán estar sujetas a penalización.\nLa ausencia injustificada en actividades evaluadas deberá regularizarse según normativa institucional.",
+    "objectID": "epdi/presentaciones/las-lavadoras-previenen-el-embarazo.html#el-problema-de-la-tercera-variable-1",
+    "href": "epdi/presentaciones/las-lavadoras-previenen-el-embarazo.html#el-problema-de-la-tercera-variable-1",
+    "title": "Las lavadoras previenen el embarazo",
+    "section": "El problema de la tercera variable",
+    "text": "El problema de la tercera variable\nEn cualquier correlación, puede haber una tercera variable (o más) que sea la verdadera causa.\n\nX → Y (electrodomésticos causan anticonceptivos)\nY → X (anticonceptivos causan compra de electrodomésticos)\nZ → X e Y (educación causa ambos)\n\nSin un experimento, no podemos saber cuál es la dirección real.",
     "crumbs": [
       "Presentaciones",
-      "EPDI"
+      "Las lavadoras previenen el embarazo"
     ]
+  },
+  {
+    "objectID": "epdi/presentaciones/las-lavadoras-previenen-el-embarazo.html#la-lección-de-david-hume",
+    "href": "epdi/presentaciones/las-lavadoras-previenen-el-embarazo.html#la-lección-de-david-hume",
+    "title": "Las lavadoras previenen el embarazo",
+    "section": "La lección de David Hume",
+    "text": "La lección de David Hume\n\n“Nunca percibimos las causas directamente, solo inferimos que un evento sigue a otro por costumbre.”\n\n\nLa correlación es un hábito estadístico: vemos que dos cosas ocurren juntas y asumimos que una causa la otra.\nPero la ciencia requiere evidencia más sólida: experimentos, control de variables, y pensamiento crítico.",
+    "crumbs": [
+      "Presentaciones",
+      "Las lavadoras previenen el embarazo"
+    ]
+  },
+  {
+    "objectID": "epdi/presentaciones/las-lavadoras-previenen-el-embarazo.html#conclusión-las-lavadoras-previenen-el-embarazo",
+    "href": "epdi/presentaciones/las-lavadoras-previenen-el-embarazo.html#conclusión-las-lavadoras-previenen-el-embarazo",
+    "title": "Las lavadoras previenen el embarazo",
+    "section": "Conclusión: ¿Las lavadoras previenen el embarazo?",
+    "text": "Conclusión: ¿Las lavadoras previenen el embarazo?\nNo. Pero la estadística nos ayudó a descubrir una relación inesperada que, al profundizar, nos reveló algo más importante: el papel de la educación y el nivel socioeconómico en la salud reproductiva.\nMoraleja:\n\nCorrelación no implica causalidad.\nPero puede guiarnos hacia preguntas más interesantes.",
+    "crumbs": [
+      "Presentaciones",
+      "Las lavadoras previenen el embarazo"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Acerca de",
+    "section": "",
+    "text": "Profesor y docente de Matemática en Colegio Portaliano y en Universidad de Playa Ancha - campus San Felipe.\n\nhsigrist@colegioportaliano.cl\nhans.sigrist@upla.cl"
+  },
+  {
+    "objectID": "about.html#hans-sigrist",
+    "href": "about.html#hans-sigrist",
+    "title": "Acerca de",
+    "section": "",
+    "text": "Profesor y docente de Matemática en Colegio Portaliano y en Universidad de Playa Ancha - campus San Felipe.\n\nhsigrist@colegioportaliano.cl\nhans.sigrist@upla.cl"
   },
   {
     "objectID": "novedades/posts/05-03-2026-leccion-1-introduccion-a-los-datos.html",
@@ -492,11 +594,32 @@
     "text": "Ya está disponible la Lección 1 Introducción a los datos. Existe una versión en PDF, misma que se ha entregado en clases impresa."
   },
   {
-    "objectID": "novedades/posts/12-03-2026-leccion-2-tipos-de-datos.html",
-    "href": "novedades/posts/12-03-2026-leccion-2-tipos-de-datos.html",
-    "title": "Nueva lección: Lección 2 Tipos de datos",
+    "objectID": "novedades/posts/14-03-2026-las-lavadoras-previenen-los-embarazos.html",
+    "href": "novedades/posts/14-03-2026-las-lavadoras-previenen-los-embarazos.html",
+    "title": "Nueva presentación: Las lavadoras previenen los embarazos",
     "section": "",
-    "text": "Ya está disponible la Lección 2 Tipos de datos. Existe una versión en PDF, misma que se ha entregado en clases impresa."
+    "text": "Acabo de publicar una presentación titulada Las lavadoras previenen los embarazos. El título es, por supuesto, una provocación.\nEn ella exploramos uno de los conceptos más importantes (y malentendidos) de la estadística: la diferencia entre correlación y causalidad. Usamos un ejemplo clásico y algo absurdo (la relación entre el número de películas de Nicolas Cage y los ahogamientos en piscinas) para entender por qué no debemos saltar a conclusiones apresuradas cuando vemos que dos cosas parecen relacionarse. Para explorar más puedes leer este artículo de National Geographic Nick Cage Movies Vs. Drownings, and More Strange (but Spurious) Correlations\nEntender esto te ayudará a:\n\nLeer de forma más crítica noticias y estudios que usan datos.\nEvitar caer en falsas creencias o “mitos estadísticos”.\nAplicar este pensamiento en tus propios análisis del curso.\n\nLa presentación es corta, visual y con ejemplos entretenidos. Ideal para ver antes de nuestra próxima clase.\nEnlace directo: Las lavadoras previenen los embarazos (presentación Quarto)"
+  },
+  {
+    "objectID": "novedades/posts/14-03-2026-pinguinos-calvos.html",
+    "href": "novedades/posts/14-03-2026-pinguinos-calvos.html",
+    "title": "Pesticidas en San Felipe y pingüinos calvos: una correlación muy espuria",
+    "section": "",
+    "text": "Imaginemos que un estudio publicado en la prestigiosa (y totalmente inventada) Revista Internacional de Correlaciones Improbables revela un descubrimiento alarmante: existe una correlación casi perfecta entre la cantidad de pesticidas aplicados en los viñedos de San Felipe y la incidencia de pingüinos calvos en la Antártida.\nLos datos, meticulosamente recolectados por intrépidos científicos (y por nosotros, aquí en el escritorio), muestran que en los años de mayor aplicación de pesticidas en nuestra querida ciudad, aumenta misteriosamente el número de avistamientos de pingüinos con zonas sin plumas en el Polo Sur.\n¿Cómo es posible? ¿Acaso los pesticidas viajan miles de kilómetros para atacar el folículo piloso de las aves marinas? ¿O es que los pingüinos, solidarios con los viñateros, se están quedando calvos de la preocupación?"
+  },
+  {
+    "objectID": "novedades/posts/14-03-2026-pinguinos-calvos.html#una-teoría-absurda-pero-con-coherencia-interna",
+    "href": "novedades/posts/14-03-2026-pinguinos-calvos.html#una-teoría-absurda-pero-con-coherencia-interna",
+    "title": "Pesticidas en San Felipe y pingüinos calvos: una correlación muy espuria",
+    "section": "1 Una teoría (absurda pero con coherencia interna)",
+    "text": "1 Una teoría (absurda pero con coherencia interna)\nPara darle rigor a esta disparatada hipótesis, podemos construir una explicación “casi causal”. Imaginemos el siguiente mecanismo:\n\nLas aplicaciones aéreas de pesticidas en los viñedos de San Felipe generan una fina nube de partículas que, ayudadas por los vientos predominantes de la cordillera de los Andes, ascienden hasta la tropopausa.\nEstas partículas, según nuestra teoría, tienen la peculiar propiedad de reflejar la radiación ultravioleta de una manera que, al llegar a la Antártida, alteran el ángulo de incidencia de los rayos solares sobre las colonias de pingüinos.\nLos pingüinos, para compensar este cambio lumínico, permanecen más tiempo tomando sol, con la cabeza erguida en una posición poco natural.\nLa exposición prolongada y en un ángulo inusual provoca, después de varias generaciones, alopecia psicogénica inducida por estrés postural en estas aves.\n\nPor supuesto, cada paso de esta explicación es una suposición descabellada. Pero, como diría el estadístico, la correlación está ahí."
+  },
+  {
+    "objectID": "novedades/posts/14-03-2026-pinguinos-calvos.html#los-datos-simulados-pero-con-cariño",
+    "href": "novedades/posts/14-03-2026-pinguinos-calvos.html#los-datos-simulados-pero-con-cariño",
+    "title": "Pesticidas en San Felipe y pingüinos calvos: una correlación muy espuria",
+    "section": "2 Los datos (simulados, pero con cariño)",
+    "text": "2 Los datos (simulados, pero con cariño)\nPara ilustrar esta profunda verdad científica, he generado unos datos con R. En el siguiente gráfico, la línea azul muestra las toneladas de pesticidas aplicadas en San Felipe (simuladas con una tendencia creciente y algo de ruido). La línea roja muestra el porcentaje de pingüinos con signos de calvicie observados en la Antártida (también simulados para que sigan el mismo patrón).\nLa coincidencia es… inquietante."
   },
   {
     "objectID": "ldi/index.html",

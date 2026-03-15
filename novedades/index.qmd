@@ -4,6 +4,8 @@ listing:
   contents: posts
   sort: "date desc"
   type: default
+  image-align: right          # ← Opcional: coloca la imagen a la derecha del texto
+  image-height: 120px         # ← Altura de la imagen (opcional, ajusta según prefieras)
   categories: true
   page-size: 10
   feed: true
@@ -11,10 +13,15 @@ listing:
     - date
     - title
     - categories
+    - image                   # ← ¡AÑADIDO! Ahora el listing usará el campo image de cada post
+    - reading-time
+    - word-count
   field-display-names:
     date: "Fecha"
     title: "Título"
     categories: "Categorías"
+    reading-time: "Tiempo de lectura"
+    word-count: "Número de palabras"
   field-links:
     - title
   date-format: "D MMM, YYYY"

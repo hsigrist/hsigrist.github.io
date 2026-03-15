@@ -1,0 +1,82 @@
+---
+title: "Pesticidas en San Felipe y pingüinos calvos: una correlación muy espuria"
+date: 2026-03-15
+date-format: "D MMMM, YYYY"
+author: "Hans Sigrist"
+categories: [EPDI, Humor]
+lang: es
+image: "/epdi/imagenes/pinguinos_pesticidas.png"
+description: "¿Los pesticidas en los viñedos de San Felipe causan alopecia en pingüinos antárticos? Un análisis (muy) serio de una correlación (muy) espuria."
+---
+
+Imaginemos que un estudio publicado en la prestigiosa (y totalmente inventada) *Revista Internacional de Correlaciones Improbables* revela un descubrimiento alarmante: **existe una correlación casi perfecta entre la cantidad de pesticidas aplicados en los viñedos de San Felipe y la incidencia de pingüinos calvos en la Antártida**.
+
+Los datos, meticulosamente recolectados por intrépidos científicos (y por nosotros, aquí en el escritorio), muestran que en los años de mayor aplicación de pesticidas en nuestra querida ciudad, aumenta misteriosamente el número de avistamientos de pingüinos con zonas sin plumas en el Polo Sur.
+
+¿Cómo es posible? ¿Acaso los pesticidas viajan miles de kilómetros para atacar el folículo piloso de las aves marinas? ¿O es que los pingüinos, solidarios con los viñateros, se están quedando calvos de la preocupación?
+
+## Una teoría (absurda pero con coherencia interna)
+
+Para darle rigor a esta disparatada hipótesis, podemos construir una **explicación "casi causal"**. Imaginemos el siguiente mecanismo:
+
+1. **Las aplicaciones aéreas de pesticidas** en los viñedos de San Felipe generan una fina nube de partículas que, ayudadas por los vientos predominantes de la cordillera de los Andes, ascienden hasta la tropopausa.
+2. Estas partículas, según nuestra teoría, tienen la peculiar propiedad de reflejar la radiación ultravioleta de una manera que, al llegar a la Antártida, alteran el ángulo de incidencia de los rayos solares sobre las colonias de pingüinos.
+3. Los pingüinos, para compensar este cambio lumínico, **permanecen más tiempo tomando sol**, con la cabeza erguida en una posición poco natural.
+4. La exposición prolongada y en un ángulo inusual provoca, después de varias generaciones, **alopecia psicogénica inducida por estrés postural** en estas aves.
+
+Por supuesto, cada paso de esta explicación es una suposición descabellada. Pero, como diría el estadístico, **la correlación está ahí**.
+
+## Los datos (simulados, pero con cariño)
+
+Para ilustrar esta profunda verdad científica, he generado unos datos con R. En el siguiente gráfico, la línea azul muestra las toneladas de pesticidas aplicadas en San Felipe (simuladas con una tendencia creciente y algo de ruido). La línea roja muestra el porcentaje de pingüinos con signos de calvicie observados en la Antártida (también simulados para que sigan el mismo patrón).
+
+La coincidencia es... inquietante.
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-width: 12
+#| fig-height: 6
+#| fig-align: center
+library(ggplot2)
+library(dplyr)
+
+set.seed(2026) # Para que sea reproducible
+
+# Simular años
+años <- 2000:2025
+
+# Simular pesticidas en San Felipe (toneladas, con tendencia creciente y ruido)
+pesticidas <- 100 + (años - 2000) * 5 + rnorm(length(años), 0, 15)
+
+# Simular pingüinos calvos (índice, siguiendo la misma tendencia)
+pingüinos <- 5 + (años - 2000) * 1.2 + rnorm(length(años), 0, 4)
+
+# Crear data frame
+datos <- data.frame(
+  año = rep(años, 2),
+  valor = c(pesticidas, pingüinos),
+  variable = rep(c("Pesticidas en San Felipe (toneladas)", "Índice de pingüinos calvos"), each = length(años))
+)
+
+# Gráfico
+ggplot(datos, aes(x = año, y = valor, color = variable)) +
+  geom_line(linewidth = 1.2) +
+  geom_point(size = 2) +
+  scale_color_manual(values = c("#1E88E5", "#DC143C")) +
+  labs(
+    title = "¿Pesticidas en San Felipe causan calvicie en pingüinos?",
+    subtitle = "Una correlación espuria con explicación... inventada",
+    x = "Año",
+    y = "Valor (escalas arbitrarias)",
+    caption = "Datos simulados con R. Cualquier parecido con la realidad es pura coincidencia (y mala ciencia).",
+    color = "Variable"
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title = element_text(face = "bold", hjust = 0.5),
+    plot.subtitle = element_text(hjust = 0.5),
+    legend.position = "bottom"
+  )
+```

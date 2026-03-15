@@ -1,0 +1,23 @@
+---
+title: "Nueva presentación: Las lavadoras previenen los embarazos"
+date: 2026-03-14
+date-format: "D MMMM, YYYY"
+author: "Hans Sigrist"
+categories: [EPDI, Presentaciones]
+lang: es
+image: "/epdi/imagenes/nicolas-cage-spurious-correlation.png"
+---
+
+Acabo de publicar una presentación titulada **[Las lavadoras previenen los embarazos](../../epdi/presentaciones/las-lavadoras-previenen-el-embarazo.qmd)**. El título es, por supuesto, una provocación.
+
+En ella exploramos uno de los conceptos más importantes (y malentendidos) de la estadística: **la diferencia entre correlación y causalidad**. Usamos un ejemplo clásico y algo absurdo (la relación entre el número de películas de Nicolas Cage y los ahogamientos en piscinas) para entender por qué no debemos saltar a conclusiones apresuradas cuando vemos que dos cosas parecen relacionarse. Para explorar más puedes leer este artículo de National Geographic [Nick Cage Movies Vs. Drownings, and More Strange (but Spurious) Correlations](https://www.nationalgeographic.com/science/article/nick-cage-movies-vs-drownings-and-more-strange-but-spurious-correlations)
+
+Entender esto te ayudará a:
+
+- Leer de forma más crítica noticias y estudios que usan datos.
+- Evitar caer en falsas creencias o "mitos estadísticos".
+- Aplicar este pensamiento en tus propios análisis del curso.
+
+La presentación es corta, visual y con ejemplos entretenidos. Ideal para ver antes de nuestra próxima clase.
+
+**Enlace directo:** [Las lavadoras previenen los embarazos (presentación Quarto)](../../epdi/presentaciones/las-lavadoras-previenen-el-embarazo.qmd)

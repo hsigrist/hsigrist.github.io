@@ -1,0 +1,177 @@
+---
+title: "Las lavadoras previenen el embarazo"
+subtitle: "Correlación no implica causalidad"
+author: "Prof. Hans Sigrist"
+institute: "Colegio Portaliano, San Felipe"
+date: "2026-03-14"
+lang: es
+format:
+  revealjs:
+    theme: default
+    date-format: "D MMM, YYYY"
+    navigation-mode: vertical
+    slide-number: true
+    preview-links: auto
+    logo: /epdi/imagenes/logoport.png
+    footer: "EPDI 2026 - Prof. Hans Sigrist"
+    chalkboard:
+      theme: whiteboard
+    transition: slide
+    background-transition: fade
+    auto-stretch: true
+    smaller: false
+    touch: true
+    controls: true
+    progress: true
+    center: true
+    hash: true
+    history: true
+    width: 1200
+    height: 700
+    margin: 0.1
+    min-scale: 0.2
+    max-scale: 2.5
+    callout-appearance: simple
+    code-line-numbers: false
+    incremental: true
+---
+
+# Las lavadoras previenen el embarazo
+
+## Un viaje al corazón de la correlación
+
+---
+
+## El estudio curioso
+
+En Taiwán, un equipo de investigadores estudió el uso de anticonceptivos y recolectó todo tipo de datos.
+
+**Hallazgo inesperado:**
+El mejor predictor del uso de anticonceptivos era la **cantidad de electrodomésticos** en el hogar (tostadoras, ventiladores, licuadoras, ¡lavadoras!).
+
+:::{.notes}
+Este es un ejemplo real citado por Dunn (2001). La correlación era alta y positiva: más electrodomésticos, más uso de anticonceptivos.
+:::
+
+---
+
+## ¿Entonces...?
+
+Si seguimos esta lógica...
+
+::: {.nonincremental}
+- Más lavadoras → menos embarazos
+- ¿Regalamos lavadoras en los colegios?
+- ¿Solución para el embarazo adolescente?
+:::
+
+--
+
+**Obviamente, no.** La idea es absurda. Pero los datos mostraban una correlación real.
+
+---
+
+## El problema de la tercera variable
+
+```{r}
+#| echo: false
+#| fig-width: 10
+#| fig-height: 5
+#| fig-align: center
+install.packages(c("ggplot2", "dplyr", "gridExtra", "ggrepel", "gapminder"))
+library(ggplot2)
+library(dplyr)
+
+# Crear datos simulados para ilustrar
+set.seed(123)
+n <- 50
+educacion <- runif(n, 0, 10)
+ingresos <- educacion * 1000 + rnorm(n, 0, 2000)
+electrodomesticos <- ingresos / 500 + rnorm(n, 0, 2)
+anticonceptivos <- educacion * 0.8 + rnorm(n, 0, 1)
+
+datos <- data.frame(educacion, ingresos, electrodomesticos, anticonceptivos)
+
+# Gráfico de dispersión electrodomésticos vs anticonceptivos
+p1 <- ggplot(datos, aes(x = electrodomesticos, y = anticonceptivos)) +
+  geom_point(color = "#377EB8", size = 3, alpha = 0.7) +
+  geom_smooth(method = "lm", se = FALSE, color = "#E41A1C", linetype = "dashed") +
+  labs(
+    title = "Correlación espuria",
+    x = "Número de electrodomésticos",
+    y = "Uso de anticonceptivos (índice)"
+  ) +
+  theme_minimal(base_size = 14)
+
+print(p1)
+```
+
+## La verdadera causa: educación y nivel socioeconómico
+
+```{r}
+#| echo: false
+#| fig-width: 10
+#| fig-height: 5
+#| fig-align: center
+# Gráfico de educación vs electrodomésticos y educación vs anticonceptivos
+p2 <- ggplot(datos, aes(x = educacion, y = electrodomesticos)) +
+  geom_point(color = "#4DAF4A", size = 3, alpha = 0.7) +
+  geom_smooth(method = "lm", se = FALSE, color = "#E41A1C") +
+  labs(
+    title = "Más educación → más ingresos →\nmás electrodomésticos",
+    x = "Nivel educativo (años)",
+    y = "Electrodomésticos"
+  ) +
+  theme_minimal(base_size = 14)
+
+p3 <- ggplot(datos, aes(x = educacion, y = anticonceptivos)) +
+  geom_point(color = "#984EA3", size = 3, alpha = 0.7) +
+  geom_smooth(method = "lm", se = FALSE, color = "#E41A1C") +
+  labs(
+    title = "Más educación → más información →\nmás uso de anticonceptivos",
+    x = "Nivel educativo (años)",
+    y = "Uso de anticonceptivos"
+  ) +
+  theme_minimal(base_size = 14)
+
+# Mostrar ambos gráficos en una fila
+gridExtra::grid.arrange(p2, p3, ncol = 2)
+```
+
+::: {.nonincremental}
+- La educación (y los ingresos) explican ambas variables.
+- Los electrodomésticos son solo un marcador, no la causa.
+:::
+
+## El problema de la tercera variable
+
+En cualquier correlación, puede haber una tercera variable (o más) que sea la verdadera causa.
+
+::: {.nonincremental}
+- X → Y (electrodomésticos causan anticonceptivos)
+- Y → X (anticonceptivos causan compra de electrodomésticos)
+- Z → X e Y (educación causa ambos)
+:::
+
+Sin un experimento, no podemos saber cuál es la dirección real.
+
+## La lección de David Hume
+
+>
+    "Nunca percibimos las causas directamente, solo inferimos que un evento sigue a otro por costumbre."
+
+::: {.nonincremental}
+- La correlación es un hábito estadístico: vemos que dos cosas ocurren juntas y asumimos que una causa la otra.
+- Pero la ciencia requiere evidencia más sólida: experimentos, control de variables, y pensamiento crítico.
+:::
+
+## Conclusión: ¿Las lavadoras previenen el embarazo?
+
+No. Pero la estadística nos ayudó a descubrir una relación inesperada que, al profundizar, nos reveló algo más importante: el papel de la educación y el nivel socioeconómico en la salud reproductiva.
+
+Moraleja:
+
+::: {.nonincremental}
+- Correlación no implica causalidad.
+- Pero puede guiarnos hacia preguntas más interesantes.
+:::

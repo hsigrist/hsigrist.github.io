@@ -5,6 +5,7 @@ date-format: "D MMMM, YYYY"
 author: "Hans Sigrist"
 categories: [EPDI]
 lang: es
+image: "/epdi/imagenes/65138_patient_lg.png"
 ---
 
 Ya está disponible la [Lección 1 Introducción a los datos](../../epdi/lecciones/leccion-1-introduccion-a-los-datos.qmd). Existe una versión en PDF, misma que se ha entregado en clases impresa.

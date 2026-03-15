@@ -5,6 +5,7 @@ date-format: "D MMMM, YYYY"
 author: "Hans Sigrist"
 categories: [EPDI]
 lang: es
+image: "/epdi/imagenes/63564_railroad_lg.png"
 ---
 
 Ya está disponible la [Lección 2 Tipos de datos](../../epdi/lecciones/leccion-2-tipos-de-datos.qmd). Existe una versión en PDF, misma que se ha entregado en clases impresa.

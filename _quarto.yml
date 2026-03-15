@@ -45,6 +45,7 @@ website:
         - section: "Presentaciones"
           contents:
             - epdi/presentaciones/presentacion-edpi.qmd
+            - epdi/presentaciones/las-lavadoras-previenen-el-embarazo.qmd
         - section: "Programa"
           contents:
             - epdi/programa/index.qmd
