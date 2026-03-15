@@ -3,6 +3,7 @@ project:
   output-dir: docs
   resources:
     - epdi/imagenes/**
+    - epdi/media/**
 
 website:
   title: "hsigrist"
@@ -62,6 +63,7 @@ website:
             - epdi/lecciones/leccion-1-introduccion-a-los-datos.qmd
             - epdi/lecciones/leccion-2-tipos-de-datos.qmd
             - epdi/lecciones/leccion-3-tipos-de-variables.qmd
+            - epdi/lecciones/leccion-4-principios-de-muestreo-y-diseño-de-experimentos.qmd
 
 format:
   html:

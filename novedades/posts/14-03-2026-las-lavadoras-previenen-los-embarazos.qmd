@@ -3,7 +3,7 @@ title: "Nueva presentación: Las lavadoras previenen los embarazos"
 date: 2026-03-14
 date-format: "D MMMM, YYYY"
 author: "Hans Sigrist"
-categories: [EPDI, Presentaciones]
+categories: [EPDI, presentaciones]
 lang: es
 image: "/epdi/imagenes/nicolas-cage-spurious-correlation.png"
 ---

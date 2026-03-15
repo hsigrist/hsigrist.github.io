@@ -3,7 +3,7 @@ title: "Nueva lección: Lección 1 Introducción a los datos"
 date: 2026-03-05
 date-format: "D MMMM, YYYY"
 author: "Hans Sigrist"
-categories: [EPDI]
+categories: [EPDI, lecciones]
 lang: es
 image: "/epdi/imagenes/65138_patient_lg.png"
 ---

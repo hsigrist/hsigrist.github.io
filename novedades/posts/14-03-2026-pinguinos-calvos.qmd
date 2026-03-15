@@ -3,7 +3,7 @@ title: "Pesticidas en San Felipe y pingüinos calvos: una correlación muy espur
 date: 2026-03-15
 date-format: "D MMMM, YYYY"
 author: "Hans Sigrist"
-categories: [EPDI, Humor]
+categories: [EPDI, humor]
 lang: es
 image: "/epdi/imagenes/pinguinos_pesticidas.png"
 description: "¿Los pesticidas en los viñedos de San Felipe causan alopecia en pingüinos antárticos? Un análisis (muy) serio de una correlación (muy) espuria."

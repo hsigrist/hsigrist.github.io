@@ -54,7 +54,7 @@
 
  ]]></description>
   <category>EPDI</category>
-  <category>Humor</category>
+  <category>humor</category>
   <guid>https://hsigrist.github.io/novedades/posts/14-03-2026-pinguinos-calvos.html</guid>
   <pubDate>Sun, 15 Mar 2026 03:00:00 GMT</pubDate>
   <media:content url="https://hsigrist.github.io/epdi/imagenes/pinguinos_pesticidas.png" medium="image" type="image/png" height="72" width="144"/>
@@ -84,7 +84,7 @@
 
  ]]></description>
   <category>EPDI</category>
-  <category>Presentaciones</category>
+  <category>presentaciones</category>
   <guid>https://hsigrist.github.io/novedades/posts/14-03-2026-las-lavadoras-previenen-los-embarazos.html</guid>
   <pubDate>Sat, 14 Mar 2026 03:00:00 GMT</pubDate>
   <media:content url="https://hsigrist.github.io/epdi/imagenes/nicolas-cage-spurious-correlation.png" medium="image" type="image/png" height="86" width="144"/>
@@ -105,6 +105,7 @@
 
  ]]></description>
   <category>EPDI</category>
+  <category>lecciones</category>
   <guid>https://hsigrist.github.io/novedades/posts/12-03-2026-leccion-2-tipos-de-datos.html</guid>
   <pubDate>Thu, 12 Mar 2026 03:00:00 GMT</pubDate>
   <media:content url="https://hsigrist.github.io/epdi/imagenes/63564_railroad_lg.png" medium="image" type="image/png" height="99" width="144"/>
@@ -125,7 +126,7 @@
 
  ]]></description>
   <category>EPDI</category>
-  <category>Presentaciones</category>
+  <category>presentaciones</category>
   <guid>https://hsigrist.github.io/novedades/posts/11-03-2026-epdi.html</guid>
   <pubDate>Wed, 11 Mar 2026 03:00:00 GMT</pubDate>
   <media:content url="https://hsigrist.github.io/epdi/imagenes/fig-portada-gapminder-1.png" medium="image" type="image/png" height="84" width="144"/>
@@ -146,6 +147,7 @@
 
  ]]></description>
   <category>EPDI</category>
+  <category>lecciones</category>
   <guid>https://hsigrist.github.io/novedades/posts/05-03-2026-leccion-1-introduccion-a-los-datos.html</guid>
   <pubDate>Thu, 05 Mar 2026 03:00:00 GMT</pubDate>
   <media:content url="https://hsigrist.github.io/epdi/imagenes/65138_patient_lg.png" medium="image" type="image/png" height="125" width="144"/>
