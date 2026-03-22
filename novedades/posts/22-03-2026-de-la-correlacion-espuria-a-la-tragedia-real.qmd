@@ -1,0 +1,26 @@
+---
+title: "De la correlación espuria a la tragedia real: Cuando los síntomas de un ACV se confunden con ebriedad"
+date: 2026-03-22
+date-format: "D MMMM, YYYY"
+author: "Hans Sigrist"
+categories: [EPDI]
+lang: es
+image: "/novedades/imagenes/69bdede7af427_0.jpg"
+description: "Un nuevo caso en el transporte público de Santiago muestra cómo una interpretación errónea de una correlación (conducción errática = ebriedad) puede tener consecuencias fatales cuando no se considera la verdadera causa: un ACV."
+---
+
+# Una correlación que vuelve a costar una vida
+
+En marzo de 2026, un conductor del sistema Red (ex Transantiago) sufrió un **accidente cerebrovascular (ACV)** mientras manejaba su bus. Los pasajeros, al verlo con la conducta errática, desorientado y con dificultades para hablar —síntomas típicos de un ACV— **asumieron que estaba bajo los efectos del alcohol**.
+
+Lo enfrentaron y agredieron. Días después, tras permanecer internado en estado crítico, **falleció**.
+
+El caso fue reportado por Chilevisión el 20 de marzo de 2026, con un titular que resume la trágica confusión: *"Pensaban que estaba ebrio y sufrió ACV: Conductor del Sistema Red falleció tras semanas internado"* .
+
+No es la primera vez que ocurre. En 2023, un caso casi idéntico conmocionó al país. Ahora, dos años después, la historia se repite.
+
+# ¿Qué tiene que ver esto con la estadística?
+
+Este caso es un ejemplo trágico de lo que llamamos **correlación espuria**: la asociación mental automática que hacemos entre "conducción errática + desorientación" y "conductor ebrio". Es una asociación que tiene una lógica superficial, pero que en este contexto ocultaba la verdadera causa: un evento biológico impredecible.
+
+Lo que los pasajeros no consideraron fue la **tercera variable**: el ACV produce síntomas externos casi idénticos a los de la intoxicación por alcohol. La falta de conocimiento sobre esta variable desencadenó una reacción catastrófica.

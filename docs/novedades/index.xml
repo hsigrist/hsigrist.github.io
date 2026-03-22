@@ -9,8 +9,39 @@
 <link>https://hsigrist.github.io/novedades/</link>
 <atom:link href="https://hsigrist.github.io/novedades/index.xml" rel="self" type="application/rss+xml"/>
 <description>Materiales docentes y novedades de Formación Diferenciada | Colegio Portaliano</description>
-<generator>quarto-1.8.27</generator>
-<lastBuildDate>Sun, 15 Mar 2026 03:00:00 GMT</lastBuildDate>
+<generator>quarto-1.9.36</generator>
+<lastBuildDate>Sun, 22 Mar 2026 03:00:00 GMT</lastBuildDate>
+<item>
+  <title>De la correlación espuria a la tragedia real: Cuando los síntomas de un ACV se confunden con ebriedad</title>
+  <dc:creator>Hans Sigrist</dc:creator>
+  <link>https://hsigrist.github.io/novedades/posts/22-03-2026-de-la-correlacion-espuria-a-la-tragedia-real.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="una-correlación-que-vuelve-a-costar-una-vida" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Una correlación que vuelve a costar una vida</h1>
+<p>En marzo de 2026, un conductor del sistema Red (ex Transantiago) sufrió un <strong>accidente cerebrovascular (ACV)</strong> mientras manejaba su bus. Los pasajeros, al verlo con la conducta errática, desorientado y con dificultades para hablar —síntomas típicos de un ACV— <strong>asumieron que estaba bajo los efectos del alcohol</strong>.</p>
+<p>Lo enfrentaron y agredieron. Días después, tras permanecer internado en estado crítico, <strong>falleció</strong>.</p>
+<p>El caso fue reportado por Chilevisión el 20 de marzo de 2026, con un titular que resume la trágica confusión: <em>“Pensaban que estaba ebrio y sufrió ACV: Conductor del Sistema Red falleció tras semanas internado”</em> .</p>
+<p>No es la primera vez que ocurre. En 2023, un caso casi idéntico conmocionó al país. Ahora, dos años después, la historia se repite.</p>
+</section>
+<section id="qué-tiene-que-ver-esto-con-la-estadística" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> ¿Qué tiene que ver esto con la estadística?</h1>
+<p>Este caso es un ejemplo trágico de lo que llamamos <strong>correlación espuria</strong>: la asociación mental automática que hacemos entre “conducción errática + desorientación” y “conductor ebrio”. Es una asociación que tiene una lógica superficial, pero que en este contexto ocultaba la verdadera causa: un evento biológico impredecible.</p>
+<p>Lo que los pasajeros no consideraron fue la <strong>tercera variable</strong>: el ACV produce síntomas externos casi idénticos a los de la intoxicación por alcohol. La falta de conocimiento sobre esta variable desencadenó una reacción catastrófica.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>EPDI</category>
+  <guid>https://hsigrist.github.io/novedades/posts/22-03-2026-de-la-correlacion-espuria-a-la-tragedia-real.html</guid>
+  <pubDate>Sun, 22 Mar 2026 03:00:00 GMT</pubDate>
+  <media:content url="https://hsigrist.github.io/novedades/imagenes/69bdede7af427_0.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Pesticidas en San Felipe y pingüinos calvos: una correlación muy espuria</title>
   <dc:creator>Hans Sigrist</dc:creator>
