@@ -1,7 +1,6 @@
 ---
 title: "Lección 4: Principios de muestreo y diseño de estudios"
 date: 2026-03-20
-draft: true
 categories: [EPDI]
 description: >
   Conceptos fundamentales sobre poblaciones, muestras, sesgos, tipos de muestreo y la distinción entre estudios observacionales y experimentos. Análisis crítico de ejercicios clásicos.
