@@ -1,2 +1,1315 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"></html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Hans Sigrist">
+<meta name="description" content="Conceptos fundamentales sobre poblaciones, muestras, sesgos, tipos de muestreo y la distinción entre estudios observacionales y experimentos. Análisis crítico de ejercicios clásicos.">
+
+<title>Lección 4: Principios de muestreo y diseño de estudios – hsigrist</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-f418161beb48e0141c760e455f12af2c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-a5312e2448c48544805e26358ddafd1e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-b836c0048777725ccbb1b06599d2ca6d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-a5312e2448c48544805e26358ddafd1e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkModeDefault = queryPrefersDark.matches;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    queryPrefersDark.addEventListener("change", e => {
+      if(window.localStorage.getItem("quarto-color-scheme") !== null)
+        return;
+      const alternate = e.matches
+      toggleColorMode(alternate);
+      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
+      toggleGiscusIfUsed(alternate, darkModeDefault);
+    });
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">hsigrist</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../novedades/index.html"> 
+<span class="menu-text">Novedades</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-cursos" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Cursos</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-cursos">    
+        <li>
+    <a class="dropdown-item" href="../../epdi/index.html">
+ <span class="dropdown-text">EPDI - Estadística</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../ldi/index.html">
+ <span class="dropdown-text">LDI - Cálculo</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">Acerca de</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../novedades/index.xml"> <i class="bi bi-rss" role="img" aria-label="Feed RSS de Novedades">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/hsigrist/hsigrist.github.io"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:hsigrist@colegioportaliano.cl"> <i class="bi bi-envelope" role="img" aria-label="Enviar correo">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo oscuro"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../epdi/lecciones/leccion-1-introduccion-a-los-datos.html">Lecciones</a></li><li class="breadcrumb-item"><a href="../../epdi/lecciones/leccion-4-principios-de-muestreo-y-diseño-de-experimentos.html">Lección 4: Principios de muestreo y diseño de estudios</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EPDI - Estadística y Probabilidad Descriptiva e Inferencial</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Presentaciones</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/presentaciones/presentacion-edpi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EPDI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/presentaciones/las-lavadoras-previenen-el-embarazo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Las lavadoras previenen el embarazo</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Programa</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/programa/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Programa</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Evaluación</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/evaluacion/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Evaluación</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/evaluacion/cuestionario-grupal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cuestionario grupal</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Rúbricas</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/rubricas/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rúbricas</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/rubricas/rubrica-cuestionario-grupal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rúbrica: Cuestionario Grupal</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Lecciones</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/lecciones/leccion-1-introduccion-a-los-datos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lección 1: Introducción a los datos</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/lecciones/leccion-2-tipos-de-datos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lección 2: Tipos de datos y estructura de la información</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/lecciones/leccion-3-tipos-de-variables.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lección 3: Tipos de variables</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/lecciones/leccion-4-principios-de-muestreo-y-diseño-de-experimentos.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Lección 4: Principios de muestreo y diseño de estudios</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En esta página</h2>
+   
+  <ul>
+  <li><a href="#objetivos-de-la-lección" id="toc-objetivos-de-la-lección" class="nav-link active" data-scroll-target="#objetivos-de-la-lección"><span class="header-section-number">1</span> Objetivos de la lección</a></li>
+  <li><a href="#población-y-muestra" id="toc-población-y-muestra" class="nav-link" data-scroll-target="#población-y-muestra"><span class="header-section-number">2</span> Población y muestra</a>
+  <ul class="collapse">
+  <li><a href="#conceptos-fundamentales" id="toc-conceptos-fundamentales" class="nav-link" data-scroll-target="#conceptos-fundamentales"><span class="header-section-number">2.1</span> Conceptos fundamentales</a></li>
+  <li><a href="#evidencia-anecdótica" id="toc-evidencia-anecdótica" class="nav-link" data-scroll-target="#evidencia-anecdótica"><span class="header-section-number">2.2</span> Evidencia anecdótica</a></li>
+  </ul></li>
+  <li><a href="#muestreo-aleatorio-y-sesgos" id="toc-muestreo-aleatorio-y-sesgos" class="nav-link" data-scroll-target="#muestreo-aleatorio-y-sesgos"><span class="header-section-number">3</span> Muestreo aleatorio y sesgos</a>
+  <ul class="collapse">
+  <li><a href="#la-necesidad-de-la-aleatoriedad" id="toc-la-necesidad-de-la-aleatoriedad" class="nav-link" data-scroll-target="#la-necesidad-de-la-aleatoriedad"><span class="header-section-number">3.1</span> La necesidad de la aleatoriedad</a></li>
+  <li><a href="#tipos-de-sesgos-comunes" id="toc-tipos-de-sesgos-comunes" class="nav-link" data-scroll-target="#tipos-de-sesgos-comunes"><span class="header-section-number">3.2</span> Tipos de sesgos comunes</a></li>
+  </ul></li>
+  <li><a href="#métodos-de-muestreo" id="toc-métodos-de-muestreo" class="nav-link" data-scroll-target="#métodos-de-muestreo"><span class="header-section-number">4</span> Métodos de muestreo</a>
+  <ul class="collapse">
+  <li><a href="#muestreo-aleatorio-simple-mas" id="toc-muestreo-aleatorio-simple-mas" class="nav-link" data-scroll-target="#muestreo-aleatorio-simple-mas"><span class="header-section-number">4.1</span> Muestreo aleatorio simple (MAS)</a></li>
+  <li><a href="#muestreo-estratificado" id="toc-muestreo-estratificado" class="nav-link" data-scroll-target="#muestreo-estratificado"><span class="header-section-number">4.2</span> Muestreo estratificado</a></li>
+  <li><a href="#muestreo-por-conglomerados-clusters" id="toc-muestreo-por-conglomerados-clusters" class="nav-link" data-scroll-target="#muestreo-por-conglomerados-clusters"><span class="header-section-number">4.3</span> Muestreo por conglomerados (clusters)</a></li>
+  <li><a href="#muestreo-multietápico" id="toc-muestreo-multietápico" class="nav-link" data-scroll-target="#muestreo-multietápico"><span class="header-section-number">4.4</span> Muestreo multietápico</a></li>
+  </ul></li>
+  <li><a href="#tipos-de-estudios-observacionales-vs.-experimentales" id="toc-tipos-de-estudios-observacionales-vs.-experimentales" class="nav-link" data-scroll-target="#tipos-de-estudios-observacionales-vs.-experimentales"><span class="header-section-number">5</span> Tipos de estudios: Observacionales vs.&nbsp;Experimentales</a>
+  <ul class="collapse">
+  <li><a href="#estudio-observacional" id="toc-estudio-observacional" class="nav-link" data-scroll-target="#estudio-observacional"><span class="header-section-number">5.1</span> Estudio observacional</a></li>
+  <li><a href="#experimento" id="toc-experimento" class="nav-link" data-scroll-target="#experimento"><span class="header-section-number">5.2</span> Experimento</a></li>
+  <li><a href="#variable-de-confusión-tercera-variable" id="toc-variable-de-confusión-tercera-variable" class="nav-link" data-scroll-target="#variable-de-confusión-tercera-variable"><span class="header-section-number">5.3</span> Variable de confusión (tercera variable)</a></li>
+  </ul></li>
+  <li><a href="#mapa-conceptual-principios-y-estrategias-de-muestreo" id="toc-mapa-conceptual-principios-y-estrategias-de-muestreo" class="nav-link" data-scroll-target="#mapa-conceptual-principios-y-estrategias-de-muestreo"><span class="header-section-number">6</span> Mapa conceptual: Principios y estrategias de muestreo</a></li>
+  <li><a href="#cuestionario-grupal" id="toc-cuestionario-grupal" class="nav-link" data-scroll-target="#cuestionario-grupal"><span class="header-section-number">7</span> Cuestionario grupal</a></li>
+  <li><a href="#preguntas-para-reflexionar-y-debatir-en-clase" id="toc-preguntas-para-reflexionar-y-debatir-en-clase" class="nav-link" data-scroll-target="#preguntas-para-reflexionar-y-debatir-en-clase"><span class="header-section-number">8</span> Preguntas para reflexionar y debatir en clase</a></li>
+  <li><a href="#resumen-de-conceptos-clave" id="toc-resumen-de-conceptos-clave" class="nav-link" data-scroll-target="#resumen-de-conceptos-clave"><span class="header-section-number">9</span> Resumen de conceptos clave</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Otros formatos</h2><ul><li><a href="leccion-4-principios-de-muestreo-y-diseño-de-experimentos.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content column-body" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../epdi/lecciones/leccion-1-introduccion-a-los-datos.html">Lecciones</a></li><li class="breadcrumb-item"><a href="../../epdi/lecciones/leccion-4-principios-de-muestreo-y-diseño-de-experimentos.html">Lección 4: Principios de muestreo y diseño de estudios</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Lección 4: Principios de muestreo y diseño de estudios</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">EPDI</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    <p>Conceptos fundamentales sobre poblaciones, muestras, sesgos, tipos de muestreo y la distinción entre estudios observacionales y experimentos. Análisis crítico de ejercicios clásicos.</p>
+  </div>
+</div>
+
+<div class="quarto-title-meta-author column-body">
+  <div class="quarto-title-meta-heading">Autor/a</div>
+  <div class="quarto-title-meta-heading">Afiliación</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Hans Sigrist <a href="mailto:hsigrist@colegioportaliano.cl" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://www.colegioportaliano.cl">
+            Colegio Portaliano
+            </a>
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta column-body">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Fecha de publicación</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">20 de marzo de 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+<div>
+  <div class="abstract">
+    <div class="block-title">Resumen</div>
+    <p>Esta lección se centra en los principios que gobiernan la recolección de datos. Exploraremos qué es una población, una muestra, y cómo los sesgos pueden invalidar conclusiones. Diferenciaremos entre estudios observacionales y experimentos, y analizaremos casos reales para comprender el alcance de las inferencias estadísticas.</p>
+  </div>
+</div>
+
+
+</header>
+
+
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Recursos de la lección
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><a href="../../epdi/media/Principios_del_Muestreo.mp4">Principios del Muestreo (video)</a></li>
+<li><a href="../../epdi/media/El_Poder_del_Muestreo.mp4">El Poder del Muestreo (video)</a> (“selecición=selección”)</li>
+<li><a href="../../epdi/media/la-arquitectura-de-los-datos.pdf">La arquitectura de los datos (PDF)</a></li>
+</ul>
+</div>
+</div>
+<section id="objetivos-de-la-lección" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="objetivos-de-la-lección"><span class="header-section-number">1</span> Objetivos de la lección</h2>
+<p>Al finalizar esta lección, los estudiantes serán capaces de:</p>
+<ul>
+<li>Definir y distinguir entre <strong>población</strong>, <strong>muestra</strong>, <strong>individuo</strong> y <strong>variable</strong>.</li>
+<li>Identificar y criticar la <strong>evidencia anecdótica</strong>.</li>
+<li>Explicar por qué el <strong>muestreo aleatorio</strong> es fundamental para evitar sesgos.</li>
+<li>Describir y comparar cuatro métodos de muestreo: <strong>simple</strong>, <strong>estratificado</strong>, <strong>por conglomerados</strong> y <strong>multietápico</strong>.</li>
+<li>Diferenciar entre <strong>estudio observacional</strong> y <strong>experimento</strong>, y comprender qué tipo de conclusiones permite cada uno.</li>
+<li>Reconocer el concepto de <strong>variable de confusión</strong> y su impacto en la interpretación de resultados.</li>
+</ul>
+<hr>
+</section>
+<section id="población-y-muestra" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="población-y-muestra"><span class="header-section-number">2</span> Población y muestra</h2>
+<section id="conceptos-fundamentales" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="conceptos-fundamentales"><span class="header-section-number">2.1</span> Conceptos fundamentales</h3>
+<p>En estadística, rara vez podemos estudiar a <strong>todos</strong> los individuos que nos interesan. Por eso, trabajamos con muestras.</p>
+<ul>
+<li><strong>Población:</strong> Es el conjunto completo de individuos (personas, objetos, eventos) que queremos estudiar.</li>
+<li><strong>Muestra:</strong> Es un subconjunto de la población, seleccionado para participar en el estudio.</li>
+<li><strong>Individuo (o caso):</strong> Cada elemento de la población o muestra.</li>
+</ul>
+<p><strong>Ejemplo 1:</strong> Queremos saber el tiempo promedio que tardan los estudiantes de enseñanza media en Chile en elegir su electivo.</p>
+<ul>
+<li><strong>Población:</strong> Todos los estudiantes de enseñanza media de Chile.</li>
+<li><strong>Muestra:</strong> Un grupo de 500 estudiantes seleccionados de diferentes colegios.</li>
+<li><strong>Individuo:</strong> Un estudiante específico.</li>
+</ul>
+</section>
+<section id="evidencia-anecdótica" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="evidencia-anecdótica"><span class="header-section-number">2.2</span> Evidencia anecdótica</h3>
+<p>A menudo sacamos conclusiones basadas en casos particulares que conocemos. Esto se llama <strong>evidencia anecdótica</strong>.</p>
+<blockquote class="blockquote">
+<p><strong>Definición:</strong> La evidencia anecdótica son datos recopilados de forma informal o casual, generalmente basados en experiencias personales o casos aislados, que pueden no ser representativos de la población.</p>
+</blockquote>
+<p><strong>Problema:</strong> La evidencia anecdótica suele basarse en casos extraordinarios que recordamos precisamente por ser inusuales. No podemos generalizar a partir de ellos.</p>
+<p><strong>Ejemplo 2:</strong> Conoces a dos personas que fumaron toda su vida y vivieron hasta los 95 años. Esto no es evidencia de que fumar sea saludable; es una anécdota.</p>
+<blockquote class="blockquote">
+<p><strong>Para reflexionar:</strong> ¿Por qué los medios de comunicación suelen recurrir a la evidencia anecdótica? ¿Qué efecto tiene en la audiencia?</p>
+</blockquote>
+<hr>
+</section>
+</section>
+<section id="muestreo-aleatorio-y-sesgos" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="muestreo-aleatorio-y-sesgos"><span class="header-section-number">3</span> Muestreo aleatorio y sesgos</h2>
+<section id="la-necesidad-de-la-aleatoriedad" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="la-necesidad-de-la-aleatoriedad"><span class="header-section-number">3.1</span> La necesidad de la aleatoriedad</h3>
+<p>Para que una muestra sea representativa de la población, debe seleccionarse de manera aleatoria. El <strong>muestreo aleatorio</strong> asegura que todos los individuos tienen una oportunidad conocida (a menudo igual) de ser elegidos, lo que reduce el riesgo de sesgo.</p>
+<blockquote class="blockquote">
+<p><strong>Definición de sesgo:</strong> Error sistemático que hace que los resultados de un estudio se desvíen de la verdad en una dirección particular.</p>
+</blockquote>
+</section>
+<section id="tipos-de-sesgos-comunes" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="tipos-de-sesgos-comunes"><span class="header-section-number">3.2</span> Tipos de sesgos comunes</h3>
+<ol type="1">
+<li><strong>Sesgo de selección:</strong> Ocurre cuando la forma de seleccionar la muestra favorece a ciertos individuos sobre otros.
+<ul>
+<li><em>Ejemplo:</em> Encuestar solo a personas que salen de un gimnasio para estudiar hábitos de ejercicio. Se excluye a quienes no van al gimnasio.</li>
+</ul></li>
+<li><strong>Sesgo de no respuesta:</strong> Sucede cuando las personas seleccionadas para la muestra no responden, y los que responden son diferentes de los que no lo hacen.
+<ul>
+<li><em>Ejemplo:</em> Una encuesta política por teléfono fijo. Las personas más jóvenes (que solo usan celular) quedan excluidas, y los que responden pueden tener opiniones distintas.</li>
+</ul></li>
+<li><strong>Sesgo de conveniencia:</strong> Se da cuando la muestra se compone de individuos fácilmente accesibles, que pueden no representar a la población.
+<ul>
+<li><em>Ejemplo:</em> Parar a personas en una calle céntrica de San Felipe para preguntar sobre la economía nacional. La muestra no incluirá a quienes trabajan en el campo o en otras ciudades.</li>
+</ul></li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="métodos-de-muestreo" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="métodos-de-muestreo"><span class="header-section-number">4</span> Métodos de muestreo</h2>
+<p>Existen varias formas de obtener una muestra aleatoria. La elección depende de la naturaleza de la población y los recursos disponibles.</p>
+<section id="muestreo-aleatorio-simple-mas" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="muestreo-aleatorio-simple-mas"><span class="header-section-number">4.1</span> Muestreo aleatorio simple (MAS)</h3>
+<p>Es el más básico. Cada individuo de la población tiene la misma probabilidad de ser elegido, y la selección de uno no influye en la de los demás (como un sorteo).</p>
+<ul>
+<li><strong>Ventaja:</strong> Simple y fácil de entender.</li>
+<li><strong>Desventaja:</strong> Puede ser logísticamente difícil o costoso si la población está muy dispersa.</li>
+</ul>
+</section>
+<section id="muestreo-estratificado" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="muestreo-estratificado"><span class="header-section-number">4.2</span> Muestreo estratificado</h3>
+<p>La población se divide en grupos homogéneos llamados <strong>estratos</strong> (ej. por curso, sexo, nivel socioeconómico). Luego, se toma una muestra aleatoria simple <strong>dentro de cada estrato</strong>.</p>
+<ul>
+<li><strong>Ventaja:</strong> Asegura que todos los grupos importantes estén representados. Útil cuando los estratos son muy diferentes entre sí.</li>
+<li><strong>Ejemplo:</strong> Para estudiar el rendimiento en una asignatura, estratificamos por colegio (municipal, particular subvencionado, particular) y muestreamos dentro de cada tipo.</li>
+</ul>
+</section>
+<section id="muestreo-por-conglomerados-clusters" class="level3" data-number="4.3">
+<h3 data-number="4.3" class="anchored" data-anchor-id="muestreo-por-conglomerados-clusters"><span class="header-section-number">4.3</span> Muestreo por conglomerados (clusters)</h3>
+<p>La población se divide en grupos naturales llamados <strong>conglomerados</strong> (ej. barrios, cursos escolares, manzanas). Se seleccionan aleatoriamente algunos conglomerados y se <strong>estudia a todos los individuos</strong> dentro de ellos.</p>
+<ul>
+<li><strong>Ventaja:</strong> Reduce costos logísticos. Ideal cuando la población está muy dispersa.</li>
+<li><strong>Desventaja:</strong> Puede ser menos preciso que el estratificado si los conglomerados son muy heterogéneos.</li>
+<li><strong>Ejemplo:</strong> Para estimar la prevalencia de una enfermedad en una ciudad, seleccionamos aleatoriamente 10 barrios y examinamos a todos los residentes de esos barrios.</li>
+</ul>
+</section>
+<section id="muestreo-multietápico" class="level3" data-number="4.4">
+<h3 data-number="4.4" class="anchored" data-anchor-id="muestreo-multietápico"><span class="header-section-number">4.4</span> Muestreo multietápico</h3>
+<p>Es una extensión del muestreo por conglomerados. Se seleccionan conglomerados en varias etapas, y dentro de los conglomerados finales se toma una muestra aleatoria (no todos los individuos).</p>
+<ul>
+<li><strong>Ventaja:</strong> Muy eficiente para poblaciones grandes y dispersas.</li>
+<li><strong>Ejemplo:</strong> Para una encuesta nacional, primero seleccionamos regiones, luego comunas dentro de esas regiones, luego manzanas, y finalmente hogares dentro de esas manzanas.</li>
+</ul>
+<blockquote class="blockquote">
+<p><strong>Comparación rápida:</strong></p>
+</blockquote>
+<blockquote class="blockquote">
+<ul>
+<li><strong>Estratificado:</strong> Se muestrea <strong>dentro</strong> de todos los grupos.</li>
+<li><strong>Conglomerados:</strong> Se muestrean <strong>algunos</strong> grupos y se estudian <strong>todos</strong> sus individuos.</li>
+<li><strong>Multietápico:</strong> Se muestrean grupos en varias fases y luego se muestrea <strong>dentro</strong> de los grupos finales.</li>
+</ul>
+</blockquote>
+<hr>
+</section>
+</section>
+<section id="tipos-de-estudios-observacionales-vs.-experimentales" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="tipos-de-estudios-observacionales-vs.-experimentales"><span class="header-section-number">5</span> Tipos de estudios: Observacionales vs.&nbsp;Experimentales</h2>
+<section id="estudio-observacional" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="estudio-observacional"><span class="header-section-number">5.1</span> Estudio observacional</h3>
+<p>El investigador <strong>observa y mide</strong> variables sin intervenir ni manipular el entorno. Simplemente registra lo que ocurre.</p>
+<ul>
+<li><strong>Puede:</strong> Identificar <strong>asociaciones</strong> entre variables.</li>
+<li><strong>No puede:</strong> Establecer <strong>causalidad</strong> de forma concluyente (debido a posibles variables de confusión).</li>
+</ul>
+</section>
+<section id="experimento" class="level3" data-number="5.2">
+<h3 data-number="5.2" class="anchored" data-anchor-id="experimento"><span class="header-section-number">5.2</span> Experimento</h3>
+<p>El investigador <strong>manipula activamente</strong> una variable (el tratamiento) y asigna aleatoriamente los sujetos a grupos (tratamiento vs.&nbsp;control).</p>
+<ul>
+<li><strong>Puede:</strong> Establecer relaciones <strong>causales</strong> con mayor confianza, gracias a la aleatorización que controla variables de confusión.</li>
+</ul>
+</section>
+<section id="variable-de-confusión-tercera-variable" class="level3" data-number="5.3">
+<h3 data-number="5.3" class="anchored" data-anchor-id="variable-de-confusión-tercera-variable"><span class="header-section-number">5.3</span> Variable de confusión (tercera variable)</h3>
+<p>Es una variable que está asociada tanto con la variable explicativa como con la variable respuesta, y que puede distorsionar la relación observada entre ellas.</p>
+<p><strong>Ejemplo clásico:</strong> La correlación entre ventas de helados y ahogamientos en piscinas. La variable de confusión es la <strong>temperatura</strong>: hace que la gente compre más helados y también que vaya más a la piscina, aumentando el riesgo de ahogamiento.</p>
+<hr>
+</section>
+</section>
+<section id="mapa-conceptual-principios-y-estrategias-de-muestreo" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="mapa-conceptual-principios-y-estrategias-de-muestreo"><span class="header-section-number">6</span> Mapa conceptual: Principios y estrategias de muestreo</h2>
+<p>Para tener una visión de conjunto de los conceptos que exploraremos, aquí tienes un mapa mental que los organiza visualmente:</p>
+<div id="fig-muestreo-mapa" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Diagrama de mapa mental que muestra las relaciones entre población, muestra, evidencia anecdótica, datos observacionales y métodos de muestreo aleatorio.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-muestreo-mapa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../imagenes/mapa-mental-muestreo.png" class="img-fluid figure-img" alt="Diagrama de mapa mental que muestra las relaciones entre población, muestra, evidencia anecdótica, datos observacionales y métodos de muestreo aleatorio.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-muestreo-mapa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;1: Mapa mental: Principios y estrategias de muestreo
+</figcaption>
+</figure>
+</div>
+<p>En este mapa puedes ver cómo se relacionan las ideas de <strong>población</strong> y <strong>muestra</strong>, los peligros de la <strong>evidencia anecdótica</strong>, la distinción entre <strong>estudios observacionales</strong> y <strong>experimentos</strong>, y los distintos <strong>métodos de muestreo aleatorio</strong> que estudiaremos en detalle. ## Análisis de ejercicios (Cuestionario)</p>
+</section>
+<section id="cuestionario-grupal" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="cuestionario-grupal"><span class="header-section-number">7</span> Cuestionario grupal</h2>
+<p>A continuación, se presentan una serie de ejercicios basados en estudios reales. Para cada uno, deberás identificar los conceptos clave y responder las preguntas con el mayor detalle y rigor posible.</p>
+<ol type="1">
+<li><strong>Contaminación del aire y partos prematuros</strong></li>
+</ol>
+<p>Investigadores recolectaron datos para examinar la relación entre contaminantes atmosféricos y partos prematuros en el sur de California. Durante el estudio, los niveles de contaminación se midieron mediante estaciones de monitoreo de calidad del aire. Se recopilaron datos de la duración de la gestación de 143.196 nacimientos entre los años 1989 y 1993, y se calculó la exposición a la contaminación durante la gestación para cada nacimiento. El análisis sugirió que el aumento de PM₁₀ y CO podría estar asociado con la ocurrencia de partos prematuros.</p>
+<ol type="a">
+<li>Identifica la población de interés y la muestra en este estudio.</li>
+<li>Comenta si los resultados del estudio pueden generalizarse a la población y si pueden usarse para establecer relaciones causales.</li>
+</ol>
+<hr>
+<ol start="2" type="1">
+<li><strong>Método Buteyko</strong></li>
+</ol>
+<p>El método Buteyko es una técnica de respiración superficial. En un estudio para determinar su efectividad, se reclutó a 600 pacientes asmáticos de entre 18 y 69 años que dependían de medicación. Estos pacientes se dividieron <strong>aleatoriamente</strong> en dos grupos: uno practicó el método Buteyko y el otro no. En promedio, el grupo Buteyko experimentó una reducción significativa de los síntomas y una mejora en la calidad de vida.</p>
+<ol type="a">
+<li>Identifica la población de interés y la muestra en este estudio.</li>
+<li>¿Es un estudio observacional o un experimento? Justifica.</li>
+<li>¿Podemos concluir que el método Buteyko causa la mejora en los síntomas? Explica.</li>
+</ol>
+<hr>
+<ol start="3" type="1">
+<li><strong>Tramposos</strong></li>
+</ol>
+<p>Investigadores estudiaron la relación entre honestidad, edad y autocontrol con 160 niños de 5 a 15 años. Los participantes informaron su edad, sexo y si eran hijos únicos. Luego, se les pidió que lanzaran una moneda en privado y registraran el resultado (blanco o negro), diciéndoles que solo serían recompensados si reportaban “blanco”. La mitad de los niños recibió la instrucción explícita de no hacer trampa; la otra mitad no. Se observaron diferencias en las tasas de trampa entre los grupos.</p>
+<ol type="a">
+<li>Identifica la población de interés y la muestra.</li>
+<li>¿Podemos generalizar estos resultados a todos los niños? ¿Por qué?</li>
+<li>¿Podemos establecer una relación causal entre la instrucción explícita y la reducción de la trampa? Justifica.</li>
+</ol>
+<hr>
+<ol start="4" type="1">
+<li><strong>Estatus social y comportamiento no ético</strong></li>
+</ol>
+<p>En un estudio, 129 estudiantes de la Universidad de California en Berkeley se identificaron a sí mismos como de clase baja o alta. Luego, se les presentó un frasco de caramelos, informándoles que eran para niños de un laboratorio cercano, pero que podían tomar algunos si querían. Los estudiantes de clase alta tomaron más caramelos que los de clase baja.</p>
+<ol type="a">
+<li>Identifica la población de interés y la muestra.</li>
+<li>¿Podemos generalizar estos resultados a todos los adultos? Explica.</li>
+<li>¿Podemos concluir que el estatus social alto <em>causa</em> un comportamiento menos ético? ¿Qué variable de confusión podría existir?</li>
+</ol>
+<hr>
+<ol start="5" type="1">
+<li><strong>Relajación después del trabajo</strong></li>
+</ol>
+<p>La Encuesta Social General preguntó a una <strong>muestra aleatoria</strong> de 1.155 estadounidenses: “Después de un día de trabajo promedio, ¿cuántas horas tienes para relajarte o realizar actividades que disfrutes?”. El tiempo promedio de relajación fue de 1,65 horas. Determina si cada elemento es una <strong>observación</strong>, una <strong>variable</strong>, un <strong>estadístico muestral</strong> o un <strong>parámetro poblacional</strong>:</p>
+<ol type="a">
+<li>Un estadounidense en la muestra.</li>
+<li>Número de horas dedicadas a relajarse después de un día laboral promedio.</li>
+<li>1,65.</li>
+<li>Número promedio de horas que todos los estadounidenses pasan relajándose después de un día laboral promedio.</li>
+</ol>
+<hr>
+<ol start="6" type="1">
+<li><strong>Métodos de muestreo</strong></li>
+</ol>
+<p>Una universidad quiere determinar qué fracción de sus estudiantes de pregrado apoya una nueva tarifa anual de 25 mil pesos para mejorar el centro estudiantil. Para cada método propuesto, indica si es razonable o no, y por qué.</p>
+<ol type="a">
+<li>Encuestar una muestra aleatoria simple de 500 estudiantes.</li>
+<li>Estratificar a los estudiantes por su campo de estudio, y luego muestrear el 10% de cada estrato.</li>
+<li>Agrupar a los estudiantes por su edad (ej. todos los de 18 años en un grupo, los de 19 en otro, etc.), luego muestrear aleatoriamente tres grupos y encuestar a todos los estudiantes de esos grupos.</li>
+</ol>
+<hr>
+</section>
+<section id="preguntas-para-reflexionar-y-debatir-en-clase" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="preguntas-para-reflexionar-y-debatir-en-clase"><span class="header-section-number">8</span> Preguntas para reflexionar y debatir en clase</h2>
+<ol type="1">
+<li><p><strong>Evidencia anecdótica vs.&nbsp;datos sistemáticos:</strong> ¿Por qué crees que la evidencia anecdótica es tan persuasiva, a pesar de ser poco fiable? ¿Puedes recordar alguna situación en la que hayas sacado una conclusión basada en una anécdota y luego te hayas dado cuenta de que no era generalizable?</p></li>
+<li><p><strong>Sesgo de no respuesta:</strong> En una encuesta política online, ¿quiénes crees que tienen más probabilidades de responder? ¿Cómo podría esto sesgar los resultados?</p></li>
+<li><p><strong>Muestreo en San Felipe:</strong> Diseña un plan de muestreo para estimar la proporción de habitantes de San Felipe que están a favor de construir una nueva ciclovía. ¿Qué método usarías y por qué? ¿Qué dificultades prácticas encontrarías?</p></li>
+<li><p><strong>Causalidad en medios:</strong> Busca un titular de noticias que afirme una relación causal (ej. “Comer chocolate adelgaza”). ¿Qué tipo de estudio crees que está detrás? ¿Qué variables de confusión podrían explicar realmente el hallazgo?</p></li>
+<li><p><strong>Experimentos en la vida cotidiana:</strong> Piensa en una decisión que hayas tomado recientemente y que podría haberse beneficiado de un “experimento” (ej. probar dos métodos de estudio diferentes). ¿Cómo habrías diseñado un experimento simple para tomar una mejor decisión?</p></li>
+</ol>
+<hr>
+</section>
+<section id="resumen-de-conceptos-clave" class="level2" data-number="9">
+<h2 data-number="9" class="anchored" data-anchor-id="resumen-de-conceptos-clave"><span class="header-section-number">9</span> Resumen de conceptos clave</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Concepto</th>
+<th style="text-align: left;">Definición breve</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Población</strong></td>
+<td style="text-align: left;">Conjunto completo de individuos de interés.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Muestra</strong></td>
+<td style="text-align: left;">Subconjunto de la población del que se recogen datos.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Individuo</strong></td>
+<td style="text-align: left;">Un elemento de la población o muestra.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Evidencia anecdótica</strong></td>
+<td style="text-align: left;">Datos basados en casos aislados y no representativos.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Sesgo</strong></td>
+<td style="text-align: left;">Error sistemático que desvía los resultados.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Muestreo aleatorio simple</strong></td>
+<td style="text-align: left;">Cada individuo tiene igual probabilidad de ser elegido.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Muestreo estratificado</strong></td>
+<td style="text-align: left;">Se divide en grupos homogéneos y se muestrea dentro de cada uno.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Muestreo por conglomerados</strong></td>
+<td style="text-align: left;">Se eligen grupos al azar y se estudian todos sus individuos.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Muestreo multietápico</strong></td>
+<td style="text-align: left;">Combinación de muestreo por conglomerados y aleatorio simple.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Estudio observacional</strong></td>
+<td style="text-align: left;">El investigador observa sin intervenir.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Experimento</strong></td>
+<td style="text-align: left;">El investigador manipula una variable y asigna aleatoriamente.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Variable de confusión</strong></td>
+<td style="text-align: left;">Variable asociada a las que se estudian y que puede falsear la relación.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>Este material está diseñado para ser trabajado en clase de forma colaborativa. Se recomienda dedicar tiempo a la discusión de los ejercicios y las preguntas de reflexión.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/hsigrist\.github\.io");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Hans Sigrist</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

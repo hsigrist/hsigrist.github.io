@@ -144,6 +144,116 @@
     ]
   },
   {
+    "objectID": "epdi/lecciones/leccion-4-principios-de-muestreo-y-diseño-de-experimentos.html",
+    "href": "epdi/lecciones/leccion-4-principios-de-muestreo-y-diseño-de-experimentos.html",
+    "title": "Lección 4: Principios de muestreo y diseño de estudios",
+    "section": "",
+    "text": "NotaRecursos de la lección\n\n\n\n\nPrincipios del Muestreo (video)\nEl Poder del Muestreo (video) (“selecición=selección”)\nLa arquitectura de los datos (PDF)",
+    "crumbs": [
+      "Lecciones",
+      "Lección 4: Principios de muestreo y diseño de estudios"
+    ]
+  },
+  {
+    "objectID": "epdi/lecciones/leccion-4-principios-de-muestreo-y-diseño-de-experimentos.html#objetivos-de-la-lección",
+    "href": "epdi/lecciones/leccion-4-principios-de-muestreo-y-diseño-de-experimentos.html#objetivos-de-la-lección",
+    "title": "Lección 4: Principios de muestreo y diseño de estudios",
+    "section": "1 Objetivos de la lección",
+    "text": "1 Objetivos de la lección\nAl finalizar esta lección, los estudiantes serán capaces de:\n\nDefinir y distinguir entre población, muestra, individuo y variable.\nIdentificar y criticar la evidencia anecdótica.\nExplicar por qué el muestreo aleatorio es fundamental para evitar sesgos.\nDescribir y comparar cuatro métodos de muestreo: simple, estratificado, por conglomerados y multietápico.\nDiferenciar entre estudio observacional y experimento, y comprender qué tipo de conclusiones permite cada uno.\nReconocer el concepto de variable de confusión y su impacto en la interpretación de resultados.",
+    "crumbs": [
+      "Lecciones",
+      "Lección 4: Principios de muestreo y diseño de estudios"
+    ]
+  },
+  {
+    "objectID": "epdi/lecciones/leccion-4-principios-de-muestreo-y-diseño-de-experimentos.html#población-y-muestra",
+    "href": "epdi/lecciones/leccion-4-principios-de-muestreo-y-diseño-de-experimentos.html#población-y-muestra",
+    "title": "Lección 4: Principios de muestreo y diseño de estudios",
+    "section": "2 Población y muestra",
+    "text": "2 Población y muestra\n\n2.1 Conceptos fundamentales\nEn estadística, rara vez podemos estudiar a todos los individuos que nos interesan. Por eso, trabajamos con muestras.\n\nPoblación: Es el conjunto completo de individuos (personas, objetos, eventos) que queremos estudiar.\nMuestra: Es un subconjunto de la población, seleccionado para participar en el estudio.\nIndividuo (o caso): Cada elemento de la población o muestra.\n\nEjemplo 1: Queremos saber el tiempo promedio que tardan los estudiantes de enseñanza media en Chile en elegir su electivo.\n\nPoblación: Todos los estudiantes de enseñanza media de Chile.\nMuestra: Un grupo de 500 estudiantes seleccionados de diferentes colegios.\nIndividuo: Un estudiante específico.\n\n\n\n2.2 Evidencia anecdótica\nA menudo sacamos conclusiones basadas en casos particulares que conocemos. Esto se llama evidencia anecdótica.\n\nDefinición: La evidencia anecdótica son datos recopilados de forma informal o casual, generalmente basados en experiencias personales o casos aislados, que pueden no ser representativos de la población.\n\nProblema: La evidencia anecdótica suele basarse en casos extraordinarios que recordamos precisamente por ser inusuales. No podemos generalizar a partir de ellos.\nEjemplo 2: Conoces a dos personas que fumaron toda su vida y vivieron hasta los 95 años. Esto no es evidencia de que fumar sea saludable; es una anécdota.\n\nPara reflexionar: ¿Por qué los medios de comunicación suelen recurrir a la evidencia anecdótica? ¿Qué efecto tiene en la audiencia?",
+    "crumbs": [
+      "Lecciones",
+      "Lección 4: Principios de muestreo y diseño de estudios"
+    ]
+  },
+  {
+    "objectID": "epdi/lecciones/leccion-4-principios-de-muestreo-y-diseño-de-experimentos.html#muestreo-aleatorio-y-sesgos",
+    "href": "epdi/lecciones/leccion-4-principios-de-muestreo-y-diseño-de-experimentos.html#muestreo-aleatorio-y-sesgos",
+    "title": "Lección 4: Principios de muestreo y diseño de estudios",
+    "section": "3 Muestreo aleatorio y sesgos",
+    "text": "3 Muestreo aleatorio y sesgos\n\n3.1 La necesidad de la aleatoriedad\nPara que una muestra sea representativa de la población, debe seleccionarse de manera aleatoria. El muestreo aleatorio asegura que todos los individuos tienen una oportunidad conocida (a menudo igual) de ser elegidos, lo que reduce el riesgo de sesgo.\n\nDefinición de sesgo: Error sistemático que hace que los resultados de un estudio se desvíen de la verdad en una dirección particular.\n\n\n\n3.2 Tipos de sesgos comunes\n\nSesgo de selección: Ocurre cuando la forma de seleccionar la muestra favorece a ciertos individuos sobre otros.\n\nEjemplo: Encuestar solo a personas que salen de un gimnasio para estudiar hábitos de ejercicio. Se excluye a quienes no van al gimnasio.\n\nSesgo de no respuesta: Sucede cuando las personas seleccionadas para la muestra no responden, y los que responden son diferentes de los que no lo hacen.\n\nEjemplo: Una encuesta política por teléfono fijo. Las personas más jóvenes (que solo usan celular) quedan excluidas, y los que responden pueden tener opiniones distintas.\n\nSesgo de conveniencia: Se da cuando la muestra se compone de individuos fácilmente accesibles, que pueden no representar a la población.\n\nEjemplo: Parar a personas en una calle céntrica de San Felipe para preguntar sobre la economía nacional. La muestra no incluirá a quienes trabajan en el campo o en otras ciudades.",
+    "crumbs": [
+      "Lecciones",
+      "Lección 4: Principios de muestreo y diseño de estudios"
+    ]
+  },
+  {
+    "objectID": "epdi/lecciones/leccion-4-principios-de-muestreo-y-diseño-de-experimentos.html#métodos-de-muestreo",
+    "href": "epdi/lecciones/leccion-4-principios-de-muestreo-y-diseño-de-experimentos.html#métodos-de-muestreo",
+    "title": "Lección 4: Principios de muestreo y diseño de estudios",
+    "section": "4 Métodos de muestreo",
+    "text": "4 Métodos de muestreo\nExisten varias formas de obtener una muestra aleatoria. La elección depende de la naturaleza de la población y los recursos disponibles.\n\n4.1 Muestreo aleatorio simple (MAS)\nEs el más básico. Cada individuo de la población tiene la misma probabilidad de ser elegido, y la selección de uno no influye en la de los demás (como un sorteo).\n\nVentaja: Simple y fácil de entender.\nDesventaja: Puede ser logísticamente difícil o costoso si la población está muy dispersa.\n\n\n\n4.2 Muestreo estratificado\nLa población se divide en grupos homogéneos llamados estratos (ej. por curso, sexo, nivel socioeconómico). Luego, se toma una muestra aleatoria simple dentro de cada estrato.\n\nVentaja: Asegura que todos los grupos importantes estén representados. Útil cuando los estratos son muy diferentes entre sí.\nEjemplo: Para estudiar el rendimiento en una asignatura, estratificamos por colegio (municipal, particular subvencionado, particular) y muestreamos dentro de cada tipo.\n\n\n\n4.3 Muestreo por conglomerados (clusters)\nLa población se divide en grupos naturales llamados conglomerados (ej. barrios, cursos escolares, manzanas). Se seleccionan aleatoriamente algunos conglomerados y se estudia a todos los individuos dentro de ellos.\n\nVentaja: Reduce costos logísticos. Ideal cuando la población está muy dispersa.\nDesventaja: Puede ser menos preciso que el estratificado si los conglomerados son muy heterogéneos.\nEjemplo: Para estimar la prevalencia de una enfermedad en una ciudad, seleccionamos aleatoriamente 10 barrios y examinamos a todos los residentes de esos barrios.\n\n\n\n4.4 Muestreo multietápico\nEs una extensión del muestreo por conglomerados. Se seleccionan conglomerados en varias etapas, y dentro de los conglomerados finales se toma una muestra aleatoria (no todos los individuos).\n\nVentaja: Muy eficiente para poblaciones grandes y dispersas.\nEjemplo: Para una encuesta nacional, primero seleccionamos regiones, luego comunas dentro de esas regiones, luego manzanas, y finalmente hogares dentro de esas manzanas.\n\n\nComparación rápida:\n\n\n\nEstratificado: Se muestrea dentro de todos los grupos.\nConglomerados: Se muestrean algunos grupos y se estudian todos sus individuos.\nMultietápico: Se muestrean grupos en varias fases y luego se muestrea dentro de los grupos finales.",
+    "crumbs": [
+      "Lecciones",
+      "Lección 4: Principios de muestreo y diseño de estudios"
+    ]
+  },
+  {
+    "objectID": "epdi/lecciones/leccion-4-principios-de-muestreo-y-diseño-de-experimentos.html#tipos-de-estudios-observacionales-vs.-experimentales",
+    "href": "epdi/lecciones/leccion-4-principios-de-muestreo-y-diseño-de-experimentos.html#tipos-de-estudios-observacionales-vs.-experimentales",
+    "title": "Lección 4: Principios de muestreo y diseño de estudios",
+    "section": "5 Tipos de estudios: Observacionales vs. Experimentales",
+    "text": "5 Tipos de estudios: Observacionales vs. Experimentales\n\n5.1 Estudio observacional\nEl investigador observa y mide variables sin intervenir ni manipular el entorno. Simplemente registra lo que ocurre.\n\nPuede: Identificar asociaciones entre variables.\nNo puede: Establecer causalidad de forma concluyente (debido a posibles variables de confusión).\n\n\n\n5.2 Experimento\nEl investigador manipula activamente una variable (el tratamiento) y asigna aleatoriamente los sujetos a grupos (tratamiento vs. control).\n\nPuede: Establecer relaciones causales con mayor confianza, gracias a la aleatorización que controla variables de confusión.\n\n\n\n5.3 Variable de confusión (tercera variable)\nEs una variable que está asociada tanto con la variable explicativa como con la variable respuesta, y que puede distorsionar la relación observada entre ellas.\nEjemplo clásico: La correlación entre ventas de helados y ahogamientos en piscinas. La variable de confusión es la temperatura: hace que la gente compre más helados y también que vaya más a la piscina, aumentando el riesgo de ahogamiento.",
+    "crumbs": [
+      "Lecciones",
+      "Lección 4: Principios de muestreo y diseño de estudios"
+    ]
+  },
+  {
+    "objectID": "epdi/lecciones/leccion-4-principios-de-muestreo-y-diseño-de-experimentos.html#mapa-conceptual-principios-y-estrategias-de-muestreo",
+    "href": "epdi/lecciones/leccion-4-principios-de-muestreo-y-diseño-de-experimentos.html#mapa-conceptual-principios-y-estrategias-de-muestreo",
+    "title": "Lección 4: Principios de muestreo y diseño de estudios",
+    "section": "6 Mapa conceptual: Principios y estrategias de muestreo",
+    "text": "6 Mapa conceptual: Principios y estrategias de muestreo\nPara tener una visión de conjunto de los conceptos que exploraremos, aquí tienes un mapa mental que los organiza visualmente:\n\n\n\n\n\n\nFigura 1: Mapa mental: Principios y estrategias de muestreo\n\n\n\nEn este mapa puedes ver cómo se relacionan las ideas de población y muestra, los peligros de la evidencia anecdótica, la distinción entre estudios observacionales y experimentos, y los distintos métodos de muestreo aleatorio que estudiaremos en detalle. ## Análisis de ejercicios (Cuestionario)",
+    "crumbs": [
+      "Lecciones",
+      "Lección 4: Principios de muestreo y diseño de estudios"
+    ]
+  },
+  {
+    "objectID": "epdi/lecciones/leccion-4-principios-de-muestreo-y-diseño-de-experimentos.html#cuestionario-grupal",
+    "href": "epdi/lecciones/leccion-4-principios-de-muestreo-y-diseño-de-experimentos.html#cuestionario-grupal",
+    "title": "Lección 4: Principios de muestreo y diseño de estudios",
+    "section": "7 Cuestionario grupal",
+    "text": "7 Cuestionario grupal\nA continuación, se presentan una serie de ejercicios basados en estudios reales. Para cada uno, deberás identificar los conceptos clave y responder las preguntas con el mayor detalle y rigor posible.\n\nContaminación del aire y partos prematuros\n\nInvestigadores recolectaron datos para examinar la relación entre contaminantes atmosféricos y partos prematuros en el sur de California. Durante el estudio, los niveles de contaminación se midieron mediante estaciones de monitoreo de calidad del aire. Se recopilaron datos de la duración de la gestación de 143.196 nacimientos entre los años 1989 y 1993, y se calculó la exposición a la contaminación durante la gestación para cada nacimiento. El análisis sugirió que el aumento de PM₁₀ y CO podría estar asociado con la ocurrencia de partos prematuros.\n\nIdentifica la población de interés y la muestra en este estudio.\nComenta si los resultados del estudio pueden generalizarse a la población y si pueden usarse para establecer relaciones causales.\n\n\n\nMétodo Buteyko\n\nEl método Buteyko es una técnica de respiración superficial. En un estudio para determinar su efectividad, se reclutó a 600 pacientes asmáticos de entre 18 y 69 años que dependían de medicación. Estos pacientes se dividieron aleatoriamente en dos grupos: uno practicó el método Buteyko y el otro no. En promedio, el grupo Buteyko experimentó una reducción significativa de los síntomas y una mejora en la calidad de vida.\n\nIdentifica la población de interés y la muestra en este estudio.\n¿Es un estudio observacional o un experimento? Justifica.\n¿Podemos concluir que el método Buteyko causa la mejora en los síntomas? Explica.\n\n\n\nTramposos\n\nInvestigadores estudiaron la relación entre honestidad, edad y autocontrol con 160 niños de 5 a 15 años. Los participantes informaron su edad, sexo y si eran hijos únicos. Luego, se les pidió que lanzaran una moneda en privado y registraran el resultado (blanco o negro), diciéndoles que solo serían recompensados si reportaban “blanco”. La mitad de los niños recibió la instrucción explícita de no hacer trampa; la otra mitad no. Se observaron diferencias en las tasas de trampa entre los grupos.\n\nIdentifica la población de interés y la muestra.\n¿Podemos generalizar estos resultados a todos los niños? ¿Por qué?\n¿Podemos establecer una relación causal entre la instrucción explícita y la reducción de la trampa? Justifica.\n\n\n\nEstatus social y comportamiento no ético\n\nEn un estudio, 129 estudiantes de la Universidad de California en Berkeley se identificaron a sí mismos como de clase baja o alta. Luego, se les presentó un frasco de caramelos, informándoles que eran para niños de un laboratorio cercano, pero que podían tomar algunos si querían. Los estudiantes de clase alta tomaron más caramelos que los de clase baja.\n\nIdentifica la población de interés y la muestra.\n¿Podemos generalizar estos resultados a todos los adultos? Explica.\n¿Podemos concluir que el estatus social alto causa un comportamiento menos ético? ¿Qué variable de confusión podría existir?\n\n\n\nRelajación después del trabajo\n\nLa Encuesta Social General preguntó a una muestra aleatoria de 1.155 estadounidenses: “Después de un día de trabajo promedio, ¿cuántas horas tienes para relajarte o realizar actividades que disfrutes?”. El tiempo promedio de relajación fue de 1,65 horas. Determina si cada elemento es una observación, una variable, un estadístico muestral o un parámetro poblacional:\n\nUn estadounidense en la muestra.\nNúmero de horas dedicadas a relajarse después de un día laboral promedio.\n1,65.\nNúmero promedio de horas que todos los estadounidenses pasan relajándose después de un día laboral promedio.\n\n\n\nMétodos de muestreo\n\nUna universidad quiere determinar qué fracción de sus estudiantes de pregrado apoya una nueva tarifa anual de 25 mil pesos para mejorar el centro estudiantil. Para cada método propuesto, indica si es razonable o no, y por qué.\n\nEncuestar una muestra aleatoria simple de 500 estudiantes.\nEstratificar a los estudiantes por su campo de estudio, y luego muestrear el 10% de cada estrato.\nAgrupar a los estudiantes por su edad (ej. todos los de 18 años en un grupo, los de 19 en otro, etc.), luego muestrear aleatoriamente tres grupos y encuestar a todos los estudiantes de esos grupos.",
+    "crumbs": [
+      "Lecciones",
+      "Lección 4: Principios de muestreo y diseño de estudios"
+    ]
+  },
+  {
+    "objectID": "epdi/lecciones/leccion-4-principios-de-muestreo-y-diseño-de-experimentos.html#preguntas-para-reflexionar-y-debatir-en-clase",
+    "href": "epdi/lecciones/leccion-4-principios-de-muestreo-y-diseño-de-experimentos.html#preguntas-para-reflexionar-y-debatir-en-clase",
+    "title": "Lección 4: Principios de muestreo y diseño de estudios",
+    "section": "8 Preguntas para reflexionar y debatir en clase",
+    "text": "8 Preguntas para reflexionar y debatir en clase\n\nEvidencia anecdótica vs. datos sistemáticos: ¿Por qué crees que la evidencia anecdótica es tan persuasiva, a pesar de ser poco fiable? ¿Puedes recordar alguna situación en la que hayas sacado una conclusión basada en una anécdota y luego te hayas dado cuenta de que no era generalizable?\nSesgo de no respuesta: En una encuesta política online, ¿quiénes crees que tienen más probabilidades de responder? ¿Cómo podría esto sesgar los resultados?\nMuestreo en San Felipe: Diseña un plan de muestreo para estimar la proporción de habitantes de San Felipe que están a favor de construir una nueva ciclovía. ¿Qué método usarías y por qué? ¿Qué dificultades prácticas encontrarías?\nCausalidad en medios: Busca un titular de noticias que afirme una relación causal (ej. “Comer chocolate adelgaza”). ¿Qué tipo de estudio crees que está detrás? ¿Qué variables de confusión podrían explicar realmente el hallazgo?\nExperimentos en la vida cotidiana: Piensa en una decisión que hayas tomado recientemente y que podría haberse beneficiado de un “experimento” (ej. probar dos métodos de estudio diferentes). ¿Cómo habrías diseñado un experimento simple para tomar una mejor decisión?",
+    "crumbs": [
+      "Lecciones",
+      "Lección 4: Principios de muestreo y diseño de estudios"
+    ]
+  },
+  {
+    "objectID": "epdi/lecciones/leccion-4-principios-de-muestreo-y-diseño-de-experimentos.html#resumen-de-conceptos-clave",
+    "href": "epdi/lecciones/leccion-4-principios-de-muestreo-y-diseño-de-experimentos.html#resumen-de-conceptos-clave",
+    "title": "Lección 4: Principios de muestreo y diseño de estudios",
+    "section": "9 Resumen de conceptos clave",
+    "text": "9 Resumen de conceptos clave\n\n\n\n\n\n\n\nConcepto\nDefinición breve\n\n\n\n\nPoblación\nConjunto completo de individuos de interés.\n\n\nMuestra\nSubconjunto de la población del que se recogen datos.\n\n\nIndividuo\nUn elemento de la población o muestra.\n\n\nEvidencia anecdótica\nDatos basados en casos aislados y no representativos.\n\n\nSesgo\nError sistemático que desvía los resultados.\n\n\nMuestreo aleatorio simple\nCada individuo tiene igual probabilidad de ser elegido.\n\n\nMuestreo estratificado\nSe divide en grupos homogéneos y se muestrea dentro de cada uno.\n\n\nMuestreo por conglomerados\nSe eligen grupos al azar y se estudian todos sus individuos.\n\n\nMuestreo multietápico\nCombinación de muestreo por conglomerados y aleatorio simple.\n\n\nEstudio observacional\nEl investigador observa sin intervenir.\n\n\nExperimento\nEl investigador manipula una variable y asigna aleatoriamente.\n\n\nVariable de confusión\nVariable asociada a las que se estudian y que puede falsear la relación.\n\n\n\n\nEste material está diseñado para ser trabajado en clase de forma colaborativa. Se recomienda dedicar tiempo a la discusión de los ejercicios y las preguntas de reflexión.",
+    "crumbs": [
+      "Lecciones",
+      "Lección 4: Principios de muestreo y diseño de estudios"
+    ]
+  },
+  {
     "objectID": "epdi/lecciones/leccion-3-tipos-de-variables.html#tipos-de-variables-una-clasificación-fundamental",
     "href": "epdi/lecciones/leccion-3-tipos-de-variables.html#tipos-de-variables-una-clasificación-fundamental",
     "title": "Lección 3: Tipos de variables",
