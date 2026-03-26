@@ -4,6 +4,7 @@ project:
   resources:
     - epdi/imagenes/**
     - epdi/media/**
+    - epdi/datos/**
 
 website:
   title: "hsigrist"
