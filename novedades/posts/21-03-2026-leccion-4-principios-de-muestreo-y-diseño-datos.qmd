@@ -1,7 +1,6 @@
 ---
 title: "Nueva lección: Lección 4 Principios de muestreo y diseño de estudios"
 date: 2026-03-21
-draft: true
 date-format: "D MMMM, YYYY"
 author: "Hans Sigrist"
 categories: [EPDI, lecciones]

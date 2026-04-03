@@ -1,0 +1,13 @@
+---
+title: "Nueva lección: Lección 3 Tipos de variables"
+date: 2026-03-26
+date-format: "D MMMM, YYYY"
+author: "Hans Sigrist"
+categories: [EPDI, lecciones]
+lang: es
+description: "Clasificación de variables estadísticas y estudio de relaciones entre variables utilizando una base de datos didáctica simulada.
+"
+image: "/epdi/imagenes/54005_sao_paulo_lg.png"
+---
+
+Ya está disponible la [Lección 3 Tipos de variables](../../epdi/lecciones/leccion-3-tipos-de-variables.qmd). Existe una versión en PDF, misma que se ha entregado en clases impresa.
