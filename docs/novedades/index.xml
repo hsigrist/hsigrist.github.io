@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>hsigrist</title>
+<link>https://hsigrist.github.io/novedades/</link>
+<atom:link href="https://hsigrist.github.io/novedades/index.xml" rel="self" type="application/rss+xml"/>
+<description>Materiales docentes y novedades de Formación Diferenciada | Colegio Portaliano</description>
+<generator>quarto-1.9.36</generator>
+<lastBuildDate>Thu, 26 Mar 2026 03:00:00 GMT</lastBuildDate>
+<item>
+  <title>Nueva lección: Lección 3 Tipos de variables</title>
+  <dc:creator>Hans Sigrist</dc:creator>
+  <link>https://hsigrist.github.io/novedades/posts/26-03-2026-leccion-3-tipos-de-variables.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Ya está disponible la <a href="../../epdi/lecciones/leccion-3-tipos-de-variables.html">Lección 3 Tipos de variables</a>. Existe una versión en PDF, misma que se ha entregado en clases impresa.</p>
+
+
+
+ ]]></description>
+  <category>EPDI</category>
+  <category>lecciones</category>
+  <guid>https://hsigrist.github.io/novedades/posts/26-03-2026-leccion-3-tipos-de-variables.html</guid>
+  <pubDate>Thu, 26 Mar 2026 03:00:00 GMT</pubDate>
+  <media:content url="https://hsigrist.github.io/epdi/imagenes/54005_sao_paulo_lg.png" medium="image" type="image/png" height="116" width="144"/>
+</item>
+<item>
+  <title>De la correlación espuria a la tragedia real: Cuando los síntomas de un ACV se confunden con ebriedad</title>
+  <dc:creator>Hans Sigrist</dc:creator>
+  <link>https://hsigrist.github.io/novedades/posts/22-03-2026-de-la-correlacion-espuria-a-la-tragedia-real.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="una-correlación-que-vuelve-a-costar-una-vida" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Una correlación que vuelve a costar una vida</h1>
+<p>En marzo de 2026, un conductor del sistema Red (ex Transantiago) sufrió un <strong>accidente cerebrovascular (ACV)</strong> mientras manejaba su bus. Los pasajeros, al verlo con la conducta errática, desorientado y con dificultades para hablar —síntomas típicos de un ACV— <strong>asumieron que estaba bajo los efectos del alcohol</strong>.</p>
+<p>Lo enfrentaron y agredieron. Días después, tras permanecer internado en estado crítico, <strong>falleció</strong>.</p>
+<p>El caso fue reportado por Chilevisión el 20 de marzo de 2026, con un titular que resume la trágica confusión: <em>“Pensaban que estaba ebrio y sufrió ACV: Conductor del Sistema Red falleció tras semanas internado”</em> .</p>
+<p>No es la primera vez que ocurre. En 2023, un caso casi idéntico conmocionó al país. Ahora, dos años después, la historia se repite.</p>
+</section>
+<section id="qué-tiene-que-ver-esto-con-la-estadística" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> ¿Qué tiene que ver esto con la estadística?</h1>
+<p>Este caso es un ejemplo trágico de lo que llamamos <strong>correlación espuria</strong>: la asociación mental automática que hacemos entre “conducción errática + desorientación” y “conductor ebrio”. Es una asociación que tiene una lógica superficial, pero que en este contexto ocultaba la verdadera causa: un evento biológico impredecible.</p>
+<p>Lo que los pasajeros no consideraron fue la <strong>tercera variable</strong>: el ACV produce síntomas externos casi idénticos a los de la intoxicación por alcohol. La falta de conocimiento sobre esta variable desencadenó una reacción catastrófica.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>EPDI</category>
+  <guid>https://hsigrist.github.io/novedades/posts/22-03-2026-de-la-correlacion-espuria-a-la-tragedia-real.html</guid>
+  <pubDate>Sun, 22 Mar 2026 03:00:00 GMT</pubDate>
+  <media:content url="https://hsigrist.github.io/novedades/imagenes/69bdede7af427_0.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Nueva lección: Lección 4 Principios de muestreo y diseño de estudios</title>
+  <dc:creator>Hans Sigrist</dc:creator>
+  <link>https://hsigrist.github.io/novedades/posts/21-03-2026-leccion-4-principios-de-muestreo-y-diseño-datos.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Ya está disponible la <a href="../../epdi/lecciones/leccion-4-principios-de-muestreo-y-diseño-de-experimentos.html">Lección 4 Principios de muestreo y diseño de estudios</a>. Existe una versión en PDF, misma que se ha entregado en clases impresa.</p>
+<p>Además, cuenta con recursos para los alumnos más “visuales”: dos videos y una muy detallada presentación PDF.</p>
+
+
+
+ ]]></description>
+  <category>EPDI</category>
+  <category>lecciones</category>
+  <guid>https://hsigrist.github.io/novedades/posts/21-03-2026-leccion-4-principios-de-muestreo-y-diseño-datos.html</guid>
+  <pubDate>Sat, 21 Mar 2026 03:00:00 GMT</pubDate>
+  <media:content url="https://hsigrist.github.io/epdi/imagenes/pic-selected-260315-1228-11.png" medium="image" type="image/png" height="54" width="144"/>
+</item>
+<item>
+  <title>Pesticidas en San Felipe y pingüinos calvos: una correlación muy espuria</title>
+  <dc:creator>Hans Sigrist</dc:creator>
+  <link>https://hsigrist.github.io/novedades/posts/14-03-2026-pinguinos-calvos.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Imaginemos que un estudio publicado en la prestigiosa (y totalmente inventada) <em>Revista Internacional de Correlaciones Improbables</em> revela un descubrimiento alarmante: <strong>existe una correlación casi perfecta entre la cantidad de pesticidas aplicados en los viñedos de San Felipe y la incidencia de pingüinos calvos en la Antártida</strong>.</p>
+<p>Los datos, meticulosamente recolectados por intrépidos científicos (y por nosotros, aquí en el escritorio), muestran que en los años de mayor aplicación de pesticidas en nuestra querida ciudad, aumenta misteriosamente el número de avistamientos de pingüinos con zonas sin plumas en el Polo Sur.</p>
+<p>¿Cómo es posible? ¿Acaso los pesticidas viajan miles de kilómetros para atacar el folículo piloso de las aves marinas? ¿O es que los pingüinos, solidarios con los viñateros, se están quedando calvos de la preocupación?</p>
+<section id="una-teoría-absurda-pero-con-coherencia-interna" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="una-teoría-absurda-pero-con-coherencia-interna"><span class="header-section-number">1</span> Una teoría (absurda pero con coherencia interna)</h2>
+<p>Para darle rigor a esta disparatada hipótesis, podemos construir una <strong>explicación “casi causal”</strong>. Imaginemos el siguiente mecanismo:</p>
+<ol type="1">
+<li><strong>Las aplicaciones aéreas de pesticidas</strong> en los viñedos de San Felipe generan una fina nube de partículas que, ayudadas por los vientos predominantes de la cordillera de los Andes, ascienden hasta la tropopausa.</li>
+<li>Estas partículas, según nuestra teoría, tienen la peculiar propiedad de reflejar la radiación ultravioleta de una manera que, al llegar a la Antártida, alteran el ángulo de incidencia de los rayos solares sobre las colonias de pingüinos.</li>
+<li>Los pingüinos, para compensar este cambio lumínico, <strong>permanecen más tiempo tomando sol</strong>, con la cabeza erguida en una posición poco natural.</li>
+<li>La exposición prolongada y en un ángulo inusual provoca, después de varias generaciones, <strong>alopecia psicogénica inducida por estrés postural</strong> en estas aves.</li>
+</ol>
+<p>Por supuesto, cada paso de esta explicación es una suposición descabellada. Pero, como diría el estadístico, <strong>la correlación está ahí</strong>.</p>
+</section>
+<section id="los-datos-simulados-pero-con-cariño" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="los-datos-simulados-pero-con-cariño"><span class="header-section-number">2</span> Los datos (simulados, pero con cariño)</h2>
+<p>Para ilustrar esta profunda verdad científica, he generado unos datos con R. En el siguiente gráfico, la línea azul muestra las toneladas de pesticidas aplicadas en San Felipe (simuladas con una tendencia creciente y algo de ruido). La línea roja muestra el porcentaje de pingüinos con signos de calvicie observados en la Antártida (también simulados para que sigan el mismo patrón).</p>
+<p>La coincidencia es… inquietante.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://hsigrist.github.io/novedades/posts/14-03-2026-pinguinos-calvos_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="1152"></p>
+</figure>
+</div>
+</div>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <category>EPDI</category>
+  <category>humor</category>
+  <guid>https://hsigrist.github.io/novedades/posts/14-03-2026-pinguinos-calvos.html</guid>
+  <pubDate>Sun, 15 Mar 2026 03:00:00 GMT</pubDate>
+  <media:content url="https://hsigrist.github.io/epdi/imagenes/pinguinos_pesticidas.png" medium="image" type="image/png" height="72" width="144"/>
+</item>
+<item>
+  <title>Nueva presentación: Las lavadoras previenen los embarazos</title>
+  <dc:creator>Hans Sigrist</dc:creator>
+  <link>https://hsigrist.github.io/novedades/posts/14-03-2026-las-lavadoras-previenen-los-embarazos.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Acabo de publicar una presentación titulada <strong><a href="../../epdi/presentaciones/las-lavadoras-previenen-el-embarazo.html">Las lavadoras previenen los embarazos</a></strong>. El título es, por supuesto, una provocación.</p>
+<p>En ella exploramos uno de los conceptos más importantes (y malentendidos) de la estadística: <strong>la diferencia entre correlación y causalidad</strong>. Usamos un ejemplo clásico y algo absurdo (la relación entre el número de películas de Nicolas Cage y los ahogamientos en piscinas) para entender por qué no debemos saltar a conclusiones apresuradas cuando vemos que dos cosas parecen relacionarse. Para explorar más puedes leer este artículo de National Geographic <a href="https://www.nationalgeographic.com/science/article/nick-cage-movies-vs-drownings-and-more-strange-but-spurious-correlations">Nick Cage Movies Vs. Drownings, and More Strange (but Spurious) Correlations</a></p>
+<p>Entender esto te ayudará a:</p>
+<ul>
+<li>Leer de forma más crítica noticias y estudios que usan datos.</li>
+<li>Evitar caer en falsas creencias o “mitos estadísticos”.</li>
+<li>Aplicar este pensamiento en tus propios análisis del curso.</li>
+</ul>
+<p>La presentación es corta, visual y con ejemplos entretenidos. Ideal para ver antes de nuestra próxima clase.</p>
+<p><strong>Enlace directo:</strong> <a href="../../epdi/presentaciones/las-lavadoras-previenen-el-embarazo.html">Las lavadoras previenen los embarazos (presentación Quarto)</a></p>
+
+
+
+ ]]></description>
+  <category>EPDI</category>
+  <category>presentaciones</category>
+  <guid>https://hsigrist.github.io/novedades/posts/14-03-2026-las-lavadoras-previenen-los-embarazos.html</guid>
+  <pubDate>Sat, 14 Mar 2026 03:00:00 GMT</pubDate>
+  <media:content url="https://hsigrist.github.io/epdi/imagenes/nicolas-cage-spurious-correlation.png" medium="image" type="image/png" height="86" width="144"/>
+</item>
+<item>
+  <title>Nueva lección: Lección 2 Tipos de datos</title>
+  <dc:creator>Hans Sigrist</dc:creator>
+  <link>https://hsigrist.github.io/novedades/posts/12-03-2026-leccion-2-tipos-de-datos.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Ya está disponible la <a href="../../epdi/lecciones/leccion-2-tipos-de-datos.html">Lección 2 Tipos de datos</a>. Existe una versión en PDF, misma que se ha entregado en clases impresa.</p>
+
+
+
+ ]]></description>
+  <category>EPDI</category>
+  <category>lecciones</category>
+  <guid>https://hsigrist.github.io/novedades/posts/12-03-2026-leccion-2-tipos-de-datos.html</guid>
+  <pubDate>Thu, 12 Mar 2026 03:00:00 GMT</pubDate>
+  <media:content url="https://hsigrist.github.io/epdi/imagenes/63564_railroad_lg.png" medium="image" type="image/png" height="99" width="144"/>
+</item>
+<item>
+  <title>Nueva presentación: EPDI</title>
+  <dc:creator>Hans Sigrist</dc:creator>
+  <link>https://hsigrist.github.io/novedades/posts/11-03-2026-epdi.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Acabo de publicar una presentación titulada <strong><a href="../../epdi/presentaciones/presentacion-edpi.html">EPDI</a></strong>. En ella se resume las características de la asignatura.</p>
+
+
+
+ ]]></description>
+  <category>EPDI</category>
+  <category>presentaciones</category>
+  <guid>https://hsigrist.github.io/novedades/posts/11-03-2026-epdi.html</guid>
+  <pubDate>Wed, 11 Mar 2026 03:00:00 GMT</pubDate>
+  <media:content url="https://hsigrist.github.io/epdi/imagenes/fig-portada-gapminder-1.png" medium="image" type="image/png" height="84" width="144"/>
+</item>
+<item>
+  <title>Nueva lección: Lección 1 Introducción a los datos</title>
+  <dc:creator>Hans Sigrist</dc:creator>
+  <link>https://hsigrist.github.io/novedades/posts/05-03-2026-leccion-1-introduccion-a-los-datos.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Ya está disponible la <a href="../../epdi/lecciones/leccion-1-introduccion-a-los-datos.html">Lección 1 Introducción a los datos</a>. Existe una versión en PDF, misma que se ha entregado en clases impresa.</p>
+
+
+
+ ]]></description>
+  <category>EPDI</category>
+  <category>lecciones</category>
+  <guid>https://hsigrist.github.io/novedades/posts/05-03-2026-leccion-1-introduccion-a-los-datos.html</guid>
+  <pubDate>Thu, 05 Mar 2026 03:00:00 GMT</pubDate>
+  <media:content url="https://hsigrist.github.io/epdi/imagenes/65138_patient_lg.png" medium="image" type="image/png" height="125" width="144"/>
+</item>
+<item>
+  <title>Bienvenida</title>
+  <dc:creator>Hans Sigrist</dc:creator>
+  <link>https://hsigrist.github.io/novedades/posts/04-03-2026-bienvenida.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Bienvenidos al sitio de las asignaturas de <em>Formación Diferenciada</em> del Prof.&nbsp;Hans Sigrist.</p>
+<p>En este espacio se irán publicando las novedades del curso <a href="../../epdi/index.html">EPDI</a> (Estadística y Probabilidad Descriptiva e Inferencial) . Revisar periódicamente.</p>
+
+
+
+ ]]></description>
+  <category>EPDI</category>
+  <guid>https://hsigrist.github.io/novedades/posts/04-03-2026-bienvenida.html</guid>
+  <pubDate>Wed, 04 Mar 2026 03:00:00 GMT</pubDate>
+  <media:content url="https://hsigrist.github.io/epdi/imagenes/fig-portada-gapminder-1.png" medium="image" type="image/png" height="84" width="144"/>
+</item>
+</channel>
+</rss>
