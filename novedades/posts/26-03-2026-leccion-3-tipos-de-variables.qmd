@@ -5,8 +5,7 @@ date-format: "D MMMM, YYYY"
 author: "Hans Sigrist"
 categories: [EPDI, lecciones]
 lang: es
-description: "Clasificación de variables estadísticas y estudio de relaciones entre variables utilizando una base de datos didáctica simulada.
-"
+description: "Clasificación de variables estadísticas y estudio de relaciones entre variables utilizando una base de datos didáctica simulada."
 image: "/epdi/imagenes/54005_sao_paulo_lg.png"
 ---
 

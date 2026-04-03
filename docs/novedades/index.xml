@@ -10,7 +10,28 @@
 <atom:link href="https://hsigrist.github.io/novedades/index.xml" rel="self" type="application/rss+xml"/>
 <description>Materiales docentes y novedades de Formación Diferenciada | Colegio Portaliano</description>
 <generator>quarto-1.9.36</generator>
-<lastBuildDate>Sat, 28 Mar 2026 03:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 03 Apr 2026 03:00:00 GMT</lastBuildDate>
+<item>
+  <title>Nueva lección: Lección 5 Experimentos y diseños experimentales</title>
+  <dc:creator>Hans Sigrist</dc:creator>
+  <link>https://hsigrist.github.io/novedades/posts/03-04-2026-leccion-5-experimentos.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Ya está disponible la <a href="../../epdi/lecciones/leccion-5-experimentos.html">Lección 5 Experimentos y diseños experimentales</a>. Existe una versión en PDF y recursos visuales extras.</p>
+
+
+
+ ]]></description>
+  <category>EPDI</category>
+  <category>lecciones</category>
+  <guid>https://hsigrist.github.io/novedades/posts/03-04-2026-leccion-5-experimentos.html</guid>
+  <pubDate>Fri, 03 Apr 2026 03:00:00 GMT</pubDate>
+  <media:content url="https://hsigrist.github.io/epdi/imagenes/heart_28392_lg.png" medium="image" type="image/png" height="151" width="144"/>
+</item>
 <item>
   <title>Nueva lección: Lección 4 Principios de muestreo y diseño de estudios</title>
   <dc:creator>Hans Sigrist</dc:creator>
@@ -83,28 +104,6 @@
   <guid>https://hsigrist.github.io/novedades/posts/22-03-2026-de-la-correlacion-espuria-a-la-tragedia-real.html</guid>
   <pubDate>Sun, 22 Mar 2026 03:00:00 GMT</pubDate>
   <media:content url="https://hsigrist.github.io/novedades/imagenes/69bdede7af427_0.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Nueva lección: Lección 4 Principios de muestreo y diseño de estudios</title>
-  <dc:creator>Hans Sigrist</dc:creator>
-  <link>https://hsigrist.github.io/novedades/posts/21-03-2026-leccion-4-principios-de-muestreo-y-diseño-datos.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>Ya está disponible la <a href="../../epdi/lecciones/leccion-4-principios-de-muestreo-y-diseño-de-experimentos.html">Lección 4 Principios de muestreo y diseño de estudios</a>. Existe una versión en PDF, misma que se ha entregado en clases impresa.</p>
-<p>Además, cuenta con recursos para los alumnos más “visuales”: dos videos y una muy detallada presentación PDF.</p>
-
-
-
- ]]></description>
-  <category>EPDI</category>
-  <category>lecciones</category>
-  <guid>https://hsigrist.github.io/novedades/posts/21-03-2026-leccion-4-principios-de-muestreo-y-diseño-datos.html</guid>
-  <pubDate>Sat, 21 Mar 2026 03:00:00 GMT</pubDate>
-  <media:content url="https://hsigrist.github.io/epdi/imagenes/pic-selected-260315-1228-11.png" medium="image" type="image/png" height="54" width="144"/>
 </item>
 <item>
   <title>Pesticidas en San Felipe y pingüinos calvos: una correlación muy espuria</title>

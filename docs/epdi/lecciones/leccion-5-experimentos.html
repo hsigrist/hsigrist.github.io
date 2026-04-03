@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Hans Sigrist">
+<meta name="description" content="Principios del diseño experimental: control, aleatorización, replicación y bloqueo. Diferencias entre estudios observacionales y experimentos. El papel del placebo, el cegamiento y la ética en la investigación.">
+
+<title>Lección 5: Experimentos y diseños experimentales – hsigrist</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-f418161beb48e0141c760e455f12af2c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-a5312e2448c48544805e26358ddafd1e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-b836c0048777725ccbb1b06599d2ca6d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-a5312e2448c48544805e26358ddafd1e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkModeDefault = queryPrefersDark.matches;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    queryPrefersDark.addEventListener("change", e => {
+      if(window.localStorage.getItem("quarto-color-scheme") !== null)
+        return;
+      const alternate = e.matches
+      toggleColorMode(alternate);
+      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
+      toggleGiscusIfUsed(alternate, darkModeDefault);
+    });
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">hsigrist</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../novedades/index.html"> 
+<span class="menu-text">Novedades</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-cursos" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Cursos</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-cursos">    
+        <li>
+    <a class="dropdown-item" href="../../epdi/index.html">
+ <span class="dropdown-text">EPDI - Estadística</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../ldi/index.html">
+ <span class="dropdown-text">LDI - Cálculo</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">Acerca de</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../novedades/index.xml"> <i class="bi bi-rss" role="img" aria-label="Feed RSS de Novedades">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/hsigrist/hsigrist.github.io"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:hsigrist@colegioportaliano.cl"> <i class="bi bi-envelope" role="img" aria-label="Enviar correo">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo oscuro"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../epdi/lecciones/leccion-1-introduccion-a-los-datos.html">Lecciones</a></li><li class="breadcrumb-item"><a href="../../epdi/lecciones/leccion-5-experimentos.html">Lección 5: Experimentos y diseños experimentales</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EPDI - Estadística y Probabilidad Descriptiva e Inferencial</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Presentaciones</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/presentaciones/presentacion-edpi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EPDI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/presentaciones/las-lavadoras-previenen-el-embarazo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Las lavadoras previenen el embarazo</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Programa</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/programa/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Programa</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Evaluación</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/evaluacion/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Evaluación</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/evaluacion/cuestionario-grupal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cuestionario grupal</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Rúbricas</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/rubricas/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rúbricas</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/rubricas/rubrica-cuestionario-grupal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rúbrica: Cuestionario Grupal</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Lecciones</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/lecciones/leccion-1-introduccion-a-los-datos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lección 1: Introducción a los datos</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/lecciones/leccion-2-tipos-de-datos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lección 2: Tipos de datos y estructura de la información</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/lecciones/leccion-3-tipos-de-variables.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lección 3: Tipos de variables</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/lecciones/leccion-4-principios-de-muestreo-y-diseño-de-experimentos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lección 4: Principios de muestreo y diseño de estudios</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/lecciones/leccion-5-experimentos.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Lección 5: Experimentos y diseños experimentales</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En esta página</h2>
+   
+  <ul>
+  <li><a href="#objetivos-de-la-lección" id="toc-objetivos-de-la-lección" class="nav-link active" data-scroll-target="#objetivos-de-la-lección"><span class="header-section-number">1</span> Objetivos de la lección</a></li>
+  <li><a href="#experimentos-más-allá-de-la-asociación" id="toc-experimentos-más-allá-de-la-asociación" class="nav-link" data-scroll-target="#experimentos-más-allá-de-la-asociación"><span class="header-section-number">2</span> Experimentos: más allá de la asociación</a>
+  <ul class="collapse">
+  <li><a href="#recordatorio-el-caso-de-los-stents" id="toc-recordatorio-el-caso-de-los-stents" class="nav-link" data-scroll-target="#recordatorio-el-caso-de-los-stents"><span class="header-section-number">2.1</span> Recordatorio: El caso de los stents</a></li>
+  </ul></li>
+  <li><a href="#principios-del-diseño-experimental" id="toc-principios-del-diseño-experimental" class="nav-link" data-scroll-target="#principios-del-diseño-experimental"><span class="header-section-number">3</span> Principios del diseño experimental</a>
+  <ul class="collapse">
+  <li><a href="#control" id="toc-control" class="nav-link" data-scroll-target="#control"><span class="header-section-number">3.1</span> Control</a></li>
+  <li><a href="#aleatorización-randomización" id="toc-aleatorización-randomización" class="nav-link" data-scroll-target="#aleatorización-randomización"><span class="header-section-number">3.2</span> Aleatorización (Randomización)</a></li>
+  <li><a href="#replicación" id="toc-replicación" class="nav-link" data-scroll-target="#replicación"><span class="header-section-number">3.3</span> Replicación</a></li>
+  <li><a href="#bloqueo-blocking" id="toc-bloqueo-blocking" class="nav-link" data-scroll-target="#bloqueo-blocking"><span class="header-section-number">3.4</span> Bloqueo (Blocking)</a></li>
+  </ul></li>
+  <li><a href="#reducción-de-sesgos-en-experimentos-con-humanos" id="toc-reducción-de-sesgos-en-experimentos-con-humanos" class="nav-link" data-scroll-target="#reducción-de-sesgos-en-experimentos-con-humanos"><span class="header-section-number">4</span> Reducción de sesgos en experimentos con humanos</a>
+  <ul class="collapse">
+  <li><a href="#placebo-y-efecto-placebo" id="toc-placebo-y-efecto-placebo" class="nav-link" data-scroll-target="#placebo-y-efecto-placebo"><span class="header-section-number">4.1</span> Placebo y efecto placebo</a></li>
+  <li><a href="#cegamiento-simple-y-doble-ciego" id="toc-cegamiento-simple-y-doble-ciego" class="nav-link" data-scroll-target="#cegamiento-simple-y-doble-ciego"><span class="header-section-number">4.2</span> Cegamiento simple y doble ciego</a></li>
+  <li><a href="#consideraciones-éticas" id="toc-consideraciones-éticas" class="nav-link" data-scroll-target="#consideraciones-éticas"><span class="header-section-number">4.3</span> Consideraciones éticas</a></li>
+  </ul></li>
+  <li><a href="#material-de-apoyo-y-reforzamiento" id="toc-material-de-apoyo-y-reforzamiento" class="nav-link" data-scroll-target="#material-de-apoyo-y-reforzamiento"><span class="header-section-number">5</span> Material de apoyo y reforzamiento</a>
+  <ul class="collapse">
+  <li><a href="#video-complementario" id="toc-video-complementario" class="nav-link" data-scroll-target="#video-complementario"><span class="header-section-number">5.1</span> Video complementario</a></li>
+  <li><a href="#presentación" id="toc-presentación" class="nav-link" data-scroll-target="#presentación"><span class="header-section-number">5.2</span> Presentación</a></li>
+  </ul></li>
+  <li><a href="#cuestionario-grupal-portafolio-lección-5-experimentos-y-diseño-de-experimentos" id="toc-cuestionario-grupal-portafolio-lección-5-experimentos-y-diseño-de-experimentos" class="nav-link" data-scroll-target="#cuestionario-grupal-portafolio-lección-5-experimentos-y-diseño-de-experimentos"><span class="header-section-number">6</span> Cuestionario Grupal (Portafolio): Lección 5 Experimentos y diseño de experimentos</a>
+  <ul class="collapse">
+  <li><a href="#luz-y-rendimiento-en-examen" id="toc-luz-y-rendimiento-en-examen" class="nav-link" data-scroll-target="#luz-y-rendimiento-en-examen"><span class="header-section-number">6.1</span> Luz y rendimiento en examen</a></li>
+  <li><a href="#vitamina-c-y-resfriado-común" id="toc-vitamina-c-y-resfriado-común" class="nav-link" data-scroll-target="#vitamina-c-y-resfriado-común"><span class="header-section-number">6.2</span> Vitamina C y resfriado común</a></li>
+  <li><a href="#luz-ruido-y-rendimiento-en-examen" id="toc-luz-ruido-y-rendimiento-en-examen" class="nav-link" data-scroll-target="#luz-ruido-y-rendimiento-en-examen"><span class="header-section-number">6.3</span> Luz, ruido y rendimiento en examen</a></li>
+  <li><a href="#música-y-aprendizaje" id="toc-música-y-aprendizaje" class="nav-link" data-scroll-target="#música-y-aprendizaje"><span class="header-section-number">6.4</span> Música y aprendizaje</a></li>
+  <li><a href="#preferencia-de-gaseosa" id="toc-preferencia-de-gaseosa" class="nav-link" data-scroll-target="#preferencia-de-gaseosa"><span class="header-section-number">6.5</span> Preferencia de gaseosa</a></li>
+  <li><a href="#ejercicio-y-salud-mental" id="toc-ejercicio-y-salud-mental" class="nav-link" data-scroll-target="#ejercicio-y-salud-mental"><span class="header-section-number">6.6</span> Ejercicio y salud mental</a></li>
+  </ul></li>
+  <li><a href="#preguntas-para-reflexionar-y-debatir-en-clase" id="toc-preguntas-para-reflexionar-y-debatir-en-clase" class="nav-link" data-scroll-target="#preguntas-para-reflexionar-y-debatir-en-clase"><span class="header-section-number">7</span> Preguntas para reflexionar y debatir en clase</a></li>
+  <li><a href="#resumen-de-conceptos-clave" id="toc-resumen-de-conceptos-clave" class="nav-link" data-scroll-target="#resumen-de-conceptos-clave"><span class="header-section-number">8</span> Resumen de conceptos clave</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Otros formatos</h2><ul><li><a href="leccion-5-experimentos.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content column-body" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../epdi/lecciones/leccion-1-introduccion-a-los-datos.html">Lecciones</a></li><li class="breadcrumb-item"><a href="../../epdi/lecciones/leccion-5-experimentos.html">Lección 5: Experimentos y diseños experimentales</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Lección 5: Experimentos y diseños experimentales</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">EPDI</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    <p>Principios del diseño experimental: control, aleatorización, replicación y bloqueo. Diferencias entre estudios observacionales y experimentos. El papel del placebo, el cegamiento y la ética en la investigación.</p>
+  </div>
+</div>
+
+<div class="quarto-title-meta-author column-body">
+  <div class="quarto-title-meta-heading">Autor/a</div>
+  <div class="quarto-title-meta-heading">Afiliación</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Hans Sigrist <a href="mailto:hsigrist@colegioportaliano.cl" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://www.colegioportaliano.cl">
+            Colegio Portaliano
+            </a>
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta column-body">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Fecha de publicación</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">5 de abril de 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+<div>
+  <div class="abstract">
+    <div class="block-title">Resumen</div>
+    <p>Esta lección explora los fundamentos de los experimentos, especialmente los aleatorizados, como herramienta para establecer relaciones causales. Se analizan los cuatro principios básicos del diseño experimental, la importancia del cegamiento y el uso de placebos, así como las consideraciones éticas. Se incluyen ejercicios prácticos para aplicar los conceptos.</p>
+  </div>
+</div>
+
+
+</header>
+
+
+<div id="fig-railroad" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-number="false">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-railroad-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../imagenes/heart_28392_lg.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-railroad-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;1: Ilustración utilizada con fines educativos. Fuente: USF ClipArt Collection (University of South Florida).
+</figcaption>
+</figure>
+</div>
+<section id="objetivos-de-la-lección" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="objetivos-de-la-lección"><span class="header-section-number">1</span> Objetivos de la lección</h2>
+<p>Al finalizar esta lección, los estudiantes serán capaces de:</p>
+<ul>
+<li>Diferenciar claramente entre un <strong>estudio observacional</strong> y un <strong>experimento</strong>.</li>
+<li>Explicar por qué los experimentos aleatorizados son el “estándar de oro” para establecer causalidad.</li>
+<li>Identificar y aplicar los <strong>cuatro principios del diseño experimental</strong>: control, aleatorización, replicación y bloqueo.</li>
+<li>Comprender el concepto de <strong>placebo</strong> y la importancia del <strong>cegamiento</strong> (simple y doble) para reducir sesgos en estudios con humanos.</li>
+<li>Reflexionar sobre las implicaciones éticas de los experimentos, especialmente aquellos que involucran tratamientos potencialmente riesgosos o placebos.</li>
+</ul>
+<hr>
+</section>
+<section id="experimentos-más-allá-de-la-asociación" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="experimentos-más-allá-de-la-asociación"><span class="header-section-number">2</span> Experimentos: más allá de la asociación</h2>
+<p>Como vimos en la lección anterior, los <strong>estudios observacionales</strong> pueden identificar asociaciones, pero no pueden establecer causalidad de manera concluyente debido a la posible existencia de <strong>variables de confusión</strong>. Para demostrar que una variable <strong>causa</strong> un efecto en otra, necesitamos realizar un <strong>experimento</strong>.</p>
+<blockquote class="blockquote">
+<p><strong>Definición:</strong> Un <strong>experimento</strong> es un estudio en el que los investigadores <strong>asignan activamente</strong> un tratamiento a los sujetos (casos). Cuando esta asignación se hace al azar (por ejemplo, lanzando una moneda), se denomina <strong>experimento aleatorizado</strong>.</p>
+</blockquote>
+<p>El experimento aleatorizado es la herramienta más poderosa para inferir causalidad, porque la aleatorización ayuda a equilibrar, tanto las variables conocidas como las desconocidas, entre los grupos de tratamiento y control.</p>
+<section id="recordatorio-el-caso-de-los-stents" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="recordatorio-el-caso-de-los-stents"><span class="header-section-number">2.1</span> Recordatorio: El caso de los stents</h3>
+<p>En la <strong>Lección 1</strong> estudiamos un experimento clínico para evaluar si los stents reducían el riesgo de ACV en pacientes de riesgo. Los investigadores asignaron aleatoriamente a los pacientes a dos grupos: <strong>tratamiento</strong> (con stent) y <strong>control</strong> (sin stent). Gracias a esta aleatorización, pudieron concluir que los stents no solo no ayudaban, sino que aumentaban el riesgo de ACV. Este es un ejemplo clásico de experimento aleatorizado.</p>
+<hr>
+</section>
+</section>
+<section id="principios-del-diseño-experimental" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="principios-del-diseño-experimental"><span class="header-section-number">3</span> Principios del diseño experimental</h2>
+<p>Los experimentos aleatorizados bien diseñados se basan en cuatro principios fundamentales.</p>
+<section id="control" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="control"><span class="header-section-number">3.1</span> Control</h3>
+<p>Los investigadores deben <strong>controlar</strong> cualquier otra diferencia entre los grupos que no sea el tratamiento de interés. Esto significa que, aparte del tratamiento, ambos grupos deben ser tratados de la manera más idéntica posible.</p>
+<ul>
+<li><strong>Ejemplo:</strong> Si se prueba un fármaco en pastillas, se debe indicar a todos los pacientes que tomen la pastilla con la misma cantidad de agua (por ejemplo, un vaso de 12 onzas), para que el efecto del agua no confunda los resultados.</li>
+</ul>
+</section>
+<section id="aleatorización-randomización" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="aleatorización-randomización"><span class="header-section-number">3.2</span> Aleatorización (Randomización)</h3>
+<p>Consiste en asignar a los sujetos a los grupos de tratamiento <strong>al azar</strong>. La aleatorización ayuda a equilibrar las características tanto medidas como no medidas entre los grupos, evitando sesgos.</p>
+<ul>
+<li><strong>Ejemplo:</strong> Para asignar pacientes a un grupo que recibe un nuevo medicamento o a un grupo control, se puede usar una moneda, una tabla de números aleatorios o un generador computacional.</li>
+</ul>
+</section>
+<section id="replicación" class="level3" data-number="3.3">
+<h3 data-number="3.3" class="anchored" data-anchor-id="replicación"><span class="header-section-number">3.3</span> Replicación</h3>
+<p>La <strong>replicación</strong> se refiere a tener un número suficientemente grande de sujetos en el estudio para poder detectar efectos reales y estimarlos con precisión. Cuantos más casos se observen, más confiable será la estimación del efecto del tratamiento.</p>
+<ul>
+<li><strong>Ejemplo:</strong> Un estudio con 1000 pacientes proporciona estimaciones mucho más precisas que uno con solo 10 pacientes. Además, la replicación de un estudio completo por parte de otros investigadores ayuda a confirmar los hallazgos originales.</li>
+</ul>
+</section>
+<section id="bloqueo-blocking" class="level3" data-number="3.4">
+<h3 data-number="3.4" class="anchored" data-anchor-id="bloqueo-blocking"><span class="header-section-number">3.4</span> Bloqueo (Blocking)</h3>
+<p>A veces, los investigadores saben o sospechan que una variable adicional (diferente al tratamiento) influye en la respuesta. En ese caso, pueden primero <strong>agrupar</strong> a los individuos en <strong>bloques</strong> según esa variable, y luego <strong>aleatorizar</strong> dentro de cada bloque a los grupos de tratamiento. Esto garantiza que cada grupo de tratamiento tenga una representación equilibrada de los niveles de la variable de bloqueo.</p>
+<div id="fig-bloqueo" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Diagrama que muestra el proceso de bloqueo: primero se separa por riesgo (bajo/alto) y luego se asigna aleatoriamente a tratamiento o control dentro de cada bloque.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bloqueo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../../epdi/imagenes/pic-selected-260403-1704-37.png" class="img-fluid figure-img" alt="Diagrama que muestra el proceso de bloqueo: primero se separa por riesgo (bajo/alto) y luego se asigna aleatoriamente a tratamiento o control dentro de cada bloque.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bloqueo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;2: Bloqueo en experimentos. Los pacientes se dividen primero en bloques de bajo y alto riesgo, y luego se aleatorizan dentro de cada bloque a los grupos de tratamiento y control.
+</figcaption>
+</figure>
+</div>
+<p><strong>Ejemplo:</strong> Si se estudia el efecto de un fármaco para prevenir ataques cardíacos, los pacientes podrían dividirse primero en bloques de <strong>riesgo bajo</strong> y <strong>riesgo alto</strong>, y luego dentro de cada bloque asignar aleatoriamente la mitad al tratamiento y la mitad al control. Así, ambos grupos tendrán la misma proporción de pacientes de alto y bajo riesgo.</p>
+<hr>
+</section>
+</section>
+<section id="reducción-de-sesgos-en-experimentos-con-humanos" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="reducción-de-sesgos-en-experimentos-con-humanos"><span class="header-section-number">4</span> Reducción de sesgos en experimentos con humanos</h2>
+<p>En los experimentos con personas, pueden surgir sesgos tanto en los participantes como en los investigadores. Para evitarlos, se utilizan técnicas de <strong>cegamiento</strong>.</p>
+<section id="placebo-y-efecto-placebo" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="placebo-y-efecto-placebo"><span class="header-section-number">4.1</span> Placebo y efecto placebo</h3>
+<p>Un <strong>placebo</strong> es un tratamiento falso que se parece al tratamiento real (por ejemplo, una pastilla de azúcar idéntica en apariencia al fármaco activo). El <strong>efecto placebo</strong> es la mejora real que experimentan algunos pacientes simplemente por creer que están recibiendo un tratamiento beneficioso.</p>
+<ul>
+<li><strong>Importancia:</strong> Para que un estudio sea <strong>blindado</strong> (o “ciego”), los pacientes no deben saber si están en el grupo de tratamiento o en el grupo control. Si el grupo control no recibe nada, los pacientes sabrán que están en el control, introduciendo sesgo. Por eso se administra un placebo al grupo control.</li>
+</ul>
+</section>
+<section id="cegamiento-simple-y-doble-ciego" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="cegamiento-simple-y-doble-ciego"><span class="header-section-number">4.2</span> Cegamiento simple y doble ciego</h3>
+<ul>
+<li><strong>Cegamiento simple (single-blind):</strong> Los pacientes no saben qué tratamiento reciben, pero los investigadores sí lo saben.</li>
+<li><strong>Doble ciego (double-blind):</strong> <strong>Ni los pacientes ni los investigadores que interactúan con ellos</strong> saben quién recibe el tratamiento real y quién el placebo. Esto evita que los investigadores (consciente o inconscientemente) traten de manera diferente a los pacientes o interpreten los resultados de forma sesgada.</li>
+</ul>
+<blockquote class="blockquote">
+<p><strong>Ejemplo:</strong> En el estudio de los stents, ¿fue un experimento? Sí. ¿Fue ciego? No, porque a los pacientes se les implantó un stent o no, y no había un placebo quirúrgico (una cirugía simulada). Por lo tanto, no fue doble ciego.</p>
+</blockquote>
+</section>
+<section id="consideraciones-éticas" class="level3" data-number="4.3">
+<h3 data-number="4.3" class="anchored" data-anchor-id="consideraciones-éticas"><span class="header-section-number">4.3</span> Consideraciones éticas</h3>
+<p>El uso de placebos, especialmente en estudios quirúrgicos (cirugías simuladas), plantea serios dilemas éticos. Por un lado, se necesita un placebo para obtener evidencia sólida sobre la efectividad de un tratamiento. Por otro lado, someter a pacientes a procedimientos invasivos sin un beneficio real puede causar daño. La decisión no es sencilla y debe sopesarse el bienestar de los participantes con el beneficio futuro para la sociedad.</p>
+</section>
+</section>
+<section id="material-de-apoyo-y-reforzamiento" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="material-de-apoyo-y-reforzamiento"><span class="header-section-number">5</span> Material de apoyo y reforzamiento</h2>
+<p>Para complementar tu estudio, aquí tienes algunos recursos adicionales generados con NotebookLM. Te ayudarán a visualizar los conceptos clave y a profundizar en temas como el placebo en la investigación médica.</p>
+<div id="fig-mapa-mental" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Mapa mental que resume los conceptos de experimentos, aleatorización, control, replicación, bloqueo, cegamiento y placebo.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mapa-mental-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../../epdi/imagenes/mapa-mental-leccion-5.png" class="img-fluid figure-img" alt="Mapa mental que resume los conceptos de experimentos, aleatorización, control, replicación, bloqueo, cegamiento y placebo.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mapa-mental-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;3: Mapa mental: Principios del diseño experimental
+</figcaption>
+</figure>
+</div>
+<div id="fig-infografia" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Infografía con los puntos clave de los experimentos aleatorizados y los cuatro principios del diseño experimental.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-infografia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../../epdi/imagenes/infografia-leccion-5.png" class="img-fluid figure-img" alt="Infografía con los puntos clave de los experimentos aleatorizados y los cuatro principios del diseño experimental.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-infografia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4: Infografía: Resumen de experimentos
+</figcaption>
+</figure>
+</div>
+<section id="video-complementario" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="video-complementario"><span class="header-section-number">5.1</span> Video complementario</h3>
+<p>El siguiente video aborda un dilema ético relacionado con el uso de placebos en cirugías, un tema que discutimos en la sección de consideraciones éticas.</p>
+<ul>
+<li><a href="../../epdi/media/El_Placebo_en_el_Quirófano.mp4">El placebo en el quirófano</a></li>
+</ul>
+</section>
+<section id="presentación" class="level3" data-number="5.2">
+<h3 data-number="5.2" class="anchored" data-anchor-id="presentación"><span class="header-section-number">5.2</span> Presentación</h3>
+<p>Se incluye una presentación centrada en ejemplos propios de la ciencia médica y que explora exactamente el contenido de esta lección desde un enfoque práctico.</p>
+<ul>
+<li><a href="../../epdi/media/The_Clinical_Blueprint.pdf">The_Clinical_Blueprint.pdf</a></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="cuestionario-grupal-portafolio-lección-5-experimentos-y-diseño-de-experimentos" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="cuestionario-grupal-portafolio-lección-5-experimentos-y-diseño-de-experimentos"><span class="header-section-number">6</span> Cuestionario Grupal (Portafolio): Lección 5 Experimentos y diseño de experimentos</h2>
+<p>A continuación, se presentan las preguntas para su uestionario. Para cada una, responde las preguntas planteando los conceptos aprendidos.</p>
+<section id="luz-y-rendimiento-en-examen" class="level3" data-number="6.1">
+<h3 data-number="6.1" class="anchored" data-anchor-id="luz-y-rendimiento-en-examen"><span class="header-section-number">6.1</span> Luz y rendimiento en examen</h3>
+<p>Se diseña un estudio para probar el efecto del nivel de luz en el rendimiento de los estudiantes en un examen. El investigador cree que los niveles de luz pueden tener efectos diferentes en hombres y mujeres, por lo que quiere asegurarse de que ambos sexos estén igualmente representados en cada tratamiento. Los tratamientos son: iluminación fluorescente, iluminación amarilla, y ninguna iluminación (solo lámparas de escritorio).</p>
+<ol type="a">
+<li>¿Cuál es la variable respuesta?</li>
+<li>¿Cuál es la variable explicativa? ¿Cuáles son sus niveles?</li>
+<li>¿Cuál es la variable de bloqueo? ¿Cuáles son sus niveles?</li>
+</ol>
+</section>
+<section id="vitamina-c-y-resfriado-común" class="level3" data-number="6.2">
+<h3 data-number="6.2" class="anchored" data-anchor-id="vitamina-c-y-resfriado-común"><span class="header-section-number">6.2</span> Vitamina C y resfriado común</h3>
+<p>Para evaluar la efectividad de grandes dosis de vitamina C en reducir la duración del resfriado común, los investigadores reclutaron a 400 voluntarios sanos entre el personal y los estudiantes de una universidad. Una cuarta parte de los pacientes recibió un placebo, y el resto se dividió equitativamente entre: 1g de Vitamina C, 3g de Vitamina C, o 3g de Vitamina C más aditivos, para ser tomados al inicio de un resfriado durante los dos días siguientes. Todas las tabletas tenían la misma apariencia y empaque. Las enfermeras que entregaron las pastillas sabían qué paciente recibía cada tratamiento, pero los investigadores que evaluaban a los pacientes cuando estaban enfermos no lo sabían. No se observaron diferencias significativas en ninguna medida de duración o severidad del resfriado entre los cuatro grupos, y el grupo placebo tuvo la duración más corta de síntomas.</p>
+<ol type="a">
+<li>¿Fue esto un experimento o un estudio observacional? ¿Por qué?</li>
+<li>¿Cuáles son las variables explicativas y respuesta en este estudio?</li>
+<li>¿Los pacientes estaban cegados a su tratamiento?</li>
+<li>¿Fue este estudio doble ciego?</li>
+<li>Los participantes pueden elegir si tomar o no las pastillas que se les recetaron. Podríamos esperar que no todos cumplieran y tomaran sus pastillas. ¿Introduce esto una variable de confusión en el estudio? Explica.</li>
+</ol>
+</section>
+<section id="luz-ruido-y-rendimiento-en-examen" class="level3" data-number="6.3">
+<h3 data-number="6.3" class="anchored" data-anchor-id="luz-ruido-y-rendimiento-en-examen"><span class="header-section-number">6.3</span> Luz, ruido y rendimiento en examen</h3>
+<p>Se diseña un estudio para probar el efecto del nivel de luz y el nivel de ruido en el rendimiento de los estudiantes en un examen. El investigador cree que los niveles de luz y ruido pueden tener efectos diferentes en hombres y mujeres, por lo que quiere asegurarse de que ambos sexos estén igualmente representados en cada tratamiento. Los tratamientos de luz considerados son: iluminación fluorescente, iluminación amarilla, ninguna iluminación (solo lámparas). Los tratamientos de ruido considerados son: sin ruido, ruido de construcción, y ruido de conversación humana.</p>
+<ol type="a">
+<li>¿Qué tipo de estudio es este?</li>
+<li>¿Cuántos factores se consideran en este estudio? Identifícalos y describe sus niveles.</li>
+<li>¿Cuál es el rol de la variable sexo en este estudio?</li>
+</ol>
+</section>
+<section id="música-y-aprendizaje" class="level3" data-number="6.4">
+<h3 data-number="6.4" class="anchored" data-anchor-id="música-y-aprendizaje"><span class="header-section-number">6.4</span> Música y aprendizaje</h3>
+<p>Te gustaría realizar un experimento en clase para ver si los estudiantes aprenden mejor si estudian sin música, con música sin letra (instrumental), o con música con letra. Describe brevemente un diseño para este estudio.</p>
+</section>
+<section id="preferencia-de-gaseosa" class="level3" data-number="6.5">
+<h3 data-number="6.5" class="anchored" data-anchor-id="preferencia-de-gaseosa"><span class="header-section-number">6.5</span> Preferencia de gaseosa</h3>
+<p>Te gustaría realizar un experimento en clase para ver si tus compañeros prefieren el sabor de la Coca-Cola normal o de la Coca-Cola Light. Describe brevemente un diseño para este estudio.</p>
+</section>
+<section id="ejercicio-y-salud-mental" class="level3" data-number="6.6">
+<h3 data-number="6.6" class="anchored" data-anchor-id="ejercicio-y-salud-mental"><span class="header-section-number">6.6</span> Ejercicio y salud mental</h3>
+<p>Un investigador está interesado en los efectos del ejercicio en la salud mental y propone el siguiente estudio: Usar muestreo estratificado para asegurar proporciones representativas de personas de 18-30, 31-40 y 41-55 años de la población. Luego, asignar aleatoriamente la mitad de los sujetos de cada grupo etario a hacer ejercicio dos veces por semana, e indicar al resto que no haga ejercicio. Realizar un examen de salud mental al inicio y al final del estudio, y comparar los resultados.</p>
+<ol type="a">
+<li>¿Qué tipo de estudio es este?</li>
+<li>¿Cuáles son los grupos de tratamiento y control en este estudio?</li>
+<li>¿Este estudio utiliza bloqueo? Si es así, ¿cuál es la variable de bloqueo?</li>
+<li>¿Este estudio utiliza cegamiento?</li>
+<li>Comenta si los resultados del estudio pueden usarse para establecer una relación causal entre el ejercicio y la salud mental, e indica si las conclusiones pueden generalizarse a la población en general.</li>
+<li>Supón que se te asigna la tarea de determinar si este estudio propuesto debería recibir financiamiento. ¿Tendrías alguna reserva sobre la propuesta?</li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="preguntas-para-reflexionar-y-debatir-en-clase" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="preguntas-para-reflexionar-y-debatir-en-clase"><span class="header-section-number">7</span> Preguntas para reflexionar y debatir en clase</h2>
+<ol type="1">
+<li><p><strong>Placebo en cirugía:</strong> ¿Es ético realizar una cirugía simulada (sham surgery) como placebo? ¿Por qué sí o por qué no? ¿Qué consecuencias tendría no hacerlo?</p></li>
+<li><p><strong>Cegamiento en tu vida cotidiana:</strong> ¿Puedes pensar en una situación cotidiana donde un “efecto placebo” influya en tu percepción (por ejemplo, marcas de medicamentos, alimentos “light”, etc.)?</p></li>
+<li><p><strong>Experimentos naturales:</strong> A veces se producen experimentos “naturales” sin que los investigadores los diseñen (por ejemplo, una política pública que se aplica en una región y no en otra). ¿Qué ventajas y desventajas tienen estos experimentos naturales frente a los experimentos aleatorizados?</p></li>
+<li><p><strong>Replicación en ciencia:</strong> ¿Por qué es importante que otros científicos puedan replicar los resultados de un experimento? ¿Qué problemas surgen cuando los estudios no se replican?</p></li>
+<li><p><strong>Dilema ético del estudio de stents:</strong> En el estudio de los stents (Lección 1), el grupo control no recibió el stent. ¿Crees que fue ético? ¿Qué hubiera pasado si el stent hubiera resultado beneficioso y el grupo control se hubiera quedado sin él?</p></li>
+</ol>
+<hr>
+</section>
+<section id="resumen-de-conceptos-clave" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="resumen-de-conceptos-clave"><span class="header-section-number">8</span> Resumen de conceptos clave</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Concepto</th>
+<th style="text-align: left;">Definición breve</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Experimento</strong></td>
+<td style="text-align: left;">Estudio donde se asigna un tratamiento a los sujetos.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Experimento aleatorizado</strong></td>
+<td style="text-align: left;">La asignación al tratamiento se hace al azar.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Control</strong></td>
+<td style="text-align: left;">Mantener iguales todas las condiciones excepto el tratamiento.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Aleatorización</strong></td>
+<td style="text-align: left;">Asignación al azar a grupos de tratamiento.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Replicación</strong></td>
+<td style="text-align: left;">Suficientes sujetos para estimar efectos con precisión.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Bloqueo</strong></td>
+<td style="text-align: left;">Agrupar por una variable conocida antes de aleatorizar.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Placebo</strong></td>
+<td style="text-align: left;">Tratamiento falso, idéntico en apariencia al real.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Efecto placebo</strong></td>
+<td style="text-align: left;">Mejora real debida a la creencia de estar recibiendo tratamiento.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Cegamiento simple</strong></td>
+<td style="text-align: left;">Los pacientes no saben qué tratamiento reciben.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Doble ciego</strong></td>
+<td style="text-align: left;">Ni pacientes ni investigadores que interactúan con ellos saben quién recibe qué.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>Nota final:</strong> Esta lección sienta las bases para entender por qué los experimentos son fundamentales para la inferencia causal. En las próximas lecciones aplicaremos estos conceptos al análisis de datos reales y al diseño de experimentos simples.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/hsigrist\.github\.io");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Hans Sigrist</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

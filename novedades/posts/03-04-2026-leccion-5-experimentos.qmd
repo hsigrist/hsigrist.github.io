@@ -1,0 +1,12 @@
+---
+title: "Nueva lección: Lección 5 Experimentos y diseños experimentales"
+date: 2026-04-03
+date-format: "D MMMM, YYYY"
+author: "Hans Sigrist"
+categories: [EPDI, lecciones]
+lang: es
+description: "Principios del diseño experimental: control, aleatorización, replicación y bloqueo. Diferencias entre estudios observacionales y experimentos. El papel del placebo, el cegamiento y la ética en la investigación."
+image: "/epdi/imagenes/heart_28392_lg.png"
+---
+
+Ya está disponible la [Lección 5 Experimentos y diseños experimentales](../../epdi/lecciones/leccion-5-experimentos.qmd). Existe una versión en PDF y recursos visuales extras.

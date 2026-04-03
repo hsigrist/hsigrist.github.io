@@ -5,9 +5,7 @@ date-format: "D MMMM, YYYY"
 author: "Hans Sigrist"
 categories: [EPDI, lecciones]
 lang: es
-description: "Conceptos fundamentales sobre poblaciones, muestras, sesgos, tipos de muestreo y la distinción entre estudios observacionales y experimentos. Análisis crítico de ejercicios clásicos.
-asificación de variables estadísticas y estudio de relaciones entre variables utilizando una base de datos didáctica simulada.
-"
+description: "Conceptos fundamentales sobre poblaciones, muestras, sesgos, tipos de muestreo y la distinción entre estudios observacionales y experimentos. Análisis crítico de ejercicios clásicos."
 image: "/epdi/imagenes/pic-full-260403-1606-37.png"
 ---
 
