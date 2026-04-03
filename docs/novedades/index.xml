@@ -10,7 +10,28 @@
 <atom:link href="https://hsigrist.github.io/novedades/index.xml" rel="self" type="application/rss+xml"/>
 <description>Materiales docentes y novedades de Formación Diferenciada | Colegio Portaliano</description>
 <generator>quarto-1.9.36</generator>
-<lastBuildDate>Thu, 26 Mar 2026 03:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sat, 28 Mar 2026 03:00:00 GMT</lastBuildDate>
+<item>
+  <title>Nueva lección: Lección 4 Principios de muestreo y diseño de estudios</title>
+  <dc:creator>Hans Sigrist</dc:creator>
+  <link>https://hsigrist.github.io/novedades/posts/28-03-2026-leccion-4-principios-de-muestreo-y-diseno-de-estudios.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Ya está disponible la <a href="../../epdi/lecciones/leccion-4-principios-de-muestreo-y-diseño-de-experimentos.html">Lección 4 Principios de muestreo y diseño de estudios</a>. Existe una versión en PDF.</p>
+
+
+
+ ]]></description>
+  <category>EPDI</category>
+  <category>lecciones</category>
+  <guid>https://hsigrist.github.io/novedades/posts/28-03-2026-leccion-4-principios-de-muestreo-y-diseno-de-estudios.html</guid>
+  <pubDate>Sat, 28 Mar 2026 03:00:00 GMT</pubDate>
+  <media:content url="https://hsigrist.github.io/epdi/imagenes/pic-full-260403-1606-37.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
 <item>
   <title>Nueva lección: Lección 3 Tipos de variables</title>
   <dc:creator>Hans Sigrist</dc:creator>

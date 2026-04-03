@@ -1,0 +1,14 @@
+---
+title: "Nueva lección: Lección 4 Principios de muestreo y diseño de estudios"
+date: 2026-03-28
+date-format: "D MMMM, YYYY"
+author: "Hans Sigrist"
+categories: [EPDI, lecciones]
+lang: es
+description: "Conceptos fundamentales sobre poblaciones, muestras, sesgos, tipos de muestreo y la distinción entre estudios observacionales y experimentos. Análisis crítico de ejercicios clásicos.
+asificación de variables estadísticas y estudio de relaciones entre variables utilizando una base de datos didáctica simulada.
+"
+image: "/epdi/imagenes/pic-full-260403-1606-37.png"
+---
+
+Ya está disponible la [Lección 4 Principios de muestreo y diseño de estudios](../../epdi/lecciones/leccion-4-principios-de-muestreo-y-diseño-de-experimentos.qmd). Existe una versión en PDF.
