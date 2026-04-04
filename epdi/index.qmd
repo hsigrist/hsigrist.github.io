@@ -21,6 +21,9 @@ sidebar:
       contents:
         - rubricas/index.qmd
         - rubricas/rubrica-cuestionario-grupal.qmd
+    - section: "Defensa EPDI"
+      contents:
+        - defensa/index.qmd
     - section: "Lecciones"
       contents:
         - lecciones/leccion-1-introduccion-a-los-datos.qmd

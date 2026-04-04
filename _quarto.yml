@@ -59,6 +59,9 @@ website:
           contents:
             - epdi/rubricas/index.qmd
             - epdi/rubricas/rubrica-cuestionario-grupal.qmd
+        - section: "Defensa"
+          contents:
+            - epdi/defensa/index.qmd
         - section: "Lecciones"
           contents:
             - epdi/lecciones/leccion-1-introduccion-a-los-datos.qmd
@@ -70,8 +73,8 @@ website:
 format:
   html:
     theme:
-      light: [cosmo, theme-light.scss]
       dark: [cosmo, theme-dark.scss]
+      light: [cosmo, theme-light.scss]
     css: styles.css
     toc: true
     number-sections: true

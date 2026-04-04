@@ -488,6 +488,116 @@
     ]
   },
   {
+    "objectID": "epdi/defensa/index.html",
+    "href": "epdi/defensa/index.html",
+    "title": "Proyecto Final EPDI: Defensa Estadística con Apoyo de IA",
+    "section": "",
+    "text": "Figura 1: Ilustración utilizada con fines educativos. Fuente: USF ClipArt Collection (University of South Florida).",
+    "crumbs": [
+      "Defensa",
+      "Proyecto Final EPDI: Defensa Estadística con Apoyo de IA"
+    ]
+  },
+  {
+    "objectID": "epdi/defensa/index.html#presentación",
+    "href": "epdi/defensa/index.html#presentación",
+    "title": "Proyecto Final EPDI: Defensa Estadística con Apoyo de IA",
+    "section": "1 Presentación",
+    "text": "1 Presentación\nEl curso Estadística y Probabilidad Descriptiva e Inferencial (EPDI) culmina con una actividad académica formal, similar a una defensa de tesis profesional. En grupos de 2 a 4 integrantes, investigarán un fenómeno estadístico, un experimento clásico o un caso real de interés, y presentarán sus hallazgos ante un tribunal (el profesor y sus compañeros). La presentación será grabada y, con la autorización correspondiente, publicada en YouTube.\nNovedad: Esta versión del proyecto incorpora el uso explícito de Inteligencia Artificial (IA) como herramienta de investigación. Utilizarán NotebookLM (disponible con sus cuentas institucionales de Google Workspace) para apoyar la revisión de fuentes, la generación de hipótesis, el análisis de datos y la preparación de la presentación. Sin embargo, todo resultado generado por IA deberá ser verificado, interpretado y presentado por ustedes. El valor del proyecto está en su capacidad para pensar críticamente, no en delegar el trabajo en la máquina.",
+    "crumbs": [
+      "Defensa",
+      "Proyecto Final EPDI: Defensa Estadística con Apoyo de IA"
+    ]
+  },
+  {
+    "objectID": "epdi/defensa/index.html#objetivos-del-proyecto",
+    "href": "epdi/defensa/index.html#objetivos-del-proyecto",
+    "title": "Proyecto Final EPDI: Defensa Estadística con Apoyo de IA",
+    "section": "2 Objetivos del proyecto",
+    "text": "2 Objetivos del proyecto\nAl finalizar esta actividad, serás capaz de:\n\nAplicar conceptos estadísticos (tipos de variables, asociación, causalidad, diseño experimental, muestreo, etc.) a un problema concreto.\nUtilizar NotebookLM como asistente de investigación de manera crítica y ética.\nDefender oralmente tus conclusiones ante una audiencia, con argumentos basados en datos y fuentes confiables.\nProducir un video de calidad académica que pueda ser publicado en un canal educativo.",
+    "crumbs": [
+      "Defensa",
+      "Proyecto Final EPDI: Defensa Estadística con Apoyo de IA"
+    ]
+  },
+  {
+    "objectID": "epdi/defensa/index.html#temas-sugeridos-pueden-repetirse-entre-grupos",
+    "href": "epdi/defensa/index.html#temas-sugeridos-pueden-repetirse-entre-grupos",
+    "title": "Proyecto Final EPDI: Defensa Estadística con Apoyo de IA",
+    "section": "3 Temas sugeridos (pueden repetirse entre grupos)",
+    "text": "3 Temas sugeridos (pueden repetirse entre grupos)\nPueden elegir un fenómeno estadístico, un experimento clásico o un caso real de actualidad. Algunas ideas:\n\nExperimentos clásicos: El experimento de los stents (ACV), el estudio de la dama que cató el té (Fisher), la paradoja de Simpson (ejemplo real), el experimento de Milgram (obediencia a la autoridad), el efecto placebo en cirugía, etc.\nFenómenos actuales: Correlaciones espurias famosas (Nicolas Cage y ahogamientos, etc.), análisis de datos deportivos, encuestas políticas y sesgos de muestreo, estudios observacionales sobre salud y estilo de vida, etc.\nCasos reales chilenos: Datos del SIMCE, estadísticas de movilidad en San Felipe, análisis de un estudio de opinión pública, etc.\n\nSi tienen otra idea, consúltenla con el profesor.",
+    "crumbs": [
+      "Defensa",
+      "Proyecto Final EPDI: Defensa Estadística con Apoyo de IA"
+    ]
+  },
+  {
+    "objectID": "epdi/defensa/index.html#estructura-de-la-defensa-obligatoria",
+    "href": "epdi/defensa/index.html#estructura-de-la-defensa-obligatoria",
+    "title": "Proyecto Final EPDI: Defensa Estadística con Apoyo de IA",
+    "section": "4 Estructura de la defensa (obligatoria)",
+    "text": "4 Estructura de la defensa (obligatoria)\nCada grupo dispondrá de 12 minutos de presentación + 5 minutos de preguntas. La presentación debe seguir esta estructura:\n\n4.1 Contexto y pregunta de investigación (≈ 2 min)\n\n¿Qué fenómeno, experimento o caso estudian?\n¿Por qué es relevante para la ciencia o la sociedad?\nPregunta de investigación o hipótesis inicial.\n\n\n\n4.2 Metodología y datos (≈ 3 min)\n\nSi es un experimento clásico: describan su diseño (control, aleatorización, etc.).\nSi es un caso real: ¿de dónde obtuvieron los datos? ¿Qué tipo de estudio es (observacional o experimental)?\nPapel de la IA: ¿Cómo usaron NotebookLM para seleccionar fuentes, resumir información o generar ideas? Muestren ejemplos concretos (pantallazos, citas).\n\n\n\n4.3 Análisis estadístico (≈ 4 min)\n\nPresenten tablas, gráficos y medidas resumen (media, mediana, proporciones, etc.).\nSi aplica, incluyan pruebas de hipótesis, intervalos de confianza o análisis de correlación.\nVerificación: ¿Cómo validaron que los resultados de la IA eran correctos? Señalen al menos un error o imprecisión detectada y cómo lo corrigieron.\n\n\n\n4.4 Conclusiones e impacto (≈ 3 min)\n\n¿Qué responden a la pregunta de investigación?\n¿Qué limitaciones tiene su análisis?\n¿Qué impacto tuvo o tiene este fenómeno/experimento en la ciencia moderna?\n\n\n\n4.5 Ronda de preguntas (5 min)\n\nEl tribunal (profesor y compañeros) preguntará sobre los conceptos estadísticos, el uso de IA o la validez de las conclusiones.",
+    "crumbs": [
+      "Defensa",
+      "Proyecto Final EPDI: Defensa Estadística con Apoyo de IA"
+    ]
+  },
+  {
+    "objectID": "epdi/defensa/index.html#uso-de-notebooklm-obligatorio-y-evaluado",
+    "href": "epdi/defensa/index.html#uso-de-notebooklm-obligatorio-y-evaluado",
+    "title": "Proyecto Final EPDI: Defensa Estadística con Apoyo de IA",
+    "section": "5 Uso de NotebookLM (obligatorio y evaluado)",
+    "text": "5 Uso de NotebookLM (obligatorio y evaluado)\n\nDeben usar NotebookLM al menos para:\n\nCargar 3 a 5 fuentes relevantes (PDFs de OpenIntro, artículos científicos, noticias, bases de datos).\nGenerar un resumen automático de una de las fuentes y luego reescribirlo con sus palabras (entregarán ambas versiones en el anexo).\nPedir a la IA que sugiera tres gráficos para representar sus datos; luego elegirán uno y justificarán su elección.\n\nTransparencia: Deberán incluir un Anexo (1 página) con:\n\nCaptura de pantalla de la interfaz de NotebookLM con las fuentes cargadas.\nLista de los prompts utilizados y las respuestas de la IA.\nExplicación de al menos una corrección que hicieron a un error o imprecisión de la IA.\n\nEvaluación: Se valorará la calidad de los prompts, la pertinencia de las fuentes y la capacidad de detectar y corregir errores.",
+    "crumbs": [
+      "Defensa",
+      "Proyecto Final EPDI: Defensa Estadística con Apoyo de IA"
+    ]
+  },
+  {
+    "objectID": "epdi/defensa/index.html#grabación-y-publicación-voluntario-pero-recomendado",
+    "href": "epdi/defensa/index.html#grabación-y-publicación-voluntario-pero-recomendado",
+    "title": "Proyecto Final EPDI: Defensa Estadística con Apoyo de IA",
+    "section": "6 Grabación y publicación (voluntario pero recomendado)",
+    "text": "6 Grabación y publicación (voluntario pero recomendado)\n\nLa defensa será grabada en video (con celular o cámara) durante la jornada de presentaciones.\nAl inicio del video, cada integrante dirá su nombre y curso.\nCon la autorización de apoderados (se entregará carta modelo), los mejores videos se publicarán en el canal de YouTube del colegio o en una lista de reproducción del curso.\nLa publicación es voluntaria; ningún estudiante será obligado a aparecer en internet.",
+    "crumbs": [
+      "Defensa",
+      "Proyecto Final EPDI: Defensa Estadística con Apoyo de IA"
+    ]
+  },
+  {
+    "objectID": "epdi/defensa/index.html#criterios-de-evaluación-rúbrica",
+    "href": "epdi/defensa/index.html#criterios-de-evaluación-rúbrica",
+    "title": "Proyecto Final EPDI: Defensa Estadística con Apoyo de IA",
+    "section": "7 Criterios de evaluación (rúbrica)",
+    "text": "7 Criterios de evaluación (rúbrica)\n\n\n\n\n\n\n\n\nCriterio\nPonderación\nIndicadores\n\n\n\n\nDominio conceptual y estadístico\n35%\nCorrecta identificación de variables, tipos de estudio, análisis e interpretación de datos.\n\n\nUso crítico de IA (NotebookLM)\n20%\nCalidad de prompts, selección de fuentes, verificación de errores, transparencia en el anexo.\n\n\nCalidad de la presentación oral\n20%\nClaridad, estructura, vocabulario técnico, manejo del tiempo, respuesta a preguntas.\n\n\nMaterial de apoyo (diapositivas, gráficos)\n15%\nDiseño profesional, gráficos legibles, citas de fuentes.\n\n\nFormalidad y cumplimiento\n10%\nVestimenta formal, puntualidad, entrega de anexo, autorización de publicación (si aplica).\n\n\n\nNota: La rúbrica detallada será publicada en el sitio web del curso y en Classroom una semana antes de la primera entrega.",
+    "crumbs": [
+      "Defensa",
+      "Proyecto Final EPDI: Defensa Estadística con Apoyo de IA"
+    ]
+  },
+  {
+    "objectID": "epdi/defensa/index.html#preguntas-frecuentes",
+    "href": "epdi/defensa/index.html#preguntas-frecuentes",
+    "title": "Proyecto Final EPDI: Defensa Estadística con Apoyo de IA",
+    "section": "8 Preguntas frecuentes",
+    "text": "8 Preguntas frecuentes\n¿Puedo usar otra IA además de NotebookLM? Sí, pero debes indicarlo en el anexo y justificar por qué la elegiste. NotebookLM es la recomendada por su integración con Google Workspace y su capacidad de trabajar sobre documentos subidos.\n¿Qué pasa si la IA da una respuesta incorrecta? Se espera que la detectes y corrijas. Eso suma puntos en el criterio de “verificación”.\n¿Puedo pedir a la IA que redacte la presentación completa? No. La IA es una asistente, no una sustituta. Debes redactar con tus palabras; el uso excesivo de texto generado será penalizado.\n¿Qué vestimenta se considera formal? Para hombres: camisa, pantalón de vestir, zapatos cerrados (corbata opcional). Para mujeres: blusa, vestido o pantalón formal, zapatos cerrados. No se permite jeans, poleras estampadas ni zapatillas deportivas.\n¿Si no quiero salir en YouTube? Puedes solicitar que tu grupo no sea grabado o que el video no sea publicado. La actividad se puede aprobar igual, pero la publicación voluntaria otorga un punto extra (no obligatorio).",
+    "crumbs": [
+      "Defensa",
+      "Proyecto Final EPDI: Defensa Estadística con Apoyo de IA"
+    ]
+  },
+  {
+    "objectID": "epdi/defensa/index.html#anexos",
+    "href": "epdi/defensa/index.html#anexos",
+    "title": "Proyecto Final EPDI: Defensa Estadística con Apoyo de IA",
+    "section": "9 Anexos",
+    "text": "9 Anexos\n\nCarta de autorización para publicación en YouTube (se entregará en papel).\nPlantilla para el anexo de uso de IA (descargable desde Classroom).\n\n\n¡Manos a la obra! Este proyecto es la oportunidad de demostrar todo lo que han aprendido y, de paso, convertirse en usuarios críticos y responsables de la inteligencia artificial. Cualquier duda, consulten con el profesor.\nProf. Hans Sigrist",
+    "crumbs": [
+      "Defensa",
+      "Proyecto Final EPDI: Defensa Estadística con Apoyo de IA"
+    ]
+  },
+  {
     "objectID": "epdi/lecciones/leccion-3-tipos-de-variables.html#tipos-de-variables-una-clasificación-fundamental",
     "href": "epdi/lecciones/leccion-3-tipos-de-variables.html#tipos-de-variables-una-clasificación-fundamental",
     "title": "Lección 3: Tipos de variables",
