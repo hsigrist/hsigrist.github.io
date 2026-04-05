@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Hans Sigrist">
+<meta name="description" content="Herramientas para describir y visualizar variables categóricas: tablas de contingencia, proporciones, gráficos de barras, gráficos de mosaico y comparación de grupos. Ejemplos del ámbito aeronáutico.">
+
+<title>Lección 7: Análisis de datos categóricos – hsigrist</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-f418161beb48e0141c760e455f12af2c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-a5312e2448c48544805e26358ddafd1e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-b836c0048777725ccbb1b06599d2ca6d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = true;
+    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkModeDefault = queryPrefersDark.matches;
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    queryPrefersDark.addEventListener("change", e => {
+      if(window.localStorage.getItem("quarto-color-scheme") !== null)
+        return;
+      const alternate = e.matches
+      toggleColorMode(alternate);
+      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
+      toggleGiscusIfUsed(alternate, darkModeDefault);
+    });
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">hsigrist</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../novedades/index.html"> 
+<span class="menu-text">Novedades</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-cursos" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Cursos</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-cursos">    
+        <li>
+    <a class="dropdown-item" href="../../epdi/index.html">
+ <span class="dropdown-text">EPDI - Estadística</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../ldi/index.html">
+ <span class="dropdown-text">LDI - Cálculo</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">Acerca de</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../novedades/index.xml"> <i class="bi bi-rss" role="img" aria-label="Feed RSS de Novedades">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/hsigrist/hsigrist.github.io"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:hsigrist@colegioportaliano.cl"> <i class="bi bi-envelope" role="img" aria-label="Enviar correo">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo oscuro"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../epdi/lecciones/leccion-1-introduccion-a-los-datos.html">Lecciones</a></li><li class="breadcrumb-item"><a href="../../epdi/lecciones/leccion-7-analisis-de-datos-categoricos.html">Lección 7: Análisis de datos categóricos</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EPDI - Estadística y Probabilidad Descriptiva e Inferencial</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Presentaciones</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/presentaciones/presentacion-edpi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EPDI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/presentaciones/las-lavadoras-previenen-el-embarazo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Las lavadoras previenen el embarazo</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Programa</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/programa/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Programa</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Evaluación</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/evaluacion/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Evaluación</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/evaluacion/cuestionario-grupal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cuestionario grupal</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Rúbricas</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/rubricas/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rúbricas</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/rubricas/rubrica-cuestionario-grupal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rúbrica: Cuestionario Grupal</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Defensa</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/defensa/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Proyecto Final EPDI: Defensa Estadística con Apoyo de IA</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Lecciones</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/lecciones/leccion-1-introduccion-a-los-datos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lección 1: Introducción a los datos</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/lecciones/leccion-2-tipos-de-datos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lección 2: Tipos de datos y estructura de la información</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/lecciones/leccion-3-tipos-de-variables.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lección 3: Tipos de variables</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/lecciones/leccion-4-principios-de-muestreo-y-diseño-de-experimentos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lección 4: Principios de muestreo y diseño de estudios</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/lecciones/leccion-5-experimentos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lección 5: Experimentos y diseños experimentales</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/lecciones/leccion-6-exploracion-datos-numericos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lección 6: Exploración de datos numéricos</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/lecciones/leccion-7-analisis-de-datos-categoricos.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Lección 7: Análisis de datos categóricos</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En esta página</h2>
+   
+  <ul>
+  <li><a href="#objetivos-de-la-lección" id="toc-objetivos-de-la-lección" class="nav-link active" data-scroll-target="#objetivos-de-la-lección"><span class="header-section-number">1</span> Objetivos de la lección</a></li>
+  <li><a href="#tablas-de-contingencia-la-herramienta-básica" id="toc-tablas-de-contingencia-la-herramienta-básica" class="nav-link" data-scroll-target="#tablas-de-contingencia-la-herramienta-básica"><span class="header-section-number">2</span> Tablas de contingencia: la herramienta básica</a></li>
+  <li><a href="#proporciones-por-fila-y-por-columna" id="toc-proporciones-por-fila-y-por-columna" class="nav-link" data-scroll-target="#proporciones-por-fila-y-por-columna"><span class="header-section-number">3</span> Proporciones por fila y por columna</a></li>
+  <li><a href="#gráficos-de-barras-para-dos-variables" id="toc-gráficos-de-barras-para-dos-variables" class="nav-link" data-scroll-target="#gráficos-de-barras-para-dos-variables"><span class="header-section-number">4</span> Gráficos de barras para dos variables</a>
+  <ul class="collapse">
+  <li><a href="#barras-apiladas-stacked" id="toc-barras-apiladas-stacked" class="nav-link" data-scroll-target="#barras-apiladas-stacked"><span class="header-section-number">4.1</span> Barras apiladas (stacked)</a></li>
+  <li><a href="#barras-lado-a-lado-sidebyside" id="toc-barras-lado-a-lado-sidebyside" class="nav-link" data-scroll-target="#barras-lado-a-lado-sidebyside"><span class="header-section-number">4.2</span> Barras lado a lado (side‑by‑side)</a></li>
+  <li><a href="#barras-apiladas-estandarizadas" id="toc-barras-apiladas-estandarizadas" class="nav-link" data-scroll-target="#barras-apiladas-estandarizadas"><span class="header-section-number">4.3</span> Barras apiladas estandarizadas</a></li>
+  </ul></li>
+  <li><a href="#gráficos-de-mosaico" id="toc-gráficos-de-mosaico" class="nav-link" data-scroll-target="#gráficos-de-mosaico"><span class="header-section-number">5</span> Gráficos de mosaico</a></li>
+  <li><a href="#comparación-de-datos-numéricos-entre-grupos" id="toc-comparación-de-datos-numéricos-entre-grupos" class="nav-link" data-scroll-target="#comparación-de-datos-numéricos-entre-grupos"><span class="header-section-number">6</span> Comparación de datos numéricos entre grupos</a></li>
+  <li><a href="#material-de-apoyo-y-reforzamiento" id="toc-material-de-apoyo-y-reforzamiento" class="nav-link" data-scroll-target="#material-de-apoyo-y-reforzamiento"><span class="header-section-number">7</span> Material de apoyo y reforzamiento</a>
+  <ul class="collapse">
+  <li><a href="#mapa-mental" id="toc-mapa-mental" class="nav-link" data-scroll-target="#mapa-mental"><span class="header-section-number">7.1</span> Mapa mental</a></li>
+  <li><a href="#presentación-en-pdf" id="toc-presentación-en-pdf" class="nav-link" data-scroll-target="#presentación-en-pdf"><span class="header-section-number">7.2</span> Presentación en PDF</a></li>
+  <li><a href="#video-complementario" id="toc-video-complementario" class="nav-link" data-scroll-target="#video-complementario"><span class="header-section-number">7.3</span> Video complementario</a></li>
+  </ul></li>
+  <li><a href="#cuestionario-grupal-portafolio-lección-7-análisis-de-datos-categóricos" id="toc-cuestionario-grupal-portafolio-lección-7-análisis-de-datos-categóricos" class="nav-link" data-scroll-target="#cuestionario-grupal-portafolio-lección-7-análisis-de-datos-categóricos"><span class="header-section-number">8</span> Cuestionario Grupal (Portafolio): Lección 7 Análisis de datos categóricos</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Otros formatos</h2><ul><li><a href="leccion-7-analisis-de-datos-categoricos.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content column-body" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../epdi/lecciones/leccion-1-introduccion-a-los-datos.html">Lecciones</a></li><li class="breadcrumb-item"><a href="../../epdi/lecciones/leccion-7-analisis-de-datos-categoricos.html">Lección 7: Análisis de datos categóricos</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Lección 7: Análisis de datos categóricos</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">EPDI</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    <p>Herramientas para describir y visualizar variables categóricas: tablas de contingencia, proporciones, gráficos de barras, gráficos de mosaico y comparación de grupos. Ejemplos del ámbito aeronáutico.</p>
+  </div>
+</div>
+
+<div class="quarto-title-meta-author column-body">
+  <div class="quarto-title-meta-heading">Autor/a</div>
+  <div class="quarto-title-meta-heading">Afiliación</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Hans Sigrist <a href="mailto:hsigrist@colegioportaliano.cl" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://www.colegioportaliano.cl">
+            Colegio Portaliano
+            </a>
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta column-body">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Fecha de publicación</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">5 de abril de 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+<div>
+  <div class="abstract">
+    <div class="block-title">Resumen</div>
+    <p>Esta lección introduce técnicas para analizar relaciones entre variables categóricas. Se estudian tablas de contingencia, proporciones por fila y columna, gráficos de barras (apilados, side‑by‑side y estandarizados) y gráficos de mosaico. También se revisan métodos para comparar distribuciones numéricas entre grupos (box plots y histogramas huecos). Todos los ejemplos se inspiran en contextos de aviación comercial y militar.</p>
+  </div>
+</div>
+
+
+</header>
+
+
+<div id="fig-curtis-triplane" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Ilustración que muestra tres vistas (frontal, lateral y superior) de un triplano Curtis Model 18-I. Se aprecian sus tres pares de alas, la hélice y el fuselaje alargado.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-curtis-triplane-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../imagenes/86956_curtis-model-18-i-triplane_lg.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-curtis-triplane-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;1: Tres vistas del triplano Curtis Model 18-I. Este avión experimental estaba equipado con un motor K-12 de 400 caballos de fuerza.
+</figcaption>
+</figure>
+</div>
+<section id="objetivos-de-la-lección" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="objetivos-de-la-lección"><span class="header-section-number">1</span> Objetivos de la lección</h2>
+<p>Al finalizar esta lección, serás capaz de:</p>
+<ul>
+<li>Construir e interpretar <strong>tablas de contingencia</strong> para dos variables categóricas.</li>
+<li>Calcular e interpretar <strong>proporciones por fila</strong> y <strong>proporciones por columna</strong>.</li>
+<li>Elegir el gráfico más adecuado (barras apiladas, side‑by‑side, estandarizadas, mosaico) según el tipo de pregunta.</li>
+<li>Utilizar <strong>gráficos de mosaico</strong> para visualizar asociaciones.</li>
+<li>Comparar distribuciones numéricas entre grupos mediante <strong>box plots</strong> y <strong>histogramas huecos</strong>.</li>
+</ul>
+<hr>
+</section>
+<section id="tablas-de-contingencia-la-herramienta-básica" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="tablas-de-contingencia-la-herramienta-básica"><span class="header-section-number">2</span> Tablas de contingencia: la herramienta básica</h2>
+<p>Cuando se estudia la relación entre dos variables categóricas, la herramienta fundamental es la <strong>tabla de contingencia</strong>. Esta tabla muestra, en cada celda, el número de observaciones que pertenecen simultáneamente a una categoría de la primera variable y a una categoría de la segunda.</p>
+<p><strong>Ejemplo aeronáutico:</strong> Se ha registrado información sobre 500 pilotos comerciales. Se quiere saber si existe relación entre el <strong>tipo de licencia</strong> (comercial, privada, militar) y la <strong>preferencia de aeronave</strong> para vuelos de largo alcance (monomotor, multimotor, jet). La tabla de contingencia resume los datos.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Monomotor</th>
+<th>Multimotor</th>
+<th>Jet</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Licencia comercial</td>
+<td>45</td>
+<td>112</td>
+<td>83</td>
+<td>240</td>
+</tr>
+<tr class="even">
+<td>Licencia privada</td>
+<td>78</td>
+<td>34</td>
+<td>12</td>
+<td>124</td>
+</tr>
+<tr class="odd">
+<td>Licencia militar</td>
+<td>22</td>
+<td>68</td>
+<td>46</td>
+<td>136</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td>145</td>
+<td>214</td>
+<td>141</td>
+<td>500</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Cada celda (ej. 45) es el número de pilotos con licencia comercial que prefieren monomotor.</li>
+<li>Los totales por fila y columna permiten calcular porcentajes.</li>
+</ul>
+<hr>
+</section>
+<section id="proporciones-por-fila-y-por-columna" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="proporciones-por-fila-y-por-columna"><span class="header-section-number">3</span> Proporciones por fila y por columna</h2>
+<p>Las tablas de contingencia se pueden transformar en tablas de <strong>proporciones</strong> para facilitar la comparación entre grupos. Existen dos enfoques principales:</p>
+<ul>
+<li><strong>Proporciones por fila:</strong> dividir cada celda por el total de su fila. Responden a la pregunta: <em>“dentro de cada nivel de la variable explicativa, ¿cómo se distribuye la variable respuesta?”</em></li>
+<li><strong>Proporciones por columna:</strong> dividir cada celda por el total de su columna. Responden a la pregunta: <em>“dentro de cada nivel de la variable respuesta, ¿cómo se distribuye la variable explicativa?”</em></li>
+</ul>
+<p><strong>Continuación del ejemplo:</strong> Si consideramos que el tipo de licencia puede influir en la preferencia de aeronave, la variable explicativa sería <em>licencia</em>. Entonces las <strong>proporciones por fila</strong> son más útiles:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Monomotor</th>
+<th>Multimotor</th>
+<th>Jet</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Comercial</td>
+<td>0.188</td>
+<td>0.467</td>
+<td>0.346</td>
+<td>1.000</td>
+</tr>
+<tr class="even">
+<td>Privada</td>
+<td>0.629</td>
+<td>0.274</td>
+<td>0.097</td>
+<td>1.000</td>
+</tr>
+<tr class="odd">
+<td>Militar</td>
+<td>0.162</td>
+<td>0.500</td>
+<td>0.338</td>
+<td>1.000</td>
+</tr>
+</tbody>
+</table>
+<p>Interpretación: el 46,7% de los pilotos con licencia comercial prefieren multimotor, mientras que solo el 27,4% de los pilotos con licencia privada eligen ese tipo. Estas diferencias sugieren una <strong>asociación</strong> entre licencia y preferencia.</p>
+<blockquote class="blockquote">
+<p><strong>Regla práctica:</strong> cuando existe una relación clara de “explicativa → respuesta”, es mejor usar proporciones por fila (condicionar en la explicativa).</p>
+</blockquote>
+<hr>
+</section>
+<section id="gráficos-de-barras-para-dos-variables" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="gráficos-de-barras-para-dos-variables"><span class="header-section-number">4</span> Gráficos de barras para dos variables</h2>
+<p>Las tablas de contingencia se visualizan mediante gráficos de barras. Existen tres variantes principales.</p>
+<section id="barras-apiladas-stacked" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="barras-apiladas-stacked"><span class="header-section-number">4.1</span> Barras apiladas (stacked)</h3>
+<p>Se dibuja una barra para cada nivel de la variable principal, y dentro de cada barra se apilan los segmentos correspondientes a los niveles de la segunda variable. Es útil cuando hay una variable explicativa clara.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-stacked-bar" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-stacked-bar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="leccion-7-analisis-de-datos-categoricos_files/figure-html/fig-stacked-bar-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-stacked-bar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;2: Barras apiladas: distribución de incidentes por causa según tipo de operación. Cada barra representa el total de incidentes en cada tipo de operación, y los colores muestran la contribución de cada causa.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="barras-lado-a-lado-sidebyside" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="barras-lado-a-lado-sidebyside"><span class="header-section-number">4.2</span> Barras lado a lado (side‑by‑side)</h3>
+<p>Las barras de cada nivel de la variable principal se colocan una al lado de la otra, agrupadas por categoría de la segunda variable. Permite comparar fácilmente las alturas de las barras, pero requiere más espacio horizontal.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-side-by-side" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-side-by-side-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="leccion-7-analisis-de-datos-categoricos_files/figure-html/fig-side-by-side-1.png" class="img-fluid figure-img" width="768">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-side-by-side-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;3: Barras lado a lado: comparación de frecuencias de causas de incidentes entre tipos de operación. Facilita la comparación directa entre grupos.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="barras-apiladas-estandarizadas" class="level3" data-number="4.3">
+<h3 data-number="4.3" class="anchored" data-anchor-id="barras-apiladas-estandarizadas"><span class="header-section-number">4.3</span> Barras apiladas estandarizadas</h3>
+<p>Cada barra tiene la misma altura (1 o 100%), y los segmentos representan proporciones. Son ideales cuando los tamaños de los grupos son muy desiguales, porque la estandarización facilita la comparación de patrones. La desventaja es que se pierde información sobre el tamaño absoluto de cada grupo.</p>
+<p><strong>Ejemplo en aviación:</strong> En un estudio sobre <strong>causas de incidentes</strong> (factor humano, mecánico, climático) en tres fases del vuelo (despegue, crucero, aterrizaje), si las frecuencias de incidentes son muy diferentes entre fases, el gráfico apilado estandarizado revela si la distribución de causas varía de una fase a otra.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-stacked-standardized" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-stacked-standardized-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="leccion-7-analisis-de-datos-categoricos_files/figure-html/fig-stacked-standardized-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-stacked-standardized-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4: Barras apiladas estandarizadas: proporciones de causas dentro de cada tipo de operación. Útil cuando los totales por grupo son muy desiguales.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="gráficos-de-mosaico" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="gráficos-de-mosaico"><span class="header-section-number">5</span> Gráficos de mosaico</h2>
+<p>Un <strong>gráfico de mosaico</strong> es una alternativa más compacta y elegante que el apilado estandarizado. El área total se divide primero en columnas cuyo ancho es proporcional al tamaño de cada categoría de la variable principal. Luego, cada columna se subdivide verticalmente según las proporciones de la segunda variable.</p>
+<p><strong>Ventaja:</strong> mantiene la información sobre los tamaños relativos de los grupos (el ancho de las columnas) y, al mismo tiempo, muestra las proporciones internas.</p>
+<p><strong>Interpretación:</strong> si la línea de división interna en las distintas columnas se mantiene aproximadamente horizontal, las variables son independientes. Si la línea sube o baja sistemáticamente, hay asociación.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-mosaic-one" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mosaic-one-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="leccion-7-analisis-de-datos-categoricos_files/figure-html/fig-mosaic-one-1.png" class="img-fluid figure-img" width="576">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mosaic-one-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;5: Mosaico de una variable: muestra la proporción de cada tipo de operación en el total de incidentes. El ancho de cada columna es proporcional a la frecuencia.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-mosaic-two" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mosaic-two-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="leccion-7-analisis-de-datos-categoricos_files/figure-html/fig-mosaic-two-1.png" class="img-fluid figure-img" width="768">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mosaic-two-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;6: Mosaico de dos variables: relación entre tipo de operación y causa de incidente. El ancho de las columnas representa la frecuencia de cada operación; la altura de los rectángulos dentro de cada columna representa la proporción de cada causa.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-pie-vs-bar" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-pie-vs-bar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="leccion-7-analisis-de-datos-categoricos_files/figure-html/fig-pie-vs-bar-1.png" class="img-fluid figure-img" width="960">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pie-vs-bar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;7: Comparación entre un gráfico circular y un gráfico de barras para la misma variable (distribución de incidentes según causa). Los gráficos circulares pueden ser útiles para ofrecer una visión general de cómo se distribuye un conjunto de casos. Sin embargo, también es difícil descifrar detalles en un gráfico circular. Por ejemplo, cuesta unos segundos más reconocer que la causa ‘Factor humano’ es más frecuente que ‘Fallo mecánico’ cuando se mira el gráfico circular, mientras que este detalle es muy obvio en el gráfico de barras. Si bien los gráficos circulares pueden ser útiles, preferimos los gráficos de barras por su facilidad para comparar grupos.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="comparación-de-datos-numéricos-entre-grupos" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="comparación-de-datos-numéricos-entre-grupos"><span class="header-section-number">6</span> Comparación de datos numéricos entre grupos</h2>
+<p>A veces interesa comparar una <strong>variable numérica</strong> (ej. horas de vuelo) entre dos o más grupos definidos por una variable categórica (ej. tipo de licencia). Las herramientas más comunes son:</p>
+<ul>
+<li><strong>Diagramas de caja (box plots) lado a lado:</strong> permiten comparar medianas, dispersión (IQR) y detectar valores atípicos en cada grupo.</li>
+<li><strong>Histogramas huecos (hollow histograms):</strong> se superponen los contornos de varios histogramas en una misma gráfica. Son útiles para comparar forma, centro y dispersión cuando los grupos tienen tamaños muy diferentes.</li>
+</ul>
+<p><strong>Ejemplo:</strong> Se desea comparar las <strong>horas totales de vuelo</strong> de pilotos comerciales según su lugar de entrenamiento (academia civil, fuerza aérea, escuela privada). Un box plot lado a lado mostraría rápidamente si la mediana de horas difiere entre los grupos y si algún grupo presenta valores extremos.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-boxplot-group" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-boxplot-group-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="leccion-7-analisis-de-datos-categoricos_files/figure-html/fig-boxplot-group-1.png" class="img-fluid figure-img" width="576">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-boxplot-group-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;8: Diagramas de caja lado a lado: comparación de las horas de vuelo (miles) de pilotos según el tipo de operación. Se aprecian medianas, rango intercuartil y posibles valores atípicos.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-hollow-hist" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-hollow-hist-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="leccion-7-analisis-de-datos-categoricos_files/figure-html/fig-hollow-hist-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hollow-hist-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;9: Histogramas huecos (contornos) de las horas de vuelo para los tres tipos de operación. Permiten comparar forma, centro y dispersión incluso cuando los tamaños de grupo son desiguales.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="material-de-apoyo-y-reforzamiento" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="material-de-apoyo-y-reforzamiento"><span class="header-section-number">7</span> Material de apoyo y reforzamiento</h2>
+<p>Para complementar tu estudio de los <strong>datos categóricos</strong>, aquí tienes recursos especialmente diseñados para el ámbito aeronáutico. A través de ellos podrás ver cómo se aplican las tablas de contingencia, los gráficos de barras y los diagramas de mosaico en contextos reales de pilotaje comercial y fuerza aérea.</p>
+<section id="mapa-mental" class="level3" data-number="7.1">
+<h3 data-number="7.1" class="anchored" data-anchor-id="mapa-mental"><span class="header-section-number">7.1</span> Mapa mental</h3>
+<p>Consolida los conceptos clave de la lección con este mapa mental que integra visualmente: tablas de contingencia, gráficos de barras (apilados, lado a lado, estandarizados), gráficos de mosaico, comparación de grupos mediante diagramas de caja e histogramas huecos.</p>
+<div id="fig-mapa-leccion7" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Mapa mental que organiza los conceptos de tablas de contingencia, proporciones por fila y columna, tipos de gráficos de barras, gráficos de mosaico, y métodos para comparar distribuciones numéricas entre grupos (box plots, histogramas huecos).">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mapa-leccion7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../../epdi/imagenes/mapa-mental-leccion7.png" class="img-fluid figure-img" alt="Mapa mental que organiza los conceptos de tablas de contingencia, proporciones por fila y columna, tipos de gráficos de barras, gráficos de mosaico, y métodos para comparar distribuciones numéricas entre grupos (box plots, histogramas huecos).">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mapa-leccion7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;10: Mapa mental: Análisis de datos categóricos
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="presentación-en-pdf" class="level3" data-number="7.2">
+<h3 data-number="7.2" class="anchored" data-anchor-id="presentación-en-pdf"><span class="header-section-number">7.2</span> Presentación en PDF</h3>
+<p>El siguiente documento, <strong>Aviation_Categorical_Mastery.pdf</strong>, está centrado en ejemplos del área aeronáutica. Explora variables categóricas como tipo de licencia (comercial, privada, militar) y horas de vuelo registradas. Incluye tablas de contingencia, gráficos de barras apiladas para visualizar la distribución de estas categorías, y diagramas de mosaico para representar la relación entre distintos tipos de licencias aéreas.</p>
+<ul>
+<li><a href="../../epdi/media/Aviation_Categorical_Mastery.pdf">Aviation_Categorical_Mastery.pdf</a></li>
+</ul>
+</section>
+<section id="video-complementario" class="level3" data-number="7.3">
+<h3 data-number="7.3" class="anchored" data-anchor-id="video-complementario"><span class="header-section-number">7.3</span> Video complementario</h3>
+<p>El video <strong>Datos_Categóricos.mp4</strong> presenta una exposición con ejemplos prácticos de pilotaje comercial y fuerza aérea. Muestra cómo crear e interpretar tablas de contingencia para comparar licencias comerciales y militares, cómo construir gráficos de barras apiladas y cómo utilizar diagramas de mosaico para analizar la relación entre variables categóricas en el contexto de la aviación.</p>
+<ul>
+<li><a href="../../epdi/media/Datos_Categóricos.mp4">Datos_Categóricos (video)</a></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Nota
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Discrepancia en el material generado por IA</strong></p>
+<p>El video <em>Datos_Categóricos.mp4</em> fue solicitado a NotebookLM con instrucciones explícitas de usar ejemplos del área aeronáutica (pilotos comerciales, fuerza aérea, tipos de licencia, horas de vuelo). Sin embargo, el video generado muestra ejemplos basados en <strong>préstamos bancarios</strong> (tablas de contingencia sobre solicitudes de crédito), no en aviación.</p>
+<p>Esta discrepancia es intencionalmente dejada para que reflexionemos sobre un punto crucial de la <strong>Defensa Final de EPDI</strong>: las herramientas de IA pueden producir resultados que no se ajustan completamente a las instrucciones, contener sesgos o presentar información errónea. Aprender a <strong>detectar, verificar y corregir</strong> estos errores es parte fundamental del pensamiento crítico y del uso responsable de la inteligencia artificial.</p>
+<p>Te invito a identificar las diferencias entre lo solicitado y lo entregado, y a pensar cómo podrías haber mejorado el prompt para obtener un resultado más apegado al contexto aeronáutico.</p>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="cuestionario-grupal-portafolio-lección-7-análisis-de-datos-categóricos" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="cuestionario-grupal-portafolio-lección-7-análisis-de-datos-categóricos"><span class="header-section-number">8</span> Cuestionario Grupal (Portafolio): Lección 7 Análisis de datos categóricos</h2>
+<p>Responde cada pregunta en un párrafo de al menos 5 líneas, utilizando los conceptos de la lección.</p>
+<ol type="1">
+<li><p><strong>Tablas de contingencia y proporciones</strong> Se ha registrado la relación entre el <strong>uso de checklist electrónico</strong> (sí/no) y la <strong>ocurrencia de errores en procedimientos de emergencia</strong> (sí/no) en 320 simulacros de vuelo. Los resultados son:</p>
+<ul>
+<li>Con checklist y sin error: 112</li>
+<li>Con checklist y con error: 48</li>
+<li>Sin checklist y sin error: 64</li>
+<li>Sin checklist y con error: 96</li>
+</ul>
+<p>Construye la tabla de contingencia completa (incluyendo totales). Calcula las proporciones por fila y por columna. ¿Qué proporción consideras más informativa para determinar si el uso de checklist reduce los errores? Justifica tu elección y explica qué conclusión obtienes.</p></li>
+<li><p><strong>Gráficos de barras y mosaico</strong> En una investigación sobre <strong>incidentes en vuelo</strong>, se clasificaron 200 eventos según la <strong>causa principal</strong> (factor humano, fallo mecánico, meteorología) y el <strong>tipo de operación</strong> (comercial, militar, privada). Se quiere visualizar la asociación entre ambas variables.</p>
+<ul>
+<li>¿Qué gráfico (apilado, side‑by‑side, apilado estandarizado o mosaico) recomendarías si los tamaños de los tres tipos de operación son muy desiguales? ¿Por qué?</li>
+<li>¿Qué ventaja adicional tiene el gráfico de mosaico sobre el apilado estandarizado?</li>
+</ul></li>
+<li><p><strong>Comparación de grupos</strong> Un centro de entrenamiento de pilotos desea saber si los <strong>años de experiencia</strong> de sus instructores difieren según la rama de origen (fuerza aérea, aerolínea comercial, escuela civil). Se dispone de una muestra de 60 instructores, con 20 de cada rama.</p>
+<ul>
+<li>¿Qué dos gráficos utilizarías para comparar las distribuciones de experiencia entre los tres grupos? Describe qué aspectos de las distribuciones podrías evaluar con cada uno.</li>
+<li>¿Qué información se obtiene de un box plot que no se ve en un histograma hueco, y viceversa?</li>
+</ul></li>
+<li><p><strong>Independencia vs.&nbsp;asociación</strong> En un estudio sobre 500 pilotos, se cruza la variable <strong>tipo de visión nocturna</strong> (normal, corregida con lentes, cirugía refractiva) con la variable <strong>aprobación de vuelo nocturno</strong> (aprueba, no aprueba). La tabla de proporciones por columna muestra que, dentro de los que aprueban, el 50% tiene visión normal, 30% lentes y 20% cirugía; mientras que entre los que no aprueban, los porcentajes son 20%, 50% y 30% respectivamente.</p>
+<ul>
+<li>¿Existe asociación entre las variables? Explica cómo lo sabes.</li>
+<li>Si los tamaños de los grupos de aprobación fueran muy diferentes (por ejemplo, 450 aprueban y 50 no aprueban), ¿qué gráfico sería más adecuado para visualizar esta asociación y por qué?</li>
+</ul></li>
+<li><p><strong>Aplicación a datos reales (hipotéticos)</strong> La Fuerza Aérea de un país registró la relación entre el <strong>rango</strong> (oficial, suboficial, tropa) y la <strong>especialidad</strong> (piloto, navegante, ingeniero de vuelo, controlador). Se sospecha que la distribución de especialidades es diferente según el rango.</p>
+<ul>
+<li>Propón un plan de análisis: ¿qué tabla o gráfico construirías primero y qué tipo de proporciones calcularías?</li>
+<li>Si encontraras una asociación, ¿podrías afirmar que el rango <em>causa</em> la elección de especialidad? ¿Por qué sí o por qué no?</li>
+</ul></li>
+</ol>
+<hr>
+<p><strong>Nota final:</strong> Los gráficos mencionados (barras, mosaicos, box plots) no se generan con código R en esta lección, pero todos ellos se pueden producir fácilmente con los paquetes <code>ggplot2</code>, <code>ggmosaic</code>, etc. En sesiones prácticas futuras los construiremos con datos reales.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/hsigrist\.github\.io");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Hans Sigrist</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

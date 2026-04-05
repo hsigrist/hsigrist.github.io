@@ -70,6 +70,7 @@ website:
             - epdi/lecciones/leccion-4-principios-de-muestreo-y-diseño-de-experimentos.qmd
             - epdi/lecciones/leccion-5-experimentos.qmd
             - epdi/lecciones/leccion-6-exploracion-datos-numericos.qmd
+            - epdi/lecciones/leccion-7-analisis-de-datos-categoricos.qmd
 
 format:
   html:

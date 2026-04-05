@@ -1,0 +1,16 @@
+---
+title: "Nueva lección: Lección 7 Análisis de datos categóricos"
+date: 2026-04-05
+date-format: "D MMMM, YYYY"
+author: "Hans Sigrist"
+categories: [EPDI, lecciones]
+lang: es
+description: "Herramientas para describir y visualizar variables categóricas: tablas de contingencia, proporciones, gráficos de barras (apilados, side‑by‑side, estandarizados), gráficos de mosaico y comparación de grupos. Ejemplos del ámbito aeronáutico."
+image: "/epdi/imagenes/86956_curtis-model-18-i-triplane_lg.png"
+---
+
+Ya está disponible la [Lección 7: Análisis de datos categóricos](../../epdi/lecciones/leccion-7-analisis-de-datos-categoricos.qmd). También encontrarás una versión en PDF.
+
+Esta lección introduce técnicas para analizar relaciones entre variables categóricas, utilizando ejemplos de pilotaje comercial y fuerza aérea. Se estudian tablas de contingencia, proporciones por fila y columna, gráficos de barras apilados, lado a lado, estandarizados, gráficos de mosaico y métodos para comparar distribuciones numéricas entre grupos (box plots, histogramas huecos).
+
+Incluye mapa mental, presentacion PDF y un video. El video complementario que aparece en la lección contiene una discrepancia entre el audio y el contenido visual. Esto se ha dejado a propósito para reflexionar sobre las limitaciones de la IA y será parte de la discusión en la Defensa Final de EPDI.

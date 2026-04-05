@@ -12,6 +12,29 @@
 <generator>quarto-1.9.36</generator>
 <lastBuildDate>Sun, 05 Apr 2026 04:00:00 GMT</lastBuildDate>
 <item>
+  <title>Nueva lección: Lección 7 Análisis de datos categóricos</title>
+  <dc:creator>Hans Sigrist</dc:creator>
+  <link>https://hsigrist.github.io/novedades/posts/05-04-2026-leccion-7-analisis-de-datos-categoricos.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Ya está disponible la <a href="../../epdi/lecciones/leccion-7-analisis-de-datos-categoricos.html">Lección 7: Análisis de datos categóricos</a>. También encontrarás una versión en PDF.</p>
+<p>Esta lección introduce técnicas para analizar relaciones entre variables categóricas, utilizando ejemplos de pilotaje comercial y fuerza aérea. Se estudian tablas de contingencia, proporciones por fila y columna, gráficos de barras apilados, lado a lado, estandarizados, gráficos de mosaico y métodos para comparar distribuciones numéricas entre grupos (box plots, histogramas huecos).</p>
+<p>Incluye mapa mental, presentacion PDF y un video. El video complementario que aparece en la lección contiene una discrepancia entre el audio y el contenido visual. Esto se ha dejado a propósito para reflexionar sobre las limitaciones de la IA y será parte de la discusión en la Defensa Final de EPDI.</p>
+
+
+
+ ]]></description>
+  <category>EPDI</category>
+  <category>lecciones</category>
+  <guid>https://hsigrist.github.io/novedades/posts/05-04-2026-leccion-7-analisis-de-datos-categoricos.html</guid>
+  <pubDate>Sun, 05 Apr 2026 04:00:00 GMT</pubDate>
+  <media:content url="https://hsigrist.github.io/epdi/imagenes/86956_curtis-model-18-i-triplane_lg.png" medium="image" type="image/png" height="110" width="144"/>
+</item>
+<item>
   <title>El barbero que se afeitaba a sí mismo (o no): una paradoja lógica para pensar</title>
   <dc:creator>Hans Sigrist</dc:creator>
   <link>https://hsigrist.github.io/novedades/posts/05-04-2026-liar.html</link>
