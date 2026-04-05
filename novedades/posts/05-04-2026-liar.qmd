@@ -1,0 +1,48 @@
+---
+title: "El barbero que se afeitaba a sí mismo (o no): una paradoja lógica para pensar"
+date: 2026-04-05
+date-format: "D MMMM, YYYY"
+author: "Hans Sigrist"
+categories: [lecturas]
+lang: es
+image: "/novedades/imagenes/A_barber_shaving_a_man_who_looks_extremely_fearful._Lithogra_Wellcome_V0019694.jpg"
+description: "Un pequeño pueblo, un barbero y una regla muy simple. ¿El resultado? Una contradicción que desafía la lógica y nos recuerda que el lenguaje tiene sus límites."
+---
+
+Hay problemas que parecen simples hasta que intentas resolverlos. La **paradoja del barbero** es uno de ellos. La contó Bertrand Russell, un filósofo y matemático británico (a quien vengo leyendo desde mis tiempos en la Universidad, cuando no tengo a mi colega Bernardo cerca acudo a Bertrand para consultas sobre filosofía, su lectura es especialmente dedicada a los matemáticos y sus referencias lógicas claramente también) para ilustrar una contradicción que surge cuando un concepto se refiere a sí mismo (los expertos llaman a esto *autorreferencia*).
+
+## El problema
+
+Imagina un pueblo pequeño, perdido en los Alpes, con una única norma:
+
+> Todos los habitantes que **no se afeitan a sí mismos** deben afeitarse con el barbero del pueblo.
+> Y todos los que **se afeitan a sí mismos** no pueden ir al barbero.
+
+El barbero es un habitante más. Entonces…
+
+**¿Quién afeita al barbero?**
+
+Piénsalo un momento.
+
+- Si el barbero **no se afeita a sí mismo**, entonces la norma dice que debe ir al barbero. Pero el barbero es él mismo. Así que se afeitaría a sí mismo. Contradicción.
+- Si el barbero **se afeita a sí mismo**, entonces la norma dice que no debe ir al barbero. Pero él es el barbero. Entonces no debería afeitarse a sí mismo. Otra contradicción.
+
+La regla, que parecía tan clara, se vuelve un nudo imposible de desatar.
+
+## ¿Y esto qué tiene que ver con las matemáticas o la estadística?
+
+Russell no estaba pensando en peluquerías. Lo que le preocupaba era un problema más profundo: **la teoría de conjuntos**, que es la base de gran parte de las matemáticas modernas. Encontró una versión más abstracta (la llamada *paradoja de Russell*) que mostraba que la teoría de conjuntos de la época tenía una grieta: podía definir un conjunto que contenía a todos los conjuntos que no se contenían a sí mismos. ¿Ese conjunto se contenía a sí mismo? Si sí, no; si no, sí. El mismo lío, pero con conjuntos.
+
+Y la estadística, aunque trabaje con datos y probabilidades, descansa sobre las matemáticas. Si los cimientos tienen contradicciones, toda la casa tiembla un poco. Afortunadamente, los matemáticos encontraron formas de construir la teoría de conjuntos para evitar estas paradojas. Pero el problema de fondo sigue siendo fascinante.
+
+## El mapa no es el territorio
+
+La moraleja de la historia es que **el lenguaje (y la lógica que usamos para hablar del mundo) no es perfecto**. Podemos construir frases gramaticalmente correctas que no tienen sentido o que se contradicen. El mundo real no se contradice; pero nuestras descripciones del mundo, sí.
+
+Así que la próxima vez que alguien te diga “esto es así de simple”, recuerda al barbero. A veces, las aparentes obviedades esconden un nudo que desafía la razón.
+
+**Pregunta para pensar (y para comentar si te animas):** ¿Crees que hay otras situaciones cotidianas donde se produzcan este tipo de paradojas autorreferenciales? Por ejemplo, un letrero que dice “No lea este letrero”, o la regla “Todo está permitido, excepto lo que está prohibido”.
+
+---
+
+*Si te interesa el tema, puedes leer más sobre la paradoja del mentiroso ("Esta frase es falsa") o la paradoja de Russell en libros de divulgación matemática. Y si quieres, en clase podemos dedicar unos minutos a discutir ejemplos.*

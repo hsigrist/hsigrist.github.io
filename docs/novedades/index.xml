@@ -10,7 +10,76 @@
 <atom:link href="https://hsigrist.github.io/novedades/index.xml" rel="self" type="application/rss+xml"/>
 <description>Materiales docentes y novedades de Formación Diferenciada | Colegio Portaliano</description>
 <generator>quarto-1.9.36</generator>
-<lastBuildDate>Sat, 04 Apr 2026 03:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 05 Apr 2026 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>El barbero que se afeitaba a sí mismo (o no): una paradoja lógica para pensar</title>
+  <dc:creator>Hans Sigrist</dc:creator>
+  <link>https://hsigrist.github.io/novedades/posts/05-04-2026-liar.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Hay problemas que parecen simples hasta que intentas resolverlos. La <strong>paradoja del barbero</strong> es uno de ellos. La contó Bertrand Russell, un filósofo y matemático británico (a quien vengo leyendo desde mis tiempos en la Universidad, cuando no tengo a mi colega Bernardo cerca acudo a Bertrand para consultas sobre filosofía, su lectura es especialmente dedicada a los matemáticos y sus referencias lógicas claramente también) para ilustrar una contradicción que surge cuando un concepto se refiere a sí mismo (los expertos llaman a esto <em>autorreferencia</em>).</p>
+<section id="el-problema" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="el-problema"><span class="header-section-number">1</span> El problema</h2>
+<p>Imagina un pueblo pequeño, perdido en los Alpes, con una única norma:</p>
+<blockquote class="blockquote">
+<p>Todos los habitantes que <strong>no se afeitan a sí mismos</strong> deben afeitarse con el barbero del pueblo. Y todos los que <strong>se afeitan a sí mismos</strong> no pueden ir al barbero.</p>
+</blockquote>
+<p>El barbero es un habitante más. Entonces…</p>
+<p><strong>¿Quién afeita al barbero?</strong></p>
+<p>Piénsalo un momento.</p>
+<ul>
+<li>Si el barbero <strong>no se afeita a sí mismo</strong>, entonces la norma dice que debe ir al barbero. Pero el barbero es él mismo. Así que se afeitaría a sí mismo. Contradicción.</li>
+<li>Si el barbero <strong>se afeita a sí mismo</strong>, entonces la norma dice que no debe ir al barbero. Pero él es el barbero. Entonces no debería afeitarse a sí mismo. Otra contradicción.</li>
+</ul>
+<p>La regla, que parecía tan clara, se vuelve un nudo imposible de desatar.</p>
+</section>
+<section id="y-esto-qué-tiene-que-ver-con-las-matemáticas-o-la-estadística" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="y-esto-qué-tiene-que-ver-con-las-matemáticas-o-la-estadística"><span class="header-section-number">2</span> ¿Y esto qué tiene que ver con las matemáticas o la estadística?</h2>
+<p>Russell no estaba pensando en peluquerías. Lo que le preocupaba era un problema más profundo: <strong>la teoría de conjuntos</strong>, que es la base de gran parte de las matemáticas modernas. Encontró una versión más abstracta (la llamada <em>paradoja de Russell</em>) que mostraba que la teoría de conjuntos de la época tenía una grieta: podía definir un conjunto que contenía a todos los conjuntos que no se contenían a sí mismos. ¿Ese conjunto se contenía a sí mismo? Si sí, no; si no, sí. El mismo lío, pero con conjuntos.</p>
+<p>Y la estadística, aunque trabaje con datos y probabilidades, descansa sobre las matemáticas. Si los cimientos tienen contradicciones, toda la casa tiembla un poco. Afortunadamente, los matemáticos encontraron formas de construir la teoría de conjuntos para evitar estas paradojas. Pero el problema de fondo sigue siendo fascinante.</p>
+</section>
+<section id="el-mapa-no-es-el-territorio" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="el-mapa-no-es-el-territorio"><span class="header-section-number">3</span> El mapa no es el territorio</h2>
+<p>La moraleja de la historia es que <strong>el lenguaje (y la lógica que usamos para hablar del mundo) no es perfecto</strong>. Podemos construir frases gramaticalmente correctas que no tienen sentido o que se contradicen. El mundo real no se contradice; pero nuestras descripciones del mundo, sí.</p>
+<p>Así que la próxima vez que alguien te diga “esto es así de simple”, recuerda al barbero. A veces, las aparentes obviedades esconden un nudo que desafía la razón.</p>
+<p><strong>Pregunta para pensar (y para comentar si te animas):</strong> ¿Crees que hay otras situaciones cotidianas donde se produzcan este tipo de paradojas autorreferenciales? Por ejemplo, un letrero que dice “No lea este letrero”, o la regla “Todo está permitido, excepto lo que está prohibido”.</p>
+<hr>
+<p><em>Si te interesa el tema, puedes leer más sobre la paradoja del mentiroso (“Esta frase es falsa”) o la paradoja de Russell en libros de divulgación matemática. Y si quieres, en clase podemos dedicar unos minutos a discutir ejemplos.</em></p>
+
+
+</section>
+
+ ]]></description>
+  <category>lecturas</category>
+  <guid>https://hsigrist.github.io/novedades/posts/05-04-2026-liar.html</guid>
+  <pubDate>Sun, 05 Apr 2026 04:00:00 GMT</pubDate>
+  <media:content url="https://hsigrist.github.io/novedades/imagenes/A_barber_shaving_a_man_who_looks_extremely_fearful._Lithogra_Wellcome_V0019694.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Nueva lección: Lección 6 Exploracion de datos numéricos</title>
+  <dc:creator>Hans Sigrist</dc:creator>
+  <link>https://hsigrist.github.io/novedades/posts/05-04-2026-leccion-6-exploracion-datos-numericos.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Ya está disponible la <a href="../../epdi/lecciones/leccion-6-exploracion-datos-numericos.html">Lección 6 Exploracion de datos numéricos</a>. Existe una versión en PDF.</p>
+
+
+
+ ]]></description>
+  <category>EPDI</category>
+  <category>lecciones</category>
+  <guid>https://hsigrist.github.io/novedades/posts/05-04-2026-leccion-6-exploracion-datos-numericos.html</guid>
+  <pubDate>Sun, 05 Apr 2026 04:00:00 GMT</pubDate>
+  <media:content url="https://hsigrist.github.io/epdi/imagenes/4e6472b4-838b-4f5c-ae17-a6e11838576e_3308x1182.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Sum- Forty Tales From the Afterlives – Eagleman, David</title>
   <dc:creator>Hans Sigrist</dc:creator>

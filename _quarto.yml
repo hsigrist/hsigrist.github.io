@@ -69,6 +69,7 @@ website:
             - epdi/lecciones/leccion-3-tipos-de-variables.qmd
             - epdi/lecciones/leccion-4-principios-de-muestreo-y-diseño-de-experimentos.qmd
             - epdi/lecciones/leccion-5-experimentos.qmd
+            - epdi/lecciones/leccion-6-exploracion-datos-numericos.qmd
 
 format:
   html:

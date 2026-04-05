@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Hans Sigrist">
+<meta name="description" content="Resumen de técnicas para describir y visualizar variables numéricas: gráficos (dispersión, puntos, histogramas, caja), medidas de centro y dispersión, forma de la distribución, valores atípicos y estadísticos robustos.">
+
+<title>Lección 6: Exploración de datos numéricos – hsigrist</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-f418161beb48e0141c760e455f12af2c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-a5312e2448c48544805e26358ddafd1e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-b836c0048777725ccbb1b06599d2ca6d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = true;
+    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkModeDefault = queryPrefersDark.matches;
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    queryPrefersDark.addEventListener("change", e => {
+      if(window.localStorage.getItem("quarto-color-scheme") !== null)
+        return;
+      const alternate = e.matches
+      toggleColorMode(alternate);
+      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
+      toggleGiscusIfUsed(alternate, darkModeDefault);
+    });
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">hsigrist</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../novedades/index.html"> 
+<span class="menu-text">Novedades</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-cursos" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Cursos</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-cursos">    
+        <li>
+    <a class="dropdown-item" href="../../epdi/index.html">
+ <span class="dropdown-text">EPDI - Estadística</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../ldi/index.html">
+ <span class="dropdown-text">LDI - Cálculo</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">Acerca de</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../novedades/index.xml"> <i class="bi bi-rss" role="img" aria-label="Feed RSS de Novedades">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/hsigrist/hsigrist.github.io"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:hsigrist@colegioportaliano.cl"> <i class="bi bi-envelope" role="img" aria-label="Enviar correo">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo oscuro"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../epdi/lecciones/leccion-1-introduccion-a-los-datos.html">Lecciones</a></li><li class="breadcrumb-item"><a href="../../epdi/lecciones/leccion-6-exploracion-datos-numericos.html">Lección 6: Exploración de datos numéricos</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EPDI - Estadística y Probabilidad Descriptiva e Inferencial</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Presentaciones</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/presentaciones/presentacion-edpi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EPDI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/presentaciones/las-lavadoras-previenen-el-embarazo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Las lavadoras previenen el embarazo</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Programa</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/programa/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Programa</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Evaluación</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/evaluacion/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Evaluación</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/evaluacion/cuestionario-grupal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cuestionario grupal</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Rúbricas</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/rubricas/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rúbricas</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/rubricas/rubrica-cuestionario-grupal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rúbrica: Cuestionario Grupal</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Defensa</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/defensa/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Proyecto Final EPDI: Defensa Estadística con Apoyo de IA</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Lecciones</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/lecciones/leccion-1-introduccion-a-los-datos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lección 1: Introducción a los datos</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/lecciones/leccion-2-tipos-de-datos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lección 2: Tipos de datos y estructura de la información</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/lecciones/leccion-3-tipos-de-variables.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lección 3: Tipos de variables</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/lecciones/leccion-4-principios-de-muestreo-y-diseño-de-experimentos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lección 4: Principios de muestreo y diseño de estudios</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/lecciones/leccion-5-experimentos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lección 5: Experimentos y diseños experimentales</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/lecciones/leccion-6-exploracion-datos-numericos.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Lección 6: Exploración de datos numéricos</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En esta página</h2>
+   
+  <ul>
+  <li><a href="#objetivos-de-la-lección" id="toc-objetivos-de-la-lección" class="nav-link active" data-scroll-target="#objetivos-de-la-lección"><span class="header-section-number">1</span> Objetivos de la lección</a></li>
+  <li><a href="#visualización-de-una-variable-numérica" id="toc-visualización-de-una-variable-numérica" class="nav-link" data-scroll-target="#visualización-de-una-variable-numérica"><span class="header-section-number">2</span> Visualización de una variable numérica</a>
+  <ul class="collapse">
+  <li><a href="#gráfico-de-puntos-dot-plot" id="toc-gráfico-de-puntos-dot-plot" class="nav-link" data-scroll-target="#gráfico-de-puntos-dot-plot"><span class="header-section-number">2.1</span> Gráfico de puntos (dot plot)</a></li>
+  <li><a href="#histograma" id="toc-histograma" class="nav-link" data-scroll-target="#histograma"><span class="header-section-number">2.2</span> Histograma</a></li>
+  <li><a href="#diagrama-de-caja-box-plot" id="toc-diagrama-de-caja-box-plot" class="nav-link" data-scroll-target="#diagrama-de-caja-box-plot"><span class="header-section-number">2.3</span> Diagrama de caja (box plot)</a></li>
+  <li><a href="#diagrama-de-dispersión-scatterplot" id="toc-diagrama-de-dispersión-scatterplot" class="nav-link" data-scroll-target="#diagrama-de-dispersión-scatterplot"><span class="header-section-number">2.4</span> Diagrama de dispersión (scatterplot)</a></li>
+  </ul></li>
+  <li><a href="#medidas-de-centro" id="toc-medidas-de-centro" class="nav-link" data-scroll-target="#medidas-de-centro"><span class="header-section-number">3</span> Medidas de centro</a>
+  <ul class="collapse">
+  <li><a href="#media-barx" id="toc-media-barx" class="nav-link" data-scroll-target="#media-barx"><span class="header-section-number">3.1</span> Media (<span class="math inline">\(\bar{x}\)</span>)</a></li>
+  <li><a href="#mediana-m" id="toc-mediana-m" class="nav-link" data-scroll-target="#mediana-m"><span class="header-section-number">3.2</span> Mediana (<span class="math inline">\(M\)</span>)</a></li>
+  </ul></li>
+  <li><a href="#medidas-de-dispersión" id="toc-medidas-de-dispersión" class="nav-link" data-scroll-target="#medidas-de-dispersión"><span class="header-section-number">4</span> Medidas de dispersión</a>
+  <ul class="collapse">
+  <li><a href="#desviación-estándar-s" id="toc-desviación-estándar-s" class="nav-link" data-scroll-target="#desviación-estándar-s"><span class="header-section-number">4.1</span> Desviación estándar (<span class="math inline">\(s\)</span>)</a></li>
+  <li><a href="#rango-intercuartil-iqr" id="toc-rango-intercuartil-iqr" class="nav-link" data-scroll-target="#rango-intercuartil-iqr"><span class="header-section-number">4.2</span> Rango intercuartil (IQR)</a></li>
+  </ul></li>
+  <li><a href="#forma-de-la-distribución" id="toc-forma-de-la-distribución" class="nav-link" data-scroll-target="#forma-de-la-distribución"><span class="header-section-number">5</span> Forma de la distribución</a></li>
+  <li><a href="#valores-atípicos-outliers-y-estadísticos-robustos" id="toc-valores-atípicos-outliers-y-estadísticos-robustos" class="nav-link" data-scroll-target="#valores-atípicos-outliers-y-estadísticos-robustos"><span class="header-section-number">6</span> Valores atípicos (outliers) y estadísticos robustos</a></li>
+  <li><a href="#transformaciones-y-mapas-de-intensidad" id="toc-transformaciones-y-mapas-de-intensidad" class="nav-link" data-scroll-target="#transformaciones-y-mapas-de-intensidad"><span class="header-section-number">7</span> Transformaciones y mapas de intensidad</a></li>
+  <li><a href="#material-de-apoyo-y-reforzamiento" id="toc-material-de-apoyo-y-reforzamiento" class="nav-link" data-scroll-target="#material-de-apoyo-y-reforzamiento"><span class="header-section-number">8</span> Material de apoyo y reforzamiento</a>
+  <ul class="collapse">
+  <li><a href="#mapa-mental" id="toc-mapa-mental" class="nav-link" data-scroll-target="#mapa-mental"><span class="header-section-number">8.1</span> Mapa mental</a></li>
+  <li><a href="#documento-pdf" id="toc-documento-pdf" class="nav-link" data-scroll-target="#documento-pdf"><span class="header-section-number">8.2</span> Documento PDF</a></li>
+  <li><a href="#video-complementario" id="toc-video-complementario" class="nav-link" data-scroll-target="#video-complementario"><span class="header-section-number">8.3</span> Video complementario</a></li>
+  </ul></li>
+  <li><a href="#cuestionario-grupal-portafolio-lección-6-exploración-de-datos-numéricos" id="toc-cuestionario-grupal-portafolio-lección-6-exploración-de-datos-numéricos" class="nav-link" data-scroll-target="#cuestionario-grupal-portafolio-lección-6-exploración-de-datos-numéricos"><span class="header-section-number">9</span> Cuestionario Grupal (Portafolio): Lección 6 Exploración de datos numéricos</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Otros formatos</h2><ul><li><a href="leccion-6-exploracion-datos-numericos.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content column-body" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../epdi/lecciones/leccion-1-introduccion-a-los-datos.html">Lecciones</a></li><li class="breadcrumb-item"><a href="../../epdi/lecciones/leccion-6-exploracion-datos-numericos.html">Lección 6: Exploración de datos numéricos</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Lección 6: Exploración de datos numéricos</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">EPDI</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    <p>Resumen de técnicas para describir y visualizar variables numéricas: gráficos (dispersión, puntos, histogramas, caja), medidas de centro y dispersión, forma de la distribución, valores atípicos y estadísticos robustos.</p>
+  </div>
+</div>
+
+<div class="quarto-title-meta-author column-body">
+  <div class="quarto-title-meta-heading">Autor/a</div>
+  <div class="quarto-title-meta-heading">Afiliación</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Hans Sigrist <a href="mailto:hsigrist@colegioportaliano.cl" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://www.colegioportaliano.cl">
+            Colegio Portaliano
+            </a>
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta column-body">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Fecha de publicación</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">5 de abril de 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+<div>
+  <div class="abstract">
+    <div class="block-title">Resumen</div>
+    <p>Esta lección repasa y profundiza los conceptos esenciales para analizar datos numéricos: cómo visualizarlos (scatterplots, dot plots, histogramas, box plots), cómo describir su centro (media, mediana), su variabilidad (desviación estándar, rango intercuartil), su forma (simetría, asimetría, modas) y cómo identificar valores atípicos. Se enfatiza la interpretación y la elección de estadísticos robustos frente a sensibles.</p>
+  </div>
+</div>
+
+
+</header>
+
+
+<div id="fig-playfair" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Gráfico de barras histórico: en el eje horizontal países como Dinamarca, Suecia, Rusia; en el vertical cantidades de comercio. Barras negras (exportaciones) y barras con rayas (importaciones) permiten comparar balanzas comerciales.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-playfair-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../imagenes/4e6472b4-838b-4f5c-ae17-a6e11838576e_3308x1182.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-playfair-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;1: Uno de los primeros gráficos de barras de William Playfair (1786), mostrando el comercio de Inglaterra con varios países. Las barras negras representan exportaciones y las barras sombreadas importaciones.
+</figcaption>
+</figure>
+</div>
+<section id="objetivos-de-la-lección" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="objetivos-de-la-lección"><span class="header-section-number">1</span> Objetivos de la lección</h2>
+<p>Al finalizar esta lección, los estudiantes serán capaces de:</p>
+<ul>
+<li>Elegir el gráfico adecuado (dispersión, puntos, histograma, caja) según el tipo de variable y el objetivo del análisis.</li>
+<li>Calcular e interpretar la media, mediana, desviación estándar y rango intercuartil (IQR).</li>
+<li>Describir la forma de una distribución (simétrica, asimétrica a derecha/izquierda, unimodal, bimodal).</li>
+<li>Identificar valores atípicos mediante el criterio de <span class="math inline">\(1.5 \times IQR\)</span> y explicar por qué a veces es útil transformar los datos.</li>
+<li>Distinguir entre estadísticos robustos (mediana, IQR) y no robustos (media, desviación estándar) y elegir cuál usar según la presencia de asimetría o valores extremos.</li>
+</ul>
+<hr>
+</section>
+<section id="visualización-de-una-variable-numérica" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="visualización-de-una-variable-numérica"><span class="header-section-number">2</span> Visualización de una variable numérica</h2>
+<section id="gráfico-de-puntos-dot-plot" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="gráfico-de-puntos-dot-plot"><span class="header-section-number">2.1</span> Gráfico de puntos (dot plot)</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-dotplot" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-dotplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="leccion-6-exploracion-datos-numericos_files/figure-html/fig-dotplot-1.png" class="img-fluid figure-img" width="576">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dotplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;2: Gráfico de puntos (dot plot) de 50 ingresos simulados. Cada punto representa un valor.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>El gráfico de puntos muestra cada observación como un punto sobre una línea. Es útil para conjuntos pequeños porque no oculta valores y permite ver la densidad de los datos. Si se apilan puntos idénticos, se obtiene un <strong>dot plot apilado</strong>, que facilita ver la frecuencia de valores repetidos.</p>
+</section>
+<section id="histograma" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="histograma"><span class="header-section-number">2.2</span> Histograma</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-histograma" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-histograma-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="leccion-6-exploracion-datos-numericos_files/figure-html/fig-histograma-1.png" class="img-fluid figure-img" width="576">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-histograma-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;3: Histograma de 500 ingresos simulados con distribución asimétrica a la derecha.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>El histograma agrupa los datos en intervalos (bins) y dibuja barras cuya altura representa la cantidad de observaciones en cada intervalo. Es ideal para muestras grandes y para apreciar la <strong>forma general</strong> de la distribución: simétrica, asimétrica a la derecha (cola larga hacia valores altos) o a la izquierda (cola larga hacia valores bajos). También permite identificar modas: <strong>unimodal</strong> (un pico prominente), <strong>bimodal</strong> (dos picos) o <strong>multimodal</strong> (más de dos picos).</p>
+</section>
+<section id="diagrama-de-caja-box-plot" class="level3" data-number="2.3">
+<h3 data-number="2.3" class="anchored" data-anchor-id="diagrama-de-caja-box-plot"><span class="header-section-number">2.3</span> Diagrama de caja (box plot)</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-boxplot" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-boxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="leccion-6-exploracion-datos-numericos_files/figure-html/fig-boxplot-1.png" class="img-fluid figure-img" width="384">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-boxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4: Diagrama de caja (box plot) de los mismos ingresos, mostrando mediana, cuartiles y valores atípicos.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>El diagrama de caja resume cinco estadísticos: mínimo (o límite inferior de los bigotes), primer cuartil (<span class="math inline">\(Q_1\)</span>), mediana, tercer cuartil ((Q_3)) y máximo (o límite superior de los bigotes). La caja contiene el 50% central de los datos. Los bigotes se extienden hasta el valor más extremo que no supere (1.5 IQR) desde los cuartiles. Los puntos más allá de los bigotes se consideran <strong>valores atípicos (outliers)</strong>.</p>
+<p>El box plot es muy útil para comparar distribuciones de varios grupos y para identificar rápidamente la presencia de asimetría y valores extremos.</p>
+</section>
+<section id="diagrama-de-dispersión-scatterplot" class="level3" data-number="2.4">
+<h3 data-number="2.4" class="anchored" data-anchor-id="diagrama-de-dispersión-scatterplot"><span class="header-section-number">2.4</span> Diagrama de dispersión (scatterplot)</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-scatter" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-scatter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="leccion-6-exploracion-datos-numericos_files/figure-html/fig-scatter-1.png" class="img-fluid figure-img" width="576">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-scatter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;5: Diagrama de dispersión entre años de educación e ingreso, mostrando una asociación positiva.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Cuando se tienen <strong>dos variables numéricas</strong>, el diagrama de dispersión es la herramienta principal. Cada punto representa un caso (individuo). Permite observar la dirección (positiva, negativa o nula), la fuerza y la forma (lineal, curvilínea, etc.) de la relación entre ambas variables.</p>
+<hr>
+</section>
+</section>
+<section id="medidas-de-centro" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="medidas-de-centro"><span class="header-section-number">3</span> Medidas de centro</h2>
+<section id="media-barx" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="media-barx"><span class="header-section-number">3.1</span> Media (<span class="math inline">\(\bar{x}\)</span>)</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-media-mediana" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-media-mediana-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="leccion-6-exploracion-datos-numericos_files/figure-html/fig-media-mediana-1.png" class="img-fluid figure-img" width="576">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-media-mediana-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;6: Histograma con media (línea roja) y mediana (línea azul). La media es mayor que la mediana debido a la asimetría derecha.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>La media aritmética es la suma de todos los valores dividida por el número de observaciones. Es sensible a valores extremos (outliers) y a la asimetría de la distribución. Se representa con <span class="math inline">\(\bar{x}\)</span> para una muestra y con <span class="math inline">\(\mu\)</span> para la población.</p>
+</section>
+<section id="mediana-m" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="mediana-m"><span class="header-section-number">3.2</span> Mediana (<span class="math inline">\(M\)</span>)</h3>
+<p>La mediana es el valor central cuando los datos se ordenan de menor a mayor. Si hay un número par de observaciones, se promedian los dos centrales. La mediana es <strong>robusta</strong>: no se ve afectada por outliers ni por asimetrías extremas. Por ello, cuando la distribución es asimétrica, la mediana suele ser una mejor representación del “valor típico” que la media.</p>
+<hr>
+</section>
+</section>
+<section id="medidas-de-dispersión" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="medidas-de-dispersión"><span class="header-section-number">4</span> Medidas de dispersión</h2>
+<section id="desviación-estándar-s" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="desviación-estándar-s"><span class="header-section-number">4.1</span> Desviación estándar (<span class="math inline">\(s\)</span>)</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-desviacion" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-desviacion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="leccion-6-exploracion-datos-numericos_files/figure-html/fig-desviacion-1.png" class="img-fluid figure-img" width="576">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-desviacion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;7: Histograma con bandas de una desviación estándar alrededor de la media (±1σ).
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>La desviación estándar mide la distancia típica de las observaciones respecto a la media. Se calcula como la raíz cuadrada de la varianza (<span class="math inline">\(s^2\)</span>), que es el promedio de los cuadrados de las desviaciones respecto a la media (dividiendo por (n-1) en una muestra). Al igual que la media, la desviación estándar es <strong>sensible a outliers</strong> y a la asimetría.</p>
+</section>
+<section id="rango-intercuartil-iqr" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="rango-intercuartil-iqr"><span class="header-section-number">4.2</span> Rango intercuartil (IQR)</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-iqr" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-iqr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="leccion-6-exploracion-datos-numericos_files/figure-html/fig-iqr-1.png" class="img-fluid figure-img" width="384">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-iqr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;8: Box plot donde la caja representa el IQR (entre Q1 y Q3), y los bigotes se extienden hasta 1.5*IQR.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>El IQR es la distancia entre el tercer y el primer cuartil (<span class="math inline">\(IQR = Q_3 - Q_1\)</span>). Representa la dispersión del 50% central de los datos. Es <strong>robusto</strong> porque no se ve influido por valores extremos. Se usa también para detectar outliers: se considera atípico cualquier valor menor que (Q_1 - 1.5 IQR) o mayor que (Q_3 + 1.5 IQR).</p>
+<hr>
+</section>
+</section>
+<section id="forma-de-la-distribución" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="forma-de-la-distribución"><span class="header-section-number">5</span> Forma de la distribución</h2>
+<p>La forma de una distribución se describe mediante:</p>
+<ul>
+<li><strong>Asimetría (skewness):</strong>
+<ul>
+<li><em>Sesgada a la derecha</em> (cola larga hacia la derecha): media &gt; mediana.</li>
+<li><em>Sesgada a la izquierda</em> (cola larga hacia la izquierda): media &lt; mediana.</li>
+<li><em>Simétrica</em>: media ≈ mediana.</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-asimetriad" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-asimetriad-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="leccion-6-exploracion-datos-numericos_files/figure-html/fig-asimetriad-1.png" class="img-fluid figure-img" width="576">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-asimetriad-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;9: Distribución con asimetría positiva (cola larga a la derecha).
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-asimetriai" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-asimetriai-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="leccion-6-exploracion-datos-numericos_files/figure-html/fig-asimetriai-1.png" class="img-fluid figure-img" width="576">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-asimetriai-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;10: Distribución con asimetría negativa (cola larga a la izquierda).
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>Modalidad:</strong>
+<ul>
+<li>Unimodal: un pico claro.</li>
+<li>Bimodal: dos picos.</li>
+<li>Multimodal: más de dos picos.</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-modalidad" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-modalidad-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="leccion-6-exploracion-datos-numericos_files/figure-html/fig-modalidad-1.png" class="img-fluid figure-img" width="576">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-modalidad-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;11: Distribución bimodal (dos picos).
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Conocer la forma ayuda a decidir qué estadísticos usar y si es necesario transformar los datos (por ejemplo, aplicar logaritmo para reducir la asimetría derecha).</p>
+<hr>
+</section>
+<section id="valores-atípicos-outliers-y-estadísticos-robustos" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="valores-atípicos-outliers-y-estadísticos-robustos"><span class="header-section-number">6</span> Valores atípicos (outliers) y estadísticos robustos</h2>
+<p>Un valor atípico es una observación que se aleja notablemente del resto. Puede deberse a errores de medición, a una rareza genuina o a la naturaleza de la variable. En cualquier caso, es importante identificarlos porque pueden distorsionar la media y la desviación estándar.</p>
+<ul>
+<li><strong>Estadísticos robustos</strong> (resistentes a outliers): mediana, IQR.</li>
+<li><strong>Estadísticos no robustos</strong> (sensibles a outliers): media, desviación estándar.</li>
+</ul>
+<p>En presencia de outliers o asimetría fuerte, se recomienda usar la mediana y el IQR para describir el centro y la dispersión típicos.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-outliers" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-outliers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="leccion-6-exploracion-datos-numericos_files/figure-html/fig-outliers-1.png" class="img-fluid figure-img" width="384">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-outliers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;12: Box plot que muestra tres valores atípicos (puntos fuera de los bigotes). La mediana y el IQR son robustos, la media y la desviación estándar son sensibles.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="transformaciones-y-mapas-de-intensidad" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="transformaciones-y-mapas-de-intensidad"><span class="header-section-number">7</span> Transformaciones y mapas de intensidad</h2>
+<p>Cuando una variable tiene una asimetría muy pronunciada (por ejemplo, población de condados), aplicar una transformación como el logaritmo (base 10) puede convertir la distribución en aproximadamente simétrica, facilitando su modelización y visualización. También se pueden transformar una o ambas variables en un diagrama de dispersión para revelar patrones ocultos.</p>
+<p>Los <strong>mapas de intensidad</strong> (mapas coropléticos) representan valores de una variable numérica sobre un mapa geográfico mediante colores. Son muy útiles para detectar patrones espaciales (ej. regiones con alta pobreza o bajo ingreso).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-transformaciones" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-transformaciones-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="leccion-6-exploracion-datos-numericos_files/figure-html/fig-transformaciones-1.png" class="img-fluid figure-img" width="576">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-transformaciones-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;13: Comparación de un histograma original (arriba, fuertemente asimétrico) y su transformación logarítmica (abajo, aproximadamente simétrico).
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-mapa" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mapa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="leccion-6-exploracion-datos-numericos_files/figure-html/fig-mapa-1.png" class="img-fluid figure-img" width="768">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mapa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;14: Mapa de intensidad (coroplético) que muestra una variable hipotética (por ejemplo, ingreso promedio) por estado de EE.UU.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-mapa-chile" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mapa-chile-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="leccion-6-exploracion-datos-numericos_files/figure-html/fig-mapa-chile-1.png" class="img-fluid figure-img" width="576">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mapa-chile-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;15: Mapa de intensidad (coroplético) de Chile mostrando una variable hipotética (por ejemplo, ingreso promedio) por región.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="material-de-apoyo-y-reforzamiento" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="material-de-apoyo-y-reforzamiento"><span class="header-section-number">8</span> Material de apoyo y reforzamiento</h2>
+<p>Para complementar tu estudio, aquí tienes recursos adicionales, esta vez centrados en <strong>ejemplos propios de la ingeniería</strong>. A través de ellos podrás ver cómo los conceptos de diseño experimental, placebo y sistemas complejos se aplican en contextos tecnológicos y de simulación.</p>
+<section id="mapa-mental" class="level3" data-number="8.1">
+<h3 data-number="8.1" class="anchored" data-anchor-id="mapa-mental"><span class="header-section-number">8.1</span> Mapa mental</h3>
+<p>Para consolidar los conceptos de la lección, aquí tienes un mapa mental que integra visualmente los principales temas tratados: visualización, centro, dispersión, forma, valores atípicos y estadísticos robustos.</p>
+<div id="fig-mapa-leccion6-resumen" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Mapa mental completo sobre el análisis de datos numéricos.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mapa-leccion6-resumen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../../epdi/imagenes/mapa-mental-leccion-6.png" class="img-fluid figure-img" alt="Mapa mental completo sobre el análisis de datos numéricos.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mapa-leccion6-resumen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;16: Mapa mental: Exploración de datos numéricos
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="documento-pdf" class="level3" data-number="8.2">
+<h3 data-number="8.2" class="anchored" data-anchor-id="documento-pdf"><span class="header-section-number">8.2</span> Documento PDF</h3>
+<p>El siguiente documento aborda el <strong>diagnóstico de sistemas complejos</strong> desde una perspectiva ingenieril, ideal para entender cómo se planifican experimentos en entornos con múltiples variables interactuantes.</p>
+<ul>
+<li><a href="../../epdi/media/Diagnóstico_de_Sistemas_Complejos.pdf">Diagnóstico de Sistemas Complejos (PDF)</a></li>
+</ul>
+</section>
+<section id="video-complementario" class="level3" data-number="8.3">
+<h3 data-number="8.3" class="anchored" data-anchor-id="video-complementario"><span class="header-section-number">8.3</span> Video complementario</h3>
+<p>Este video retoma el dilema ético del <strong>placebo en el quirófano</strong>, pero ahora analizado desde la ingeniería biomédica y el diseño de dispositivos médicos. Resulta especialmente útil para reflexionar sobre cómo los principios de cegamiento y grupo de control se trasladan a la experimentación tecnológica.</p>
+<ul>
+<li><a href="../../epdi/media/Entendiendo_los_datos.mp4">Entendiendo los datos (video)</a></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="cuestionario-grupal-portafolio-lección-6-exploración-de-datos-numéricos" class="level2" data-number="9">
+<h2 data-number="9" class="anchored" data-anchor-id="cuestionario-grupal-portafolio-lección-6-exploración-de-datos-numéricos"><span class="header-section-number">9</span> Cuestionario Grupal (Portafolio): Lección 6 Exploración de datos numéricos</h2>
+<ol type="1">
+<li><p><strong>Comparación de centro y dispersión</strong> Se tienen dos conjuntos de datos: A = {3, 5, 6, 7, 9} B = {3, 5, 6, 7, 20} Calcula mentalmente (o con cálculos simples) la mediana y la media de cada conjunto. Explica cómo la presencia del valor 20 en B afecta a la media y a la mediana. ¿Qué medida de centro recomendarías para describir un conjunto como B? ¿Por qué? ¿Qué ocurre con la desviación estándar y el IQR al comparar A con B? ¿Cuál de las dos medidas de dispersión es más robusta? Argumenta.</p></li>
+<li><p><strong>Interpretación de un histograma</strong> El histograma de la <a href="#fig-hist-ingresos" class="quarto-xref">Figura&nbsp;17</a> muestra la distribución de los ingresos mensuales (en miles de pesos) de los habitantes de una comuna. La mayoría de los ingresos se concentran entre 300 y 800, pero hay una cola larga hacia la derecha que llega hasta 2500. Basándote únicamente en esta descripción, ¿esperarías que la media sea mayor o menor que la mediana? ¿Por qué? ¿Qué medida de centro usarías para informar el “ingreso típico” de la comuna? Justifica. Si además se sabe que hay algunos ingresos negativos (por errores de digitación), ¿cómo afectaría eso a la media y a la mediana? ¿Qué harías con esos valores?</p></li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-hist-ingresos" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-hist-ingresos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="leccion-6-exploracion-datos-numericos_files/figure-html/fig-hist-ingresos-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="768">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hist-ingresos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;17: Distribución de ingresos mensuales (en miles de pesos) de los habitantes de una comuna. La mayoría se concentra entre 300 y 800, con una cola larga hasta 2500.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ol start="3" type="1">
+<li><p><strong>Detección de outliers mediante box plot</strong> Se ha construido un diagrama de caja para las edades de los participantes de un estudio. El box plot muestra: <span class="math inline">\(Q_1 = 25\)</span> años, mediana = 32 años, (Q_3 = 40) años. El bigote inferior llega hasta 18 años y el superior hasta 58 años. Además, hay dos puntos señalados como outliers: uno a los 12 años y otro a los 82 años.</p>
+<ul>
+<li>Calcula el IQR y los límites para considerar un valor atípico. Verifica que efectivamente 12 y 82 son outliers según el criterio de <span class="math inline">\(1.5 \times IQR\)</span>.</li>
+<li>¿Qué significado práctico podría tener que haya un participante de 12 años en un estudio de adultos? ¿Y uno de 82 años? ¿Descartarías esos valores automáticamente? ¿Por qué sí o por qué no?</li>
+</ul></li>
+<li><p><strong>Forma de la distribución y elección de estadísticos</strong> Se quiere analizar el número de horas semanales que estudiantes de enseñanza media dedican a usar redes sociales. Se sospecha que la mayoría dedica pocas horas (entre 0 y 5), algunos dedican entre 6 y 15, y unos pocos dedican más de 20 horas. ¿Qué forma esperarías que tenga esta distribución? Dibuja mentalmente su forma. ¿Recomendarías usar la media o la mediana para resumir el centro? ¿Y la desviación estándar o el IQR para la variabilidad? Explica en cada caso tu razonamiento, vinculándolo con la robustez de los estadísticos.</p></li>
+<li><p><strong>Aplicación de transformación logarítmica</strong> En un estudio sobre ingresos de hogares en Chile, se obtiene una distribución fuertemente sesgada a la derecha, con unos pocos hogares de ingresos extremadamente altos. Los investigadores deciden aplicar una transformación logarítmica (base 10) a los datos.</p>
+<ul>
+<li>¿Qué efecto tendrá esta transformación sobre la forma de la distribución? ¿Por qué es útil?</li>
+<li>Después de la transformación, ¿cómo se interpretaría la media de los log‑ingresos? ¿Podrías convertirla de nuevo a la escala original (por ejemplo, promediando los antilogaritmos)? ¿Por qué sí o por qué no?</li>
+<li>¿Qué ventaja tiene analizar los datos transformados cuando se quiere ajustar un modelo estadístico?</li>
+</ul></li>
+</ol>
+<hr>
+<p><strong>Nota final:</strong> Aunque en esta lección no hemos utilizado R, todos estos conceptos se aplican directamente en el análisis de datos reales. En las próximas sesiones pondremos en práctica estas ideas con conjuntos de datos concretos.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/hsigrist\.github\.io");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Hans Sigrist</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

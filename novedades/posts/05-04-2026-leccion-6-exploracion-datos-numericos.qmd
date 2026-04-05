@@ -1,0 +1,12 @@
+---
+title: "Nueva lección: Lección 6 Exploracion de datos numéricos"
+date: 2026-04-05
+date-format: "D MMMM, YYYY"
+author: "Hans Sigrist"
+categories: [EPDI, lecciones]
+lang: es
+description: "Resumen de técnicas para describir y visualizar variables numéricas: gráficos (dispersión, puntos, histogramas, caja), medidas de centro y dispersión, forma de la distribución, valores atípicos y estadísticos robustos."
+image: "/epdi/imagenes/4e6472b4-838b-4f5c-ae17-a6e11838576e_3308x1182.jpg"
+---
+
+Ya está disponible la [Lección 6 Exploracion de datos numéricos](../../epdi/lecciones/leccion-6-exploracion-datos-numericos.qmd). Existe una versión en PDF.
