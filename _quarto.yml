@@ -62,6 +62,7 @@ website:
         - section: "Defensa"
           contents:
             - epdi/defensa/index.qmd
+            - epdi/defensa/carta-autorizacion.qmd
         - section: "Lecciones"
           contents:
             - epdi/lecciones/leccion-1-introduccion-a-los-datos.qmd
@@ -73,6 +74,14 @@ website:
             - epdi/lecciones/leccion-7-analisis-de-datos-categoricos.qmd
 
 format:
+  pdf:
+    pdf-engine: pdflatex
+    include-in-header: preamble.tex
+    documentclass: scrartcl
+    papersize: letter
+    babeloptions: spanish,es-nodecimaldot,es-tabla
+    geometry:
+      - margin=2cm
   html:
     theme:
       dark: [cosmo, theme-dark.scss]

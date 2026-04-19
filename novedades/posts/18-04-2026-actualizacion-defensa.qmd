@@ -1,0 +1,21 @@
+---
+title: "Actualización: Proyecto Final EPDI – Defensa Estadística con Apoyo de IA"
+date: 2026-04-18
+date-format: "D MMMM, YYYY"
+author: "Hans Sigrist"
+categories: [EPDI, defensa]
+lang: es
+description: "Nueva versión del proyecto final: metodología de trabajo con DeepSeek y NotebookLM, avances semanales, 14 temas con preguntas orientadoras y rúbricas de evaluación."
+image: "/epdi/imagenes/defensa.png"
+---
+
+Ya está disponible la versión actualizada del [Proyecto Final EPDI: Defensa Estadística con Apoyo de IA](../../epdi/defensa/index.qmd). Esta nueva edición incorpora:
+
+- **14 temas** con descripciones detalladas y preguntas orientadoras para cada etapa (Avance 1 y Avance 2).
+- **Flujo de trabajo con IA**: uso de DeepSeek para exploración y NotebookLM (opcional) para síntesis visual con mapas mentales.
+- **Estructura de avances semanales** con entregables escritos para portafolio físico.
+- **Rúbrica de evaluación sobre 100 puntos** para los avances y rúbrica final de la defensa oral.
+
+El documento incluye versiones en PDF y recursos visuales. Recuerda que toda la información se versiona en el repositorio del blog y está disponible para consulta permanente.
+
+¡Manos a la obra con la defensa!

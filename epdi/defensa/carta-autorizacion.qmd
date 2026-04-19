@@ -1,0 +1,77 @@
+---
+title: "Carta de autorización para grabación y publicación de defensa oral"
+format:
+  pdf:
+    documentclass: scrartcl
+    papersize: letter
+    fontsize: 11pt
+    colorlinks: true
+    keep-tex: true
+lang: es
+---
+
+\thispagestyle{empty}
+\begin{center}
+    \textbf{\Large Colegio Portaliano}\\[0.3cm]
+    \textit{San Felipe}\\[0.3cm]
+    \textbf{Departamento de Matemática}\\[0.5cm]
+    \hrule
+\end{center}
+
+\vspace{0.5cm}
+
+\begin{flushright}
+    San Felipe, \hspace{3cm} de \hspace{2cm} de 2026
+\end{flushright}
+
+\vspace{0.5cm}
+
+\textbf{Estimado/a Apoderado/a:}
+
+Junto con saludarle, me dirijo a usted para informarle que en el marco de la asignatura \textbf{Estadística y Probabilidad Descriptiva e Inferencial (EPDI)}, los estudiantes de 3° y 4° medio participarán en una actividad académica denominada \textbf{“Defensa Final EPDI”}. Esta actividad consiste en la presentación oral de un proyecto de investigación estadística frente a un tribunal compuesto por el profesor y sus compañeros.
+
+Con el objetivo de promover las habilidades de comunicación oral y crear un repositorio educativo de consulta para futuros estudiantes, se ha considerado \textbf{grabar en video} las defensas y, con la debida autorización, publicar una selección de las mejores presentaciones en el canal institucional de YouTube del colegio o en una lista de reproducción privada del curso.
+
+La grabación se realizará exclusivamente con fines pedagógicos y no persigue ningún beneficio comercial. Los estudiantes aparecerán únicamente en el contexto de su exposición académica, vistiendo el uniforme oficial del colegio.
+
+Por lo anterior, solicito a usted su \textbf{consentimiento explícito} para que su pupilo/a pueda ser grabado/a y, eventualmente, el video pueda ser publicado en YouTube. La participación en la grabación es \textbf{totalmente voluntaria} y no afectará la calificación del estudiante en caso de no autorizarlo.
+
+Agradezco desde ya su comprensión y colaboración con esta iniciativa que busca enriquecer el proceso formativo de nuestros estudiantes.
+
+Atentamente,
+
+
+\rule{5cm}{0.4pt}
+\textbf{Prof. Hans Sigrist}
+Profesor EPDI
+Colegio Portaliano
+
+\vfill
+
+\begin{center}
+    \hrule
+    \vspace{0.3cm}
+    \textbf{\Large AUTORIZACIÓN}\\
+    \textit{(Completar y entregar al profesor)}
+    \vspace{0.3cm}
+    \hrule
+\end{center}
+
+\vspace{0.3cm}
+
+Yo, \underline{\hspace{6cm}}, RUT \underline{\hspace{4cm}}, apoderado/a de: \newline \underline{\hspace{8cm}} (nombre completo del estudiante), del curso \underline{\hspace{1cm}},  \newline \underline{\hspace{1cm}} \textbf{AUTORIZO} \hspace{1cm} \underline{\hspace{1cm}} \textbf{NO AUTORIZO} (Marque con una X)
+que mi pupilo/a sea grabado/a en video durante la actividad de \textbf{Defensa Final EPDI} y que dicho material pueda ser publicado en la plataforma YouTube con fines exclusivamente educativos.
+
+\vspace{0.5cm}
+
+Firma del Apoderado/a: \underline{\hspace{6cm}}
+
+\vspace{0.5cm}
+
+Fecha: \underline{\hspace{1cm}} de \underline{\hspace{3cm}} de 2026.
+
+\vfill
+
+\begin{center}
+    \textit{Este documento debe ser entregado firmado al profesor de la asignatura antes del día de la defensa.}
+\end{center}

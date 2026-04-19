@@ -19,7 +19,7 @@ format:
 ---
 
 ::: {.callout-important appearance="simple"}
-## 📵Regulación de dispositivos móviles en el colegio
+## Regulación de dispositivos móviles en el colegio
 
 A partir del **año escolar 2026**, rige la nueva ley que regula el uso de dispositivos móviles personales (celulares, smartwatches, etc.) en establecimientos educacionales.
 

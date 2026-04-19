@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.36">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -41,8 +41,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-f418161beb48e0141c760e455f12af2c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-a5312e2448c48544805e26358ddafd1e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
@@ -75,6 +75,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -436,6 +465,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Proyecto Final EPDI: Defensa Estadística con Apoyo de IA</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/defensa/carta-autorizacion.pdf" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Carta de autorización para grabación y publicación de defensa oral</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -757,7 +792,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="fig-muestreo-mapa" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Diagrama de mapa mental que muestra las relaciones entre población, muestra, evidencia anecdótica, datos observacionales y métodos de muestreo aleatorio.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-muestreo-mapa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../imagenes/mapa-mental-muestreo.png" class="img-fluid figure-img" alt="Diagrama de mapa mental que muestra las relaciones entre población, muestra, evidencia anecdótica, datos observacionales y métodos de muestreo aleatorio.">
+<img src="../imagenes/mapa-mental-muestreo.png" alt="Diagrama de mapa mental que muestra las relaciones entre población, muestra, evidencia anecdótica, datos observacionales y métodos de muestreo aleatorio." class="figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-muestreo-mapa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figura&nbsp;1: Mapa mental: Principios y estrategias de muestreo
@@ -772,7 +807,7 @@ Figura&nbsp;1: Mapa mental: Principios y estrategias de muestreo
 <ol type="1">
 <li><strong>Contaminación del aire y partos prematuros</strong></li>
 </ol>
-<p>Investigadores recolectaron datos para examinar la relación entre contaminantes atmosféricos y partos prematuros en el sur de California. Durante el estudio, los niveles de contaminación se midieron mediante estaciones de monitoreo de calidad del aire. Se recopilaron datos de la duración de la gestación de 143.196 nacimientos entre los años 1989 y 1993, y se calculó la exposición a la contaminación durante la gestación para cada nacimiento. El análisis sugirió que el aumento de PM₁₀ y CO podría estar asociado con la ocurrencia de partos prematuros.</p>
+<p>Investigadores recolectaron datos para examinar la relación entre contaminantes atmosféricos y partos prematuros en el sur de California. Durante el estudio, los niveles de contaminación se midieron mediante estaciones de monitoreo de calidad del aire. Se recopilaron datos de la duración de la gestación de 143.196 nacimientos entre los años 1989 y 1993, y se calculó la exposición a la contaminación durante la gestación para cada nacimiento. El análisis sugirió que el aumento de PM<span class="math inline">\(_{10}\)</span> y CO podría estar asociado con la ocurrencia de partos prematuros.</p>
 <ol type="a">
 <li>Identifica la población de interés y la muestra en este estudio.</li>
 <li>Comenta si los resultados del estudio pueden generalizarse a la población y si pueden usarse para establecer relaciones causales.</li>

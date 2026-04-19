@@ -20,8 +20,6 @@ author-title: "Autor"
 execute-dir: file
 format:
   pdf:
-    geometry:
-      - margin=2cm
     toc: true
     number-sections: true
     colorlinks: true

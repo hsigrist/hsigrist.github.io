@@ -116,7 +116,7 @@ ggplot(datos, aes(y = ingreso)) +
   theme_minimal()
 ```
 
-El diagrama de caja resume cinco estadísticos: mínimo (o límite inferior de los bigotes), primer cuartil ($Q_1$), mediana, tercer cuartil (\(Q_3\)) y máximo (o límite superior de los bigotes). La caja contiene el 50% central de los datos. Los bigotes se extienden hasta el valor más extremo que no supere \(1.5 \times IQR\) desde los cuartiles. Los puntos más allá de los bigotes se consideran **valores atípicos (outliers)**.
+El diagrama de caja resume cinco estadísticos: mínimo (o límite inferior de los bigotes), primer cuartil ($Q_1$), mediana, tercer cuartil (\(Q_3\)) y máximo (o límite superior de los bigotes). La caja contiene el 50% central de los datos. Los bigotes se extienden hasta el valor más extremo que no supere $1.5 \times IQR$ desde los cuartiles. Los puntos más allá de los bigotes se consideran **valores atípicos (outliers)**.
 
 El box plot es muy útil para comparar distribuciones de varios grupos y para identificar rápidamente la presencia de asimetría y valores extremos.
 
@@ -188,7 +188,7 @@ La mediana es el valor central cuando los datos se ordenan de menor a mayor. Si 
 
 ```{R}
 #| label: fig-desviacion
-#| fig.cap: "Histograma con bandas de una desviación estándar alrededor de la media (±1σ)."
+#| fig.cap: 'Histograma con bandas de una desviación estándar alrededor de la media ($\pm1\sigma$).'
 #| echo: false
 #| message: false
 #| warning: false
@@ -232,7 +232,7 @@ ggplot(datos, aes(y = valor)) +
   theme_minimal()
 ```
 
-El IQR es la distancia entre el tercer y el primer cuartil ($IQR = Q_3 - Q_1$). Representa la dispersión del 50% central de los datos. Es **robusto** porque no se ve influido por valores extremos. Se usa también para detectar outliers: se considera atípico cualquier valor menor que \(Q_1 - 1.5 \times IQR\) o mayor que \(Q_3 + 1.5 \times IQR\).
+El IQR es la distancia entre el tercer y el primer cuartil ($IQR = Q_3 - Q_1$). Representa la dispersión del 50% central de los datos. Es **robusto** porque no se ve influido por valores extremos. Se usa también para detectar outliers: se considera atípico cualquier valor menor que $Q_{1} - 1.5 \times IQR$ o mayor que $Q_{3} + 1.5 \times IQR$.
 
 ---
 

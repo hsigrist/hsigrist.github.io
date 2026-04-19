@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.36">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -41,8 +41,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-f418161beb48e0141c760e455f12af2c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-a5312e2448c48544805e26358ddafd1e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
@@ -465,6 +465,12 @@ window.Quarto = {
  <span class="menu-text">Proyecto Final EPDI: Defensa Estadística con Apoyo de IA</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/defensa/carta-autorizacion.pdf" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Carta de autorización para grabación y publicación de defensa oral</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -695,7 +701,7 @@ Figura&nbsp;4: Diagrama de caja (box plot) de los mismos ingresos, mostrando med
 </div>
 </div>
 </div>
-<p>El diagrama de caja resume cinco estadísticos: mínimo (o límite inferior de los bigotes), primer cuartil (<span class="math inline">\(Q_1\)</span>), mediana, tercer cuartil ((Q_3)) y máximo (o límite superior de los bigotes). La caja contiene el 50% central de los datos. Los bigotes se extienden hasta el valor más extremo que no supere (1.5 IQR) desde los cuartiles. Los puntos más allá de los bigotes se consideran <strong>valores atípicos (outliers)</strong>.</p>
+<p>El diagrama de caja resume cinco estadísticos: mínimo (o límite inferior de los bigotes), primer cuartil (<span class="math inline">\(Q_1\)</span>), mediana, tercer cuartil ((Q_3)) y máximo (o límite superior de los bigotes). La caja contiene el 50% central de los datos. Los bigotes se extienden hasta el valor más extremo que no supere <span class="math inline">\(1.5 \times IQR\)</span> desde los cuartiles. Los puntos más allá de los bigotes se consideran <strong>valores atípicos (outliers)</strong>.</p>
 <p>El box plot es muy útil para comparar distribuciones de varios grupos y para identificar rápidamente la presencia de asimetría y valores extremos.</p>
 </section>
 <section id="diagrama-de-dispersión-scatterplot" class="level3" data-number="2.4">
@@ -756,7 +762,7 @@ Figura&nbsp;6: Histograma con media (línea roja) y mediana (línea azul). La me
 <img src="leccion-6-exploracion-datos-numericos_files/figure-html/fig-desviacion-1.png" class="img-fluid figure-img" width="576">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-desviacion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;7: Histograma con bandas de una desviación estándar alrededor de la media (±1σ).
+Figura&nbsp;7: Histograma con bandas de una desviación estándar alrededor de la media (<span class="math inline">\(\pm1\sigma\)</span>).
 </figcaption>
 </figure>
 </div>
@@ -780,7 +786,7 @@ Figura&nbsp;8: Box plot donde la caja representa el IQR (entre Q1 y Q3), y los b
 </div>
 </div>
 </div>
-<p>El IQR es la distancia entre el tercer y el primer cuartil (<span class="math inline">\(IQR = Q_3 - Q_1\)</span>). Representa la dispersión del 50% central de los datos. Es <strong>robusto</strong> porque no se ve influido por valores extremos. Se usa también para detectar outliers: se considera atípico cualquier valor menor que (Q_1 - 1.5 IQR) o mayor que (Q_3 + 1.5 IQR).</p>
+<p>El IQR es la distancia entre el tercer y el primer cuartil (<span class="math inline">\(IQR = Q_3 - Q_1\)</span>). Representa la dispersión del 50% central de los datos. Es <strong>robusto</strong> porque no se ve influido por valores extremos. Se usa también para detectar outliers: se considera atípico cualquier valor menor que <span class="math inline">\(Q_{1} - 1.5 \times IQR\)</span> o mayor que <span class="math inline">\(Q_{3} + 1.5 \times IQR\)</span>.</p>
 <hr>
 </section>
 </section>

@@ -9,8 +9,37 @@
 <link>https://hsigrist.github.io/novedades/</link>
 <atom:link href="https://hsigrist.github.io/novedades/index.xml" rel="self" type="application/rss+xml"/>
 <description>Materiales docentes y novedades de Formación Diferenciada | Colegio Portaliano</description>
-<generator>quarto-1.9.36</generator>
-<lastBuildDate>Sun, 05 Apr 2026 04:00:00 GMT</lastBuildDate>
+<generator>quarto-1.9.37</generator>
+<lastBuildDate>Sat, 18 Apr 2026 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>Actualización: Proyecto Final EPDI – Defensa Estadística con Apoyo de IA</title>
+  <dc:creator>Hans Sigrist</dc:creator>
+  <link>https://hsigrist.github.io/novedades/posts/18-04-2026-actualizacion-defensa.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Ya está disponible la versión actualizada del <a href="../../epdi/defensa/index.html">Proyecto Final EPDI: Defensa Estadística con Apoyo de IA</a>. Esta nueva edición incorpora:</p>
+<ul>
+<li><strong>14 temas</strong> con descripciones detalladas y preguntas orientadoras para cada etapa (Avance 1 y Avance 2).</li>
+<li><strong>Flujo de trabajo con IA</strong>: uso de DeepSeek para exploración y NotebookLM (opcional) para síntesis visual con mapas mentales.</li>
+<li><strong>Estructura de avances semanales</strong> con entregables escritos para portafolio físico.</li>
+<li><strong>Rúbrica de evaluación sobre 100 puntos</strong> para los avances y rúbrica final de la defensa oral.</li>
+</ul>
+<p>El documento incluye versiones en PDF y recursos visuales. Recuerda que toda la información se versiona en el repositorio del blog y está disponible para consulta permanente.</p>
+<p>¡Manos a la obra con la defensa!</p>
+
+
+
+ ]]></description>
+  <category>EPDI</category>
+  <category>defensa</category>
+  <guid>https://hsigrist.github.io/novedades/posts/18-04-2026-actualizacion-defensa.html</guid>
+  <pubDate>Sat, 18 Apr 2026 04:00:00 GMT</pubDate>
+  <media:content url="https://hsigrist.github.io/epdi/imagenes/defensa.png" medium="image" type="image/png" height="149" width="144"/>
+</item>
 <item>
   <title>Nueva lección: Lección 7 Análisis de datos categóricos</title>
   <dc:creator>Hans Sigrist</dc:creator>

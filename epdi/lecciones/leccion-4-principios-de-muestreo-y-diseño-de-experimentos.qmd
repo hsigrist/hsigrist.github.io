@@ -169,7 +169,7 @@ Es una variable que está asociada tanto con la variable explicativa como con la
 
 Para tener una visión de conjunto de los conceptos que exploraremos, aquí tienes un mapa mental que los organiza visualmente:
 
-![Mapa mental: Principios y estrategias de muestreo](../imagenes/mapa-mental-muestreo.png){#fig-muestreo-mapa fig-alt="Diagrama de mapa mental que muestra las relaciones entre población, muestra, evidencia anecdótica, datos observacionales y métodos de muestreo aleatorio."}
+![Mapa mental: Principios y estrategias de muestreo](../imagenes/mapa-mental-muestreo.png){#fig-muestreo-mapa fig-alt="Diagrama de mapa mental que muestra las relaciones entre población, muestra, evidencia anecdótica, datos observacionales y métodos de muestreo aleatorio." width=0.7\textwidth height=0.4\textheight}
 
 En este mapa puedes ver cómo se relacionan las ideas de **población** y **muestra**, los peligros de la **evidencia anecdótica**, la distinción entre **estudios observacionales** y **experimentos**, y los distintos **métodos de muestreo aleatorio** que estudiaremos en detalle.
 ## Análisis de ejercicios (Cuestionario)
@@ -180,7 +180,7 @@ A continuación, se presentan una serie de ejercicios basados en estudios reales
 
 1. **Contaminación del aire y partos prematuros**
 
-Investigadores recolectaron datos para examinar la relación entre contaminantes atmosféricos y partos prematuros en el sur de California. Durante el estudio, los niveles de contaminación se midieron mediante estaciones de monitoreo de calidad del aire. Se recopilaron datos de la duración de la gestación de 143.196 nacimientos entre los años 1989 y 1993, y se calculó la exposición a la contaminación durante la gestación para cada nacimiento. El análisis sugirió que el aumento de PM₁₀ y CO podría estar asociado con la ocurrencia de partos prematuros.
+Investigadores recolectaron datos para examinar la relación entre contaminantes atmosféricos y partos prematuros en el sur de California. Durante el estudio, los niveles de contaminación se midieron mediante estaciones de monitoreo de calidad del aire. Se recopilaron datos de la duración de la gestación de 143.196 nacimientos entre los años 1989 y 1993, y se calculó la exposición a la contaminación durante la gestación para cada nacimiento. El análisis sugirió que el aumento de PM$_{10}$ y CO podría estar asociado con la ocurrencia de partos prematuros.
 
 (a) Identifica la población de interés y la muestra en este estudio.
 (b) Comenta si los resultados del estudio pueden generalizarse a la población y si pueden usarse para establecer relaciones causales.
