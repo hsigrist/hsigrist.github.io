@@ -40,13 +40,13 @@ library(scales)
 
 ::: {.content-visible when-format="html"}
 ::: {#fig-prob-cover fig-cap="Vuelo 1549 de US Airways sobre el río Hudson. La toma de decisiones en aviación se apoya en evaluaciones de riesgo y probabilidad — una aplicación directa del pensamiento probabilístico." fig-alt="Fotografía del avión flotando en el río Hudson con pasajeros sobre las alas."}
-![](../imagenes/skyscraper_8098_lg.png)
+![](../imagenes/cnne-605188-10-anos-del-milagro-del-hudson.jpg)
 :::
 :::
 
 ::: {.content-visible when-format="pdf"}
 ::: {#fig-prob-cover-pdf fig-cap="Vuelo 1549 de US Airways sobre el río Hudson. La decisión del Capitán Sullenberger de amerizar fue el resultado de una evaluación de riesgos ejecutada en segundos."}
-![](../imagenes/skyscraper_8098_lg.png){width=0.65\textwidth}
+![](../imagenes/cnne-605188-10-anos-del-milagro-del-hudson.jpg){width=0.65\textwidth}
 :::
 :::
 
@@ -423,6 +423,6 @@ Responde las siguientes preguntas mostrando el razonamiento y los cálculos nece
 
 ---
 
-¡Sigue practicando! La probabilidad es el lenguaje de la incertidumbre, y dominarlo te permitirá entender, construir y cuestionar con rigor cualquier afirmación basada en datos. Cualquier duda, consulta con el profesor.
+¡Sigue practicando! La probabilidad es el lenguaje de la incertidumbre, y dominarlo te permitirá entender, construir y cuestionar con rigor cualquier afirmación basada en datos. Cualquier duda, consulte conmigo.
 
 *Prof. Hans Sigrist — Colegio Portaliano, San Felipe*

@@ -10,7 +10,53 @@
 <atom:link href="https://hsigrist.github.io/novedades/index.xml" rel="self" type="application/rss+xml"/>
 <description>Materiales docentes y novedades de Formación Diferenciada | Colegio Portaliano</description>
 <generator>quarto-1.9.37</generator>
-<lastBuildDate>Sat, 18 Apr 2026 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sat, 02 May 2026 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>Nueva lección: Lección 9 Probabilidad condicional y teorema de Bayes</title>
+  <dc:creator>Hans Sigrist</dc:creator>
+  <link>https://hsigrist.github.io/novedades/posts/02-05-2026-leccion-9-probabilidad-condicional-teroema-de-bayes.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Ya está disponible la <a href="../../epdi/lecciones/leccion-9-probabilidad-condicional-teroema-de-bayes.html">Lección 9: Probabilidad condicional y teorema de Bayes</a>. También encontrarás una versión en PDF.</p>
+<p>Esta lección profundiza en la probabilidad como herramienta para actualizar creencias. Se trabaja con tablas de contingencia para distinguir probabilidades marginales, conjuntas y condicionales. Se introducen la regla general de la multiplicación, los diagramas de árbol, la verificación de independencia y el teorema de Bayes, ejemplificados con datos de checklists en simulacros de vuelo, el histórico brote de viruela en Boston (1721) y un sensor de detección de fisuras en motores aeronáuticos.</p>
+<p>La lección incluye simulaciones en R que contrastan las predicciones teóricas con resultados empíricos, reforzando la Ley de los Grandes Números y la importancia de la verificación experimental.</p>
+
+
+
+ ]]></description>
+  <category>EPDI</category>
+  <category>lecciones</category>
+  <guid>https://hsigrist.github.io/novedades/posts/02-05-2026-leccion-9-probabilidad-condicional-teroema-de-bayes.html</guid>
+  <pubDate>Sat, 02 May 2026 04:00:00 GMT</pubDate>
+  <media:content url="https://hsigrist.github.io/epdi/imagenes/1.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
+  <title>Nueva lección: Lección 9 Probabilidad condicional y teorema de Bayes</title>
+  <dc:creator>Hans Sigrist</dc:creator>
+  <link>https://hsigrist.github.io/novedades/posts/01-05-2026-leccion-8-introduccion-a-la-probabilidad.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Ya está disponible la <a href="../../epdi/lecciones/leccion-9-probabilidad-condicional-y-teorema-de-bayes.qmd">Lección 9: Probabilidad condicional y teorema de Bayes</a>. También encontrarás una versión en PDF.</p>
+<p>Esta lección profundiza en la probabilidad como herramienta para actualizar creencias. Se trabaja con tablas de contingencia para distinguir probabilidades marginales, conjuntas y condicionales. Se introducen la regla general de la multiplicación, los diagramas de árbol, la verificación de independencia y el teorema de Bayes, ejemplificados con datos de checklists en simulacros de vuelo, el histórico brote de viruela en Boston (1721) y un sensor de detección de fisuras en motores aeronáuticos.</p>
+<p>La lección incluye simulaciones en R que contrastan las predicciones teóricas con resultados empíricos, reforzando la Ley de los Grandes Números y la importancia de la verificación experimental.</p>
+
+
+
+ ]]></description>
+  <category>EPDI</category>
+  <category>lecciones</category>
+  <guid>https://hsigrist.github.io/novedades/posts/01-05-2026-leccion-8-introduccion-a-la-probabilidad.html</guid>
+  <pubDate>Fri, 01 May 2026 04:00:00 GMT</pubDate>
+  <media:content url="https://hsigrist.github.io/epdi/imagenes/cnne-605188-10-anos-del-milagro-del-hudson.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Actualización: Proyecto Final EPDI – Defensa Estadística con Apoyo de IA</title>
   <dc:creator>Hans Sigrist</dc:creator>

@@ -1,0 +1,287 @@
+% soluciones-leccion-9.tex
+\documentclass[11pt,letterpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{lmodern}
+\usepackage{newtxtext}
+\usepackage[amsthm]{newtxmath}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{parskip}
+
+\decimalpoint
+\deactivatequoting
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Large Soluciones del Cuestionario Grupal – Lección 9}\\[0.3cm]
+    \textbf{Probabilidad condicional y teorema de Bayes}
+\end{center}
+
+A continuación se presentan las soluciones detalladas a cada pregunta, incluyendo los cálculos, la justificación de las reglas utilizadas y la interpretación de los resultados.
+
+%---------------------------------------------------------------------
+\section*{1. Checklist y errores}
+
+Datos de la tabla de contingencia ($n = 320$):
+
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+                    & Sin error & Con error & Total \\
+\midrule
+Con checklist       & 112       & 48        & 160   \\
+Sin checklist       & 64        & 96        & 160   \\
+\midrule
+\textbf{Total}      & 176       & 144       & 320   \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{a)} $P(\text{sin error} \mid \text{no checklist})$
+
+\[
+P(\text{sin error} \mid \text{no checklist}) = \frac{64}{160} = 0{,}40
+\]
+
+\textbf{b)} $P(\text{checklist} \mid \text{sin error})$
+
+\[
+P(\text{checklist} \mid \text{sin error}) = \frac{112}{176} = \frac{7}{11} \approx 0{,}636
+\]
+
+\textbf{c)} ¿Son independientes los eventos «usar checklist» y «no cometer errores»?
+
+Probamos con las dos condiciones equivalentes:
+
+\begin{itemize}
+    \item \textbf{Condición 1:} $P(\text{sin error} \mid \text{checklist}) \stackrel{?}{=} P(\text{sin error})$
+    \[
+    P(\text{sin error}) = \frac{176}{320} = 0{,}55; \qquad
+    P(\text{sin error} \mid \text{checklist}) = \frac{112}{160} = 0{,}70
+    \]
+    Como $0{,}70 \neq 0{,}55$, los eventos \textbf{no son independientes}.
+
+    \item \textbf{Condición 2 (regla del producto):} $P(\text{checklist} \cap \text{sin error}) \stackrel{?}{=} P(\text{checklist}) \cdot P(\text{sin error})$
+    \[
+    P(\text{checklist} \cap \text{sin error}) = \frac{112}{320} = 0{,}35
+    \]
+    \[
+    P(\text{checklist}) \cdot P(\text{sin error}) = 0{,}50 \times 0{,}55 = 0{,}275
+    \]
+    $0{,}35 \neq 0{,}275$, lo que confirma que \textbf{los eventos dependen uno del otro}. El uso del checklist incrementa la probabilidad de no cometer errores.
+\end{itemize}
+
+%---------------------------------------------------------------------
+\section*{2. Árbol de decisiones}
+
+A continuación se muestra el diagrama de árbol completo del ejemplo checklist. Las ramas primarias llevan probabilidades marginales; las secundarias, probabilidades condicionales. Al final se anotan las probabilidades conjuntas.
+
+\begin{verbatim}
+                 +-- Sin error (0,70)  →  0,50 × 0,70 = 0,350
+Checklist (0,50)—|
+                 +-- Con error  (0,30)  →  0,50 × 0,30 = 0,150
+
+                    +-- Sin error (0,40)  →  0,50 × 0,40 = 0,200
+No checklist (0,50)—|
+                    +-- Con error  (0,60)  →  0,50 × 0,60 = 0,300
+                                                          ———————
+                                               Suma total: 1,000
+\end{verbatim}
+
+Verificación: $0{,}350 + 0{,}150 + 0{,}200 + 0{,}300 = 1{,}000$, como corresponde a una distribución de probabilidad que cubre todos los resultados posibles.
+
+%---------------------------------------------------------------------
+\section*{3. Motor y alarma (modificado)}
+
+Nuevos parámetros:
+\begin{itemize}
+    \item Prevalencia: $P(\text{fisura}) = 0{,}05$, $P(\text{sano}) = 0{,}95$.
+    \item Sensibilidad (igual): $P(\text{alarma} \mid \text{fisura}) = 0{,}95$.
+    \item Tasa de falsos positivos (reducida): $P(\text{alarma} \mid \text{sano}) = 0{,}05$ (antes era $0{,}08$).
+\end{itemize}
+
+Calculamos la probabilidad total de alarma (denominador de Bayes):
+
+\[
+P(\text{alarma}) = 0{,}95 \times 0{,}05 + 0{,}05 \times 0{,}95 = 0{,}0475 + 0{,}0475 = 0{,}095.
+\]
+
+Aplicamos el teorema de Bayes:
+
+\[
+P(\text{fisura} \mid \text{alarma}) = \frac{P(\text{alarma} \mid \text{fisura}) \cdot P(\text{fisura})}{P(\text{alarma})} = \frac{0{,}0475}{0{,}095} = 0{,}50.
+\]
+
+En este nuevo escenario, el $50\%$ de los motores que disparan la alarma tienen realmente la fisura, un valor mucho mayor que el $10.7\%$ original. El cambio tan drástico se explica por dos factores simultáneos: la prevalencia aumentó cinco veces (del $1\%$ al $5\%$) y la tasa de falsos positivos bajó (del $8\%$ al $5\%$). Ambos hacen que la alarma sea un indicador mucho más fiable.
+
+%---------------------------------------------------------------------
+\section*{4. Viruela en Boston, 1721}
+
+Tabla de datos (resumida):
+
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+              & Vivió & Murió & Total \\
+\midrule
+Inoculado     & 238   & 6     & 244   \\
+No inoculado  & 5136  & 844   & 5980  \\
+\midrule
+\textbf{Total} & 5374  & 850   & 6224  \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{a)} Cálculo de las probabilidades condicionales.
+
+\[
+P(\text{vivió} \mid \text{inoculado}) = \frac{238}{244} = 0{,}9754 \quad (\text{aproximadamente } 97{,}5\%).
+\]
+\[
+P(\text{vivió} \mid \text{no inoculado}) = \frac{5136}{5980} \approx 0{,}8589 \quad (\text{aproximadamente } 85{,}9\%).
+\]
+
+\textbf{b)} ¿Son independientes la inoculación y el resultado?
+
+Usamos la regla del producto para verificar.
+
+\begin{itemize}
+    \item Probabilidad conjunta observada:
+    \[
+    P(\text{inoculado} \cap \text{vivió}) = \frac{238}{6224} \approx 0{,}03824.
+    \]
+    \item Producto de marginales:
+    \[
+    P(\text{inoculado}) \cdot P(\text{vivió}) = \frac{244}{6224} \times \frac{5374}{6224} \approx 0{,}0392 \times 0{,}8633 \approx 0{,}03384.
+    \]
+\end{itemize}
+
+Como $0{,}03824 \neq 0{,}03384$, los eventos \textbf{no son independientes}; hay una asociación clara entre estar inoculado y sobrevivir.
+
+\textbf{c)} ¿Por qué no podemos afirmar causalidad?
+
+Porque se trata de un \textbf{estudio observacional}: la inoculación fue voluntaria y no se asignó aleatoriamente. Pudieron existir \textbf{variables de confusión} (por ejemplo, las personas que accedieron a la inoculación podían tener mejor salud previa, más recursos económicos o cuidados médicos adicionales) que también redujeran la mortalidad. Para probar causalidad se necesitaría un \textbf{experimento con asignación aleatoria} (un ensayo clínico controlado), donde los sujetos fueran asignados al azar a ser inoculados o no.
+
+%---------------------------------------------------------------------
+\section*{5. Resultados de examen}
+
+Información proporcionada:
+\begin{itemize}
+    \item $P(\text{A parcial}) = 0{,}13 \implies P(\text{no A parcial}) = 0{,}87$.
+    \item $P(\text{A final} \mid \text{A parcial}) = 0{,}47$.
+    \item $P(\text{A final} \mid \text{no A parcial}) = 0{,}11$.
+\end{itemize}
+
+Queremos $P(\text{A parcial} \mid \text{A final})$. Aplicamos el teorema de Bayes.
+
+\textbf{Paso 1:} Calcular la probabilidad total de obtener A en el final (denominador).
+
+\[
+P(\text{A final}) = P(\text{A final} \mid \text{A parcial}) \cdot P(\text{A parcial}) + P(\text{A final} \mid \text{no A parcial}) \cdot P(\text{no A parcial})
+\]
+\[
+= 0{,}47 \times 0{,}13 + 0{,}11 \times 0{,}87 = 0{,}0611 + 0{,}0957 = 0{,}1568.
+\]
+
+\textbf{Paso 2:} Aplicar Bayes.
+
+\[
+P(\text{A parcial} \mid \text{A final}) = \frac{0{,}47 \times 0{,}13}{0{,}1568} = \frac{0{,}0611}{0{,}1568} \approx 0{,}3897.
+\]
+
+La probabilidad de haber tenido A en el parcial sabiendo que se obtuvo A en el final es aproximadamente \textbf{39\,\%}.
+
+\textbf{Diagrama de árbol:}
+
+\begin{verbatim}
+                      +— A final (0.47)  →  0.13 × 0.47 = 0.0611
+A parcial (0.13) —----|
+                      +— no A final (0.53) → 0.13 × 0.53 = 0.0689
+
+                         +— A final (0.11)  →  0.87 × 0.11 = 0.0957
+no A parcial (0.87) —----|
+                         +— no A final (0.89) → 0.87 × 0.89 = 0.7743
+                                                         ———————
+                                              Suma total: 1.0000
+\end{verbatim}
+
+%---------------------------------------------------------------------
+\section*{6. Congestión en plataforma (Bayes con tres causas)}
+
+Eventos:
+\begin{itemize}
+    \item $M$: mantenimiento de pista, $P(M) = 0{,}15$
+    \item $W$: vuelos militares, $P(W) = 0{,}05$
+    \item $N$: ningún evento, $P(N) = 0{,}80$
+    \item $C$: hay congestión.
+\end{itemize}
+
+Probabilidades de congestión bajo cada causa:
+\begin{itemize}
+    \item $P(C \mid M) = 0{,}60$
+    \item $P(C \mid W) = 0{,}90$
+    \item $P(C \mid N) = 0{,}10$
+\end{itemize}
+
+Queremos $P(W \mid C)$. Usamos el teorema de Bayes generalizado.
+
+\textbf{Paso 1:} Calcular la probabilidad total de congestión (marginal).
+
+\[
+P(C) = P(M) \cdot P(C \mid M) + P(W) \cdot P(C \mid W) + P(N) \cdot P(C \mid N)
+\]
+\[
+= 0{,}15 \times 0{,}60 + 0{,}05 \times 0{,}90 + 0{,}80 \times 0{,}10
+\]
+\[
+= 0{,}09 + 0{,}045 + 0{,}08 = 0{,}215.
+\]
+
+\textbf{Paso 2:} Aplicar Bayes.
+
+\[
+P(W \mid C) = \frac{P(W) \cdot P(C \mid W)}{P(C)} = \frac{0{,}05 \times 0{,}90}{0{,}215} = \frac{0{,}045}{0{,}215} \approx 0{,}2093.
+\]
+
+La probabilidad de que la congestión se deba a vuelos militares es aproximadamente \textbf{20.9\,\%}. (Este resultado es matemáticamente equivalente al del clásico problema del estacionamiento de la universidad.)
+
+%---------------------------------------------------------------------
+\section*{7. Simulación y Ley de los Grandes Números}
+
+A continuación se presenta el código modificado que realiza 100\,000 repeticiones y lo ejecuta con tres semillas diferentes.
+
+\begin{verbatim}
+set.seed(1)
+n <- 100000
+motor <- rbinom(n, 1, 0.01)
+alarma <- ifelse(motor == 1, rbinom(n,1,0.95), rbinom(n,1,0.08))
+P_sim1 <- sum(motor == 1 & alarma == 1) / sum(alarma == 1)
+
+set.seed(2)
+motor <- rbinom(n, 1, 0.01)
+alarma <- ifelse(motor == 1, rbinom(n,1,0.95), rbinom(n,1,0.08))
+P_sim2 <- sum(motor == 1 & alarma == 1) / sum(alarma == 1)
+
+set.seed(3)
+motor <- rbinom(n, 1, 0.01)
+alarma <- ifelse(motor == 1, rbinom(n,1,0.95), rbinom(n,1,0.08))
+P_sim3 <- sum(motor == 1 & alarma == 1) / sum(alarma == 1)
+\end{verbatim}
+
+Resultados típicos:
+\begin{itemize}
+    \item Semilla 1: $\approx 0{,}104$ (10.4\,\%)
+    \item Semilla 2: $\approx 0{,}108$ (10.8\,\%)
+    \item Semilla 3: $\approx 0{,}104$ (10.4\,\%)
+\end{itemize}
+
+Los valores obtenidos oscilan alrededor del teórico $\approx 0{,}107$ (10.7\,\%), con ligeras variaciones.
+
+\textbf{Interpretación:} La \textbf{Ley de los Grandes Números} establece que, a medida que el número de repeticiones crece, la proporción muestral converge a la probabilidad teórica. Con $n = 100\,000$ la convergencia es muy buena, aunque nunca perfecta. Las distintas semillas generan diferentes secuencias de números aleatorios; cada una es, por así decirlo, una muestra independiente del mismo proceso. Aunque los resultados concretos difieren ligeramente, todos se mantienen dentro de un estrecho margen alrededor del valor teórico, lo que confirma que el modelo probabilístico describe satisfactoriamente la realidad y que los errores de simulación son solo producto del azar muestral.
+
+\end{document}
