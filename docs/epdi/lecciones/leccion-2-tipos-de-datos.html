@@ -530,6 +530,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Lección 7: Análisis de datos categóricos</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../epdi/lecciones/leccion-8-introduccion-a-la-probabilidad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lección 8: Introducción a la probabilidad</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -685,7 +691,7 @@ Figura&nbsp;1: Ilustración utilizada con fines educativos. Fuente: USF ClipArt 
   ..   ingreso_mensual = col_double(),
   ..   horas_trabajo = col_double()
   .. )
- - attr(*, "problems")=&lt;externalptr&gt; </code></pre>
+ - attr(*, "problems")=&lt;pointer: 0x56055f2ef1e0&gt; </code></pre>
 </div>
 </div>
 <p>Aparecen variables numéricas (edad, ingreso_mensual) y categóricas (sexo, region). Esta distinción determina qué análisis podemos hacer.</p>
@@ -793,20 +799,20 @@ Tabla&nbsp;1: Variables y descripción para el conjunto de datos <code>empleo50<
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(empleo)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>    region              sexo                edad       nivel_educacional 
- Length:49          Length:49          Min.   :19.00   Length:49         
- Class :character   Class :character   1st Qu.:29.00   Class :character  
- Mode  :character   Mode  :character   Median :37.00   Mode  :character  
-                                       Mean   :38.12                     
-                                       3rd Qu.:46.00                     
-                                       Max.   :61.00                     
- estado_laboral     tipo_contrato      ingreso_mensual   horas_trabajo  
- Length:49          Length:49          Min.   :      0   Min.   : 0.00  
- Class :character   Class :character   1st Qu.: 420000   1st Qu.:36.00  
- Mode  :character   Mode  :character   Median : 540000   Median :40.00  
-                                       Mean   : 541633   Mean   :33.39  
-                                       3rd Qu.: 810000   3rd Qu.:40.00  
-                                       Max.   :1050000   Max.   :45.00  </code></pre>
+<pre><code>       region          sexo         edad       nivel_educacional
+ Length   :49   Length   :49   Min.   :19.00   Length   :49     
+ N.unique :11   N.unique : 2   1st Qu.:29.00   N.unique : 4     
+ N.blank  : 0   N.blank  : 0   Median :37.00   N.blank  : 0     
+ Min.nchar: 5   Min.nchar: 5   Mean   :38.12   Min.nchar: 5     
+ Max.nchar:13   Max.nchar: 6   3rd Qu.:46.00   Max.nchar:13     
+                               Max.   :61.00                    
+   estado_laboral   tipo_contrato ingreso_mensual   horas_trabajo  
+ Length   :49     Length   :49    Min.   :      0   Min.   : 0.00  
+ N.unique : 3     N.unique : 4    1st Qu.: 420000   1st Qu.:36.00  
+ N.blank  : 0     N.blank  : 0    Median : 540000   Median :40.00  
+ Min.nchar: 7     Min.nchar: 3    Mean   : 541633   Mean   :33.39  
+ Max.nchar:10     Max.nchar:10    3rd Qu.: 810000   3rd Qu.:40.00  
+                                  Max.   :1050000   Max.   :45.00  </code></pre>
 </div>
 </div>
 <p>Observa que <code>summary()</code> también nos da una tabla de frecuencias para las variables categóricas (como sexo). ¿Por qué crees que hace eso?</p>

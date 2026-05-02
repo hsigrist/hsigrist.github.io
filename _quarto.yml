@@ -72,6 +72,7 @@ website:
             - epdi/lecciones/leccion-5-experimentos.qmd
             - epdi/lecciones/leccion-6-exploracion-datos-numericos.qmd
             - epdi/lecciones/leccion-7-analisis-de-datos-categoricos.qmd
+            - epdi/lecciones/leccion-8-introduccion-a-la-probabilidad.qmd
 
 format:
   pdf:
