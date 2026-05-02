@@ -1,16 +1,16 @@
 ---
-title: "Nueva lección: Lección 9 Probabilidad condicional y teorema de Bayes"
+title: "Nueva lección: Lección 8 Introducción a la probabilidad"
 date: 2026-05-01
 date-format: "D MMMM, YYYY"
 author: "Hans Sigrist"
 categories: [EPDI, lecciones]
 lang: es
-description: "Probabilidad condicional, tablas de contingencia, regla de la multiplicación, diagramas de árbol y teorema de Bayes. Incluye ejemplos de checklists aeronáuticos, detección de fallas y simulación en R."
+description: "Fundamentos de probabilidad: Ley de los Grandes Números, espacio muestral, reglas de adición, complemento, independencia y distribuciones de probabilidad. Con simulaciones en R y ejemplos aeronáuticos."
 image: "/epdi/imagenes/cnne-605188-10-anos-del-milagro-del-hudson.jpg"
 ---
 
-Ya está disponible la [Lección 9: Probabilidad condicional y teorema de Bayes](../../epdi/lecciones/leccion-9-probabilidad-condicional-y-teorema-de-bayes.qmd). También encontrarás una versión en PDF.
+Ya está disponible la [Lección 8: Introducción a la probabilidad](../../epdi/lecciones/leccion-8-introduccion-a-la-probabilidad.qmd). También encontrarás una versión en PDF.
 
-Esta lección profundiza en la probabilidad como herramienta para actualizar creencias. Se trabaja con tablas de contingencia para distinguir probabilidades marginales, conjuntas y condicionales. Se introducen la regla general de la multiplicación, los diagramas de árbol, la verificación de independencia y el teorema de Bayes, ejemplificados con datos de checklists en simulacros de vuelo, el histórico brote de viruela en Boston (1721) y un sensor de detección de fisuras en motores aeronáuticos.
+En esta lección comenzamos a construir el lenguaje de la incertidumbre. Se define la probabilidad desde su interpretación frecuentista, se explora la Ley de los Grandes Números con simulaciones en R y se estudian los conceptos fundamentales: espacio muestral, eventos disjuntos, reglas de adición, complemento, independencia y distribuciones de probabilidad.
 
-La lección incluye simulaciones en R que contrastan las predicciones teóricas con resultados empíricos, reforzando la Ley de los Grandes Números y la importancia de la verificación experimental.
+Los ejemplos y ejercicios combinan contextos clásicos (dados, cartas) con aplicaciones aeronáuticas (confiabilidad de motores, cancelaciones de vuelo) para mostrar cómo el razonamiento probabilístico es esencial para la toma de decisiones en ambientes de riesgo.
