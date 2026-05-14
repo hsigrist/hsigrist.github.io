@@ -63,6 +63,8 @@ website:
           contents:
             - epdi/defensa/index.qmd
             - epdi/defensa/carta-autorizacion.qmd
+            - epdi/defensa/cuestionario-ted.qmd
+            - epdi/defensa/planificacion-defensa-form.pdf
         - section: "Lecciones"
           contents:
             - epdi/lecciones/leccion-1-introduccion-a-los-datos.qmd

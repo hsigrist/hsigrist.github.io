@@ -1,0 +1,103 @@
+---
+title: "Planificación de la Defensa Oral – EPDI"
+subtitle: "Formación Diferenciada | Colegio Portaliano, 2026"
+author: "Prof. Hans Sigrist"
+date: "2026-05-14"
+lang: es
+format:
+  pdf:
+    toc: false
+    number-sections: false
+    colorlinks: true
+  html:
+    toc: false
+    number-sections: false
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+::: {.content-visible when-format="html"}
+::: {#fig-planificacion-cover fig-cap="Planificación de la defensa oral. Una buena organización es tan importante como el dominio del contenido." fig-alt="Ilustración de un grupo de estudiantes planificando su presentación."}
+![](../imagenes/50077-700.png)
+:::
+:::
+
+::: {.content-visible when-format="pdf"}
+::: {#fig-planificacion-cover-pdf fig-cap="Planificación de la defensa oral."}
+![](../imagenes/50077-700.png){width=0.6\textwidth}
+:::
+:::
+
+## Instrucciones
+
+Completen este documento durante la clase. Al finalizar, cada integrante debe tener claro **qué sección presentará**, en qué orden intervendrán y qué materiales necesitarán. Entreguen una copia al profesor antes de salir.
+
+---
+
+## 1. Integrantes y roles
+
+Anoten el nombre de cada integrante y marquen con una **X** las secciones que presentará.
+Cada sección puede estar a cargo de una o dos personas, pero todos deben participar en al menos una.
+
+| Nombre | Contexto y pregunta (≈ 2 min) | Metodología y datos (≈ 3 min) | Análisis estadístico (≈ 4 min) | Conclusiones e impacto (≈ 3 min) |
+|--------|-------------------------------|-------------------------------|--------------------------------|-----------------------------------|
+|        |                               |                               |                                |                                   |
+|        |                               |                               |                                |                                   |
+|        |                               |                               |                                |                                   |
+|        |                               |                               |                                |                                   |
+
+---
+
+## 2. Orden de intervención
+
+Escriban el orden en que hablará cada persona durante la defensa.
+Pueden repetir nombres si alguien participa en varias secciones.
+
+1. \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ (Sección: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_)
+2. \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ (Sección: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_)
+3. \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ (Sección: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_)
+4. \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ (Sección: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_)
+
+---
+
+## 3. ¿Quién maneja la presentación digital?
+
+Indiquen quién se encargará de pasar las diapositivas, cargar el archivo y asegurarse de que todo funcione antes de empezar.
+
+- Responsable: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+---
+
+## 4. Material de apoyo
+
+Marquen con una **X** los recursos que van a utilizar.
+
+- [ ] Diapositivas (PowerPoint / PDF / Quarto)
+- [ ] NotebookLM (mapa mental) ¿quién lo mostrará? \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+- [ ] Capturas de DeepSeek ¿quién explicará la verificación? \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+- [ ] Videos o audios ¿cuál? \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+- [ ] Otros: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+---
+
+## 5. Ronda de preguntas
+
+Todos los integrantes deben estar preparados para responder.
+Elijan a una persona que coordinará las respuestas o decidirá quién contesta cada pregunta del tribunal.
+
+- Coordinador/a de preguntas: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+---
+
+## 6. Últimos detalles
+
+Revisen que cada integrante tenga su parte preparada (Avance 1 y 2 completos) y que la presentación no exceda los 12 minutos.
+Hagan un ensayo cronometrado en clase si es posible.
+
+Firma de todos los integrantes:
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_

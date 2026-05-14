@@ -11,6 +11,20 @@ format:
       - text: Documento de Respuestas Cuestionario Grupal
         href: https://docs.google.com/document/d/1TM5-hYd6LVG5yo3vCY0gsjrIWySOl6Y_r9nDoB-76N4/copy
 ---
+
+::: {.content-visible when-format="html"}
+::: {#fig-rosling-cover fig-cap="Hans Rosling durante su charla TED. La visualización dinámica de Gapminder transformó la manera de comunicar tendencias globales." fig-alt="Fotografía de Hans Rosling en el escenario de TED."}
+![](../imagenes/best_hans_talks_2000x2000.jpg)
+:::
+:::
+
+::: {.content-visible when-format="pdf"}
+::: {#fig-rosling-cover-pdf fig-cap="Hans Rosling durante su charla TED."}
+![](../imagenes/best_hans_talks_2000x2000.jpg){width=0.6\textwidth}
+:::
+:::
+
+
 Para responder a las preguntas del cuestionario: [Abrir documento de respuestas](https://docs.google.com/document/d/1TM5-hYd6LVG5yo3vCY0gsjrIWySOl6Y_r9nDoB-76N4/copy)
 
 Recuerde además establecer dicho grupo de exactamente 3 integrantes y consignar al jefe/a de grupo. Éste último, mantendrá en su Portafolio el cuestionario original ya corregido y los otros dos integrantes solo la rúbrica con la puntuación y la calificación.

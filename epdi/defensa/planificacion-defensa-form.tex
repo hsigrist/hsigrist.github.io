@@ -1,0 +1,134 @@
+% planificacion-defensa-form.tex
+\documentclass[11pt,letterpaper]{article}
+\usepackage[spanish,es-nodecimaldot,es-tabla]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Colegio Portaliano -- EPDI}
+\fancyhead[R]{\small Prof. Hans Sigrist}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue,
+    pdfstartview=FitH,
+    pdfauthor={Hans Sigrist},
+    pdftitle={Planificación de la Defensa Oral – EPDI},
+    pdfsubject={Formulario de planificación de defensa}
+}
+
+\usepackage{xcolor}
+\usepackage{array}
+
+% --- Comandos personalizados para campos ---
+\newcommand{\texto}[2][]{\TextField[#1]{#2}}
+\newcommand{\casilla}[2][]{\CheckBox[#1]{}{#2}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Large Planificación de la Defensa Oral – EPDI}\\[0.3cm]
+\end{center}
+
+\vspace{2cm}
+
+\begin{flushleft}
+    \textbf{Grupo:} \texto[name=grupo,width=6cm]{}\\[0.2cm]
+    \textbf{Tema asignado (Nro. y título):} \texto[name=tema,width=10cm]{}\\[0.2cm]
+    \textbf{Fecha de la defensa:} \texto[name=fecha,width=5cm]{}
+\end{flushleft}
+
+\begin{center}
+\end{center}
+
+\begin{figure}[htpb]
+	\centering
+    	\includegraphics[width=0.6\textwidth]{50077-700.png}
+	\caption{Planificación de la defensa oral.}
+	\label{fig:}
+\end{figure}
+
+\section*{1. Integrantes y roles}
+Anoten el nombre de cada integrante y marquen con una \textbf{X} las secciones que presentará.
+
+\vspace{0.3cm}
+\begin{tabular}{| p{3cm} | c | c | c | c |}
+\hline
+\textbf{Nombre} & \textbf{Contexto (≈2 min)} & \textbf{Metodología (≈3 min)} & \textbf{Análisis (≈4 min)} & \textbf{Conclusiones (≈3 min)} \\
+\hline
+\texto[name=nombre1,width=3cm]{} &
+\casilla[name=c1_contexto]{} &
+\casilla[name=c1_metodo]{} &
+\casilla[name=c1_analisis]{} &
+\casilla[name=c1_conclusiones]{} \\
+\hline
+\texto[name=nombre2,width=3cm]{} &
+\casilla[name=c2_contexto]{} &
+\casilla[name=c2_metodo]{} &
+\casilla[name=c2_analisis]{} &
+\casilla[name=c2_conclusiones]{} \\
+\hline
+\texto[name=nombre3,width=3cm]{} &
+\casilla[name=c3_contexto]{} &
+\casilla[name=c3_metodo]{} &
+\casilla[name=c3_analisis]{} &
+\casilla[name=c3_conclusiones]{} \\
+\hline
+\texto[name=nombre4,width=3cm]{} &
+\casilla[name=c4_contexto]{} &
+\casilla[name=c4_metodo]{} &
+\casilla[name=c4_analisis]{} &
+\casilla[name=c4_conclusiones]{} \\
+\hline
+\end{tabular}
+
+\section*{2. Orden de intervención}
+Escriban el orden en que hablará cada persona durante la defensa.
+
+\begin{enumerate}
+    \item \texto[name=orden1,width=10cm]{} \hspace{0.3cm} (Sección: \texto[name=seccion1,width=5cm]{})
+    \item \texto[name=orden2,width=10cm]{} \hspace{0.3cm} (Sección: \texto[name=seccion2,width=5cm]{})
+    \item \texto[name=orden3,width=10cm]{} \hspace{0.3cm} (Sección: \texto[name=seccion3,width=5cm]{})
+    \item \texto[name=orden4,width=10cm]{} \hspace{0.3cm} (Sección: \texto[name=seccion4,width=5cm]{})
+\end{enumerate}
+
+\section*{3. ¿Quién maneja la presentación digital?}
+Responsable: \texto[name=responsable,width=8cm]{}
+
+\section*{4. Material de apoyo}
+Marquen con una \textbf{X} los recursos que van a utilizar.
+
+\begin{itemize}
+    \item \casilla[name=diapositivas]{} Diapositivas (PowerPoint / PDF / Quarto)
+    \item \casilla[name=notebooklm]{} NotebookLM (mapa mental). ¿Quién lo mostrará? \texto[name=quien_notebook,width=5cm]{}
+    \item \casilla[name=capturas_deepseek]{} Capturas de DeepSeek. ¿Quién explicará la verificación? \texto[name=quien_verificacion,width=5cm]{}
+    \item \casilla[name=videos]{} Videos o audios. ¿Cuál? \texto[name=video_desc,width=6cm]{}
+    \item \casilla[name=otros]{} Otros: \texto[name=otros_texto,width=6cm]{}
+\end{itemize}
+
+\section*{5. Ronda de preguntas}
+Coordinador/a de preguntas: \texto[name=coordinador,width=8cm]{}
+
+\section*{6. Últimos detalles}
+Revisen que cada integrante tenga su parte preparada (Avance 1 y 2 completos) y que la presentación no exceda los 12 minutos. Hagan un ensayo cronometrado en clase si es posible.
+
+\vspace{0.5cm}
+\textbf{Firma de todos los integrantes:}
+
+\vspace{0.3cm}
+\texto[name=firma1,width=6cm]{}\hspace{2cm}\texto[name=firma2,width=6cm]{}
+
+\vspace{0.3cm}
+\texto[name=firma3,width=6cm]{}\hspace{2cm}\texto[name=firma4,width=6cm]{}
+
+
+(Firma escrita una vez impreso)
+\end{document}

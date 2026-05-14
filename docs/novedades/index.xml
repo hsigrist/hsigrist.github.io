@@ -10,7 +10,60 @@
 <atom:link href="https://hsigrist.github.io/novedades/index.xml" rel="self" type="application/rss+xml"/>
 <description>Materiales docentes y novedades de Formación Diferenciada | Colegio Portaliano</description>
 <generator>quarto-1.9.37</generator>
-<lastBuildDate>Sat, 02 May 2026 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 13 May 2026 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>Cuestionario Hans Rosling</title>
+  <dc:creator>Prof. Hans Sigrist</dc:creator>
+  <link>https://hsigrist.github.io/novedades/posts/2026-05-13-cuestionario-rosling.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div id="fig-rosling-cover" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Fotografía de Hans Rosling en el escenario de TED.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-rosling-cover-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://hsigrist.github.io/novedades/imagenes/best_hans_talks_2000x2000.jpg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rosling-cover-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;1: Hans Rosling durante su charla TED. La visualización dinámica de Gapminder transformó la manera de comunicar tendencias globales.
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Instrucciones
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>Mira con atención la charla TED de Hans Rosling: <a href="https://www.ted.com/talks/hans_rosling_the_best_stats_you_ve_ever_seen?utm_campaign=tedspread&amp;utm_medium=referral&amp;utm_source=tedcomshare">The best stats you’ve ever seen</a> (20 min).</p></li>
+<li><p>Responde las siguientes preguntas. No se trata de copiar datos exactos, sino de demostrar que has comprendido las ideas principales y puedes relacionarlas con lo aprendido en EPDI.</p></li>
+</ol>
+</div>
+</div>
+<hr>
+<section id="preguntas" class="level2">
+<h2 class="anchored" data-anchor-id="preguntas">Preguntas</h2>
+<p><strong>1. Percepción vs.&nbsp;realidad</strong> Al inicio de su charla, Rosling muestra que estudiantes suecos respondieron preguntas sobre desarrollo global peor que si hubieran respondido al azar (como chimpancés). ¿Qué sesgo o problema estadístico revela esta anécdota? ¿Por qué es relevante para cualquier persona que vaya a interpretar datos?</p>
+<p><strong>2. El mito del mundo dividido en dos</strong> Rosling afirma que la visión de un mundo partido entre «países desarrollados» y «países en desarrollo» ya no se sostiene con los datos. ¿Qué variables utiliza para demostrarlo? ¿Qué tipo de gráfico emplea y por qué es efectivo para comunicar esta idea?</p>
+<p><strong>3. De la correlación a la causalidad</strong> En un momento de la charla, Rosling muestra que la esperanza de vida está fuertemente asociada con el acceso a agua potable, jabón y alimentos. ¿Podemos afirmar que estos factores <em>causan</em> una mayor esperanza de vida? Explica tu respuesta usando los conceptos de <em>estudio observacional</em> y <em>variable de confusión</em> vistos en EPDI.</p>
+<p><strong>4. El poder de la visualización dinámica</strong> Rosling no usa tablas ni gráficos estáticos: emplea burbujas animadas que se mueven a lo largo del tiempo. ¿Qué ventajas tiene esta forma de presentar datos frente a una tabla de contingencia o un gráfico de barras tradicional? Piensa en lo que permite ver y en lo que podría ocultar.</p>
+<p><strong>5. ¿Con qué mentalidad miras los datos?</strong> Rosling sugiere que nuestra visión del mundo está determinada por el año en que nacieron nuestros profesores. ¿Cómo se relaciona esta idea con el concepto de <em>sesgo de confirmación</em>? ¿Qué estrategias propone Rosling (o podrías proponer tú) para mantener actualizada nuestra comprensión del mundo?</p>
+<p><strong>6. Hechos, emociones y persuasión</strong> Rosling ha sido llamado «edutainer» (educador + entertainer). Su charla combina datos, humor, competición deportiva y software llamativo. ¿Crees que estos recursos ayudan a comunicar la estadística o corre el riesgo de distorsionarla? ¿Qué lección puedes extraer para tu propia defensa final de EPDI?</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://hsigrist.github.io/novedades/posts/2026-05-13-cuestionario-rosling.html</guid>
+  <pubDate>Wed, 13 May 2026 04:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Nueva lección: Lección 9 Probabilidad condicional y teorema de Bayes</title>
   <dc:creator>Hans Sigrist</dc:creator>
